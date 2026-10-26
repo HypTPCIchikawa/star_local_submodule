@@ -1,0 +1,11 @@
+# Event Level Cuts
+
+minVz: 198.0         # cm, minVz <= Vz <= maxVz
+maxVz: 202.0          # cm
+maxVr: 2.0            # cm, Vr < maxVr
+minRefMult: 0.0       # Minimum RefMult
+maxRefMult: 1000.0    # Maximum RefMult
+maxVzDiff: 3.0        # cm, |Vz_TPC - Vz_VPD| < maxVzDiff (pileup rejection)
+maxAbsVzVpd: 200.0    # cm; use VPD (hVzDiff / vzDiff cut) only when |vzVpd| < this
+maxNTr: 0             # Event-level: skip event if nTracks > maxNTr (0 = no limit)
+

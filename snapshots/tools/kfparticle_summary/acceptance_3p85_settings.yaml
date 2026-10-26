@@ -1,0 +1,22 @@
+# Display only; does not change event, track, Lambda, or pair cuts.
+energy: 3p85
+energy_label: 'Au+Au FXT: 3.85 GeV beam energy'
+sample_label: '2021 P24iy | 26,956/26,994 subjobs | inclusive accepted events'
+padding_bins: 1
+histograms:
+  - id: lambda
+    histogram: hLambda_PtVsYLab_signal
+    title: '#Lambda'
+    selection: 'High-purity KF #Lambda, signal #pm3#sigma; before pairing'
+  - id: proton
+    histogram: hLambdaProton_PtVsYLab_signal
+    title: 'p from selected #Lambda'
+    selection: 'Daughter of signal #Lambda; global track momentum'
+  - id: pion
+    histogram: hLambdaPion_PtVsYLab_signal
+    title: '#pi^{-} from selected #Lambda'
+    selection: 'Daughter of signal #Lambda; global track momentum'
+  - id: helium4
+    histogram: hNucleus_PtVsYLab_he4
+    title: '^{4}He'
+    selection: 'Final selected ^{4}He tracks; Z=2 momentum correction'

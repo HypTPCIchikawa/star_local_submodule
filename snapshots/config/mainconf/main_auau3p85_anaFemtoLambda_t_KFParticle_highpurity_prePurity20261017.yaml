@@ -1,0 +1,10 @@
+# Exact pre-adoption references: legacy calibration, no new cutoff.
+analysis: analysis/analysis_info_auau3p85_anaFemtoLambda_t_KFParticle_highpurity.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_legacy.yaml
+maker: maker/maker_anaFemtoLambda_t_KFParticle.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_femtoLambda_triton_kf.yaml
+nuclearHist: hist/hist_femtoLambda_triton_nuclear.yaml

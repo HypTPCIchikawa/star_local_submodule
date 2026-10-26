@@ -1,0 +1,28 @@
+{
+  "executionComplete": true,
+  "rows": 19,
+  "region": {
+    "name": "low_linear",
+    "background": "linear",
+    "sample": "ALL",
+    "rMin": 0.61,
+    "rMax": 0.8,
+    "components": [
+      "d",
+      "t",
+      "he3",
+      "he4"
+    ]
+  },
+  "stage": "baseline",
+  "seconds": 14.02964472770691,
+  "products": {
+    "cutoff_fits.json": "b0fca6aea4f6c0006f1ced83416cf1ffe3bee5d4d1073636d39ffe3520519bf6",
+    "cutoff_fits.root": "d0be04a4ea6946d568bd9820a3b476ec476f8db1b15609fd6a8eb6dcc6d454b8",
+    "shapes.tsv": "39c2381c261fc67d5e0becee9c5e3549ce36d7ebff0d91b9c0744fcbe1826c3d",
+    "gates.tsv": "0f8db76257a4dc2531121c6c65e1784566cc6b2bc41fcd1c4d33db74e2327308",
+    "settings.tsv": "19eb9601f4175cc72a8d75dbe617e3f5b2656f8013c6fe757462271410819d2a",
+    "target_seeds.tsv": "4a65f27711faf1405f1d112e4e67c340711975ab82125e0ef2c97fc26eb1bb9c",
+    "seed_provenance.json": "173f50b8072ff636459621fa82331e169cfe669cbb1cec9aec15fd735af731f8"
+  }
+}

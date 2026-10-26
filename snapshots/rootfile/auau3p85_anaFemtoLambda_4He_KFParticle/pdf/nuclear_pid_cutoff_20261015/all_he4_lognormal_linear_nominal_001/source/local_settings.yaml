@@ -1,0 +1,83 @@
+# Separate target-local background diagnostic. Previous broad-window runs stay immutable.
+schemaVersion: 1
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+baselineMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+inputStudy: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015
+legacyHeader: StMaker/common/NuclearIdDeDxVsMom.h
+executionTimeoutSeconds: 7200
+fitWindowMode: target_local
+rigidityMin: 0.4
+rigidityMax: 2.0
+nativeWidth: 0.01
+aggregateWidth: 0.05
+tagStudies:
+  gaussian:
+    linear: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_native_linear_001
+    exponential: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_native_exponential_001
+  lognormal:
+    linear: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_lognormal_native_full_linear_001
+    exponential: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_lognormal_native_full_exponential_001
+backgroundModels: [linear, exponential]
+responseModels: [gaussian, lognormal]
+shapeVariations: [nominal, mean_minus, mean_plus, width_minus, width_plus]
+meanShiftSigma: 0.1
+widthRelativeShift: 0.1
+numeric:
+  amplitudeMaxIterations: 1000
+  amplitudeGradientTolerance: 0.000001
+  amplitudeHessianRidge: 0.0000000001
+  amplitudeLineSearchIterations: 80
+  shapeMaxCalls: 6000
+  shapeTolerance: 0.001
+  minimumSigma: 0.05
+  maximumSigma: 120.0
+  meanAxisPadding: 120.0
+  minimumGaussianAcceptance: 0.000000000001
+  minimumMode: 0.001
+  minimumResponseAcceptance: 0.000000000001
+  meanStep: 0.05
+  sigmaLogStep: 0.02
+  backgroundSlopeStep: 0.05
+  # Mathematical slope guard, not a physical constraint; expanded for diagnostics.
+  exponentialSlopeLimit: 80.0
+  boundaryTolerance: 0.000001
+  normalizeWarmStartToObserved: 1
+  freeBackgroundSlope: 1
+  displayDedxRebinFactor: 5
+  axisTolerance: 0.000000001
+  countVarianceRelativeTolerance: 0.000000001
+  nativeRigidityBinWidth: 0.01
+  nativeDedxBinWidth: 0.1
+allFit:
+  maxNSigma: 2.0
+  minDenom: 0.000000001
+  minimumPurityDenominator: 0.000000001
+  backgroundStartSlope: 0.0
+  fitWindowSigmaHalfWidth: 4.0
+  fitWindowAlignmentKeV: 0.5
+  requireBestSpecies: true
+support:
+  # Only the target mean/width mathematical boundary vetoes that target.
+  # Other-component/BG boundaries remain diagnostics. Numerical failure still vetoes.
+  rowBoundaryPolicy: component_only
+  minWindowYield: 50.0
+  minEffective: 25.0
+  minDropDeltaD: 25.0
+  maxMeanErrSigma: 0.25
+  maxSigmaRelErr: 0.25
+  minDetectorAcceptance: 0.95
+  maxBackgroundMeanShiftSigma: 0.5
+  maxBackgroundSigmaRelativeShift: 0.3
+cutoff:
+  purityThreshold: 0.5
+  minContiguousBins: 3
+  maxGateAbsoluteResidualFraction: 0.15
+  maxGateIntegralResidualFraction: 0.10
+  maxUnsupportedContaminationFraction: 0.01
+plots:
+  representativeRigidity: [0.455, 0.605, 0.805, 1.005, 1.505, 1.995]
+  dedxMin: 0.0
+  dedxMax: 120.0
+  displayDedxRebinFactor: 5
+  logMinimum: 0.5

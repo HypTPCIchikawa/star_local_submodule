@@ -103,6 +103,17 @@ class PersonalSync(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr.decode())
         self.assertFalse((checkout / 'personal/.git').exists())
 
+    def test_batch_index_guard_rejects_root_and_accepts_small_pdf(self):
+        subprocess.run(['git', 'init', '-q', str(self.repo)], check=True)
+        (self.repo / 'report.pdf').write_bytes(b'%PDF\0content')
+        subprocess.run(['git', '-C', str(self.repo), 'add', 'report.pdf'], check=True)
+        with mock.patch.object(sync, 'REPO', self.repo):
+            sync.check_index(self.cfg)
+        (self.repo / 'data.root').write_bytes(b'root')
+        subprocess.run(['git', '-C', str(self.repo), 'add', 'data.root'], check=True)
+        with mock.patch.object(sync, 'REPO', self.repo), self.assertRaises(ValueError):
+            sync.check_index(self.cfg)
+
 
 if __name__ == '__main__':
     unittest.main()

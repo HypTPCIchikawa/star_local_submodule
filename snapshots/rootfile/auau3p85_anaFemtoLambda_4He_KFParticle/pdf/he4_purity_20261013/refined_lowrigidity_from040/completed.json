@@ -1,0 +1,78 @@
+{
+  "phase": "complete",
+  "input_unchanged": true,
+  "pages": {
+    "purity": 1,
+    "fits": 53,
+    "fits_linear": 53,
+    "background_models": 2
+  },
+  "fits": {
+    "quality": 6,
+    "exploratory": 203,
+    "unavailable": 1,
+    "linear": 76,
+    "exponential": 133
+  },
+  "calibration_candidate": {
+    "csv": "he4_locus_fit_candidates.csv",
+    "yaml": "he4_pid_curve_candidate_3p85.yaml",
+    "componentKnots": 205,
+    "polynomialKnots": 205,
+    "productionEnabled": false
+  },
+  "products": {
+    "settings.yaml": "66b70dff0f67544f18c1f731332c1e7ac9418796b61d9f966ca4fbc9d4033f63",
+    "settings.tsv": "8c27e71bc1a61dae7e2a29828ba9c7b77d6fbd08cc908b7066030922f8fcbc16",
+    "context.json": "3e4c620c50ed5c310305af3c34255e101f1e190290e7cdbbca10a93b4bc08019",
+    "purity.csv": "bea973d648dce36dfc545ecbe9ae9c8bd481680af388d659f9fb89afcce2082e",
+    "he4_fits.root": "b8dc92f4b2a5d7c93390a98dcb4b5984295cb71a5cbba16038788f59fa47acce",
+    "purity.json": "13804be76826f5ebad1897a2e327b70f11f5935b5d6e3d38bfe2324688f6a579",
+    "he4_fits.pdf": "3439e04e2f483af510fc4aad293fcf6bcdf06330f72a29b3cb73f54903d68727",
+    "he4_fits_linear.pdf": "b199077126592dcb82da7a82a47d54112726032ba9711313baea7c7c6424758c",
+    "he4_purity.pdf": "006e7d0b29c43730ca90aea2b4aa61fb59b83f90c3397dfd6be4c46fc80fc7c9",
+    "he4_purity.png": "952644a3b4bc8c0d1809707b85aa900716233ab093aed70b9fa1754ddd602a6f",
+    "he4_background_models.pdf": "90bd3eddab692218b4e809eb4e6905bc2d6be99da2b162e46fa4fd4199f46c71",
+    "he4_background_models.png": "04342e56277995a1f0334c80bb155eed4782781d933a08b983dead5e1f907e5b",
+    "he4_locus_fit_candidates.csv": "4d6118d6453e545cea037e9cfc1627636e748c333a00850308e26d64d9168376",
+    "he4_pid_curve_candidate_3p85.yaml": "7fbbb409820d29e55e1a7ea9a3a7494cda47554d9efd76d9b0648a3fdebdc3d6",
+    "README.md": "8f953570307c899d81c65dbd51a1eaac97c5ca21081160b8b211ef48d5edf6d9",
+    "logs/fit.log": "9a674c02251ab6fcd0d5f76df937847cef635cb8c685d1d31465f0daa9bbebef",
+    "source/tools/he4_purity/FitHe4Purity.C": "ab25f839121320a72b7864f1eb2a64e2d25fb3c3185875d49745c8119185abe3",
+    "source/tools/he4_purity/run_purity.py": "efebcc646a3c7250919cfd7eb18b72b6be86e0c7234b8be1a5c13f42e2def89b",
+    "source/tools/he4_purity/calibration_candidates.py": "73f4bb4e04950c06ee9ff94b88e688d72b48d46ced859444e944556b2fe82bf7",
+    "source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  },
+  "archives": [
+    {
+      "original": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040_pre_peakwindow",
+      "current": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/revisions/pre_peakwindow",
+      "hashes": {
+        "settings.yaml": "66b70dff0f67544f18c1f731332c1e7ac9418796b61d9f966ca4fbc9d4033f63",
+        "settings.tsv": "8c27e71bc1a61dae7e2a29828ba9c7b77d6fbd08cc908b7066030922f8fcbc16",
+        "context.json": "d480d0a6aed41edd5a64984f7f5ddb846cf380f96b1cd90a5f63a68cf8fc3528",
+        "purity.csv": "bea973d648dce36dfc545ecbe9ae9c8bd481680af388d659f9fb89afcce2082e",
+        "he4_fits.root": "2d3cff81f7809834c8f3ed095ba8f7e715a7531458c5cbd629790029c9b8f27e",
+        "purity.json": "13804be76826f5ebad1897a2e327b70f11f5935b5d6e3d38bfe2324688f6a579",
+        "he4_fits.pdf": "0d0c709a03204fbcbe15afc1d44a0d8608773238b55a3b47ebb11ad1a76c8c98",
+        "he4_fits_linear.pdf": "8ffbe6a00f02e07028d28a774e473e18729c1846025154867f87599c180325a6",
+        "he4_purity.pdf": "4a7fe652962eb354f77d54a111f5bed7b3e039adda6566b51e0cbf6c505b7e3c",
+        "he4_purity.png": "952644a3b4bc8c0d1809707b85aa900716233ab093aed70b9fa1754ddd602a6f",
+        "he4_background_models.pdf": "d624ecf6eb7c463baafc38c1fbd30f4eb39565f50842233d2a598477b7445ebe",
+        "he4_background_models.png": "04342e56277995a1f0334c80bb155eed4782781d933a08b983dead5e1f907e5b",
+        "he4_locus_fit_candidates.csv": "4d6118d6453e545cea037e9cfc1627636e748c333a00850308e26d64d9168376",
+        "he4_pid_curve_candidate_3p85.yaml": "7fbbb409820d29e55e1a7ea9a3a7494cda47554d9efd76d9b0648a3fdebdc3d6",
+        "README.md": "8f953570307c899d81c65dbd51a1eaac97c5ca21081160b8b211ef48d5edf6d9",
+        "completed.json": "ba4f5f8fb6cb11a18388afc309fc95114dccc326a17e3c4634032e4883292f66",
+        "logs/fit.log": "02763e08514934893ef17379fe2410af9a53e090c2b4b5278edd8a968e14d40c",
+        "source/tools/he4_purity/FitHe4Purity.C": "9146c03d83efb3f1d39918b579d3b192baa5494da3ead04f237d1f992fc245f3",
+        "source/tools/he4_purity/run_purity.py": "efebcc646a3c7250919cfd7eb18b72b6be86e0c7234b8be1a5c13f42e2def89b",
+        "source/tools/he4_purity/calibration_candidates.py": "73f4bb4e04950c06ee9ff94b88e688d72b48d46ced859444e944556b2fe82bf7",
+        "source/tools/he4_purity/FitHe4Purity_C.d": "6689cdb001ea2bdd5033758d2911c644e963024fd6f50e17efa01d408c6990ab",
+        "source/tools/he4_purity/FitHe4Purity_C.so": "3f3d188c55db39b4b72189d060b1d44831a28aaaa68be17917271b73c5378f8b",
+        "source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+      },
+      "note": "Historical absolute paths are retained; diagnostic attempt, not the final physics result."
+    }
+  ]
+}

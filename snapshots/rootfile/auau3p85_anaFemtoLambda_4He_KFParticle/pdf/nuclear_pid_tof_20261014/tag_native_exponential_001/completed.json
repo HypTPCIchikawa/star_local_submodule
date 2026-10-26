@@ -1,0 +1,28 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "partition": "native",
+  "background": "exponential",
+  "nSlices": 660,
+  "totalDataDeviance": 29492348.35480256,
+  "numericalConverged": false,
+  "numericallyConvergedSlices": 604,
+  "he4IndependentTagNuisanceValidationComplete": false,
+  "note": "Execution completion is not convergence, isotope identification, supported calibration or validated purity.",
+  "inputFingerprintPreserved": true,
+  "protectedSourcesPreserved": true,
+  "products": {
+    "settings.tsv": "34019de2fa538c2193620c5aca9479cda33a41a73b6549e4bb75f32a80bd9b3c",
+    "r_slices.tsv": "0d431a3f9aab82acaeb1a80db59d369ad0aaf6e29fa23c213930215cffb37d3c",
+    "seeds.tsv": "eaef9b436a499296010ce461ac433c98106649c2a89437f8a81c065e16358688",
+    "seed_audit.json": "f60896b2fda7197e364d1dfa8e7fdade8e082cdf3152005d3950fc1aadbfb6cd",
+    "command.json": "3ef0dddd30c2528571fad9a13970f3dcbb070353b06c04a79c9457dc7906f06f",
+    "tag_fits.root": "0d6b05fd5418153b35dc59278c049803af34a32c7f248a51f888df6011cc8821",
+    "tag_fits.json": "e3693ac623ecc6dd969d5abe1d292ba27e6a3bceb25eafcd4db14a7b61d3aaf5",
+    "slices.tsv": "26e4a586ee7c9ae94576508dc096d3a0499197794c63d65467baa2635b88d6c8",
+    "summary.json": "4d5683ac02b77ec7e0d037256efd8d12869b3c9e4a34478970aa65c372473410",
+    "logs/fit.log": "14b63af7634b8748c28e32a2e2199e9a63bc2830bc6006a9f6eddd9c73291d85"
+  },
+  "completedJst": "2026-10-14T16:30:13.749461+09:00"
+}

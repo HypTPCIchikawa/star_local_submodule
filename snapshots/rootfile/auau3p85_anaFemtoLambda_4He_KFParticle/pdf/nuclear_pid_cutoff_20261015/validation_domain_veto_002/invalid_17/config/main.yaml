@@ -1,0 +1,9 @@
+analysis: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle_tofExtended.yaml
+event: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/cuts/event/event_femtoLambda_imp5.yaml
+centrality: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/validation_domain_veto_002/invalid_17/config/nuclear.yaml
+maker: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/maker/maker_auau3p85_anaFemtoLambda_4He_KFParticle_he3Control.yaml
+mixing: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/hist/hist_auau3p85_femtoLambda_he4_he3_control_kf.yaml
+nuclearHist: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/hist/hist_auau3p85_femtoLambda_he4_he3_control_nuclear.yaml

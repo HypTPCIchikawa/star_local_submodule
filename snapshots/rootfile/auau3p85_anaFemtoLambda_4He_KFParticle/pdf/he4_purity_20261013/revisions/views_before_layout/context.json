@@ -1,0 +1,50 @@
+{
+  "study_folder": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013",
+  "inputs": {
+    "fit_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/he4_fits.root",
+      "size": 2984079,
+      "mtime_ns": 1791857941832202385,
+      "device": 48,
+      "inode": 629388033
+    },
+    "original_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+      "size": 10522646853,
+      "mtime_ns": 1790979373044137604,
+      "device": 48,
+      "inode": 82490341
+    },
+    "study": {
+      "context.json": "73da5fc1a4432e95dddbba63a2289a4e5362dca5c27bf7149ccc7d9a70c5ecea",
+      "purity.json": "df032d3276ff02d6579aec815301bb1d68d00e82255d8687fed0251b29c21bfa",
+      "he4_fits.root": "995429e435931ac325d86865bf25cdf7c7bfd0a039d071108c1faaab0f292ae1"
+    },
+    "completed_sha256": "8d0a3e59f4c4a4efdc2eef267f2be055073ef08d0072a0972a51e268250cfc0b"
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "2b6568222b29125dbcee80b824fa3f2e57fa16b2fc0a1e9233fdf7ef477ff173",
+  "settings": {
+    "schemaVersion": 1,
+    "panelsPerPage": 4,
+    "fullDisplayNSigmaMin": -7.0,
+    "fullDisplayNSigmaMax": 4.0,
+    "physicalDisplayNSigmaMin": -3.0,
+    "physicalDisplayNSigmaMax": 3.0,
+    "linearMaximumFactor": 1.35,
+    "logMaximumFactor": 8.0,
+    "logMinimum": 0.5,
+    "diagnosticRigidityCenters": [
+      0.505,
+      0.555,
+      0.605,
+      0.655,
+      0.705,
+      0.755,
+      0.805,
+      1.005
+    ]
+  },
+  "created_jst": "2026-10-13T12:39:18.980692+09:00",
+  "note": "Stored fits are re-rendered, never fitted again; physical curves preserve original bin heights."
+}

@@ -1,0 +1,10 @@
+schemaVersion: 1
+regressionRigidityMinimums: [0.40, 0.50, 0.60, 0.75]
+regressionRigidityMaximum: 2.50
+evaluationRigidities: [0.405, 0.425, 0.495, 0.605]
+meanDegree: 3
+windowRmsDegree: 2
+weighting: equal_R_bins
+productionEnabled: false
+candidateOnly: true
+scope: conditional_TOF_window_moments_not_Gaussian_calibration

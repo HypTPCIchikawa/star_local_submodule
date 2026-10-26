@@ -1,0 +1,13 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "partition": "smoke",
+  "background": "exponential",
+  "nSlices": 6,
+  "totalDataDeviance": 2000947.1576121757,
+  "numericalConverged": false,
+  "numericallyConvergedSlices": 3,
+  "he4IndependentTagNuisanceValidationComplete": false,
+  "note": "Execution completion is not convergence, isotope identification, supported calibration or validated purity."
+}

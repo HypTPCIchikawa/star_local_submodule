@@ -1,0 +1,33 @@
+# 既存2021 P24iyとのイベント数比較・許可された部分hadd
+
+比較対象は保存済み `rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root`（SUMS 0BEFC64E62F19BBA534A129CABC9B106、2026-10-03受入れ）。名前が完全に `auau3p85_anaFemtoLambda_4He` のROOT出力ディレクトリは現workspace・隣接git_STAR/_2/_4にないため、同解析の既存KFParticle・2021 P24iy本番統合ROOTを比較に使った。2019・pilotは使わない。
+
+| カウント | 既存統合 | 今回04BF正常終了分 | 差 |
+|---|---:|---:|---:|
+| inputEvents | 2,100,781,392 | 2,100,726,543 | −54,849（−0.002610886%） |
+| reconstructedEvents | 2,067,701,585 | 2,067,647,474 | −54,111（約−0.00262%） |
+| 統合対象subjob | 26,956 | 26,955 | −1 |
+
+既存ROOTはROOT5でinputEvents/reconstructedEventsパラメータを実読取りし、hRefMult/hRefMultCorr Entriesとの一致も確認。今回値は全stdout末尾のstatus0・requested=completedの合計（前作業の全件走査）。代表subjob0の保存ROOTでもinputEvents=27634、reconstructedEvents=26515、ヒストEntriesがログと一致。今回の最終統合ROOTでの値はhadd後に初めて検査可能。原子核選択数はPID変更の影響を受けるため比較判定に使わない。
+
+ユーザーの「event数が大きく違わなければhadd」に基づき0.00261%減を小さい差として受入れ、39件を除く26955件の部分haddを11:48 JSTに開始。旧版からの追加欠損はsubjob24813。34 unreadable・2 missing tree・1 empty・1 basket errorは既存も未回収だった。元入力破損/staging問題の切り分けや39件の復旧を完了した意味ではない。
+
+実行tmux：`he4_partial_hadd_20261023`。状態記録：`job/run/merge_notify/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289/partial_merge_20261023/`。以前のfailed result・メール送信記録は上書きせず、SHA256を保存した。共有スクリプトは変更せず、既存watch_job_merge_notify.py/archive_merged_subjobs.pyの状態保存先のみをこの専用ディレクトリへ変更したlocal copyを使用。部分許可を明示し、ROOT読取り・加算検査は維持。再投入しない。
+
+全入力検査後、100本ずつ段階hadd→結合ROOT再検査・入力総和照合→指定出力先への上書きなし公開→結合に使った個別ROOTのみsubjobs/04BF…へ保存→既定宛先へ結果メール。出力予定：`auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289_merge.root`。失敗時は未完了として記録・通知し、検査基準を自動緩和しない。部分統合であることを結果・メールに明記。Git pushは行わない。
+
+起動後phase=validating_inputsを確認。hadd完了ではない。比較macro/readback：`rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/tests/event_comparison_partial_hadd_20261023_001/`。実行設定・許可根拠・差分率は状態先のevent_comparison_and_authorization.json、command.json、settings.jsonを参照。
+
+
+## 22:44 JST：停止を検出、区間保存方式で再開
+
+ユーザーからhadd状況の問い合わせ。22:38 JST確認時、旧tmux server・watcher・ROOTプロセスは全て不在。旧input_audit.logは22:09 JSTのsubjob14862で停止、result/sentなし、hadd log0本。結合前の読み取り検査の約55%で中断しており、hadd本体はまだ未実行。停止原因を断定できる記録はない。旧status.jsonのphase=mergingは処理中の証拠にならない。元ROOT・旧失敗/中断記録は保持した。
+
+100入力ずつ検査→hadd→再読取り・加算照合→fingerprint付きcheckpointを保存するlocal復旧処理を用意した。完了済み区間は再開時に入力/出力fingerprintを確認して再利用し、未検証の途中出力は上書きせず別attemptへ残す。270区間を段階結合して最後に元入力全体のヒスト総和を照合する。公開前にはhRefMult/hRefMultCorr Entriesが承認済み入力2,100,726,543・再構成2,067,647,474と一致することも要求する。検査基準は緩和していない。
+
+3 toy ROOTを2入力ずつ2区間に分け、階層hadd・最終照合まで通過。checkpoint再利用でROOT/haddを再実行しないこと、入力変更拒否、集約加算、schema不一致拒否の4試験も通過。22:43:47 JST、nohup＋独立sessionで再開（PIDはlaunch.json）。tmuxから独立し、hangupを無視する。ホスト側の強制終了までは防げないが、次回は検証済み区間から再開できる。旧の全件一括検査は最終集約値が保存されていないため、その約55%分を検査完了として流用しない。
+
+新状態：`job/run/merge_notify/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289/partial_merge_checkpoint_20261023/`。status.jsonのcompletedChunks/totalChunks、chunk_*/completed.json、monitor.logを確認する。現時点は再開直後、完了ではない。結合・検証・個別ROOT保存後のメール方針は継続。Git pushなし。
+
+
+2026-10-25続報：全270区間は完了。大きな中間結合で7ヒストの微差が出て停止したが、ユーザーが今回に限り許容したため専用状態で再開。[承認と実行記録](../25/he4_hadd_accepted_differences_20261025.md)。

@@ -1,0 +1,194 @@
+STAR解析 To do（2026年10月19日、日本時間）
+
+対象：Au+Au FXT 3.85 GeV、2021 P24iyのみ。
+解析：KFParticle Lambda–原子核Femto解析の核PID。
+状態：追加指示と回答を反映済み。独立study・切り戻し設定と診断ツールを作成。
+本番PID切替・新gateのpurity再fit・χ2閾値採用は未実施。
+
+1. dE/dx vs p/qの関数形を元の多項式基準へ戻す
+   低R＋TOF後高Rの統合PDF p.5のように、中心・選択境界がガタガタになるのは不自然。
+   各p/qの独立fit点の線形補間ではなく、元の解析コードの多項式を基準にする。
+   x=log10(R)、R=|p/q|として、中心は3次多項式、幅は2次多項式を基準とする。
+   低Rではピークが不明瞭になるため、純度50%未満の領域まで無理に関数形を作らない。
+   核種を同定できる支持範囲の中で中心・幅を調整する。
+   必要な係数調整を行う場合は、実際のdE/dx分布のピークと幅への一致を確認する。
+   参照式：StMaker/common/NuclearIdDeDxVsMom.h
+   参照PDF：
+   rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_tpc_tof_final_20261017_001/purity_tpc_tof_combined.pdf（p.5）
+
+2. TPC-only／TPC+TOFの適用範囲と高運動量上限を整理する
+   全核種でTPC-onlyはR=|p/q|<2 GeV/cとする。
+   R>=2 GeV/cでは全4核種でTOF m2を併用する。
+   4Heとdはm2で区別できないため、同じm2窓を使い、dE/dxで分離する。
+   現在のd同一窓は3.268773<m2<3.693147。t・3Heは各核種のm2窓を使う。
+   【ユーザー説明】従来のd/t/3Heの2.5 GeV/c上限はTOFなしPIDに由来する。
+   それをTOF併用時の上限の根拠として引き継がない。
+   まず共通設定上限のR<5 GeV/cまで保存済み分布で検証し、拡張可能な範囲を判断する。
+   TOF m2とdE/dxを組み合わせる高p/q領域について、上限をどこまでに設定しているか確認する。
+   d・t・3He・4Heの各核種について、実際の本番mainconfから参照設定とコードを辿る。
+   共通上限、核種別の除外区間、校正の適用範囲を区別し、実効的な選択上限を整理する。
+   p/qの上限と、Zを掛けた物理運動量pの上限を混同しない。
+
+3. 純度の再評価とp/q vs purityの図を作る
+   【回答確認済】本依頼のSNは純度P=S/(S+B)であり、採用基準はP>=0.5。
+   TPC-onlyのR<2とTPC+TOFのR>=2を区別して、各核種の純度を評価する。
+   PID関数・選択窓・best-species境界を変えた後へ、旧purityの数値を転用しない。
+   背景・応答モデルの比較と、実際に採用したモデル数・評価可能範囲を明示する。
+
+4. 局所fitとχ2の品質を確認する
+   dE/dx全域をglobal fitする必要はない。対象核種近傍のfitでよい。
+   4Heなら少なくとも3Heと4Heの山を含め、近傍の背景を評価する。
+   χ2の悪いfitはsystematic errorのモデル比較から除外し、理由を記録する。
+   【回答確認済】χ2/ndfの閾値は、局所fit図・残差・比較結果から基準案を提示する。
+   purityを高く見せるためにモデルを選別しない。品質判定を先に適用する。
+   全モデルが不良なら未評価であり、purity=0や低purity確定とは扱わない。
+
+5. 一部区間だけの除外を再監査する
+   上下のRでpurityが高いのに一部だけ除外される場合、fit由来の偽の谷を疑う。
+   当該区間と両隣のdE/dx fit図、χ2/ndf、残差、各モデルの支持・除外理由を並べる。
+   前回の数値未収束・帰属未確認・残差不良による未評価を、低純度と混同しない。
+   新たな飛び地vetoを本番適用する前に、その旨を指摘してfit図を提示し相談する。
+   旧設定の監査対象：d [1.45,1.50), [1.70,2.00)、t [1.35,1.40)、
+   4He [0.85,0.95), [1.75,1.80)。単位はGeV/c、すべて半開区間。
+
+6. 1次元dE/dx図の縦軸・表示範囲を修正する
+   表示範囲内のraw count+errorとモデルの最大値から、linear縦軸を設定する。
+   log表示は正値の範囲も確認し、目的の山が潰れて見えなくならないようにする。
+   広域の全体図と対象核種近傍の局所図を分け、linear／logを両方出力する。
+   不良fitも診断図では隠さず、χ2/ndf・除外理由を表示する。
+   旧PDFは保持し、別の名前で新しい図を保存する。
+
+記録・保護
+・ユーザーから解析実施の許可あり。ただし今回の優先作業はTodo更新と日付ディレクトリ整理。
+・解析コード・PID係数・本番YAML・ROOT・PDFは、この文書整理では変更しない。
+・本番設定の変更前に旧設定への切り戻しを保存し、独立study設定で先に検証する。
+・本番job投入、既存実データhadd、Git commit/pushは行わない。
+・実施時には進捗と結果を本Todoおよび同ディレクトリのREADMEへ追記する。
+・既存の設定・ROOT・PDFを保持し、旧条件へ戻せるようにする。
+
+承認・実行状況
+・以前の更新試行はbwrap namespace失敗／自動レビュー容量不足で未実行だった。
+・手動承認へ変更後に確認処理が実行可能となった。解析の完了とは区別する。
+・AI承認障害時の手順をdocs/ai/skills/approval-recovery.mdへ保存し、入口ルールに登録。
+  script/sync_and_check_skills.shで11 source／11 wrapperの同期検査PASS。
+・2026-10-19再開：独立logpolyStudy20261019とpreLogpoly20261019を5入口分作成。
+  studyだけ補間校正と旧vetoを外し、R>=2の全核種TOF・d同一He4窓・共通R<5を維持。
+  本番参照は不変更。設定9試験PASS、160016行の係数・幅・算術整合性検査PASS。
+  C++runtime・新gate純度を認証したものではない。
+・保存fit品質監査6試験、診断図用7試験PASS（設定分と合わせ計22試験）。
+  Python3.8互換性と旧独立raw gate countの読み込みを修正した。
+  実データ監査100実行・14840fit行が完了、旧独立countによる集約再現と入力SHA不変を確認。
+  低RのPearson/conditionalNdfは大きく、旧Gaussian/log-normalを新cutoff認証に転用しない。
+  診断PDF 001/002は各48頁で全頁readback済み。002はt局所表示と窓外model線を改善。
+  veto区間の前後0.05-R区間を明示した003（68頁）も生成・全頁readback済み。
+・追加回答：ユーザーは局所fitへのGaussian core+tail応答モデル追加比較を許可。
+  既存Gaussian/log-normalを保持し、独立pilotで局所残差・χ2・帰属を比較する。
+  同じデータのprofile選択を独立モデル数や厳密p値とは扱わない。本番PIDは未変更。
+・独立study入力16試験、pilot runner9試験もPASS（以前の22試験と合計47試験）。
+  元多項式のTPC-only低R参照設定はfreeze互換で保存済み。study_inputs_001作成完了。
+・core+tail数学試験math_selftest_002はROOT5で5489項目PASS。
+  001は名前空間曖昧性のcompile失敗ログとして保持。
+・d R=1.475のGaussian controlは旧fitのχ2・尤度・ndf・statusを完全再現。
+  coretail_pilot_001の48実行64fitをtmux nuclear-pid-coretail-20261019-001で実行開始。
+  進捗：rootfile/.../pdf/nuclear_pid_quality_20261019/coretail_pilot_001/suite.log。
+  最終completed.jsonを確認：48実行64fit完了、Gaussian control8点すべて旧fit再現PASS。
+  比較PDF12冊64頁も全頁readback・入力SHA不変を確認。本番設定は不変更。
+・描画13試験もPASS（合計60試験＋ROOT5数学5489チェック）。
+  固定profileではHe4 R=1.775でχ2/ndfが93.019→8.765に改善する例がある一方、
+  d/tのχ2は依然大きい。帰属・purity50%やcutoffの認証には採用しない。
+  次にtail割合・中心・幅もfitする独立core+tail比較を準備する。
+・手動承認への再切替後に再開。追加指示：左linearは広域0–120 keV/cmではなく、
+  全ページで対象核種近傍を表示。He4はHe3/He4の山を含む範囲をRごとに設定。
+  右logの広域／局所表示は維持。plots.linearFocusOnly:1を明示し、改訂004を新規生成。
+  旧003を保持、004全68頁readback・全linearのfocus検査・表示11試験PASS。
+  fixed/free描画モード18試験もPASS。今後のpilot図も同じlinear局所表示を使う。
+・前回承認timeoutで未実行だったlogpoly_baseline_001を今回作成完了。
+  元多項式・TPC-only R<2の独立参照保存であり、本番設定や既存gateの変更ではない。
+
+追加指示・実施方針（2026-10-19）
+・He4 fitの背景3He/t等の中心値・幅は、既知のPID多項式を参照し固定する。
+  He4領域内で背景核種の中心を独立freeにしない。必要な修正は別の核種peak校正で
+  center3次・width2次のlog10(R)多項式係数へ反映し、ガタガタな補間を採用しない。
+・He3の右tailだけでなく、peak頂上と左へ下がる側までfit範囲に入れる。
+・添付図の細い橙赤線はlog-normalモデルのt tail。
+  R=.875、旧fit35.5–59 keV/cmでt acceptance約3e-10に局所収量約10.9万を割当て、
+  全線外挿約3.63e14（実ALL計数約6.94e8の約52万倍）となった。
+  実t混入の測定ではなく、遠方tailの局所正規化がBG basis化した病理と判明。
+・free背景比較の実データfitは起動せず保留。free_coretail_pilot_001に
+  superseded.json/NOT_RUN_SUPERSEDED.mdを保存し、runnerも誤起動を拒否する。
+  free数学試験256項目PASS・入力24実行32fit作成済みと、未実行を区別する。
+・次は既存PID曲線を初期の固定参照とし、同じALLのt/He3/He4を含む連続局所ROIで
+  3核種の規格化を実peakに結びつける独立比較を行う。0–120全域fitは行わない。
+  He4 fitへ自由な遠方t成分を入れない。data/curveが合わなければ校正の問題として示す。
+  backgroundの中心をHe4 fitの中だけで動かして隠さない。純度認証・本番切替は未実施。
+
+固定PID曲線での実行結果（2026-10-19追加）
+・peak_anchored_pilot_001：Gaussian/log-normal × linear/exponential × 7 native R点の
+  4実行28fitをROOT5/SL24yで完了。全核種の中心・幅が元log10(R)多項式の値のままであること、
+  raw count/error/flow、成分和、領域mask、残差のROOT再読込み、入力SHA不変を検査済み。
+・peak_anchored_views_001/peak_anchored_diagnostics.pdf：28頁、112panel、全頁readback済み。
+  各RにつきHe領域2頁・t領域2頁。左linearは全て対象peak近傍、右は同じ範囲のlog。
+  R=.875のHe3左肩・頂上、別のt実peakの表示も目視確認した。過去PDFは保持。
+・関連Python試験は25件PASS（prep8件＋描画17件）。要求R値とnative bin中心の
+  浮動小数点丸め差だけを許容し、rBin/index/lo/hiの同一性検査は厳密に維持する。
+・28fit全て数値収束し、t全軸yieldはALL計数の記述的margin以内。
+  例：R=.875 log-normal/linearのt全線yieldは約1.288e7（ALL約6.942e8）。
+  旧fitの約52万倍の外挿病理とは異なるが、新しいt混入量の物理的測定とは認定しない。
+・重要：元PID曲線のままではpeakとのずれが残り、joint χ2/ndfは約1887–6928。
+  数値収束と良いfitは別であり、この28fitはpurityの系統差・cutoff採用には使わない。
+  selection.available=false、purity=nullを明記。未評価を低purityと判定しない。
+・次の作業：TAG_T/TAG_HE3の各実peak近傍で独立校正し、採用可能な中心・幅を
+  元と同じlog10(R)中心3次・幅2次で関数化する。その関数を固定してHe4領域を再検証する。
+  TAG_Dは純粋He4ではない。既存の低R曲線は今回R域へ外挿せず、未収束の過去global fitも使わない。
+  必要な係数更新はこの別校正で判断する。本番係数・cutoff・既存解析ROOTは今回変更していない。
+・承認連絡：今回必要な実行承認とfit/PDF検査が済んだ時点で、自動承認へ戻してよいと連絡済み。
+  再び承認timeout等が出た場合は、実行済み/未実行を区別して手動切替の必要を速やかに伝える。
+
+ユーザー指摘を受けたPID参照の確認（2026-10-19追記、解析変更なし）
+・peak_anchored_views_001は「現行anaFemtoの実効PID」ではない。
+  *_logpolyLowRReference20261019.yamlのdedxCalibration.enabled=falseで、
+  NuclearIdDeDxVsMom.hの元多項式のみを固定参照する比較用studyだった。
+・現在のcanonical mainconfはpurity50_production_20261017.yamlを参照し、
+  dedx_helium_auau3p85_2021P24iy_from040.yamlのHe3/He4校正を有効にしている。
+  校正はR毎の点の線形補間であり、今回新たに求めた滑らかな多項式ではない。
+  d/t、校正範囲外・未支持gapは元多項式を使う。元多項式への本番切替は未実施。
+・R=.875の中心/幅 [keV/cm]：
+  t   PDF=23.691733/1.715000、現行=23.691733/1.715000（同じ元多項式）。
+  He3 PDF=33.230633/1.903423、現行=34.282979/1.856006（校正点）。
+  He4 PDF=46.449511/2.679187、現行=47.260798/2.909743（校正点）。
+  ただし現行cutoffではHe4の[.85,.95)は別途vetoで、ここに候補を採用する意味ではない。
+・R=.875 Gaussian/exponentialの20–28 keV/cm表示はt controlページp.7。
+  実表示20–27.5、He表示p.5は29–57.5、共同fit範囲20–57.5。
+  tとHeのページを同じタイトル構成で混在させ、用途の説明が不十分だった。
+・既存2021P24iy部分統合ROOTのjob 0BEFC64...は投入時snapshotのlegacy設定で生成。
+  現行校正への変更に伴って元ROOTを再解析したものではない。
+・今回の図から現行校正の正しさを認定しない。元多項式と現行実効PIDを混同せず、
+  次に重ねる曲線のmainconf/校正/生成時条件を明示してから検証する。
+  この追記以外、コード・設定・PDF・ROOTは変更していない。
+
+Git元PIDとの差分確認（2026-10-19追加、読取り監査）
+・比較対象はローカルGit HEAD=8f7d539（保存済みorigin/main参照と一致）。
+  fetch/pullはしておらず、リモートの最新状態を照会した意味ではない。
+・NuclearIdDeDxVsMom.hはHEADと現在のGit blobが完全一致：
+  7f61dffb53d02742c81c59dad951af46dfdd1730。
+  最終コミットはf5ca317（2026-06-15）。元の中心/幅の多項式係数は変更されていない。
+・しかし実効PIDはGit版から変更されている。HEADのFemtoLambdaLegacyは
+  NuclearIdDeDxVsMom::GetNSigmaを直接呼び、highpurity mainconfはlegacy YAMLを参照。
+  現在は新FemtoNuclearDedxCalibration経由へ変更し、有効なYAMLでHe3/He4の中心・幅を上書きする。
+  d/t自身の関数は同じでも、best-species競合と新cutoff/TOF/vetoで選択は変わり得る。
+・作業記録上、10/13にHe校正と4He系3入口を接続、10/17に全4核種の5入口を共通化。
+  10/19は旧多項式の独立studyで、本番を元多項式へ戻してはいない。
+  これは記録上の作業日で、厳密な適用時刻をmtimeから推測したものではない。
+・今回確認した実効PID変更は未コミット。新providerはuntracked、校正/PID YAMLは
+  現在の.gitignoreのconfig/*によりGit管理外。元Git版のPIDは保持されている。
+・最新peak_anchored PDFはGitと完全一致の元多項式を固定したものなので、
+  そのピークずれを「新校正で悪化した証拠」とは扱わない。新校正の改善/悪化も未確定。
+  同じ生分布で旧/現行の中心・幅を直接照合する必要がある。今回新fit・再解析は行っていない。
+・切り戻しの区別：prePurity20261017は10/17直前へ戻すが、10/13校正は残る。
+  元PID用pidLegacy設定とは異なる。今回rollback/checkout/resetは一切行っていない。
+
+終了時の新方針（次回2026/10/20へ引継ぎ）
+・ユーザーから仕切り直しの指示。以後はTodo/2026/10/20/STAR_Todo20261020.txtを優先する。
+・最初に本番PIDをGitの元式へ戻し、m2選択で校正→m2なしALL→低R純度50%cutoff→高R TOF統合の順で再構築する。
+・以前の補間曲線・fit採否・veto・高R上限は新studyの既定値にしない。過去の成果物は削除せず保持。
+・本日は新Todoとanalysisnote/20261019/summary20261019.mdを作成しただけで、復帰や新fitは未実施。

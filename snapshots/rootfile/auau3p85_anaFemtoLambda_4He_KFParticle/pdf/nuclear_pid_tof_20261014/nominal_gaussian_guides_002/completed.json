@@ -1,0 +1,33 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "inputFingerprintPreserved": true,
+  "protectedPostRunVerified": true,
+  "products": {
+    "points.tsv": "f818bc5f7902d257195c114c83ef79ca34b04e6fcad7eb83149fdab2c559f168",
+    "curves.tsv": "5b78dea779a3014862dfea8adac0e3eea31b1620b0550932e96f311d41afe22d",
+    "settings.tsv": "81742fffd9c9959c5e27966415442d6e78d16162d047cc906098865ade410a73",
+    "guide_audit.json": "3eaefa3350f5e8bd527b7cc0fa2f89b556af3ec79bdd6a93e06ccdc6a55a8717",
+    "context.json": "1ca22216cad46d9eec31ef8bdbd4dbdd9d6396e96d64fcef24f1f554e86d1a18",
+    "command.json": "ddd3569aee8b279cf6c933558f0eacd55a6db59a8aba4e58419a550989c2449e",
+    "root.log": "6a9d407b183288252cc4908dacd94f6972ab89ab2468c08c6aa86db359fe4fbb",
+    "map_audit.tsv": "26f4e54e8f28cdf8c572014b1004972f54c6fd80d4c06a902f9f821996abbabf",
+    "nominal_gaussian_colz_guides.pdf": "d89f9dca6d9e6c99ca0492c303ebbe506f0c932838cbc993aa82ebc927b187ab"
+  },
+  "sourceSha256": {
+    "render_guides.py": "8f00972d6221a92a0a2ad13c637a56e9d2e616a9c30090cad4e0ed922944319a",
+    "PlotNuclearGuides.C": "837152025c52d0d7c4eb0f06a019a8b6da8a96029f082b1b002fa9396fdc5e9a",
+    "overlay_settings.yaml": "35b6573ebd485798c20f116ed1282fe804965e64584f747e090c7c79f54dc933",
+    "nuclear_curves.py": "94d6932b07ef4536adc0ad93a0e8962bec2982f7eca50d051de2cf7dd6722366",
+    "runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e",
+    "export_runtime_calibration.py": "e2ced59185e2c1d43c6765224e353abc2b36330df1f2c857095594ba6762b905",
+    "dedx_helium_auau3p85_2021P24iy_from040.yaml": "0b6b1bd97b6e3caf752c1b5213407deacd7d0897307442c1202ba10df115bfc1",
+    "main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "PlotNuclearGuides_C.d": "32131a366633003b34067d84be50eb1589b7bb34c5ece8fc7cd92a1e24d2bb6f",
+    "PlotNuclearGuides_C.so": "c373f7b4728bf25afa14bed1d488f4b4386507c42ba649d7f53c206228bba17c"
+  }
+}

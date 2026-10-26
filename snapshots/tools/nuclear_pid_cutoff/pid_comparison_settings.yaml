@@ -1,0 +1,25 @@
+schemaVersion: 1
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+inputStudy: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001
+originalRoot: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root
+originalM2Histogram: true/hM2P
+legacyNuclearConfig: config/cuts/nuclearid/nuclearid_femtoLambda_legacy.yaml
+oldCanonicalNuclearConfig: config/cuts/nuclearid/nuclearid_femtoLambda_auau3p85_calibrated.yaml
+oldTofExtendedNuclearConfig: config/cuts/nuclearid/nuclearid_femtoLambda_auau3p85_calibrated_tofExtended.yaml
+newNuclearConfig: config/cuts/nuclearid/nuclearid_femtoLambda_auau3p85_purity50_20261015.yaml
+legacyHeader: StMaker/common/NuclearIdDeDxVsMom.h
+rigidityMin: 0.4
+rigidityMax: 5.0
+rigidityStep: 0.01
+lowRigidityMax: 1.2
+gateNSigma: 2.0
+tofThreshold: 2.0
+referenceRigidity: [0.4, 0.45, 0.5, 0.6, 0.7, 0.8, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0]
+canvasWidth: 1400
+canvasHeight: 1050
+dedxDisplayMax: 120.0
+m2DisplayMin: -0.5
+m2DisplayMax: 10.0
+m2DetailMin: 1.4
+m2DetailMax: 4.5
+executionTimeoutSeconds: 1800

@@ -1,0 +1,181 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "target": "he4_only",
+  "referenceGit": "8f7d539",
+  "d_t_he3_pid_exact_git": true,
+  "onlyHe4PidCoefficientsChanged": true,
+  "baselineFits": 199,
+  "candidateFits": 199,
+  "aggregateBins": 88,
+  "supportedBins": 76,
+  "regionPolicies": [
+    {
+      "name": "low_linear",
+      "background": "linear",
+      "sample": "ALL",
+      "rMin": 0.61,
+      "rMax": 0.8,
+      "components": [
+        "d",
+        "t",
+        "he3",
+        "he4"
+      ]
+    },
+    {
+      "name": "low_none",
+      "background": "none",
+      "sample": "ALL",
+      "rMin": 0.8,
+      "rMax": 2.0,
+      "components": [
+        "d",
+        "t",
+        "he3",
+        "he4"
+      ]
+    },
+    {
+      "name": "high_linear",
+      "background": "linear",
+      "sample": "TAG_D",
+      "rMin": 2.0,
+      "rMax": 5.0,
+      "components": [
+        "he4"
+      ]
+    }
+  ],
+  "allPdfPagesReadback": true,
+  "reportPages": 10,
+  "totalPdfPages": 415,
+  "noMissingGlyphs": true,
+  "noOverfullBoxes": true,
+  "physicsValidation": {
+    "executionComplete": true,
+    "allRegionsCorrect": true,
+    "gitDTHe3Exact": true,
+    "onlyHe4CoefficientsChanged": true,
+    "noFixedHe4Mean": true,
+    "independentRawChecks": 556,
+    "he3HalfHeightChecks": 417,
+    "fitGateIndependenceComparisons": 199,
+    "protectedInputs": 102,
+    "oldInputsUnchanged": true,
+    "highOtherNucleiZero": true,
+    "middleBackgroundZero": true
+  },
+  "inputProvenance": {
+    "contextPath": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/context.json",
+    "contextSha256": "7f467146dbb214b08ca6bb5f75ac33f6df95d57b2ae6db5b1504353d442fb149",
+    "cachePath": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root",
+    "cacheSha256": "cefd9281fe4dc31ddcf7f0d403a1cdd2d6440e5873da40518804025b3e9b4828",
+    "inputFingerprint": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+      "size": 10522646853,
+      "mtime_ns": 1790979373044137604,
+      "device": 48,
+      "inode": 82490341
+    },
+    "fingerprintVerified": true,
+    "statistics": "existing partial 2021 P24iy merged sample; not full-statistics assertion",
+    "catalogSettings": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml"
+  },
+  "oldOutputsUnchanged": true,
+  "products": {
+    "purity_vs_p_over_q.pdf": {
+      "pages": 2,
+      "sha256": "6fed3836bf9cf83f046211730762e3905b77cd651b1d639c8333192cddff5fc9"
+    },
+    "pid_functions.pdf": {
+      "pages": 1,
+      "sha256": "eb755e30c00aad394e314df2e3a04979759b77202f51ab6af1369034ac37d8eb"
+    },
+    "dedx_pid_map.pdf": {
+      "pages": 1,
+      "sha256": "13b07bb7662e562f640878fafd7341ddc7728730c7df4a7546f700c19ead1c23"
+    },
+    "fit_all_regions.pdf": {
+      "pages": 199,
+      "sha256": "3616c1aad8f1f794f0bdb4e8fe9762c7d86ec7cd4922ad4b73dc264c7ada4b10"
+    },
+    "fit_low_linear.pdf": {
+      "pages": 19,
+      "sha256": "828fd9b0b9214668f351befac081adfb8991ba4259cf4a27f1a356dc1e14e61a"
+    },
+    "fit_representative_low_linear.pdf": {
+      "pages": 1,
+      "sha256": "ec18a54c4e04abed55e18f0837c1a4ce34cb66c6e6ab0c8c8e32515e357c8bd7"
+    },
+    "fit_low_none.pdf": {
+      "pages": 120,
+      "sha256": "92960d0f2c6cfe3d5056d45bebedf6eecc664b891afe7d282000f8113b7936b8"
+    },
+    "fit_representative_low_none.pdf": {
+      "pages": 1,
+      "sha256": "cf48e0ff605c03a89d96390d0dfd82968e2fd007141d17f46ac274889f82f474"
+    },
+    "fit_high_linear.pdf": {
+      "pages": 60,
+      "sha256": "d5bcf0fdb0f492f7a8823a47106afd1d7ae39b7efe3835ba8f7a0f09ff704c6e"
+    },
+    "fit_representative_high_linear.pdf": {
+      "pages": 1,
+      "sha256": "e9cf477d46c1fbd0001b53ce97f5d79e0cf5cb5ed63f92b96891efbc9c4fd59b"
+    },
+    "he4_pid_purity_report_20261022.pdf": {
+      "pages": 10,
+      "sha256": "4b756516605ecf7803e3b92312624608134c0f7e273008032d2d6c4a6bdd7559"
+    }
+  },
+  "sourceSha256": {
+    "NuclearFitCommon.h": "8947cf5607e0269839b6bc04daaaf53b71a682fc4b172dcdff35f3aca5158569",
+    "NuclearLognormalFitCommon.h": "af84a3e40dac4bedcabc4320dd278fa20990d14775b0dd429d6166bfe880ee5f",
+    "FitLocalNuclearCutoff.C": "dab118a4162e321b6f92528289540ae7dc268ac7dd13f28485962753df27cf15",
+    "FitHighRigidity.C": "bd28ecd2216adab60eeac2d8eac6458848ac261b2b18d6b87ce3d04d863b8e4a",
+    "settings.yaml": "b952551e7b3691c5a21bc974bfdf69fdb64067ab725956079db3f5e0e09ed1f3",
+    "run.py": "07ebcff4ec44a31b687ee6782d0a657380d13ea9637f2b3d90070b537c01ff6d",
+    "PlotHe4.C": "dc1ad9372e40a652070a5c7ebd946e57db35556cf81661a7858a896338372d92",
+    "ValidateHe4.C": "4d2cdfcd4b80e5d937cc962eaaa7e3e96eb88586626b6317d13beda439a3e065",
+    "calibrate.py": "e9b3438a034c26640ec353a49bc0e0833762eaa844e2cb8cb1b87763c9399d87",
+    "analyze.py": "3f6832820b9756393b85d19e510dc993ba8ebdbf6ad855ad046454dbe8ec587f",
+    "render.py": "7903759082430c7864d05e8bd4d2b16bb67a1d0ae0bd4177d8081936543c4537",
+    "validate.py": "95e1c26c5c007bf27d6115c42283d4fa9ab0323ce51265a4b3f5294378620421",
+    "ExtractNuclearGateCounts.C": "c51fef713753d223a52848ad4a508e38b2314d51a37ae3d47722b58bec74b121",
+    "build_report.py": "d8417a3bd8d86f7c9a483e34b54ca232bf14b1916166e4ae4a9b21103ff0a7b7",
+    "finish.py": "eff6842741b2159d7506e914ede0e2b21b45425edd9426b3e11e6152e37979cb"
+  },
+  "numericProductsSha256": {
+    "git_baseline.json": "00936c5ccb945aef3840a41aba793e9729704b32505b6f701eb6ebd5dd700cff",
+    "protected.json": "33b1e6b70ed0a7d010fb96c78187bcbf20d86d1ba9f4339fc3b5ecacd2f88d03",
+    "settings.yaml": "b952551e7b3691c5a21bc974bfdf69fdb64067ab725956079db3f5e0e09ed1f3",
+    "coefficients.json": "d7b9f000208dfc1d0e0fbde312a456b53fc91f8574a49cf004285aa52c800f98",
+    "coefficients.yaml": "d7b9f000208dfc1d0e0fbde312a456b53fc91f8574a49cf004285aa52c800f98",
+    "curves.tsv": "1b147f203da891a7f925b755c3d4d26afb88be46dfd9a664279c2da4158e4059",
+    "summary.json": "d38972f16fcca028839b7707a42c796174afa62171261bb3c14bfc8d517ffe97",
+    "native.json": "c60cef9d2523314ebc6dcdc9896b01301b8e2026fa4f208435d04694a209382c",
+    "examples.json": "f5b7558c1ef7102b70342fe2afcc6de7dcd8aeb99c5df3e18a0a6423750a11bd",
+    "purity.tsv": "884f8fb94e58ba4015574c85f72ea7c1e6d78bd8737522df165fde6369895bc2",
+    "native.tsv": "6b217af36580d32efb42e2ad4c66d725e96f6822b2e9897a1bd56d34c83b1f87",
+    "examples.tsv": "030cce40102001c687061df62ea43d95bb49c2e192ad3cf668f4e3f6b2911dcf",
+    "pid_selection.yaml": "93e2143ac66a763effad5de177d8063762733a46f4a445c187966569bbc8f8aa",
+    "examples_all.tsv": "ccaf27a89a2319f420776485394fa0ec64ec3c6d0420dbe754417d2ed1cd8e44",
+    "examples_report.tsv": "858763748706a5b0a28149755946d140c121ed3873c0a343aa3ecced8f39c2dd",
+    "representatives.json": "a7330d8f206f6a8cb1780dcfc83c57c18383174396966a3e183fdc5718d87c8d",
+    "plot_command.json": "f24c4cc31fc34442914f260ba7db58d3ec6e9d6e101a1bc40fecf148a7d34403",
+    "pdf_validation.json": "68867b3b74b5d6dc3490f6efb2da55608947c900fb848505af1a81907979fa75",
+    "count_low_linear_command.json": "3f5f134d71f29d7123958b06e63a0876010ef213fda4ba72a7d86f6040587072",
+    "count_low_none_command.json": "6b37edd4fdbe0194147b47f9b5a77b5591931aba294097c1cc15a2683a67fbaf",
+    "validation_roots.tsv": "ee12ec8f59db48111d8913d24d27f81dd2aa91c9470de30728b2bad741842ca2",
+    "root_validation_command.json": "2ce42dbf30f21fbaa04362bd58515fa600cc2100086fe6e1510d227a8d1acbe0",
+    "gate_validation.json": "0a1511b3e4d2cf790c8840a29716719b148f7ee533e6e6faeffe2488e4ae815b",
+    "independent_counts_validation.json": "041911459757b6a5cf5417d7aa29f47e0478b30a974a4ee9f5c46f5743b31a50",
+    "halfheight_validation.json": "b13faede0792160222efba29a41e9d2097a31293cfc1e99ef1432545b6f5cc89",
+    "likelihood_comparison.json": "fd4d14bffb6f5a35463decff84e9b43887dfa899eae6d0dca16b4e021c3afad2",
+    "physics_validation.json": "2ed6806b2ce962fb333c2370ac51f1f76aa438761be19fba9f53318beec8cd91",
+    "report_build.json": "3f9fa27ace25cf07d785ad05f36167744d2d74e662ec01bab02fea07a0c2fc16",
+    "input_provenance.json": "b2464d06be7e1a2f5f8a61ca2263b64bab4f5ec0be687a45ef21b71396ec7233"
+  },
+  "candidateHeaderSha256": "23bc309b7aa81d3841818e08553a9e51bfeeabbcf1490d7ee3ad0fe855b1f0b1"
+}

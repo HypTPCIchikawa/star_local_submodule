@@ -1,0 +1,30 @@
+schemaVersion: 1
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_quality_20261019
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+runtimeWrapper: script/singularity_root_batch.sh
+renderer: tools/nuclear_pid_cutoff/quality_20261019/PlotQualityDiagnostics.C
+rendererDependency: tools/nuclear_pid_cutoff/PlotCutoffSpectra.C
+modelTablesDirectory: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001
+axisTolerance: 0.000000001
+executionTimeoutSeconds: 1200
+modelsPerSpecies: 4
+pagesPerRigidity: 4
+focusSigma: 3.5
+focusMinimumWidth: 4.0
+focusSpecies:
+  d: [d, t]
+  t: [t]
+  he3: [he3, he4]
+  he4: [he3, he4]
+representativeRigidity:
+  # Include the actual veto interval and the neighboring 0.05-R intervals,
+  # not only neighboring 0.01-R slices that remain inside the same veto.
+  # d's [1.70,2.00) reaches the TPC/TOF boundary: no same-sample right neighbor.
+  d: [1.425, 1.475, 1.525, 1.675, 1.725, 1.875, 1.975]
+  t: [1.325, 1.375, 1.425]
+  he4: [0.825, 0.875, 0.925, 0.975, 1.725, 1.775, 1.825]
+plots:
+  dedxMin: 0.0
+  dedxMax: 120.0
+  displayDedxRebinFactor: 1
+  logMinimum: 0.1

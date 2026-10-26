@@ -1,0 +1,140 @@
+{
+  "input": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+    "size": 10522646853,
+    "mtime_ns": 1790979373044137604,
+    "inode": 82490341
+  },
+  "energy": "3p85",
+  "config_hashes": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "2b6568222b29125dbcee80b824fa3f2e57fa16b2fc0a1e9233fdf7ef477ff173",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/maker/maker_anaFemtoLambda_4He_KFParticle.yaml": "5be461632185c24547391faa69faa834b7207dca04e44c75003f7e1402d194d3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/kfparticle_summary/mass_half_settings.yaml": "eba363e1738b400f911389aa3641a9ad56b3c0452843fb0b1dea1168f37c43a0",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/kfparticle_summary/summary_settings.yaml": "b6ccfed287aa28871c85affba9e9a498e131766063e7e46625a48ca191a25f02"
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "settings": {
+    "summary_settings": "summary_settings.yaml",
+    "plot_x_max": 0.3,
+    "comparison_range": [
+      0.0,
+      0.2
+    ],
+    "closure_absolute_tolerance": 1.0,
+    "closure_relative_tolerance": 1e-06,
+    "groups": [
+      {
+        "id": "all_0_80",
+        "label": "0-80%",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "id": "cent20_80",
+        "label": "20-80%",
+        "min": 0,
+        "max": 5
+      },
+      {
+        "id": "cent0_20",
+        "label": "0-20%",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "id": "cent0_10",
+        "label": "0-10%",
+        "min": 7,
+        "max": 8
+      },
+      {
+        "id": "cent10_20",
+        "label": "10-20%",
+        "min": 6,
+        "max": 6
+      },
+      {
+        "id": "cent20_60",
+        "label": "20-60%",
+        "min": 2,
+        "max": 5
+      }
+    ]
+  },
+  "base": {
+    "mass_fit": {
+      "range": [
+        1.08,
+        1.15
+      ],
+      "mean_limits": [
+        1.11,
+        1.12
+      ],
+      "sigma_limits": [
+        0.001,
+        0.008
+      ],
+      "sigma_initial": 0.003,
+      "minimum_entries": 10,
+      "minimum_covariance_status": 2
+    },
+    "rebin_group": 4,
+    "rebin_fine": 4,
+    "plot_x_range": [
+      0.0,
+      0.3
+    ],
+    "purity_rebin": 10,
+    "normalization": [
+      0.3,
+      0.4
+    ],
+    "sliding_half_width": 2,
+    "ll_fit": {
+      "range": [
+        0.0,
+        0.4
+      ],
+      "radius_limits": [
+        0.1,
+        6.0
+      ],
+      "radius_initial": 3.0,
+      "normalization_initial": 1.0,
+      "fixed_a0": 4.01,
+      "fixed_reff": 1.84
+    },
+    "group_sets": [
+      [
+        {
+          "label": "20-80%",
+          "min": 0,
+          "max": 5
+        },
+        {
+          "label": "0-20%",
+          "min": 6,
+          "max": 8
+        }
+      ],
+      [
+        {
+          "label": "0-10%",
+          "min": 7,
+          "max": 8
+        },
+        {
+          "label": "10-20%",
+          "min": 6,
+          "max": 6
+        },
+        {
+          "label": "20-60%",
+          "min": 2,
+          "max": 5
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "seconds": 27.356725692749023,
+  "historicalSource": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_exponential_mean_plus_sens001",
+  "historicalSourceSha256": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_exponential_mean_plus_sens001/source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_exponential_mean_plus_sens001/source/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_exponential_mean_plus_sens001/source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_exponential_mean_plus_sens001/source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c"
+  },
+  "reproductionChecks": [],
+  "products": {
+    "cutoff_fits.json": "8a5cecd6f7d14a6200b64a58aa3aa3e7298db01afbecca873bbc281ba8f329f5",
+    "cutoff_fits.root": "4aa09564e8a2e0713cfff43f013e329d76cf1b418ffbee13d48195ec9ddf33e1",
+    "gates.tsv": "76c21fb15f3da503612eb8ab2bf4f656c8bd7b578a5f7c1aa260378349ad76e4",
+    "shapes.tsv": "46290a02414a8f6062ca4d6d30b27c689e55ddc21f6a2a085aeb0c902c102bf4",
+    "settings.tsv": "4167f732cf296632d163031e6daac849d768653079eab190b1e43e9f24086122"
+  }
+}

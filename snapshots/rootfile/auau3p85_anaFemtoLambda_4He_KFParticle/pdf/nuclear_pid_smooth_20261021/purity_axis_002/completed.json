@@ -1,0 +1,57 @@
+{
+  "executionComplete": true,
+  "displayOnly": true,
+  "noRefit": true,
+  "numericalResultsAndOriginalProductsUnchanged": true,
+  "page2PixelIdentical": true,
+  "pages": 2,
+  "axes": [
+    {
+      "species": "d",
+      "lo": 0.4,
+      "hi": 5.0,
+      "plottedBinEdges": [
+        0.4,
+        4.75
+      ]
+    },
+    {
+      "species": "t",
+      "lo": 0.75,
+      "hi": 4.9,
+      "plottedBinEdges": [
+        0.8,
+        4.8500000000000005
+      ]
+    },
+    {
+      "species": "he3",
+      "lo": 0.7,
+      "hi": 3.5999999999999996,
+      "plottedBinEdges": [
+        0.75,
+        3.55
+      ]
+    },
+    {
+      "species": "he4",
+      "lo": 0.6,
+      "hi": 3.25,
+      "plottedBinEdges": [
+        0.65,
+        3.2
+      ]
+    }
+  ],
+  "products": {
+    "purity_vs_p_over_q.pdf": "69ba0ce017d717aa644385e075a4356ac975c9bfb132e84162cdacff6b9340eb",
+    "page1.png": "db037e3a011547ad92ff23454056c90ae92b5652d5c4ada51f77b840fc9fd03d",
+    "page2.png": "ad7699361586784a6dfde3c97935c0dafd38a5b6b4709b1a595818380c7cb812",
+    "axes.tsv": "89a63c31e92afdfdb38492f367e3b09fdf578bbf6449937309b14a670b8adff9"
+  },
+  "sourceSha256": {
+    "PlotPurityAxes.C": "5270c944863e5a194794c9f3da07c2b8ee56e2f8e4312bf2d916958b98b52576",
+    "purity_axis_settings.yaml": "381328ebff77154fc6a4027434f37c93205da019826a7fcf98ade748d60dfffe",
+    "render_purity_axes.py": "a345cb3d10ea4461f8137876984970738153494380cf0def1506f3d6183c33de"
+  }
+}

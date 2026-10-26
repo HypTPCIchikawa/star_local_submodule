@@ -1,0 +1,31 @@
+{
+  "phase": "complete",
+  "input_unchanged": true,
+  "pages": {
+    "purity": 1,
+    "fits": 53
+  },
+  "fits": {
+    "quality": 0,
+    "exploratory": 175,
+    "unavailable": 35,
+    "linear": 40,
+    "exponential": 135
+  },
+  "products": {
+    "settings.yaml": "6adc5fc86a4f25328e974d8455f8a1c3a3a7d982fd2ea2002b63b165443c1ad4",
+    "settings.tsv": "9544a7f8a4ed116fc89132bac67bec51cad78f2a3bb8fd3e201386d329e4de82",
+    "context.json": "f01231de156bd99dae19e2c9a58988bad9e8c405dc7db82073206489cf8cbeef",
+    "purity.csv": "ce24fe7f716688e11eb6b66a7192443561f1d59beec0cf22c0aeec82e36d2e45",
+    "he4_fits.root": "6f40a2c5f9ead6e4023b063d6bb9d6f9ab272458a8a350a80023565955d43df2",
+    "purity.json": "4b30fb80d81953bc7b701bfca19142dd89356051c35061d9c7c129de256a6a24",
+    "he4_fits.pdf": "b0c60ad2900ea46fbce1d039bd108fc7aeecbea8fe666b75d5a5ad152089f95e",
+    "he4_purity.pdf": "93e4fa712cb2f776a9456249daf0178c16fcf3f31a63c2a8e87b66c1f33bf301",
+    "he4_purity.png": "05bf0d576a1996a4fbcf1af127a42b2209d0a9ed641e0ec5293f1bad94a75729",
+    "README.md": "8adec37d8956389e93a9e9b1cfbcd72054592b0f548bdf3031f85180da03f7ef",
+    "logs/fit.log": "f506806351c66888194350b7aa778638d4142c52879e45777f65f2370dc83052",
+    "source/tools/he4_purity/FitHe4Purity.C": "9476ff6aac34d4590a666dfeed61333975a91914bfadf33209b61a730792ad75",
+    "source/tools/he4_purity/run_purity.py": "71512afe2d0c7d429b497f1c7071d114370f01fcfa714e5bc5aebadb4be8c18a",
+    "source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  }
+}

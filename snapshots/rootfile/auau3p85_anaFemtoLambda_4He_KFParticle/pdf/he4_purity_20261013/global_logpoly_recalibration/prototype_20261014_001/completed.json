@@ -1,0 +1,14 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "products": {
+    "global_fit.json": "d6f59e4e8fc43f60cb9122f498db82ec3908b4909755497c134db1d18677f94a",
+    "input_slices.root": "0b4429c40c051a1a106a25a194cf5427a681ee8fcc47d46bf1107b1fa3813faa",
+    "settings.yaml": "93dfb3ed9ce56a7d659a431505bfae7b138522494a2e6fd486eb6f04eb141f92",
+    "settings.tsv": "e9dc3e6e3daf3864a60d4f307763818b563a9fa44abf57eb18022f72d1383d2c",
+    "seeds.tsv": "b075d166dabf6a773a883fef6cb4aac03c6fa9a8d4f30195c763de39d626c49b"
+  },
+  "completedJst": "2026-10-14T11:25:57.755370+09:00",
+  "note": "Execution completion is NOT fit convergence, identifiable isotope assignment or validated PID."
+}

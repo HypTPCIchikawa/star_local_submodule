@@ -1,0 +1,11 @@
+# Postprocessing only: sum cent9=6,7,8 before normalization.
+summary_settings: summary_settings.yaml
+cent9_min: 6
+cent9_max: 8
+centrality_label: '0-20%'
+report_stem: cf_mt_cent0_20_constant_vs_method5
+mass_region: signal
+n_slices: 4
+split_kstar: [0.0, 0.3]
+split_strategy: nearest_se_signal_quantiles_at_saved_mt_edges
+mt_extent: occupied_regular_bins_all_channels

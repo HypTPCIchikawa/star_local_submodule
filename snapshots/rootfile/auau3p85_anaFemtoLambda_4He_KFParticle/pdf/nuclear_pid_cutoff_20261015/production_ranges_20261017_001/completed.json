@@ -1,0 +1,15 @@
+{
+  "executionComplete": true,
+  "protectedInputsVerified": true,
+  "protectedInputs": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/inputs/summary.tsv": "9ab3813d2fa0dd9f270fc7e8df0a78ec8020389b89a62399d88f37060a0047c4",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_final_001/summary.tsv": "b12791ffcbe6790f8de2f69914add8394afb322ba099465671e6869f443ff253",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_final_001/completed.json": "baf9f91ab8c1d5ebeab06330edac904eb5b3d0112ae952bf813172e3c905d9d5",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/adopted_ranges_001/adopted_ranges.tsv": "2bdf9900408191a7b55243379946a8639d9b7793642216cf12a8704e44f80551"
+  },
+  "products": {
+    "accepted_ranges.tsv": "4e8f6dbdca3407f6ba94a8b72517d7144b724645aac1c0a4a546e9adfe09c871",
+    "bin_decisions.tsv": "19ca29ef1a0d18fe5b805e7342dda80167a700e01a18ca3e31bc4d62e6f54e71",
+    "production_domains.json": "025c961601bb735771d301dcf11157070ef3a7d696250349b1b637741c16f0af"
+  }
+}

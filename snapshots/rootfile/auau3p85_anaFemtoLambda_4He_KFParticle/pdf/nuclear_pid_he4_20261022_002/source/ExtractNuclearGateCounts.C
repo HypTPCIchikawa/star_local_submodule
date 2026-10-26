@@ -1,0 +1,22 @@
+// Fit-independent RAW gate counts. No fit output is read and no PID is changed.
+void ExtractNuclearGateCounts(const char*,const char*,const char*,const char*,const char*);
+#ifndef __CINT__
+#include "FitLocalNuclearCutoff.C"
+#endif
+void ExtractNuclearGateCounts(const char* cachePath,const char* shapePath,const char* gatePath,const char* settingsPath,const char* outputTsv){
+#ifndef __CINT__
+  using namespace NuclearLocalCutoff;
+  try{Settings cfg=NuclearFit::ReadSettings(settingsPath);double tolerance=Number(cfg,"axisTolerance"),nsigma=Number(cfg,"maxNSigma"),varianceTolerance=Number(cfg,"countVarianceRelativeTolerance");Require(tolerance>0&&nsigma>0&&varianceTolerance>0,"Invalid explicit gate integration settings");Require(gSystem->AccessPathName(outputTsv),"Existing independent gate table will not be replaced");std::vector<Slice> slices=ReadInputs(shapePath,gatePath,tolerance);
+    TFile cache(cachePath,"READ");Require(!cache.IsZombie()&&!cache.TestBit(TFile::kRecovered),"Cannot open intact native cache");TH2* input=dynamic_cast<TH2*>(cache.Get("ALL"));Require(input!=0,"Missing unselected ALL cache histogram");const double axisMin=input->GetYaxis()->GetXmin(),axisMax=input->GetYaxis()->GetXmax();
+    std::ofstream out(outputTsv);Require(bool(out),"Cannot create independent gate table");out<<std::setprecision(17);const std::string header="index\trBin\tlo\thi\tspecies\trawGateCount\trawGateCountLowerFullBins\trawGateCountUpperTouchingBins";out<<header<<'\n';std::set<int> used;unsigned rows=0;
+    for(unsigned i=0;i<slices.size();++i){const Slice& slice=slices[i];Require(used.insert(slice.rBin).second&&slice.rBin<=input->GetNbinsX()&&std::fabs(input->GetXaxis()->GetBinLowEdge(slice.rBin)-slice.lo)<tolerance&&std::fabs(input->GetXaxis()->GetBinUpEdge(slice.rBin)-slice.hi)<tolerance&&std::fabs(slice.hi-slice.lo-Number(cfg,"nativeRigidityBinWidth"))<tolerance,"Independent count geometry is not native R bin");
+      for(int b=0;b<=input->GetNbinsY()+1;++b){double n=input->GetBinContent(slice.rBin,b),v=std::pow(input->GetBinError(slice.rBin,b),2);Require(Finite(n)&&n>=0&&Finite(v)&&std::fabs(v-n)<=varianceTolerance*std::max(1.,n),"ALL native count/error/flow differs from cache convention");if(b>=1&&b<=input->GetNbinsY())Require(std::fabs(input->GetYaxis()->GetBinWidth(b)-Number(cfg,"nativeDedxBinWidth"))<tolerance,"Unexpected native dEdx bin");}
+      for(int target=0;target<4;++target){std::vector<Regions> regions(3);for(int q=0;q<3;++q){std::vector<Choice> choices(4);for(int s=0;s<4;++s)choices[s]=slice.rows[4*q+s].gate;regions[q]=SelectionRegions(choices,target,nsigma,axisMin,axisMax);}double count=0,lower=0,upper=0;
+        for(int b=1;b<=input->GetNbinsY();++b){double fraction=0,full=0,touch=0,lo=input->GetYaxis()->GetBinLowEdge(b),hi=input->GetYaxis()->GetBinUpEdge(b);for(int q=0;q<3;++q){double weight=slice.rows[4*q].weight,overlap=Overlap(regions[q],lo,hi);fraction+=weight*overlap;if(overlap>=1-tolerance)full+=weight;if(overlap>tolerance)touch+=weight;}double n=input->GetBinContent(slice.rBin,b);count+=fraction*n;lower+=full*n;upper+=touch*n;}
+        Require(Finite(count)&&count>=0&&lower<=count+varianceTolerance*std::max(1.,count)&&upper+varianceTolerance*std::max(1.,count)>=count,"Invalid RAW gate count bounds");out<<slice.index<<'\t'<<slice.rBin<<'\t'<<slice.lo<<'\t'<<slice.hi<<'\t'<<Species[target]<<'\t'<<count<<'\t'<<lower<<'\t'<<upper<<'\n';++rows;
+      }
+    }
+    out.close();Require(bool(out),"Independent gate table write failed");std::ifstream readback(outputTsv);std::string line;Require(bool(std::getline(readback,line))&&line==header,"Independent gate header readback failed");unsigned restored=0;while(std::getline(readback,line)){std::istringstream row(line);int index,rbin;double lo,hi,count,lower,upper;std::string species,extra;Require(bool(row>>index>>rbin>>lo>>hi>>species>>count>>lower>>upper)&&!(row>>extra)&&SpeciesIndex(species)>=0&&Finite(count)&&count>=0&&lower<=count+varianceTolerance*std::max(1.,count)&&upper+varianceTolerance*std::max(1.,count)>=count,"Independent gate row readback failed");++restored;}Require(readback.eof()&&restored==rows&&rows==4*slices.size(),"Independent gate readback incomplete");cache.Close();std::cout<<"NUCLEAR_GATE_COUNTS_COMPLETE rows="<<rows<<" policy=fractional_native_dEdx_overlap_uniform_R_GL3_no_fit_dependence"<<std::endl;
+  }catch(const std::exception& e){std::cerr<<"ExtractNuclearGateCounts: "<<e.what()<<std::endl;gSystem->Exit(2);}
+#endif
+}

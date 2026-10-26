@@ -1,0 +1,103 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "response": "gaussian",
+  "background": "none",
+  "nativeFits": 1579,
+  "aggregateBins": 364,
+  "supportedBins": 175,
+  "meanFixedIntervals": 9,
+  "fixedMeansExactlyEqualLinear": true,
+  "meanFixedErrorMeaning": "zero conditional error; calibration uncertainty excluded",
+  "linearSeedsChecked": 1579,
+  "linearSeedsUnavailable": 9,
+  "he3HalfHeightChecks": 417,
+  "rootReadbackZeroSmoothAndRawInvariant": true,
+  "allPdfPagesReadback": true,
+  "uniqueFitPages": 1579,
+  "protectedInputsUnchanged": true,
+  "protectedFiles": 130,
+  "sourceSha256": {
+    "NuclearFitCommon.h": "8947cf5607e0269839b6bc04daaaf53b71a682fc4b172dcdff35f3aca5158569",
+    "NuclearLognormalFitCommon.h": "af84a3e40dac4bedcabc4320dd278fa20990d14775b0dd429d6166bfe880ee5f",
+    "FitLocalNuclearCutoff.C": "6ebf922f7968eb312c0898dfe12f7690346fd406d2651c0ec94021b7fcf86d54",
+    "FitHighRigidity.C": "7c0d222b1c9d59985e283b7c13bb53064b2d63f6399f958bf8a6b310d4faf39d",
+    "settings.yaml": "8ce8c8ca4a715206456137fd7b3a1fe5fb704146249c7b558ec7e7a8a5d6e235",
+    "run.py": "9e0df3793817ea2613123e913254fee10febda965769da3e0594b1e0b25ef9e9",
+    "PlotGaussianOnly.C": "90f37403fc2acf2a50199fba5bf215d15870c6c714b8d4fa4706ee7102a6df6a",
+    "analyze.py": "f7434984fd4a29b2c77155872b2796df8a1b547df739aaacd93cc0eba66f97f9",
+    "render.py": "89e842728183c8c238489d354da980dc1c8a91e3514966e9a17dffaebe0a98a3",
+    "ValidateGaussianOnly.C": "17a20f8d71f92082a6ae44300a67ebccc7129a79fa44102ff0eb30d1727184b1",
+    "finish.py": "47c3530f8a4112832d219463449b6e4a8a4777e5c371c6ae505039d5a36b908b"
+  },
+  "products": {
+    "fit_high_d.pdf": {
+      "pages": 300,
+      "sha256": "36d24efcb3ef4ec9001c66dfb2a4e98bd332ae918cde1869672c33079c32ba45"
+    },
+    "fit_high_he3.pdf": {
+      "pages": 300,
+      "sha256": "8e18ea845e305ffbcb9cb8633b9e0c6d9acc774a8be6654352292e3fa3c4a96a"
+    },
+    "fit_high_he4.pdf": {
+      "pages": 60,
+      "sha256": "8a9080a831e7e427941aa232a60f594ece503ebb3e8e2e32bd5def1beb8bb8d0"
+    },
+    "fit_high_t.pdf": {
+      "pages": 300,
+      "sha256": "e654df67da84b116395fd1ac836761a359decc27be08bf7e273a988644c14fb5"
+    },
+    "fit_low_d.pdf": {
+      "pages": 160,
+      "sha256": "d19f579f87d6e8f669214fb2fe89f210d9d3096d20e3d94ba87e109148c27903"
+    },
+    "fit_low_he3.pdf": {
+      "pages": 160,
+      "sha256": "b521103b33319cb4cc9c4e4f874dcdcde8ac29dfbf83d6272fae8228a6130523"
+    },
+    "fit_low_he4.pdf": {
+      "pages": 139,
+      "sha256": "640897df855fa08538c6f95763c373a9f64120bd43e2595a8e20ea04039c4e23"
+    },
+    "fit_low_t.pdf": {
+      "pages": 160,
+      "sha256": "6197236ce74d0b8b1a2d3765dfc268d813fe22665a77e98cff9f95b561c7d37b"
+    },
+    "purity_vs_p_over_q.pdf": {
+      "pages": 2,
+      "sha256": "3b09618565baa3fe338d41416d82ab1e0ac1907190e333515f2c650e12ab0380"
+    },
+    "gaussian_all_intervals.pdf": {
+      "pages": 1579,
+      "sha256": "f303b37ee9b6227b7e10359067abd5274fa4592380653863658365b843cb7259"
+    },
+    "fit_gaussian_he4_all.pdf": {
+      "pages": 199,
+      "sha256": "fa8a4d10b44b87540a46a0def6f9e487270db22bfb7d0ee9bb0af1abccd24344"
+    }
+  },
+  "numericalProductsSha256": {
+    "protected.json": "e97489661088d64ab93ef75ade1e984e65391885e144c9438d120b102685fb26",
+    "jobs.json": "bcfd97196e9b12199fa475358c200340fbe86bafa56387ef44907ab3eaa1b663",
+    "settings.yaml": "8ce8c8ca4a715206456137fd7b3a1fe5fb704146249c7b558ec7e7a8a5d6e235",
+    "summary.json": "fe2622b952150f1a0588a317181b2d3a574f23e2be7bba785c75a19108ec36be",
+    "native.json": "fe0253e3925681e00554abe140f0f220bef10d2b0a2cede525f07cd65b5d1358",
+    "examples.json": "9ba35c15829bee7bce2eaebd48cbee628b54e7c09de63d882ce8cf9f1b992bc5",
+    "purity.tsv": "53dd75a803776f29f3839961856f476e0b679ccee35d04394450aee93e0f9c1d",
+    "axes.tsv": "cfe72f5beb135b31a7e3886eef613f67f9f14f27ab5a0998633927984fb04b10",
+    "native.tsv": "c4cfe8f42b630537de483bb191d5a838ac4e46b56fbeb829462f1c78a1908ca9",
+    "examples.tsv": "6e8c59f937f569bb115f8c639a323451d6a34388b26496adff41e79931737c1b",
+    "coefficients.json": "035b682c52a4445a7b23924eae478419340259e1b63cefa8957069255e6b0ba8",
+    "curves.tsv": "19e61492425f8f9a202f9adeb4cfe7622b1577856d9aef35a84df7229647de8d",
+    "pid_selection.yaml": "f8b309bcc3e0c594bd3b8e584e65edf8b3c9c978e3c770fdb11bdc397ee86bf5",
+    "validation_roots.tsv": "f5ae919340e0a5ca216e9effebe61dbcd96e05a7b846589a8a2dbf660b18e8be",
+    "preview_images.json": "401a858e708f42b12927699eb6f851b6bdc13fca99e775223059006c1725bd04",
+    "comparison.json": "881d7f0121632f8e1f0cace3450f3c6fbc3060e53b399973856d51ac806f6263",
+    "fixed_center_validation.json": "20a4f01b16b9b39b95b54afdd0782fdda7ab68d45a7be7accd0c04e7b5793fc4",
+    "halfheight_validation.json": "41433ccb49d78241b18f5c2f8b1ac0494f0ffe8819000fb85fa01e35e1d05acd",
+    "warm_seed_validation.json": "2a8a825f349cf094af3747bbfd7beef40fc76498baf2cf3cb7cd7173c20377ca",
+    "plot_commands.json": "9732ebbcc97055cfeb7dade11859e3c962d7d16608945cdf2f99ccd68ff4f715",
+    "pdf_validation.json": "a0a8b0804293bc344801c4e9e7dff198497dfc62efaf386014de3643a6101c87",
+    "merge_commands.json": "f7295e126b0c5afacdc4357664daee50758d473dd6110e041372b6a84e4009aa"
+  }
+}

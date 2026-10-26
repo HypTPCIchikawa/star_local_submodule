@@ -1,0 +1,130 @@
+schemaVersion: 1
+productionEnabled: false
+adoptionAllowed: false
+purityDefinition: S/(S+B)
+minimumPurity: 0.5
+species:
+  d:
+    productionEnabled: false
+    adoptionAllowed: false
+    assessedPoints: 0
+    assessedLowRPoints: 0
+    assessedHighRPoints: 0
+    candidateLowCoverageStart: null
+    candidateHighCoverageEnd: null
+    lowPurityCrossingObserved: false
+    candidateLowRCutoff: null
+    finalHighRLimit: null
+    qualityAcceptedSampledRuns: []
+    isolatedLowPurityPoints: []
+    reason: No production cutoff is inferred across unassessed fit intervals or unsupported
+      curve domains.
+    countThresholdSensitivity:
+      '20':
+        assessedPoints: 0
+        highestAssessedR: null
+        lowRPoints: 0
+      '50':
+        assessedPoints: 0
+        highestAssessedR: null
+        lowRPoints: 0
+      '100':
+        assessedPoints: 0
+        highestAssessedR: null
+        lowRPoints: 0
+  t:
+    productionEnabled: false
+    adoptionAllowed: false
+    assessedPoints: 4
+    assessedLowRPoints: 0
+    assessedHighRPoints: 4
+    candidateLowCoverageStart: null
+    candidateHighCoverageEnd: 4.66
+    lowPurityCrossingObserved: false
+    candidateLowRCutoff: null
+    finalHighRLimit: null
+    qualityAcceptedSampledRuns:
+    - mode: TAG_T
+      rMin: 4.5
+      rMax: 4.66
+      sampledPoints: 4
+    isolatedLowPurityPoints: []
+    reason: No production cutoff is inferred across unassessed fit intervals or unsupported
+      curve domains.
+    countThresholdSensitivity:
+      '20':
+        assessedPoints: 4
+        highestAssessedR: 4.655
+        lowRPoints: 0
+      '50':
+        assessedPoints: 4
+        highestAssessedR: 4.655
+        lowRPoints: 0
+      '100':
+        assessedPoints: 4
+        highestAssessedR: 4.655
+        lowRPoints: 0
+  he3:
+    productionEnabled: false
+    adoptionAllowed: false
+    assessedPoints: 24
+    assessedLowRPoints: 0
+    assessedHighRPoints: 24
+    candidateLowCoverageStart: null
+    candidateHighCoverageEnd: 3.56
+    lowPurityCrossingObserved: false
+    candidateLowRCutoff: null
+    finalHighRLimit: null
+    qualityAcceptedSampledRuns:
+    - mode: TAG_HE3
+      rMin: 2.45
+      rMax: 3.56
+      sampledPoints: 23
+    isolatedLowPurityPoints: []
+    reason: No production cutoff is inferred across unassessed fit intervals or unsupported
+      curve domains.
+    countThresholdSensitivity:
+      '20':
+        assessedPoints: 24
+        highestAssessedR: 3.6550000000000002
+        lowRPoints: 0
+      '50':
+        assessedPoints: 24
+        highestAssessedR: 3.6550000000000002
+        lowRPoints: 0
+      '100':
+        assessedPoints: 24
+        highestAssessedR: 3.6550000000000002
+        lowRPoints: 0
+  he4:
+    productionEnabled: false
+    adoptionAllowed: false
+    assessedPoints: 43
+    assessedLowRPoints: 0
+    assessedHighRPoints: 43
+    candidateLowCoverageStart: null
+    candidateHighCoverageEnd: 4.26
+    lowPurityCrossingObserved: false
+    candidateLowRCutoff: null
+    finalHighRLimit: null
+    qualityAcceptedSampledRuns:
+    - mode: TAG_D
+      rMin: 2.15
+      rMax: 4.26
+      sampledPoints: 43
+    isolatedLowPurityPoints: []
+    reason: No production cutoff is inferred across unassessed fit intervals or unsupported
+      curve domains.
+    countThresholdSensitivity:
+      '20':
+        assessedPoints: 43
+        highestAssessedR: 4.255
+        lowRPoints: 0
+      '50':
+        assessedPoints: 43
+        highestAssessedR: 4.255
+        lowRPoints: 0
+      '100':
+        assessedPoints: 43
+        highestAssessedR: 4.255
+        lowRPoints: 0

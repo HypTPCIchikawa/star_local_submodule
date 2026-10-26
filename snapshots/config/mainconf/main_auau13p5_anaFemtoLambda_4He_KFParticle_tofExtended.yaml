@@ -1,0 +1,10 @@
+# 2020 P24iy; additive He4 high-rigidity TOF profile.
+analysis: analysis/analysis_info_auau13p5_anaFemtoLambda_4He_KFParticle_tofExtended.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau13p5_femtoLambda.yaml
+kf: cuts/kf/kf_auau13p5_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_he4_tofExtended.yaml
+maker: maker/maker_anaFemtoLambda_4He_KFParticle.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_femtoLambda_he4_kf.yaml
+nuclearHist: hist/hist_femtoLambda_he4_nuclear_tofExtended.yaml

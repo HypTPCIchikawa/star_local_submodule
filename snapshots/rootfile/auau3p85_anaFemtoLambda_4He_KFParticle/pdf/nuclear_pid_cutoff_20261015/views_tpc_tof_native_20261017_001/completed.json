@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "executionComplete": true,
+  "presentationOnly": true,
+  "refitted": false,
+  "lowRows": 128,
+  "highRows": 90,
+  "pageCounts": {
+    "purity_tpc_tof_overview.pdf": 3,
+    "purity_tpc_tof_combined.pdf": 6
+  },
+  "protectedInputs": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml": "090183642df74f0a0fc0d01c268b554c27921989fe717d7a5a0468b7218f9f87",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/inputs/summary.tsv": "9ab3813d2fa0dd9f270fc7e8df0a78ec8020389b89a62399d88f37060a0047c4",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/adopted_ranges_001/adopted_ranges.tsv": "2bdf9900408191a7b55243379946a8639d9b7793642216cf12a8704e44f80551",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/purity_cutoff_overview.pdf": "550d2d5e044a05cb635c944de5e5c32a6ce345abd8b2dd182bffb1f0bda51c5e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_001/summary.tsv": "5ef79ec5624084b42448f3187786faa21c7a7613decdeb650e8f60be23804bbf",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_001/completed.json": "ee8baa21c146d55099707e63fe4c85b3dedb36c1b5cdfee3d2797ebce5b05b75",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/input_audit/audit.json": "87a126d2ec8ddd44a557787b7c5ec9fa490ec48175c331186a7ede07e3e9d0e7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/PlotTPCTofPurity.C": "ba728dafe439aff00d9f7c1756b0a3d6981a59f20cce62feb6886510564ff3a8",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/PlotNuclearCutoff.C": "7154c91cd7d190cf75b03777e19265998d5404cc0b2ee52349380ad6bede174a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/tpc_tof_combined_settings.yaml": "e67eec82955f503f3b5071b9cab3209dbade909ecfc9c02605f797ca9c62209c"
+  },
+  "note": "He4 uses D mass2 window by user choice; old 3-4 He4 window is not evaluated",
+  "products": {
+    "combined.tsv": "99e0a42334440299d65c6a6e24e2f0031fba3f8c1beeda08d167b19065cbd98a",
+    "metadata.tsv": "fec0d3aca8460e593c413800e7864048e6d80ab218b7009a1b3dcab54caea913",
+    "low_adopted_ranges.tsv": "2bdf9900408191a7b55243379946a8639d9b7793642216cf12a8704e44f80551",
+    "command.json": "b5de9d330e72707742d846a1e7725ea4d8f851d7cf96379016210e31a9cd9e97",
+    "render.log": "1bf2a8e688a3e1426e3b1b4551841e2954672ea37c4e1204e521c3b3e96fc8c6",
+    "purity_tpc_tof_overview.pdf": "fe014414cfe8580d7d72018dc112ad2532036ace051650c2d91e57c818234d51",
+    "merge.log": "325c3c39bfe6fb81222cfb588991ed4682d9c233e81ba400d5d8ab6402473373",
+    "purity_tpc_tof_combined.pdf": "f01363f1c319e740db10dfa2b108898abd38e254cdef9176c14a7fcaa5cf968a",
+    "purity_tpc_tof_overview.pdf.readback.log": "169b0389f834663056ca997e7c536330c1755832582a2fcf71e447aee2587db9",
+    "purity_tpc_tof_combined.pdf.readback.log": "59b480d4dcaa11b377aac83ee19959c0b75098566d41d7b375e5863ad57aab64",
+    "source/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml": "090183642df74f0a0fc0d01c268b554c27921989fe717d7a5a0468b7218f9f87",
+    "source/PlotTPCTofPurity.C": "ba728dafe439aff00d9f7c1756b0a3d6981a59f20cce62feb6886510564ff3a8",
+    "source/PlotNuclearCutoff.C": "7154c91cd7d190cf75b03777e19265998d5404cc0b2ee52349380ad6bede174a",
+    "source/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "source/tpc_tof_combined_settings.yaml": "e67eec82955f503f3b5071b9cab3209dbade909ecfc9c02605f797ca9c62209c",
+    "source/combine_tpc_tof.py": "8979c77affb6dda123404c1a0ff7777b86f8673c823b5549b7ee1f0e69e0abab",
+    "source/high_completed.json": "ee8baa21c146d55099707e63fe4c85b3dedb36c1b5cdfee3d2797ebce5b05b75",
+    "source/PlotTPCTofPurity_C.d": "1b22c73a163ab118bd09f14ee88b2c541d031f9dd1a17cbbeac7d72e9c225df7",
+    "source/PlotTPCTofPurity_C.so": "6b59813376a4ea3efd687556791aae9fe807adc18c0625bdfbd036aa9db58b3f"
+  }
+}

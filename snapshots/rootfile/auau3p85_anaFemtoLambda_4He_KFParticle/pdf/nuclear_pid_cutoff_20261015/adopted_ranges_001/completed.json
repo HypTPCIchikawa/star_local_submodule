@@ -1,0 +1,14 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "products": {
+    "adopted_ranges.tsv": "2bdf9900408191a7b55243379946a8639d9b7793642216cf12a8704e44f80551",
+    "adopted_selection.tsv": "8c9e9f5e464422e8f83a29dc9a5632b4fa249651fc4b1387b97eb72e22741ca7",
+    "adopted_ranges.json": "e5d9e9951fb8dcbc9cd6f451c76d30435434c378cc669b0a38219e18699d648a",
+    "context.json": "7b237004e7aef1719964f51b5bd0f7230123bf663cf14347e2687cb12c95761f",
+    "source/export_adopted_ranges.py": "a2bf99950ff81742748d2ed170433bc626e5616ab137aff66636bd28bab7dbf9",
+    "source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "source/settings.yaml": "2de5b16ed349272ae03167f11e3a185684fa9c55a4a854a1368a6bf2cf5a30b0"
+  },
+  "derivedOnly": true
+}

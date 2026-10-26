@@ -1,0 +1,33 @@
+{
+  "phase": "complete",
+  "no_refit": true,
+  "inputs_unchanged": true,
+  "pages": {
+    "linear": 53,
+    "physical": 10
+  },
+  "products": {
+    "settings.yaml": "2edffdbe7eb0be9a1f7261467bc3c5b3aeca1a7bdb5ef4b81e9bdf618e84a5b7",
+    "settings.tsv": "3b54f79da8bc9bf573a6c9b1b960f23ef37a9c1269caf9d7d9ffd2aa215aac05",
+    "slices.tsv": "313f87728c9dfb17186237508b268370ac5c01db1e808ee4d29491dd1e674add",
+    "context.json": "c20286abf6cb55f8e37c0a11784b3a4c415e4dbbd488748637ee13ceda01d5c1",
+    "he4_fits_linear.pdf": "1c8de9eaa047225541786b013de39d07eb1edcca1d63df4ff58fa195a85cfad3",
+    "he4_fits_linear_first.png": "623263db8cd9611fce63b10144da2f2ace69117beb84b9adf7598e870e7dba99",
+    "he4_low040_components.pdf": "56a280c5abb2fc066762ee53b254158557b5c9b79e5b8ce7f41a9e4661c2e48e",
+    "he4_dedx_R_405.png": "dc42035392d257c74ed598cf84ae3d567769335dd999df1f08999ca068843513",
+    "he4_dedx_R_415.png": "9c846c8212372a79eaaf625f560232e8186c3ab826f0fff7e97a918b6e4b463a",
+    "he4_dedx_R_425.png": "14dafa875ae4bf35c9a5a267a659e590d13a079f35024ee7f1356958b98afa62",
+    "he4_dedx_R_435.png": "c00f4631a795147006b1f98cc6d0b461ea68102ae37aa2270e32acccb1cb0272",
+    "he4_dedx_R_445.png": "d41a4dbff6907cec964e64198474b9132f33e6ebeb9f05ab61946199c359a101",
+    "he4_dedx_R_455.png": "6f50c43ae13ec67e25a5bb08b88793b1be9eeaa2f4dfc22fb538dc3e2fb7f550",
+    "he4_dedx_R_475.png": "6615b13e9183c658da392f33abff81e97c85ba068418d290a86c0d6c670dd315",
+    "he4_dedx_R_495.png": "62726db5d285f356186bd567f114941f51c7776b66d007c8d0a10fefc05cb01b",
+    "he4_dedx_R_505.png": "352ef221210963c2b2c484bc943b54617a9e5f31f204bf89493887edcd225e74",
+    "he4_dedx_R_555.png": "59f847b514e73f7fca303c10ba44933642a2a3bbcb64175690e479107b024c70",
+    "render_audit.json": "e4d3b9501d1ae152f79f61caa908eabb2d28c03503c9f2df03e96592ef8cd95f",
+    "README.md": "5aad3f8933b901ad719ea10c0b4ba103be0ac1b2f442d9448f89b0b685b55359",
+    "logs/render.log": "67608d75c2968364c92690e8e7cb6cc9ff3bc0c68f70e7ab99f397f0735e18a0",
+    "source/RenderHe4FitViews.C": "d57f421e5218e870ec600f262126a9b3ef4c988f67641b7e38e66b36f2690724",
+    "source/render_fit_views.py": "8dd0c7368c002ec7a96ecc369e28f91515536e94f5d4c9d73aaa4a48c63e5769"
+  }
+}

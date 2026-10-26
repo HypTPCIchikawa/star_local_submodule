@@ -1,0 +1,41 @@
+# Validation profile. 2021 P24iy only; do not substitute another production.
+starTag:
+  triggerSets: "production_3p85GeV_fixedTarget_2021"
+  stream: "st_physics"
+  collision: "auau3p85"
+  year: "year2021"
+  productionTag: "P24iy"
+  libraryTag: "SL24y"
+  filetype: "daq_reco_picoDst"
+  filenameFilter: "st_physics"
+  filenameNotFilter: "adc"
+  storage: "local"
+dataset:
+  collisionSystem: "Au+Au"
+  allPicoDstList: ""
+  runRange: {min: 22000000, max: 22999999}
+  goodRunList: ""
+  dataQuality: "production"
+  dataFormat: "picoDst"
+analysis:
+  anaName: &anaName "auau3p85_anaFemtoLambda_4He_KFParticle_allNucleiTof20261015"
+  name: *anaName
+  mode: "fxtmult"
+  type: "femto"
+  targetParticle: "Lambda-he4"
+  decayChannel: "p+pi-"
+  workDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer"
+  logDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/log/auau3p85_anaFemtoLambda_4He_KFParticle_allNucleiTof20261015"
+  errDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/err/auau3p85_anaFemtoLambda_4He_KFParticle_allNucleiTof20261015"
+  baseRunMacro: "run_anaFemtoLambda_4He"
+  baseAnaMacro: "anaFemtoLambda_4He"
+  jobName: *anaName
+  scratchSubdir: *anaName
+  outputFileStem: *anaName
+  nFiles: "all"
+  filesPerJob: 5
+  maxEvents: -1
+analyst:
+  name: "Yudai Ichikawa"
+  institute: "Tohoku University"
+  email: "yudai.ichikawa.d3@tohoku.ac.jp"

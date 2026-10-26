@@ -1,0 +1,38 @@
+schemaVersion: 1
+histogram: true/hDedxP
+selectedHistogram: true/hDedxP_4He
+rigidityMin: 0.4
+rigidityMax: 2.5
+rigidityStep: 0.01
+gateNSigma: 2.0
+fitNSigmaMin: -7.0
+fitNSigmaMax: 4.0
+minimumFitCounts: 1000
+minimumGateCounts: 100
+signalMeanShiftMax: 0.8
+signalSigmaMin: 0.35
+signalSigmaMax: 1.8
+neighborMeanShiftMax: 0.8
+neighborSigmaFactorMin: 0.35
+neighborSigmaFactorMax: 1.8
+fitAmplitudeLimitFactor: 20.0
+exponentialSlopeMin: -3.0
+exponentialSlopeMax: 3.0
+maximumChi2Ndf: 5.0
+maximumRelativePurityError: 0.2
+models: [linear, exponential]
+fitPanelsPerPage: 4
+plotLogY: true
+samples:
+  3p85:
+    mainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+    input: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root
+    sourceSummary: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json
+    label: 'Au+Au FXT 3.85 GeV | 2021 P24iy | inclusive accepted events'
+    output: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013
+  13p5:
+    mainconf: config/mainconf/main_auau13p5_anaFemtoLambda_4He_KFParticle.yaml
+    input: rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/auau13p5_anaFemtoLambda_4He_KFParticle_2020P24iy_partial_merge.root
+    sourceSummary: rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/run_state.json
+    label: 'Au+Au FXT: 13.5 GeV beam energy | 2020 P24iy | inclusive accepted events'
+    output: rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013

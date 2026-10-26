@@ -1,0 +1,205 @@
+{
+  "productionEnabled": false,
+  "coefficientSource": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/coefficients.json",
+  "coefficients": {
+    "mean": [
+      [
+        10.2875,
+        -36.6639,
+        67.63,
+        -45.2483
+      ],
+      [
+        19.2177,
+        -70.3198,
+        113.876,
+        -67.0591
+      ],
+      [
+        28.93669242891599,
+        -70.35306933637317,
+        110.50893146230636,
+        -63.60221527494896
+      ],
+      [
+        40.04450527514576,
+        -103.72600015975421,
+        138.34035873106743,
+        -63.6019056005338
+      ]
+    ],
+    "sigma": [
+      [
+        0.771189,
+        -2.63609,
+        2.8044,
+        0.0
+      ],
+      [
+        1.40996,
+        -4.97147,
+        4.97608,
+        0.0
+      ],
+      [
+        1.5938285093833362,
+        -3.930296590528803,
+        3.5788444267664077,
+        0.0
+      ],
+      [
+        2.219055179853265,
+        -7.218009637235325,
+        8.814438245791083,
+        0.0
+      ]
+    ],
+    "domain": [
+      [
+        0.2,
+        6.0
+      ],
+      [
+        0.2,
+        6.0
+      ],
+      [
+        0.4,
+        5.0
+      ],
+      [
+        0.4,
+        5.0
+      ]
+    ]
+  },
+  "strictMinimumRigidityGeVcm": {
+    "he4": 0.61
+  },
+  "tofMass2": {
+    "d": [
+      3.268773,
+      3.693147
+    ],
+    "t": [
+      7.2564275,
+      8.2816925
+    ],
+    "he3": [
+      1.78285,
+      2.06485
+    ],
+    "he4": [
+      3.268773,
+      3.693147
+    ]
+  },
+  "responseCalibration": {
+    "schemaVersion": 1,
+    "productionEnabled": false,
+    "outputDirectory": "he4_r061_001",
+    "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "minimumRExclusive": 0.61,
+    "tofThreshold": 2.0,
+    "nativeRigidityBinWidth": 0.01,
+    "aggregateWidth": 0.05,
+    "lowPeakAdjustmentMaxR": 0.7,
+    "userPeakAnchors": [
+      {
+        "r": 0.61,
+        "he3": 51.0,
+        "he4": 67.0
+      },
+      {
+        "r": 0.64,
+        "he3": 49.0,
+        "he4": 65.0
+      }
+    ],
+    "anchorsPolicy": "User-measured He3 peaks set the low-R nuisance reference mean; He3 width and He4 mean/width fitted to ALL. Approximate calibration, not an independent validation.",
+    "nuisanceHe3FreeMean": false,
+    "nuisanceHe3FreeSigma": true,
+    "initialHe3Width": "existing ALL he3 free-target fit width",
+    "initialHe4Width": "historical He4 reference width",
+    "fitWindowAlignmentKeVcm": 0.5,
+    "responses": [
+      "gaussian",
+      "lognormal"
+    ],
+    "backgrounds": [
+      "none",
+      "linear",
+      "exponential"
+    ],
+    "workers": 2,
+    "pilotIndices": [
+      21,
+      24,
+      29,
+      40
+    ],
+    "representativeIndices": [
+      21,
+      24,
+      29,
+      40,
+      80,
+      120
+    ],
+    "peakResponsePolicy": "Gaussian/lognormal function forms unchanged; only He3 nuisance mean,width additionally fitted in the explicitly declared low-R interval",
+    "pidGatePolicy": "Historical cubic mean/quadratic width and gate coefficients retained; apply He4 strict R>0.61; peak correction enters fit response and its identity reference.",
+    "fitWindowPolicy": "Low-R lower edge from corrected He3 left half-height in both responses and all GL3 nodes; no narrower than original pre-expansion window. R>=0.70 keeps previous half-height window.",
+    "halfHeightExtraMarginKeVcm": 0.5,
+    "halfHeightWidthPolicy": "maximum of historical nuisance width and ALL He3 free-fit width; all GL3 nodes, both responses",
+    "requireFittedHe3HalfMaximumInside": true,
+    "aggregationOrigin": 0.4,
+    "purityThreshold": 0.5,
+    "nestedDevianceTolerance": 0.01,
+    "displayRebinFactor": 5,
+    "axisPaddingGeVcm": 0.05,
+    "detailRMax": 0.85,
+    "peakPlotRMax": 0.8
+  },
+  "purityEstimation": {
+    "schemaVersion": 1,
+    "productionEnabled": false,
+    "outputDirectory": "gaussian_only_001",
+    "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "species": [
+      "d",
+      "t",
+      "he3",
+      "he4"
+    ],
+    "response": "gaussian",
+    "background": "none",
+    "workers": 2,
+    "minimumHe4RExclusive": 0.61,
+    "tofThreshold": 2.0,
+    "maximumR": 5.0,
+    "aggregateOrigin": 0.4,
+    "aggregateWidth": 0.05,
+    "purityThreshold": 0.5,
+    "fixedTargetMeanSpecies": "he4",
+    "fixedTargetMeanMinR": 0.61,
+    "fixedTargetMeanMaxR": 0.7,
+    "warmStartPolicy": "All Gaussian centers, widths and window yields from the corresponding Gaussian+linear fit; preserve original identity reference and fixed nuisance shapes",
+    "fixedMeanPolicy": "He4 target center fixed to Gaussian+linear result only for ALL 0.61<R<0.70; width and all nuclear yields remain free; fixed-center error 0 is conditional, excludes calibration uncertainty",
+    "displayRebinFactor": 5,
+    "axisPadding": 0.05,
+    "fixedDAxis": [
+      0.4,
+      5.0
+    ],
+    "representativeR": [
+      0.615,
+      0.645,
+      0.805,
+      1.205,
+      1.605,
+      2.225
+    ],
+    "errorPolicy": "Conditional yield errors, excluding response, fixed-center calibration and model uncertainty",
+    "unavailableLinearSeedPolicy": "If linear fit has no fitted yields, retain its stored historical Gaussian center/width and initialize equal count/4 nuclear yields; preserve failure flags in provenance, never claim fitted seed exists"
+  }
+}

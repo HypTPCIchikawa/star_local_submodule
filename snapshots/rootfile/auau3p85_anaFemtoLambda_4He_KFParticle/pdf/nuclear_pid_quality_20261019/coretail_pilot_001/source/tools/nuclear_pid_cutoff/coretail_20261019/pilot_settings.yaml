@@ -1,0 +1,42 @@
+# Study-only: preserve old native ALL data, local fit windows and frozen TPC gates.
+# No calibration coefficient or production PID is adopted by this pilot.
+schemaVersion: 1
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+runtimeWrapper: script/singularity_root_batch.sh
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_quality_20261019
+cache: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root
+oldRunsBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015
+oldRunPattern: all_{species}_gaussian_{background}_nominal_free001
+backgrounds: [linear, exponential]
+representativeRigidity:
+  d: [1.475]
+  t: [1.375]
+  he4: [0.895, 1.775]
+freePolicies:
+  target_only:
+    d: [d]
+    t: [t]
+    he4: [he4]
+  local_neighbors:
+    d: [d, t]
+    t: [d, t]
+    he4: [he3, he4]
+# Same explicit tail-bearing hypotheses in both free policies; f=0 is Gaussian.
+tailSpecies:
+  d: [d, t]
+  t: [d, t]
+  he4: [he3, he4]
+profiles:
+  gaussian_control: {fraction: 0.0, offsetSeedSigma: 0.0, widthRatio: 1.0}
+  symmetric_tail: {fraction: 0.1, offsetSeedSigma: 0.0, widthRatio: 1.7}
+  positive_tail: {fraction: 0.1, offsetSeedSigma: 0.8, widthRatio: 1.7}
+  negative_tail: {fraction: 0.1, offsetSeedSigma: -0.8, widthRatio: 1.7}
+adapter: tools/nuclear_pid_cutoff/coretail_20261019/FitCoreTailPilot.C
+adapterDependency: tools/nuclear_pid_cutoff/FitLocalNuclearCutoff.C
+engine: tools/nuclear_pid_cutoff/coretail_20261019/NuclearCoreTailFitCommon.h
+engineDependencies:
+  - tools/nuclear_pid_tof/NuclearFitCommon.h
+  - tools/nuclear_pid_tof/NuclearLognormalFitCommon.h
+executionTimeoutSeconds: 1200
+axisTolerance: 0.000000001
+parityRelativeTolerance: 0.00000001

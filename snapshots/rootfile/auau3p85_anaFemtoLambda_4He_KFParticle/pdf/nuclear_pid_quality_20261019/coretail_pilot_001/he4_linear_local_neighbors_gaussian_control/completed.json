@@ -1,0 +1,18 @@
+{
+  "completedJST": "2026-10-19T15:17:31.265346+09:00",
+  "executionComplete": true,
+  "productionEnabled": false,
+  "products": {
+    "RunCoreTailPilot.C": "52f7ca8236a73a8382c3fa5b1cc1e9639f515663f4c489ab74544c82656f9c0f",
+    "command.json": "b564c29cc14b4f5d82add09b08879816617234f0054f2f9d00a811edf034d29a",
+    "cutoff_fits.json": "d9461f67bdc68aa84c1289b842f9410590114bb8f0aad296295c98e267bee8b1",
+    "cutoff_fits.root": "532782140916b9146fce4a4e0d02a33e2fa99d31d12bbcd6aa5c80ae9798f224",
+    "gates.tsv": "574102a1aa70556525fb2f2c54adc4332d1f0e5e6c5fbe004e9beb76f5ce8318",
+    "run.log": "01a480e53aaac4c4551938afbb34706a18556d4e5a6ef8f3c76431e69d9c2de6",
+    "settings.tsv": "bd7ca9f4a16b7ba4a47a6fdb6fd53cefbaa7f13c67c29fc98e6e2b846033bc06",
+    "shapes.tsv": "1fa0b17a199834ace68c6324137b5fdbe6867f69f3e5fdd5681fde7525b88d16"
+  },
+  "protectedInputsUnchanged": true,
+  "rawReadback": true,
+  "referenceParityRequired": false
+}

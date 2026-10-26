@@ -1,0 +1,66 @@
+{
+  "input": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+    "size": 10522646853,
+    "mtime_ns": 1790979373044137604,
+    "device": 48,
+    "inode": 82490341
+  },
+  "settings": {
+    "schemaVersion": 1,
+    "histogram": "true/hDedxP",
+    "selectedHistogram": "true/hDedxP_4He",
+    "rigidityMin": 0.4,
+    "rigidityMax": 2.5,
+    "rigidityStep": 0.01,
+    "gateNSigma": 2.0,
+    "fitNSigmaMin": -7.0,
+    "fitNSigmaMax": 4.0,
+    "minimumFitCounts": 1000,
+    "minimumGateCounts": 100,
+    "signalMeanShiftMax": 0.8,
+    "signalSigmaMin": 0.35,
+    "signalSigmaMax": 1.8,
+    "neighborMeanShiftMax": 0.8,
+    "neighborSigmaFactorMin": 0.35,
+    "neighborSigmaFactorMax": 1.8,
+    "fitAmplitudeLimitFactor": 20.0,
+    "exponentialSlopeMin": -3.0,
+    "exponentialSlopeMax": 3.0,
+    "maximumChi2Ndf": 5.0,
+    "maximumRelativePurityError": 0.2,
+    "models": [
+      "linear",
+      "exponential"
+    ],
+    "fitPanelsPerPage": 4,
+    "plotLogY": true,
+    "samples": {
+      "3p85": {
+        "mainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+        "input": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+        "sourceSummary": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json",
+        "label": "Au+Au FXT 3.85 GeV | 2021 P24iy | inclusive accepted events",
+        "output": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013"
+      },
+      "13p5": {
+        "mainconf": "config/mainconf/main_auau13p5_anaFemtoLambda_4He_KFParticle.yaml",
+        "input": "rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/auau13p5_anaFemtoLambda_4He_KFParticle_2020P24iy_partial_merge.root",
+        "sourceSummary": "rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/run_state.json",
+        "label": "Au+Au 13.5 GeV | 2020 P24iy | inclusive accepted events",
+        "output": "rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013"
+      }
+    }
+  },
+  "sample": "3p85",
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "2b6568222b29125dbcee80b824fa3f2e57fa16b2fc0a1e9233fdf7ef477ff173",
+  "source_summary": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json",
+  "source_summary_sha256": "bd7b80047b0eca894b136ec1ee4cb8b5caa94b039a8e95cab6be7e3504b6776c",
+  "sources": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/source/tools/he4_purity/FitHe4Purity.C": "56b7449760fe3968b69a2a4ad3e787b1d08780418c869802eb7d24adc4e0eca8",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  },
+  "created_jst": "2026-10-13T10:56:02.751560+09:00",
+  "note": "TPC-only charge-inclusive, inclusive centrality; existing ROOT has no joint TOF/best-species axes."
+}

@@ -1,0 +1,43 @@
+# Display-only A4-safe geometry; previous COLZ settings/source snapshots preserved.
+schemaVersion: 1
+executionTimeoutSeconds: 900
+display:
+  schemaVersion: 1
+  expectedRBins: 600
+  expectedDedxBins: 1200
+  nativeRMin: 0.0
+  nativeRMax: 6.0
+  nativeDedxMin: 0.0
+  nativeDedxMax: 120.0
+  dedxDisplayRebin: 5
+  fullRMin: 0.30
+  fullRMax: 2.50
+  lowRMin: 0.30
+  lowRMax: 1.00
+  visibleDedxMin: 0.0
+  visibleDedxMax: 120.0
+  guideNSigma: 2.0
+  curveDisplayStep: 0.0025
+  workingDiscontinuityThresholdKeV: 10.0
+  maximumReferenceChi2Ndf: 10.0
+  axisRelativeTolerance: 0.000000001
+  canvasWidth: 1900
+  canvasHeight: 1150
+  paperWidthCm: 26.0
+  paperHeightCm: 16.0
+  marginLeft: 0.12
+  marginRight: 0.16
+  marginBottom: 0.21
+  marginTop: 0.26
+  axisFont: 42
+  axisMaxDigits: 3
+  axisTitleSize: 0.031
+  axisLabelSize: 0.026
+  xTitleOffset: 1.35
+  yTitleOffset: 1.30
+  zTitleOffset: 1.25
+  headerTextSize: 0.026
+  legendTextSize: 0.020
+  captionTextSize: 0.017
+  markerSize: 0.45
+  logZMinimum: 0.5

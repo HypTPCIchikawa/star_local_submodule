@@ -1,0 +1,177 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "mainFits": 1390,
+  "pilotFits": 48,
+  "diagnosticModelWindowFits": 695,
+  "protectedFilesUnchanged": 80,
+  "allFittedHe3HalfMaximaCovered": true,
+  "sameFitRangeAcrossAllModels": true,
+  "backgroundNestingViolations": 0,
+  "numericalComparisonsUnchangedAboveR": 0.7,
+  "unchangedComparisons": 1300,
+  "maximumRelativeDifference": 0,
+  "otherSpeciesAndHighHe4Exact": true,
+  "allPdfPagesReadback": true,
+  "pdfProducts": {
+    "fit_atlas_gaussian_he4.pdf": {
+      "pages": 139,
+      "sha256": "bf74fef39ff5d99e0bd336c9d669b88d62667c7b99f97f6a67d40d578e73376a"
+    },
+    "fit_atlas_lognormal_he4.pdf": {
+      "pages": 139,
+      "sha256": "e8d5a382f895d8031baa8751473e0f86fd32e936f1c4579abf112b61705af581"
+    },
+    "purity_vs_p_over_q.pdf": {
+      "pages": 2,
+      "sha256": "9431ff619c8d449c08edd344416066a16821f8243f273b99ee6b20314c6cf5dd"
+    },
+    "he4_low_r_detail.pdf": {
+      "pages": 2,
+      "sha256": "fe61028df34dbbe7fc6b8c550cb91c6a7873df03993768159265c873d1264973"
+    },
+    "representative_fits.pdf": {
+      "pages": 12,
+      "sha256": "d6477dfd9a0500ab61c38bea2fd3254d52a7fdda59bda87deff6d7f4dedc2b51"
+    }
+  },
+  "configuration": {
+    "schemaVersion": 1,
+    "productionEnabled": false,
+    "outputDirectory": "he4_r061_001",
+    "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "minimumRExclusive": 0.61,
+    "tofThreshold": 2.0,
+    "nativeRigidityBinWidth": 0.01,
+    "aggregateWidth": 0.05,
+    "lowPeakAdjustmentMaxR": 0.7,
+    "userPeakAnchors": [
+      {
+        "r": 0.61,
+        "he3": 51.0,
+        "he4": 67.0
+      },
+      {
+        "r": 0.64,
+        "he3": 49.0,
+        "he4": 65.0
+      }
+    ],
+    "anchorsPolicy": "User-measured He3 peaks set the low-R nuisance reference mean; He3 width and He4 mean/width fitted to ALL. Approximate calibration, not an independent validation.",
+    "nuisanceHe3FreeMean": false,
+    "nuisanceHe3FreeSigma": true,
+    "initialHe3Width": "existing ALL he3 free-target fit width",
+    "initialHe4Width": "historical He4 reference width",
+    "fitWindowAlignmentKeVcm": 0.5,
+    "responses": [
+      "gaussian",
+      "lognormal"
+    ],
+    "backgrounds": [
+      "none",
+      "linear",
+      "exponential"
+    ],
+    "workers": 2,
+    "pilotIndices": [
+      21,
+      24,
+      29,
+      40
+    ],
+    "representativeIndices": [
+      21,
+      24,
+      29,
+      40,
+      80,
+      120
+    ],
+    "peakResponsePolicy": "Gaussian/lognormal function forms unchanged; only He3 nuisance mean,width additionally fitted in the explicitly declared low-R interval",
+    "pidGatePolicy": "Historical cubic mean/quadratic width and gate coefficients retained; apply He4 strict R>0.61; peak correction enters fit response and its identity reference.",
+    "fitWindowPolicy": "Low-R lower edge from corrected He3 left half-height in both responses and all GL3 nodes; no narrower than original pre-expansion window. R>=0.70 keeps previous half-height window.",
+    "halfHeightExtraMarginKeVcm": 0.5,
+    "halfHeightWidthPolicy": "maximum of historical nuisance width and ALL He3 free-fit width; all GL3 nodes, both responses",
+    "requireFittedHe3HalfMaximumInside": true,
+    "aggregationOrigin": 0.4,
+    "purityThreshold": 0.5,
+    "nestedDevianceTolerance": 0.01,
+    "displayRebinFactor": 5,
+    "axisPaddingGeVcm": 0.05,
+    "detailRMax": 0.85,
+    "peakPlotRMax": 0.8
+  },
+  "sourceSha256": {
+    "final_PlotR061Detail.C": "8c8c5671fc6baf9aa436afb5601b2c5c75b50288f6077e950ebf30652876f2e9",
+    "final_settings.yaml": "0311a6e007d06a7a07daba04bf6e4ac419e71d79af1360764ec376207e70e8a8",
+    "final_run.py": "3817e47d0a44792d4b99e9cf081638c9c4977c1cbb668ca520926a482aa3ae31",
+    "final_analyze.py": "90c9f6dd88507974c5086c74b7007f9c906ad63053d4d685627776fa6f4e2587",
+    "final_finish.py": "160f8d5c63cafbba68ed50ffd769372afbe1989f347d5a16f112ff26bff5260b",
+    "final_ValidateR061.C": "2cd85a80f253782b4e975a1948b7869280ec233e3fe5cf8ca99c6f4753f6ab0e",
+    "final_PlotR061.C": "949c3fc1eb8a164b046cf1a3f13f68043f256678e44bde0de7b33dc834dccab6",
+    "final_PlotR061Purity.C": "a76fde896440c913647f8e347f3e124a7aa4655c01cba11ca1193d69d5530c8b",
+    "final_render.py": "a3300a669eacafa16df8c9d3f55a6201520b046de7b7476b8f970c3150cb8dc4"
+  },
+  "productsSha256": {
+    "protected.json": "b63a8b720470e25dd17cf0551bcab8622e1eef191475d68b299db7033a3ffaee",
+    "source_manifest.json": "8e7f56bd7fe5d5ab9882b11e3985d0ccab70a4bafe076648bc057acd19624e85",
+    "root_validation.log": "62a5caf03da986420c47eefa1e99c6654e5e3e0a7d113ecbf1f2c6e224eaade5",
+    "fit_windows.json": "fae5a58fb612793c853f2f8ee59d917b35c6eb54494ce59645a3c402b3c12acd",
+    "diagnostic_pilot_windows.json": "aed173d4ed124f616c7b92b7353c89d820db9b8c58e5795cc0a478adb2d787ef",
+    "purity_vs_p_over_q.pdf.readback.log": "8f6b3ebdc1c547493be07c5e59cce6dbcf37c2866fba714b59d208da52214ca4",
+    "he4_low_r_detail.pdf.readback.log": "937b256c205d1b8d8396260ee118eb67e0ac4cb73540402417b050bb330fb9ad",
+    "plot_completed.json": "eecbff9e695ec386db46ecf8fbad1067c0c1680d04317251517179ace4d679b9",
+    "summary.json": "d9ecb165ade79773bb926c5a159223814fa04bd43d8a404fa8b95deec4699dc2",
+    "metrics.tsv": "2c154deafefc67aa804d139df85a261f33366e48aaf1754ca67db0dc01b90671",
+    "atlas.tsv": "ac559b818a31bd745a1498ad1a34a488df54004d11f0abaaabf1923383fbd45e",
+    "aggregate.tsv": "0737ec6d0efcb63370053469985b022adfbfb539f4f050b88bab21ddd797ba6d",
+    "candidate_summary.tsv": "c5d32c2c60893e5ca12ef44d3a31564708f2e26105b530f3a1afdf18934bd62a",
+    "he4_native_purity.tsv": "f91ea35205d7e23647660ae66b4c922b6446d9d163e2bae3a8eb58c5f81982a4",
+    "historical_summary.tsv": "5a62d835cf317c16e9da543838a53bab8040db02887a5845a6754e0c4fcc4cab",
+    "original_summary.tsv": "8c30ee27a2b0bf6dbcb6740b4c90e769d32787fe8ae695ed706c35db9fdfdccd",
+    "axes.tsv": "89a63c31e92afdfdb38492f367e3b09fdf578bbf6449937309b14a670b8adff9",
+    "pid_selection.yaml": "ed914d9c268b7864d80cbcd3fd80d7a1b02fe2bcf04b40deb3a8448b75f4fe44",
+    "regression_checks.json": "c6414f3bf1e39692b5dd513e0a6264c3d993a69806708c5f3737212c456f8cad",
+    "detail_settings.tsv": "2a30cb20968c14fe27583910e7e5cde368767e836a47b440b293809fa594360a",
+    "anchors.tsv": "3791741b1a10908885380515e781bbdec592aa94ac9d31f788ace560bc2dc2dd",
+    "PlotR061.log": "232465377d3298cc43579ac2065f2d35b601fd2952d15962b5e65efb702b81c3",
+    "fit_atlas_gaussian_he4.pdf": "bf74fef39ff5d99e0bd336c9d669b88d62667c7b99f97f6a67d40d578e73376a",
+    "fit_atlas_lognormal_he4.pdf": "e8d5a382f895d8031baa8751473e0f86fd32e936f1c4579abf112b61705af581",
+    "PlotR061Purity.log": "1075e3f1ce08120a50bbd7208875b331d48be619e508eb1526c83f485790498b",
+    "purity_vs_p_over_q.pdf": "9431ff619c8d449c08edd344416066a16821f8243f273b99ee6b20314c6cf5dd",
+    "purity_vs_p_over_q_highR.png": "d3465c3fc64f7135e31129181b9285ba3544b9028d25b785046a49be15afb43e",
+    "PlotR061Detail.log": "dcddf6d21eb0ebfd193f0356beb9db3a5092dfc0f61d7e6469de9f8360a26cb4",
+    "he4_low_r_detail.pdf": "fe61028df34dbbe7fc6b8c550cb91c6a7873df03993768159265c873d1264973",
+    "plot_commands.json": "7cd0876a5fb75eb9e1423d075f450d4c80fa15da2ee9189968d6d8c594eab01b",
+    "fit_atlas_gaussian_he4.pdf.readback.log": "8cbd9e6d6b29628476981311c750c05b696bf50bd2699c350f3582d8442ea8e9",
+    "fit_atlas_lognormal_he4.pdf.readback.log": "436906351c841e132732f6cc4bbd623800f6b25fdbb8bdc62653ff64e3e8bec3",
+    "fit_atlas_gaussian_he4.pdf.final_readback.log": "8cbd9e6d6b29628476981311c750c05b696bf50bd2699c350f3582d8442ea8e9",
+    "fit_atlas_lognormal_he4.pdf.final_readback.log": "436906351c841e132732f6cc4bbd623800f6b25fdbb8bdc62653ff64e3e8bec3",
+    "purity_vs_p_over_q.pdf.final_readback.log": "8f6b3ebdc1c547493be07c5e59cce6dbcf37c2866fba714b59d208da52214ca4",
+    "he4_low_r_detail.pdf.final_readback.log": "937b256c205d1b8d8396260ee118eb67e0ac4cb73540402417b050bb330fb9ad",
+    "extract_gaussian_21.log": "56aa49d12a159a638b3d477fda12c770adcfe0ecaf5ce5567e8527ad41d6ab6a",
+    "extract_gaussian_24.log": "16964337b16aaf9c622c7d9f33333e0d61624aa0d8165bcee0f07bf4aeb0837b",
+    "extract_gaussian_29.log": "c683338e7f61a2a66c90e77dd7a322b827c69dd0155c6c06025b7f6482a4f475",
+    "extract_gaussian_40.log": "d99dbd3a6ea2c401a833d66063d6c931bbb62aaa542ee31c453cab442af8ef42",
+    "extract_gaussian_80.log": "43d9bf543abcb6e3307182b1bbe681445181cfa75f9014e16cd6ecd3ccff90cf",
+    "extract_gaussian_120.log": "755cf1e4a20d256205fdf9d9b6aa18498a6018a11c170d06e8c93b3ddccf47ba",
+    "extract_lognormal_21.log": "56aa49d12a159a638b3d477fda12c770adcfe0ecaf5ce5567e8527ad41d6ab6a",
+    "extract_lognormal_24.log": "16964337b16aaf9c622c7d9f33333e0d61624aa0d8165bcee0f07bf4aeb0837b",
+    "extract_lognormal_29.log": "c683338e7f61a2a66c90e77dd7a322b827c69dd0155c6c06025b7f6482a4f475",
+    "extract_lognormal_40.log": "d99dbd3a6ea2c401a833d66063d6c931bbb62aaa542ee31c453cab442af8ef42",
+    "extract_lognormal_80.log": "43d9bf543abcb6e3307182b1bbe681445181cfa75f9014e16cd6ecd3ccff90cf",
+    "fit_low_r.png": "fa95a59cfab81d265c4b023934bd89ea8357548f000b907e048843eb51be549a",
+    "extract_lognormal_120.log": "755cf1e4a20d256205fdf9d9b6aa18498a6018a11c170d06e8c93b3ddccf47ba",
+    "representative_fits.pdf": "d6477dfd9a0500ab61c38bea2fd3254d52a7fdda59bda87deff6d7f4dedc2b51",
+    "representative_merge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "representative_readback.log": "9ad8b2d3f60d879ad6fe4612669cf7504134064e28f00ec4a5036a0902c3d1db",
+    "fit_low_r.png.render.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purity_final.png": "8cf24b748fe2e6ec7a59e5856d4d41e7d70283c7f2d26fd79bf8be611f436dbb",
+    "purity_final.png.render.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purity_low_r.png": "e1c9daab20a80c71167046c15a12c44dddbbbe84e390a657a71fddb626566701",
+    "purity_low_r.png.render.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "peaks_low_r.png": "d08b32a3cd1366f5b4c13a05e70bad079cfb406c2060b41eb0bf9f5958e12df5",
+    "peaks_low_r.png.render.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation_and_extract_commands.json": "fc208146eae740404702e1c6d60c28638f0cdf29e602c14f010b88889be1b84b"
+  }
+}

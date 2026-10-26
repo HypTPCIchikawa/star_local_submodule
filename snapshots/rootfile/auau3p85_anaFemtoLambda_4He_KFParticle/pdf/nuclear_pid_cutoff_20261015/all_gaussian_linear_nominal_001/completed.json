@@ -1,0 +1,32 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "sourceInputPreserved": true,
+  "protectedSnapshotsVerified": true,
+  "response": "gaussian",
+  "background": "linear",
+  "variation": "nominal",
+  "products": {
+    "shapes.tsv": "302bfb133322e848178209ed759f8abacc42336c0f48cf5961471b9ca74b44f6",
+    "gates.tsv": "bc20b69da25d933ee94df38c1c0f6a2d8ac670d4a1d294852c992164f4673eea",
+    "settings.tsv": "96bbf51e34a911cfb82f6e07f901475298f2b8b793c2d5bc9015441c25cb7e0e",
+    "tag_shape_audit.json": "7d8787d9693e4afd4f8ae11965f3696d12a217da3306fdcf3b3e984ee68071ac",
+    "fixed_windows.json": "ebcee9519fb7075f88f603f75efbf72f52fa22bdd2742400fff3fdaf4b9ad3fb",
+    "effective_settings.json": "6a58f51c5f783e68910c0da8e5b4ce99b95070face5ed81db4e506f7b45ab53f",
+    "context.json": "2ed55e9544af5ff5478fe4d186572111d25d8db097be8c332a95ace55b36ece8",
+    "command.json": "22e3c439615132e9a773e5acd59a407c1b3322f7cf121916c9da7ac4b9d24e95",
+    "fit.log": "de2f440b0da19cb30e77d5562bce5f8e60334597756549c2e5b4de674375fb4e",
+    "cutoff_fits.root": "81055bec72d51fc438109cfffb0c4082beae21c49f567290411fe7f4ad8f933c",
+    "cutoff_fits.json": "77f0b93d830a06e525c5ab0fdfa4fb5df21dbd4626e1bb486c23b59f16d4e47d",
+    "purity.tsv": "acea20d7063507b8cdef7fb6012088e3c41c44a5d3f895f47a034c05bfbc71fa",
+    "source/run_cutoff.py": "fd050d0731db4fe2cab189333853b9432b724097409d51b5a75020e0ef2756a9",
+    "source/study_settings.yaml": "965838506214c59e16d2b797793180fc34e08666f6deb53054ac23d2108568e5",
+    "source/FitNuclearCutoff.C": "0b0ad2ac748d4c9e96aacbe62fd32755776d65f5a4f56009d67cf7b146f7e074",
+    "source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "source/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "nativeRows": 160,
+  "note": "Execution completion is not isotope validation or final cutoff adoption."
+}

@@ -1,0 +1,20 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "seconds": 20.617369413375854,
+  "historicalSource": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_linear_nominal_free001",
+  "historicalSourceSha256": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_linear_nominal_free001/source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_linear_nominal_free001/source/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_linear_nominal_free001/source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_linear_nominal_free001/source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c"
+  },
+  "reproductionChecks": [],
+  "products": {
+    "cutoff_fits.json": "7841b18aeb554370469519d66c17c0d139f34fefc9ca12ce56d9972a4eb473d8",
+    "cutoff_fits.root": "3a42ff4b0876728fccfc9fb3b7dcd587d8480619502bfc9bbfa98e6020684fa5",
+    "gates.tsv": "76c21fb15f3da503612eb8ab2bf4f656c8bd7b578a5f7c1aa260378349ad76e4",
+    "shapes.tsv": "35099f8f171cc075e564edb33c4cdd73e3dc9d533d5e3dac7529d2b76a563dda",
+    "settings.tsv": "4328379f255f64543aa8de429b37ee6bd8f22fac817571b9bbc735d3d5916fde"
+  }
+}

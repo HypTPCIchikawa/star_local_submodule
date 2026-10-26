@@ -1,0 +1,42 @@
+starTag:
+  triggerSets: production_3p85GeV_fixedTarget_2021
+  stream: st_physics
+  collision: auau3p85
+  year: year2021
+  productionTag: P24iy
+  libraryTag: SL24y
+  filetype: daq_reco_picoDst
+  filenameFilter: st_physics
+  filenameNotFilter: adc
+  storage: local
+dataset:
+  collisionSystem: Au+Au
+  allPicoDstList: ''
+  runRange:
+    min: 22000000
+    max: 22999999
+  goodRunList: ''
+  dataQuality: production
+  dataFormat: picoDst
+analysis:
+  anaName: auau3p85_anaFemtoLambda_4He_KFParticle_batchcheck20261022
+  name: auau3p85_anaFemtoLambda_4He_KFParticle_batchcheck20261022
+  mode: fxtmult
+  type: femto
+  targetParticle: Lambda-he4
+  decayChannel: p+pi-
+  workDir: /star/u/yichikawa/pwg/git_STAR_3/star-analyzer
+  logDir: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/log/auau3p85_anaFemtoLambda_4He_KFParticle_batchcheck20261022
+  errDir: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/err/auau3p85_anaFemtoLambda_4He_KFParticle_batchcheck20261022
+  baseRunMacro: run_anaFemtoLambda_4He
+  baseAnaMacro: anaFemtoLambda_4He
+  jobName: auau3p85_anaFemtoLambda_4He_KFParticle_batchcheck20261022
+  scratchSubdir: auau3p85_anaFemtoLambda_4He_KFParticle_batchcheck20261022
+  outputFileStem: auau3p85_anaFemtoLambda_4He_KFParticle_batchcheck20261022
+  nFiles: 3
+  filesPerJob: 3
+  maxEvents: 2000
+analyst:
+  name: Yudai Ichikawa
+  institute: Tohoku University
+  email: yudai.ichikawa.d3@tohoku.ac.jp

@@ -1,0 +1,12 @@
+# Isolated TPC-only R<2 reference for freeze_baseline/core+tail comparison.
+# Study only: no production switch and no inherited purity50 certification.
+analysis: analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_auau3p85_logpoly_lowr_reference_20261019.yaml
+maker: maker/maker_auau3p85_anaFemtoLambda_4He_KFParticle_he3Control.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_auau3p85_femtoLambda_he4_he3_control_kf.yaml
+nuclearHist: hist/hist_auau3p85_femtoLambda_he4_he3_control_nuclear.yaml
+nuclearPidPairQaHist: hist/hist_auau3p85_femtoLambda_he4_he3_pid_pair_qa.yaml

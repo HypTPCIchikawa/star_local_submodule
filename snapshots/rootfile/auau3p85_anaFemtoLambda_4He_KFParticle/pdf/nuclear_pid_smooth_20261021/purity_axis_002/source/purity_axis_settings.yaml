@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "displayOnly": true,
+  "paddingGeV": 0.05,
+  "fixedDRange": [
+    0.4,
+    5.0
+  ],
+  "rangeSource": "supported candidate and historical point bin edges; exclude unassessed markers",
+  "outputDirectory": "purity_axis_002",
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml"
+}

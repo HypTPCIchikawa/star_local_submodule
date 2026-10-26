@@ -1,0 +1,30 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "protectedPostRunVerified": true,
+  "inputFingerprintPreserved": true,
+  "originalNativeCacheSha256": "cefd9281fe4dc31ddcf7f0d403a1cdd2d6440e5873da40518804025b3e9b4828",
+  "products": {
+    "settings.tsv": "6c1a06fdafd4bcb87256b5de9d128082fe30dbc7a9e3f975603fe61febc31002",
+    "context.json": "aee14b2270faa5f3b420e519e6a01e7b634ac28492091765f4c05dc38e0be76d",
+    "command.json": "3b80a64ce46e664dd095f6b8ac1fdba2c341166071971d7cff96af705a2195d5",
+    "root.log": "cec00dd8cd514ee391043b2b9c132ab436096ea3e2b40c87c30af9d0a5523719",
+    "cache.root": "a65a0cef13b28d23784658a44d07fd17ba04d2f3c97747190fa8b6f9d3cf52da",
+    "native_audit.json": "18bfbf420b18011f0dc561f4c3be22aff50b428d36854f70fbb9eac8354506b5",
+    "provenance/native_context.json": "7f467146dbb214b08ca6bb5f75ac33f6df95d57b2ae6db5b1504353d442fb149",
+    "provenance/native_native_audit.json": "197ed122b6024a949574f941a15db09bcec0c622bde57fbc167b515175a073b3",
+    "provenance/native_completed.json": "1f7a6833d9b72713aaac05195c2c23b5d95f17b5da4fcbac81a4024c22ae35be"
+  },
+  "sourceSha256": {
+    "prepare_coarse_inputs.py": "169c6ab6f5f56016fbf7a3409f4f682f0e2811cda2497d793183f439862b2dd3",
+    "ExtractCoarseInputs.C": "7ea0a5f56b7ad1eac667e0461aee6e16dc5038975417177e61e254f0eacbc8da",
+    "main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml": "090183642df74f0a0fc0d01c268b554c27921989fe717d7a5a0468b7218f9f87",
+    "analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "ExtractCoarseInputs_C.d": "0b67b4a74d691829fb428b2dd13374edc1e1704a9d882dc5a8931aa388f7c6a8",
+    "ExtractCoarseInputs_C.so": "94ecacdb640145b5e0987317aaa9d16c80db09087028ee21ce1c18946a9e8f3e"
+  },
+  "mathematicalSelfTestPassed": true,
+  "closedReadbackAllCellsPassed": true
+}

@@ -1,0 +1,31 @@
+{
+  "phase": "complete",
+  "input_unchanged": true,
+  "pages": {
+    "purity": 1,
+    "fits": 53
+  },
+  "fits": {
+    "quality": 168,
+    "exploratory": 14,
+    "unavailable": 28,
+    "linear": 24,
+    "exponential": 158
+  },
+  "products": {
+    "settings.yaml": "6adc5fc86a4f25328e974d8455f8a1c3a3a7d982fd2ea2002b63b165443c1ad4",
+    "settings.tsv": "9544a7f8a4ed116fc89132bac67bec51cad78f2a3bb8fd3e201386d329e4de82",
+    "context.json": "d02c7ef5821fb0e4af22e5d243dfca60a5539616237eb4c94fe6f50810521d04",
+    "purity.csv": "f4deb62dffe85d133d6f0c6afd2a67f0afb418467ad7fc74b933c51bf45d7d4b",
+    "he4_fits.root": "a9b196541305d7bb024777abaaa437ad60903cd395889fa850cda942c4a64d2a",
+    "purity.json": "129694b72b4012c7561bc56f6f952b054e3e058ab1d6cb9b757675d5e4e3e8d1",
+    "he4_fits.pdf": "3d07146a4740aba5f0816e1f2ad9a40165d3759b27c86f8f3361317b6add0e23",
+    "he4_purity.pdf": "1e7e56ac907e941b0c8ac4efe2d3432c2cc2f6619c8e85108dc8319914ef71a8",
+    "he4_purity.png": "872c7ecb79936be7bdb47c38981a3e7d5ee31202b436ce280470f6caeaf2985d",
+    "README.md": "2dfad19f6d235226fa7f52750e338b9810a75eea25ab3af7c13007b1ab944fd4",
+    "logs/fit.log": "02e4eabd73fbbe83bb5360b95f3daa0366fe35e1bcb996ce103a1460cffa35dd",
+    "source/tools/he4_purity/FitHe4Purity.C": "9476ff6aac34d4590a666dfeed61333975a91914bfadf33209b61a730792ad75",
+    "source/tools/he4_purity/run_purity.py": "71512afe2d0c7d429b497f1c7071d114370f01fcfa714e5bc5aebadb4be8c18a",
+    "source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  }
+}

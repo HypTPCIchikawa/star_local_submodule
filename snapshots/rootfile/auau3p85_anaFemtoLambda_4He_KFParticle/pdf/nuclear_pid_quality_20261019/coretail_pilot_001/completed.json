@@ -1,0 +1,680 @@
+{
+  "comparisons": [
+    {
+      "chi2": 205202.55109389513,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "d_linear_target_only_gaussian_control",
+      "ndf": 30,
+      "numericalValid": true,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 236647.31307790527,
+      "controlParityRequired": false,
+      "job": "d_linear_target_only_symmetric_tail",
+      "ndf": 29,
+      "numericalValid": true,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 207805.2833482915,
+      "controlParityRequired": false,
+      "job": "d_linear_target_only_positive_tail",
+      "ndf": 31,
+      "numericalValid": true,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 393567.0838266455,
+      "controlParityRequired": false,
+      "job": "d_linear_target_only_negative_tail",
+      "ndf": 29,
+      "numericalValid": true,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 77608.43047611711,
+      "controlParityRequired": false,
+      "job": "d_linear_local_neighbors_gaussian_control",
+      "ndf": 27,
+      "numericalValid": true,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 221862.4005509157,
+      "controlParityRequired": false,
+      "job": "d_linear_local_neighbors_symmetric_tail",
+      "ndf": 28,
+      "numericalValid": true,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 207805.50877250158,
+      "controlParityRequired": false,
+      "job": "d_linear_local_neighbors_positive_tail",
+      "ndf": 29,
+      "numericalValid": false,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 122904.07468142043,
+      "controlParityRequired": false,
+      "job": "d_linear_local_neighbors_negative_tail",
+      "ndf": 28,
+      "numericalValid": true,
+      "oldChi2": 205202.55109389513,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 200823.48656858862,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "d_exponential_target_only_gaussian_control",
+      "ndf": 30,
+      "numericalValid": true,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 60309.05052766531,
+      "controlParityRequired": false,
+      "job": "d_exponential_target_only_symmetric_tail",
+      "ndf": 29,
+      "numericalValid": true,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 100118.49029178885,
+      "controlParityRequired": false,
+      "job": "d_exponential_target_only_positive_tail",
+      "ndf": 30,
+      "numericalValid": true,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 136672.40308809179,
+      "controlParityRequired": false,
+      "job": "d_exponential_target_only_negative_tail",
+      "ndf": 29,
+      "numericalValid": true,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 50325.51022293364,
+      "controlParityRequired": false,
+      "job": "d_exponential_local_neighbors_gaussian_control",
+      "ndf": 27,
+      "numericalValid": true,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 49436.612013368096,
+      "controlParityRequired": false,
+      "job": "d_exponential_local_neighbors_symmetric_tail",
+      "ndf": 27,
+      "numericalValid": true,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 109139.86238608438,
+      "controlParityRequired": false,
+      "job": "d_exponential_local_neighbors_positive_tail",
+      "ndf": 28,
+      "numericalValid": false,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 74448.6843315912,
+      "controlParityRequired": false,
+      "job": "d_exponential_local_neighbors_negative_tail",
+      "ndf": 27,
+      "numericalValid": true,
+      "oldChi2": 200823.48656858862,
+      "oldNumericalValid": true,
+      "r": 1.475
+    },
+    {
+      "chi2": 87737.70189058084,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "t_linear_target_only_gaussian_control",
+      "ndf": 68,
+      "numericalValid": true,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 28939.372451784915,
+      "controlParityRequired": false,
+      "job": "t_linear_target_only_symmetric_tail",
+      "ndf": 70,
+      "numericalValid": true,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 66783.1976228103,
+      "controlParityRequired": false,
+      "job": "t_linear_target_only_positive_tail",
+      "ndf": 71,
+      "numericalValid": true,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 60740.53629422258,
+      "controlParityRequired": false,
+      "job": "t_linear_target_only_negative_tail",
+      "ndf": 69,
+      "numericalValid": true,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 22571.76980460533,
+      "controlParityRequired": false,
+      "job": "t_linear_local_neighbors_gaussian_control",
+      "ndf": 67,
+      "numericalValid": false,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 26792.729042584746,
+      "controlParityRequired": false,
+      "job": "t_linear_local_neighbors_symmetric_tail",
+      "ndf": 68,
+      "numericalValid": true,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 45774.146761521486,
+      "controlParityRequired": false,
+      "job": "t_linear_local_neighbors_positive_tail",
+      "ndf": 69,
+      "numericalValid": true,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 34555.62111820959,
+      "controlParityRequired": false,
+      "job": "t_linear_local_neighbors_negative_tail",
+      "ndf": 68,
+      "numericalValid": true,
+      "oldChi2": 87737.70189058084,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 79654.87345187216,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "t_exponential_target_only_gaussian_control",
+      "ndf": 68,
+      "numericalValid": true,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 28939.370164615128,
+      "controlParityRequired": false,
+      "job": "t_exponential_target_only_symmetric_tail",
+      "ndf": 69,
+      "numericalValid": false,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 66783.18187822092,
+      "controlParityRequired": false,
+      "job": "t_exponential_target_only_positive_tail",
+      "ndf": 70,
+      "numericalValid": true,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 60626.828335748476,
+      "controlParityRequired": false,
+      "job": "t_exponential_target_only_negative_tail",
+      "ndf": 69,
+      "numericalValid": true,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 22382.52804051972,
+      "controlParityRequired": false,
+      "job": "t_exponential_local_neighbors_gaussian_control",
+      "ndf": 67,
+      "numericalValid": false,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 26792.729144580157,
+      "controlParityRequired": false,
+      "job": "t_exponential_local_neighbors_symmetric_tail",
+      "ndf": 67,
+      "numericalValid": false,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 45774.14108587327,
+      "controlParityRequired": false,
+      "job": "t_exponential_local_neighbors_positive_tail",
+      "ndf": 68,
+      "numericalValid": true,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 34121.42979648851,
+      "controlParityRequired": false,
+      "job": "t_exponential_local_neighbors_negative_tail",
+      "ndf": 67,
+      "numericalValid": true,
+      "oldChi2": 79654.87345187216,
+      "oldNumericalValid": true,
+      "r": 1.375
+    },
+    {
+      "chi2": 16964.516298501698,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "he4_linear_target_only_gaussian_control",
+      "ndf": 209,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 13962.531732065898,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "he4_linear_target_only_gaussian_control",
+      "ndf": 84,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 32415.574425677292,
+      "controlParityRequired": false,
+      "job": "he4_linear_target_only_symmetric_tail",
+      "ndf": 211,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 13265.398846856031,
+      "controlParityRequired": false,
+      "job": "he4_linear_target_only_symmetric_tail",
+      "ndf": 84,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 63413.44755378978,
+      "controlParityRequired": false,
+      "job": "he4_linear_target_only_positive_tail",
+      "ndf": 211,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 14430.038829510382,
+      "controlParityRequired": false,
+      "job": "he4_linear_target_only_positive_tail",
+      "ndf": 85,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 20062.60493052714,
+      "controlParityRequired": false,
+      "job": "he4_linear_target_only_negative_tail",
+      "ndf": 210,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 12199.47725797809,
+      "controlParityRequired": false,
+      "job": "he4_linear_target_only_negative_tail",
+      "ndf": 84,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 8682.625718057732,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_gaussian_control",
+      "ndf": 207,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 3356.4636016130876,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_gaussian_control",
+      "ndf": 82,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 10893.138190595428,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_symmetric_tail",
+      "ndf": 208,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 2155.3188980910368,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_symmetric_tail",
+      "ndf": 82,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 19736.404062597936,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_positive_tail",
+      "ndf": 209,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 1506.9985823963418,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_positive_tail",
+      "ndf": 83,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 8140.826755622313,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_negative_tail",
+      "ndf": 207,
+      "numericalValid": true,
+      "oldChi2": 16964.516298501698,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 2480.278750562411,
+      "controlParityRequired": false,
+      "job": "he4_linear_local_neighbors_negative_tail",
+      "ndf": 82,
+      "numericalValid": true,
+      "oldChi2": 13962.531732065898,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 16111.619778268581,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "he4_exponential_target_only_gaussian_control",
+      "ndf": 209,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 7813.592260863369,
+      "controlParity": true,
+      "controlParityRequired": true,
+      "job": "he4_exponential_target_only_gaussian_control",
+      "ndf": 84,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 18087.39688779727,
+      "controlParityRequired": false,
+      "job": "he4_exponential_target_only_symmetric_tail",
+      "ndf": 209,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 3502.8397201408584,
+      "controlParityRequired": false,
+      "job": "he4_exponential_target_only_symmetric_tail",
+      "ndf": 84,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 63413.43650780677,
+      "controlParityRequired": false,
+      "job": "he4_exponential_target_only_positive_tail",
+      "ndf": 210,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 2467.6087753185275,
+      "controlParityRequired": false,
+      "job": "he4_exponential_target_only_positive_tail",
+      "ndf": 84,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 19987.911736200447,
+      "controlParityRequired": false,
+      "job": "he4_exponential_target_only_negative_tail",
+      "ndf": 209,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 5166.890036977075,
+      "controlParityRequired": false,
+      "job": "he4_exponential_target_only_negative_tail",
+      "ndf": 84,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 8486.860238959924,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_gaussian_control",
+      "ndf": 207,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 989.5209925747693,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_gaussian_control",
+      "ndf": 82,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 12528.239857709297,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_symmetric_tail",
+      "ndf": 208,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 800.5030667276045,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_symmetric_tail",
+      "ndf": 82,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 18891.30115984836,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_positive_tail",
+      "ndf": 207,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 718.7239091123658,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_positive_tail",
+      "ndf": 82,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    },
+    {
+      "chi2": 8072.543553740602,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_negative_tail",
+      "ndf": 207,
+      "numericalValid": true,
+      "oldChi2": 16111.619778268581,
+      "oldNumericalValid": true,
+      "r": 0.895
+    },
+    {
+      "chi2": 941.5211120118299,
+      "controlParityRequired": false,
+      "job": "he4_exponential_local_neighbors_negative_tail",
+      "ndf": 82,
+      "numericalValid": true,
+      "oldChi2": 7813.592260863369,
+      "oldNumericalValid": true,
+      "r": 1.775
+    }
+  ],
+  "completedJST": "2026-10-19T15:17:52.850873+09:00",
+  "immutableInputsUnchanged": true,
+  "limitations": [
+    "Frozen-old-gate purity is a reference estimate, not new-polynomial purity.",
+    "Fixed tail-profile scans do not fit or validate a smooth detector calibration.",
+    "Core width is not PID sigma or mixture RMS; no production coefficient adopted."
+  ],
+  "oldWindowsAndGatesPreserved": true,
+  "productionEnabled": false,
+  "profileScanIsNotIndependentGoFPvalue": true,
+  "sourceAndCompiledArtifacts": {
+    "source/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "source/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml": "090183642df74f0a0fc0d01c268b554c27921989fe717d7a5a0468b7218f9f87",
+    "source/script/analysis_info_helper.py": "3683fe8872871515d754da502d68e0722cb0bd42e9e485cacec7c219330851c0",
+    "source/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "source/tools/nuclear_pid_cutoff/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/FitCoreTailPilot.C": "531c1c253e660267a70cde25c524e2e6ff5d3ac940a29efc97b41ab581b55117",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/FitCoreTailPilot_C.d": "a72007f444232a892f4068dbe927709471cdc7fa5c0bf5955c4aca4c46440d17",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/FitCoreTailPilot_C.so": "9653adc771352231a1481d37e1e3ece41bbfe028fc88be9c7bb31befcfde203e",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/NuclearCoreTailFitCommon.h": "c3c6c3815131d98ed56434a8aa7530aa7da6f250c761a294cd21b691c58bccdb",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/pilot_settings.yaml": "1020fe0a286773521e3c23f5762fa0acfd2e6f47a7a033bb71d06dd4080d0156",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/run_coretail_pilot.py": "fc2c539d1c74c69e0ecc435fcd553ffa97fae09cee226e9775eca3ec9d9df0fe",
+    "source/tools/nuclear_pid_tof/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "source/tools/nuclear_pid_tof/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c"
+  },
+  "status": "completed",
+  "totalFits": 64,
+  "totalJobs": 48
+}

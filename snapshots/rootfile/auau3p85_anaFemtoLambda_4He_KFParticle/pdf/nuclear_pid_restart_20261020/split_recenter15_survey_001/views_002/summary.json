@@ -1,0 +1,26 @@
+{
+  "totalRows": 380,
+  "fitExecutionFailures": 0,
+  "numericallySuccessfulRows": 353,
+  "numericallyUnsuccessfulRows": 27,
+  "foreignPeakInsideFitRows": 78,
+  "rowsBySpecies": {
+    "d": 95,
+    "t": 95,
+    "he3": 95,
+    "he4": 95
+  },
+  "scientificFitsAccepted": false,
+  "purityAvailable": false,
+  "productionEnabled": false,
+  "coefficientsUpdated": false,
+  "note": "Rendering/readback success is technical only, not approval of Gaussian fits, purity, or PID coefficients.",
+  "status": "completed",
+  "pages": 190,
+  "panels": 760,
+  "pdfReadback": true,
+  "pdfPageCountVerifiedBy": "ghostscript",
+  "inputSha256Unchanged": true,
+  "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/split_recenter15_survey_001",
+  "outputDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/split_recenter15_survey_001/views_002"
+}

@@ -1,0 +1,67 @@
+{
+  "completedJST": "2026-10-19T14:57:03.794668+09:00",
+  "failedFitsOmitted": false,
+  "immutableInputsUnchanged": true,
+  "normalized": false,
+  "outputHashes": {
+    "command_d.json": "e98ceca6fee75cb1170f8ae9f002afaa083b12f9f8ee15de72d1529e9a6aa41a",
+    "command_he4.json": "23c42dfa190ac9ad22bbe572f1970d0c523b53c06436b5234f8bdf3a3df56396",
+    "command_t.json": "d7a65797b26ccf19a8e38f2edcb4571b169c2ea0b6ec2116b7809c053237e3eb",
+    "fit_diagnostics_d.pdf": "402790005ab04d84ba482412a21abf2b1fd4b3de6064d50fcedf445434e309d4",
+    "fit_diagnostics_he4.pdf": "0a0e7a3ee19ee23332df5846456f1d5e4bd2aaca844a7ae1652a5ded2a422c80",
+    "fit_diagnostics_t.pdf": "c03143dd88b55f05a7733673856a1cfc4e2b6fcb04ffdac9854afb0b8e85ce5e",
+    "models_d.tsv": "307a5eea8358ec7947a9450f60e5eb3b9dd0bdf69941434c250bc1087f9d9224",
+    "models_he4.tsv": "573574f4e9a118c3d734fcf03da35c11359fdfb7559b56bae04eba2270402356",
+    "models_t.tsv": "5fd9d4652141c0870a1329ef8372154b7b223c85afc70c84666ec5288bd1a06c",
+    "plan.json": "0bd8e7279f3df29029f7ca0a9f9ead9e5f97da268629876d48e4fb936dacf72a",
+    "quality_d.tsv": "b0d9a329485202f2bf52cd97aa3d15ff8913517a0961eb6cef1353ba1d2c01ac",
+    "quality_he4.tsv": "8c7f58f73e856cf50f9098e3535aa9bdb673d1d9ff08754a1a7de84194d977ea",
+    "quality_t.tsv": "55cf7dfdd2b43051544d19b114d0c112bf260af3f41a0791b0b10e1e00db3a97",
+    "readback_d.log": "879b5875989151c45bd305d26552faddf63db1088797d14f360b7834628593af",
+    "readback_he4.log": "c37886cdbbc08bd820176b5ccbd9f09b18fd191f114521f8e312420d70b13a20",
+    "readback_t.log": "879b5875989151c45bd305d26552faddf63db1088797d14f360b7834628593af",
+    "render_d.log": "061c8d557d27dac43842b8b1141653c1017999317d5803453edcd8a2bccd0cd4",
+    "render_he4.log": "734fdadc9b5f3ea91731135027c93cf6eebe2afe0c982ef9a1a9914efc61ddf2",
+    "render_t.log": "e1223d132b275fa50dd43458b6833f5401673056ec3f062f88c086e2a2b82052",
+    "settings.tsv": "4d8ee443a314d0c3fe1426c0c436ce1e02eefb375de9b9a3fe294c5ec025b7eb",
+    "slices_d.tsv": "880f55e7b94699e89ca646c16f265fa47fc74dcfbdf73a8659d7d5a373e1bc66",
+    "slices_he4.tsv": "8bda3e81ba8d90c87ca8cb4357b5015d2b1cda83275fdeb0e3b539f3494d74dc",
+    "slices_t.tsv": "a165ab0a8aab6709f3ddb57192d09adbd6b60ce2eda5c7f1190ccce0457dfbaa",
+    "source/PlotCutoffSpectra.C": "973038b91d02cdd25d208fc319f002d2d0c08e826d25f9c4ae032aab81f70246",
+    "source/PlotQualityDiagnostics.C": "9d8c48b47122271f9f61072f72b0a893c7f87bc22ab00d7a286b5d79f4230544",
+    "source/PlotQualityDiagnostics_C.d": "e389f33bfa1b1f0d0468b8f8bea9569dad4c1cba196b74787dc4cd1fe139fc27",
+    "source/PlotQualityDiagnostics_C.so": "4f06ba61d00ea0699d0e4ae301913fcb5c25da23296ceae0d6fa30696201d571",
+    "source/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml": "090183642df74f0a0fc0d01c268b554c27921989fe717d7a5a0468b7218f9f87",
+    "source/render_quality_diagnostics.py": "f48062784ee50db2df1173a80671d5225b12cf6aba43928633dc656073edee03",
+    "source/render_quality_settings.yaml": "317b3eb402c781121b35fb3a345a6fb1cf209a9eca461ced13ef8624f401d44d",
+    "source/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "productionEnabled": false,
+  "qualityThresholdAdopted": false,
+  "refitted": false,
+  "results": [
+    {
+      "bytes": 1793680,
+      "closedReadback": true,
+      "pages": 12,
+      "sha256": "402790005ab04d84ba482412a21abf2b1fd4b3de6064d50fcedf445434e309d4",
+      "species": "d"
+    },
+    {
+      "bytes": 1848739,
+      "closedReadback": true,
+      "pages": 12,
+      "sha256": "c03143dd88b55f05a7733673856a1cfc4e2b6fcb04ffdac9854afb0b8e85ce5e",
+      "species": "t"
+    },
+    {
+      "bytes": 4441660,
+      "closedReadback": true,
+      "pages": 24,
+      "sha256": "0a0e7a3ee19ee23332df5846456f1d5e4bd2aaca844a7ae1652a5ded2a422c80",
+      "species": "he4"
+    }
+  ],
+  "status": "completed",
+  "totalPages": 48
+}

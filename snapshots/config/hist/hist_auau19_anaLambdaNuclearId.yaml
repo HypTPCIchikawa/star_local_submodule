@@ -1,0 +1,1475 @@
+# StLambdaMaker and StNuclearIdMaker combined histogram definitions
+
+axes:
+  # Lambda-specific axes
+  InvMassLambda: &InvMassLambda
+    nBins: 200
+    min: 1.05
+    max: 1.25
+  PtLambda: &PtLambda
+    nBins: 200
+    min: 0.0
+    max: 10.0
+  EtaLambda: &EtaLambda
+    nBins: 100
+    min: -2.5
+    max: 2.5
+  PhiLambda: &PhiLambda
+    nBins: 100
+    min: -3.15
+    max: 3.15
+  DCA: &DCA
+    nBins: 200
+    min: 0.0
+    max: 5.0
+  CosPointing: &CosPointing
+    nBins: 100
+    min: 0.99
+    max: 1.01
+  Vz: &Vz
+    nBins: 400
+    min: -300.0
+    max: 300.0
+  RefMult: &RefMult
+    nBins: 1000
+    min: 0.0
+    max: 1000.0
+  NSigmaY: &NSigmaY
+    nBins: 100
+    min: -5.0
+    max: 5.0
+  TofMatchMult: &TofMatchMult
+    nBins: 500
+    min: 0.0
+    max: 500.0
+  Cent9: &Cent9
+    nBins: 9
+    min: -0.5
+    max: 8.5
+  Cent16: &Cent16
+    nBins: 16
+    min: -0.5
+    max: 15.5
+  RefMultWeight: &RefMultWeight
+    nBins: 125
+    min: 0.5
+    max: 3.0
+  NCand: &NCand
+    nBins: 200
+    min: 0.0
+    max: 200.0
+  NTracks: &NTracks
+    nBins: 500
+    min: 0.0
+    max: 2000.0
+  NLambdaPairs: &NLambdaPairs
+    nBins: 200
+    min: 0.0
+    max: 200.0
+
+  # NuclearId-specific axes
+  P: &P
+    nBins: 600
+    min: 0.0
+    max: 6.0
+  dEdx: &dEdx
+    nBins: 1200
+    min: 0.0
+    max: 120.0
+  EtaNuclear: &EtaNuclear
+    nBins: 100
+    min: -3.0
+    max: 3.0
+  Rapidity: &Rapidity
+    nBins: 100
+    min: -3.0
+    max: 3.0
+  PtNuclear: &PtNuclear
+    nBins: 600
+    min: 0.0
+    max: 6.0
+  M2: &M2
+    nBins: 1000
+    min: -0.5
+    max: 25.0
+  Kstar: &Kstar
+    nBins: 200
+    min: 0.0
+    max: 1.0
+  Qlab: &Qlab
+    nBins: 200
+    min: 0.0
+    max: 2.0
+
+histograms:
+  # --- Event (from Lambda) ---
+  hVz:
+    axis: *Vz
+    title: "Primary Vertex Z;V_{z} [cm];Counts"
+  hRefMult:
+    axis: *RefMult
+    title: "RefMult;RefMult;Counts"
+  hCentrality:
+    axis: *Cent9
+    title: "Centrality bin (cent9);cent9 (0=70-80%%, 8=0-5%%);Counts"
+  hCentralityRaw:
+    axis: *Cent9
+    title: "Centrality bin before bin cut;cent9 (0=70-80%%, 8=0-5%%);Counts"
+  hCentrality16:
+    axis: *Cent16
+    title: "Centrality bin (cent16);cent16;Counts"
+  hRefMultCorr:
+    axis: *RefMult
+    title: "Corrected multiplicity;refMult_{corr};Counts"
+  hRefMultWeight:
+    axis: *RefMultWeight
+    title: "StRefMultCorr event weight;weight;Counts"
+  hRefMultVsNTOFMatch:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (before pileup cut);nBTOFMatch;refMult"
+  hRefMultVsNTOFMatchAfter:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (after pileup cut);nBTOFMatch;refMult"
+  hCentralityVsVz:
+    xAxis: *Vz
+    yAxis: *Cent9
+    title: "cent9 vs V_{z};V_{z} [cm];cent9 (0=70-80%%, 8=0-5%%)"
+  hRawMult:
+    axis: *RefMult
+    title: "Raw multiplicity (refmult/fxtmult);mult;Counts"
+  hRawMult_vs_RefMultCorr:
+    xAxis: *RefMult
+    yAxis: *RefMult
+    title: "rawMult vs refMult_{corr};refMult_{corr};rawMult"
+  hRawMult_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *RefMult
+    title: "rawMult vs cent9;cent9 (0=70-80%%, 8=0-5%%);rawMult"
+  hRefMultCorr_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *RefMult
+    title: "refMult_{corr} vs cent9;cent9 (0=70-80%%, 8=0-5%%);refMult_{corr}"
+  hNTracks_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NTracks
+    title: "N_{tracks} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{tracks}"
+  hTofMatchMult_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *TofMatchMult
+    title: "nBTOFMatch vs cent9;cent9 (0=70-80%%, 8=0-5%%);nBTOFMatch"
+  hNProtonCand_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NCand
+    title: "N_{proton cand.} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{p}"
+  hNPionCand_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NCand
+    title: "N_{#pi^{-} cand.} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{#pi^{-}}"
+  hNLambdaPairs_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NLambdaPairs
+    title: "Helix-pass p#pi^{-} pairs vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{pairs}"
+  hLambda_InvMass_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs cent9;cent9 (0=70-80%%, 8=0-5%%);M_{p#pi^{-}} [GeV/c^{2}]"
+  hLambda_InvMass_vs_RefMultCorr:
+    xAxis: *RefMult
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs refMult_{corr};refMult_{corr};M_{p#pi^{-}} [GeV/c^{2}]"
+  hLambda_InvMass_CentBin0:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=0 (70-80%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin1:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=1 (60-70%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin2:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=2 (50-60%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin3:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=3 (40-50%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin4:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=4 (30-40%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin5:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=5 (20-30%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin6:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=6 (10-20%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin7:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=7 (5-10%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin8:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=8 (0-5%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+
+  # --- Lambda (from Lambda) ---
+  hLambda_InvMass:
+    axis: *InvMassLambda
+    title: "Lambda invariant mass (Helix);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_Pt:
+    axis: *PtLambda
+    title: "Lambda p_{T};p_{T} [GeV/c];Counts"
+  hLambda_Eta:
+    axis: *EtaLambda
+    title: "Lambda #eta;#eta;Counts"
+  hLambda_Phi:
+    axis: *PhiLambda
+    title: "Lambda #phi;#phi [rad];Counts"
+  hDCA12:
+    axis: *DCA
+    title: "DCA between p and #pi^{-} at V0;DCA [cm];Counts"
+  hDCAV0:
+    axis: *DCA
+    title: "DCA of Lambda to PV;DCA [cm];Counts"
+  hCosPointing:
+    axis: *CosPointing
+    title: "cos(pointing angle);cos(#theta);Counts"
+  hNSigmaProton:
+    axis: *NSigmaY
+    title: "Proton n#sigma_{p};n#sigma_{p};Counts"
+  hNSigmaPion:
+    axis: *NSigmaY
+    title: "Pion n#sigma_{#pi};n#sigma_{#pi};Counts"
+  hLambda_InvMass_vs_Pt:
+    xAxis: *PtLambda
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs p_{T};p_{T} [GeV/c];M_{p#pi^{-}} [GeV/c^{2}]"
+  hDCAV0_vs_InvMass:
+    xAxis: *InvMassLambda
+    yAxis: *DCA
+    title: "DCA_{V0} vs M_{p#pi^{-}};M_{p#pi^{-}} [GeV/c^{2}];DCA [cm]"
+  hCosPointing_vs_InvMass:
+    xAxis: *InvMassLambda
+    yAxis: *CosPointing
+    title: "cos(#theta) vs M_{p#pi^{-}};M_{p#pi^{-}} [GeV/c^{2}];cos(#theta)"
+  hLambda_InvMass_vs_TransDecayLength:
+    xAxis: *TransDecayLength
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs Transverse Decay Length;L_{T} [cm];M_{p#pi^{-}} [GeV/c^{2}]"
+  hN:
+    nBins: 1
+    min: 0.0
+    max: 1.0
+    title: "N processed events;dummy;count"
+    type: TH1I
+
+  # --- NuclearId (from NuclearId) ---
+  hDedxP:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_cut:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_e:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_pi:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_K:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_p:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_else:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_d:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_t:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_3He:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_4He:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+
+  hPvsEta_d:
+    xAxis: *P
+    yAxis: *EtaNuclear
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_t:
+    xAxis: *P
+    yAxis: *EtaNuclear
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_3He:
+    xAxis: *P
+    yAxis: *EtaNuclear
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_4He:
+    xAxis: *P
+    yAxis: *EtaNuclear
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+
+  hPvsY_d:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_t:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_3He:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_4He:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+
+  hPvsPt_d:
+    xAxis: *P
+    yAxis: *PtNuclear
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t:
+    xAxis: *P
+    yAxis: *PtNuclear
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He:
+    xAxis: *P
+    yAxis: *PtNuclear
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He:
+    xAxis: *P
+    yAxis: *PtNuclear
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+
+  hDedxP_d_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_t_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_3He_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+
+  hM2P:
+    xAxis: *P
+    yAxis: *M2
+    title: "TOF m^{2} vs p;p (GeV/c);m^{2} (GeV^{2}/c^{4})"
+
+  # --- Relative Momentum (Lambda-Nucleus) ---
+  hKstar_d:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - d);k* (GeV/c);Counts"
+  hQlab_d:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - d);q_lab (GeV/c);Counts"
+  hKstar_t:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - t);k* (GeV/c);Counts"
+  hQlab_t:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - t);q_lab (GeV/c);Counts"
+  hKstar_3He:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - 3He);k* (GeV/c);Counts"
+  hQlab_3He:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - 3He);q_lab (GeV/c);Counts"
+  hKstar_4He:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - 4He);k* (GeV/c);Counts"
+  hQlab_4He:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - 4He);q_lab (GeV/c);Counts"
+
+  # --- k* Signal, per-centrality ---
+  hKstar_d_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_d_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - d) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_t_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - t) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_3He_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 3He) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_4He_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 4He) cent9=8 (0-5%%);k* (GeV/c);Counts"
+
+  # --- k* and q_lab Sideband (SBPos / SBNeg), inclusive ---
+  hKstar_d_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. sideband);k* (GeV/c);Counts"
+  hQlab_d_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - d, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_d_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. sideband);k* (GeV/c);Counts"
+  hQlab_d_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - d, neg. sideband);q_lab (GeV/c);Counts"
+  hKstar_t_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. sideband);k* (GeV/c);Counts"
+  hQlab_t_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - t, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_t_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. sideband);k* (GeV/c);Counts"
+  hQlab_t_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - t, neg. sideband);q_lab (GeV/c);Counts"
+  hKstar_3He_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. sideband);k* (GeV/c);Counts"
+  hQlab_3He_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - 3He, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_3He_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. sideband);k* (GeV/c);Counts"
+  hQlab_3He_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - 3He, neg. sideband);q_lab (GeV/c);Counts"
+  hKstar_4He_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. sideband);k* (GeV/c);Counts"
+  hQlab_4He_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - 4He, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_4He_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. sideband);k* (GeV/c);Counts"
+  hQlab_4He_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - 4He, neg. sideband);q_lab (GeV/c);Counts"
+
+  # --- k* Sideband (SBPos), per-centrality ---
+  hKstar_d_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_d_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - d, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_t_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - t, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_3He_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_4He_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+
+  # --- k* Sideband (SBNeg), per-centrality ---
+  hKstar_d_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_d_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - d, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_t_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - t, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_3He_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_4He_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+
+  # --- k* and q_lab Mixed, inclusive ---
+  hKstar_Mixed_d:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - d, Mixed);k* (GeV/c);Counts"
+  hQlab_Mixed_d:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - d, Mixed);q_lab (GeV/c);Counts"
+  hKstar_Mixed_t:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - t, Mixed);k* (GeV/c);Counts"
+  hQlab_Mixed_t:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - t, Mixed);q_lab (GeV/c);Counts"
+  hKstar_Mixed_3He:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - 3He, Mixed);k* (GeV/c);Counts"
+  hQlab_Mixed_3He:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - 3He, Mixed);q_lab (GeV/c);Counts"
+  hKstar_Mixed_4He:
+    axis: *Kstar
+    title: "Relative momentum k* in pair rest frame (Lambda - 4He, Mixed);k* (GeV/c);Counts"
+  hQlab_Mixed_4He:
+    axis: *Qlab
+    title: "Relative momentum q_lab in lab frame (Lambda - 4He, Mixed);q_lab (GeV/c);Counts"
+
+  # --- k* Mixed, per-centrality ---
+  hKstar_Mixed_d_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed) cent9=8 (0-5%%);k* (GeV/c);Counts"
+
+  # --- k* and q_lab Mixed Sideband (SBPos / SBNeg), inclusive ---
+  hKstar_Mixed_d_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_d_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - d, Mixed, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_d_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - d, Mixed, neg. sideband);q_lab (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_t_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - t, Mixed, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_t_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - t, Mixed, neg. sideband);q_lab (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_3He_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - 3He, Mixed, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_3He_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - 3He, Mixed, neg. sideband);q_lab (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_4He_SBPos:
+    axis: *Qlab
+    title: "q_lab (Lambda - 4He, Mixed, pos. sideband);q_lab (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. sideband);k* (GeV/c);Counts"
+  hQlab_Mixed_4He_SBNeg:
+    axis: *Qlab
+    title: "q_lab (Lambda - 4He, Mixed, neg. sideband);q_lab (GeV/c);Counts"
+
+  # --- k* Mixed Sideband (SBPos), per-centrality ---
+  hKstar_Mixed_d_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBPos_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, pos. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+
+  # --- k* Mixed Sideband (SBNeg), per-centrality ---
+  hKstar_Mixed_d_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_d_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - d, Mixed, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_t_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - t, Mixed, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_3He_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 3He, Mixed, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin0:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=0 (70-80%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin1:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=1 (60-70%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin2:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=2 (50-60%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin3:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=3 (40-50%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin4:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=4 (30-40%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin5:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=5 (20-30%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin6:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=6 (10-20%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin7:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=7 (5-10%%);k* (GeV/c);Counts"
+  hKstar_Mixed_4He_SBNeg_CentBin8:
+    axis: *Kstar
+    title: "k* (Lambda - 4He, Mixed, neg. SB) cent9=8 (0-5%%);k* (GeV/c);Counts"
+
+  hKstarMass_d_CentBin0:
+    title: 'k* vs Lambda InvMass (d, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin0:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin1:
+    title: 'k* vs Lambda InvMass (d, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin1:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin2:
+    title: 'k* vs Lambda InvMass (d, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin2:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin3:
+    title: 'k* vs Lambda InvMass (d, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin3:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin4:
+    title: 'k* vs Lambda InvMass (d, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin4:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin5:
+    title: 'k* vs Lambda InvMass (d, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin5:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin6:
+    title: 'k* vs Lambda InvMass (d, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin6:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin7:
+    title: 'k* vs Lambda InvMass (d, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin7:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_d_CentBin8:
+    title: 'k* vs Lambda InvMass (d, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_d_CentBin8:
+    title: 'Mixed k* vs Lambda InvMass (d, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin0:
+    title: 'k* vs Lambda InvMass (t, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin0:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin1:
+    title: 'k* vs Lambda InvMass (t, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin1:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin2:
+    title: 'k* vs Lambda InvMass (t, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin2:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin3:
+    title: 'k* vs Lambda InvMass (t, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin3:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin4:
+    title: 'k* vs Lambda InvMass (t, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin4:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin5:
+    title: 'k* vs Lambda InvMass (t, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin5:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin6:
+    title: 'k* vs Lambda InvMass (t, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin6:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin7:
+    title: 'k* vs Lambda InvMass (t, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin7:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_t_CentBin8:
+    title: 'k* vs Lambda InvMass (t, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_t_CentBin8:
+    title: 'Mixed k* vs Lambda InvMass (t, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin0:
+    title: 'k* vs Lambda InvMass (3He, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin0:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin1:
+    title: 'k* vs Lambda InvMass (3He, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin1:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin2:
+    title: 'k* vs Lambda InvMass (3He, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin2:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin3:
+    title: 'k* vs Lambda InvMass (3He, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin3:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin4:
+    title: 'k* vs Lambda InvMass (3He, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin4:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin5:
+    title: 'k* vs Lambda InvMass (3He, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin5:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin6:
+    title: 'k* vs Lambda InvMass (3He, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin6:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin7:
+    title: 'k* vs Lambda InvMass (3He, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin7:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_3He_CentBin8:
+    title: 'k* vs Lambda InvMass (3He, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_3He_CentBin8:
+    title: 'Mixed k* vs Lambda InvMass (3He, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin0:
+    title: 'k* vs Lambda InvMass (4He, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin0:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 0)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin1:
+    title: 'k* vs Lambda InvMass (4He, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin1:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 1)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin2:
+    title: 'k* vs Lambda InvMass (4He, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin2:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 2)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin3:
+    title: 'k* vs Lambda InvMass (4He, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin3:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 3)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin4:
+    title: 'k* vs Lambda InvMass (4He, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin4:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 4)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin5:
+    title: 'k* vs Lambda InvMass (4He, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin5:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 5)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin6:
+    title: 'k* vs Lambda InvMass (4He, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin6:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 6)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin7:
+    title: 'k* vs Lambda InvMass (4He, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin7:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 7)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_4He_CentBin8:
+    title: 'k* vs Lambda InvMass (4He, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda
+  hKstarMass_Mixed_4He_CentBin8:
+    title: 'Mixed k* vs Lambda InvMass (4He, Cent 8)'
+    xAxis: *Kstar
+    yAxis: *InvMassLambda

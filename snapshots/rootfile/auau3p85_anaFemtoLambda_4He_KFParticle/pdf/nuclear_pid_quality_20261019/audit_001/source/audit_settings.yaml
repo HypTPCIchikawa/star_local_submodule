@@ -1,0 +1,18 @@
+schemaVersion: 1
+lowSummary: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/summary_free_sensitivity_001
+rawGateCounts: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/independent_gate_counts_001/gate_counts.tsv
+highFinalSummary: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_final_001
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_quality_20261019
+chi2NdfThresholds: [1.5, 2.0, 3.0, 5.0, 10.0, 20.0]
+purityThreshold: 0.5
+aggregateWidth: 0.05
+minimumModels: 2
+minimumNominalModels: 2
+minimumResponseFamilies: 2
+minimumBackgroundFamilies: 2
+focusPadding: 0.05
+focusIntervals:
+  d: [[0.60, 0.70], [1.45, 1.50], [1.70, 2.00]]
+  t: [[0.75, 0.85], [1.35, 1.40]]
+  he3: [[0.70, 0.80]]
+  he4: [[0.65, 0.75], [0.85, 0.95], [1.75, 1.80]]

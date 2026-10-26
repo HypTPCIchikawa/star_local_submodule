@@ -1,0 +1,31 @@
+{
+  "phase": "complete",
+  "no_refit": true,
+  "inputs_unchanged": true,
+  "pages": {
+    "linear": 53,
+    "physical": 8
+  },
+  "products": {
+    "settings.yaml": "0616f34dc2eb7d698422b303ac9418ff6d3b8c07eeb3c440f03bb4edaaa1ba4a",
+    "settings.tsv": "b7311e2e6a846d39dbf69d1aa86dd758d204bd49552aa48a31f5bb2ac3ffaf91",
+    "slices.tsv": "d3a655d8140b85e362985ae488d130f6a5a26ab64dc2fd7f5bcc25ccbce29e3c",
+    "context.json": "5c6c7a022885b7c9a0b17be9d5674ca5dabcb8438d024dbc2bbf89683ffff256",
+    "he4_fits_linear.pdf": "482d5839956c3387e6fc5a6f0cb4dafeb1f0f2866b795d6bcaa843e6705d5f73",
+    "he4_fits_linear_first.png": "fd18700228f53b674f9fba782cffe51e38c8d4a7c65e47f611e6666166886ba0",
+    "he4_low_rigidity_dedx.pdf": "0ca1ff17ff53922717198f494333cae223464736df6e9274f65ffbecfd869d11",
+    "he4_dedx_R_505.png": "70026be014818763677423d17703563d5e5efc648f945ffdd2ccac96b7e4a1d4",
+    "he4_dedx_R_555.png": "dfd2dd866c724d9fc0ea525ec307deb68f188ba9fdf6207d68318f0e76aad7c6",
+    "he4_dedx_R_605.png": "702d9ed4c3059672ef9e1961395bc98f3ad6732a4c6e9ab71a8092667aa05aa6",
+    "he4_dedx_R_655.png": "2d61a2764a2f94e5b8ce34e34cdcf1ae748af8fd038849609fb3bc3d3146750b",
+    "he4_dedx_R_705.png": "da0cd7c1411165aad8cc0019e6999cc3ea7b58b4734e29ab2fa6afe0176d1dc9",
+    "he4_dedx_R_755.png": "875d103ea49c339cbedad578f0971e009d4511a293490b57942814043876b795",
+    "he4_dedx_R_805.png": "3db2b771f21a9f2bf6b357a806459b0e120250ea012f5aa36080546d125f6143",
+    "he4_dedx_R_1005.png": "0f15f7808f7f4d6968f4ee0a1bb8e3b85461dd38dab7c16efa4075d00f20e4d7",
+    "render_audit.json": "e3432005c15e33daa502df4f8a70ad41b2d694cbae64b3dbe5dfbe03f9b7312a",
+    "README.md": "ff2d900e3697e92300f1fbc195683afc03168e2e9d0301baf69d08b26b19e718",
+    "logs/render.log": "cbb50603bae7a0cb84e4e2491485026c6f70b6caa3423d925d346750fa492de6",
+    "source/RenderHe4FitViews.C": "b2a2e411a070ce2aaf8ec44e45797e5c73dd0bd6c0bdf147a202cce1d8054b91",
+    "source/render_fit_views.py": "ecb94dd66c1bfb0170d8eec8a0a7ecfa2fb74b04e15d71dee7cc9e1d427cd415"
+  }
+}

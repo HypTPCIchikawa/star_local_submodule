@@ -1,0 +1,10 @@
+{
+  "phase": "complete",
+  "productionEnabled": false,
+  "products": {
+    "SummarizeRawDiagnostics.py": "d36e817ae93d86d1adfc3a37b217502480f22b15bf3d59d7d6cba233c689dad0",
+    "calibration_candidates.py": "73f4bb4e04950c06ee9ff94b88e688d72b48d46ced859444e944556b2fe82bf7",
+    "settings.yaml": "e893c73254f0fc3a93bbd36dea0ee69e00e33b2c2a77024b5997aa92b4a52b60",
+    "conditional_moment_crosscheck.json": "3dff1a38a18f7ef0ab23e61e60119d6eb17bc8d69f1022e5df6a5920aa1c418b"
+  }
+}

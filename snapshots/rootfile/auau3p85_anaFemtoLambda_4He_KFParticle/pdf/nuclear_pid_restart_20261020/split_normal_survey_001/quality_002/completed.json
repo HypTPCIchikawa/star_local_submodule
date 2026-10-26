@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "protectedInputs": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/split_normal_survey_001/plan.json": "50e0f50c834b4055121e88dfdc36a017dabbb19bef5d2bf9bc1cf9a04d2ecea8",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/split_normal_survey_001/fits.json": "006ab1038eab90ede1f859eef4a4084f82244aa7e225bb77b4f10f42f502b49c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/split_normal_survey_001/fit.log.completed.json": "6e602694a04097c1037b61e510870d1b8b2d4acc756a86e7399281383d13b84d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_restart_20261020/assess_calibration_support.py": "82a0b70258d51dd7339b9accee654ccd1f682c9971a98cd285353f8b1c84f66d"
+  },
+  "inputsUnchanged": true,
+  "fitResultsModified": false,
+  "rows": 380,
+  "products": {
+    "quality.json": "4267f186b64841d32d5fe3ff6be21a634213c6a3c5ba46bbbdab3e1f864f97b9",
+    "quality.tsv": "dec23374709cb48d56a969a298f01ae99c7eaf9c3a8f29d0f3ca5a228e6f47d5",
+    "assess_calibration_support.py": "82a0b70258d51dd7339b9accee654ccd1f682c9971a98cd285353f8b1c84f66d"
+  },
+  "productionEnabled": false,
+  "coefficientsUpdated": false,
+  "purityAvailable": false
+}

@@ -1,0 +1,16 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "partition": "native_smoke",
+  "background": "linear",
+  "nSlices": 30,
+  "totalDataDeviance": 5862343.003968548,
+  "numericalConverged": true,
+  "numericallyConvergedSlices": 30,
+  "he4IndependentTagNuisanceValidationComplete": false,
+  "responseModel": "lognormal",
+  "responseParameterization": "mode_and_local_curvature",
+  "curveAdoptionAllowed": false,
+  "note": "Execution completion is not convergence, isotope identification, supported calibration or validated purity."
+}

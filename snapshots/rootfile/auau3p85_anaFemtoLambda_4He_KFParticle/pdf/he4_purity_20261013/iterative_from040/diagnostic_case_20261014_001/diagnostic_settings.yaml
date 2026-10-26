@@ -1,0 +1,13 @@
+schemaVersion: 1
+sourceStudy: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001
+sourcePhase: 13_common_raw_refit
+shapeRefit: false
+probeStepFrom: commonCoefficientTolerance
+variants:
+- - strict
+  - 1.0e-08
+  - 250
+- - loose
+  - 1.0e-06
+  - 1000
+timeoutSeconds: 1800

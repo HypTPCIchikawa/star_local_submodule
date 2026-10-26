@@ -1,0 +1,7 @@
+schemaVersion: 1
+# Numerical sensitivity only. Raw fit domain, component/background models,
+# R averaging, input tracks and production PID remain unchanged.
+engine:
+  amplitudeGradientTolerance: 0.000001
+  amplitudeMaxIterations: 1000
+  maximumCommonOuterIterations: 12

@@ -1,0 +1,20 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "seconds": 12.208401203155518,
+  "historicalSource": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_exponential_nominal_free001",
+  "historicalSourceSha256": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_exponential_nominal_free001/source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_exponential_nominal_free001/source/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_exponential_nominal_free001/source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_exponential_nominal_free001/source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c"
+  },
+  "reproductionChecks": [],
+  "products": {
+    "cutoff_fits.json": "3e89b79b5451b78968d685a14b76790e224b45c959f0b75b4848c059bab5787c",
+    "cutoff_fits.root": "a68460242ae18ddd0d95166722a0a8c3f2f56fd7f8c18cab111c7333ae46c7e8",
+    "gates.tsv": "e8548e4246b3dc0930031e03f5a45b9ad262a8446798a3ab205b954bcc286777",
+    "shapes.tsv": "643c30322f4480045ad8e928a5dec2149578ba42226e3b8e26808421bc79894f",
+    "settings.tsv": "c0ccd3927b8cf2eff514baf9142c08c283926a620e270c16bb82d907d5b3855b"
+  }
+}

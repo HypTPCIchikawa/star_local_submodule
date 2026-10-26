@@ -1,0 +1,12 @@
+# Lambda V0 (p + pi-) analysis cuts
+
+nSigmaProton: 3.0
+nSigmaPion: 3.0
+minDCAProton: 0.7
+minDCAPion: 1.0
+maxDaughterDCA: 0.5
+maxDCAV0: 0.5
+minCosPointing: 0.998
+maxPathLength: 100.0
+minNHitsFit: 15
+minNHitsRatio: 0.52

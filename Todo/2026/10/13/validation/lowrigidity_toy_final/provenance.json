@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "runtime": "STAR SL24y / sl73_x8664_gcc485 / ROOT 5.34.38 / forced ACLiC .C++",
+  "sources": {
+    "tools/he4_purity/FitHe4Purity.C": "6b664ce5ea97e62314ea7786ac85d4a444e643ef7f74cb8e95291ece885a8c70",
+    "tools/he4_purity/CheckLowRigidityPurity.C": "86e03f55bfc1730d1cfd7427f9a7af8a7c51dd36a037d842aac5dc6c56aaee5a",
+    "tools/he4_purity/CheckToyPurity.C": "cabe7c9b7d0e89969ecda3c3c9500e37a58230fb78b22746c5ad3dc53c80f563",
+    "StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "Todo/20261013/validation/lowrigidity_prototype_005_rebin5/13p5/settings.tsv": "760aec029cb18e438b4e00a9950eecb82bde98147d6d1fa840401d06b74eee4e",
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/settings.tsv": "7f949cbf06f4a1624a588b36c30a20b55ce68d513baa66ba176a597e788aef0c"
+  },
+  "newLowRigidityTests": {
+    "exitCode": 0,
+    "cases": 6,
+    "injectedSignalMean": -1.2,
+    "injectedSignalSigma": 0.7,
+    "rigidities": [0.55, 0.70],
+    "backgrounds": ["linear", "exponential"],
+    "fixedAndMovingGateAnalyticalNumericalTolerance": 1e-8,
+    "fixedAndMovingGateTruthPurityTolerance": 0.001,
+    "signalFreeControlEvidence": false,
+    "monotonicWeakShoulderRawLocalMaximum": false,
+    "result": "Todo/20261013/validation/lowrigidity_toy_final/lowrigidity_closure.json",
+    "log": "Todo/20261013/validation_lowrigidity_toy_final.log"
+  },
+  "legacyClosure": {
+    "exitCode": 0,
+    "cases": 2,
+    "result": "Todo/20261013/validation/legacy_toy_after_lowrigidity/toy_closure.json",
+    "log": "Todo/20261013/validation_legacy_toy_after_lowrigidity.log"
+  },
+  "note": "Asimov closure verifies recovery within the injected model family. Real-data model adequacy and native-to-rebinned count conservation are separate checks."
+}

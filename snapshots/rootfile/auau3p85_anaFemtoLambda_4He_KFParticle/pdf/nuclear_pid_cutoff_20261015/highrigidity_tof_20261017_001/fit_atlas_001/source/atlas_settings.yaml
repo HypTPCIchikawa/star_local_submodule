@@ -1,0 +1,27 @@
+# 保存済み高R fitの表示のみ。新fit・低R変更なし。
+schemaVersion: 1
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001
+parameterTable: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_final_001/native_parameters.tsv
+renderer: tools/nuclear_pid_cutoff/highrigidity/PlotHighRigidityAtlas.C
+rendererDependency: tools/nuclear_pid_cutoff/PlotCutoffSpectra.C
+commonDriver: tools/nuclear_pid_cutoff/render_native_atlas.py
+runtimeWrapper: script/singularity_root_batch.sh
+responseModels: [gaussian, lognormal]
+backgroundModels: [linear, exponential]
+targets:
+  d: {sample: TAG_D, rigidityMin: 2.0, rigidityMax: 2.5, fitWidth: 0.01, prefix: native, exactProductionTofWindow: true}
+  t: {sample: TAG_T, rigidityMin: 2.0, rigidityMax: 2.5, fitWidth: 0.01, prefix: native, exactProductionTofWindow: true}
+  he3: {sample: TAG_HE3, rigidityMin: 2.0, rigidityMax: 2.5, fitWidth: 0.01, prefix: native, exactProductionTofWindow: true}
+  he4: {sample: TAG_D, rigidityMin: 2.0, rigidityMax: 5.0, fitWidth: 0.05, prefix: coarse_native, exactProductionTofWindow: false}
+bookRigidityWidth: 0.2
+modelsPerSpecies: 4
+pagesPerBin: 4
+axisTolerance: 0.000000001
+executionTimeoutSeconds: 7200
+maxRenderWorkers: 2
+plots:
+  dedxMin: 0.0
+  dedxMax: 120.0
+  displayDedxRebinFactor: 1
+  logMinimum: 0.1

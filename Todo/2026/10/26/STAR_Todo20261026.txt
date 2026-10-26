@@ -1,0 +1,121 @@
+STAR Todo — 2026/10/26
+作成・整理日：2026/10/26（日本時間）
+対象：2021 P24iy Au+Au 3.85 GeV、Λ–4He KFParticle解析
+状態：β–η図・BOX重ね描き・hadd/分割ROOTセットは完了。Git整理・push・手元ライブラリ再ビルド・最終記録まで完了。
+
+■ 1. 通常ヒスト統合＋巨大PID Sparseの3分割保存【完了】
+[x] 3本の中間ROOTと全270区間の検証済み結果を確認。
+[x] 単一SparseがROOTの約1GB/オブジェクト上限を超える原因を特定。
+[x] ユーザー指定により通常1,786ヒスト1本＋巨大Sparse3本の保存方式を確定。
+[x] 通常ヒストだけの結合と、Sparseの座標・内容・誤差・flow保存を小規模ROOTで検証。
+[x] 3本のSparse抽出と、全bin・誤差・Entries・軸・Sumw2の再読取り一致を確認。
+[x] 通常1,786ヒストの統合・最終検証・全4 ROOTの公開を完了する。
+[x] 検証済み元26,955 ROOTをsubjobsへ保存する（削除しない）。
+[x] 終了メールの送信受付と完了記録を確認する。
+
+・SUMS ID：04BF2DAE47164B6F040E3A460E539289。
+・通常ROOT＋3 Sparseを全て確認してから元ROOTを整理し、メールを送る。
+・7ヒストの微差に対する承認、および追加の単精度差をROOT再加算と全bin比較する検査を維持する。
+・haddの実行範囲では再解析・PID変更・job再投入・Git pushは行わない（Git整理は第5項の別作業）。
+・詳細・根拠：he4_hadd_sparse_size_limit_20261026.md。
+・最新の機械的状態：job/run/merge_notify/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289/split_sparse_final_20261026/status.json。
+
+■ 2. Λ・4Heのβ vs η分布【完了】
+- [x] ヒスト名・軸・候補選別・TOF条件をコード/設定と総合説明から確認。
+- [x] 3中間ROOTの検証済みfingerprint、データ年度、SUMSを照合。
+- [x] 入力リスト、図の設定、由来metadataを保存。
+- [x] 6個のTH2Dを合算し、内容・軸・有限値・充填を確認。
+- [x] 全bin/flowで lowR_noTof + highR_tofM2 = inclusive を検査。
+- [x] 低Rの tofM2⊆tofMatch⊆noTof を検査。
+- [x] 主図と低R TOF比較、単独図をPDF/PNGに出力し目視確認。
+- [x] 合算TH2 ROOT、候補数/flowの表、再現macro、完了記録を保存。
+
+・βは物理運動量から計算した|p|/E、横軸はη_lab。
+・主図はΛ信号候補、4He 0.61<R<2（TOF要求なし）、4He 2≤R<5（有効TOF＋m²）。
+・低RのTOF要求なし／有効TOF／TOF＋m²は重複する部分集合として比較する。
+・詳細・図・候補数・検証結果：beta_eta_lambda_he4_20261026.md。
+
+■ 3. 1頁の体裁修正と3色BOX重ね描き【完了】
+[x] 1頁の軸・タイトルをpixel指定に統一し、中央配置・整数η目盛・余白を修正。
+[x] η[-5,0.15]、β[0,1]を保って、Λ/低R4He/高R4Heを3色のBOX SAMEで重ねる。
+[x] 共通のraw-count尺度を使い、試料ごとの規格化をしない。
+[x] 6頁PDF、BOX単独PDF/PNG、3 TH2＋canvasのROOTを保存し、全bin内容/誤差・Entriesの不変を確認。
+[x] 修正前5頁PDF等をrevisionsに保持し、Todo・結果資料・当日ログを更新。
+
+■ 4. READMEとTodoの分離【完了】
+[x] READMEを資料・成果物への短い索引に整理。
+[x] 日付付きTodoへ作業項目と進捗を分離し、個別mdは定義・結果・履歴として保持。
+[x] 完了時の自動記録先もTodoへ変更し、記録用watcherだけを再起動。
+
+■ 5. チーム共有Gitの整理と解析更新のpush【完了】
+
+■ 以前の依頼の理解
+・チームで使う解析コード・本番設定をGitへ反映する。
+・Todo、個人の日報/実施報告、解析途中・今回作成したPDF/図/ROOT等の生成物、今回のPurity評価専用コードはpushしない。
+・既にpush/追跡されているTodo等も、ローカル実体を保持したままGitの管理対象から外す。
+・今後同じファイルが混入しないよう、共有.gitignore等の除外ルールを整える。
+・チーム側の新しい更新と、今回以外のローカル変更を保持する。force pushや共有履歴の書換えをしない。
+・pushは解析job終了後という以前の条件を守る。承認済み部分hadd・元ROOT保存・終了メール受付は10/26 11:13 JSTまでに完了したため、その保留条件は満たしている。
+
+■ 作業項目
+[x] 10/22の依頼・保留経緯を再確認し、上記の方針をTodoへ明記。
+[x] 読み取り専用で現在のHEAD/変更・追跡状態、hadd完了記録を確認。
+[x] 最新origin/mainを確認し、チーム更新を保った作業用worktreeで整理する。
+    10/22の一時worktreeは/tmp/star-team-publish-20261022（当時62c5f4c）。再開時はそのまま最新とみなさず再確認する。
+[x] 変更・未追跡ファイルを棚卸しし、「共有する本番コード/設定/技術資料/必要なテスト」「個人study/報告/生成物」「今回と無関係な変更」に分類する。
+    今回と無関係な変更を一括でcommitしたり、消したりしない。
+[x] 公開しないファイルのローカル保存先・バックアップを確認し、追跡済みの対象をgit rm --cached相当で管理解除する。
+    ファイル自体やROOT/PDF/記録は削除しない。移動済みファイルは現在の実体も確認する。
+[x] Todo/、個人ログ・報告書、今回のPurity fit/作図専用コード、生成物等の対象を共有除外ルールへ明記する。
+    除外は用途/パスを確認して設定し、必要な解析コードや共有README/技術資料まで一括除外しない。
+[x] 本番解析に必要な更新だけを取り込む。
+    確定4He PID係数/校正YAMLとその読込実装、d/t/3HeのGit係数保持、R=2のTOF切替、追加ヒスト・QAと参照先YAML等の依存を揃える。
+    Purity推定用コードを除外することと、本番が必要とする確定係数・runtime設定の配布は区別する。
+    batch入力修正等の運用更新も共有対象として精査し、研究途中の試行コードを混ぜない。
+[x] 共有ドキュメントの参照先を確認し、非公開Todo/個人report/生成PDF等へ依存するリンクを整理する。
+[x] 整理後のクリーンなcheckoutで設定・コードの参照先が揃うことを確認し、変更に必要なbatch同一環境でのbuild/検証を行う。
+[x] stageするファイルを明示選択し、diff --cachedで解析更新と管理解除の内容を最終確認する。
+    git add -Aで私的ファイルや無関係の変更を混入させない。
+[x] 必要な解析更新とGit管理解除を通常commitとしてpushし、リモートで対象ファイルが除外されたことを確認する。
+    過去の全履歴からの消去は行わず、共有branchの現在の管理対象から外す。
+[x] 整理内容・公開/除外一覧・検証結果をローカル記録に残す（この記録自体はpushしない）。
+
+■ 計画更新時の確認
+・ローカルmain HEAD：8f7d539、stage済みファイル0件。
+・現在HEADでの追跡：Todo/ 4件、analysisnote/ 2件、rootfile/ 10件。既にignoreされていても追跡中のものは別途管理解除が必要。
+・今回のターンはTodoの更新と読み取り確認のみ。git rm/index操作、commit、push、履歴変更はまだ行っていない。
+・Gitの整理はhaddの実行範囲とは別の作業として扱う。
+
+■ 資料の役割
+・README.md：当日の資料・成果物への索引。
+・STAR_Todo20261026.txt：作業項目、チェックリスト、進捗。
+・個別のmd：定義、方法、実施結果、検証、履歴。
+
+■ 整理時点の状態
+2026-10-26T10:37:50.317507+09:00：haddの状態コード merging_normal_and_extracting_sparse（状態記録時刻 2026-10-26T09:24:25.779301+09:00）。図の作成完了とは区別する。
+
+
+## 自動完了記録 — 2026-10-26T11:13:22.408564+09:00
+
+状態：完了（通常ROOT＋3 Sparse、個別ROOT保存済み）。メール：ローカルsendmail受付済み。
+通常ROOT：`/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289_merge.root`（14064010756 bytes）。
+Sparse：`/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289_pid_pair_joint_part000.root`。
+Sparse：`/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289_pid_pair_joint_part001.root`。
+Sparse：`/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289_pid_pair_joint_part002.root`。
+検証・公開・保存・送信記録：`/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/job/run/merge_notify/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289/split_sparse_final_20261026`。
+
+Git整理開始：ユーザーの実行指示により着手。作業前diff/status/refをrootfile/auau3p85_anaFemtoLambda_4He_KFParticle/tests/git_publish_20261026_001/へ保存。ローカル実体を保持し、最新originを確認して別worktreeで公開用変更を検証する。
+
+Git整理・push結果：2026-10-26T11:53:19.102792+09:00、main 31b7d126830b978c9ad95f23b5deb730ed68e472を公開。本人由来の個人資料等40件を管理解除し、回帰fixture1件を移動。元の実体と無関係なWIPを保存してmain/indexも同期。詳細はgit_cleanup_20261026.md。元作業場所の本番ライブラリ再ビルドは最終確認中。
+
+Git整理の最終完了：2026-10-26T11:55:15.719033+09:00。元作業場所の追跡済み本番ソースのbatch再ビルド成功。リモート31b7d12と公開ファイル一致、私的ディレクトリの追跡0、ローカル原本・無関係なWIP保存を確認。
+
+■ 6. 個人資料のサブモジュール管理【実行中】
+[x] 指定リポジトリへの接続と未初期化（空）状態を確認。
+[x] 小さなPDF/図も保存するユーザー方針を確認。
+[x] Todo・日報を個人リポジトリへ移し、元パスをリンクで維持。
+[x] 評価コード・個人設定/報告は元実行場所を保持してsnapshot管理する。
+[x] ROOT・ビルド生成物・ログ・大きな数値出力を除外し、小さな図を保存。
+[x] 同期/復元手順、サイズ上限・既存ファイル保護を検証。
+[ ] 個人リポジトリへpushし、共有mainには任意サブモジュール参照だけを登録。
+[ ] 元ファイル保持・共有追跡なし・公開範囲を確認し記録。

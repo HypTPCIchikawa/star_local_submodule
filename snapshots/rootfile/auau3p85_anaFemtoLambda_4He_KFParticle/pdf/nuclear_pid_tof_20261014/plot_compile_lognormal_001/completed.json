@@ -1,0 +1,24 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "compileOnly": true,
+  "protectedPostRunVerified": true,
+  "inputFingerprintPreserved": true,
+  "products": {
+    "settings.tsv": "b4ebcecf37c95b7be8fb8578b490fee80231403d2b94e68201709eade166dbff",
+    "context.json": "1def339fd0343f484f896f7439a3775d4c50f4bc2bfb5b7ab34cd4580f5e3d99",
+    "command.json": "f539275db4da36ab647ecb59257183542a9aa2f30993bf2d79233aec5abd121a",
+    "root.log": "f5e31ed7e8472683a4454fe0f91bb31d816ea4d7d360e27a4fa9ec77896f8ea6"
+  },
+  "sourceSha256": {
+    "render_study.py": "0d72850d5bc44b75a2e107541e3eb76b10423d0e49cb056e00c3ef1e04b3431a",
+    "PlotNuclearStudy.C": "ff11e63dda7d07d7ae04bfbc6ba9aa2a791e9a695f1c438af59b69066c024ba4",
+    "display_settings.yaml": "1350d5234b5d6c7d2da3fa89b4f4c581eb88d7ef85cb572dac646b271f98a120",
+    "main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "PlotNuclearStudy_C.d": "1a6b2018ce11baf32b49b3848bf2adb74aea0af911cfab905481fbc82830e1c0",
+    "PlotNuclearStudy_C.so": "a6037d54b749d99737c98e311475e657ba63363dbaec71ef2237821b08c13a42"
+  }
+}

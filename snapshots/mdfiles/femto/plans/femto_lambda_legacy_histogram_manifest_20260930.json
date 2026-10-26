@@ -1,0 +1,6825 @@
+{
+  "schema": 1,
+  "reference": "analysis/anaLambdaNuclearId.C with StLambdaMaker, StNuclearIdMaker, StLambdaNuclearMixMaker; NOT intermediate split FemtoLambda code",
+  "created": "2026-09-30",
+  "histograms": [
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hVz",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 400,
+          "min": -300,
+          "max": 300
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRefMult",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hCentrality",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hCentralityRaw",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hCentrality16",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 16,
+          "min": -0.5,
+          "max": 15.5
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRefMultCorr",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRefMultWeight",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 125,
+          "min": 0.5,
+          "max": 3
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRefMultVsNTOFMatch",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 500,
+          "min": 0,
+          "max": 500
+        },
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRefMultVsNTOFMatchAfter",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 500,
+          "min": 0,
+          "max": 500
+        },
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hCentralityVsVz",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 400,
+          "min": -300,
+          "max": 300
+        },
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRawMult",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRawMult_vs_RefMultCorr",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        },
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRawMult_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hRefMultCorr_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hNTracks_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 500,
+          "min": 0,
+          "max": 2000
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hTofMatchMult_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 500,
+          "min": 0,
+          "max": 500
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hNProtonCand_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 200
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hNPionCand_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 200
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hNLambdaPairs_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 200
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_vs_Cent9",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 9,
+          "min": -0.5,
+          "max": 8.5
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_vs_RefMultCorr",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 1000,
+          "min": 0,
+          "max": 1000
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_Pt",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_Eta",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 100,
+          "min": -2.5,
+          "max": 2.5
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_Phi",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 100,
+          "min": -3.15,
+          "max": 3.15
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hDCA12",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 5
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hDCAV0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 5
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hCosPointing",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 100,
+          "min": 0.99,
+          "max": 1.01
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hNSigmaProton",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 100,
+          "min": -5,
+          "max": 5
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hNSigmaPion",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 100,
+          "min": -5,
+          "max": 5
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_vs_Pt",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 10
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_vs_DecayLength",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_vs_Y",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 100,
+          "min": -2,
+          "max": 2
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hDCAV0_vs_InvMass",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        },
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 5
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hCosPointing_vs_InvMass",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        },
+        {
+          "nBins": 100,
+          "min": 0.99,
+          "max": 1.01
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hLambda_InvMass_vs_TransDecayLength",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 50
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda candidate",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambda.yaml",
+      "directory": "/",
+      "key": "hN",
+      "type": "TH1I",
+      "axes": [
+        {
+          "nBins": 1,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "event/centrality QA; see original StLambdaMaker",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "quality and positive dE/dx, before nuclear selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_cut",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "invalid/unmatched TOF OR failed broad m2 and momentum QA",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_e",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "quality and positive dE/dx, before nuclear selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_pi",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "quality and positive dE/dx, before nuclear selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_K",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "quality and positive dE/dx, before nuclear selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_p",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "quality and positive dE/dx, before nuclear selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_else",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "quality and positive dE/dx, before nuclear selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_d",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_t",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_3He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_4He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsEta_d",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsEta_t",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsEta_3He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsEta_4He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsY_d",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsY_t",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsY_3He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsY_4He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 100,
+          "min": -3,
+          "max": 3
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsPt_d",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsPt_t",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsPt_3He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hPvsPt_4He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        }
+      ],
+      "stage": "TPC hypothesis, before best-species, rigidity and optional TOF selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_d_m2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "valid TOF QA independent of final selected nucleus",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_t_m2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "valid TOF QA independent of final selected nucleus",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDedxP_3He_m2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1200,
+          "min": 0,
+          "max": 120
+        }
+      ],
+      "stage": "valid TOF QA independent of final selected nucleus",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hM2P",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 600,
+          "min": 0,
+          "max": 6
+        },
+        {
+          "nBins": 1000,
+          "min": -0.5,
+          "max": 25
+        }
+      ],
+      "stage": "valid TOF QA independent of final selected nucleus",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_d",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_t",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_3He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_4He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_d_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_d_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_t_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_t_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_3He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_3He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_4He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hQlab_4He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_d_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_t_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_3He_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstar_4He_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_d",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_t",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_3He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_4He",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_d_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_d_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_t_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_t_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_3He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_3He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_4He_SBPos",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hQlab_Mixed_4He_SBNeg",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 2
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBPos_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_d_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_t_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_3He_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin0",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin1",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin2",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin3",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin4",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin5",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin6",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin7",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstar_Mixed_4He_SBNeg_CentBin8",
+      "type": "TH1F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "stage": "pair region classification",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_d_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_d_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_t_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_t_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_3He_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_3He_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin0",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin1",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin2",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin3",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin4",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin5",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin6",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin7",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hKstarMass_4He_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "mix",
+      "key": "hKstarMass_Mixed_4He_CentBin8",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "nBins": 200,
+          "min": 1.05,
+          "max": 1.25
+        }
+      ],
+      "stage": "selected Lambda full mass; accepted pair before mass-region selection",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDphiDeta_proton_d",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        },
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        }
+      ],
+      "stage": "same-event signal merging QA",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDphiDeta_proton_t",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        },
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        }
+      ],
+      "stage": "same-event signal merging QA",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDphiDeta_proton_3He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        },
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        }
+      ],
+      "stage": "same-event signal merging QA",
+      "configured": true
+    },
+    {
+      "source": "config/hist/hist_auau3p85_anaLambdaNuclearId.yaml",
+      "directory": "true",
+      "key": "hDphiDeta_proton_4He",
+      "type": "TH2F",
+      "axes": [
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        },
+        {
+          "nBins": 200,
+          "min": -0.25,
+          "max": 0.25
+        }
+      ],
+      "stage": "same-event signal merging QA",
+      "configured": true
+    }
+  ],
+  "optional_not_configured": [
+    "hDedxP_CentBin{i}",
+    "hDedxP_{d,t,3He,4He}_CentBin{i}",
+    "hPvs{Eta,Y,Pt}_{d,t,3He,4He}_CentBin{i}",
+    "hVz_{d,t,3He,4He}",
+    "hMult_{d,t,3He,4He}",
+    "hMult_{d,t,3He,4He}_CentBin{i}"
+  ],
+  "not_legacy": [
+    "hDedxP_4He_m2"
+  ],
+  "errors": "Original HistManager has no explicit Sumw2; unweighted counts use ROOT default sqrt(N), weighted centrality/mixing follow original Fill behavior.",
+  "known_original_artifact": "StNuclearIdMaker Write() also wrote zero-entry Mixed keys under true/; new output intentionally keeps populated Mixed keys only under mix/."
+}

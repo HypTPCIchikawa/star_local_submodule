@@ -1,0 +1,23 @@
+{
+  "completedAtJST": "2026-10-26T09:47:32.276560+09:00",
+  "pdf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/beta_eta_acceptance_20261026_001/beta_vs_eta_lambda_he4.pdf",
+  "pdfPages": 5,
+  "ghostscriptReadbackPassed": true,
+  "sourceFingerprintsUnchanged": true,
+  "contentUnchangedByLayoutFix": true,
+  "sampleHistograms": 6,
+  "he4PartitionMismatchBins": 0,
+  "he4SubsetMismatchBins": 0,
+  "inputEvents": 2100726543,
+  "reconstructedEvents": 2067647474,
+  "independentDefinitionAndPlotReview": "passed",
+  "visualReview": "overview and low-TOF comparison inspected; final footer padding and Lambda flow annotation applied",
+  "files": {
+    "beta_vs_eta_lambda_he4.pdf": "621095374b2f1c6091e05d14aa2f66e892b11dc4165b5971c5a9fbb6a79fe923",
+    "beta_eta_summed.root": "a13d4448578d9be0f8d4155af4903fa8c65321721eafa6437acb89eef58b1f5d",
+    "PlotBetaEta.C": "45a91d1ca0fae5cee74f105df58d18b038b2a2ed8c6ce7369994f5094fcc08dd",
+    "plot.env": "402a4d7bc14eeecd1e64f1779bbe25ad0ace601cdf14e802228b9d7c967a2f6a",
+    "counts.tsv": "f2910e78e5d894364acd4e222840c6df5487bf7eac7da60e2fd7217d4162af7f",
+    "validation.tsv": "8fd60030e7668a55e5eba62c391d10a35ce8b4b548e9cacd237e78f93ed3d838"
+  }
+}

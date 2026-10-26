@@ -1,0 +1,19 @@
+{
+  "executionComplete": true,
+  "rawReadback": true,
+  "productionEnabled": false,
+  "fixedShapes": true,
+  "completedJST": "2026-10-19T16:40:28.621349+09:00",
+  "protectedInputsUnchanged": true,
+  "products": {
+    "settings.tsv": "310eb147f57294adf71befe5ff7ee5104ff3b5902c200d45a0769a53a6bd74d0",
+    "shapes.tsv": "290461327b96e2ed97723e73d28dd7ae7266d5f467b67d2232b80b4c0685dcd0",
+    "gates.tsv": "4da559b186b7fe2c730b781adff6a1931a26c6a37eed10eb27b3c59b7940759c",
+    "regions.tsv": "c5b9999bb99a5674e60d69a450771110efa84bef6273192f71b1accef9e9e227",
+    "RunPeakAnchored.C": "16d421cc7556cb6b7b1cc26937863b53d7c447d10ca5dd378bed1199ff1d2a56",
+    "command.json": "80e760054bbe3e5d5461d5f025bca32e05c51eabaa0cd68d3fc16f211e7e4bf2",
+    "run.log": "cf2b4ba0765253be676a8188e759690313524afc5b7a260360b15b58adc89f74",
+    "cutoff_fits.root": "9c2afe50e0fae4716bc18e557faef95a4418bf0ab6457c70be9c7f0fbfb155f8",
+    "cutoff_fits.json": "03207aa2d900b8592b8ecc3b0ca34afa6c961804ca6ad008da3b922db1e4f388"
+  }
+}

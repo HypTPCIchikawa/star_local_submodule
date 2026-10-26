@@ -1,0 +1,8 @@
+# config-generator: manual
+# Opt-in Lambda KF-specific study; original Imp5 mainconf remains unchanged.
+# Geometry / kinematics gates inside the Lambda Finder are disabled here only.
+event: cuts/event/event_auau13p5_anaLambda_KFParticle_Imp5.yaml
+centrality: cuts/centrality/centrality_auau13p5_anaLambda_KFParticle.yaml
+kf: cuts/kf/kf_auau13p5_anaLambda_KFParticle_KFSpecificStudy.yaml
+hist: hist/hist_auau13p5_anaLambda_KFParticle.yaml
+analysis: analysis/analysis_info_auau13p5_anaLambda_KFParticle_KFSpecificStudy.yaml

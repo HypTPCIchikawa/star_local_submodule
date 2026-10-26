@@ -1,0 +1,16 @@
+gate 1.11596 0.00296 3.0 4.0
+rebin 4
+slidingHalfWidth 2
+normalization 0.4 0.6
+fitRange 1.08 1.15
+fitMeanLimits 1.11 1.12
+fitSigmaLimits 0.001 0.008
+fitSigmaInitial 0.003
+minimumEntries 10
+minimumCovarianceStatus 2
+group all_0_80 0 8
+group cent20_80 0 5
+group cent0_20 6 8
+group cent0_10 7 8
+group cent10_20 6 6
+group cent20_60 2 5

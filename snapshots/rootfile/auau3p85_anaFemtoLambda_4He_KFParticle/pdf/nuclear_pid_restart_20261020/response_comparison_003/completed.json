@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "inputsUnchanged": true,
+  "productionEnabled": false,
+  "coefficientsUpdated": false,
+  "purityAvailable": false,
+  "scientificAdoptionAllowed": false,
+  "cases": 8,
+  "pages": 8,
+  "panels": 48,
+  "refit": false,
+  "normalization": false,
+  "pdfReadback": true
+}

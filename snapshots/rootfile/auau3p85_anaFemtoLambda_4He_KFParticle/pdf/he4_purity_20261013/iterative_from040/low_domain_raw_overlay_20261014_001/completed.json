@@ -1,0 +1,39 @@
+{
+  "executionComplete": true,
+  "displayOnly": true,
+  "productionEnabled": false,
+  "originalsPreserved": true,
+  "products": {
+    "settings.tsv": "1021bc45f0731bedef3840920e4da2cb525c3d85a3370ed8939b75bf3645cde4",
+    "coefficients.tsv": "99426808e808b6ffd262c3de69d4aaf6b9d0ee6d0dcbfc34eb2e633971ecfdc5",
+    "curve_grid.tsv": "8b7d0be7c3900236c2dadc21f0196656d18c82baa6d8fb253a38d30bb27f797d",
+    "command.json": "43ae37fd855a6e24a341bb6013a7c42400dc55a7c600d737023a86a7c4b93362",
+    "root.log": "c3f604787ac62a8925b07842f1e75cfcce5da5a5eb4f6b595fc5e56c1658c379",
+    "raw_colz_low_domain_overlay.pdf": "936082ced2ef3e83943fab39ea24b13eb28ccf9e8c1aa093a1bed7c149b22814",
+    "raw_colz_full.png": "8148cf200d4bc3b15e9bd953a6809af6882e1a0db69ae45a891f3343b6c2c4f1",
+    "raw_colz_nuclear.png": "eb77eb926160f448119b8062fc70615baf4a10e110371e929b9f493b2261ad5c",
+    "width_comparison.png": "f72d76209b5c455a42f0f28eec833e970aaea580b3024174c5a80359867d0955",
+    "center_comparison.png": "e225a16ec917a5c28130c62697828a6e475abffc0d18caf9aaedbe55227594c0",
+    "overlay_audit.json": "4a047902ac77382797e255efd93bcb2e1ff3fa45199390cc001ad7087036c811"
+  },
+  "audit": {
+    "displayOnly": true,
+    "pages": 4,
+    "rawCellsCopied": 54090,
+    "rawCountsBeforeDisplayRebin": 43006175713,
+    "rawCountsAfterDisplayRebin": 43006175713,
+    "nativeRBinWidth": 0.01,
+    "nativeDedxBinWidth": 0.1,
+    "displayDedxBinWidth": 0.5,
+    "curveGridPoints": 1806,
+    "maximumFormulaRelativeError": 6.447688939553578e-16,
+    "curveDomain": [
+      0.4,
+      0.7
+    ],
+    "outsideDomainDrawn": false,
+    "fitPerformed": false,
+    "pidAdopted": false
+  },
+  "completedJst": "2026-10-14T14:27:53.040508+09:00"
+}

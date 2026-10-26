@@ -1,0 +1,326 @@
+{
+  "artifacts": {
+    "README.md": {
+      "sha256": "1380bb6c22db114e7313bfa5ab5a77ecf0c468c7ea970bb6ec1d99d5a35a3f20",
+      "size": 2816
+    },
+    "check_views.py": {
+      "sha256": "73c9b10cb195069f8784a4b850bcbe2121d931ce013f4c30f680da8aeed6d7df",
+      "size": 5424
+    },
+    "d.command.txt": {
+      "sha256": "383467a40575bd166bfe66fd92a3e335b9484580cffe41916e77e02fa1ea6952",
+      "size": 719
+    },
+    "d.log": {
+      "sha256": "5ede03535d84ce2703f7405556ac19f0fbdd4b3abf0d5fdf84f3e954d4e0f87c",
+      "size": 3751
+    },
+    "fit_spectra_d.pdf": {
+      "sha256": "d6e0fe25e8a6d09ab00832e6836f9bc57a66a27f905ad040231c46996c17bae6",
+      "size": 2763425
+    },
+    "fit_spectra_d.pdf.readback.log": {
+      "sha256": "5a37192e401750342e0fc7b7671395a2bcd06614cf6675c8b581a292fb45cfe4",
+      "size": 597
+    },
+    "fit_spectra_he3.pdf": {
+      "sha256": "a2c22788769b3e570e3f969c82cd97d24bd24be1b491bc5a758d9714b7d4503c",
+      "size": 3017552
+    },
+    "fit_spectra_he3.pdf.readback.log": {
+      "sha256": "24e357a97449a6ebc5315d1c59a5e727ffbf747643a00b5107584374b74e0eaa",
+      "size": 597
+    },
+    "fit_spectra_he4.pdf": {
+      "sha256": "83c158577669bfbf8cdc1c1a84ee31cf3ad84229d324a5dd206efc53fe6aaa96",
+      "size": 4301901
+    },
+    "fit_spectra_he4.pdf.readback.log": {
+      "sha256": "f8b3fe9b4de7e40e9e9b77dbeafd60e0a406e07cf4d19a625bdaff65f7ebe340",
+      "size": 629
+    },
+    "fit_spectra_t.pdf": {
+      "sha256": "616dbffdf2267c569b3ebcc8a156b45c494ef6f2c92cc21fd3645e721cc84c48",
+      "size": 3153406
+    },
+    "fit_spectra_t.pdf.readback.log": {
+      "sha256": "835e2fbceb0beade6b0f38dc9e6968654fad73d700cda654fc80b7f628474ed2",
+      "size": 597
+    },
+    "he3.command.txt": {
+      "sha256": "fc3d7be8795fba6ca12524ca2718a88b9bb7fb7fa42cd06df8db9711be29afb7",
+      "size": 725
+    },
+    "he3.log": {
+      "sha256": "bf3ed0c64eb43b7684e1794f00cfe8f4cb417aaf6b9c48ae845a843f50ae5370",
+      "size": 3542
+    },
+    "he4.command.txt": {
+      "sha256": "26fa8c31005d404fa60a360bcec544f628ad4eb6bc26a773a465693e219d59db",
+      "size": 725
+    },
+    "he4.log": {
+      "sha256": "ac39c66a5ddc0d8fc159d61fab148c6191a3dd2164150d6a64d671d65d17b079",
+      "size": 4242
+    },
+    "he4_fit_page_1.png": {
+      "sha256": "f30d56cd342388a1bcf44087fcef9aac608c1a97be09a6698303ed42bf0fca0a",
+      "size": 36038
+    },
+    "he4_full_page_1.png": {
+      "sha256": "7a0d5a126970b2452156a3107e47d9bfccec8bbd674e56a2405774bbdf7b8339",
+      "size": 27548
+    },
+    "models_d.tsv": {
+      "sha256": "eb7157c28ebc43a4bb109e704fd0759e70aa877362df5e3205d988d30ae786df",
+      "size": 649
+    },
+    "models_he3.tsv": {
+      "sha256": "ba96f4a2dd1a314518e8cdca0072f780361c48ed4df33616b8201844e9903124",
+      "size": 657
+    },
+    "models_he4.tsv": {
+      "sha256": "8bffe498c24dbec806c2ca989e020b26d316c28889802a055f6f101f9f929ac9",
+      "size": 657
+    },
+    "models_t.tsv": {
+      "sha256": "526b4fa2c516f71d3ebf4fbe61ac8e03ae14dd060ef05099e403d6a7a01ff823",
+      "size": 649
+    },
+    "overview.command.txt": {
+      "sha256": "da2755c176d924e4a57383800b14f1d1c3d9db9339fb73a625690335aba97145",
+      "size": 874
+    },
+    "overview.log": {
+      "sha256": "0f493888a3ae3984304def3037f0173bd9a48b1831464b08248e3dc80cb22c32",
+      "size": 2353
+    },
+    "overview_page_1.png": {
+      "sha256": "387b2069be1841947b705163a8c3d8e66902f0a57c10d20cbad4d7ff4480c295",
+      "size": 32864
+    },
+    "overview_page_2.png": {
+      "sha256": "c652d1fd446bca165c0012b35608402f084746e1b7290c5cc232a81d127af0e2",
+      "size": 75597
+    },
+    "overview_page_3.png": {
+      "sha256": "01171463f89a776412b23e73fbc2927a0dd7dc0c69529910393f6ebbac8d4564",
+      "size": 17434
+    },
+    "parameters.command.txt": {
+      "sha256": "381e5582ae98fd4083af6746f56c73aaff5c1ef7b895848d5f08607e5ab2142d",
+      "size": 757
+    },
+    "parameters.log": {
+      "sha256": "64a8068f9fbf678e9730715576086be187c4b1728d3e3d951c496ede7b6685ac",
+      "size": 2583
+    },
+    "parameters_page_1.png": {
+      "sha256": "f041ed5f43d4c9e36b707c200ec5c7f1d15bf09ec45231f2254cc831da276c4b",
+      "size": 24626
+    },
+    "parameters_page_2.png": {
+      "sha256": "46d0d06a7db3d97402e7d455520a4d92335db28176b59252f073c2d92693ac52",
+      "size": 65142
+    },
+    "purity_cutoff_overview.pdf": {
+      "sha256": "550d2d5e044a05cb635c944de5e5c32a6ce345abd8b2dd182bffb1f0bda51c5e",
+      "size": 2505847
+    },
+    "purity_cutoff_overview.pdf.readback.log": {
+      "sha256": "aa41daf9b33314c6619ad200893455a526752ef82e1e24c8497640a23d0112fb",
+      "size": 396
+    },
+    "response_parameters.pdf": {
+      "sha256": "7dcac8584a2f91a7faaed935e7108af4e146d05ac9439600d4ec3aa925e98ce5",
+      "size": 2614979
+    },
+    "response_parameters.pdf.readback.log": {
+      "sha256": "f8054f160f5d13c4c1712377e311dd6af3cf46925b1a6ac09e16292960d161e3",
+      "size": 410
+    },
+    "run_views.sh": {
+      "sha256": "e1d21185d10d7f00b7bce2a25ea5bc24224128c5c0ec3c21cf56105365451534",
+      "size": 2375
+    },
+    "settings.tsv": {
+      "sha256": "15e69e60321ef2db863555cd5a65fd3ad746efa17b34aa21731ca844f796a9d2",
+      "size": 62
+    },
+    "slices_d.tsv": {
+      "sha256": "5b8a6ca9320d9877abf66612dc8e9b6de3ab1919074cf89d776464735551aafd",
+      "size": 43
+    },
+    "slices_he3.tsv": {
+      "sha256": "20dac6a3c9eb58c05df228e8df497bc5543a88fd2204c2aeabe2a6c954636960",
+      "size": 43
+    },
+    "slices_he4.tsv": {
+      "sha256": "453cf1f0106e4e9377550c2e9672787a4076376db3c79a3b86ee17b26723ad90",
+      "size": 52
+    },
+    "slices_t.tsv": {
+      "sha256": "eeeadef03f964fe440a5b6428837941e67f1c173c96b6c7e8d20f2ed8cb4df16",
+      "size": 42
+    },
+    "t.command.txt": {
+      "sha256": "9d08d240383dfa36e0249310e4b270c0889a4e6bd97ffdb846edfb659e9e3831",
+      "size": 719
+    },
+    "t.log": {
+      "sha256": "6c337c7128b2921c4675c661d8dcfa25cfbd40313fc726dbb04c49644b48e8ec",
+      "size": 3508
+    }
+  },
+  "createdJST": "2026-10-17T10:42:28.314281+09:00",
+  "inputs": {
+    "adopted_ranges_001/adopted_ranges.json": {
+      "sha256": "e5d9e9951fb8dcbc9cd6f451c76d30435434c378cc669b0a38219e18699d648a",
+      "size": 2597
+    },
+    "adopted_ranges_001/completed.json": {
+      "sha256": "68852e61e0d2cf0438ca44842f91ed4b778f7f44a36a41e3784e88305603501a",
+      "size": 778
+    },
+    "inputs/adopted_ranges.tsv": {
+      "sha256": "2bdf9900408191a7b55243379946a8639d9b7793642216cf12a8704e44f80551",
+      "size": 211
+    },
+    "inputs/baseline_curves.tsv": {
+      "sha256": "f3e6cbbfb96f7bc5c2a9b7aac8de5ae95c6ea9d735b8f75dd568ed9e77e6f83b",
+      "size": 37337
+    },
+    "inputs/native_parameters.tsv": {
+      "sha256": "96c98eb7309e1aaba5e82d0474d01dfe5fee58e550906425e80a858a7cf8eedc",
+      "size": 3132859
+    },
+    "inputs/summary.tsv": {
+      "sha256": "9ab3813d2fa0dd9f270fc7e8df0a78ec8020389b89a62399d88f37060a0047c4",
+      "size": 18771
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root": {
+      "sha256": "cefd9281fe4dc31ddcf7f0d403a1cdd2d6440e5873da40518804025b3e9b4828",
+      "size": 5784539
+    },
+    "source/PlotCutoffSpectra.C": {
+      "sha256": "65b9df635213bff20ec51cb37c19ddd6ff656e97b66a76530624949f96b60ab8",
+      "size": 8494
+    },
+    "source/PlotNuclearCutoff.C": {
+      "sha256": "7154c91cd7d190cf75b03777e19265998d5404cc0b2ee52349380ad6bede174a",
+      "size": 10135
+    },
+    "source/PlotNuclearParameters.C": {
+      "sha256": "c62beda2ac94ba2c07a243ce82931e0d39ea6105d0bf0277809f598e51dc4213",
+      "size": 5436
+    },
+    "source/singularity_root_batch.sh": {
+      "sha256": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+      "size": 2336
+    },
+    "summary_free_sensitivity_001/completed.json": {
+      "sha256": "d2382f48bcd746da996b8a460341ad1eed6ba8f155200a06f90c7fb86f15ce93",
+      "size": 1181
+    },
+    "summary_free_sensitivity_001/summary.json": {
+      "sha256": "f3be183f9a805b2fb1575ca7be4c175678aec4e7709b28d473d1c9eeccab559f",
+      "size": 4051154
+    }
+  },
+  "limits": [
+    "Purity and response values are copied from the completed 20261015 study, not refitted.",
+    "Model envelope is not a complete systematic uncertainty or a confidence interval.",
+    "Unsupported numerical fits remain diagnostic; drawing a component does not validate it.",
+    "Candidate retention concerns inclusive TPC tracks at R=0.4-2, not signal efficiency or CF pairs.",
+    "Final PID coefficients and existing production mainconf are unchanged by rendering."
+  ],
+  "pageCounts": {
+    "fit_spectra_d.pdf": 12,
+    "fit_spectra_he3.pdf": 12,
+    "fit_spectra_he4.pdf": 16,
+    "fit_spectra_t.pdf": 12,
+    "purity_cutoff_overview.pdf": 3,
+    "response_parameters.pdf": 5
+  },
+  "presentationOnly": true,
+  "productionEnabled": false,
+  "refitted": false,
+  "runtime": "STAR SL24y / sl73_x8664_gcc485 / ROOT 5.34.38",
+  "savedNominalModelRoots": {
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_d_gaussian_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "9d3525e068680d5b793330666141b6f23dd628f025cd05d58491517449cdbf06",
+      "size": 2026666
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_d_gaussian_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "ede59e536075aee0c155d63489bc3134ec04bb08fa36d5d247a68cac3b90172f",
+      "size": 2025739
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_d_lognormal_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "85b80a92a16defb4472520df5826298d0ba2e8221420d0e3976cdbb16a231e0f",
+      "size": 2106282
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_d_lognormal_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "d49bb8afdad719f3290751af701a5d21ef94c6e7d7a35c9bf5d7e82bd9074de7",
+      "size": 2100401
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "a7d3fdf3eeb60741836fd5647949b8e5052ea7591610014fa733a681cabb8d90",
+      "size": 2512671
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "7d1b1c2dfd10a3b7bbd5c178b457259610cec036572f16713a2fbbb9861f99d3",
+      "size": 2556634
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "c4f6d2e0b8ba103a96effb8658aca91de992568cc36d146a54ebd46d7fbb6055",
+      "size": 2560885
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_lognormal_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "42615d86885a65ae9698dffc34256b696d6f20df753ec76236306e6cad5e27db",
+      "size": 2581673
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_gaussian_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "ba1a1ddb37ff0bbc03d77af549bcd7369e329f45fa185aa24dcf49a755660a04",
+      "size": 3027472
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_gaussian_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "5934148940fe90d1b54624e28a6ebed2510148c6bbd36288f67545e23694ee2e",
+      "size": 2891785
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_lognormal_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "91dbca7ffb102e3de6795347b7c549405926680c9d85d4bfe2e319f46fa578aa",
+      "size": 3168286
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_lognormal_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "85c846bb27db51a1bd27c7bd9695ab366a504e613015f565f92d934c6e21ccec",
+      "size": 2986148
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_t_gaussian_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "d35321ea207254797d1ad44847438b36045d78d8184d799ad9514049ba7bd753",
+      "size": 2572598
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_t_gaussian_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "008f9b32e95d60917d1a49d2aaa7d25b750746dd577b8dce81aaa77e7fdc2ced",
+      "size": 2581564
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_t_lognormal_exponential_nominal_free001/cutoff_fits.root": {
+      "sha256": "982e50e348bd436b71788ac7de21ee9ee8dd0c0e8e30ea83241d2d509cf6eeb4",
+      "size": 2608875
+    },
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_t_lognormal_linear_nominal_free001/cutoff_fits.root": {
+      "sha256": "470086a4f7bdb5a68d6e8f4e4df915e3fa69501e42f93ea5cdbeea084e47669f",
+      "size": 2626104
+    }
+  },
+  "status": "completed",
+  "visualQA": {
+    "he4_fit_page_1.png": "He4 PDF page 3: native fit-window linear/log, no normalization",
+    "he4_full_page_1.png": "He4 PDF page 1: native full range linear/log, no normalization",
+    "overview_page_1.png": "PDF page 1: model envelopes, unassessed points and adopted/veto R ranges visible",
+    "overview_page_2.png": "PDF page 2: full dEdx ALL COLZ and unchanged center/window guides visible",
+    "overview_page_3.png": "PDF page 3: independent raw counts and adopted counts visible",
+    "parameters_page_1.png": "Response PDF page 4: He4 center/width and nominal models visible",
+    "parameters_page_2.png": "Response PDF page 5: ALL COLZ with supported fitted centers visible"
+  }
+}

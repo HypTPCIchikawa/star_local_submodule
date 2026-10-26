@@ -1,0 +1,66 @@
+schemaVersion: 1
+inputRoot: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root
+sourceSummary: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json
+tofNuclearConfig: config/cuts/nuclearid/nuclearid_femtoLambda_legacy.yaml
+executionTimeoutSeconds: 900
+protectedRelativePaths:
+  - rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/completed.json
+  - rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/purity.json
+  - rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/context.json
+  - rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.root
+  - rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.pdf
+  - rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits_linear.pdf
+  - config/calibration/dedx_helium_auau3p85_2021P24iy_from040.yaml
+  - StMaker/common/FemtoLambdaLegacy.cxx
+  - StMaker/common/NuclearIdDeDxVsMom.h
+  - script/singularity_root_batch.sh
+settings:
+  expectedXBins: 600
+  expectedYBins: 1200
+  expectedXMin: 0.0
+  expectedXMax: 6.0
+  expectedYMin: 0.0
+  expectedYMax: 120.0
+  expectedXWidth: 0.01
+  expectedYWidth: 0.1
+  axisRelativeTolerance: 0.000000001
+  varianceRelativeTolerance: 0.000000001
+  displayDedxRebinFactor: 5
+  overviewRigidityMin: 0.0
+  overviewRigidityMax: 6.0
+  atlasRigidityMin: 0.1
+  atlasRigidityMax: 2.5
+  coarseRigidityStep: 0.1
+  diagnosticRigidityMin: 0.1
+  diagnosticRigidityMax: 1.0
+  fullDedxMin: 0.0
+  fullDedxMax: 120.0
+  supplementalDedxMin: 10.0
+  supplementalDedxMax: 120.0
+  modeSmoothingHalfBins: 1
+  modeMomentHalfWindow: 8.0
+  logMinimum: 0.5
+  logMaximumFactor: 8.0
+  linearMaximumFactor: 1.4
+  axisMaxDigits: 3
+  mapCanvasWidth: 1600
+  mapCanvasHeight: 1200
+  atlasCanvasWidth: 2000
+  atlasCanvasHeight: 2000
+  mapMarginLeft: 0.14
+  mapMarginRight: 0.16
+  mapMarginBottom: 0.18
+  mapMarginTop: 0.16
+  projectionMarginLeft: 0.17
+  projectionMarginRight: 0.04
+  projectionMarginBottom: 0.24
+  projectionMarginTop: 0.25
+  mapAxisTitleSize: 0.040
+  mapAxisLabelSize: 0.030
+  projectionAxisTitleSize: 0.034
+  projectionAxisLabelSize: 0.027
+  xTitleOffset: 1.3
+  yTitleOffset: 1.7
+  headerTextSize: 0.032
+  captionTextSize: 0.022
+  markerSize: 0.25

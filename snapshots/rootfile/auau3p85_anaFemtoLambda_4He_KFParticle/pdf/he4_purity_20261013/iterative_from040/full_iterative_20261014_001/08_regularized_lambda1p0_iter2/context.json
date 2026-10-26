@@ -1,0 +1,11 @@
+{
+  "phase": "regularized",
+  "name": "08_regularized_lambda1p0_iter2",
+  "inputCache": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.root",
+  "inputCacheSha256": "b8dc92f4b2a5d7c93390a98dcb4b5984295cb71a5cbba16038788f59fa47acce",
+  "settingsSha256": "27193c4b9c4d6a1c66c13b85a09cc92274d8c67e44b8b8373c48e62ce59a1277",
+  "seedsSha256": "d72be277375c9f5add49d95ad194ffb4464550a33452a3f73d0158cb6fa0a36a",
+  "targetsSha256": "573e4c4530e74f0d2ebee9e004e5ba4d387fa68869dea48794de16d72dc7b142",
+  "parentContext": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/context.json",
+  "productionEnabled": false
+}

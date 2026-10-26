@@ -1,0 +1,20 @@
+{
+  "executionComplete": true,
+  "rows": 139,
+  "fixedMeans": 9,
+  "seconds": 8.690107107162476,
+  "products": {
+    "shapes.tsv": "996a1cd2e30dfb28d15bd46908c8d1ee61e20c13a365dcc16eaba9aabd3a792c",
+    "gates.tsv": "cce7c015a1d7545b7777486049a617cde8e64284a310b403f5bbce875d97caf7",
+    "effective_settings.json": "b05fb9cceea5b6214778ee8a409861fbb35351488301f3fa187d2e0fd52a8437",
+    "tag_shape_audit.json": "6d8632e462fc1f8078441652a55171e142a70ad1f4c7d74b0abb05105984a4b4",
+    "linear_seeds.tsv": "7736a784dc961dac84a714d46b1cbf46b7b0ebc3e426a6b89827c69e1dd2c057",
+    "linear_seed_provenance.json": "65c87e18916eb66a62d35c66b0586f58e2bc785cbc22248b57663f34a5a93a62",
+    "settings.tsv": "c8c633e5ae4e08be360d7286b45134229bce36c1adc5143003a6ee8ee92ece78",
+    "command.json": "68f2b8c762564e3db2f4cd6eb12e803eb38d8b99801376314c06ff91b4fa9017",
+    "fit.log": "c5d2377fc78824fa2a3183d4f4fcf6476d2d6803effc10f1f660c0693fe39075",
+    "cutoff_fits.root": "d99165805b6c5c47478649a345e85f15d44df34a013979db4e838ccea487d448",
+    "cutoff_fits.json": "e57c8046c03162aa7153350b5e44b2db2c1606138660841a29c507f384c7197b",
+    "purity.tsv": "9e9c97d70f9c53bef51abf435752075c40fbbb74c1dbf20f3b0e06826d95a273"
+  }
+}

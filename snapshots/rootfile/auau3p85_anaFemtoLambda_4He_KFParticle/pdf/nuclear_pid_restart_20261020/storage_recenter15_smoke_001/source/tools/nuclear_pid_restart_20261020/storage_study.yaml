@@ -1,0 +1,65 @@
+# Diagnostic only. Actual on-file precision must be checked separately.
+schemaVersion: 1
+gitRevision: 8f7d539
+legacyHeader: StMaker/common/NuclearIdDeDxVsMom.h
+mainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+wrapper: script/singularity_root_batch.sh
+inputDirectory: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020
+fitSource: tools/nuclear_pid_restart_20261020/FitStorageSlices.C
+baselineSource: tools/nuclear_pid_restart_20261020/DrawRestartBaseline.C
+fitDependency: tools/nuclear_pid_tof/NuclearFitCommon.h
+extraSources:
+  - tools/nuclear_pid_restart_20261020/FitRestartSlices.C
+  - tools/nuclear_pid_restart_20261020/Float16BinMapping.h
+  - tools/nuclear_pid_restart_20261020/TestFloat16BinMapping.C
+nativeRBinFirst: 41
+nativeRBinLast: 500
+nativeRBinStride: 5
+extraNativeRBins: [88, 178, 500]
+smokeNativeRBins: [88, 178]
+fitHalfWidthSigma: 2.5
+gateNSigma: 2.0
+fitEdgeAlignment: 0.1
+quadrature: gl3
+samples: {d: TAG_D, t: TAG_T, he3: TAG_HE3, he4: TAG_D}
+tofWindows:
+  d: [3.268773, 3.693147]
+  t: [7.2564275, 8.2816925]
+  he3: [1.78285, 2.06485]
+  he4: [3.268773, 3.693147]
+executionTimeoutSeconds: 3600
+numeric:
+  storageMapping: root_default12
+  amplitudeMaxIterations: 1000
+  amplitudeGradientTolerance: 0.000001
+  amplitudeHessianRidge: 0.0000000001
+  amplitudeLineSearchIterations: 80
+  shapeMaxCalls: 6000
+  shapeTolerance: 0.001
+  minimumSigma: 0.05
+  maximumSigma: 120.0
+  meanAxisPadding: 0.0
+  minimumGaussianAcceptance: 0.000000000001
+  meanStep: 0.05
+  sigmaLogStep: 0.02
+  backgroundSlopeStep: 0.05
+  exponentialSlopeLimit: 80.0
+  boundaryTolerance: 0.000001
+  backgroundModel: linear
+  backgroundSlope: 0.0
+  freeBackgroundSlope: 0
+  startTargetFraction: 0.8
+  readbackToleranceRelative: 0.0000000001
+  readbackToleranceAbsolute: 0.0000000001
+baselinePlots:
+  rLowMin: 0.4
+  rLowMax: 2.0
+  rHighMin: 2.0
+  rHighMax: 5.0
+  dedxMin: 0.0
+  dedxMax: 120.0
+  nsigma: 2.0
+  logMinimum: 0.5
+  canvasW: 1600
+  canvasH: 1200

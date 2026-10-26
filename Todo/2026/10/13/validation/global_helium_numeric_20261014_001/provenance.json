@@ -1,0 +1,18 @@
+{
+  "dateJst": "2026-10-14",
+  "runtime": {"STAR": "SL24y", "ROOT": "5.34/38", "compiler": "GCC 4.8.5", "STAR_HOST_SYS": "sl73_x8664_gcc485"},
+  "mainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "settings": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/global_logpoly_recalibration/numeric_prepare_20261014_001/settings.tsv",
+  "engine": "tools/he4_purity/global_logpoly/GlobalHeliumFit.C",
+  "engineSha256": "3536a4466bc58070224a98b57f9c2d08747de57f21aad0618897e4bd399b2b66",
+  "selftestSource": "tools/he4_purity/global_logpoly/GlobalHeliumFitSelfTest.C",
+  "selftestSourceSha256": "00c0d8218979e5adb3b207c2f1ff4b1af1ff15291cf40f917a50c7c3f2c6c098",
+  "result": "selftest.json",
+  "tests": 80,
+  "passed": true,
+  "productionEnabled": false,
+  "scope": "Numerical model and input/output guards; not empirical isotope identity, fit-model adequacy, or validated PID.",
+  "temporaryBuildDirectory": "/tmp/global_helium_numeric_20261014_001/build",
+  "gitRevision": "unrecorded",
+  "note": "Dirty working tree; exact source hashes, not a commit label, identify the tested implementation."
+}

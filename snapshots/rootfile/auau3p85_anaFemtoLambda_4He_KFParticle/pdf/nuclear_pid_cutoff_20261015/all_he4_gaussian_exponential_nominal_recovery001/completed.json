@@ -1,0 +1,33 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "sourceInputPreserved": true,
+  "protectedSnapshotsVerified": true,
+  "response": "gaussian",
+  "background": "exponential",
+  "variation": "nominal",
+  "products": {
+    "shapes.tsv": "2cb25e51a969a95442b5729223f66a5dcff6eb78c98777407544f831e1c485bc",
+    "gates.tsv": "bc20b69da25d933ee94df38c1c0f6a2d8ac670d4a1d294852c992164f4673eea",
+    "settings.tsv": "4d297a111d314ee13f92fa5e9ab1a12defcf793843a1b37bcfb4f1d75552b181",
+    "tag_shape_audit.json": "6d8632e462fc1f8078441652a55171e142a70ad1f4c7d74b0abb05105984a4b4",
+    "fixed_windows.json": "8631388844e2848ded676a87b0ed13d6269a57a981151e8e2ef0c90e77e88009",
+    "effective_settings.json": "2853be7bba84b1c5f733065788e3f9d66e8d8ee10ccf3d5e4c82fdbce906710e",
+    "context.json": "9a112b024cfe43fb1fbad8306ccdea0b32e34c8d1f04f649d42f8feac105594e",
+    "command.json": "15c387538212505ca6eca0826445049224c3671b79be2aecb1ab6f730d7effcc",
+    "fit.log": "022534793b37ff736b9a6633d693ad25b13872c997a50da58a2a616ccf044248",
+    "cutoff_fits.root": "9d91c1346cd10467b86166426d18957cca370467d95c20ff42abaecec475f478",
+    "cutoff_fits.json": "6fa2b180fcf696a32980a7f757b593b7ff4888f5e0af0cf14a823d33c4a4e7a6",
+    "purity.tsv": "9359b3b7f5e1176125d5da3881329f2347f707e420ebb87146f2150284fbbdca",
+    "source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "source/numerical_recovery_settings.yaml": "9307948f63a1498357a8d4479b3bdf7bfab0bba103ad6e4a5a7b0c4b31e2d433",
+    "source/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "source/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "nativeRows": 160,
+  "targetSpecies": "he4",
+  "note": "Execution completion is not isotope validation or final cutoff adoption."
+}

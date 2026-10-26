@@ -1,0 +1,15 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "protectedInputsVerified": true,
+  "fullUncertaintyValidated": false,
+  "rows": 90,
+  "products": {
+    "summary.tsv": "5ef79ec5624084b42448f3187786faa21c7a7613decdeb650e8f60be23804bbf",
+    "summary.json": "24be88497124a4a9c18ad106a99a7770bce75546574526eeb2e274309d1cc457",
+    "native_models.json": "25550a3facfbd061702d450dea09aba1ed95e5c0e40231b6b82f41247750d9a5",
+    "native_parameters.tsv": "f7acc859fc2b276d5528f7deb95d7ee9ad066581c960df2e52f92c06fc13425a",
+    "context.json": "410dbdb9023ee6e0d1314e5312ddfa444546873e20ea2f102163832029a66d9e",
+    "source/summarize_highrigidity.py": "4a19afe3e5bef7219df5a0777ccd48c6c6dc0a155fff4b436ee027d3964b0df6"
+  }
+}

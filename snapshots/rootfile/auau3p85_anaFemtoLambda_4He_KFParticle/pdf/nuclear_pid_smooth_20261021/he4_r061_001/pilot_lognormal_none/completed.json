@@ -1,0 +1,11 @@
+{
+  "rows": 4,
+  "productionEnabled": false,
+  "products": {
+    "cutoff_fits.json": "d43938b5566664cec16f183657cb28b50d242a672fc4c8affe94e72cb41f3013",
+    "cutoff_fits.root": "29e086de9c3e8e86895be253fde10b74801eb29e34b243cf1a79c3a3de19ea23",
+    "shapes.tsv": "831e73e5262aadc30ecebc2f8e0ffc1ceb0eb8e1034e47e7d4c57fde28dceb3e",
+    "gates.tsv": "6393e1637469578e164b5507e8a93501baf6888f2b013044d69d37c389815d2c",
+    "settings.tsv": "ab382f0a87c208d6d58f34dc340f56680ab6613f500af068a4eda8aea9cada9c"
+  }
+}

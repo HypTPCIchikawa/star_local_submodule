@@ -1,0 +1,7 @@
+# Event Mixing Configuration
+
+nVzBins: 10                # Number of Vz bins for mixing
+nCentralityBins: 9        # Number of centrality bins for mixing
+nEventPlaneBins: 1        # Number of event plane bins (1 = no EP binning)
+bufferSize: 20            # Number of events to keep in mixing buffer
+

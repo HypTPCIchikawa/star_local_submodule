@@ -1,0 +1,17 @@
+# Nuclear PID Analysis Cuts
+
+# TPC dE/dx PID
+nSigmaFill1D: 1.5           # max nSigma to fill 1D dEdx vs p profiles (e, pi, K, p)
+nSigmaExclude: 2.0          # min nSigma for background rejection (if > 2 for all standard particles, it is "else")
+maxNSigmaNuclear: 2.0       # max nSigma for heavy nuclei selection (d, t, 3He, 4He)
+
+# TOF m2
+m2SigmaCut: 1.5             # nSigma cut on TOF m2 mass peak
+
+# General phase space / noise exclusion
+minP_M2cut: 0.2             # GeV/c, minimum momentum for M2 analysis
+minM2_M2cut: 0.01           # GeV^2/c^4, minimum valid m2
+maxM2_M2cut: 10.0           # GeV^2/c^4, maximum valid m2
+
+# p/q upper momentum cut (raw TPC rigidity before x2 for He)
+maxPOverQ: 2.5          # GeV/c, cut on measured p/q (p_TPC < maxPOverQ)

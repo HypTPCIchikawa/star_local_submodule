@@ -1,0 +1,31 @@
+{
+  "executionComplete": true,
+  "displayOnly": true,
+  "productionEnabled": false,
+  "noRefit": true,
+  "numericalResultsAndOldPdfsUnchanged": true,
+  "widthScale": 2.0,
+  "products": {
+    "fit_atlas_high_d.pdf": {
+      "pages": 300,
+      "sha256": "a34a5ace3020c16507a1d94a42833bece4e56f742f5ce69963ee00a1a9066c10"
+    },
+    "fit_atlas_high_he3.pdf": {
+      "pages": 300,
+      "sha256": "29eb5530763e8966702604917f78317b7b1e5a6376f54bca9fa2ed0ad9875df9"
+    },
+    "fit_atlas_high_he4.pdf": {
+      "pages": 60,
+      "sha256": "fdd59a212e318f17c2634a26b41822e39dfd9b775f4b840a32e4d87a9f64255c"
+    },
+    "fit_atlas_high_t.pdf": {
+      "pages": 300,
+      "sha256": "a02d2469ecb7a05655b8ccac30d4a7945c9a42c73d9e3124d1bf9839223ba1ee"
+    }
+  },
+  "sourceSha256": {
+    "render_wide_atlas.py": "fae97c0ac7ae3231986e04243fcaab76586dae931173697a28e9effe75f3ba17",
+    "PlotWideAtlas.C": "8bdc7b4ba7ba68c4481639031193ed835b279db99f16f5c7fef9f5210f6ea209",
+    "wide_atlas_settings.yaml": "f2725b8c21ed99a07968a09f15b3d8518050768d35d32eca58fe1f949226c300"
+  }
+}

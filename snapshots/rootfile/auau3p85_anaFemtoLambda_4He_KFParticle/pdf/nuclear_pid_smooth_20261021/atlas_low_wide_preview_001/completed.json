@@ -1,0 +1,19 @@
+{
+  "executionComplete": true,
+  "displayOnly": true,
+  "productionEnabled": false,
+  "noRefit": true,
+  "numericalResultsAndOldPdfsUnchanged": true,
+  "widthScale": 2.0,
+  "products": {
+    "fit_atlas_low_he4.pdf": {
+      "pages": 3,
+      "sha256": "40ba3bf4f71b37478717d70aa6b929868082a880458dd1b71adda65e3004d986"
+    }
+  },
+  "sourceSha256": {
+    "render_wide_atlas.py": "fae97c0ac7ae3231986e04243fcaab76586dae931173697a28e9effe75f3ba17",
+    "PlotWideAtlas.C": "8bdc7b4ba7ba68c4481639031193ed835b279db99f16f5c7fef9f5210f6ea209",
+    "wide_atlas_settings.yaml": "f2725b8c21ed99a07968a09f15b3d8518050768d35d32eca58fe1f949226c300"
+  }
+}

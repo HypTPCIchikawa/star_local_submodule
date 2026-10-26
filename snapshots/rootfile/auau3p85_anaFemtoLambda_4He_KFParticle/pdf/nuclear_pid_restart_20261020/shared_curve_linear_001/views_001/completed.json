@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "action": "fits",
+  "productionEnabled": false,
+  "protectedReadback": true,
+  "products": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/shared_curve_report.py": "72c5fd61e8e0c7fead68b8431679c9b22a08c2a6e2c6d2aae5fd7ebebbd15e30",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/DrawPidRecalibration.C": "81272768ca64720b4f9537e3a7fcffa69d3d282970e39609cb5f42f9162ed588",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/DrawSharedPidFits.C": "f79e4f9a13b5a1be9604a931300f6264ac966012ec914426d58c909e40a9abc7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/DrawPidPurity.C": "4c49e3d42b584a67740d4ca85b22ee335e09c1ae72f747677a72a1f0e3a05266",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/TestAllFixedResponseFit.C": "dcad48ae84f15670d4b00d997ef192cb374194a96f82b5ba54e9997bf0cfc9bd",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/AllFixedResponseFit.h": "bd5106a1e6fb009e0a1dfb044a2948fd0a5d176bfb73d8b2f570af61925a0f58",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/Float16BinMapping.h": "d0c2c81f84b8725c905b7e01db90925be79f798d3b16d8e987f3b5345afc4b53",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/SplitNormalFit.h": "fd533ac0b135fee18855d6ba150ed2702fad0a9f19e319ca23adf21ddc6bc5e9",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_restart_20261020/PeakResponseFit.h": "fed3537ed47270b2e703befbbdd431e050b08ae69d22211e6d7de192c8b66c2c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/source/tools/nuclear_pid_tof/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/plan.json": "e07755685246f1247318817466929a74b09a0d87e0d3bd7d5cde5229b87473a0",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/settings.tsv": "b78ea35308c5ca983da6e0b90faa5c6e2b395ed084bde0233dc894c1ed030e27",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/fits.json": "59239e0ff4e78e639388b76fc782dffa843462e59b7bf2f958a514f931a73458",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/native_spectra.root": "3e2190a96ef0136bfd8d619d6e503b982c687a4c7bf6c398df67849200e3fb34",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/shared_curve_linear_001/views_001/shared_curve_fit_diagnostics.pdf": "e59d4d842ddcc2ce8e3052b0b99e878e2f3ccb29d981c4d5579480bb5b7f3c8a"
+  }
+}

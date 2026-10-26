@@ -1,0 +1,30 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "noGateChanges": true,
+  "sourceInputPreserved": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "products": {
+    "diagnostic_settings.json": "5475d6872f4655ec9d3a642e3ca2063e794a3580ef676a6263e4591fd2814850",
+    "context.json": "81c1104424cd80c2bed1d93cf6ff8e7bb97626ae9c5a7e768b59be99c26716a6",
+    "comparison.json": "a4b3d1b9bbcff45e3ae5ab3a161fac0762435be2eac2727d24ca6f7d2653118e",
+    "exponential/settings.tsv": "ab7db10e2b7ee3f2f55e82fb80763757a13ad61e945adbc4787648f6c722c803",
+    "exponential/rows.tsv": "dd99c9828c2dd255288ac444b3bceae9b73d236da76812df99a7a12629109929",
+    "exponential/context.json": "c8b917eac30d064516e055572a1861004b5276ab146589b6ab8434d2da0dc804",
+    "exponential/command.json": "a5235351f2d20330bb5560f10e2c4c6086d178b25be5433934ff10043884a398",
+    "exponential/root.log": "5571ee3f1839b479f7372e9e4f5f911329e7ab938c767ddab53801c3e27bb469",
+    "exponential/residuals.tsv": "2b4180b2f14c3ca22fec9969835d05743d0de1adf217f2915a530a6ba9075aed",
+    "exponential/residual_audit.json": "182c1fba69020721503c26b80d51b2f4e14c9212f4300dedca18e3448789639a",
+    "exponential/focus_summary.json": "1bc44d88d792af819da70ff15c3fb3aa88a61837a77403930671ea0617088f77",
+    "linear/settings.tsv": "ab7db10e2b7ee3f2f55e82fb80763757a13ad61e945adbc4787648f6c722c803",
+    "linear/rows.tsv": "01b5ba3bd97ac67010894797b3c65989c23c8a749e3f340ddfdffc34e23f9412",
+    "linear/context.json": "79b6da559a430222c8c22ce37c29ae1db326d4ce2c045c99f57539d356fbc7f0",
+    "linear/command.json": "966a35d84bb40ad3f531826430811edadb27e68f0b55f5c2f868dd1e4093edda",
+    "linear/root.log": "f96b59b5aca89c0fac43f4f4d25715a8bf0f213d408cb713d2e61ba7c68a7a17",
+    "linear/residuals.tsv": "a3318d818ae330acea5f83b4fc79dfbb6a200b0a9e887a45c9281034deebbe99",
+    "linear/residual_audit.json": "73e646b23d61dfc28c5734afb518d7da2816918dc713a05b982e79d9f74e0e90",
+    "linear/focus_summary.json": "95e3828c076d90a21f0d5139c1200d4283139388ba6ed13faa1fbfcc4b239fdc"
+  },
+  "completedJst": "2026-10-14T16:50:52.457640+09:00"
+}

@@ -1,0 +1,27 @@
+{
+  "phase": "complete",
+  "pages": 5,
+  "input_unchanged": true,
+  "sources": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/kfparticle_summary/run_acceptance.py": "bd582bb0cdffb98ffe82fd6f4917298e431141760103bbf1defa5f59c8481b5a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/kfparticle_summary/DrawAcceptance.C": "51df796c8e55fe840d09f68f18f9dc90d19334051bce92cb67e5337c13c4e84f"
+  },
+  "products": {
+    "settings.yaml": "d6deda84d089941a9cbdf77520a51e001cc7d07fed43d68e2c100886df253fca",
+    "histograms.tsv": "3bdd8222303fc6d20e291de0f984d908131c75ac31024ff6706c667180d03eff",
+    "context.json": "5d6311617c878c0aa0d3837c0981456fdddfcb1f4a83bb73e496e19cadc74b95",
+    "acceptance_canvases.root": "d00605326e5b5bfb81a9d08482660ed554700cb248357a0508eac95d702af600",
+    "acceptance_pt_ylab.pdf": "eec8e0316e2602e2f9b3a0cfc4becf3da9f1d1cc0760ce189b2d53dc7a877283",
+    "overview.png": "dd823418c5ed1c56b91824d98af00e38456fe34e80a13db36fa3f2f296e98dd5",
+    "lambda.pdf": "6229fc7ba170b246b74e4cc1411a08ca478b10d3abff61e37b997d7cc67b8b70",
+    "lambda.png": "53b714923b0b7151d8868bdf481edc634e1b5bb4d70630c63943ffc2d49fc55a",
+    "proton.pdf": "fe698361a9df3d596468cea2c2f8a2c4b967d3dca8c6ab29d531d8e12b044b1f",
+    "proton.png": "806f9ecf0e134f8642f63ca78bd5df3c22d47fd64d369c649eabfcabdb9a9a57",
+    "pion.pdf": "15405674533395380f9539c4adfce8808a958c182c63cec38dcdfb970ab07d90",
+    "pion.png": "3d3a754aa0fbcadb01630cb1f60978a6b55c7111086e1951b7ada1adc42aaba9",
+    "helium4.pdf": "191044765c1812a83308c6f715e76c61ac1eb414806ca389f9fa15322674bf61",
+    "helium4.png": "b8235bff297fae396f800a5c101233d5f45df2e8f1634ef58a0053ffad4e7da9",
+    "acceptance_audit.json": "43c39945ef4c9a8e54df5f18cfb9fb92174d14ca78a809679d314294761ec2b1",
+    "README.md": "04624cea4f1da172acf0de1f768dbb2a6505a92c00cf6ff1eb7e972b045be3ea"
+  }
+}

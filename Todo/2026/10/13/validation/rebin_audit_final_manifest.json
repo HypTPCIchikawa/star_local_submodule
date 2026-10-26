@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "runtime": "STAR SL24y / sl73_x8664_gcc485 / ROOT 5.34.38",
+  "sources": {
+    "tools/he4_purity/CheckRebinAudit.C": "eb6d961b10bc3129c4e60a13eef87b31210cf67e509e28539ad2e5655c099ace",
+    "tools/he4_purity/FitHe4Purity.C": "6b664ce5ea97e62314ea7786ac85d4a444e643ef7f74cb8e95291ece885a8c70",
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/settings.tsv": "760aec029cb18e438b4e00a9950eecb82bde98147d6d1fa840401d06b74eee4e",
+    "rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/settings.tsv": "760aec029cb18e438b4e00a9950eecb82bde98147d6d1fa840401d06b74eee4e"
+  },
+  "checks": {
+    "nativeBinCount": 1200,
+    "fitBinCount": 240,
+    "rebinFactor": 5,
+    "nativeDedxBinWidth": 0.1,
+    "fitDedxBinWidth": 0.5,
+    "everyCoarseBinEqualsExactNativeSum": true,
+    "everyCoarseVarianceEqualsNativeVarianceSum": true,
+    "relativeVarianceRoundoffTolerance": 1e-10,
+    "underflowAndOverflowPreserved": true,
+    "histogramEntriesPreserved": true,
+    "keyNamesEqualInternalNames": true,
+    "nativeAndCoarseRootObjectsDistinct": true,
+    "oldNewAndAuditGateCountsEqual": true,
+    "oldNewAndAuditFitCountsEqual": true
+  },
+  "samples": {
+    "3p85": {
+      "slices": 210,
+      "exitCode": 0,
+      "errors": [],
+      "sumOriginalGateCounts": 198592594,
+      "sumRefinedGateCounts": 198592594,
+      "audit": "Todo/20261013/validation/rebin_audit_3p85_final.tsv",
+      "log": "Todo/20261013/validation_rebin_audit_3p85_final.log"
+    },
+    "13p5": {
+      "slices": 210,
+      "exitCode": 0,
+      "errors": [],
+      "sumOriginalGateCounts": 734686,
+      "sumRefinedGateCounts": 734686,
+      "audit": "Todo/20261013/validation/rebin_audit_13p5_final.tsv",
+      "log": "Todo/20261013/validation_rebin_audit_13p5_final.log"
+    }
+  },
+  "note": "This is a saved-data bookkeeping audit, independent of fit quality or the physical interpretation of a fitted peak. Original selection gates and their native observed counts are unchanged."
+}

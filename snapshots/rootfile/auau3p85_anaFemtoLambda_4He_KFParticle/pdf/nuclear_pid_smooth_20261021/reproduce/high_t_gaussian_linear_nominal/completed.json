@@ -1,0 +1,113 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "seconds": 13.53727412223816,
+  "historicalSource": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001",
+  "historicalSourceSha256": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/summarize_cutoff.py": "501215863c5719178f81ad0415b643b3c93bc730b894ad6d54d16932e19270ad",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/highrigidity/run_highrigidity.py": "3a027eaea670ebef1b463ca114393f94474fd37177722d9d030ca3fd27dfd03e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/highrigidity/FitHighRigidity.C": "f6f312df34f4061018462e4750bf13db16e6739b2a14553a6ec5ec6407cc3d65",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/highrigidity/SelfTestHighRigidity.C": "ee296d94c3f470494fab9a2554d3df9d03937662b0662482721ee154a3e49eb9",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_cutoff/highrigidity/test_highrigidity.py": "9a1dce3c6b35d3292c94f553e92a4eb865584a4651e7d6f2b88a25ff618af2aa",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_tof/runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_tof/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/native_t_gaussian_linear_001/source/tools/nuclear_pid_tof/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c"
+  },
+  "reproductionChecks": [
+    {
+      "index": 0,
+      "key": "signalSelected",
+      "old": 1498085.844723441,
+      "new": 1498085.844723441,
+      "passCheck": true
+    },
+    {
+      "index": 0,
+      "key": "totalSelected",
+      "old": 1501218.1327524309,
+      "new": 1501218.1327524309,
+      "passCheck": true
+    },
+    {
+      "index": 0,
+      "key": "rawGateCount",
+      "old": 1499476.0560046094,
+      "new": 1499476.0560046094,
+      "passCheck": true
+    },
+    {
+      "index": 0,
+      "key": "purity",
+      "old": 0.9979135024013819,
+      "new": 0.9979135024013819,
+      "passCheck": true
+    },
+    {
+      "index": 25,
+      "key": "signalSelected",
+      "old": 1141637.2614560372,
+      "new": 1141637.2614560372,
+      "passCheck": true
+    },
+    {
+      "index": 25,
+      "key": "totalSelected",
+      "old": 1144195.4488159432,
+      "new": 1144195.4488159432,
+      "passCheck": true
+    },
+    {
+      "index": 25,
+      "key": "rawGateCount",
+      "old": 1142732.2411198583,
+      "new": 1142732.2411198583,
+      "passCheck": true
+    },
+    {
+      "index": 25,
+      "key": "purity",
+      "old": 0.9977642042165494,
+      "new": 0.9977642042165494,
+      "passCheck": true
+    },
+    {
+      "index": 49,
+      "key": "signalSelected",
+      "old": 900483.4731606484,
+      "new": 900483.4731606484,
+      "passCheck": true
+    },
+    {
+      "index": 49,
+      "key": "totalSelected",
+      "old": 903636.7215239822,
+      "new": 903636.7215239822,
+      "passCheck": true
+    },
+    {
+      "index": 49,
+      "key": "rawGateCount",
+      "old": 903119.668181038,
+      "new": 903119.668181038,
+      "passCheck": true
+    },
+    {
+      "index": 49,
+      "key": "purity",
+      "old": 0.9965104911207947,
+      "new": 0.9965104911207947,
+      "passCheck": true
+    }
+  ],
+  "products": {
+    "cutoff_fits.json": "f87b2d6cdbc6dbb8054b9efc33a994a1e7cc18d25e84e1bdc65e294e78f3a7a6",
+    "cutoff_fits.root": "55daec91d6b9a345269b37f064af2ef79e0711bf13b1294fd01d42306c7cb8d6",
+    "gates.tsv": "c703f84ee0873dec08dcfaf72c34078871f188a4a149b3fca8b004eb0150adc0",
+    "shapes.tsv": "e94a4d2b98c2daceef9c2422479befb1adc57197a6567d4130c90a435dffa4ed",
+    "settings.tsv": "f64b88ead700307c34c5a0f8a92b09e8ffd2035ae8dde96144a4bdf30611fe89"
+  }
+}

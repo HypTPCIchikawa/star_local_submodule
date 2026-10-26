@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "processingStage": "exact_r_coarsening",
+  "inputFingerprint": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+    "size": 10522646853,
+    "mtime_ns": 1790979373044137604,
+    "device": 48,
+    "inode": 82490341
+  },
+  "runtimeMainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml",
+  "nativeCache": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root",
+    "sha256": "cefd9281fe4dc31ddcf7f0d403a1cdd2d6440e5873da40518804025b3e9b4828"
+  },
+  "nativeInputStudy": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001",
+  "nativeInputAuditSha256": "197ed122b6024a949574f941a15db09bcec0c622bde57fbc167b515175a073b3",
+  "nativeCompletedSha256": "1f7a6833d9b72713aaac05195c2c23b5d95f17b5da4fcbac81a4024c22ae35be",
+  "cacheKeys": [
+    "ALL",
+    "TAG_D",
+    "TAG_T",
+    "TAG_HE3",
+    "REMAINING"
+  ],
+  "originalInputHistogramKeys": {
+    "ALL": "true/hDedxP",
+    "TAG_D": "true/hDedxP_d_m2",
+    "TAG_T": "true/hDedxP_t_m2",
+    "TAG_HE3": "true/hDedxP_3He_m2"
+  },
+  "noFit": true,
+  "productionEnabled": false,
+  "settings": {
+    "tagDMass2Min": 3.268773,
+    "tagDMass2Max": 3.693147,
+    "tagTMass2Min": 7.2564275,
+    "tagTMass2Max": 8.2816925,
+    "tagHE3Mass2Min": 1.78285,
+    "tagHE3Mass2Max": 2.06485,
+    "coarseningFactor": 5,
+    "inputRigidityBinWidth": 0.01,
+    "outputRigidityBinWidth": 0.05,
+    "sourceNativeRigidityBinWidth": 0.01,
+    "nativeDedxBinWidth": 0.1,
+    "aggregation": "exact_nonoverlapping_five_native_R_bins"
+  },
+  "mathematicalSettings": {
+    "schemaVersion": 1,
+    "coarseningFactor": 5,
+    "inputXBins": 600,
+    "inputYBins": 1200,
+    "inputXMin": 0,
+    "inputXMax": 6,
+    "inputYMin": 0,
+    "inputYMax": 120,
+    "inputXWidth": 0.01,
+    "inputYWidth": 0.1,
+    "axisTolerance": 1e-12,
+    "varianceTolerance": 1e-12
+  },
+  "inputNativeAxis": {
+    "rBins": 600,
+    "rRange": [
+      0,
+      6
+    ],
+    "rBinWidth": 0.01,
+    "dedxBins": 1200,
+    "dedxRange": [
+      0,
+      120
+    ],
+    "dedxBinWidth": 0.1
+  },
+  "protectedPreRun": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root": "cefd9281fe4dc31ddcf7f0d403a1cdd2d6440e5873da40518804025b3e9b4828",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/context.json": "7f467146dbb214b08ca6bb5f75ac33f6df95d57b2ae6db5b1504353d442fb149",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/native_audit.json": "197ed122b6024a949574f941a15db09bcec0c622bde57fbc167b515175a073b3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/completed.json": "1f7a6833d9b72713aaac05195c2c23b5d95f17b5da4fcbac81a4024c22ae35be",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/highrigidity/prepare_coarse_inputs.py": "169c6ab6f5f56016fbf7a3409f4f682f0e2811cda2497d793183f439862b2dd3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/highrigidity/ExtractCoarseInputs.C": "d039902f4e691dfdcb7fbe67d719348c12238e18cf43ecf5a40a515a955919fd",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml": "090183642df74f0a0fc0d01c268b554c27921989fe717d7a5a0468b7218f9f87",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "createdJST": "2026-10-17T12:28:47.084460+09:00",
+  "limitations": [
+    "Rebinned R inputs are 0.05 wide, not native 0.01 measurements.",
+    "This stage only sums original counts and stored variances; no fit or average of purities.",
+    "Source TOF D window is D/He4-compatible, not pure-He4 truth or the wider 3-4 window.",
+    "ALL/TAG are correlated; REMAINING retains its original subset-error policy.",
+    "Original 10GB ROOT is not read or hashed here; only its recorded fingerprint is checked."
+  ]
+}

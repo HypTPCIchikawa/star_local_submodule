@@ -1,0 +1,8 @@
+schemaVersion: 1
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+configuredComparison: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001
+lowViews: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001
+highSummary: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_001
+executionTimeoutSeconds: 1800
+canvasWidth: 1400
+canvasHeight: 1050

@@ -1,0 +1,67 @@
+schemaVersion: 1
+histogram: true/hDedxP
+selectedHistogram: true/hDedxP_4He
+rigidityMin: 0.4
+rigidityMax: 2.5
+rigidityStep: 0.01
+dedxRebinFactor: 5
+gateNSigma: 2.0
+fitNSigmaMin: -7.0
+fitNSigmaMax: 4.0
+minimumFitCounts: 1000
+minimumGateCounts: 100
+signalMeanShiftMax: 0.8
+signalSigmaMin: 0.35
+signalSigmaMax: 1.8
+neighborMeanShiftMax: 1.6
+neighborSigmaFactorMin: 0.35
+neighborSigmaFactorMax: 2.5
+fitAmplitudeLimitFactor: 20.0
+signalBoundaryErrorRatio: 0.01
+exponentialSlopeMin: -3.0
+exponentialSlopeMax: 3.0
+maximumChi2Ndf: 5.0
+maximumRelativePurityError: 0.2
+models: [linear, exponential]
+fitPanelsPerPage: 4
+plotLogY: true
+# Independent postprocessing preset; production PID and original +/-2 gate stay unchanged.
+# Relative coordinates remain in the ORIGINAL He4 calibration nSigma.
+peakSearchEnabled: 1
+peakSearchMinRigidity: 0.40
+peakSearchMaxRigidity: 0.85
+lowerRigiditySearchEnabled: 1
+lowerRigiditySearchMinRigidity: 0.40
+lowerRigiditySearchMaxRigidity: 0.50
+signalLowerMeanMin: -3.8
+signalLowerMeanMax: 1.5
+signalLowerSearchMeanMin: -3.6
+signalLowerSearchMeanMax: 0.8
+signalLowerSearchMeanStep: 0.4
+signalSearchMeanMin: -3.0
+signalSearchMeanMax: 1.0
+signalSearchMeanStep: 0.4
+signalLowMeanMin: -3.2
+signalLowMeanMax: 1.5
+signalLowSigmaMin: 0.35
+signalLowSigmaMax: 2.2
+neighborTailNSigma: 3.0
+minimumSignalNeighborSeparation: 0.8
+signalNullComparison: 1
+minimumSignalDeltaAic: 10.0
+minimumSignalSignificance: 5.0
+peakSmoothingHalfWidth: 0.10
+peakContrastHalfWidth: 0.5
+minimumPeakRelativeProminence: 0.01
+calibrationCandidateMinRigidity: 0.4
+calibrationCandidateMaxRigidity: 2.5
+calibrationCandidateMeanDegree: 3
+calibrationCandidateSigmaDegree: 2
+calibrationCandidateMinimumKnots: 20
+samples:
+  3p85:
+    mainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+    input: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root
+    sourceSummary: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json
+    label: 'Au+Au FXT: 3.85 GeV beam energy | 2021 P24iy | inclusive accepted events'
+    output: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040

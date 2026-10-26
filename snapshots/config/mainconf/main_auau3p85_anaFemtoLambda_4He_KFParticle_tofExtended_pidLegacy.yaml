@@ -1,0 +1,11 @@
+# Explicit rollback: pre-2026-10-13 TPC calibration, preserving the Task2 He4 TOF extension.
+# Same analysis/output stem as the current entry: use a distinct output filename when comparing.
+analysis: analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle_tofExtended.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_he4_tofExtended.yaml
+maker: maker/maker_anaFemtoLambda_4He_KFParticle.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_femtoLambda_he4_kf.yaml
+nuclearHist: hist/hist_femtoLambda_he4_nuclear_tofExtended.yaml

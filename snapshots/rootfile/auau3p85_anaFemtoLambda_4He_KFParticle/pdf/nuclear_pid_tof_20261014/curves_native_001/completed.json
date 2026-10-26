@@ -1,0 +1,15 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "products": {
+    "logpoly.json": "601f897a0cebc04966f8aac15bea6d4685af60bbc9952459aa443b5d5ff70992",
+    "pchip_logR.json": "83847f4b01c790b35474ae08747b3d52c60e8cabe6c0e2e657205b8b76daf6b3"
+  },
+  "acceptedNumericalPoints": {
+    "d": 12,
+    "t": 16,
+    "he3": 18,
+    "he4": 2
+  },
+  "scientificValidationComplete": false
+}

@@ -1,0 +1,39 @@
+# Study-only: geometry gates off, ordinary Imp5 cuts fixed.
+# See the dated comparison record for evaluated KF-specific thresholds.
+schemaVersion: 2
+backend: finder_topo
+selectionProfile: lambda_imp5
+imp5MinDCAProton: 0.7
+imp5MinDCAPion: 1.0
+imp5MaxPathLength: 100.0
+pidProfile: pico_nsigma
+
+minNHitsFit: 15
+minNHitsRatio: 0.52
+useHftTracksOnly: false
+
+nSigmaPion: 3.0
+nSigmaProton: 3.0
+useTof: false
+strictTofPid: false
+cleanKaonsWithTof: false
+
+rejectBadCovariance: true
+maxPositionVariance: 100.0
+maxMomentumVariance: 1.0
+
+interfaceChiPrimaryCut: 3.0
+finderMaxDaughterDistance: 1.5 # cm
+finderLCut: 1.0 # cm
+finderChiPrimary2D: 3.0
+finderChi2Ndf2D: 10.0
+finderLdL2D: 3.0
+reconstructAntiLambda: false
+
+minMass: 1.05
+maxMass: 1.25
+maxDaughterDistance: 0.5
+maxDistanceToPv: 0.5
+minCosPointing: 0.998
+topoChi2NdfCut: 3.0
+applyLambdaGeometryCuts: false

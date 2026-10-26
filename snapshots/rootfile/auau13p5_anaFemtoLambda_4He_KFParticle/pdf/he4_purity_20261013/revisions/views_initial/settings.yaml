@@ -1,0 +1,10 @@
+schemaVersion: 1
+panelsPerPage: 4
+fullDisplayNSigmaMin: -7.0
+fullDisplayNSigmaMax: 4.0
+physicalDisplayNSigmaMin: -3.0
+physicalDisplayNSigmaMax: 3.0
+linearMaximumFactor: 1.35
+logMaximumFactor: 8.0
+logMinimum: 0.5
+diagnosticRigidityCenters: [0.505, 0.555, 0.605, 0.655, 0.705, 0.755, 0.805, 1.005]

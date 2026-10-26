@@ -1,0 +1,33 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "sourceInputPreserved": true,
+  "protectedSnapshotsVerified": true,
+  "response": "lognormal",
+  "background": "exponential",
+  "variation": "nominal",
+  "products": {
+    "shapes.tsv": "32f834ae69bb80587f22f38b968005f2efb6d64e0f1e0e893a0e8a594d95a218",
+    "gates.tsv": "bc20b69da25d933ee94df38c1c0f6a2d8ac670d4a1d294852c992164f4673eea",
+    "settings.tsv": "6667ac4577178c76755fedf3481556b93ea64d292870dfebbefdac86eddcf7d7",
+    "tag_shape_audit.json": "ce2321f415eb62b2c4095ced1138504a9fc933b83dfe928c09a87712033e1e30",
+    "fixed_windows.json": "bb01f2861713c9f1b23862285dc55ae98adafa48c3287a3058e1685a6da0e2d0",
+    "effective_settings.json": "9316954abff7e2d9c42e0bbdf37ea647a10476009ef560b85ba862d766cc8aac",
+    "context.json": "adbd8e408aae8c86baa72a0f2f7353bbbd74c3f7dd165bc29441899917f02750",
+    "command.json": "b4dd4f975d745f8e2f95119606741696350a7365ab4d4c7d9a6bfa2ff4cb8dcd",
+    "fit.log": "3a6d1e1fe48e1a0aaa6cd82d298d07b46848a2f38f14e04015b80e7fcbea272a",
+    "cutoff_fits.root": "25164e27a1f54fa30fc9270bb0f57e67fd6afdc818f1e595da30df688a04ed56",
+    "cutoff_fits.json": "42a43495cdade49e6c77b872eb2edc15eca4c3c55791c712b04ebd87b5df644a",
+    "purity.tsv": "d6f318a5318d022e71b516b33218ba43f30cf8705bffea05ca96612fde3450ab",
+    "source/run_cutoff.py": "8740115cab5e0cf1334949a270e447cc7858b5fac8a0b660e33201dc49cfc638",
+    "source/local_settings.yaml": "a9327481bce332cad211610c6d3610c3535e75fa0d3cb2e1e0c8a1b4f820dec3",
+    "source/FitLocalNuclearCutoff.C": "f24692786e4aebd6a1e4422fb7972e6af82d2141a3f4628a1a34bfb7afa2b811",
+    "source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "source/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "nativeRows": 160,
+  "targetSpecies": "he3",
+  "note": "Execution completion is not isotope validation or final cutoff adoption."
+}

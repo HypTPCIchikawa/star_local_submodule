@@ -1,0 +1,8 @@
+# Effective Imp5 policy: finite primary vertex, maxNTr, then centrality.
+# These mode-dependent coordinates are QA centers, NOT additional event cuts.
+maxNTr: 0
+qaVertexByMode:
+  refmult:
+    center: [0.0, 0.0]
+  fxtmult:
+    center: [-0.4, -2.0]

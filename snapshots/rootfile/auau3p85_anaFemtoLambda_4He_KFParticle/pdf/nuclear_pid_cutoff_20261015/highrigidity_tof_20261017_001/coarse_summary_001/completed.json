@@ -1,0 +1,15 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "protectedInputsVerified": true,
+  "fullUncertaintyValidated": false,
+  "rows": 60,
+  "supportedRows": 24,
+  "products": {
+    "summary.tsv": "b18d8301230855a4a56b88c7f7a656a4f784d47cd10dfe97a7ce1acc8f8e3366",
+    "summary.json": "39c12b051dd38e1afded2c54626102849aca3f881435669c9ed3703029232c01",
+    "native_parameters.tsv": "c43784de87eb4b9c63acf13b2cabc5514d44e4dd887bfce7a38c2984f2c03ea6",
+    "context.json": "5f7d05d844fe5ac95336a8004eb72aa8fe17a5c6dea418662c92e9dd2b6e03aa",
+    "source/summarize_coarse.py": "b60ee2592f3faf8fed4dd5e0180a339e0fe3ae2aba4f90aa10bfe99cd6da4e1e"
+  }
+}

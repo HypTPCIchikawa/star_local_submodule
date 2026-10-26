@@ -1,0 +1,350 @@
+# Dedicated AuAu13p5 fixed-target KF QA; initial definitions copied from AuAu19 KF.
+# Vz axis resolves the target at +200 cm. Rapidity is LAB rapidity, not y_cm.
+# Existing Helix and AuAu19 histograms are unchanged.
+# Full KF Lambda/anti-Lambda QA; raw means no parent mass constraint, after Topo cuts.
+
+axes:
+  InvMassLambda: &InvMassLambda
+    nBins: 200
+    min: 1.05
+    max: 1.25
+  Pt: &Pt
+    nBins: 200
+    min: 0.0
+    max: 10.0
+  Y: &Y
+    nBins: 160
+    min: -3.0
+    max: 1.0
+  DecayLength: &DecayLength
+    nBins: 200
+    min: 0.0
+    max: 100.0
+  TransDecayLength: &TransDecayLength
+    nBins: 200
+    min: 0.0
+    max: 50.0
+  Eta: &Eta
+    nBins: 140
+    min: -3.0
+    max: 0.5
+  Phi: &Phi
+    nBins: 100
+    min: -3.15
+    max: 3.15
+  DCA: &DCA
+    nBins: 200
+    min: 0.0
+    max: 5.0
+  CosPointing: &CosPointing
+    nBins: 100
+    min: 0.99
+    max: 1.01
+  Vz: &Vz
+    nBins: 160
+    min: 196.0
+    max: 204.0
+  RefMult: &RefMult
+    nBins: 1000
+    min: 0.0
+    max: 1000.0
+  NSigmaY: &NSigmaY
+    nBins: 100
+    min: -5.0
+    max: 5.0
+  TofMatchMult: &TofMatchMult
+    nBins: 500
+    min: 0.0
+    max: 500.0
+  Cent9: &Cent9
+    nBins: 9
+    min: -0.5
+    max: 8.5
+  Cent16: &Cent16
+    nBins: 16
+    min: -0.5
+    max: 15.5
+  RefMultWeight: &RefMultWeight
+    nBins: 125
+    min: 0.5
+    max: 3.0
+  NCand: &NCand
+    nBins: 200
+    min: 0.0
+    max: 200.0
+  NTracks: &NTracks
+    nBins: 500
+    min: 0.0
+    max: 2000.0
+  NLambdaPairs: &NLambdaPairs
+    nBins: 200
+    min: 0.0
+    max: 200.0
+
+histograms:
+  # Event
+  hVz:
+    axis: *Vz
+    title: "Primary Vertex Z;V_{z} [cm];Counts"
+  hRefMult:
+    axis: *RefMult
+    title: "RefMult;RefMult;Counts"
+
+  hCentrality:
+    axis: *Cent9
+    title: "Centrality bin (cent9);cent9 (0=70-80%%, 8=0-5%%);Counts"
+  hCentralityRaw:
+    axis: *Cent9
+    title: "Centrality bin before bin cut;cent9 (0=70-80%%, 8=0-5%%);Counts"
+  hCentrality16:
+    axis: *Cent16
+    title: "Centrality bin (cent16);cent16;Counts"
+  hRefMultCorr:
+    axis: *RefMult
+    title: "Corrected multiplicity;refMult_{corr};Counts"
+  hRefMultWeight:
+    axis: *RefMultWeight
+    title: "StRefMultCorr event weight;weight;Counts"
+  hRefMultVsNTOFMatch:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (before pileup cut);nBTOFMatch;refMult"
+  hRefMultVsNTOFMatchAfter:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (after pileup cut);nBTOFMatch;refMult"
+  hCentralityVsVz:
+    xAxis: *Vz
+    yAxis: *Cent9
+    title: "cent9 vs V_{z};V_{z} [cm];cent9 (0=70-80%%, 8=0-5%%)"
+  hRawMult:
+    axis: *RefMult
+    title: "Raw multiplicity (refmult/fxtmult);mult;Counts"
+  hRawMult_vs_RefMultCorr:
+    xAxis: *RefMult
+    yAxis: *RefMult
+    title: "rawMult vs refMult_{corr};refMult_{corr};rawMult"
+  hRawMult_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *RefMult
+    title: "rawMult vs cent9;cent9 (0=70-80%%, 8=0-5%%);rawMult"
+  hRefMultCorr_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *RefMult
+    title: "refMult_{corr} vs cent9;cent9 (0=70-80%%, 8=0-5%%);refMult_{corr}"
+  hNTracks_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NTracks
+    title: "N_{tracks} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{tracks}"
+  hTofMatchMult_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *TofMatchMult
+    title: "nBTOFMatch vs cent9;cent9 (0=70-80%%, 8=0-5%%);nBTOFMatch"
+  hNProtonCand_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NCand
+    title: "N_{proton cand.} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{p}"
+  hNPionCand_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NCand
+    title: "N_{#pi^{-} cand.} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{#pi^{-}}"
+  hNLambdaPairs_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NLambdaPairs
+    title: "KFParticle input p#pi^{-} pairs vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{pairs}"
+  hLambda_InvMass_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs cent9;cent9 (0=70-80%%, 8=0-5%%);M_{p#pi^{-}} [GeV/c^{2}]"
+  hLambda_InvMass_vs_RefMultCorr:
+    xAxis: *RefMult
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs refMult_{corr};refMult_{corr};M_{p#pi^{-}} [GeV/c^{2}]"
+  hLambda_InvMass_CentBin0:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=0 (70-80%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin1:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=1 (60-70%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin2:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=2 (50-60%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin3:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=3 (40-50%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin4:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=4 (30-40%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin5:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=5 (20-30%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin6:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=6 (10-20%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin7:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=7 (5-10%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+  hLambda_InvMass_CentBin8:
+    axis: *InvMassLambda
+    title: "M_{p#pi^{-}} cent9=8 (0-5%%);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+
+  # Lambda invariant mass (main)
+  hLambda_InvMass:
+    axis: *InvMassLambda
+    title: "Lambda invariant mass (KFParticle);M_{p#pi^{-}} [GeV/c^{2}];Counts"
+
+  # Debug 1D
+  hLambda_Pt:
+    axis: *Pt
+    title: "Lambda p_{T};p_{T} [GeV/c];Counts"
+  hLambda_Eta:
+    axis: *Eta
+    title: "Lambda #eta;#eta;Counts"
+  hLambda_Phi:
+    axis: *Phi
+    title: "Lambda #phi;#phi [rad];Counts"
+  hDCA12:
+    axis: *DCA
+    title: "DCA between p and #pi^{-} at V0;DCA [cm];Counts"
+  hDCAV0:
+    axis: *DCA
+    title: "DCA of Lambda to PV;DCA [cm];Counts"
+  hCosPointing:
+    axis: *CosPointing
+    title: "cos(pointing angle);cos(#theta);Counts"
+  hNSigmaProton:
+    axis: *NSigmaY
+    title: "Proton n#sigma_{p};n#sigma_{p};Counts"
+  hNSigmaPion:
+    axis: *NSigmaY
+    title: "Pion n#sigma_{#pi};n#sigma_{#pi};Counts"
+
+  # Debug 2D
+  hLambda_InvMass_vs_Pt:
+    xAxis: *Pt
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs p_{T};p_{T} [GeV/c];M_{p#pi^{-}} [GeV/c^{2}]"
+  hLambda_InvMass_vs_DecayLength:
+    xAxis: *DecayLength
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs Decay Length;Decay Length [cm];M_{p#pi^{-}} [GeV/c^{2}]"
+  hLambda_InvMass_vs_Y:
+    xAxis: *Y
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs Lab Rapidity;y_{lab};M_{p#pi^{-}} [GeV/c^{2}]"
+  hDCAV0_vs_InvMass:
+    xAxis: *InvMassLambda
+    yAxis: *DCA
+    title: "DCA_{V0} vs M_{p#pi^{-}};M_{p#pi^{-}} [GeV/c^{2}];DCA [cm]"
+  hCosPointing_vs_InvMass:
+    xAxis: *InvMassLambda
+    yAxis: *CosPointing
+    title: "cos(#theta) vs M_{p#pi^{-}};M_{p#pi^{-}} [GeV/c^{2}];cos(#theta)"
+  hLambda_InvMass_vs_TransDecayLength:
+    xAxis: *TransDecayLength
+    yAxis: *InvMassLambda
+    title: "M_{p#pi^{-}} vs Transverse Decay Length;L_{T} [cm];M_{p#pi^{-}} [GeV/c^{2}]"
+
+  hN:
+    nBins: 1
+    min: 0.0
+    max: 1.0
+    title: "N processed events;dummy;count"
+    type: TH1I
+
+  # KFParticle-specific QA
+  hKfTrackCovCount:
+    nBins: 2000
+    min: 0.0
+    max: 2000.0
+    title: "Track covariance matrices per event;N_{cov};Events"
+    type: TH1I
+  hKfCovarianceStatus:
+    nBins: 2
+    min: -0.5
+    max: 1.5
+    title: "KF covariance conversion status;0=accepted, 1=rejected;Tracks"
+    type: TH1I
+  hKfMassError:
+    nBins: 200
+    min: 0.0
+    max: 0.02
+    title: "KF Lambda mass uncertainty;#sigma_{M} [GeV/c^{2}];Candidates"
+  hKfChi2Ndf:
+    nBins: 200
+    min: 0.0
+    max: 20.0
+    title: "KF Lambda fit quality;#chi^{2}/NDF;Candidates"
+  hKfDecayLengthSignificance:
+    nBins: 200
+    min: 0.0
+    max: 100.0
+    title: "KF decay-length significance;L/#sigma_{L};Candidates"
+  hKfPdg:
+    nBins: 7
+    min: -3500.0
+    max: 3500.0
+    title: "KF candidate PDG;PDG;Candidates"
+    type: TH1I
+
+  hKfLambdaMassRaw:
+    axis: *InvMassLambda
+    title: "Topo Lambda, no parent mass constraint;M_{p#pi} [GeV/c^{2}];Candidates"
+
+  hKfAntiLambdaMassRaw:
+    axis: *InvMassLambda
+    title: "Topo anti-Lambda, no parent mass constraint;M_{#bar{p}#pi} [GeV/c^{2}];Candidates"
+
+  hKfLambdaMassSelected:
+    axis: *InvMassLambda
+    title: "Selected Lambda;M_{p#pi} [GeV/c^{2}];Candidates"
+
+  hKfAntiLambdaMassSelected:
+    axis: *InvMassLambda
+    title: "Selected anti-Lambda;M_{#bar{p}#pi} [GeV/c^{2}];Candidates"
+
+  hKfTopoChi2NdfRaw:
+    axis: {nBins: 120, min: 0, max: 6}
+    title: "Topo output;PV-constrained #chi^{2}/NDF;Candidates"
+
+  hKfTopoChi2Ndf:
+    axis: {nBins: 120, min: 0, max: 6}
+    title: "Selected;PV-constrained #chi^{2}/NDF;Candidates"
+
+  hKfVertexLineSignificance:
+    axis: {nBins: 200, min: 0, max: 100}
+    title: "Vertex-line distance significance;L/#sigma_{L};Candidates"
+
+  hKfProtonPidPull:
+    axis: *NSigmaY
+    title: "Proton PID input (configured profile);TPC pull;Candidates"
+
+  hKfPionPidPull:
+    axis: *NSigmaY
+    title: "Pion PID input (configured profile);TPC pull;Candidates"
+
+  hKfStages:
+    axis: {nBins: 14, min: -0.5, max: 13.5}
+    title: "KF processing stages;Stage;Count"
+
+  # Exclusive terminal event outcomes; first bin is the total, not a rejection.
+  hKfEventSelection:
+    axis: {nBins: 13, min: -0.5, max: 12.5}
+    title: "KF event selection (analysis.mode profile);Outcome;Events"
+  hKfVertexXYBefore:
+    xAxis: {nBins: 160, min: -4, max: 4}
+    yAxis: {nBins: 160, min: -4, max: 4}
+    title: "All input primary vertices;V_{x} [cm];V_{y} [cm]"
+  hKfVertexXYAfterEvent:
+    xAxis: {nBins: 160, min: -4, max: 4}
+    yAxis: {nBins: 160, min: -4, max: 4}
+    title: "After bad-run and event cuts, before centrality;V_{x} [cm];V_{y} [cm]"
+  hKfVertexRadiusBefore:
+    axis: {nBins: 200, min: 0, max: 5}
+    title: "Before cuts, radius about selected mode center;V_{r} [cm];Events"
+  hKfVertexRadiusAfterEvent:
+    axis: {nBins: 200, min: 0, max: 5}
+    title: "After event cuts, radius about selected mode center;V_{r} [cm];Events"
+  hKfVertexZAfterEvent:
+    axis: *Vz
+    title: "After event cuts, before centrality;V_{z} [cm];Events"

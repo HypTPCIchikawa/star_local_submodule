@@ -1,0 +1,14 @@
+schemaVersion: 1
+rawHistogram: true/hDedxP
+domain: [0.4, 0.7]
+displayRigidity: [0.35, 0.8]
+displayDedx: [0.0, 120.0]
+nuclearDedx: [20.0, 120.0]
+dedxRebinFactor: 5
+curveStep: 0.001
+curveRelativeTolerance: 0.000000001
+axisTolerance: 0.000000001
+logZ: true
+minimumZ: 1.0
+canvasWidth: 1600
+canvasHeight: 1100

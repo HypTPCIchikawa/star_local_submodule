@@ -1,0 +1,5 @@
+viewPaddingSigma: 0.75
+displayRebin: 1
+linearHeadroom: 1.25
+logHeadroom: 3.0
+logMinimum: 0.5

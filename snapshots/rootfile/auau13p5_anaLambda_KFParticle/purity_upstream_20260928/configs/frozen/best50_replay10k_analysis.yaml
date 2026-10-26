@@ -1,0 +1,38 @@
+starTag:
+  triggerSets: production_13p5GeV_fixedTarget_2020
+  stream: st_physics
+  collision: auau13p5
+  year: year2020
+  productionTag: P24iy
+  libraryTag: SL24y
+  filetype: daq_reco_picoDst
+  filenameFilter: st_physics
+  filenameNotFilter: ''
+  storage: NFS
+dataset:
+  collisionSystem: Au+Au
+  allPicoDstList: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaLambda_KFParticle/purity_upstream_20260928/provenance/input/scan.list
+  runRange:
+    min: 21000000
+    max: 21999999
+  goodRunList: ''
+  dataQuality: production
+  dataFormat: picoDst
+analysis:
+  anaName: auau13p5_KF_purity_upstream_20260928_best50_replay10k
+  name: auau13p5_KF_purity_upstream_20260928_best50_replay10k
+  mode: fxtmult
+  type: ''
+  targetParticle: Lambda
+  decayChannel: p+pi-
+  workDir: /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer
+  baseRunMacro: run_anaLambda_KFParticle
+  baseAnaMacro: anaLambda_KFParticle
+  jobName: auau13p5_KF_purity_upstream_20260928_best50_replay10k
+  scratchSubdir: auau13p5_KF_purity_upstream_20260928_best50_replay10k
+  outputFileStem: auau13p5_KF_purity_upstream_20260928_best50_replay10k
+  nFiles: all
+analyst:
+  name: Yudai Ichikawa
+  institute: Tohoku University
+  email: yudai.ichikawa.d3@tohoku.ac.jp

@@ -1,0 +1,68 @@
+# Shared across energies; Lambda cuts come only from mainconf kf:.
+# Original anaLambdaNuclearId, not the un-debugged split Maker, is the legacy reference.
+lambdaEventPolicy: lambda_imp5_compat
+nuclearSelectionProfile: legacy_nuclearid
+lambdaPairMassMode: fixed
+lambdaPairMass: 1.115683
+# Daughter rapidity mass hypotheses [GeV/c^2]; global-track momentum, not PV momentum.
+lambdaDaughterProtonMass: 0.9382720813
+lambdaDaughterPionMass: 0.13957039
+lambdaSignalMean: 1.11596
+lambdaSignalSigma: 0.00296
+lambdaSignalNSigma: 3.0
+lambdaSidebandOuterFactor: 4.0
+mergingFieldTesla: 0.5
+mergingRadiusMeters: 1.4
+closePairEnabled: false
+closePairVetoSameTrack: true
+speciesKeys: lambda,he4
+species_lambda_builderType: resonance
+species_lambda_particleKey: lambda_kf
+species_he4_builderType: track
+species_he4_particleKey: he4
+nChannels: 4
+normQMin: 0.5
+normQMax: 1.0
+cfRebinFactor: 5
+cfCent9Min: 0
+cfCent9Max: 8
+
+channel_0_name: lambda_he4
+channel_0_partA: lambda
+channel_0_partB: he4
+channel_0_enabled: true
+channel_0_doMixing: true
+channel_0_signalMin: 1.05
+channel_0_signalMax: 1.25
+channel_0_normQMin: 0.5
+channel_0_normQMax: 1.0
+
+channel_1_name: lambda_he4_signal
+channel_1_partA: lambda
+channel_1_partB: he4
+channel_1_enabled: true
+channel_1_doMixing: true
+channel_1_signalMin: 1.10708
+channel_1_signalMax: 1.12484
+channel_1_normQMin: 0.5
+channel_1_normQMax: 1.0
+
+channel_2_name: lambda_he4_leftSB
+channel_2_partA: lambda
+channel_2_partB: he4
+channel_2_enabled: true
+channel_2_doMixing: true
+channel_2_signalMin: 1.08044
+channel_2_signalMax: 1.10708
+channel_2_normQMin: 0.5
+channel_2_normQMax: 1.0
+
+channel_3_name: lambda_he4_rightSB
+channel_3_partA: lambda
+channel_3_partB: he4
+channel_3_enabled: true
+channel_3_doMixing: true
+channel_3_signalMin: 1.12484
+channel_3_signalMax: 1.15148
+channel_3_normQMin: 0.5
+channel_3_normQMax: 1.0

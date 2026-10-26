@@ -1,0 +1,46 @@
+# Production submission: all P24iy non-ADC st_physics files, matching the pilot stream.
+# 13p5 is the fixed-target beam-energy label, not collider sqrt(sNN).
+starTag:
+  triggerSets: "production_13p5GeV_fixedTarget_2020"
+  stream: "st_physics"
+  collision: "auau13p5"
+  year: "year2020"
+  productionTag: "P24iy"
+  libraryTag: "SL24y"
+  filetype: "daq_reco_picoDst"
+  filenameFilter: "st_physics"
+  filenameNotFilter: "adc"
+  storage: "local"
+dataset:
+  collisionSystem: "Au+Au"
+  # Batch uses the catalog query; do not silently reuse the small validation list.
+  # For a local run, supply the intended input file/list explicitly.
+  allPicoDstList: ""
+  runRange:
+    min: 21000000
+    max: 21999999
+  goodRunList: ""
+  dataQuality: "production"
+  dataFormat: "picoDst"
+analysis:
+  anaName: &anaName "auau13p5_anaFemtoLambda_4He_KFParticle"
+  name: *anaName
+  mode: "fxtmult"
+  type: "femto"
+  targetParticle: "Lambda-he4"
+  decayChannel: "p+pi-"
+  workDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer"
+  logDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/log/auau13p5_anaFemtoLambda_4He_KFParticle"
+  errDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/err/auau13p5_anaFemtoLambda_4He_KFParticle"
+  baseRunMacro: "run_anaFemtoLambda_4He"
+  baseAnaMacro: "anaFemtoLambda_4He"
+  jobName: *anaName
+  scratchSubdir: *anaName
+  outputFileStem: *anaName
+  nFiles: "all"
+  filesPerJob: 5
+  maxEvents: -1
+analyst:
+  name: "Yudai Ichikawa"
+  institute: "Tohoku University"
+  email: "yudai.ichikawa.d3@tohoku.ac.jp"

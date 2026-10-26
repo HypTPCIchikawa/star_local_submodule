@@ -1,0 +1,12 @@
+# config-generator: manual
+# Explicit KF provider; 2026-10-20 original Git PID, no interpolation calibration.
+# Existing cutoff/veto/TOF values remain historical, not freshly certified purity50 cuts.
+analysis: analysis/analysis_info_auau3p85_anaFemtoLambda_t_KFParticle_highpurity.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_auau3p85_gitpid_restart_20261020.yaml
+maker: maker/maker_anaFemtoLambda_t_KFParticle.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_femtoLambda_triton_kf.yaml
+nuclearHist: hist/hist_femtoLambda_triton_nuclear.yaml

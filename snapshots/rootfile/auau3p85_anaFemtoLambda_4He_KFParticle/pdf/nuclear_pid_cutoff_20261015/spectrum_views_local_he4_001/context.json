@@ -1,0 +1,61 @@
+{
+  "productionEnabled": false,
+  "inputModels": [
+    [
+      "gaussian_exponential_nominal",
+      "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_gaussian_exponential_nominal_001/cutoff_fits.root"
+    ],
+    [
+      "gaussian_linear_nominal",
+      "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_gaussian_linear_nominal_001/cutoff_fits.root"
+    ],
+    [
+      "lognormal_exponential_nominal",
+      "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_lognormal_exponential_nominal_001/cutoff_fits.root"
+    ],
+    [
+      "lognormal_linear_nominal",
+      "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he4_lognormal_linear_nominal_001/cutoff_fits.root"
+    ]
+  ],
+  "slices": [
+    [
+      5,
+      0.455
+    ],
+    [
+      20,
+      0.605
+    ],
+    [
+      40,
+      0.805
+    ],
+    [
+      60,
+      1.005
+    ],
+    [
+      110,
+      1.505
+    ],
+    [
+      159,
+      1.995
+    ]
+  ],
+  "plots": {
+    "representativeRigidity": [
+      0.455,
+      0.605,
+      0.805,
+      1.005,
+      1.505,
+      1.995
+    ],
+    "dedxMin": 0.0,
+    "dedxMax": 120.0,
+    "displayDedxRebinFactor": 5,
+    "logMinimum": 0.5
+  }
+}

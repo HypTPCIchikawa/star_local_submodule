@@ -1,0 +1,50 @@
+{
+  "study_folder": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity",
+  "inputs": {
+    "fit_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/he4_fits.root",
+      "size": 1931130,
+      "mtime_ns": 1791865569588614205,
+      "device": 48,
+      "inode": 1070123529
+    },
+    "original_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/auau13p5_anaFemtoLambda_4He_KFParticle_2020P24iy_partial_merge.root",
+      "size": 241812808,
+      "mtime_ns": 1790851183247704527,
+      "device": 48,
+      "inode": 964703165
+    },
+    "study": {
+      "context.json": "eeab9c3a4b863078ea0b1abb0252736a9309bff058ba5575e33c37daf8693670",
+      "purity.json": "dc959a30442388dfdceb033703c77be7aeba490b300672edaae192d0e016fa86",
+      "he4_fits.root": "a01c5b70cac54627b5ad363e539b9e1e3d64be0d548ac2d825aac40a5d52f7d8"
+    },
+    "completed_sha256": "975aeab62b76f7245957199e95ea18e95907732e416738e4adf98c0c2ee4ce7a"
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau13p5_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "7d74a9f738d723ceb7aa6f00d3d039c90616a8ea868241d59d9369057a06c5d6",
+  "settings": {
+    "schemaVersion": 1,
+    "panelsPerPage": 4,
+    "fullDisplayNSigmaMin": -7.0,
+    "fullDisplayNSigmaMax": 4.0,
+    "physicalDisplayNSigmaMin": -3.0,
+    "physicalDisplayNSigmaMax": 3.0,
+    "linearMaximumFactor": 1.35,
+    "logMaximumFactor": 8.0,
+    "logMinimum": 0.5,
+    "diagnosticRigidityCenters": [
+      0.505,
+      0.555,
+      0.605,
+      0.655,
+      0.705,
+      0.755,
+      0.805,
+      1.005
+    ]
+  },
+  "created_jst": "2026-10-13T13:35:29.618308+09:00",
+  "note": "Stored fits are re-rendered, never fitted again; physical curves preserve stored fit-bin heights."
+}

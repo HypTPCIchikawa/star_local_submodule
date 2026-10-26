@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "products": {
+    "free_local_settings.yaml": "27d3b38de74096a7feb9359f1809943f890b09f9be6cee384f7b8d0b95fd73b3",
+    "preparation.json": "6cb209970f05d84bb189a599a41c3c03b99334d2f0d070819707933ddc7230be",
+    "source/config/cuts/event/event_femtoLambda_imp5.yaml": "493c22c8ec457820047b563fda66ef916efec31b5cc7bb29b02b47c395c7aac7",
+    "source/config/cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml": "581bab50e769a28428fe5970f72cae9acd7da104c931f83d2060a0e15f9dd425",
+    "source/config/cuts/nuclearid/nuclearid_femtoLambda_auau3p85_logpoly_lowr_reference_20261019.yaml": "104d5b8fdbd96384b513e1a73684099e80fe9239a0f9b76f3b92ed8a31c48011",
+    "source/config/cuts/mixing/mixing_femtoLambda_legacy.yaml": "b2f1d0a183d72963d68a36b123d398509abbf13acf0a8365484e290b940c8045",
+    "source/config/cuts/centrality/centrality_auau3p85_femtoLambda.yaml": "1cf50324a4c7f3ef308be960b87c9ebea3693031abf4f8352838027614ce4ca0",
+    "source/config/hist/hist_auau3p85_femtoLambda_he4_he3_control_kf.yaml": "1d45926f41d7a5e9dca37e92f6c72cdec6367a79620a44ce7a8a189ca4e333ae",
+    "source/config/hist/hist_auau3p85_femtoLambda_he4_he3_control_nuclear.yaml": "6967e30d055281a0dd0350ed1c2132d1917339f05f3f676c5a16f2877407818b",
+    "source/config/hist/hist_auau3p85_femtoLambda_he4_he3_pid_pair_qa.yaml": "a763724cd00efea9ace19d1d77e9becd2a31ffc905c123f70eba8d7f32f300e8",
+    "source/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_logpolyLowRReference20261019.yaml": "4e40f0662fbdef719c16f963b4a24017c21d82aa020ca4b27bdf705e590ca6ab",
+    "source/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "source/config/maker/maker_auau3p85_anaFemtoLambda_4He_KFParticle_he3Control.yaml": "6cbdd3634de7fa07a80497433cbf19f4e5f2c375c3f9f7d7c0006b5801db039f",
+    "source/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/native_audit.json": "197ed122b6024a949574f941a15db09bcec0c622bde57fbc167b515175a073b3",
+    "source/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/completed.json": "1f7a6833d9b72713aaac05195c2c23b5d95f17b5da4fcbac81a4024c22ae35be",
+    "source/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/context.json": "7f467146dbb214b08ca6bb5f75ac33f6df95d57b2ae6db5b1504353d442fb149",
+    "source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "source/StMaker/common/FemtoNuclearDedxCalibration.cxx": "bde6a4d167769c82ea9049238a9bd6bacf8c78977c7b9412907196fe32be1964",
+    "source/StMaker/common/FemtoLambdaLegacy.cxx": "ccd4e0768e7ced824185a79323e92e6c821d25ec65f1121e494546b88cbbc0ff",
+    "source/tools/nuclear_pid_cutoff/freeze_baseline.py": "10cb2d9db06e4d3692fbaa173371930e7991cbeb8b7c606f6b4fa7ea87960e3c",
+    "source/tools/nuclear_pid_cutoff/free_local_settings.yaml": "2de5b16ed349272ae03167f11e3a185684fa9c55a4a854a1368a6bf2cf5a30b0",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/test_prepare_study.py": "ba3077b78b8100e468f626be88ab501750a8da77bffcf4ac7c815862eab72911",
+    "source/tools/nuclear_pid_cutoff/coretail_20261019/prepare_study.py": "00fc76ab36191ca3ae5bbea663ab687bbcc35e58bf390b07cffee66ed2f85df0",
+    "source/tools/nuclear_pid_tof/runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e"
+  },
+  "productionSwitched": false
+}

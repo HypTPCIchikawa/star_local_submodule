@@ -1,0 +1,12 @@
+schemaVersion: 1
+executionTimeoutSeconds: 600
+display:
+  fullPhysicalMin: 0.0
+  fullPhysicalMax: 120.0
+  supplementalPhysicalMin: 45.0
+  supplementalPhysicalMax: 120.0
+  diagnosticRigidityMin: 0.40
+  diagnosticRigidityMax: 0.50
+  axisMaxDigits: 3
+  # Existing immutable display geometry is copied from the completed study.
+  # All range changes are display-only; fit bins and predictions are untouched.

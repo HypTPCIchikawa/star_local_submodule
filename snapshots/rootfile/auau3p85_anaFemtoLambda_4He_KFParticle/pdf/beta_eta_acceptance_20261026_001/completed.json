@@ -1,0 +1,48 @@
+{
+  "completedAtJST": "2026-10-26T10:18:50.638674+09:00",
+  "pdf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/beta_eta_acceptance_20261026_001/beta_vs_eta_lambda_he4.pdf",
+  "pdfPages": 6,
+  "ghostscriptReadbackPassed": true,
+  "sourceFingerprintsUnchanged": true,
+  "contentUnchangedByLayoutFix": true,
+  "sampleHistograms": 6,
+  "he4PartitionMismatchBins": 0,
+  "he4SubsetMismatchBins": 0,
+  "inputEvents": 2100726543,
+  "reconstructedEvents": 2067647474,
+  "independentDefinitionAndPlotReview": "passed",
+  "visualReview": "final overview, cropbox PDF first page, colored BOX overlay and fresh-process ROOT canvas readback checked; no clipping or statistics box",
+  "files": {
+    "beta_vs_eta_lambda_he4.pdf": "3011d2e81840ab6617e5304b1336123e03530754535a4777415a7099d994c2c8",
+    "beta_eta_box_overlay.pdf": "024ca62c525e9da3da04cec96ba77967a89c9e08752ad036d8155d0ff763f3da",
+    "beta_eta_box_overlay.root": "03582ba0270fb8a9cefd29b4d9fb272820ea6889bad69bc0fefc5f1b3467378d",
+    "beta_eta_summed.root": "a13d4448578d9be0f8d4155af4903fa8c65321721eafa6437acb89eef58b1f5d",
+    "PlotBetaEta.C": "45a91d1ca0fae5cee74f105df58d18b038b2a2ed8c6ce7369994f5094fcc08dd",
+    "RenderBetaEta.C": "3d15398aed3baf94ae6eee633834f439690ff7318c4715f22a246de367d71c96",
+    "ValidateBoxOverlay.C": "e13142ee2124aeab3681254a0c38ef58d5f469561c3f02a80cb026fc110ccc29",
+    "plot.env": "402a4d7bc14eeecd1e64f1779bbe25ad0ace601cdf14e802228b9d7c967a2f6a",
+    "render_layout.env": "14e3bff72df92f11f41326bb867b007c4cb44a9125661c5b7726459d15816b8a",
+    "counts.tsv": "f2910e78e5d894364acd4e222840c6df5487bf7eac7da60e2fd7217d4162af7f",
+    "validation.tsv": "8fd60030e7668a55e5eba62c391d10a35ce8b4b548e9cacd237e78f93ed3d838"
+  },
+  "revision": "page1 typography correction + three-color BOX SAME overlay appended as page6",
+  "previousCompletedRecord": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/beta_eta_acceptance_20261026_001/revisions/20261026_before_box_overlay_001/completed.json",
+  "cacheHistogramDataUnchanged": true,
+  "overlayBinAndErrorMismatches": 0,
+  "overlayRootCanvasReadbackPassed": true,
+  "etaRange": [
+    -5.0,
+    0.15000000000000036
+  ],
+  "betaRange": [
+    0,
+    1
+  ],
+  "boxDrawOption": "BOX SAME",
+  "boxFillStyle": 0,
+  "boxScaling": "shared linear raw-count maximum; no independent normalization",
+  "pages2To5Source": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/beta_eta_acceptance_20261026_001/revisions/20261026_before_box_overlay_001/beta_vs_eta_lambda_he4.pdf",
+  "pages2To5Assembly": "reused through Ghostscript PDF composition",
+  "independentLayoutAndOverlayReview": "passed",
+  "rootCanvasStatsDisabledPersistently": true
+}

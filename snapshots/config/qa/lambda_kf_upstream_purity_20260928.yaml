@@ -1,0 +1,59 @@
+schemaVersion: 1
+studyTag: purity_upstream_20260928
+scanEvents: 10000
+validationEvents: 100000
+baseMainconf: config/mainconf/main_auau13p5_anaLambda_KFParticle_Imp5.yaml
+baseScoreConfig: config/qa/lambda_kf_purity_study_20260927.yaml
+energies:
+  auau13p5:
+    triggerSets: production_13p5GeV_fixedTarget_2020
+    year: year2020
+    runRange: [21000000, 21999999]
+    centrality: config/cuts/centrality/centrality_auau13p5_anaLambda_KFParticle.yaml
+  auau3p85:
+    triggerSets: production_3p85GeV_fixedTarget_2019
+    year: year2019
+    runRange: [20000000, 20999999]
+    centrality: config/cuts/centrality/centrality_auau3p85_anaLambda.yaml
+upstreamVariants:
+  default: {}
+  hits20: {minNHitsFit: 20}
+  hits25: {minNHitsFit: 25}
+  ratio060: {minNHitsRatio: 0.60}
+  primary5: {interfaceChiPrimaryCut: 5.0, finderChiPrimary2D: 5.0}
+  primary10: {interfaceChiPrimaryCut: 10.0, finderChiPrimary2D: 10.0}
+  primary20: {interfaceChiPrimaryCut: 20.0, finderChiPrimary2D: 20.0}
+  finderL3: {finderLCut: 3.0}
+  finderL5: {finderLCut: 5.0}
+  finderLsig5: {finderLdL2D: 5.0}
+  finderLsig7: {finderLdL2D: 7.0}
+  finderFit5: {finderChi2Ndf2D: 5.0}
+  topo1p5: {topoChi2NdfCut: 1.5}
+  combined_soft: {minNHitsFit: 20, interfaceChiPrimaryCut: 5.0, finderChiPrimary2D: 5.0, finderLCut: 3.0, finderLdL2D: 5.0}
+  combined_tight: {minNHitsFit: 20, interfaceChiPrimaryCut: 10.0, finderChiPrimary2D: 10.0, finderLCut: 5.0, finderLdL2D: 5.0}
+  detached_combination: {interfaceChiPrimaryCut: 10.0, finderChiPrimary2D: 10.0, finderLCut: 5.0, finderLdL2D: 5.0}
+finalGrid:
+  minDecayLengthSignificance: [3.0, 5.0, 7.0, 10.0, 12.0, 15.0, 20.0]
+  imp5MinDCAProton: [1.0, 1.5, 2.0]
+  imp5MinDCAPion: [1.5, 2.0, 2.5, 3.0]
+  nSigmaProton: [2.5, 2.0, 1.5]
+  nSigmaPion: [2.5, 2.0]
+  maxDistanceToPv: [0.4, 0.3, 0.2]
+  maxDaughterDistance: [0.4, 0.3, 0.2]
+  minCosPointing: [0.999, 0.9995, 0.9998]
+  maxChi2Ndf: [5.0, 3.0, 2.0]
+  maxTopoChi2Ndf: [2.0, 1.0]
+  minDecayLength: [3.0, 5.0, 10.0]
+includeAllPairs: true
+tripleAnchor: minDecayLengthSignificance
+retentionFloors: [0.50, 0.70, 0.80]
+minimumWindowCount: 20
+poissonUpperConfidenceLevel: 0.90
+maxPointsPerDataset: 6000
+bootstrapReplicates: 400
+bootstrapSeed: 202609281
+backgroundCheck:
+  backgroundDegrees: '0;1;2'
+  backgroundProfileDeltaNll: 0.821187207574908
+  backgroundProfileMaxFactor: 100
+  backgroundMinCounts: 8

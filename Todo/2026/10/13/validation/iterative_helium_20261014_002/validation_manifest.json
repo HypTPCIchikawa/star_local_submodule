@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "compileSucceeded": true,
+  "tests": {
+    "passed": true,
+    "tests": 1390,
+    "scope": "mathematical, seed-units and numerical closure; NOT isotope identification or production PID validation"
+  },
+  "mainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "runtime": {
+    "STAR": "SL24y",
+    "STAR_HOST_SYS": "sl73_x8664_gcc485",
+    "ROOT": "5.34/38",
+    "GCC": "4.8.5"
+  },
+  "sourceSha256": {
+    "tools/he4_purity/iterative_logpoly/IterativeHeliumFit.C": "e076a0ad96271a89914d3e3889ec113cb8775224a7000366e1fa3275cf35078c",
+    "tools/he4_purity/iterative_logpoly/SelfTestIterativeHelium.C": "7961a45bcaedc72f89cf7adad45d0e49521f0897062178cffa8eea14713521a4",
+    "tools/he4_purity/global_logpoly/GlobalHeliumFit.C": "3536a4466bc58070224a98b57f9c2d08747de57f21aad0618897e4bd399b2b66",
+    "StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  },
+  "compiledSnapshotSha256": {
+    "tools/he4_purity/iterative_logpoly/IterativeHeliumFit.C": "e076a0ad96271a89914d3e3889ec113cb8775224a7000366e1fa3275cf35078c",
+    "tools/he4_purity/iterative_logpoly/SelfTestIterativeHelium.C": "7961a45bcaedc72f89cf7adad45d0e49521f0897062178cffa8eea14713521a4",
+    "tools/he4_purity/global_logpoly/GlobalHeliumFit.C": "3536a4466bc58070224a98b57f9c2d08747de57f21aad0618897e4bd399b2b66",
+    "StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  },
+  "products": {
+    "settings.tsv": "822bfc4dfeb2e21826309e09bd1823b868f282feae9b275bd9ba17aab9e9eb17",
+    "selftest.json": "2658edda8545d2d39a0db66372dfc5b190ec655c0d73a9f85b87fbf7e5427e72",
+    "selftest.log": "406c353ba0f8f1d37e9ecbb23c37f5f335ec233b4b0f145af00ca3c20b9e8323",
+    "RunSelfTestIterativeHelium.C": "f02068d43fe757336e670d3ea63451d22cbbc61f197cc682552b992a7916e59a"
+  },
+  "createdJst": "2026-10-14T12:40:48.394556+09:00",
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "note": "Numerical/source compile only; frozen input ROOT/calibration untouched. Initial failed namespace compile preserved in sibling001."
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "sourceStudy": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001",
+  "sourcePhase": "13_common_raw_refit",
+  "productionEnabled": false,
+  "protected": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.root": "b8dc92f4b2a5d7c93390a98dcb4b5984295cb71a5cbba16038788f59fa47acce",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/13_common_raw_refit/fit_result.json": "c5ad4e8afac234e86d33dc9e5c082d6d22a663fd85ef3ca7d812d46cdb221cf7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/13_common_raw_refit/phase.root": "75768ce853e4bc260fbc7368ce456c61aad6eb8ba3164586d4ce6be47b014a5e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/13_common_raw_refit/settings.tsv": "a5eb4b0368705b4eb79dd3cc7f237ecdd5ce5b7146d0fe712805a9d66d4bfa44",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/completed.json": "359abde9d6e56551dc43c8af1e32c46ddd49e4ef51814da93db913df31502d7b",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/context.json": "511117271194a017c983cb69ca0af4b4268c093a354d1ba6b9c338a5a1a10bca",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/source/tools/he4_purity/iterative_logpoly/IterativeHeliumFit.C": "e076a0ad96271a89914d3e3889ec113cb8775224a7000366e1fa3275cf35078c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/source/tools/he4_purity/global_logpoly/GlobalHeliumFit.C": "3536a4466bc58070224a98b57f9c2d08747de57f21aad0618897e4bd399b2b66",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/he4_purity/iterative_logpoly/DiagnoseCommonPoint.C": "024e14bc2ca4d08c1b983c00bd6022edf1b9928c085382f972841840971cbc15",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/he4_purity/iterative_logpoly/diagnose_common.py": "b7538fa3a8b4640589eb680d884a211f1663552e495dce51ba797b1f2c94275e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "consumedSnapshots": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/source/tools/he4_purity/iterative_logpoly/IterativeHeliumFit.C": "e076a0ad96271a89914d3e3889ec113cb8775224a7000366e1fa3275cf35078c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/source/tools/he4_purity/global_logpoly/GlobalHeliumFit.C": "3536a4466bc58070224a98b57f9c2d08747de57f21aad0618897e4bd399b2b66",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/source/tools/he4_purity/iterative_logpoly/DiagnoseCommonPoint.C": "024e14bc2ca4d08c1b983c00bd6022edf1b9928c085382f972841840971cbc15",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/source/tools/he4_purity/iterative_logpoly/diagnose_common.py": "b7538fa3a8b4640589eb680d884a211f1663552e495dce51ba797b1f2c94275e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/settings.tsv": "a5eb4b0368705b4eb79dd3cc7f237ecdd5ce5b7146d0fe712805a9d66d4bfa44",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/variants.tsv": "e6bc358a88fdcd9d85f71eed8cc096edbec76c2b1bfa7558bcf8019f572a8a25",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/targets.tsv": "addf062bd3f98f5e7cb2e9a21592717b305c1cd92979ff0ecff9fe9b53501078",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/seeds.tsv": "4b59c0c8c8b148b9d2b1eb39d9f1e07e900934ca4acf5464d53a4fa12bdcb884",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/amplitudes.tsv": "24a4cb370e201a58d8008343a753c78ef9a25f8b6e47f06e81b642d4a2eaf424",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/diagnostic_case_20261014_001/diagnostic_settings.yaml": "831992967cdc7ccaef2cdf24d746270060bce223017eeaa7630e6867f4946d0f"
+  },
+  "createdJst": "2026-10-14T13:13:45.444486+09:00"
+}

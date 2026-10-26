@@ -1,0 +1,23 @@
+# 保存済みALL fitだけを描画する。新fit・イベント処理・PID変更は行わない。
+schemaVersion: 1
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015
+modelTablesDirectory: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001
+parameterTable: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/summary_free_sensitivity_001/native_parameters.tsv
+renderer: tools/nuclear_pid_cutoff/PlotCutoffAtlas.C
+rendererDependency: tools/nuclear_pid_cutoff/PlotCutoffSpectra.C
+runtimeWrapper: script/singularity_root_batch.sh
+species: [d, t, he3, he4]
+rigidityMin: 0.4
+rigidityMax: 2.0
+nativeRigidityWidth: 0.01
+bookRigidityWidth: 0.2
+modelsPerSpecies: 4
+pagesPerNativeBin: 4
+axisTolerance: 0.000000001
+executionTimeoutSeconds: 7200
+plots:
+  dedxMin: 0.0
+  dedxMax: 120.0
+  displayDedxRebinFactor: 1
+  logMinimum: 0.1

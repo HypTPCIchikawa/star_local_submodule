@@ -1,0 +1,14 @@
+schemaVersion: 1
+baseSettings: tools/nuclear_pid_cutoff/highrigidity/settings.yaml
+inputStudy: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_inputs_002
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001
+targetSpecies: he4
+sampleHistogram: TAG_D
+tofPolicy: same_saved_D_window
+rigidityMin: 2.0
+rigidityMax: 5.0
+fitRigidityWidth: 0.05
+sourceNativeWidth: 0.01
+pilotRigidity: [2.975, 3.975, 4.975]
+# The full 0.05-R projected target shape is free, never an intrinsic calibration.
+targetResponseProjection: constant_projected_shape_free_mean_sigma

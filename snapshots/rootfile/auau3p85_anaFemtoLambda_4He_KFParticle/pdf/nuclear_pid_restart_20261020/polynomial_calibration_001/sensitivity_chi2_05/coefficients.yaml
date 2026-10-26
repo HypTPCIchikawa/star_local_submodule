@@ -1,0 +1,4129 @@
+schemaVersion: 1
+productionEnabled: false
+scenario:
+  name: sensitivity_chi2_05
+  chi2PerNdfMax: 5.0
+  rejectForeignCurveInsideRoi: false
+basis: powers_of_log10_R
+species:
+  d:
+    curveCandidateValid: true
+    invalidReasons: []
+    rMin: 0.5
+    rMax: 5
+    supportCount: 44
+    supportIds:
+    - d_b0051
+    - d_b0056
+    - d_b0061
+    - d_b0166
+    - d_b0176
+    - d_b0178
+    - d_b0181
+    - d_b0186
+    - d_b0191
+    - d_b0196
+    - d_b0201
+    - d_b0206
+    - d_b0211
+    - d_b0216
+    - d_b0221
+    - d_b0226
+    - d_b0231
+    - d_b0236
+    - d_b0241
+    - d_b0246
+    - d_b0351
+    - d_b0361
+    - d_b0366
+    - d_b0371
+    - d_b0376
+    - d_b0381
+    - d_b0386
+    - d_b0391
+    - d_b0401
+    - d_b0406
+    - d_b0411
+    - d_b0416
+    - d_b0421
+    - d_b0426
+    - d_b0431
+    - d_b0436
+    - d_b0446
+    - d_b0466
+    - d_b0471
+    - d_b0476
+    - d_b0481
+    - d_b0486
+    - d_b0491
+    - d_b0500
+    diagnostics:
+      mean:
+        turningPointsR: []
+        minDenseValue: 2.616377580189069
+        maxDenseValue: 26.237254893259802
+        leaveOneOut:
+        - id: d_b0051
+          prediction: 25.914140408027023
+          residual: 3.3558778676610856
+          regularizedPull: 6.468602310084768
+        - id: d_b0056
+          prediction: 22.656158539683325
+          residual: 0.8545261799633188
+          regularizedPull: 27.49418895049989
+        - id: d_b0061
+          prediction: 20.68944536683842
+          residual: -0.02542270647806788
+          regularizedPull: -0.9545310478007253
+        - id: d_b0166
+          prediction: 5.234252117358245
+          residual: -0.1228059900112628
+          regularizedPull: -21.280673393419942
+        - id: d_b0176
+          prediction: 4.865183357913183
+          residual: -0.07810100307808554
+          regularizedPull: -14.872241646393169
+        - id: d_b0178
+          prediction: 4.798504120724517
+          residual: -0.06800672720204926
+          regularizedPull: -12.941948574235713
+        - id: d_b0181
+          prediction: 4.70340343181283
+          residual: -0.05664354622486201
+          regularizedPull: -11.039904940436324
+        - id: d_b0186
+          prediction: 4.5554191646600675
+          residual: -0.03819407857739954
+          regularizedPull: -7.657325061823679
+        - id: d_b0191
+          prediction: 4.419816969405808
+          residual: -0.022872018529366045
+          regularizedPull: -4.692237035117827
+        - id: d_b0196
+          prediction: 4.29534575508208
+          residual: -0.008784889230163628
+          regularizedPull: -1.8746004176288864
+        - id: d_b0201
+          prediction: 4.180970895662923
+          residual: 0.00292101694927549
+          regularizedPull: 0.6503309697731667
+        - id: d_b0206
+          prediction: 4.075754570602095
+          residual: 0.01332963478503757
+          regularizedPull: 2.9983973131835238
+        - id: d_b0211
+          prediction: 3.978829707235583
+          residual: 0.023306306095440377
+          regularizedPull: 5.3291768466663285
+        - id: d_b0216
+          prediction: 3.889450439244912
+          residual: 0.032241207888861645
+          regularizedPull: 7.580889374743769
+        - id: d_b0221
+          prediction: 3.807118126155337
+          residual: 0.03813912416138798
+          regularizedPull: 9.164351185644966
+        - id: d_b0226
+          prediction: 3.7310823173701704
+          residual: 0.043151442494332226
+          regularizedPull: 10.617318032852452
+        - id: d_b0231
+          prediction: 3.6608819086834297
+          residual: 0.04867796938115143
+          regularizedPull: 11.949985280970498
+        - id: d_b0236
+          prediction: 3.595833778852981
+          residual: 0.05147346871994074
+          regularizedPull: 13.167129508762201
+        - id: d_b0241
+          prediction: 3.5356825713947546
+          residual: 0.054109215304881886
+          regularizedPull: 14.199185869142829
+        - id: d_b0246
+          prediction: 3.4804580866456174
+          residual: 0.05464977679878258
+          regularizedPull: 13.966554830774403
+        - id: d_b0351
+          prediction: 2.9070136625085716
+          residual: 0.00012929368926073437
+          regularizedPull: 0.03781735626792584
+        - id: d_b0361
+          prediction: 2.882265540663638
+          residual: -0.004202427493358751
+          regularizedPull: -1.3177159300107824
+        - id: d_b0366
+          prediction: 2.870750754453402
+          residual: -0.007088403655795439
+          regularizedPull: -2.2417126486267596
+        - id: d_b0371
+          prediction: 2.8596997431779703
+          residual: -0.01059382656519725
+          regularizedPull: -3.304398799651402
+        - id: d_b0376
+          prediction: 2.8489163881728143
+          residual: -0.01189733195849385
+          regularizedPull: -3.766533031514373
+        - id: d_b0381
+          prediction: 2.8383540913257312
+          residual: -0.013635822311396595
+          regularizedPull: -3.9861209442719
+        - id: d_b0386
+          prediction: 2.8285174442867076
+          residual: -0.017043512433215557
+          regularizedPull: -5.420637545704283
+        - id: d_b0391
+          prediction: 2.8184028623821753
+          residual: -0.015516655670603008
+          regularizedPull: -4.768068145653724
+        - id: d_b0401
+          prediction: 2.7993719134026493
+          residual: -0.01825646663716851
+          regularizedPull: -5.57188402668159
+        - id: d_b0406
+          prediction: 2.7901177737675997
+          residual: -0.01723957403241938
+          regularizedPull: -5.543794425296202
+        - id: d_b0411
+          prediction: 2.780954385660296
+          residual: -0.017652910341444894
+          regularizedPull: -5.556275667716293
+        - id: d_b0416
+          prediction: 2.7718286974126665
+          residual: -0.01846881316884419
+          regularizedPull: -5.320947405315917
+        - id: d_b0421
+          prediction: 2.762910077031205
+          residual: -0.01741550681867743
+          regularizedPull: -5.154663381209649
+        - id: d_b0426
+          prediction: 2.75405902547603
+          residual: -0.015566296125424373
+          regularizedPull: -4.8347432824281285
+        - id: d_b0431
+          prediction: 2.7450555703305084
+          residual: -0.013440407667986598
+          regularizedPull: -3.7815830020678187
+        - id: d_b0436
+          prediction: 2.7363114774011645
+          residual: -0.012322841998927636
+          regularizedPull: -3.6792728715356224
+        - id: d_b0446
+          prediction: 2.7186222766497306
+          residual: -0.00966169666797212
+          regularizedPull: -2.783218427290547
+        - id: d_b0466
+          prediction: 2.682027611710832
+          residual: 0.004564828118413189
+          regularizedPull: 1.2524948022664504
+        - id: d_b0471
+          prediction: 2.6723778023753173
+          residual: 0.009170880296477613
+          regularizedPull: 2.6528995281692795
+        - id: d_b0476
+          prediction: 2.662709045139778
+          residual: 0.011681495740162529
+          regularizedPull: 3.422471534199541
+        - id: d_b0481
+          prediction: 2.652091497867584
+          residual: 0.019515091567962717
+          regularizedPull: 5.905088174976339
+        - id: d_b0486
+          prediction: 2.6415020052998557
+          residual: 0.026324378000446735
+          regularizedPull: 7.712996244943014
+        - id: d_b0491
+          prediction: 2.631154472151615
+          residual: 0.03287900639286789
+          regularizedPull: 8.830132955887423
+        - id: d_b0500
+          prediction: 2.6089338643350897
+          residual: 0.04641806251230829
+          regularizedPull: 13.516070746888696
+        maximumAbsoluteLOOPull: 27.49418895049989
+        maximumAbsoluteSupportPull: 19.050128914107844
+      sigma:
+        turningPointsR:
+        - 3.732908511397462
+        minDenseValue: 0.14172914387651508
+        maxDenseValue: 1.131898398036749
+        leaveOneOut:
+        - id: d_b0051
+          prediction: 1.1208901291846511
+          residual: 1.076521778499894
+          regularizedPull: 0.9337752513665428
+        - id: d_b0056
+          prediction: 0.9143589751217656
+          residual: 0.4743900968778716
+          regularizedPull: 6.704755335204279
+        - id: d_b0061
+          prediction: 0.8486517460534924
+          residual: 0.4465534367802566
+          regularizedPull: 6.831291777539449
+        - id: d_b0166
+          prediction: 0.3055548041277172
+          residual: -0.018925478783120397
+          regularizedPull: -1.318130838310493
+        - id: d_b0176
+          prediction: 0.28296315438197445
+          residual: -0.021204957487552245
+          regularizedPull: -1.6162524723570795
+        - id: d_b0178
+          prediction: 0.2785148067346445
+          residual: -0.018517412242024966
+          regularizedPull: -1.41635291069018
+        - id: d_b0181
+          prediction: 0.2723402132370111
+          residual: -0.017394403879717968
+          regularizedPull: -1.3609006363872447
+        - id: d_b0186
+          prediction: 0.262588572473862
+          residual: -0.015661286167192173
+          regularizedPull: -1.2634258702653454
+        - id: d_b0191
+          prediction: 0.2533781235388625
+          residual: -0.012530571847363309
+          regularizedPull: -1.0347036035341546
+        - id: d_b0196
+          prediction: 0.24492880678009726
+          residual: -0.011739985067306058
+          regularizedPull: -1.0050988127500133
+        - id: d_b0201
+          prediction: 0.23722133621229236
+          residual: -0.014332130719192954
+          regularizedPull: -1.2727666062507534
+        - id: d_b0206
+          prediction: 0.22963737268545875
+          residual: -0.011070200064088931
+          regularizedPull: -0.9894632486613955
+        - id: d_b0211
+          prediction: 0.22243325058609298
+          residual: -0.0054889811269041855
+          regularizedPull: -0.5004623977889503
+        - id: d_b0216
+          prediction: 0.21590806299186735
+          residual: -0.004123752503489425
+          regularizedPull: -0.38766520495091633
+        - id: d_b0221
+          prediction: 0.209777094638769
+          residual: -0.002545073473387116
+          regularizedPull: -0.24486799721887054
+        - id: d_b0226
+          prediction: 0.20408200003927301
+          residual: -0.0018946853468365388
+          regularizedPull: -0.1864341685197935
+        - id: d_b0231
+          prediction: 0.19862307224289621
+          residual: 0.0009304049450379603
+          regularizedPull: 0.09134415403767226
+        - id: d_b0236
+          prediction: 0.19367364871703097
+          residual: 0.0007364499266705737
+          regularizedPull: 0.07558819797700941
+        - id: d_b0241
+          prediction: 0.1890874140523875
+          residual: -5.019605568507002e-05
+          regularizedPull: -0.0052683126752701565
+        - id: d_b0246
+          prediction: 0.18436716086583327
+          residual: 0.006200673836673248
+          regularizedPull: 0.6483107362726753
+        - id: d_b0351
+          prediction: 0.14175146688814036
+          residual: 0.016412708924598646
+          regularizedPull: 2.0478651612416128
+        - id: d_b0361
+          prediction: 0.14124306848647242
+          residual: 0.014143261455879463
+          regularizedPull: 1.8114276922343149
+        - id: d_b0366
+          prediction: 0.14117768770046027
+          residual: 0.012145817087785421
+          regularizedPull: 1.5790408927568678
+        - id: d_b0371
+          prediction: 0.1410597915985245
+          residual: 0.013386914311868392
+          regularizedPull: 1.7278494331010472
+        - id: d_b0376
+          prediction: 0.141101166728474
+          residual: 0.012999046064243458
+          regularizedPull: 1.6836825475238744
+        - id: d_b0381
+          prediction: 0.14123532343088085
+          residual: 0.012562389651913197
+          regularizedPull: 1.62218259564258
+        - id: d_b0386
+          prediction: 0.14142978440165635
+          residual: 0.012354624776056394
+          regularizedPull: 1.60131553465705
+        - id: d_b0391
+          prediction: 0.1417376136095463
+          residual: 0.011235093413428016
+          regularizedPull: 1.4654820442313103
+        - id: d_b0401
+          prediction: 0.1426707553498736
+          residual: 0.006520517288525901
+          regularizedPull: 0.8586452392063871
+        - id: d_b0406
+          prediction: 0.14317205921555234
+          residual: 0.005627411370170976
+          regularizedPull: 0.7512716927592338
+        - id: d_b0411
+          prediction: 0.1437088071865682
+          residual: 0.005668088258198006
+          regularizedPull: 0.7542334826230084
+        - id: d_b0416
+          prediction: 0.1443407083825528
+          residual: 0.005028748854138565
+          regularizedPull: 0.660398889450661
+        - id: d_b0421
+          prediction: 0.1450477140200776
+          residual: 0.003793491250250358
+          regularizedPull: 0.5048259352371239
+        - id: d_b0426
+          prediction: 0.14582007013594245
+          residual: 0.0025346344253743824
+          regularizedPull: 0.3397987222314566
+        - id: d_b0431
+          prediction: 0.14663495700172244
+          residual: 0.0017607817412664817
+          regularizedPull: 0.23396930393562182
+        - id: d_b0436
+          prediction: 0.14752767479274567
+          residual: 0.0004910201689010685
+          regularizedPull: 0.06589368975277592
+        - id: d_b0446
+          prediction: 0.1493848160653269
+          residual: 0.00012342080111599207
+          regularizedPull: 0.016436471255135886
+        - id: d_b0466
+          prediction: 0.1541177874466288
+          residual: -0.006640113119376068
+          regularizedPull: -0.8907679855349983
+        - id: d_b0471
+          prediction: 0.15556010803552406
+          residual: -0.0093941121970062
+          regularizedPull: -1.276070967831431
+        - id: d_b0476
+          prediction: 0.15692884913821176
+          residual: -0.010394651118758952
+          regularizedPull: -1.4100972844672535
+        - id: d_b0481
+          prediction: 0.15841107631907228
+          residual: -0.011901765932750719
+          regularizedPull: -1.6176419410422822
+        - id: d_b0486
+          prediction: 0.1599365723059179
+          residual: -0.01321847683733035
+          regularizedPull: -1.7921143743332857
+        - id: d_b0491
+          prediction: 0.16175041518558625
+          residual: -0.016363152831633004
+          regularizedPull: -2.230753025714518
+        - id: d_b0500
+          prediction: 0.16497097349857587
+          residual: -0.01953202028107595
+          regularizedPull: -2.6722396575002993
+        maximumAbsoluteLOOPull: 6.831291777539449
+        maximumAbsoluteSupportPull: 5.234371938881242
+      logRatio:
+        turningPointsR:
+        - 1.7278503671441088
+        minDenseValue: 0.040264690893578994
+        maxDenseValue: 0.21547761555190315
+        leaveOneOut:
+        - id: d_b0051
+          prediction: 0.20294405647361005
+          residual: 0.592510922603831
+          regularizedPull: 0.8913652604786718
+        - id: d_b0056
+          prediction: 0.261081754784396
+          residual: -0.14202113569639724
+          regularizedPull: -1.3525725734412268
+        - id: d_b0061
+          prediction: 0.11763192217411528
+          residual: 0.10855632559492004
+          regularizedPull: 1.0665209631800765
+        - id: d_b0166
+          prediction: 0.04260413560237714
+          residual: -0.03064335499959415
+          regularizedPull: -0.3052863263147826
+        - id: d_b0176
+          prediction: 0.04225920760438158
+          residual: -0.02977331511446992
+          regularizedPull: -0.296638224980779
+        - id: d_b0178
+          prediction: 0.04100069249314761
+          residual: -0.01015530850154599
+          regularizedPull: -0.10036684886971406
+        - id: d_b0181
+          prediction: 0.04100778872530619
+          residual: -0.00820045284880342
+          regularizedPull: -0.08150688483756952
+        - id: d_b0186
+          prediction: 0.04005391292031097
+          residual: 0.012605412558702442
+          regularizedPull: 0.12501112712935897
+        - id: d_b0191
+          prediction: 0.040259696129937385
+          residual: 0.01799377295277267
+          regularizedPull: 0.178263965031748
+        - id: d_b0196
+          prediction: 0.04186644883585202
+          residual: 0.002278054215367184
+          regularizedPull: 0.022710507924438336
+        - id: d_b0201
+          prediction: 0.044222743848678636
+          residual: -0.025077362633433485
+          regularizedPull: -0.24797063007131492
+        - id: d_b0206
+          prediction: 0.04398414358147039
+          residual: -0.005383863921241912
+          regularizedPull: -0.05266388299848998
+        - id: d_b0211
+          prediction: 0.044718524574449775
+          residual: -0.00022809594337170475
+          regularizedPull: -0.0022547163140625615
+        - id: d_b0216
+          prediction: 0.045186336772270005
+          residual: 0.012041518704413917
+          regularizedPull: 0.11943580239030406
+        - id: d_b0221
+          prediction: 0.046591049150763265
+          residual: 0.00869458804586136
+          regularizedPull: 0.086305385394866
+        - id: d_b0226
+          prediction: 0.047495409773612385
+          residual: 0.016927367685027686
+          regularizedPull: 0.16796505387119107
+        - id: d_b0231
+          prediction: 0.04953072505237478
+          residual: 0.004267861065709089
+          regularizedPull: 0.041387916072975366
+        - id: d_b0236
+          prediction: 0.050927706755534555
+          residual: 0.005563978778526414
+          regularizedPull: 0.05529714309362916
+        - id: d_b0241
+          prediction: 0.052361867241827335
+          residual: 0.007940876425542136
+          regularizedPull: 0.07868451998703896
+        - id: d_b0246
+          prediction: 0.05305551311743337
+          residual: 0.028867528649260066
+          regularizedPull: 0.285169264057907
+        - id: d_b0351
+          prediction: 0.09666232557044063
+          residual: 0.022483033181766504
+          regularizedPull: 0.21783875819048054
+        - id: d_b0361
+          prediction: 0.1020990842472929
+          residual: -0.0070655757103075395
+          regularizedPull: -0.06996565600810324
+        - id: d_b0366
+          prediction: 0.10463524605441904
+          residual: -0.014041195945301163
+          regularizedPull: -0.13905380273925827
+        - id: d_b0371
+          prediction: 0.10625032441022746
+          residual: 0.010741071316212922
+          regularizedPull: 0.10617687487576771
+        - id: d_b0376
+          prediction: 0.10892462674179743
+          residual: -0.00021623246124503892
+          regularizedPull: -0.0021513242480199744
+        - id: d_b0381
+          prediction: 0.11119190015877269
+          residual: 0.0028443164848121344
+          regularizedPull: 0.02785989721097014
+        - id: d_b0386
+          prediction: 0.1128577535816647
+          residual: 0.02460232692667863
+          regularizedPull: 0.24490283413329003
+        - id: d_b0391
+          prediction: 0.1161817744096308
+          residual: -0.004902600653167097
+          regularizedPull: -0.04856004503731493
+        - id: d_b0401
+          prediction: 0.12085713452978632
+          residual: -0.0019214024766481125
+          regularizedPull: -0.018599762142304382
+        - id: d_b0406
+          prediction: 0.12420714168901825
+          residual: -0.028516725820387404
+          regularizedPull: -0.2812173423904889
+        - id: d_b0411
+          prediction: 0.12613734049387898
+          residual: -0.01494129536123684
+          regularizedPull: -0.1467590621310191
+        - id: d_b0416
+          prediction: 0.12798872566182692
+          residual: 7.898961073865562e-05
+          regularizedPull: 0.000760702447061386
+        - id: d_b0421
+          prediction: 0.13057810317645366
+          residual: -0.004637880958281854
+          regularizedPull: -0.04475121844529713
+        - id: d_b0426
+          prediction: 0.13339312481579446
+          residual: -0.014121738316313762
+          regularizedPull: -0.13816420378786914
+        - id: d_b0431
+          prediction: 0.13607996243998224
+          residual: -0.021117193800361853
+          regularizedPull: -0.20040841982895552
+        - id: d_b0436
+          prediction: 0.13874443382233803
+          residual: -0.024514766846790534
+          regularizedPull: -0.23996633647669238
+        - id: d_b0446
+          prediction: 0.1413446888937821
+          residual: 0.02313508504045131
+          regularizedPull: 0.22722180528736108
+        - id: d_b0466
+          prediction: 0.1521614749545865
+          residual: 0.0004008415385356734
+          regularizedPull: 0.003898282344225132
+        - id: d_b0471
+          prediction: 0.15470363972993625
+          residual: -0.0015146432654217779
+          regularizedPull: -0.014839273443809245
+        - id: d_b0476
+          prediction: 0.1555814570453885
+          residual: 0.022585247568981726
+          regularizedPull: 0.22176363825175083
+        - id: d_b0481
+          prediction: 0.15906483442252595
+          residual: 0.005851546449987477
+          regularizedPull: 0.05770875789138577
+        - id: d_b0486
+          prediction: 0.16184935184917615
+          residual: 0.0005425064498074672
+          regularizedPull: 0.00532898627059066
+        - id: d_b0491
+          prediction: 0.16426747302056383
+          residual: 0.0006202076201439477
+          regularizedPull: 0.00601143021244683
+        - id: d_b0500
+          prediction: 0.16836011637386716
+          residual: 0.003944766726794169
+          regularizedPull: 0.038696518304189804
+        maximumAbsoluteLOOPull: 1.3525725734412268
+        maximumAbsoluteSupportPull: 0.8767107115220827
+    supportGapWarnings:
+    - leftId: d_b0061
+      rightId: d_b0166
+      leftRHi: 0.61
+      rightRLo: 1.6500000000000001
+    - leftId: d_b0246
+      rightId: d_b0351
+      leftRHi: 2.46
+      rightRLo: 3.5
+    - leftId: d_b0446
+      rightId: d_b0466
+      leftRHi: 4.46
+      rightRLo: 4.65
+    gapMeaning: Unmeasured interpolation intervals, NOT production vetoes
+    extrapolationAllowed: false
+    qualityLabel: CANDIDATE_POLYNOMIAL_NOT_PRODUCTION_VALIDATED
+    coefficients:
+      mean:
+      - 10.447614131607402
+      - -34.02991633863577
+      - 52.60547411615414
+      - -28.54045627275507
+      sigma:
+      - 0.5668064452511608
+      - -1.4861614807355892
+      - 1.2989846827560085
+      logRatio:
+      - 0.07434317592165353
+      - -0.2869740852017631
+      - 0.6041403766458875
+  t:
+    curveCandidateValid: true
+    invalidReasons: []
+    rMin: 0.45
+    rMax: 5
+    supportCount: 80
+    supportIds:
+    - t_b0046
+    - t_b0066
+    - t_b0076
+    - t_b0081
+    - t_b0126
+    - t_b0131
+    - t_b0136
+    - t_b0141
+    - t_b0146
+    - t_b0151
+    - t_b0156
+    - t_b0161
+    - t_b0166
+    - t_b0171
+    - t_b0176
+    - t_b0178
+    - t_b0181
+    - t_b0186
+    - t_b0191
+    - t_b0196
+    - t_b0201
+    - t_b0206
+    - t_b0211
+    - t_b0216
+    - t_b0221
+    - t_b0226
+    - t_b0231
+    - t_b0236
+    - t_b0241
+    - t_b0251
+    - t_b0256
+    - t_b0261
+    - t_b0266
+    - t_b0271
+    - t_b0276
+    - t_b0281
+    - t_b0286
+    - t_b0291
+    - t_b0296
+    - t_b0301
+    - t_b0306
+    - t_b0311
+    - t_b0316
+    - t_b0321
+    - t_b0326
+    - t_b0331
+    - t_b0336
+    - t_b0341
+    - t_b0346
+    - t_b0351
+    - t_b0356
+    - t_b0361
+    - t_b0366
+    - t_b0371
+    - t_b0376
+    - t_b0381
+    - t_b0386
+    - t_b0391
+    - t_b0396
+    - t_b0401
+    - t_b0406
+    - t_b0411
+    - t_b0416
+    - t_b0421
+    - t_b0426
+    - t_b0431
+    - t_b0436
+    - t_b0441
+    - t_b0446
+    - t_b0451
+    - t_b0456
+    - t_b0461
+    - t_b0466
+    - t_b0471
+    - t_b0476
+    - t_b0481
+    - t_b0486
+    - t_b0491
+    - t_b0496
+    - t_b0500
+    diagnostics:
+      mean:
+        turningPointsR: []
+        minDenseValue: 2.924827332878561
+        maxDenseValue: 51.15706492140688
+        leaveOneOut:
+        - id: t_b0046
+          prediction: 50.51690226949153
+          residual: 5.636456980391827
+          regularizedPull: 2.8035300598705883
+        - id: t_b0066
+          prediction: 32.58963927250991
+          residual: 5.612221928142333
+          regularizedPull: 10.931883477123618
+        - id: t_b0076
+          prediction: 27.039847834169546
+          residual: 0.24096790198067453
+          regularizedPull: 6.522348344840885
+        - id: t_b0081
+          prediction: 24.71869046508378
+          residual: 0.5558797196496528
+          regularizedPull: 16.87275985948089
+        - id: t_b0126
+          prediction: 13.263001906031258
+          residual: 0.042116122307279014
+          regularizedPull: 1.8294899149977966
+        - id: t_b0131
+          prediction: 12.521087391492985
+          residual: 0.00773588877457243
+          regularizedPull: 0.36979950148741025
+        - id: t_b0136
+          prediction: 11.843307209307593
+          residual: 0.0013391346622402267
+          regularizedPull: 0.07249562983215303
+        - id: t_b0141
+          prediction: 11.22441483451626
+          residual: -0.012218279425997736
+          regularizedPull: -0.7708577729872715
+        - id: t_b0146
+          prediction: 10.658020493960857
+          residual: -0.032766407830738586
+          regularizedPull: -2.171186624805755
+        - id: t_b0151
+          prediction: 10.137972181415213
+          residual: -0.039200845195535905
+          regularizedPull: -2.8843883884655357
+        - id: t_b0156
+          prediction: 9.65987196026471
+          residual: -0.044274901787057175
+          regularizedPull: -3.4185053316890084
+        - id: t_b0161
+          prediction: 9.219984449962674
+          residual: -0.04630365195265185
+          regularizedPull: -3.9979352192003605
+        - id: t_b0166
+          prediction: 8.814277288942108
+          residual: -0.046959296374335935
+          regularizedPull: -4.319814711855676
+        - id: t_b0171
+          prediction: 8.44003049815855
+          residual: -0.054002161280676475
+          regularizedPull: -5.230327447889331
+        - id: t_b0176
+          prediction: 8.093562095413219
+          residual: -0.04612096944051558
+          regularizedPull: -4.830700464832106
+        - id: t_b0178
+          prediction: 7.9623461216195635
+          residual: -0.04491155267944347
+          regularizedPull: -4.7733906992623885
+        - id: t_b0181
+          prediction: 7.772732967609867
+          residual: -0.04080227468571174
+          regularizedPull: -4.324512921967693
+        - id: t_b0186
+          prediction: 7.475723210254145
+          residual: -0.037472627213953835
+          regularizedPull: -4.247072415946023
+        - id: t_b0191
+          prediction: 7.200023837127832
+          residual: -0.03183998023399237
+          regularizedPull: -3.8076564779617246
+        - id: t_b0196
+          prediction: 6.943906396273201
+          residual: -0.02481727593324301
+          regularizedPull: -3.1573152491592986
+        - id: t_b0201
+          prediction: 6.705754282971545
+          residual: -0.019213613528012097
+          regularizedPull: -2.5032560554257426
+        - id: t_b0206
+          prediction: 6.484227535324651
+          residual: -0.01567999891005556
+          regularizedPull: -2.110132159861676
+        - id: t_b0211
+          prediction: 6.2776368606287125
+          residual: -0.006676332845339417
+          regularizedPull: -0.9448641642764184
+        - id: t_b0216
+          prediction: 6.0850784324717715
+          residual: 0.0001251083561903954
+          regularizedPull: 0.01821515638378827
+        - id: t_b0221
+          prediction: 5.905328321675848
+          residual: 0.009157454835023948
+          regularizedPull: 1.2869759399588891
+        - id: t_b0226
+          prediction: 5.737856838241479
+          residual: 0.006094379512624926
+          regularizedPull: 0.928162915857739
+        - id: t_b0231
+          prediction: 5.5810239006649836
+          residual: 0.01238014018413125
+          regularizedPull: 1.8298894064447622
+        - id: t_b0236
+          prediction: 5.434323704729983
+          residual: 0.014733035377888726
+          regularizedPull: 2.411393028675968
+        - id: t_b0241
+          prediction: 5.297026414797441
+          residual: 0.01761346305781597
+          regularizedPull: 2.9303655297351177
+        - id: t_b0251
+          prediction: 5.047997183147739
+          residual: 0.02610525916410822
+          regularizedPull: 3.4942505439573526
+        - id: t_b0256
+          prediction: 4.934742779785079
+          residual: 0.020444139926716787
+          regularizedPull: 3.4675881588523327
+        - id: t_b0261
+          prediction: 4.828379705692855
+          residual: 0.025640280059375797
+          regularizedPull: 4.26006129862236
+        - id: t_b0266
+          prediction: 4.728405144813118
+          residual: 0.026702531888073366
+          regularizedPull: 4.712321100047071
+        - id: t_b0271
+          prediction: 4.634276589906753
+          residual: 0.027424015468055174
+          regularizedPull: 5.364501723389769
+        - id: t_b0276
+          prediction: 4.54582040685131
+          residual: 0.030525937590012653
+          regularizedPull: 5.7892816313688815
+        - id: t_b0281
+          prediction: 4.462855745253387
+          residual: 0.021836506665160016
+          regularizedPull: 3.943198702106157
+        - id: t_b0286
+          prediction: 4.384147321403608
+          residual: 0.02207795405651858
+          regularizedPull: 4.444902655126921
+        - id: t_b0291
+          prediction: 4.309931968978181
+          residual: 0.02392338546928574
+          regularizedPull: 4.902809249292043
+        - id: t_b0296
+          prediction: 4.240004321596843
+          residual: 0.02114759612420336
+          regularizedPull: 4.374767033826444
+        - id: t_b0301
+          prediction: 4.173974210104253
+          residual: 0.019068803725149408
+          regularizedPull: 3.6994017845767524
+        - id: t_b0306
+          prediction: 4.111232909903896
+          residual: 0.019061456333814064
+          regularizedPull: 4.120941726648955
+        - id: t_b0311
+          prediction: 4.0520209156879154
+          residual: 0.016439114473300265
+          regularizedPull: 3.6205551267339664
+        - id: t_b0316
+          prediction: 3.9959892035600255
+          residual: 0.016284108023677746
+          regularizedPull: 3.0981280262865023
+        - id: t_b0321
+          prediction: 3.9427396970352437
+          residual: 0.010290465151835182
+          regularizedPull: 2.303700963927005
+        - id: t_b0326
+          prediction: 3.892129488358057
+          residual: 0.009114146815242474
+          regularizedPull: 2.147408726544713
+        - id: t_b0331
+          prediction: 3.8441242628955097
+          residual: 0.006490651703459083
+          regularizedPull: 1.519955436101636
+        - id: t_b0336
+          prediction: 3.7984791674886114
+          residual: 0.0032499955009042125
+          regularizedPull: 0.7283338133780323
+        - id: t_b0341
+          prediction: 3.7550228157771466
+          residual: -0.0010788416395364209
+          regularizedPull: -0.25096769951711423
+        - id: t_b0346
+          prediction: 3.713577935950517
+          residual: -0.004985077861670906
+          regularizedPull: -1.1635949673648351
+        - id: t_b0351
+          prediction: 3.6737726061772555
+          residual: -0.0025437974097206606
+          regularizedPull: -0.6032315111109695
+        - id: t_b0356
+          prediction: 3.635941140080583
+          residual: -0.006047978853445102
+          regularizedPull: -1.429965262167192
+        - id: t_b0361
+          prediction: 3.5996923992738323
+          residual: -0.00861555262840108
+          regularizedPull: -2.019352351970553
+        - id: t_b0366
+          prediction: 3.5649406105901056
+          residual: -0.011500999532180867
+          regularizedPull: -2.604468399704076
+        - id: t_b0371
+          prediction: 3.53141028573202
+          residual: -0.01216442647570748
+          regularizedPull: -2.272421377022909
+        - id: t_b0376
+          prediction: 3.4996411098470706
+          residual: -0.01686109348723841
+          regularizedPull: -4.064944576352417
+        - id: t_b0381
+          prediction: 3.4688395480599103
+          residual: -0.01630844007861665
+          regularizedPull: -4.359482897168652
+        - id: t_b0386
+          prediction: 3.43889894224588
+          residual: -0.01501914310421748
+          regularizedPull: -3.7137220454189475
+        - id: t_b0391
+          prediction: 3.4102203124767123
+          residual: -0.017340758319485783
+          regularizedPull: -4.24979536084448
+        - id: t_b0396
+          prediction: 3.3823156106336794
+          residual: -0.017797151858185423
+          regularizedPull: -3.850360554654339
+        - id: t_b0401
+          prediction: 3.3555719395744883
+          residual: -0.01731329733443765
+          regularizedPull: -4.380209168730734
+        - id: t_b0406
+          prediction: 3.329569830965098
+          residual: -0.020050377025753185
+          regularizedPull: -4.992389311037902
+        - id: t_b0411
+          prediction: 3.3042863408543943
+          residual: -0.01923252576926826
+          regularizedPull: -5.007193970021762
+        - id: t_b0416
+          prediction: 3.2794207740163785
+          residual: -0.016403060937228098
+          regularizedPull: -3.6714519080903854
+        - id: t_b0421
+          prediction: 3.2555697217126838
+          residual: -0.019543686526406923
+          regularizedPull: -4.527544398130186
+        - id: t_b0426
+          prediction: 3.2321245139378805
+          residual: -0.01714617129917917
+          regularizedPull: -3.973239339937581
+        - id: t_b0431
+          prediction: 3.209294346300408
+          residual: -0.014734674179072815
+          regularizedPull: -3.7082978450247115
+        - id: t_b0436
+          prediction: 3.1870057428609093
+          residual: -0.015397815992493236
+          regularizedPull: -3.9777174205209107
+        - id: t_b0441
+          prediction: 3.1648913539056798
+          residual: -0.009865856755822744
+          regularizedPull: -2.5208553116566956
+        - id: t_b0446
+          prediction: 3.1435830392809576
+          residual: -0.01484494080854093
+          regularizedPull: -3.7202111405913736
+        - id: t_b0451
+          prediction: 3.122140161484467
+          residual: -0.006879024628784425
+          regularizedPull: -1.7473771626767627
+        - id: t_b0456
+          prediction: 3.101232314991482
+          residual: -0.005053450610004173
+          regularizedPull: -1.241761365394376
+        - id: t_b0461
+          prediction: 3.080523389897648
+          residual: -0.0018195645390126636
+          regularizedPull: -0.37739348444845333
+        - id: t_b0466
+          prediction: 3.059912763725549
+          residual: 0.003894950978587275
+          regularizedPull: 1.0343407548352677
+        - id: t_b0471
+          prediction: 3.0398239850886792
+          residual: 0.006209712222739583
+          regularizedPull: 1.2902396611922644
+        - id: t_b0476
+          prediction: 3.019383754906193
+          residual: 0.012925765136881928
+          regularizedPull: 3.0495454693015183
+        - id: t_b0481
+          prediction: 2.9993279093490517
+          residual: 0.013831040862049448
+          regularizedPull: 3.52802159213746
+        - id: t_b0486
+          prediction: 2.978978121868095
+          residual: 0.019110335336855577
+          regularizedPull: 5.010298336492792
+        - id: t_b0491
+          prediction: 2.9592004567631616
+          residual: 0.02851172912581168
+          regularizedPull: 6.2106362847976415
+        - id: t_b0496
+          prediction: 2.937342908663477
+          residual: 0.035634650323067785
+          regularizedPull: 9.399008074208762
+        - id: t_b0500
+          prediction: 2.922646708865067
+          residual: 0.037966973842384455
+          regularizedPull: 8.507232791747484
+        maximumAbsoluteLOOPull: 16.87275985948089
+        maximumAbsoluteSupportPull: 11.340834268386207
+      sigma:
+        turningPointsR:
+        - 4.225755915890441
+        minDenseValue: 0.16784352406115255
+        maxDenseValue: 2.2949746742604664
+        leaveOneOut:
+        - id: t_b0046
+          prediction: 2.2742611539048645
+          residual: -0.20729309935420082
+          regularizedPull: -0.12187664690472352
+        - id: t_b0066
+          prediction: 1.6361350603293192
+          residual: 1.581805476189499
+          regularizedPull: 2.950602514730824
+        - id: t_b0076
+          prediction: 1.4059045018486072
+          residual: 0.2178947166584091
+          regularizedPull: 2.491693461000766
+        - id: t_b0081
+          prediction: 1.3085736443081788
+          residual: 0.2838722552006372
+          regularizedPull: 3.521261191881284
+        - id: t_b0126
+          prediction: 0.7801216634300447
+          residual: 0.3210130891735945
+          regularizedPull: 5.822807433762506
+        - id: t_b0131
+          prediction: 0.742399627734035
+          residual: 0.2781910943374064
+          regularizedPull: 5.44725254786441
+        - id: t_b0136
+          prediction: 0.7102842364228528
+          residual: 0.1568167869714977
+          regularizedPull: 3.3367938442363525
+        - id: t_b0141
+          prediction: 0.6781587997319174
+          residual: 0.08228653336286651
+          regularizedPull: 2.083870241246342
+        - id: t_b0146
+          prediction: 0.6470272009683333
+          residual: 0.06503851733919508
+          regularizedPull: 1.72984628321194
+        - id: t_b0151
+          prediction: 0.6189802887628368
+          residual: 0.017911249570063403
+          regularizedPull: 0.5336868999400411
+        - id: t_b0156
+          prediction: 0.5911706604825306
+          residual: 0.010557738508561898
+          regularizedPull: 0.33795899101630916
+        - id: t_b0161
+          prediction: 0.5664090094445726
+          residual: -0.023851065091906154
+          regularizedPull: -0.8505698143472787
+        - id: t_b0166
+          prediction: 0.5417011893068654
+          residual: -0.027220995434467654
+          regularizedPull: -1.0164148181854384
+        - id: t_b0171
+          prediction: 0.51832866223704
+          residual: -0.026166893314584272
+          regularizedPull: -1.0389265513082266
+        - id: t_b0176
+          prediction: 0.4966462033389034
+          residual: -0.03200338108858286
+          regularizedPull: -1.3483137040823852
+        - id: t_b0178
+          prediction: 0.4880441534579996
+          residual: -0.027844907552255438
+          regularizedPull: -1.1910859824187834
+        - id: t_b0181
+          prediction: 0.475825752315445
+          residual: -0.029569299175793762
+          regularizedPull: -1.2779250305326908
+        - id: t_b0186
+          prediction: 0.45643365682032055
+          residual: -0.02997989979269511
+          regularizedPull: -1.3836108384173464
+        - id: t_b0191
+          prediction: 0.43825213053033873
+          residual: -0.03399399915607909
+          regularizedPull: -1.6376278256410628
+        - id: t_b0196
+          prediction: 0.42118440034211796
+          residual: -0.03820268523404391
+          regularizedPull: -1.963270593508509
+        - id: t_b0201
+          prediction: 0.4047244067653704
+          residual: -0.03556260849951198
+          regularizedPull: -1.8463407033702486
+        - id: t_b0206
+          prediction: 0.38916527484905
+          residual: -0.02958080671133767
+          regularizedPull: -1.587980499672408
+        - id: t_b0211
+          prediction: 0.37476956962565355
+          residual: -0.031099501540098662
+          regularizedPull: -1.7674519640141872
+        - id: t_b0216
+          prediction: 0.3609675066662573
+          residual: -0.026900032843784727
+          regularizedPull: -1.5769285617025952
+        - id: t_b0221
+          prediction: 0.34803515421214165
+          residual: -0.029824905442469518
+          regularizedPull: -1.673435267522697
+        - id: t_b0226
+          prediction: 0.3357935655753581
+          residual: -0.024638035871476283
+          regularizedPull: -1.4902968103981562
+        - id: t_b0231
+          prediction: 0.32403981135842125
+          residual: -0.01684930098107129
+          regularizedPull: -0.9851172494313067
+        - id: t_b0236
+          prediction: 0.3133317774265936
+          residual: -0.018852971311896394
+          regularizedPull: -1.229465679096376
+        - id: t_b0241
+          prediction: 0.3031302683144947
+          residual: -0.020163073519284258
+          regularizedPull: -1.338827202814221
+        - id: t_b0251
+          prediction: 0.283890990569084
+          residual: -0.0037999581245936054
+          regularizedPull: -0.2521697868560123
+        - id: t_b0256
+          prediction: 0.27581400895587604
+          residual: -0.023362168132734396
+          regularizedPull: -1.599651987783527
+        - id: t_b0261
+          prediction: 0.2673737676493384
+          residual: -0.011566236110400474
+          regularizedPull: -0.7825416300169695
+        - id: t_b0266
+          prediction: 0.2597399861211356
+          residual: -0.011593962393824653
+          regularizedPull: -0.8125280840400313
+        - id: t_b0271
+          prediction: 0.2527526660800758
+          residual: -0.01701519205458893
+          regularizedPull: -1.308587082476488
+        - id: t_b0276
+          prediction: 0.24533406650569306
+          residual: 0.003465460635012796
+          regularizedPull: 0.2729900406538801
+        - id: t_b0281
+          prediction: 0.23935365981775442
+          residual: -0.01291319255481782
+          regularizedPull: -0.8842491099834482
+        - id: t_b0286
+          prediction: 0.23298442420333892
+          residual: 0.0018355098514138135
+          regularizedPull: 0.15400811056883668
+        - id: t_b0291
+          prediction: 0.22728128556075938
+          residual: 0.003587498813527351
+          regularizedPull: 0.3021862415801858
+        - id: t_b0296
+          prediction: 0.22198315551347236
+          residual: 0.003909893270878179
+          regularizedPull: 0.31658367467400694
+        - id: t_b0301
+          prediction: 0.2169334494511404
+          residual: 0.007753444819350114
+          regularizedPull: 0.5850770644599086
+        - id: t_b0306
+          prediction: 0.21227817046464628
+          residual: 0.006188040684170393
+          regularizedPull: 0.5297451602035127
+        - id: t_b0311
+          prediction: 0.20795916222028013
+          residual: 0.0050056940102638225
+          regularizedPull: 0.4373216548476907
+        - id: t_b0316
+          prediction: 0.20384154399571075
+          residual: 0.010073763317828943
+          regularizedPull: 0.7236230654283737
+        - id: t_b0321
+          prediction: 0.19997725017836637
+          residual: 0.009111533166836772
+          regularizedPull: 0.8121256372947876
+        - id: t_b0326
+          prediction: 0.19673764889962964
+          residual: -0.00017853099885842272
+          regularizedPull: -0.016900735597646363
+        - id: t_b0331
+          prediction: 0.19320782991289195
+          residual: 0.007287868210503312
+          regularizedPull: 0.7063348741154966
+        - id: t_b0336
+          prediction: 0.19005272217385444
+          residual: 0.011003919606928647
+          regularizedPull: 1.0804629264330725
+        - id: t_b0341
+          prediction: 0.1872602430041735
+          residual: 0.011808196836094437
+          regularizedPull: 1.1279175367004726
+        - id: t_b0346
+          prediction: 0.18457098000583733
+          residual: 0.015002706993652387
+          regularizedPull: 1.484096330780172
+        - id: t_b0351
+          prediction: 0.18234100660788524
+          residual: 0.011703948693869648
+          regularizedPull: 1.128725581632407
+        - id: t_b0356
+          prediction: 0.1801131949922389
+          residual: 0.01389983887769955
+          regularizedPull: 1.3781068865268402
+        - id: t_b0361
+          prediction: 0.17816020658367904
+          residual: 0.012878980662407807
+          regularizedPull: 1.33712811258017
+        - id: t_b0366
+          prediction: 0.17651353625649535
+          residual: 0.009473163555270253
+          regularizedPull: 0.958157620907949
+        - id: t_b0371
+          prediction: 0.17501857728903975
+          residual: 0.006920352396188045
+          regularizedPull: 0.6579774423258886
+        - id: t_b0376
+          prediction: 0.17338205119326336
+          residual: 0.013629948003100523
+          regularizedPull: 1.4499478960453442
+        - id: t_b0381
+          prediction: 0.17223073889764778
+          residual: 0.010346196726678497
+          regularizedPull: 1.105572857643084
+        - id: t_b0386
+          prediction: 0.17114751776869283
+          residual: 0.01012049526745204
+          regularizedPull: 1.1015708862306137
+        - id: t_b0391
+          prediction: 0.1701563467474862
+          residual: 0.012729596517552483
+          regularizedPull: 1.3819200449517863
+        - id: t_b0396
+          prediction: 0.1694884649518097
+          residual: 0.010280619260615853
+          regularizedPull: 1.0141292782428872
+        - id: t_b0401
+          prediction: 0.16885630947120503
+          residual: 0.00801003653370222
+          regularizedPull: 0.8892927120936305
+        - id: t_b0406
+          prediction: 0.1684504344604694
+          residual: 0.0044871690490495
+          regularizedPull: 0.49638607404333235
+        - id: t_b0411
+          prediction: 0.1680713307418217
+          residual: 0.0053948743125181164
+          regularizedPull: 0.5766262630103589
+        - id: t_b0416
+          prediction: 0.16777703435306213
+          residual: 0.007001900788555643
+          regularizedPull: 0.788677010988316
+        - id: t_b0421
+          prediction: 0.16766013228987295
+          residual: 0.007020909256185426
+          regularizedPull: 0.7946963848538322
+        - id: t_b0426
+          prediction: 0.1677271565196451
+          residual: 0.004681640050574337
+          regularizedPull: 0.5367067636684906
+        - id: t_b0431
+          prediction: 0.1677955054195135
+          residual: 0.006427994963127431
+          regularizedPull: 0.7352448455755712
+        - id: t_b0436
+          prediction: 0.1681562067245635
+          residual: 0.0021944040479555393
+          regularizedPull: 0.25555924668416385
+        - id: t_b0441
+          prediction: 0.16850073019660539
+          residual: 0.0021403254422908136
+          regularizedPull: 0.24924300495556803
+        - id: t_b0446
+          prediction: 0.16905610949118038
+          residual: -0.000757388315600821
+          regularizedPull: -0.08934634434100953
+        - id: t_b0451
+          prediction: 0.16959017079645397
+          residual: -0.00025028920399422505
+          regularizedPull: -0.02936542687553155
+        - id: t_b0456
+          prediction: 0.17029915099375711
+          residual: -0.0015634034738625235
+          regularizedPull: -0.18341390498539617
+        - id: t_b0461
+          prediction: 0.17114726157453972
+          residual: -0.0035909566660306536
+          regularizedPull: -0.4225730946442467
+        - id: t_b0466
+          prediction: 0.1720474612101245
+          residual: -0.004434588800729722
+          regularizedPull: -0.5276299251957494
+        - id: t_b0471
+          prediction: 0.17304953581276408
+          residual: -0.005493616587746025
+          regularizedPull: -0.6487558406693269
+        - id: t_b0476
+          prediction: 0.17430879735365243
+          residual: -0.008765665318898747
+          regularizedPull: -1.0524776122128272
+        - id: t_b0481
+          prediction: 0.17551971544238806
+          residual: -0.009713588022590647
+          regularizedPull: -1.1671825493521937
+        - id: t_b0486
+          prediction: 0.17690340717464526
+          residual: -0.011587898617040543
+          regularizedPull: -1.3975067052281958
+        - id: t_b0491
+          prediction: 0.17840959026602923
+          residual: -0.01375382742796552
+          regularizedPull: -1.654784788617723
+        - id: t_b0496
+          prediction: 0.1802529459753932
+          residual: -0.01768882274266434
+          regularizedPull: -2.167162564877432
+        - id: t_b0500
+          prediction: 0.18161024663700967
+          residual: -0.019145532655532815
+          regularizedPull: -2.3345320739005477
+        maximumAbsoluteLOOPull: 5.822807433762506
+        maximumAbsoluteSupportPull: 5.59158089259969
+      logRatio:
+        turningPointsR:
+        - 1.5182752440113172
+        minDenseValue: -0.1145537807220138
+        maxDenseValue: 0.25168824409819435
+        leaveOneOut:
+        - id: t_b0046
+          prediction: 0.2438620540088622
+          residual: 0.35077248776515724
+          regularizedPull: 0.15077675933286605
+        - id: t_b0066
+          prediction: 0.07011472489630241
+          residual: -1.2606794848137384
+          regularizedPull: -1.317274531424208
+        - id: t_b0076
+          prediction: -0.2359178902320489
+          residual: 0.6308909150172624
+          regularizedPull: 5.864920496068299
+        - id: t_b0081
+          prediction: -0.15404337140756774
+          residual: 0.4054309631513424
+          regularizedPull: 3.9755248006950077
+        - id: t_b0126
+          prediction: -0.07662691826976506
+          residual: -0.4217282613983775
+          regularizedPull: -4.1854840795893615
+        - id: t_b0131
+          prediction: -0.08306397679436825
+          residual: -0.42330336691029546
+          regularizedPull: -4.21541403004464
+        - id: t_b0136
+          prediction: -0.09664848605998107
+          residual: -0.3067188276468227
+          regularizedPull: -2.860635246274067
+        - id: t_b0141
+          prediction: -0.1035033979937498
+          residual: -0.20820147315687332
+          regularizedPull: -1.993051389258137
+        - id: t_b0146
+          prediction: -0.10660016421441149
+          residual: -0.18610996944968566
+          regularizedPull: -1.7376094722398552
+        - id: t_b0151
+          prediction: -0.10955328253377486
+          residual: -0.1327680439288739
+          regularizedPull: -1.236002969614402
+        - id: t_b0156
+          prediction: -0.10991788420789483
+          residual: -0.12417043275858364
+          regularizedPull: -1.1663955285367462
+        - id: t_b0161
+          prediction: -0.11249280350180921
+          residual: -0.03687518335891882
+          regularizedPull: -0.3489238455901035
+        - id: t_b0166
+          prediction: -0.11159359802483283
+          residual: -0.03334730672421492
+          regularizedPull: -0.3135153289913066
+        - id: t_b0171
+          prediction: -0.11159962116558186
+          residual: 0.011114208122235347
+          regularizedPull: 0.10642670260107866
+        - id: t_b0176
+          prediction: -0.11043790410336601
+          residual: 0.03197212495036969
+          regularizedPull: 0.3091111030041889
+        - id: t_b0178
+          prediction: -0.10736736553328627
+          residual: -0.03358148918854362
+          regularizedPull: -0.3266486618461674
+        - id: t_b0181
+          prediction: -0.1066925409062709
+          residual: -0.014313835815737516
+          regularizedPull: -0.13464577702116082
+        - id: t_b0186
+          prediction: -0.10543239937380919
+          residual: 0.024510315908978814
+          regularizedPull: 0.2382946054883402
+        - id: t_b0191
+          prediction: -0.10319251915025353
+          residual: 0.043789266076893825
+          regularizedPull: 0.4182443004445033
+        - id: t_b0196
+          prediction: -0.10154455467463497
+          residual: 0.08641614390820385
+          regularizedPull: 0.8413524709231556
+        - id: t_b0201
+          prediction: -0.09699967460508156
+          residual: 0.0527052410666339
+          regularizedPull: 0.4965186824661721
+        - id: t_b0206
+          prediction: -0.09658466954962383
+          residual: 0.15459291048923332
+          regularizedPull: 1.4707046283510172
+        - id: t_b0211
+          prediction: -0.09029167394543945
+          residual: 0.07064435666415932
+          regularizedPull: 0.6783861610000033
+        - id: t_b0216
+          prediction: -0.08582292142696894
+          residual: 0.05339552616123015
+          regularizedPull: 0.515294438842665
+        - id: t_b0221
+          prediction: -0.08265502274003361
+          residual: 0.10220380572953137
+          regularizedPull: 0.8994663534850645
+        - id: t_b0226
+          prediction: -0.07737721090793004
+          residual: 0.05833083781193499
+          regularizedPull: 0.5340128439124984
+        - id: t_b0231
+          prediction: -0.07489383473745452
+          residual: 0.13287651958213936
+          regularizedPull: 1.211557399378346
+        - id: t_b0236
+          prediction: -0.06787426782185457
+          residual: 0.03806132860924316
+          regularizedPull: 0.3558550096945586
+        - id: t_b0241
+          prediction: -0.06494614173165986
+          residual: 0.10956421168284859
+          regularizedPull: 0.9973122811628191
+        - id: t_b0251
+          prediction: -0.05521239919163133
+          residual: 0.11993295512925804
+          regularizedPull: 1.0557103736871583
+        - id: t_b0256
+          prediction: -0.04724444298301231
+          residual: -0.011769407549471395
+          regularizedPull: -0.09504501784207299
+        - id: t_b0261
+          prediction: -0.042923375896128955
+          residual: 0.02920027899294932
+          regularizedPull: 0.23726055977353336
+        - id: t_b0266
+          prediction: -0.039001423799020454
+          residual: 0.0948759147546941
+          regularizedPull: 0.7849852639343723
+        - id: t_b0271
+          prediction: -0.030852968428666
+          residual: -0.05685680134410952
+          regularizedPull: -0.48126953917549475
+        - id: t_b0276
+          prediction: -0.029202706299410505
+          residual: 0.11075988782886835
+          regularizedPull: 1.039516909474193
+        - id: t_b0281
+          prediction: -0.02211679179582892
+          residual: 0.05582594479662276
+          regularizedPull: 0.4356507524335707
+        - id: t_b0286
+          prediction: -0.016716375395477972
+          residual: 0.04041409223434285
+          regularizedPull: 0.38572569559303244
+        - id: t_b0291
+          prediction: -0.010835613255715902
+          residual: 0.025393523403915222
+          regularizedPull: 0.23841691583483393
+        - id: t_b0296
+          prediction: -0.005800307935528651
+          residual: 0.059138390116101544
+          regularizedPull: 0.515017931455478
+        - id: t_b0301
+          prediction: -0.0006986061963631399
+          residual: 0.0923448931109482
+          regularizedPull: 0.7901397430782606
+        - id: t_b0306
+          prediction: 0.00570157573992858
+          residual: 0.04622746198831089
+          regularizedPull: 0.4083069514189154
+        - id: t_b0311
+          prediction: 0.012069220317527085
+          residual: 0.007888334658106759
+          regularizedPull: 0.0699704831515005
+        - id: t_b0316
+          prediction: 0.017651594475800846
+          residual: 0.025002488112634846
+          regularizedPull: 0.17942401686742354
+        - id: t_b0321
+          prediction: 0.021313817209376806
+          residual: 0.14043318571995225
+          regularizedPull: 1.2525196275591364
+        - id: t_b0326
+          prediction: 0.027942819391925694
+          residual: 0.09096878662268178
+          regularizedPull: 0.8173413412406866
+        - id: t_b0331
+          prediction: 0.03531080400018827
+          residual: -0.0010260716800364333
+          regularizedPull: -0.009707973210864597
+        - id: t_b0336
+          prediction: 0.040470448123398825
+          residual: 0.035627408418924464
+          regularizedPull: 0.3408957227691754
+        - id: t_b0341
+          prediction: 0.045996388502986645
+          residual: 0.061097691674491576
+          regularizedPull: 0.5511288889644306
+        - id: t_b0346
+          prediction: 0.05125770203119398
+          residual: 0.0870557360731124
+          regularizedPull: 0.8405473857039343
+        - id: t_b0351
+          prediction: 0.05854881743643624
+          residual: 0.01454740420363805
+          regularizedPull: 0.13080766557640003
+        - id: t_b0356
+          prediction: 0.0636021346969511
+          residual: 0.06691471769351999
+          regularizedPull: 0.6069619475017122
+        - id: t_b0361
+          prediction: 0.07041232783205875
+          residual: 0.011939877132022325
+          regularizedPull: 0.11539020872052927
+        - id: t_b0366
+          prediction: 0.07684526059455629
+          residual: -0.01613960622912556
+          regularizedPull: -0.14428035377535828
+        - id: t_b0371
+          prediction: 0.08196491173296407
+          residual: 0.053241732550918144
+          regularizedPull: 0.38592662771349895
+        - id: t_b0376
+          prediction: 0.08622124383183585
+          residual: 0.11486653638942904
+          regularizedPull: 1.118950069066227
+        - id: t_b0381
+          prediction: 0.09488890414720973
+          residual: -0.01996408916173749
+          regularizedPull: -0.1937881413052538
+        - id: t_b0386
+          prediction: 0.10128795031255691
+          residual: -0.040117969120228386
+          regularizedPull: -0.3862441197221362
+        - id: t_b0391
+          prediction: 0.10648394310438904
+          residual: -0.0012703134625731693
+          regularizedPull: -0.012332426786420339
+        - id: t_b0396
+          prediction: 0.11278348377741028
+          residual: -0.020439356446554008
+          regularizedPull: -0.1702834362557563
+        - id: t_b0401
+          prediction: 0.11959334157551213
+          residual: -0.05119548215297648
+          regularizedPull: -0.49050670589743545
+        - id: t_b0406
+          prediction: 0.1243489122061377
+          residual: 0.004607772680712857
+          regularizedPull: 0.04182557205453429
+        - id: t_b0411
+          prediction: 0.13137246756685841
+          residual: -0.04194969123199749
+          regularizedPull: -0.38295843907421984
+        - id: t_b0416
+          prediction: 0.13699322440049186
+          residual: -0.021784786137105785
+          regularizedPull: -0.20728411143907927
+        - id: t_b0421
+          prediction: 0.14221236121861844
+          residual: 0.008725325482220908
+          regularizedPull: 0.08379464699937389
+        - id: t_b0426
+          prediction: 0.14879675225189545
+          residual: -0.012534593181705495
+          regularizedPull: -0.12015287856121892
+        - id: t_b0431
+          prediction: 0.1553481707993667
+          residual: -0.029106252165665564
+          regularizedPull: -0.28666264653240964
+        - id: t_b0436
+          prediction: 0.16111439809155456
+          residual: -0.021001653707468315
+          regularizedPull: -0.20536016079646102
+        - id: t_b0441
+          prediction: 0.16845366512670637
+          residual: -0.059625819591852244
+          regularizedPull: -0.5826789873829336
+        - id: t_b0446
+          prediction: 0.17230130176698844
+          residual: 0.0031344194180494
+          regularizedPull: 0.03047351695144398
+        - id: t_b0451
+          prediction: 0.17992768589565478
+          residual: -0.04071659272549724
+          regularizedPull: -0.3970933748206715
+        - id: t_b0456
+          prediction: 0.18535879696793045
+          residual: -0.025282123529050293
+          regularizedPull: -0.24456733613281348
+        - id: t_b0461
+          prediction: 0.191986631120757
+          residual: -0.040777452285120336
+          regularizedPull: -0.3901539265048541
+        - id: t_b0466
+          prediction: 0.19900125007693925
+          residual: -0.059237106035075926
+          regularizedPull: -0.5859105640071719
+        - id: t_b0471
+          prediction: 0.20424770053779057
+          residual: -0.044056075729771105
+          regularizedPull: -0.42215780127122243
+        - id: t_b0476
+          prediction: 0.21109800676276713
+          residual: -0.058662069328670435
+          regularizedPull: -0.5717943411068811
+        - id: t_b0481
+          prediction: 0.21566942449992638
+          residual: -0.028667750628980776
+          regularizedPull: -0.2821121548749624
+        - id: t_b0486
+          prediction: 0.2218121273711146
+          residual: -0.030779027073650655
+          regularizedPull: -0.3036954833153151
+        - id: t_b0491
+          prediction: 0.2292784109308536
+          residual: -0.05803786000741329
+          regularizedPull: -0.5590101399117253
+        - id: t_b0496
+          prediction: 0.23631864493947688
+          residual: -0.07074240784635563
+          regularizedPull: -0.6972533377280217
+        - id: t_b0500
+          prediction: 0.24005214694618557
+          residual: -0.05469435783491711
+          regularizedPull: -0.5283912229082733
+        maximumAbsoluteLOOPull: 5.864920496068299
+        maximumAbsoluteSupportPull: 3.958336598168618
+    supportGapWarnings:
+    - leftId: t_b0046
+      rightId: t_b0066
+      leftRHi: 0.46
+      rightRLo: 0.65
+    - leftId: t_b0081
+      rightId: t_b0126
+      leftRHi: 0.81
+      rightRLo: 1.25
+    gapMeaning: Unmeasured interpolation intervals, NOT production vetoes
+    extrapolationAllowed: false
+    qualityLabel: CANDIDATE_POLYNOMIAL_NOT_PRODUCTION_VALIDATED
+    coefficients:
+      mean:
+      - 18.441010500823815
+      - -60.31835715776412
+      - 83.6580431820644
+      - -41.662813267781964
+      sigma:
+      - 1.0486077986586515
+      - -2.8143731735909525
+      - 2.248245208864911
+      logRatio:
+      - -0.07137218341985488
+      - -0.47623768605531813
+      - 1.313031002882487
+  he3:
+    curveCandidateValid: true
+    invalidReasons: []
+    rMin: 0.45
+    rMax: 4.86
+    supportCount: 86
+    supportIds:
+    - he3_b0046
+    - he3_b0051
+    - he3_b0056
+    - he3_b0061
+    - he3_b0066
+    - he3_b0071
+    - he3_b0076
+    - he3_b0081
+    - he3_b0086
+    - he3_b0088
+    - he3_b0091
+    - he3_b0096
+    - he3_b0101
+    - he3_b0106
+    - he3_b0111
+    - he3_b0116
+    - he3_b0121
+    - he3_b0126
+    - he3_b0131
+    - he3_b0136
+    - he3_b0141
+    - he3_b0146
+    - he3_b0151
+    - he3_b0156
+    - he3_b0161
+    - he3_b0166
+    - he3_b0171
+    - he3_b0176
+    - he3_b0178
+    - he3_b0181
+    - he3_b0186
+    - he3_b0191
+    - he3_b0196
+    - he3_b0201
+    - he3_b0206
+    - he3_b0211
+    - he3_b0216
+    - he3_b0221
+    - he3_b0226
+    - he3_b0231
+    - he3_b0236
+    - he3_b0241
+    - he3_b0246
+    - he3_b0251
+    - he3_b0256
+    - he3_b0261
+    - he3_b0266
+    - he3_b0271
+    - he3_b0276
+    - he3_b0281
+    - he3_b0286
+    - he3_b0291
+    - he3_b0296
+    - he3_b0301
+    - he3_b0306
+    - he3_b0311
+    - he3_b0316
+    - he3_b0321
+    - he3_b0326
+    - he3_b0331
+    - he3_b0336
+    - he3_b0341
+    - he3_b0346
+    - he3_b0351
+    - he3_b0356
+    - he3_b0361
+    - he3_b0366
+    - he3_b0371
+    - he3_b0376
+    - he3_b0381
+    - he3_b0386
+    - he3_b0391
+    - he3_b0396
+    - he3_b0401
+    - he3_b0406
+    - he3_b0411
+    - he3_b0416
+    - he3_b0421
+    - he3_b0426
+    - he3_b0431
+    - he3_b0436
+    - he3_b0446
+    - he3_b0456
+    - he3_b0461
+    - he3_b0471
+    - he3_b0486
+    diagnostics:
+      mean:
+        turningPointsR: []
+        minDenseValue: 12.477145593751768
+        maxDenseValue: 72.46328644052853
+        leaveOneOut:
+        - id: he3_b0046
+          prediction: 71.618096804921
+          residual: -3.9046074570500338
+          regularizedPull: -4.222798521554077
+        - id: he3_b0051
+          prediction: 63.938368505995626
+          residual: -3.3083702895547944
+          regularizedPull: -10.695650032226784
+        - id: he3_b0056
+          prediction: 57.66973283916942
+          residual: -3.9783186371512613
+          regularizedPull: -23.844919643554647
+        - id: he3_b0061
+          prediction: 52.803147159673024
+          residual: -3.717518100469192
+          regularizedPull: -56.2468259061989
+        - id: he3_b0066
+          prediction: 47.79208164065823
+          residual: -0.8987078260829406
+          regularizedPull: -15.412856486255434
+        - id: he3_b0071
+          prediction: 43.79428043117954
+          residual: 0.30792891956299684
+          regularizedPull: 6.696261130690424
+        - id: he3_b0076
+          prediction: 40.448584378247496
+          residual: 0.712363170889212
+          regularizedPull: 18.59150148790529
+        - id: he3_b0081
+          prediction: 37.59880849224861
+          residual: 0.7529488272859908
+          regularizedPull: 22.279631799087955
+        - id: he3_b0086
+          prediction: 35.132525301602286
+          residual: 0.6111697205286646
+          regularizedPull: 19.6325563158136
+        - id: he3_b0088
+          prediction: 34.23337284821244
+          residual: 0.5488623507818744
+          regularizedPull: 18.06715296961177
+        - id: he3_b0091
+          prediction: 32.96871508453285
+          residual: 0.4423998692828732
+          regularizedPull: 14.946501848062198
+        - id: he3_b0096
+          prediction: 31.05789423670265
+          residual: 0.267309773197276
+          regularizedPull: 9.690706098452145
+        - id: he3_b0101
+          prediction: 29.365004073534173
+          residual: 0.1163679516983045
+          regularizedPull: 4.50755110594696
+        - id: he3_b0106
+          prediction: 27.85896747272286
+          residual: 0.013164251765779511
+          regularizedPull: 0.5340250441059157
+        - id: he3_b0111
+          prediction: 26.516159776395533
+          residual: -0.07255011737893824
+          regularizedPull: -3.156033001144418
+        - id: he3_b0116
+          prediction: 25.31392920205984
+          residual: -0.12117476522259452
+          regularizedPull: -5.546800551117944
+        - id: he3_b0121
+          prediction: 24.23526034439174
+          residual: -0.15072215626310737
+          regularizedPull: -7.3202523569624995
+        - id: he3_b0126
+          prediction: 23.26466351601112
+          residual: -0.16500669004576807
+          regularizedPull: -8.447833864725924
+        - id: he3_b0131
+          prediction: 22.388645900568132
+          residual: -0.15811057720682342
+          regularizedPull: -8.515859687932059
+        - id: he3_b0136
+          prediction: 21.59749854371219
+          residual: -0.16072965921790683
+          regularizedPull: -8.90830687762806
+        - id: he3_b0141
+          prediction: 20.88058024351374
+          residual: -0.14042914917262195
+          regularizedPull: -8.237020460245475
+        - id: he3_b0146
+          prediction: 20.230575447850104
+          residual: -0.12794653029274627
+          regularizedPull: -7.786862548840113
+        - id: he3_b0151
+          prediction: 19.639432407589887
+          residual: -0.10622188010095712
+          regularizedPull: -6.591035654009351
+        - id: he3_b0156
+          prediction: 19.102134842814824
+          residual: -0.08751442510616414
+          regularizedPull: -5.689231093285016
+        - id: he3_b0161
+          prediction: 18.612170395417202
+          residual: -0.06432299791077511
+          regularizedPull: -4.264360821954577
+        - id: he3_b0166
+          prediction: 18.16570512782901
+          residual: -0.051169550043425716
+          regularizedPull: -3.4399992976407
+        - id: he3_b0171
+          prediction: 17.757384885904308
+          residual: -0.024892364907977083
+          regularizedPull: -1.7298860085403138
+        - id: he3_b0176
+          prediction: 17.38504240102213
+          residual: -0.02286462527390043
+          regularizedPull: -1.6299494707362228
+        - id: he3_b0178
+          prediction: 17.24433059598549
+          residual: -0.0056906594635677266
+          regularizedPull: -0.4090694003936976
+        - id: he3_b0181
+          prediction: 17.043356318335192
+          residual: -0.0034812467372056233
+          regularizedPull: -0.2476540650723771
+        - id: he3_b0186
+          prediction: 16.730456061910193
+          residual: 0.0109657457295107
+          regularizedPull: 0.7648015079837471
+        - id: he3_b0191
+          prediction: 16.443447714753987
+          residual: 0.02274994421424381
+          regularizedPull: 1.6404665310030535
+        - id: he3_b0196
+          prediction: 16.17990095725748
+          residual: 0.030857572421368218
+          regularizedPull: 2.3606294274966766
+        - id: he3_b0201
+          prediction: 15.938030257493285
+          residual: 0.033520684804011935
+          regularizedPull: 2.5565718770092216
+        - id: he3_b0206
+          prediction: 15.71530271283951
+          residual: 0.042935118659428895
+          regularizedPull: 3.19565129485374
+        - id: he3_b0211
+          prediction: 15.510177693478738
+          residual: 0.05003274179753703
+          regularizedPull: 3.782481227696212
+        - id: he3_b0216
+          prediction: 15.3210769413553
+          residual: 0.05637561813985137
+          regularizedPull: 4.390356480536222
+        - id: he3_b0221
+          prediction: 15.147254271826789
+          residual: 0.058278132034265795
+          regularizedPull: 4.3583761673503
+        - id: he3_b0226
+          prediction: 14.9867415283995
+          residual: 0.05699716846932823
+          regularizedPull: 4.297696965525063
+        - id: he3_b0231
+          prediction: 14.839138799907204
+          residual: 0.04232515042697926
+          regularizedPull: 3.2351057405674566
+        - id: he3_b0236
+          prediction: 14.702303341784983
+          residual: 0.04458284821569336
+          regularizedPull: 3.1715081748782836
+        - id: he3_b0241
+          prediction: 14.575839699594884
+          residual: 0.03605687641527311
+          regularizedPull: 2.6378096327380116
+        - id: he3_b0246
+          prediction: 14.458442033992696
+          residual: 0.03652147792600857
+          regularizedPull: 2.6972336834613153
+        - id: he3_b0251
+          prediction: 14.349968192603082
+          residual: 0.028930938874031753
+          regularizedPull: 2.217436899255771
+        - id: he3_b0256
+          prediction: 14.249934220616588
+          residual: 0.014355070018833516
+          regularizedPull: 1.0736345978201955
+        - id: he3_b0261
+          prediction: 14.155619384678156
+          residual: 0.030151695713124482
+          regularizedPull: 2.166480425246717
+        - id: he3_b0266
+          prediction: 14.069297535099029
+          residual: 0.016836728930432088
+          regularizedPull: 1.1781099371643646
+        - id: he3_b0271
+          prediction: 13.98874725890187
+          residual: 0.008667010517362073
+          regularizedPull: 0.6056984615313824
+        - id: he3_b0276
+          prediction: 13.913562739738518
+          residual: 0.005261775885317732
+          regularizedPull: 0.3471889160588085
+        - id: he3_b0281
+          prediction: 13.843409470256162
+          residual: 0.00237911505826105
+          regularizedPull: 0.15312053481868326
+        - id: he3_b0286
+          prediction: 13.778420276052303
+          residual: -0.012428181041004294
+          regularizedPull: -0.7547548880602003
+        - id: he3_b0291
+          prediction: 13.717706397378082
+          residual: -0.029495739913818042
+          regularizedPull: -1.6728168246625648
+        - id: he3_b0296
+          prediction: 13.66076672916688
+          residual: -0.0422996682724488
+          regularizedPull: -2.311089479032402
+        - id: he3_b0301
+          prediction: 13.607097824029497
+          residual: -0.04770322155378359
+          regularizedPull: -2.5032302148793284
+        - id: he3_b0306
+          prediction: 13.555695747078934
+          residual: -0.026015658246548057
+          regularizedPull: -1.400820360338533
+        - id: he3_b0311
+          prediction: 13.508794390874595
+          residual: -0.05166735811817702
+          regularizedPull: -2.390820334556854
+        - id: he3_b0316
+          prediction: 13.462723823512404
+          residual: -0.025258565568346825
+          regularizedPull: -1.1226424366820011
+        - id: he3_b0321
+          prediction: 13.419598453555798
+          residual: -0.012817168706179771
+          regularizedPull: -0.5334033327008568
+        - id: he3_b0326
+          prediction: 13.381455852709705
+          residual: -0.06923133026063866
+          regularizedPull: -2.62715924963579
+        - id: he3_b0331
+          prediction: 13.341569976022175
+          residual: -0.03612978204976791
+          regularizedPull: -1.1964978205570134
+        - id: he3_b0336
+          prediction: 13.307217607866331
+          residual: -0.09913968198329393
+          regularizedPull: -3.0761341390071375
+        - id: he3_b0341
+          prediction: 13.268831493368019
+          residual: 1.0240016671048124e-05
+          regularizedPull: 0.0003152173578950959
+        - id: he3_b0346
+          prediction: 13.23847033031485
+          residual: -0.08303881579631067
+          regularizedPull: -2.334658177004905
+        - id: he3_b0351
+          prediction: 13.205425049806633
+          residual: -0.09983208811633482
+          regularizedPull: -2.022714395552349
+        - id: he3_b0356
+          prediction: 13.174098320132845
+          residual: -0.08150885947501685
+          regularizedPull: -1.5754619742683686
+        - id: he3_b0361
+          prediction: 13.141529977621332
+          residual: 0.02711880590474003
+          regularizedPull: 0.547332212197862
+        - id: he3_b0366
+          prediction: 13.115890000362164
+          residual: -0.08487211084585766
+          regularizedPull: -1.6957654046806403
+        - id: he3_b0371
+          prediction: 13.088712599589805
+          residual: -0.11949511825663883
+          regularizedPull: -2.248441721512442
+        - id: he3_b0376
+          prediction: 13.056483310363454
+          residual: 0.038869458830852466
+          regularizedPull: 0.6119996121347144
+        - id: he3_b0381
+          prediction: 13.03416207115681
+          residual: -0.10355115247354085
+          regularizedPull: -1.8650855808688227
+        - id: he3_b0386
+          prediction: 13.002155766564371
+          residual: 0.06860484755634921
+          regularizedPull: 1.0036411584102385
+        - id: he3_b0391
+          prediction: 12.978125186207176
+          residual: -0.009432439430582917
+          regularizedPull: -0.1284084395062648
+        - id: he3_b0396
+          prediction: 12.9530214435782
+          residual: -0.12964920742208186
+          regularizedPull: -0.8702623542474556
+        - id: he3_b0401
+          prediction: 12.927729338396675
+          residual: -0.039717163959803514
+          regularizedPull: -0.5088680502403314
+        - id: he3_b0406
+          prediction: 12.900863439954241
+          residual: 0.021774758108039194
+          regularizedPull: 0.22827548824837884
+        - id: he3_b0411
+          prediction: 12.875120812609293
+          residual: 0.1060641725825544
+          regularizedPull: 0.714289638376979
+        - id: he3_b0416
+          prediction: 12.852514663725417
+          residual: -0.08981620081679331
+          regularizedPull: -0.7851787872279309
+        - id: he3_b0421
+          prediction: 12.824201171448331
+          residual: 0.07567030235881056
+          regularizedPull: 0.7051726382409026
+        - id: he3_b0426
+          prediction: 12.80132714144997
+          residual: -0.25479044882252033
+          regularizedPull: -0.8059722641073203
+        - id: he3_b0431
+          prediction: 12.773241243393823
+          residual: 0.39782928071699075
+          regularizedPull: 1.6868964186147708
+        - id: he3_b0436
+          prediction: 12.750745433648122
+          residual: -0.0836345822140725
+          regularizedPull: -0.46232326754583164
+        - id: he3_b0446
+          prediction: 12.697786186808829
+          residual: 0.067886810856427
+          regularizedPull: 0.35300552122726914
+        - id: he3_b0456
+          prediction: 12.643066730865469
+          residual: 0.370857275364747
+          regularizedPull: 1.5706236514644631
+        - id: he3_b0461
+          prediction: 12.619714047511733
+          residual: -0.028453828879358767
+          regularizedPull: -0.15593320292900556
+        - id: he3_b0471
+          prediction: 12.565495223920506
+          residual: -0.2512748721072935
+          regularizedPull: -0.5530398781581785
+        - id: he3_b0486
+          prediction: 12.49422938430838
+          residual: -0.1211424557543559
+          regularizedPull: -1.5922397084432707
+        maximumAbsoluteLOOPull: 56.2468259061989
+        maximumAbsoluteSupportPull: 46.6661881897109
+      sigma:
+        turningPointsR:
+        - 3.443948538148176
+        minDenseValue: 0.4609844211305347
+        maxDenseValue: 2.707021960422362
+        leaveOneOut:
+        - id: he3_b0046
+          prediction: 2.6745442715099346
+          residual: 1.4258514048905795
+          regularizedPull: 1.948789110276175
+        - id: he3_b0051
+          prediction: 2.4563231865901773
+          residual: 0.9989542837824223
+          regularizedPull: 1.211455953637069
+        - id: he3_b0056
+          prediction: 2.251718456250543
+          residual: 1.3911571346541551
+          regularizedPull: 3.555170044478546
+        - id: he3_b0061
+          prediction: 2.046552716527154
+          residual: 0.9788839438745787
+          regularizedPull: 6.22064520476795
+        - id: he3_b0066
+          prediction: 1.9086077916122757
+          residual: 0.8882808625328327
+          regularizedPull: 6.183229473464401
+        - id: he3_b0071
+          prediction: 1.7963358859609555
+          residual: 0.45260080651747425
+          regularizedPull: 3.956262988590997
+        - id: he3_b0076
+          prediction: 1.6986849102813162
+          residual: 0.15131708073960914
+          regularizedPull: 1.6147698347717774
+        - id: he3_b0081
+          prediction: 1.6039871570005408
+          residual: 0.03603385516572977
+          regularizedPull: 0.4358807251896767
+        - id: he3_b0086
+          prediction: 1.5136587534321249
+          residual: 0.0006231549416748638
+          regularizedPull: 0.008173666050633974
+        - id: he3_b0088
+          prediction: 1.479587952799905
+          residual: -0.0078013529961924455
+          regularizedPull: -0.1053635014573831
+        - id: he3_b0091
+          prediction: 1.4298369217402496
+          residual: -0.0041830907436111175
+          regularizedPull: -0.05819003931781614
+        - id: he3_b0096
+          prediction: 1.3541642248513739
+          residual: -0.01670811032709163
+          regularizedPull: -0.2483666820516592
+        - id: he3_b0101
+          prediction: 1.2856367947323388
+          residual: -0.037555638228209176
+          regularizedPull: -0.5978174755802594
+        - id: he3_b0106
+          prediction: 1.2214507738683213
+          residual: -0.029491801281679386
+          regularizedPull: -0.49187752978868876
+        - id: he3_b0111
+          prediction: 1.1639793636757307
+          residual: -0.04856477299187323
+          regularizedPull: -0.8666133726341563
+        - id: he3_b0116
+          prediction: 1.110468283157319
+          residual: -0.052339162857604205
+          regularizedPull: -0.9846858320837775
+        - id: he3_b0121
+          prediction: 1.0617702702287408
+          residual: -0.06837144558959563
+          regularizedPull: -1.3698936997757603
+        - id: he3_b0126
+          prediction: 1.0160308819965316
+          residual: -0.06441397125630222
+          regularizedPull: -1.348977337200709
+        - id: he3_b0131
+          prediction: 0.9740887137693239
+          residual: -0.06739849823015787
+          regularizedPull: -1.4817691505974435
+        - id: he3_b0136
+          prediction: 0.9355425500010373
+          residual: -0.076426808686609
+          regularizedPull: -1.7665118427395279
+        - id: he3_b0141
+          prediction: 0.899210802392449
+          residual: -0.06783224699518398
+          regularizedPull: -1.625181742072905
+        - id: he3_b0146
+          prediction: 0.8657811750104605
+          residual: -0.06603563206826035
+          regularizedPull: -1.645124164429539
+        - id: he3_b0151
+          prediction: 0.8345110285837721
+          residual: -0.05779481000868836
+          regularizedPull: -1.4796999503790254
+        - id: he3_b0156
+          prediction: 0.805895613771779
+          residual: -0.06104929943168458
+          regularizedPull: -1.6296305632737893
+        - id: he3_b0161
+          prediction: 0.778810509994861
+          residual: -0.051242532845376054
+          regularizedPull: -1.400450672794964
+        - id: he3_b0166
+          prediction: 0.7538533985733774
+          residual: -0.048798182322822514
+          regularizedPull: -1.369074665232454
+        - id: he3_b0171
+          prediction: 0.7304105140795091
+          residual: -0.04028118072762987
+          regularizedPull: -1.15856961061966
+        - id: he3_b0176
+          prediction: 0.7087567693936945
+          residual: -0.03730176487687209
+          regularizedPull: -1.103733563760076
+        - id: he3_b0178
+          prediction: 0.7005019831973877
+          residual: -0.036109804065062034
+          regularizedPull: -1.0754447067615256
+        - id: he3_b0181
+          prediction: 0.6883717887115839
+          residual: -0.029671987867604388
+          regularizedPull: -0.8874216370884169
+        - id: he3_b0186
+          prediction: 0.6694785770033596
+          residual: -0.02514741562682754
+          regularizedPull: -0.7638721611859863
+        - id: he3_b0191
+          prediction: 0.6516476919670398
+          residual: -0.015005661659849179
+          regularizedPull: -0.4572466186070075
+        - id: he3_b0196
+          prediction: 0.6357653121625761
+          residual: -0.024136087684983987
+          regularizedPull: -0.7768259811272913
+        - id: he3_b0201
+          prediction: 0.6200069566607598
+          residual: -0.008596332579773325
+          regularizedPull: -0.2765102188541652
+        - id: he3_b0206
+          prediction: 0.6056249544300778
+          residual: -0.0016210419667160858
+          regularizedPull: -0.052287140891056766
+        - id: he3_b0211
+          prediction: 0.5919379710587955
+          residual: 0.014082264907609221
+          regularizedPull: 0.4449511571724357
+        - id: he3_b0216
+          prediction: 0.5800384029587939
+          residual: 0.003918153214898745
+          regularizedPull: 0.12969549952345844
+        - id: he3_b0221
+          prediction: 0.5681614443845903
+          residual: 0.01911305144558939
+          regularizedPull: 0.6155086002678972
+        - id: he3_b0226
+          prediction: 0.5572404508819234
+          residual: 0.0292987391610966
+          regularizedPull: 0.9599683178188251
+        - id: he3_b0231
+          prediction: 0.5474449092014577
+          residual: 0.028498568576056593
+          regularizedPull: 0.9518605372008172
+        - id: he3_b0236
+          prediction: 0.5383835450931247
+          residual: 0.03299180851496686
+          regularizedPull: 1.0196350440114275
+        - id: he3_b0241
+          prediction: 0.5300564015435694
+          residual: 0.028142583535464838
+          regularizedPull: 0.9057343748911741
+        - id: he3_b0246
+          prediction: 0.5218767158999728
+          residual: 0.03721629616003541
+          regularizedPull: 1.2789043559493602
+        - id: he3_b0251
+          prediction: 0.5157917486711591
+          residual: 0.004181833858607598
+          regularizedPull: 0.1486989171318815
+        - id: he3_b0256
+          prediction: 0.5086598758876696
+          residual: 0.021995673179684205
+          regularizedPull: 0.7380520856042114
+        - id: he3_b0261
+          prediction: 0.5018243426457774
+          residual: 0.04332392509586136
+          regularizedPull: 1.5342237822293825
+        - id: he3_b0266
+          prediction: 0.49599401664071274
+          residual: 0.052373322948312095
+          regularizedPull: 1.8563058259258212
+        - id: he3_b0271
+          prediction: 0.49142704213506627
+          residual: 0.042671393412707426
+          regularizedPull: 1.4126876249955151
+        - id: he3_b0276
+          prediction: 0.4868131824894641
+          residual: 0.04321151208516477
+          regularizedPull: 1.427794483948932
+        - id: he3_b0281
+          prediction: 0.4822818351284597
+          residual: 0.04669321395976467
+          regularizedPull: 1.6945515178625872
+        - id: he3_b0286
+          prediction: 0.47893588937361514
+          residual: 0.04489594109843503
+          regularizedPull: 1.4182422198588958
+        - id: he3_b0291
+          prediction: 0.4768994249759112
+          residual: -0.008353083450833576
+          regularizedPull: -0.26274452376261037
+        - id: he3_b0296
+          prediction: 0.4735667613343984
+          residual: 0.006104734819892488
+          regularizedPull: 0.17743349310237627
+        - id: he3_b0301
+          prediction: 0.47055206146349904
+          residual: 0.041585601931519056
+          regularizedPull: 0.9033878565703801
+        - id: he3_b0306
+          prediction: 0.4685108399587837
+          residual: 0.007414795575010125
+          regularizedPull: 0.268657638938892
+        - id: he3_b0311
+          prediction: 0.465282610031098
+          residual: 0.04972775854787209
+          regularizedPull: 1.650264459281719
+        - id: he3_b0316
+          prediction: 0.4657957501402199
+          residual: -0.024829583881546324
+          regularizedPull: -0.7449876951889453
+        - id: he3_b0321
+          prediction: 0.46369125276689127
+          residual: 0.005440920435512642
+          regularizedPull: 0.13180840779666772
+        - id: he3_b0326
+          prediction: 0.4622014214429959
+          residual: 0.03585830879747903
+          regularizedPull: 0.7559907765664009
+        - id: he3_b0331
+          prediction: 0.4620460857546094
+          residual: -0.006412660475391074
+          regularizedPull: -0.16422107822026824
+        - id: he3_b0336
+          prediction: 0.46131886183214266
+          residual: 0.0036116177488256795
+          regularizedPull: 0.06061346116282415
+        - id: he3_b0341
+          prediction: 0.4576872687514059
+          residual: 0.07077559174829001
+          regularizedPull: 2.4936797596532987
+        - id: he3_b0346
+          prediction: 0.459132600248081
+          residual: 0.0512293047011293
+          regularizedPull: 1.523800226107819
+        - id: he3_b0351
+          prediction: 0.46078116276876013
+          residual: 0.03433975628978153
+          regularizedPull: 0.5382382887301336
+        - id: he3_b0356
+          prediction: 0.460557859543828
+          residual: 0.020840691259596755
+          regularizedPull: 0.6558764734150935
+        - id: he3_b0361
+          prediction: 0.4615169173414988
+          residual: 0.014866936512536122
+          regularizedPull: 0.4197727238586078
+        - id: he3_b0366
+          prediction: 0.46274411889876654
+          residual: 0.007878784523697668
+          regularizedPull: 0.15140794734554391
+        - id: he3_b0371
+          prediction: 0.4638073712313364
+          residual: 0.006418860826419348
+          regularizedPull: 0.08865527509877812
+        - id: he3_b0376
+          prediction: 0.46832900577583797
+          residual: -0.08383074259021983
+          regularizedPull: -2.094000299432338
+        - id: he3_b0381
+          prediction: 0.4652331436367367
+          residual: 0.0264985483920267
+          regularizedPull: 0.6686840204580173
+        - id: he3_b0386
+          prediction: 0.46627195534512844
+          residual: 0.019978355412607673
+          regularizedPull: 0.6646242709576627
+        - id: he3_b0391
+          prediction: 0.4680478864263364
+          residual: 0.019105590899002267
+          regularizedPull: 0.6054144417080732
+        - id: he3_b0396
+          prediction: 0.47363262023244923
+          residual: -0.12449510951222142
+          regularizedPull: -1.8366468595758256
+        - id: he3_b0401
+          prediction: 0.4740427982462394
+          residual: -0.052553459488672793
+          regularizedPull: -0.6434160225590662
+        - id: he3_b0406
+          prediction: 0.4784969254160503
+          residual: -0.06564202580521394
+          regularizedPull: -1.4432604493205872
+        - id: he3_b0411
+          prediction: 0.4769709621276851
+          residual: 0.044190764865456256
+          regularizedPull: 0.5614831838694342
+        - id: he3_b0416
+          prediction: 0.4802892227437127
+          residual: -0.003910512040862513
+          regularizedPull: -0.08464248474940286
+        - id: he3_b0421
+          prediction: 0.48944429141495416
+          residual: -0.12748094815024547
+          regularizedPull: -2.730911873207145
+        - id: he3_b0426
+          prediction: 0.4856447880239611
+          residual: -0.054401645137936494
+          regularizedPull: -0.4221710721327274
+        - id: he3_b0431
+          prediction: 0.49056400485149343
+          residual: -0.17629399693194292
+          regularizedPull: -1.8495259810401108
+        - id: he3_b0436
+          prediction: 0.49191223921694116
+          residual: -0.14742894214770613
+          regularizedPull: -1.050284178362449
+        - id: he3_b0446
+          prediction: 0.4976124303732956
+          residual: -0.20294921317406434
+          regularizedPull: -0.9437227393269343
+        - id: he3_b0456
+          prediction: 0.5026433208531473
+          residual: 0.07463606968411374
+          regularizedPull: 0.5560932492606803
+        - id: he3_b0461
+          prediction: 0.5107987723528378
+          residual: -0.17839862119047734
+          regularizedPull: -1.9588400905705599
+        - id: he3_b0471
+          prediction: 0.5135272884873435
+          residual: 0.041924837601545195
+          regularizedPull: 0.22292891307908205
+        - id: he3_b0486
+          prediction: 0.5694755726821698
+          residual: -0.5145258089336093
+          regularizedPull: -9.698851958758805
+        maximumAbsoluteLOOPull: 9.698851958758805
+        maximumAbsoluteSupportPull: 8.85915408697398
+      logRatio:
+        turningPointsR:
+        - 0.6895263112890649
+        minDenseValue: -0.16133261082446046
+        maxDenseValue: 0.5513228778564436
+        leaveOneOut:
+        - id: he3_b0046
+          prediction: -0.1350386778398126
+          residual: 0.947134576993497
+          regularizedPull: 0.9595710419528549
+        - id: he3_b0051
+          prediction: -0.13706319306894957
+          residual: -0.3780241961619889
+          regularizedPull: -0.7259560601462913
+        - id: he3_b0056
+          prediction: -0.15930950937209296
+          residual: 0.10245928470203762
+          regularizedPull: 0.4684881309383648
+        - id: he3_b0061
+          prediction: -0.2189171648964458
+          residual: 0.30638151425794435
+          regularizedPull: 2.8410515184785563
+        - id: he3_b0066
+          prediction: -0.1319635226114077
+          residual: -0.1831075432868472
+          regularizedPull: -1.7616134840480198
+        - id: he3_b0071
+          prediction: -0.13234335407514494
+          residual: -0.23786503611468632
+          regularizedPull: -2.3178736579516723
+        - id: he3_b0076
+          prediction: -0.14190925896231327
+          residual: -0.19133198896877984
+          regularizedPull: -1.867143425948081
+        - id: he3_b0081
+          prediction: -0.147337882115533
+          residual: -0.12676230008778122
+          regularizedPull: -1.2485244038302619
+        - id: he3_b0086
+          prediction: -0.14871824407189924
+          residual: -0.06464656448027148
+          regularizedPull: -0.6381372968790978
+        - id: he3_b0088
+          prediction: -0.14742815998037437
+          residual: -0.05776941655607157
+          regularizedPull: -0.5702912283609343
+        - id: he3_b0091
+          prediction: -0.14586498707223083
+          residual: -0.03213533493246937
+          regularizedPull: -0.3155916146609461
+        - id: he3_b0096
+          prediction: -0.141083349707201
+          residual: -0.009324056172001383
+          regularizedPull: -0.09204422351591295
+        - id: he3_b0101
+          prediction: -0.1365415246954317
+          residual: 0.042164083991225065
+          regularizedPull: 0.415528871641818
+        - id: he3_b0106
+          prediction: -0.12849556071086152
+          residual: 0.02502069676220145
+          regularizedPull: 0.24670357060772094
+        - id: he3_b0111
+          prediction: -0.12242903658926901
+          residual: 0.07139172217735804
+          regularizedPull: 0.7059125517814328
+        - id: he3_b0116
+          prediction: -0.11367057294918773
+          residual: 0.0567690881494879
+          regularizedPull: 0.561230571045693
+        - id: he3_b0121
+          prediction: -0.10518268551364479
+          residual: 0.05792693451264533
+          regularizedPull: 0.5723373074663176
+        - id: he3_b0126
+          prediction: -0.09705775228352431
+          residual: 0.07615974624688396
+          regularizedPull: 0.7548235827813619
+        - id: he3_b0131
+          prediction: -0.08810658073144471
+          residual: 0.07813814531479907
+          regularizedPull: 0.7749720528540733
+        - id: he3_b0136
+          prediction: -0.07969684286898031
+          residual: 0.10240234530112405
+          regularizedPull: 1.006121392883542
+        - id: he3_b0141
+          prediction: -0.06975022302192414
+          residual: 0.0854030202774286
+          regularizedPull: 0.8456537106108003
+        - id: he3_b0146
+          prediction: -0.060881806543377104
+          residual: 0.10344350158796475
+          regularizedPull: 1.0250844732067943
+        - id: he3_b0151
+          prediction: -0.051454295488294
+          residual: 0.11065375337149927
+          regularizedPull: 1.0909860979478516
+        - id: he3_b0156
+          prediction: -0.041459009270010325
+          residual: 0.1037584112011957
+          regularizedPull: 1.02312955130297
+        - id: he3_b0161
+          prediction: -0.030322396194902332
+          residual: 0.06705800745200725
+          regularizedPull: 0.6612304265505414
+        - id: he3_b0166
+          prediction: -0.02152546065804391
+          residual: 0.10009932714100805
+          regularizedPull: 0.9756644681441068
+        - id: he3_b0171
+          prediction: -0.010170457315373431
+          residual: 0.05780409908468311
+          regularizedPull: 0.5678261872014111
+        - id: he3_b0176
+          prediction: -0.0024502459814301704
+          residual: 0.12281905309677343
+          regularizedPull: 1.2080435703499983
+        - id: he3_b0178
+          prediction: 0.0041865769996487535
+          residual: 0.04646846584705697
+          regularizedPull: 0.4536873511171793
+        - id: he3_b0181
+          prediction: 0.009395786495232207
+          residual: 0.07104994768769309
+          regularizedPull: 0.687426207235687
+        - id: he3_b0186
+          prediction: 0.021049419039931943
+          residual: 0.020640479087012362
+          regularizedPull: 0.19637126644303923
+        - id: he3_b0191
+          prediction: 0.029767835982829102
+          residual: 0.062397238721958834
+          regularizedPull: 0.5893101541642244
+        - id: he3_b0196
+          prediction: 0.04007195220999675
+          residual: 0.04981236506295618
+          regularizedPull: 0.48065510774823383
+        - id: he3_b0201
+          prediction: 0.05028831528746884
+          residual: 0.04217523927662539
+          regularizedPull: 0.40626667335164296
+        - id: he3_b0206
+          prediction: 0.06104209434364047
+          residual: 0.01654947929809221
+          regularizedPull: 0.15654656321423974
+        - id: he3_b0211
+          prediction: 0.06976495789048452
+          residual: 0.05974021856608931
+          regularizedPull: 0.5558896511117697
+        - id: he3_b0216
+          prediction: 0.0816963740032494
+          residual: -0.012443176478088708
+          regularizedPull: -0.11641584802098282
+        - id: he3_b0221
+          prediction: 0.09171440245807655
+          residual: -0.01877804681918499
+          regularizedPull: -0.17109296201457155
+        - id: he3_b0226
+          prediction: 0.10298621207769793
+          residual: -0.07100019393530868
+          regularizedPull: -0.652931771697404
+        - id: he3_b0231
+          prediction: 0.11185932997122952
+          residual: -0.03660402686378807
+          regularizedPull: -0.3373522434483032
+        - id: he3_b0236
+          prediction: 0.12122058934662722
+          residual: -0.027871870236157656
+          regularizedPull: -0.2266544113488788
+        - id: he3_b0241
+          prediction: 0.1303892813082215
+          residual: -0.0019657875675357095
+          regularizedPull: -0.01631245370963917
+        - id: he3_b0246
+          prediction: 0.14258024721534904
+          residual: -0.0919722560396839
+          regularizedPull: -0.8312382784048593
+        - id: he3_b0251
+          prediction: 0.1504108104369233
+          residual: -0.02877623846890187
+          regularizedPull: -0.24635934163067186
+        - id: he3_b0256
+          prediction: 0.1591566363762864
+          residual: 0.004867707601083654
+          regularizedPull: 0.0408749341646763
+        - id: he3_b0261
+          prediction: 0.17401202026995893
+          residual: -0.1716473445712686
+          regularizedPull: -1.5471185095149314
+        - id: he3_b0266
+          prediction: 0.17810645576249426
+          residual: 0.007732167814552965
+          regularizedPull: 0.06992152854137923
+        - id: he3_b0271
+          prediction: 0.18932013632832462
+          residual: -0.05853717682373932
+          regularizedPull: -0.46720434106044273
+        - id: he3_b0276
+          prediction: 0.19922769045789562
+          residual: -0.07974818998594549
+          regularizedPull: -0.6129451212146362
+        - id: he3_b0281
+          prediction: 0.21347038361391277
+          residual: -0.2046564110322136
+          regularizedPull: -1.7773454407733735
+        - id: he3_b0286
+          prediction: 0.22095122455744148
+          residual: -0.21764960713859338
+          regularizedPull: -1.5260656315671755
+        - id: he3_b0291
+          prediction: 0.22851622106975877
+          residual: -0.1786796380315532
+          regularizedPull: -1.0914833012052871
+        - id: he3_b0296
+          prediction: 0.2345594380993825
+          residual: -0.0069290485698325355
+          regularizedPull: -0.040060207846604995
+        - id: he3_b0301
+          prediction: 0.2442666721709596
+          residual: -0.04237123888088029
+          regularizedPull: -0.22221952762279804
+        - id: he3_b0306
+          prediction: 0.26325414741175224
+          residual: -0.35625804603264705
+          regularizedPull: -2.5134841022941306
+        - id: he3_b0311
+          prediction: 0.2632297020459982
+          residual: -0.05329136391478151
+          regularizedPull: -0.3442713890741812
+        - id: he3_b0316
+          prediction: 0.2760054786103918
+          residual: -0.2894465115501161
+          regularizedPull: -1.4903014457150277
+        - id: he3_b0321
+          prediction: 0.28126615605511873
+          residual: -0.09934686816045107
+          regularizedPull: -0.44492606571039384
+        - id: he3_b0326
+          prediction: 0.2910379392214416
+          residual: -0.19231634891913518
+          regularizedPull: -0.7562762453758647
+        - id: he3_b0331
+          prediction: 0.30035437166683193
+          residual: -0.2118062452148143
+          regularizedPull: -0.8394403076048097
+        - id: he3_b0336
+          prediction: 0.30803154736005983
+          residual: -0.14230130504273644
+          regularizedPull: -0.502998487846845
+        - id: he3_b0341
+          prediction: 0.3308540310887971
+          residual: -0.3458985934771897
+          regularizedPull: -2.426058761101169
+        - id: he3_b0346
+          prediction: 0.3271340690807124
+          residual: -0.11916307393950917
+          regularizedPull: -0.6166245434677722
+        - id: he3_b0351
+          prediction: 0.33339023196693995
+          residual: -0.08247276383431185
+          regularizedPull: -0.23039399537442606
+        - id: he3_b0356
+          prediction: 0.34147215688744925
+          residual: -0.005168965360229316
+          regularizedPull: -0.021802892133824393
+        - id: he3_b0361
+          prediction: 0.3654826771132932
+          residual: -0.7933790128520155
+          regularizedPull: -3.255055725160656
+        - id: he3_b0366
+          prediction: 0.36003394524575105
+          residual: -0.13109792389876415
+          regularizedPull: -0.40147608312137123
+        - id: he3_b0371
+          prediction: 0.3656814594202135
+          residual: 0.14613530508137124
+          regularizedPull: 0.3883043890798245
+        - id: he3_b0376
+          prediction: 0.38462595717734543
+          residual: -0.9060491194137994
+          regularizedPull: -2.452305155250893
+        - id: he3_b0381
+          prediction: 0.3819034163466232
+          residual: 0.0936462936940497
+          regularizedPull: 0.35806323116265026
+        - id: he3_b0386
+          prediction: 0.4065562089972867
+          residual: -0.5028821474274319
+          regularizedPull: -2.163423540181146
+        - id: he3_b0391
+          prediction: 0.4111344489016435
+          residual: -0.39630234135532816
+          regularizedPull: -1.606911099562681
+        - id: he3_b0396
+          prediction: 0.40826792426010894
+          residual: 0.3008874243187163
+          regularizedPull: 0.322935426223732
+        - id: he3_b0401
+          prediction: 0.41985823850592896
+          residual: -0.36906616229644307
+          regularizedPull: -0.754307760386937
+        - id: he3_b0406
+          prediction: 0.42513222048853144
+          residual: 0.014045948932373542
+          regularizedPull: 0.032922688442566024
+        - id: he3_b0411
+          prediction: 0.43635106786608646
+          residual: -0.6922848455560298
+          regularizedPull: -1.0114755436414375
+        - id: he3_b0416
+          prediction: 0.4458143248075202
+          residual: -0.30489785966819805
+          regularizedPull: -0.7932074385313671
+        - id: he3_b0421
+          prediction: 0.45228367200627284
+          residual: -0.2727977773604666
+          regularizedPull: -0.5817103256563779
+        - id: he3_b0426
+          prediction: 0.4565677216251923
+          residual: 0.7724673246157293
+          regularizedPull: 0.5884905805182704
+        - id: he3_b0431
+          prediction: 0.4673637693802044
+          residual: -1.2242784514934717
+          regularizedPull: -0.9599309878689837
+        - id: he3_b0436
+          prediction: 0.4720870442615355
+          residual: 0.4216423575983594
+          regularizedPull: 0.48703613793668443
+        - id: he3_b0446
+          prediction: 0.4906828561022436
+          residual: -1.0959614750730684
+          regularizedPull: -0.7642408429503382
+        - id: he3_b0456
+          prediction: 0.5105698430642958
+          residual: -1.0975931641269068
+          regularizedPull: -1.4611601143181774
+        - id: he3_b0461
+          prediction: 0.5116283465356627
+          residual: 0.20422381879348617
+          regularizedPull: 0.24389712469866975
+        - id: he3_b0471
+          prediction: 0.5272209818735685
+          residual: 0.40271142625572176
+          regularizedPull: 0.2778191765006103
+        - id: he3_b0486
+          prediction: 0.09559667522801718
+          residual: 1.2906949057821056
+          regularizedPull: 12.524185885172779
+        maximumAbsoluteLOOPull: 12.524185885172779
+        maximumAbsoluteSupportPull: 8.109361010813457
+    supportGapWarnings:
+    - leftId: he3_b0471
+      rightId: he3_b0486
+      leftRHi: 4.71
+      rightRLo: 4.8500000000000005
+    gapMeaning: Unmeasured interpolation intervals, NOT production vetoes
+    extrapolationAllowed: false
+    qualityLabel: CANDIDATE_POLYNOMIAL_NOT_PRODUCTION_VALIDATED
+    coefficients:
+      mean:
+      - 29.53283011601008
+      - -74.6841110129234
+      - 118.45357154685681
+      - -66.79094083569805
+      sigma:
+      - 1.2902728422533798
+      - -3.0882743447494145
+      - 2.875184885763396
+      logRatio:
+      - -0.13550645717069007
+      - 0.3199386240644292
+      - 0.9908339867464989
+  he4:
+    curveCandidateValid: true
+    invalidReasons: []
+    rMin: 0.6
+    rMax: 4.96
+    supportCount: 90
+    supportIds:
+    - he4_b0061
+    - he4_b0066
+    - he4_b0071
+    - he4_b0076
+    - he4_b0081
+    - he4_b0086
+    - he4_b0088
+    - he4_b0091
+    - he4_b0096
+    - he4_b0101
+    - he4_b0106
+    - he4_b0111
+    - he4_b0116
+    - he4_b0121
+    - he4_b0126
+    - he4_b0131
+    - he4_b0136
+    - he4_b0141
+    - he4_b0146
+    - he4_b0151
+    - he4_b0156
+    - he4_b0161
+    - he4_b0166
+    - he4_b0171
+    - he4_b0176
+    - he4_b0178
+    - he4_b0181
+    - he4_b0186
+    - he4_b0191
+    - he4_b0196
+    - he4_b0201
+    - he4_b0206
+    - he4_b0211
+    - he4_b0216
+    - he4_b0221
+    - he4_b0226
+    - he4_b0231
+    - he4_b0236
+    - he4_b0241
+    - he4_b0246
+    - he4_b0251
+    - he4_b0256
+    - he4_b0261
+    - he4_b0266
+    - he4_b0271
+    - he4_b0276
+    - he4_b0281
+    - he4_b0286
+    - he4_b0291
+    - he4_b0296
+    - he4_b0301
+    - he4_b0306
+    - he4_b0311
+    - he4_b0316
+    - he4_b0321
+    - he4_b0326
+    - he4_b0331
+    - he4_b0336
+    - he4_b0341
+    - he4_b0346
+    - he4_b0351
+    - he4_b0356
+    - he4_b0361
+    - he4_b0366
+    - he4_b0371
+    - he4_b0376
+    - he4_b0381
+    - he4_b0386
+    - he4_b0391
+    - he4_b0396
+    - he4_b0401
+    - he4_b0406
+    - he4_b0411
+    - he4_b0416
+    - he4_b0421
+    - he4_b0426
+    - he4_b0431
+    - he4_b0436
+    - he4_b0441
+    - he4_b0446
+    - he4_b0451
+    - he4_b0456
+    - he4_b0461
+    - he4_b0466
+    - he4_b0471
+    - he4_b0476
+    - he4_b0481
+    - he4_b0486
+    - he4_b0491
+    - he4_b0496
+    diagnostics:
+      mean:
+        turningPointsR:
+        - 4.495952572539777
+        minDenseValue: 13.7493157739458
+        maxDenseValue: 71.48739895499318
+        leaveOneOut:
+        - id: he4_b0061
+          prediction: 71.03750699679371
+          residual: -3.6874804336210616
+          regularizedPull: -14.016176767875365
+        - id: he4_b0066
+          prediction: 65.2334133075549
+          residual: -4.660980364612691
+          regularizedPull: -13.186966977660214
+        - id: he4_b0071
+          prediction: 60.608361404043535
+          residual: -4.813094339553494
+          regularizedPull: -39.28808061494398
+        - id: he4_b0076
+          prediction: 56.264923321644964
+          residual: -2.5998322159352796
+          regularizedPull: -35.24697200244972
+        - id: he4_b0081
+          prediction: 52.216851874033615
+          residual: -0.9081782195840731
+          regularizedPull: -14.73837673822637
+        - id: he4_b0086
+          prediction: 48.736341783084214
+          residual: 0.03926847917683318
+          regularizedPull: 0.7790339965748433
+        - id: he4_b0088
+          prediction: 47.469239551194136
+          residual: 0.30862594843254954
+          regularizedPull: 6.4263908046156555
+        - id: he4_b0091
+          prediction: 45.70033784047137
+          residual: 0.5054839307145116
+          regularizedPull: 11.334824606862625
+        - id: he4_b0096
+          prediction: 43.023517221191135
+          residual: 0.6780261781525923
+          regularizedPull: 16.67445842870242
+        - id: he4_b0101
+          prediction: 40.631566901717676
+          residual: 0.7202066525529887
+          regularizedPull: 19.154918227952702
+        - id: he4_b0106
+          prediction: 38.482751500169
+          residual: 0.6451258588903883
+          regularizedPull: 18.276903869231415
+        - id: he4_b0111
+          prediction: 36.538762431068996
+          residual: 0.5586034374342788
+          regularizedPull: 16.63908801836408
+        - id: he4_b0116
+          prediction: 34.77749370415102
+          residual: 0.4205543299727097
+          regularizedPull: 13.117429813151643
+        - id: he4_b0121
+          prediction: 33.17347304141045
+          residual: 0.31671522103239624
+          regularizedPull: 10.267879762090873
+        - id: he4_b0126
+          prediction: 31.71421093729239
+          residual: 0.16075215850351654
+          regularizedPull: 5.394244898355499
+        - id: he4_b0131
+          prediction: 30.376353759812986
+          residual: 0.08037036866465286
+          regularizedPull: 2.819484747247717
+        - id: he4_b0136
+          prediction: 29.152277269111188
+          residual: -0.01426999384833394
+          regularizedPull: -0.516703639462827
+        - id: he4_b0141
+          prediction: 28.029460320922766
+          residual: -0.11146428215256776
+          regularizedPull: -4.2239951917110785
+        - id: he4_b0146
+          prediction: 26.993007167564
+          residual: -0.1366259719367484
+          regularizedPull: -5.396724313386638
+        - id: he4_b0151
+          prediction: 26.03941151493305
+          residual: -0.18911794043589225
+          regularizedPull: -7.533177545293487
+        - id: he4_b0156
+          prediction: 25.158861867019194
+          residual: -0.21183386039426466
+          regularizedPull: -8.854401296693212
+        - id: he4_b0161
+          prediction: 24.344402554604684
+          residual: -0.22052150789163605
+          regularizedPull: -9.557587889011293
+        - id: he4_b0166
+          prediction: 23.58919698771382
+          residual: -0.20631280020755938
+          regularizedPull: -9.044840929658884
+        - id: he4_b0171
+          prediction: 22.889318186839457
+          residual: -0.20069442927743708
+          regularizedPull: -8.448523868876748
+        - id: he4_b0176
+          prediction: 22.24276726536593
+          residual: -0.19550581176341453
+          regularizedPull: -8.886107016604793
+        - id: he4_b0178
+          prediction: 21.99576565366775
+          residual: -0.17247871780739743
+          regularizedPull: -7.802751619792067
+        - id: he4_b0181
+          prediction: 21.64130676673099
+          residual: -0.18893463987627968
+          regularizedPull: -8.55020936480057
+        - id: he4_b0186
+          prediction: 21.081833422532284
+          residual: -0.14818530529670682
+          regularizedPull: -6.960568974442004
+        - id: he4_b0191
+          prediction: 20.560900370999207
+          residual: -0.1319239390805933
+          regularizedPull: -5.3967086643221345
+        - id: he4_b0196
+          prediction: 20.078364777024998
+          residual: -0.09751216488198011
+          regularizedPull: -4.618743395692016
+        - id: he4_b0201
+          prediction: 19.627237997527775
+          residual: -0.05158146220174231
+          regularizedPull: -2.458608066185867
+        - id: he4_b0206
+          prediction: 19.208750546264497
+          residual: -0.049609109983876465
+          regularizedPull: -2.3407296440659784
+        - id: he4_b0211
+          prediction: 18.8185452389301
+          residual: -0.04219570249286875
+          regularizedPull: -2.0126110850048673
+        - id: he4_b0216
+          prediction: 18.454072504396727
+          residual: -0.023528581511992996
+          regularizedPull: -1.1140668558404059
+        - id: he4_b0221
+          prediction: 18.112436489367887
+          residual: 0.02762550420882448
+          regularizedPull: 1.328749599472105
+        - id: he4_b0226
+          prediction: 17.79537730464483
+          residual: 0.0380625977132496
+          regularizedPull: 1.7709278693493997
+        - id: he4_b0231
+          prediction: 17.500212195293745
+          residual: 0.04379276828797529
+          regularizedPull: 1.6217487525877212
+        - id: he4_b0236
+          prediction: 17.221787742017355
+          residual: 0.07681577983326804
+          regularizedPull: 3.543364351347841
+        - id: he4_b0241
+          prediction: 16.964412570437243
+          residual: 0.06518116798206819
+          regularizedPull: 3.0119615810046283
+        - id: he4_b0246
+          prediction: 16.722550111639002
+          residual: 0.0889158826736356
+          regularizedPull: 3.968389100847799
+        - id: he4_b0251
+          prediction: 16.496306357016298
+          residual: 0.10418214515815905
+          regularizedPull: 4.807319244358438
+        - id: he4_b0256
+          prediction: 16.28679509876933
+          residual: 0.10646378748850438
+          regularizedPull: 4.479589021440832
+        - id: he4_b0261
+          prediction: 16.088895774080907
+          residual: 0.1453159260939536
+          regularizedPull: 5.9198842162629415
+        - id: he4_b0266
+          prediction: 15.905181133259287
+          residual: 0.14829226877298396
+          regularizedPull: 6.026110759354182
+        - id: he4_b0271
+          prediction: 15.73403793992458
+          residual: 0.1449986471604312
+          regularizedPull: 5.795123743258963
+        - id: he4_b0276
+          prediction: 15.57458757920512
+          residual: 0.14435045913832845
+          regularizedPull: 5.459381067057165
+        - id: he4_b0281
+          prediction: 15.423547579225875
+          residual: 0.17545555829302373
+          regularizedPull: 6.729065166451228
+        - id: he4_b0286
+          prediction: 15.287078620926081
+          residual: 0.11390940061976629
+          regularizedPull: 4.185659881805986
+        - id: he4_b0291
+          prediction: 15.156675676217244
+          residual: 0.13627057050336333
+          regularizedPull: 4.6813679047070424
+        - id: he4_b0296
+          prediction: 15.037427970525965
+          residual: 0.09369043955216938
+          regularizedPull: 2.9620089465078063
+        - id: he4_b0301
+          prediction: 14.925718935644483
+          residual: 0.06825083481251681
+          regularizedPull: 1.8913547664456154
+        - id: he4_b0306
+          prediction: 14.818896452373664
+          residual: 0.10664964622633732
+          regularizedPull: 3.189518203577756
+        - id: he4_b0311
+          prediction: 14.721334012402057
+          residual: 0.07930260424462432
+          regularizedPull: 2.5388612625851232
+        - id: he4_b0316
+          prediction: 14.630821287981227
+          residual: 0.11656776319802731
+          regularizedPull: 2.7226823886272844
+        - id: he4_b0321
+          prediction: 14.546833523911898
+          residual: 0.06618495254858558
+          regularizedPull: 1.7488209928489997
+        - id: he4_b0326
+          prediction: 14.467934402102006
+          residual: 0.11520194506155335
+          regularizedPull: 2.456407277971234
+        - id: he4_b0331
+          prediction: 14.39914048905044
+          residual: -0.046523832630080975
+          regularizedPull: -1.1689553506170585
+        - id: he4_b0336
+          prediction: 14.329135361312598
+          residual: 0.049664636082932034
+          regularizedPull: 1.049803381605003
+        - id: he4_b0341
+          prediction: 14.267449807935659
+          residual: 0.02263503974236336
+          regularizedPull: 0.5178610082558149
+        - id: he4_b0346
+          prediction: 14.211355727762578
+          residual: -0.019171826942917747
+          regularizedPull: -0.40106864197914355
+        - id: he4_b0351
+          prediction: 14.15868061599746
+          residual: -0.024606981998227084
+          regularizedPull: -0.4896675650273151
+        - id: he4_b0356
+          prediction: 14.115551976383575
+          residual: -0.18907269065440602
+          regularizedPull: -3.7458641021709234
+        - id: he4_b0361
+          prediction: 14.065169114560412
+          residual: -0.008126886411776724
+          regularizedPull: -0.15638933877545505
+        - id: he4_b0366
+          prediction: 14.027625281457414
+          residual: -0.1417411113352145
+          regularizedPull: -2.171308811871176
+        - id: he4_b0371
+          prediction: 13.988445981706285
+          residual: -0.04288257127647199
+          regularizedPull: -0.7064810059642974
+        - id: he4_b0376
+          prediction: 13.958989769651918
+          residual: -0.24138334714809062
+          regularizedPull: -3.2358917099161064
+        - id: he4_b0381
+          prediction: 13.92816194057006
+          residual: -0.11268563733824699
+          regularizedPull: -2.025886649914469
+        - id: he4_b0386
+          prediction: 13.904871279660812
+          residual: -0.2203334630607383
+          regularizedPull: -3.5948161187562353
+        - id: he4_b0391
+          prediction: 13.878407175776514
+          residual: -0.1451421039701497
+          regularizedPull: -2.4709303190221243
+        - id: he4_b0396
+          prediction: 13.861585133552799
+          residual: -0.3609010877787018
+          regularizedPull: -4.781334441803796
+        - id: he4_b0401
+          prediction: 13.841905330091913
+          residual: -0.42941539569561904
+          regularizedPull: -4.877457004504619
+        - id: he4_b0406
+          prediction: 13.818138045642485
+          residual: -0.2968378895343662
+          regularizedPull: -2.543739347698294
+        - id: he4_b0411
+          prediction: 13.802105962807842
+          residual: -0.24632601462433712
+          regularizedPull: -1.88851364572899
+        - id: he4_b0416
+          prediction: 13.790960769323434
+          residual: -0.2513715219645061
+          regularizedPull: -2.1018641329165644
+        - id: he4_b0421
+          prediction: 13.783456043384675
+          residual: -0.3345767716101804
+          regularizedPull: -2.886680132064098
+        - id: he4_b0426
+          prediction: 13.780031940494696
+          residual: -0.3389944527887181
+          regularizedPull: -3.531553844245929
+        - id: he4_b0431
+          prediction: 13.768580651562562
+          residual: -0.3192190097350611
+          regularizedPull: -2.622481117177771
+        - id: he4_b0436
+          prediction: 13.762099452128844
+          residual: -0.29140718722905135
+          regularizedPull: -2.176933738753013
+        - id: he4_b0441
+          prediction: 13.766261359228576
+          residual: -0.4947914795257855
+          regularizedPull: -3.9052632048344837
+        - id: he4_b0446
+          prediction: 13.761840265110658
+          residual: -0.4033851327599969
+          regularizedPull: -3.0673615681932414
+        - id: he4_b0451
+          prediction: 13.75776968392668
+          residual: -0.3598152462005242
+          regularizedPull: -2.3211795407559803
+        - id: he4_b0456
+          prediction: 13.76920319648843
+          residual: -0.5086722121812084
+          regularizedPull: -3.9695182593399485
+        - id: he4_b0461
+          prediction: 13.759790834121246
+          residual: -0.2653144847279556
+          regularizedPull: -1.7157176390254256
+        - id: he4_b0466
+          prediction: 13.767568722621828
+          residual: -0.39762272170721147
+          regularizedPull: -2.5510664029539942
+        - id: he4_b0471
+          prediction: 13.764939899256174
+          residual: -0.8007194345070854
+          regularizedPull: -2.1863522934318227
+        - id: he4_b0476
+          prediction: 13.77184781779047
+          residual: -0.8137289379544832
+          regularizedPull: -2.4101067211399245
+        - id: he4_b0481
+          prediction: 13.794549331695073
+          residual: -1.0555718751484076
+          regularizedPull: -5.083105999996625
+        - id: he4_b0486
+          prediction: 13.792859699171654
+          residual: -0.7889946198046722
+          regularizedPull: -3.2418430802198857
+        - id: he4_b0491
+          prediction: 13.807230264994947
+          residual: -0.9127435555635515
+          regularizedPull: -4.069659841124933
+        - id: he4_b0496
+          prediction: 13.809381155486363
+          residual: -0.9325499352616724
+          regularizedPull: -3.150480936418985
+        maximumAbsoluteLOOPull: 39.28808061494398
+        maximumAbsoluteSupportPull: 36.076555012707715
+      sigma:
+        turningPointsR:
+        - 3.6052831096175275
+        minDenseValue: 0.5050591730283949
+        maxDenseValue: 2.967394555750057
+        leaveOneOut:
+        - id: he4_b0061
+          prediction: 2.9015656173330417
+          residual: 1.32159350396307
+          regularizedPull: 4.376745500371968
+        - id: he4_b0066
+          prediction: 2.726033240209447
+          residual: 1.2558576303357558
+          regularizedPull: 1.8539975510233908
+        - id: he4_b0071
+          prediction: 2.511634610896098
+          residual: 1.119895893488693
+          regularizedPull: 4.440910450027831
+        - id: he4_b0076
+          prediction: 2.3508658655862154
+          residual: 0.607590099024224
+          regularizedPull: 3.2563471252121596
+        - id: he4_b0081
+          prediction: 2.1980130818479666
+          residual: 0.5280008305306949
+          regularizedPull: 3.550318192454251
+        - id: he4_b0086
+          prediction: 2.0755789197279553
+          residual: 0.23027204153568803
+          regularizedPull: 1.9163886935855228
+        - id: he4_b0088
+          prediction: 2.0286237517425794
+          residual: 0.1754602722359233
+          regularizedPull: 1.5269143074010063
+        - id: he4_b0091
+          prediction: 1.9622297194981897
+          residual: 0.08540070566920965
+          regularizedPull: 0.8022231716896768
+        - id: he4_b0096
+          prediction: 1.8566875600766428
+          residual: -0.003970768068155328
+          regularizedPull: -0.04183234660829707
+        - id: he4_b0101
+          prediction: 1.7592083692426155
+          residual: -0.0682493323685811
+          regularizedPull: -0.7893542265659772
+        - id: he4_b0106
+          prediction: 1.6674166875564458
+          residual: -0.09453399224191816
+          regularizedPull: -1.1727148998557977
+        - id: he4_b0111
+          prediction: 1.5796511838085663
+          residual: -0.066710742816664
+          regularizedPull: -0.8590243426259861
+        - id: he4_b0116
+          prediction: 1.5005371521584228
+          residual: -0.06426019498331992
+          regularizedPull: -0.8685296111034778
+        - id: he4_b0121
+          prediction: 1.4272791645251548
+          residual: -0.05408633129503948
+          regularizedPull: -0.7670155094658975
+        - id: he4_b0126
+          prediction: 1.3597460040753666
+          residual: -0.04659419493546135
+          regularizedPull: -0.6855215566858992
+        - id: he4_b0131
+          prediction: 1.2976929108174111
+          residual: -0.04768749865268873
+          regularizedPull: -0.7369516379056473
+        - id: he4_b0136
+          prediction: 1.2400457576288428
+          residual: -0.045112538899218624
+          regularizedPull: -0.7282997708821487
+        - id: he4_b0141
+          prediction: 1.1873460547950665
+          residual: -0.06305188272978302
+          regularizedPull: -1.0768858622189297
+        - id: he4_b0146
+          prediction: 1.137751042740811
+          residual: -0.06354276927540425
+          regularizedPull: -1.134819009234754
+        - id: he4_b0151
+          prediction: 1.0912856398571347
+          residual: -0.05589513605000063
+          regularizedPull: -1.021670657319626
+        - id: he4_b0156
+          prediction: 1.0490932414457903
+          residual: -0.07486836183114243
+          regularizedPull: -1.4641353692208612
+        - id: he4_b0161
+          prediction: 1.009315566297979
+          residual: -0.08255135770574284
+          regularizedPull: -1.6674215940949584
+        - id: he4_b0166
+          prediction: 0.9707193710482332
+          residual: -0.048220602348839625
+          regularizedPull: -0.9591547841231527
+        - id: he4_b0171
+          prediction: 0.9359660396781662
+          residual: -0.054960276650376394
+          regularizedPull: -1.0743271859178236
+        - id: he4_b0176
+          prediction: 0.9027287041493
+          residual: -0.028502124356215686
+          regularizedPull: -0.5701009794957973
+        - id: he4_b0178
+          prediction: 0.8907697663728069
+          residual: -0.040393594186852066
+          regularizedPull: -0.8530840748631624
+        - id: he4_b0181
+          prediction: 0.8717229830349923
+          residual: -0.005545671531842933
+          regularizedPull: -0.11153955510116034
+        - id: he4_b0186
+          prediction: 0.8450226987799788
+          residual: -0.054065503047409647
+          regularizedPull: -1.238489936095443
+        - id: he4_b0191
+          prediction: 0.8181804441727003
+          residual: -0.05353586333175209
+          regularizedPull: -1.1350707981282864
+        - id: he4_b0196
+          prediction: 0.7924480205285123
+          residual: -0.018413331928150534
+          regularizedPull: -0.41556998071883955
+        - id: he4_b0201
+          prediction: 0.7688674194555775
+          residual: -0.006156323853717449
+          regularizedPull: -0.1346301278710498
+        - id: he4_b0206
+          prediction: 0.746698397273703
+          residual: 0.008818751469419128
+          regularizedPull: 0.21883771103614905
+        - id: he4_b0211
+          prediction: 0.7270355383252517
+          residual: -0.008986650305446098
+          regularizedPull: -0.20332253545325588
+        - id: he4_b0216
+          prediction: 0.709628224945265
+          residual: -0.04624829561721655
+          regularizedPull: -1.2000266413328977
+        - id: he4_b0221
+          prediction: 0.6898950665307726
+          residual: 0.007665926806927348
+          regularizedPull: 0.1936381378065309
+        - id: he4_b0226
+          prediction: 0.6733939900938756
+          residual: 0.006673660949917504
+          regularizedPull: 0.18307371429818492
+        - id: he4_b0231
+          prediction: 0.6589315760752692
+          residual: -0.02528030023450345
+          regularizedPull: -0.5512854298383143
+        - id: he4_b0236
+          prediction: 0.6433904671249232
+          residual: 0.020240896976437273
+          regularizedPull: 0.45363987956121476
+        - id: he4_b0241
+          prediction: 0.6304407248201409
+          residual: 0.003983222816756671
+          regularizedPull: 0.0982299710134458
+        - id: he4_b0246
+          prediction: 0.618740211649621
+          residual: -0.017233715946603168
+          regularizedPull: -0.4537480099627852
+        - id: he4_b0251
+          prediction: 0.6053437697238052
+          residual: 0.031717792235133935
+          regularizedPull: 0.8883650866558153
+        - id: he4_b0256
+          prediction: 0.5956918863288603
+          residual: 0.007228565943364074
+          regularizedPull: 0.15708414763401976
+        - id: he4_b0261
+          prediction: 0.5846467820142172
+          residual: 0.037157823425562286
+          regularizedPull: 1.00299254783292
+        - id: he4_b0266
+          prediction: 0.5750774098529605
+          residual: 0.04642661905697987
+          regularizedPull: 1.2955240730686557
+        - id: he4_b0271
+          prediction: 0.5672677261376975
+          residual: 0.05576498824695586
+          regularizedPull: 1.1137465149927404
+        - id: he4_b0276
+          prediction: 0.5595324214509855
+          residual: 0.046568642251891834
+          regularizedPull: 0.9961754973298992
+        - id: he4_b0281
+          prediction: 0.552315766344655
+          residual: 0.03356823421335098
+          regularizedPull: 0.8817192967232671
+        - id: he4_b0286
+          prediction: 0.5453507028569163
+          residual: 0.035724100887322474
+          regularizedPull: 1.09687133672132
+        - id: he4_b0291
+          prediction: 0.540116057660686
+          residual: 0.04820676166503901
+          regularizedPull: 0.8849140453158408
+        - id: he4_b0296
+          prediction: 0.5339334730633745
+          residual: 0.04499604529952439
+          regularizedPull: 1.268443575454791
+        - id: he4_b0301
+          prediction: 0.530266503279743
+          residual: 0.02198622932697958
+          regularizedPull: 0.32840496707254163
+        - id: he4_b0306
+          prediction: 0.5259125154570725
+          residual: 0.0049304676277768245
+          regularizedPull: 0.1392428394708426
+        - id: he4_b0311
+          prediction: 0.5206690212389762
+          residual: 0.04458209614643416
+          regularizedPull: 1.3169549517099033
+        - id: he4_b0316
+          prediction: 0.51830641427414
+          residual: 0.019020685564382633
+          regularizedPull: 0.43860068310051875
+        - id: he4_b0321
+          prediction: 0.5147372994830909
+          residual: 0.04472746740244482
+          regularizedPull: 1.0489885315046303
+        - id: he4_b0326
+          prediction: 0.511115475198279
+          residual: 0.06791239847061625
+          regularizedPull: 1.8669036603878553
+        - id: he4_b0331
+          prediction: 0.5087616742110167
+          residual: 0.06518160388342409
+          regularizedPull: 1.8871901197440806
+        - id: he4_b0336
+          prediction: 0.5085617039765414
+          residual: 0.024408193345992868
+          regularizedPull: 0.53860407989545
+        - id: he4_b0341
+          prediction: 0.50707538232719
+          residual: 0.023430686462912576
+          regularizedPull: 0.5354108867250588
+        - id: he4_b0346
+          prediction: 0.506368882454685
+          residual: 0.0036328893317485456
+          regularizedPull: 0.08361946827148704
+        - id: he4_b0351
+          prediction: 0.5053309064944076
+          residual: 0.011475127623696069
+          regularizedPull: 0.30323495175878334
+        - id: he4_b0356
+          prediction: 0.5047968380128621
+          residual: 0.05960725397803501
+          regularizedPull: 0.7501582851577011
+        - id: he4_b0361
+          prediction: 0.5055015454198225
+          residual: -0.018906934074900572
+          regularizedPull: -0.42771824176598333
+        - id: he4_b0366
+          prediction: 0.5046733308075197
+          residual: 0.046648457539465116
+          regularizedPull: 0.7174435633483395
+        - id: he4_b0371
+          prediction: 0.5059333282647553
+          residual: -0.009812769970453494
+          regularizedPull: -0.24306580706294575
+        - id: he4_b0376
+          prediction: 0.505319453312026
+          residual: 0.04963987843967832
+          regularizedPull: 0.9673815470997571
+        - id: he4_b0381
+          prediction: 0.507942090712181
+          residual: -0.016271492016546707
+          regularizedPull: -0.43445349730174526
+        - id: he4_b0386
+          prediction: 0.5082411087349205
+          residual: 0.009284280614305418
+          regularizedPull: 0.19721533183522008
+        - id: he4_b0391
+          prediction: 0.510347933798379
+          residual: -0.008847033552045191
+          regularizedPull: -0.23657008174928976
+        - id: he4_b0396
+          prediction: 0.5112850114414531
+          residual: 0.03400281221138657
+          regularizedPull: 0.4093619334077155
+        - id: he4_b0401
+          prediction: 0.5124736840604426
+          residual: 0.03754412651511696
+          regularizedPull: 0.7347909120427113
+        - id: he4_b0406
+          prediction: 0.5154835348798585
+          residual: 0.012858229472602178
+          regularizedPull: 0.1604895783097893
+        - id: he4_b0411
+          prediction: 0.5187033790159941
+          residual: -0.043306523431422606
+          regularizedPull: -0.6206054602817027
+        - id: he4_b0416
+          prediction: 0.5184357428231761
+          residual: 0.04534539596897791
+          regularizedPull: 1.0191896602832788
+        - id: he4_b0421
+          prediction: 0.5253713535212204
+          residual: -0.03818893767591813
+          regularizedPull: -0.934523917419681
+        - id: he4_b0426
+          prediction: 0.5271439977078596
+          residual: -0.03507444277216082
+          regularizedPull: -0.6043976534616046
+        - id: he4_b0431
+          prediction: 0.5312115266791373
+          residual: -0.0400882463777672
+          regularizedPull: -0.8707410927721763
+        - id: he4_b0436
+          prediction: 0.5366273629833548
+          residual: -0.10225074720208976
+          regularizedPull: -1.929893904401475
+        - id: he4_b0441
+          prediction: 0.5378493316024271
+          residual: -0.08446046898278464
+          regularizedPull: -1.1830365472638271
+        - id: he4_b0446
+          prediction: 0.542781122259115
+          residual: -0.08155108294772323
+          regularizedPull: -1.4534799620456353
+        - id: he4_b0451
+          prediction: 0.5400943594772105
+          residual: 0.07026231506801184
+          regularizedPull: 1.2169318502390256
+        - id: he4_b0456
+          prediction: 0.5517242148652184
+          residual: -0.10063454919060422
+          regularizedPull: -1.7943502009878534
+        - id: he4_b0461
+          prediction: 0.5539469537560817
+          residual: -0.06684265170239534
+          regularizedPull: -1.1253354613211772
+        - id: he4_b0466
+          prediction: 0.5624806651069492
+          residual: -0.10711704583350912
+          regularizedPull: -2.1658808840936
+        - id: he4_b0471
+          prediction: 0.561477893525859
+          residual: -0.20517246501886743
+          regularizedPull: -1.5655476721979191
+        - id: he4_b0476
+          prediction: 0.5644823831396941
+          residual: -0.15636181512838776
+          regularizedPull: -0.787735828578871
+        - id: he4_b0481
+          prediction: 0.5702182462185005
+          residual: -0.09565698272931528
+          regularizedPull: -0.9675270586956953
+        - id: he4_b0486
+          prediction: 0.5719260581466885
+          residual: 0.04078646264438923
+          regularizedPull: 0.4271609342637206
+        - id: he4_b0491
+          prediction: 0.5806231546532667
+          residual: -0.10201131742809655
+          regularizedPull: -1.163651824273066
+        - id: he4_b0496
+          prediction: 0.5851778565618151
+          residual: -0.14556328117013
+          regularizedPull: -1.2819764985900615
+        maximumAbsoluteLOOPull: 4.440910450027831
+        maximumAbsoluteSupportPull: 4.310749734684135
+      logRatio:
+        turningPointsR:
+        - 3.7320211944321353
+        minDenseValue: -0.29009965323044357
+        maxDenseValue: 0.08014994264017565
+        leaveOneOut:
+        - id: he4_b0061
+          prediction: -0.321821485074132
+          residual: 0.17586069542962837
+          regularizedPull: 1.1637552780363152
+        - id: he4_b0066
+          prediction: -0.26671485446793075
+          residual: 0.5030294455990981
+          regularizedPull: 1.3058564278789253
+        - id: he4_b0071
+          prediction: -0.2841876827292289
+          residual: 0.5781742678688779
+          regularizedPull: 3.6482484911043436
+        - id: he4_b0076
+          prediction: -0.2139596496502023
+          residual: 0.09286336204866984
+          regularizedPull: 0.7502332055393385
+        - id: he4_b0081
+          prediction: -0.17415486977719252
+          residual: -0.05869586410289601
+          regularizedPull: -0.5224296230458515
+        - id: he4_b0086
+          prediction: -0.15089000263205746
+          residual: -0.10185544825479534
+          regularizedPull: -0.9562758482406185
+        - id: he4_b0088
+          prediction: -0.13761890276503355
+          residual: -0.1771594204188677
+          regularizedPull: -1.6732798239290685
+        - id: he4_b0091
+          prediction: -0.13336099861579231
+          residual: -0.11628938906987166
+          regularizedPull: -1.10476181748685
+        - id: he4_b0096
+          prediction: -0.11936068294011937
+          residual: -0.09904794546217038
+          regularizedPull: -0.9489150891418582
+        - id: he4_b0101
+          prediction: -0.10518755519555689
+          residual: -0.09920140420968776
+          regularizedPull: -0.9461779291649018
+        - id: he4_b0106
+          prediction: -0.09593623260683645
+          residual: -0.016843211079950834
+          regularizedPull: -0.1603952306772897
+        - id: he4_b0111
+          prediction: -0.08262115255828974
+          residual: -0.031191263361978555
+          regularizedPull: -0.296855738753569
+        - id: he4_b0116
+          prediction: -0.0720448785757693
+          residual: -0.006091945218362288
+          regularizedPull: -0.05756217712527859
+        - id: he4_b0121
+          prediction: -0.057145801108922145
+          residual: -0.10435259607373229
+          regularizedPull: -0.9850103758978759
+        - id: he4_b0126
+          prediction: -0.05095065564562097
+          residual: -0.013160742309899554
+          regularizedPull: -0.12242614406285529
+        - id: he4_b0131
+          prediction: -0.042798016422358455
+          residual: 0.01439934179321527
+          regularizedPull: 0.13396670293593893
+        - id: he4_b0136
+          prediction: -0.03333458378105001
+          residual: -0.006834978650261246
+          regularizedPull: -0.06315607938838477
+        - id: he4_b0141
+          prediction: -0.02870935228036102
+          residual: 0.07534801648411615
+          regularizedPull: 0.6934504452100442
+        - id: he4_b0146
+          prediction: -0.020101405536087247
+          residual: 0.04626707548984797
+          regularizedPull: 0.4247364372739857
+        - id: he4_b0151
+          prediction: -0.012674333265783433
+          residual: 0.03531552309147797
+          regularizedPull: 0.31687639715672694
+        - id: he4_b0156
+          prediction: -0.006919916047113483
+          residual: 0.0524779677502223
+          regularizedPull: 0.47001834169179163
+        - id: he4_b0161
+          prediction: -0.000595390922511293
+          residual: 0.04626906615468122
+          regularizedPull: 0.40790825370767386
+        - id: he4_b0166
+          prediction: 0.008404919943728686
+          residual: -0.040869385790636856
+          regularizedPull: -0.35024614530642245
+        - id: he4_b0171
+          prediction: 0.010641117258246627
+          residual: 0.04705993029477114
+          regularizedPull: 0.3702326005113061
+        - id: he4_b0176
+          prediction: 0.014492240064487828
+          residual: 0.07218399025533695
+          regularizedPull: 0.6014741433408942
+        - id: he4_b0178
+          prediction: 0.016402680456768258
+          residual: 0.07090450600920462
+          regularizedPull: 0.5929654479856736
+        - id: he4_b0181
+          prediction: 0.01957864385699181
+          residual: 0.06503774463592188
+          regularizedPull: 0.5161685445666979
+        - id: he4_b0186
+          prediction: 0.023227294084707882
+          residual: 0.08029800857893296
+          regularizedPull: 0.6605038687232572
+        - id: he4_b0191
+          prediction: 0.02917785337926446
+          residual: 0.03596162145903431
+          regularizedPull: 0.246676321440596
+        - id: he4_b0196
+          prediction: 0.03251749353065931
+          residual: 0.043034229027155584
+          regularizedPull: 0.33458749828143913
+        - id: he4_b0201
+          prediction: 0.039363748458513946
+          residual: -0.0675261878967808
+          regularizedPull: -0.5214291641123506
+        - id: he4_b0206
+          prediction: 0.04270114430438849
+          residual: -0.05843350715811425
+          regularizedPull: -0.4888960364019215
+        - id: he4_b0211
+          prediction: 0.042471081690226335
+          residual: 0.051897529354955015
+          regularizedPull: 0.37766418441763755
+        - id: he4_b0216
+          prediction: 0.044777394277953374
+          residual: 0.07255283154215764
+          regularizedPull: 0.5414634379213361
+        - id: he4_b0221
+          prediction: 0.05131679392178673
+          residual: -0.06628897534931329
+          regularizedPull: -0.5068738342050074
+        - id: he4_b0226
+          prediction: 0.05433670702671654
+          residual: -0.07497508334634283
+          regularizedPull: -0.6037124510229854
+        - id: he4_b0231
+          prediction: 0.05317223409974463
+          residual: 0.08512974167161065
+          regularizedPull: 0.4718934395285293
+        - id: he4_b0236
+          prediction: 0.056534735722143514
+          residual: 0.006052599346188833
+          regularizedPull: 0.039413948258085967
+        - id: he4_b0241
+          prediction: 0.05749535905898838
+          residual: 0.058788374959539966
+          regularizedPull: 0.39332909301171115
+        - id: he4_b0246
+          prediction: 0.06170589458706162
+          residual: -0.0457731248489663
+          regularizedPull: -0.30790273934626683
+        - id: he4_b0251
+          prediction: 0.06332388842700744
+          residual: -0.027231318301039774
+          regularizedPull: -0.20989865842440897
+        - id: he4_b0256
+          prediction: 0.06597114926140805
+          residual: -0.11702242856425331
+          regularizedPull: -0.639795958356706
+        - id: he4_b0261
+          prediction: 0.06885679053611043
+          residual: -0.1355237289108374
+          regularizedPull: -0.901348375218492
+        - id: he4_b0266
+          prediction: 0.06923293596663879
+          residual: -0.07832836784392928
+          regularizedPull: -0.5401778180628158
+        - id: he4_b0271
+          prediction: 0.06768410977922176
+          residual: 0.07233416960891931
+          regularizedPull: 0.3650955448182666
+        - id: he4_b0276
+          prediction: 0.0690867091848632
+          residual: 0.06058129118223532
+          regularizedPull: 0.3054127178412377
+        - id: he4_b0281
+          prediction: 0.07546403456837078
+          residual: -0.20543607271682032
+          regularizedPull: -1.2463793332086532
+        - id: he4_b0286
+          prediction: 0.06574538327384857
+          residual: 0.22691376442455444
+          regularizedPull: 1.5616023260553191
+        - id: he4_b0291
+          prediction: 0.07275116822532073
+          residual: 0.0337527776797146
+          regularizedPull: 0.1542820509577431
+        - id: he4_b0296
+          prediction: 0.07025505667142823
+          residual: 0.1683524901654685
+          regularizedPull: 0.9914871574188773
+        - id: he4_b0301
+          prediction: 0.07323694674923027
+          residual: 0.16611979420616663
+          regularizedPull: 0.6391998071904078
+        - id: he4_b0306
+          prediction: 0.07861527076179656
+          residual: -0.13380992988595328
+          regularizedPull: -0.7279592322980812
+        - id: he4_b0311
+          prediction: 0.07256869644653433
+          residual: 0.11711109593038271
+          regularizedPull: 0.7603967193966323
+        - id: he4_b0316
+          prediction: 0.07862638395734946
+          residual: -0.10024809868060927
+          regularizedPull: -0.4421602818294342
+        - id: he4_b0321
+          prediction: 0.0776584936641104
+          residual: -0.003934223859996075
+          regularizedPull: -0.01866846479691999
+        - id: he4_b0326
+          prediction: 0.08234640439563413
+          residual: -0.17323277026474798
+          regularizedPull: -0.8940296306904874
+        - id: he4_b0331
+          prediction: 0.07131483712850062
+          residual: 0.2138243174686601
+          regularizedPull: 1.2514940029514343
+        - id: he4_b0336
+          prediction: 0.07923065501026835
+          residual: -0.01947330259803494
+          regularizedPull: -0.07936945039643153
+        - id: he4_b0341
+          prediction: 0.08055674035996208
+          residual: -0.0635013340896497
+          regularizedPull: -0.27681927184841143
+        - id: he4_b0346
+          prediction: 0.07612177010806918
+          residual: 0.14353101579659572
+          regularizedPull: 0.6404239299117883
+        - id: he4_b0351
+          prediction: 0.08228977149245736
+          residual: -0.10339995325206096
+          regularizedPull: -0.46120869863748504
+        - id: he4_b0356
+          prediction: 0.07154350114005242
+          residual: 0.3968759629372181
+          regularizedPull: 1.5780333872537382
+        - id: he4_b0361
+          prediction: 0.08570087609644804
+          residual: -0.2383902214378379
+          regularizedPull: -0.979741874469911
+        - id: he4_b0366
+          prediction: 0.0779846189439948
+          residual: 0.13097044333904861
+          regularizedPull: 0.4303162531201537
+        - id: he4_b0371
+          prediction: 0.08093249864479593
+          residual: -0.03393813937907848
+          regularizedPull: -0.12983725886096872
+        - id: he4_b0376
+          prediction: 0.07456580598498731
+          residual: 0.30598101250307297
+          regularizedPull: 1.007673967770712
+        - id: he4_b0381
+          prediction: 0.08652147447731877
+          residual: -0.1735880295070333
+          regularizedPull: -0.7908932283490586
+        - id: he4_b0386
+          prediction: 0.07660685815933625
+          residual: 0.10608157621475876
+          regularizedPull: 0.43945485333803064
+        - id: he4_b0391
+          prediction: 0.08367432651698936
+          residual: -0.08410026653465989
+          regularizedPull: -0.3983100818113379
+        - id: he4_b0396
+          prediction: 0.07407961264823461
+          residual: 0.27496730134704933
+          regularizedPull: 0.8637384000307103
+        - id: he4_b0401
+          prediction: 0.06437168702032924
+          residual: 0.5527425151869294
+          regularizedPull: 1.9493222187189811
+        - id: he4_b0406
+          prediction: 0.08090448102380046
+          residual: -0.1124538172220704
+          regularizedPull: -0.27044276836959563
+        - id: he4_b0411
+          prediction: 0.08050526152517037
+          residual: -0.10942835481098477
+          regularizedPull: -0.2461712019868072
+        - id: he4_b0416
+          prediction: 0.08601611488491591
+          residual: -0.2557488765685032
+          regularizedPull: -0.8406613890859544
+        - id: he4_b0421
+          prediction: 0.08144354342763749
+          residual: -0.1166506763662973
+          regularizedPull: -0.35112422378795344
+        - id: he4_b0426
+          prediction: 0.08378976771148337
+          residual: -0.20590660616328302
+          regularizedPull: -0.6326609652835969
+        - id: he4_b0431
+          prediction: 0.07596402256035881
+          residual: 0.07344417032641154
+          regularizedPull: 0.2173364913426895
+        - id: he4_b0436
+          prediction: 0.08712365282845412
+          residual: -0.6560346702882258
+          regularizedPull: -1.4178952365268307
+        - id: he4_b0441
+          prediction: 0.07268207723856912
+          residual: 0.2990179587021708
+          regularizedPull: 0.6343173434715478
+        - id: he4_b0446
+          prediction: 0.08144028343898804
+          residual: -0.22792432198354792
+          regularizedPull: -0.562035303394167
+        - id: he4_b0451
+          prediction: 0.09225158630411232
+          residual: -0.5066067299139856
+          regularizedPull: -1.5028726159450396
+        - id: he4_b0456
+          prediction: 0.07867879198051693
+          residual: -0.12182825798668868
+          regularizedPull: -0.30827649231821996
+        - id: he4_b0461
+          prediction: 0.09460807903232012
+          residual: -0.8508451764270368
+          regularizedPull: -2.049411259276856
+        - id: he4_b0466
+          prediction: 0.0839563714900924
+          residual: -0.38809961385080866
+          regularizedPull: -0.935333750401547
+        - id: he4_b0471
+          prediction: 0.07228995084171129
+          residual: 0.8522409061879667
+          regularizedPull: 0.6181898695803179
+        - id: he4_b0476
+          prediction: 0.07408425186633612
+          residual: -0.21209234789970466
+          regularizedPull: -0.14466721948236125
+        - id: he4_b0481
+          prediction: 0.059995791357559294
+          residual: 1.1617730691365822
+          regularizedPull: 1.8132686331445413
+        - id: he4_b0486
+          prediction: 0.07499566026000261
+          residual: -0.12548546522510412
+          regularizedPull: -0.2562724993975325
+        - id: he4_b0491
+          prediction: 0.07568012880604782
+          residual: -0.23351700974469866
+          regularizedPull: -0.4219909562552111
+        - id: he4_b0496
+          prediction: 0.06608946898526577
+          residual: 0.8064805454233522
+          regularizedPull: 0.8953763081652637
+        maximumAbsoluteLOOPull: 3.6482484911043436
+        maximumAbsoluteSupportPull: 3.2915068712982376
+    supportGapWarnings: []
+    gapMeaning: Unmeasured interpolation intervals, NOT production vetoes
+    extrapolationAllowed: false
+    qualityLabel: CANDIDATE_POLYNOMIAL_NOT_PRODUCTION_VALIDATED
+    coefficients:
+      mean:
+      - 40.9145808082415
+      - -105.75384230475788
+      - 132.76436540494475
+      - -52.86473906452967
+      sigma:
+      - 1.7643449959638302
+      - -4.522166877341583
+      - 4.059837649232425
+      logRatio:
+      - -0.11206510199435445
+      - 0.6721463270552142
+      - -0.5875979185066563

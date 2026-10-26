@@ -1,0 +1,20 @@
+{
+ "schemaVersion":1,"productionEnabled":false,"date":"2026-10-22",
+ "outputBase":"rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_he4_20261022_001",
+ "runtimeMainconf":"config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+ "referenceGit":"8f7d539","referenceHeader":"StMaker/common/NuclearIdDeDxVsMom.h",
+ "minimumRExclusive":0.61,"modelBoundary":0.8,"tofThreshold":2.0,"maximumR":5.0,
+ "boundaryConvention":"ALL bins [0.61,0.80) linear; [0.80,2.00) no smooth; TOF bins [2.00,5.00) linear, boundary point R=2 has zero measure; no gaps or duplication",
+ "regions":[{"name":"low_linear","background":"linear","sample":"ALL","rMin":0.61,"rMax":0.8,"components":["d","t","he3","he4"]},{"name":"low_none","background":"none","sample":"ALL","rMin":0.8,"rMax":2.0,"components":["d","t","he3","he4"]},{"name":"high_linear","background":"linear","sample":"TAG_D","rMin":2.0,"rMax":5.0,"components":["he4"]}],
+ "tofMass2":[3.268773,3.693147],"aggregateOrigin":0.4,"aggregateWidth":0.05,
+ "calibrationRMin":0.61,"calibrationRMax":3.5,"calibrationMaxLocalResidual":0.15,
+ "meanMaximumShiftOverOriginalSigma":0.5,"sigmaMaximumRelativeChange":0.2,
+ "auditRMin":0.61,"auditRMax":5.0,"auditGridCount":1001,
+ "calibrationWeight":"equal residual in original sigma; no purity maximization",
+ "purityThreshold":0.5,"workers":2,"displayRebinFactor":5,"figureDpi":200,
+ "representatives":{"low_linear":[0.615,0.645,0.795],"low_none":[0.805,1.205,1.605],"high_linear":[2.025,2.225,3.025]},
+ "errorPolicy":"Conditional yield error only; excludes shape, calibration and model uncertainty",
+ "targetShapePolicy":"He4 mean and sigma free in all regions; low-R He3 center retains user calibration and sigma free below 0.70; no He4 mean fixed",
+ "pidPolicy":"Git cubic mean and quadratic sigma for all; only He4 coefficients change, d/t/He3 and their validity domains exactly Git; He4 strict R>0.61",
+ "highPolicy":"He4 Gaussian plus nonnegative linear continuum only; other nuclear amplitudes disabled, not fitted or counted as contamination; does not establish physical absence of those nuclei"
+}

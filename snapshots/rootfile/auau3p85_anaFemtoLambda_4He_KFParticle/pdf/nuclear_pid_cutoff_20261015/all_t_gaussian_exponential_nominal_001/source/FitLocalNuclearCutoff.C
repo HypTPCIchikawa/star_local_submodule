@@ -1,0 +1,130 @@
+// Independent target-local fixed-response ALL fits; no joint counting across targets.
+void FitLocalNuclearCutoff(const char*,const char*,const char*,const char*,const char*);
+#ifndef __CINT__
+#include "NuclearFitCommon.h"
+#include "NuclearLognormalFitCommon.h"
+#include "TFile.h"
+#include "TH2.h"
+#include <set>
+namespace NuclearLocalCutoff {
+using NuclearFit::Settings;using NuclearFit::Vec;using NuclearFit::Require;
+using NuclearFit::Number;using NuclearFit::Integer;using NuclearFit::Text;
+using NuclearFit::Finite;using NuclearFit::Quote;
+const char* const Species[4]={"d","t","he3","he4"};
+inline const char* Boolean(bool x){return x?"true":"false";}
+inline void Scalar(std::ostream& o,double x){if(Finite(x))o<<x;else o<<"null";}
+inline bool Flag(int x){Require(x==0||x==1,"Boolean must be 0 or 1");return x!=0;}
+inline int SpeciesIndex(const std::string& x){for(int s=0;s<4;++s)if(x==Species[s])return s;return -1;}
+struct Choice {double mean,sigma;bool active;Choice():mean(0),sigma(1),active(false){} };
+struct Row {int index,rBin,node,species;double lo,hi,weight,r,mean,sigma,fitLo,fitHi;bool supported;Choice gate;};
+struct Slice {int index,rBin;double lo,hi,fitLo,fitHi;std::vector<Row> rows;};
+struct Interval {double lo,hi;Interval(double a=0,double b=0):lo(a),hi(b){} };
+typedef std::vector<Interval> Regions;
+inline int Select(const std::vector<Choice>& c,double x,double n){int best=-1;double d=n;for(int s=0;s<4;++s)if(c[s].active){double p=std::fabs((x-c[s].mean)/c[s].sigma);if(p<d){best=s;d=p;}}return best;}
+inline void Edge(Vec& v,double x,double lo,double hi){if(Finite(x)&&x>lo&&x<hi)v.push_back(x);}
+Regions SelectionRegions(const std::vector<Choice>& c,int target,double n,double lo,double hi){
+  Require(c.size()==4&&target>=0&&target<4&&n>0&&hi>lo,"Invalid selector");Vec v;v.push_back(lo);v.push_back(hi);
+  for(int a=0;a<4;++a)if(c[a].active){const Choice& x=c[a];Require(Finite(x.mean)&&Finite(x.sigma)&&x.sigma>0,"Invalid active gate");Edge(v,x.mean-n*x.sigma,lo,hi);Edge(v,x.mean+n*x.sigma,lo,hi);
+    for(int b=0;b<a;++b)if(c[b].active){const Choice& y=c[b];Edge(v,(y.sigma*x.mean+x.sigma*y.mean)/(y.sigma+x.sigma),lo,hi);if(y.sigma!=x.sigma)Edge(v,(y.sigma*x.mean-x.sigma*y.mean)/(y.sigma-x.sigma),lo,hi);}}
+  std::sort(v.begin(),v.end());v.erase(std::unique(v.begin(),v.end()),v.end());Regions r;
+  for(unsigned i=1;i<v.size();++i)if(v[i]>v[i-1]&&Select(c,.5*(v[i]+v[i-1]),n)==target){if(!r.empty()&&r.back().hi==v[i-1])r.back().hi=v[i];else r.push_back(Interval(v[i-1],v[i]));}return r;
+}
+std::vector<Slice> ReadInputs(const char* shapePath,const char* gatePath,double tol){
+  std::ifstream input(shapePath);Require(bool(input),"Missing shapes TSV");std::string line;Require(bool(std::getline(input,line))&&line=="index\trBin\trLo\trHi\tnode\tweight\trValue\tspecies\tmean\tsigma\tsupported\tfitLo\tfitHi","Wrong shapes header");
+  std::map<int,Slice> grouped;std::set<std::string> seen;
+  while(std::getline(input,line)){std::istringstream in(line);Row r;std::string species,extra;int supported;
+    Require(bool(in>>r.index>>r.rBin>>r.lo>>r.hi>>r.node>>r.weight>>r.r>>species>>r.mean>>r.sigma>>supported>>r.fitLo>>r.fitHi)&&!(in>>extra),"Malformed shape row");r.species=SpeciesIndex(species);r.supported=Flag(supported);
+    Require(r.index>=0&&r.rBin>=1&&r.node>=0&&r.node<3&&r.species>=0&&Finite(r.lo)&&Finite(r.hi)&&r.lo>0&&r.hi>r.lo&&Finite(r.r)&&r.r>r.lo&&r.r<r.hi&&Finite(r.weight)&&r.weight>0&&Finite(r.mean)&&Finite(r.sigma)&&r.sigma>0&&Finite(r.fitLo)&&Finite(r.fitHi)&&r.fitHi>r.fitLo,"Invalid shape/kernel geometry");
+    std::ostringstream key;key<<r.index<<':'<<r.node<<':'<<r.species;Require(seen.insert(key.str()).second,"Duplicate shape");Slice& s=grouped[r.index];if(s.rows.empty()){s.index=r.index;s.rBin=r.rBin;s.lo=r.lo;s.hi=r.hi;s.fitLo=r.fitLo;s.fitHi=r.fitHi;}
+    Require(s.rBin==r.rBin&&std::fabs(s.lo-r.lo)<tol&&std::fabs(s.hi-r.hi)<tol&&std::fabs(s.fitLo-r.fitLo)<tol&&std::fabs(s.fitHi-r.fitHi)<tol,"Inconsistent slice/window");s.rows.push_back(r);
+  }
+  Require(input.eof()&&!grouped.empty(),"Empty/unreadable shapes");std::vector<Slice> slices;std::map<int,unsigned> position;
+  for(std::map<int,Slice>::iterator it=grouped.begin();it!=grouped.end();++it){Slice& s=it->second;Require(s.rows.size()==12,"Exactly 3 nodes x 4 species required");std::sort(s.rows.begin(),s.rows.end(),[](const Row& a,const Row& b){return a.node*4+a.species<b.node*4+b.species;});double w=0;
+    for(int q=0;q<3;++q){const Row& r=s.rows[4*q];double midpoint=.5*(s.lo+s.hi),offset=std::sqrt(3./5.)*.5*(s.hi-s.lo),expectedR=midpoint+(q-1)*offset,expectedWeight=q==1?8./18.:5./18.;Require(r.node==q&&r.species==0&&std::fabs(r.r-expectedR)<tol&&std::fabs(r.weight-expectedWeight)<tol,"Noncanonical uniform-R GL3 node/weight");w+=r.weight;for(int k=0;k<4;++k){const Row& x=s.rows[4*q+k];Require(x.node==q&&x.species==k&&std::fabs(x.weight-r.weight)<tol&&std::fabs(x.r-r.r)<tol,"Species must share nodes/weights");}}
+    Require(std::fabs(w-1)<tol,"Weights do not sum to one");position[s.index]=slices.size();slices.push_back(s);
+  }
+  std::ifstream gates(gatePath);Require(bool(gates),"Missing gates TSV");Require(bool(std::getline(gates,line))&&line=="index\tnode\tspecies\tmean\tsigma\tactive","Wrong gates header");seen.clear();
+  while(std::getline(gates,line)){std::istringstream in(line);int index,node,active;std::string species,extra;Choice c;Require(bool(in>>index>>node>>species>>c.mean>>c.sigma>>active)&&!(in>>extra),"Malformed gate row");int k=SpeciesIndex(species);c.active=Flag(active);
+    Require(position.count(index)&&node>=0&&node<3&&k>=0&&Finite(c.mean)&&Finite(c.sigma)&&(!c.active||(c.mean>0&&c.sigma>0)),"Invalid gate row");std::ostringstream key;key<<index<<':'<<node<<':'<<k;Require(seen.insert(key.str()).second,"Duplicate gate");slices[position[index]].rows[4*node+k].gate=c;
+  }
+  Require(gates.eof()&&seen.size()==12*slices.size(),"Gate coverage mismatch");return slices;
+}
+struct GaussianEngine {typedef NuclearFit::Request Request;typedef NuclearFit::Result Result;typedef NuclearFit::Component Component;typedef NuclearFit::Node Node;typedef NuclearFit::Bin Bin;
+  static Result Fit(const Request& r,const Settings& s){return NuclearFit::Fit(r,s);}static double Integral(double a,double b,double m,double s){return NuclearFit::GaussianIntegral(a,b,m,s);}static double AcceptanceFloor(const Settings& s){return Number(s,"minimumGaussianAcceptance");} };
+struct LognormalEngine {typedef NuclearLognormalFit::Request Request;typedef NuclearLognormalFit::Result Result;typedef NuclearLognormalFit::Component Component;typedef NuclearLognormalFit::Node Node;typedef NuclearLognormalFit::Bin Bin;
+  static Result Fit(const Request& r,const Settings& s){return NuclearLognormalFit::Fit(r,s);}static double Integral(double a,double b,double m,double s){return NuclearLognormalFit::LognormalIntegral(a,b,m,s);}static double AcceptanceFloor(const Settings& s){return Number(s,"minimumResponseAcceptance");} };
+inline double OmittedBound(double observed,double localAcceptance,double axisAcceptance,bool& ratioAvailable){Require(Finite(observed)&&observed>=0&&Finite(localAcceptance)&&localAcceptance>=0&&Finite(axisAcceptance)&&axisAcceptance>=0,"Invalid omitted-response bound inputs");ratioAvailable=axisAcceptance>0;return ratioAvailable?observed*std::min(1.,std::max(0.,localAcceptance/axisAcceptance)):observed;}
+struct Estimate {Vec fractions,counts;double signal,total,purity,error,rawCount,rawLower,rawUpper,absoluteResidual,localResidual;bool available,errorAvailable,covered,axisCovered,identitySupport,boundaryTarget,boundaryYield,gateActive;
+  Estimate():signal(0),total(0),purity(0),error(0),rawCount(0),rawLower(0),rawUpper(0),absoluteResidual(0),localResidual(0),available(false),errorAvailable(false),covered(true),axisCovered(true),identitySupport(true),boundaryTarget(false),boundaryYield(false),gateActive(false){} };
+inline double Overlap(const Regions& r,double lo,double hi){double v=0;for(unsigned k=0;k<r.size();++k)v+=std::max(0.,std::min(hi,r[k].hi)-std::max(lo,r[k].lo));return std::min(1.,std::max(0.,v/(hi-lo)));}
+template<class E> Estimate Integrate(const typename E::Result& f,const typename E::Request& req,const Slice& slice,const TH1D& raw,int first,int target,double ns,double minimum,double tol,std::vector<Regions>* saved=0){
+  Estimate e;unsigned columns=f.columnWindowYields.size();e.fractions.assign(columns,0);e.counts.assign(columns,0);std::vector<Regions> regions(3);Vec weights(3);
+  for(int q=0;q<3;++q){weights[q]=slice.rows[4*q].weight;std::vector<Choice> choices(4);for(int s=0;s<4;++s)choices[s]=slice.rows[4*q+s].gate;
+    const Row& row=slice.rows[4*q+target];e.identitySupport=e.identitySupport&&row.supported;e.gateActive=e.gateActive||row.gate.active;
+    if(row.gate.active)e.axisCovered=e.axisCovered&&row.gate.mean-ns*row.gate.sigma>=req.nativeAxisMin&&row.gate.mean+ns*row.gate.sigma<=req.nativeAxisMax;
+    regions[q]=SelectionRegions(choices,target,ns,req.nativeAxisMin,req.nativeAxisMax);
+    for(unsigned k=0;k<regions[q].size();++k){const Interval& region=regions[q][k];if(region.lo<slice.fitLo-tol||region.hi>slice.fitHi+tol)e.covered=false;double lo=std::max(slice.fitLo,region.lo),hi=std::min(slice.fitHi,region.hi);if(!(hi>lo))continue;
+      for(int s=0;s<4;++s)if(f.components[s].active&&f.windowAcceptance[s]>0){const typename E::Node& node=f.components[s].nodes[q];e.fractions[s]+=weights[q]*E::Integral(lo,hi,node.mean,node.sigma)/f.windowAcceptance[s];}
+      for(unsigned j=4;j<columns;++j)e.fractions[j]+=weights[q]*NuclearFit::BackgroundIntegral(lo,hi,slice.fitLo,slice.fitHi,req.backgroundModel,f.backgroundSlope,j-4);
+    }
+  }
+  if(saved)*saved=regions;
+  for(int b=1;b<=raw.GetNbinsX();++b){double fraction=0,full=0,touch=0,lo=raw.GetBinLowEdge(b),hi=raw.GetXaxis()->GetBinUpEdge(b);
+    for(int q=0;q<3;++q){double overlap=Overlap(regions[q],lo,hi);fraction+=weights[q]*overlap;if(overlap>=1-tol)full+=weights[q];if(overlap>tol)touch+=weights[q];}
+    double n=raw.GetBinContent(b);e.rawCount+=fraction*n;e.rawLower+=full*n;e.rawUpper+=touch*n;if(b>=first&&b<first+int(f.totalCounts.size()))e.absoluteResidual+=fraction*std::fabs(n-f.totalCounts[b-first]);
+  }
+  e.localResidual=e.rawCount>0?e.absoluteResidual/e.rawCount:0;
+  for(unsigned j=0;j<columns;++j){Require(Finite(e.fractions[j])&&e.fractions[j]>=0&&e.fractions[j]<=1+tol,"Invalid selected fraction");e.counts[j]=e.fractions[j]*f.columnWindowYields[j];e.total+=e.counts[j];if(j==unsigned(target))e.signal=e.counts[j];if(e.fractions[j]>0&&j<f.yieldCovarianceColumnActive.size()&&!f.yieldCovarianceColumnActive[j])e.boundaryYield=true;}
+  e.boundaryTarget=unsigned(target)>=f.yieldCovarianceColumnActive.size()||!f.yieldCovarianceColumnActive[target];e.available=Finite(e.total)&&Finite(e.signal)&&e.total>minimum;if(e.available){e.purity=e.signal/e.total;Require(e.purity>=0&&e.purity<=1+tol,"Invalid purity");}
+  if(e.available&&!e.boundaryTarget&&f.yieldCovarianceValid&&f.fixedShapeYieldCovariance.size()==columns){Vec g(columns,0);double variance=0;for(unsigned j=0;j<columns;++j)g[j]=((j==unsigned(target)?e.fractions[j]*e.total:0)-e.signal*e.fractions[j])/(e.total*e.total);
+    for(unsigned j=0;j<columns;++j){Require(f.fixedShapeYieldCovariance[j].size()==columns,"Bad covariance dimensions");for(unsigned k=0;k<columns;++k)variance+=g[j]*f.fixedShapeYieldCovariance[j][k]*g[k];}e.errorAvailable=Finite(variance)&&variance>=0;if(e.errorAvailable)e.error=std::sqrt(variance);
+  }return e;
+}
+inline void WriteRegions(std::ostream& out,const std::vector<Regions>& r){out<<'[';for(unsigned q=0;q<r.size();++q){if(q)out<<',';out<<'[';for(unsigned k=0;k<r[q].size();++k){if(k)out<<',';out<<'['<<r[q][k].lo<<','<<r[q][k].hi<<']';}out<<']';}out<<']';}
+inline void WriteEstimate(std::ostream& out,const Estimate& e,bool numerical,const std::vector<Regions>& regions,double omittedUpper){
+  out<<"{\"signalSelected\":"<<e.signal<<",\"totalSelected\":"<<e.total<<",\"backgroundSelected\":"<<e.total-e.signal<<",\"purity\":";if(e.available)Scalar(out,e.purity);else out<<"null";out<<",\"conditionalError\":";if(e.errorAvailable)Scalar(out,e.error);else out<<"null";
+  out<<",\"omittedLocalYieldUpperBound\":"<<omittedUpper<<",\"purityLowerIncludingOmittedBound\":";if(e.available)Scalar(out,e.signal/(e.total+omittedUpper));else out<<"null";out<<",\"omissionBoundOverRawGateCount\":";if(e.rawCount>0)Scalar(out,omittedUpper/e.rawCount);else out<<"null";
+  out<<",\"rawGateCount\":"<<e.rawCount<<",\"rawGateCountLowerFullBins\":"<<e.rawLower<<",\"rawGateCountUpperTouchingBins\":"<<e.rawUpper<<",\"gateAbsoluteResidualCount\":"<<e.absoluteResidual<<",\"localResidualFrac\":";if(e.rawCount>0)Scalar(out,e.localResidual);else out<<"null";
+  out<<",\"identitySupport\":"<<Boolean(e.identitySupport)<<",\"identitySupportMeaning\":\"Caller supplied reference support, not independent isotope validation\",\"numericalValid\":"<<Boolean(numerical)<<",\"available\":"<<Boolean(e.available)<<",\"selectionCovered\":"<<Boolean(e.covered)<<",\"axisCovered\":"<<Boolean(e.axisCovered)<<",\"gateActive\":"<<Boolean(e.gateActive)<<",\"boundaryTarget\":"<<Boolean(e.boundaryTarget)<<",\"boundaryYieldPresent\":"<<Boolean(e.boundaryYield)<<",\"selectedColumnFractions\":";NuclearFit::WriteVec(out,e.fractions);out<<",\"selectedColumnCounts\":";NuclearFit::WriteVec(out,e.counts);out<<",\"gateIntervalsAtNodes\":";WriteRegions(out,regions);out<<'}';
+}
+template<class E> void SaveSpectra(TFile& file,TH1D& raw,const typename E::Request& req,const typename E::Result& fit,int first,int index,int rebin){
+  file.cd();Require(raw.Write()>0,"Cannot save native spectrum");TH1D* display=static_cast<TH1D*>(raw.Clone(Form("raw_display_%03d",index)));display->SetDirectory(0);display->Rebin(rebin);Require(display->Integral(0,display->GetNbinsX()+1)==raw.Integral(0,raw.GetNbinsX()+1),"Display rebin changed count");Require(display->Write()>0,"Cannot save display spectrum");delete display;
+  const char* names[]={"total","smooth","d","t","he3","he4","fit_mask"};
+  for(int part=0;part<7;++part){TH1D* h=static_cast<TH1D*>(raw.Clone(Form("prediction_%s_%03d",names[part],index)));h->SetDirectory(0);h->Reset();for(unsigned b=0;b<req.bins.size();++b){double value=0;if(part==6)value=1;else if(b<fit.totalCounts.size())value=part==0?fit.totalCounts[b]:(part==1?fit.smoothCounts[b]:fit.componentCounts[b][part-2]);h->SetBinContent(first+b,value);}Require(h->Write()>0,"Cannot save model spectrum");delete h;}
+}
+inline void Readback(const char* path,TH2& source,const std::vector<Slice>& slices,double tolerance){
+  TFile file(path,"READ");Require(!file.IsZombie()&&!file.TestBit(TFile::kRecovered),"Incomplete/recovered cutoff ROOT");
+  for(unsigned i=0;i<slices.size();++i){const Slice& slice=slices[i];TH1* raw=dynamic_cast<TH1*>(file.Get(Form("raw_native_%03d",slice.index)));TH1* total=dynamic_cast<TH1*>(file.Get(Form("prediction_total_%03d",slice.index)));TH1* mask=dynamic_cast<TH1*>(file.Get(Form("prediction_fit_mask_%03d",slice.index)));Require(raw&&total&&mask&&raw->GetNbinsX()==source.GetNbinsY(),"Incomplete readback spectra");TH1* parts[5];const char* names[]={"smooth","d","t","he3","he4"};for(int k=0;k<5;++k){parts[k]=dynamic_cast<TH1*>(file.Get(Form("prediction_%s_%03d",names[k],slice.index)));Require(parts[k]!=0,"Missing component spectrum");}
+    for(int b=0;b<=raw->GetNbinsX()+1;++b){double n=source.GetBinContent(slice.rBin,b),e=source.GetBinError(slice.rBin,b);Require(raw->GetBinContent(b)==n&&std::fabs(raw->GetBinError(b)-e)<=tolerance*std::max(1.,std::fabs(e)),"Readback changed native count/error/flow");double sum=0;for(int k=0;k<5;++k)sum+=parts[k]->GetBinContent(b);Require(Finite(sum)&&Finite(total->GetBinContent(b))&&std::fabs(sum-total->GetBinContent(b))<=tolerance*std::max(1.,std::fabs(sum)),"Readback component sum differs");Require(mask->GetBinContent(b)==0||mask->GetBinContent(b)==1,"Invalid readback mask");}
+  }file.Close();std::cout<<"NUCLEAR_CUTOFF_READBACK_PASS rows="<<slices.size()<<std::endl;
+}
+template<class E> void Run(const char* cachePath,const char* output,const Settings& cfg,const std::vector<Slice>& slices){
+  const double tol=Number(cfg,"axisTolerance"),ns=Number(cfg,"maxNSigma"),minimum=Number(cfg,"minimumPurityDenominator"),floor=E::AcceptanceFloor(cfg);const int target=SpeciesIndex(Text(cfg,"targetSpecies"));Require(tol>0&&ns>0&&minimum>=0&&floor>0&&target>=0,"Invalid explicit local purity criteria/target");Require(Text(cfg,"sampleHistogram")=="ALL","Cutoff purity requires exact unselected ALL");
+  TString folder(output);Require(!gSystem->AccessPathName(folder),"Output directory must be provenance-prepared");const char* products[]={"cutoff_fits.json","cutoff_fits.root","purity.tsv"};for(int j=0;j<3;++j)Require(gSystem->AccessPathName(folder+"/"+products[j]),"Existing product will not be replaced");
+  TFile cache(cachePath,"READ");Require(!cache.IsZombie()&&!cache.TestBit(TFile::kRecovered),"Cannot read intact native cache");TH2* source=dynamic_cast<TH2*>(cache.Get("ALL"));Require(source!=0,"Missing ALL histogram");
+  TFile product(folder+"/cutoff_fits.root","CREATE");Require(!product.IsZombie(),"Cannot CREATE spectra");std::ofstream json((folder+"/cutoff_fits.json").Data()),table((folder+"/purity.tsv").Data());Require(bool(json)&&bool(table),"Cannot create tables");json<<std::setprecision(17);table<<std::setprecision(17);
+  json<<"{\"schemaVersion\":1,\"responseModel\":"<<Quote(Text(cfg,"responseModel"))<<",\"backgroundModel\":"<<Quote(Text(cfg,"backgroundModel"))<<",\"targetSpecies\":"<<Quote(Text(cfg,"targetSpecies"))<<",\"fitWindowPolicy\":\"Explicit shared target-local window; all nuclear nuisance tails retained unless below mathematical acceptance floor\",\"sampleHistogram\":\"ALL\",\"productionEnabled\":false,\"fullUncertaintyValidated\":false,\"responsePolicy\":\"Fixed native-R projected TOF responses transferred to ALL, not intrinsic detector width or independently validated identity\",\"likelihoodPolicy\":\"ALL only; no TAG double counting; overlapping target-local fits are not independent data\",\"gatePolicy\":\"Fixed explicit TPC gate, strict nsigma and d<t<he3<he4 best-species ties; uniform native-R GL3\",\"rawGateCountPolicy\":\"Fractional native-dEdx-bin overlap approximation with full-bin/touching-bin bounds; no event-level re-selection\",\"errorPolicy\":\"Interior-yield covariance conditional on fixed response and BG slope; external model/transfer variations required\",\"slices\":[";
+  table<<"index\trBin\trLo\trHi\tspecies\tsignalSelected\ttotalSelected\tpurity\tconditionalError\trawGateCount\tlocalResidualFrac\tidentitySupport\tnumericalValid\tboundaryTarget\tselectionCovered\taxisCovered\n";std::set<int> used;
+  for(unsigned i=0;i<slices.size();++i){const Slice& slice=slices[i];Require(used.insert(slice.rBin).second&&slice.rBin<=source->GetNbinsX()&&std::fabs(source->GetXaxis()->GetBinLowEdge(slice.rBin)-slice.lo)<tol&&std::fabs(source->GetXaxis()->GetBinUpEdge(slice.rBin)-slice.hi)<tol&&std::fabs(slice.hi-slice.lo-Number(cfg,"nativeRigidityBinWidth"))<tol,"R slices must be exact unique native bins");
+    TH1D* raw=source->ProjectionY(Form("raw_native_%03d",slice.index),slice.rBin,slice.rBin,"e");raw->SetDirectory(0);const int first=raw->FindBin(slice.fitLo+tol),last=raw->FindBin(slice.fitHi-tol),rebin=Integer(cfg,"displayDedxRebinFactor");Require(first>=1&&last>=first&&last<=raw->GetNbinsX()&&rebin>0&&raw->GetNbinsX()%rebin==0&&(first-1)%rebin==0&&last%rebin==0&&std::fabs(raw->GetBinLowEdge(first)-slice.fitLo)<tol&&std::fabs(raw->GetXaxis()->GetBinUpEdge(last)-slice.fitHi)<tol,"Fit window is not exact native/display bounds");
+    typename E::Request request;request.nativeAxisMin=raw->GetXaxis()->GetXmin();request.nativeAxisMax=raw->GetXaxis()->GetXmax();request.backgroundModel=Text(cfg,"backgroundModel");request.backgroundSlope=Number(cfg,"backgroundStartSlope");request.freeBackgroundSlope=Flag(Integer(cfg,"freeBackgroundSlope"));
+    for(int b=0;b<=raw->GetNbinsX()+1;++b){double n=raw->GetBinContent(b),v=std::pow(raw->GetBinError(b),2);Require(Finite(n)&&n>=0&&Finite(v)&&std::fabs(v-n)<=Number(cfg,"countVarianceRelativeTolerance")*std::max(1.,n),"Cache count/error/flow is not Poisson-type");if(b>=1&&b<=raw->GetNbinsX())Require(std::fabs(raw->GetBinWidth(b)-Number(cfg,"nativeDedxBinWidth"))<tol,"Unexpected dEdx width");if(b>=first&&b<=last)request.bins.push_back(typename E::Bin(raw->GetBinLowEdge(b),raw->GetXaxis()->GetBinUpEdge(b),n));}
+    Vec acceptance(4,0),axisAcceptance(4,0),omittedUpper(4,0);std::vector<bool> omissionRatioAvailable(4,true);int active=0;double inAxisCount=raw->Integral(1,raw->GetNbinsX()),omittedSum=0;
+    for(int s=0;s<4;++s){typename E::Component c;c.name=Species[s];c.mean=slice.rows[4+s].mean;c.sigma=slice.rows[4+s].sigma;c.freeMean=false;c.freeSigma=false;for(int q=0;q<3;++q){const Row& row=slice.rows[4*q+s];c.nodes.push_back(typename E::Node(row.weight,row.mean,row.sigma));acceptance[s]+=row.weight*E::Integral(slice.fitLo,slice.fitHi,row.mean,row.sigma);axisAcceptance[s]+=row.weight*E::Integral(request.nativeAxisMin,request.nativeAxisMax,row.mean,row.sigma);}c.active=Finite(acceptance[s])&&acceptance[s]>floor;if(c.active)++active;else{bool ratio;omittedUpper[s]=OmittedBound(inAxisCount,acceptance[s],axisAcceptance[s],ratio);omissionRatioAvailable[s]=ratio;omittedSum+=omittedUpper[s];}request.components.push_back(c);}
+    double count=0;for(unsigned b=0;b<request.bins.size();++b)count+=request.bins[b].count;const int bg=request.backgroundModel=="linear"?2:1;double per=count/(active+bg);for(int s=0;s<4;++s)request.components[s].startWindowYield=request.components[s].active?per:0;request.backgroundWindowYield=per*bg;
+    typename E::Result fit;std::string failure;try{fit=E::Fit(request,cfg);}catch(const std::exception& e){failure=e.what();}bool numerical=failure.empty()&&request.components[target].active&&fit.finite&&fit.amplitudeConverged&&fit.pointAccepted&&fit.status==0&&!fit.atBoundary;
+    SaveSpectra<E>(product,*raw,request,fit,first,slice.index,rebin);
+    if(i)json<<',';json<<"{\"index\":"<<slice.index<<",\"rBin\":"<<slice.rBin<<",\"lo\":"<<slice.lo<<",\"hi\":"<<slice.hi<<",\"r\":"<<.5*(slice.lo+slice.hi)<<",\"fitLo\":"<<slice.fitLo<<",\"fitHi\":"<<slice.fitHi<<",\"fitCount\":"<<count<<",\"observedNativeInAxisCount\":"<<inAxisCount<<",\"omittedLocalYieldUpperBoundSum\":"<<omittedSum<<",\"omissionBoundPolicy\":\"ALL in-axis count times local/axis response acceptance; unknown ratio uses worst-case entire ALL count\",\"fitFailure\":"<<Quote(failure)<<",\"numericalValid\":"<<Boolean(numerical)<<",\"status\":"<<fit.status<<",\"amplitudeConverged\":"<<Boolean(fit.amplitudeConverged)<<",\"amplitudeKktResidual\":";Scalar(json,fit.amplitudeKkt);json<<",\"backgroundSlope\":";Scalar(json,fit.backgroundSlope);json<<",\"atBoundary\":"<<Boolean(fit.atBoundary)<<",\"dataDeviance\":";Scalar(json,fit.dataDeviance);json<<",\"pearson\":";Scalar(json,fit.pearson);json<<",\"conditionalNdf\":"<<fit.conditionalNdf<<",\"columnWindowYields\":";NuclearFit::WriteVec(json,fit.columnWindowYields);json<<",\"components\":{";
+    for(int s=0;s<4;++s){if(s)json<<',';json<<Quote(Species[s])<<":{\"mean\":"<<slice.rows[4+s].mean<<",\"sigma\":"<<slice.rows[4+s].sigma<<",\"active\":"<<Boolean(request.components[s].active)<<",\"responseWindowAcceptance\":"<<acceptance[s]<<",\"responseAxisAcceptance\":"<<axisAcceptance[s]<<",\"omittedLocalYieldUpperBound\":"<<omittedUpper[s]<<",\"omissionRatioAvailable\":"<<Boolean(omissionRatioAvailable[s])<<",\"dropReason\":"<<Quote(request.components[s].active?"":"local_window_acceptance_below_declared_mathematical_floor")<<",\"selection\":";Estimate estimate;std::vector<Regions> regions;if(fit.components.size()==4&&fit.columnWindowYields.size()>=4&&fit.totalCounts.size()==request.bins.size())estimate=Integrate<E>(fit,request,slice,*raw,first,s,ns,minimum,tol,&regions);else{estimate.identitySupport=false;estimate.covered=false;estimate.axisCovered=false;}WriteEstimate(json,estimate,numerical,regions,omittedSum);json<<'}';
+      table<<slice.index<<'\t'<<slice.rBin<<'\t'<<slice.lo<<'\t'<<slice.hi<<'\t'<<Species[s]<<'\t'<<estimate.signal<<'\t'<<estimate.total<<'\t';if(estimate.available)table<<estimate.purity;else table<<"nan";table<<'\t';if(estimate.errorAvailable)table<<estimate.error;else table<<"nan";table<<'\t'<<estimate.rawCount<<'\t'<<estimate.localResidual<<'\t'<<estimate.identitySupport<<'\t'<<numerical<<'\t'<<estimate.boundaryTarget<<'\t'<<estimate.covered<<'\t'<<estimate.axisCovered<<'\n';}
+    json<<"}}";std::cout<<"NUCLEAR_CUTOFF_SLICE index="<<slice.index<<" R="<<.5*(slice.lo+slice.hi)<<" numerical="<<numerical<<std::endl;delete raw;
+  }
+  json<<"],\"executionIsNotPhysicalValidation\":true}\n";json.close();table.close();product.Close();Readback((folder+"/cutoff_fits.root").Data(),*source,slices,Number(cfg,"countVarianceRelativeTolerance"));cache.Close();std::cout<<"NUCLEAR_CUTOFF_COMPLETE rows="<<slices.size()<<std::endl;
+}
+}
+#endif
+void FitLocalNuclearCutoff(const char* cachePath,const char* output,const char* settings,const char* shapes,const char* gates){
+#ifndef __CINT__
+  try{NuclearFit::Settings cfg=NuclearFit::ReadSettings(settings);std::vector<NuclearLocalCutoff::Slice> slices=NuclearLocalCutoff::ReadInputs(shapes,gates,NuclearFit::Number(cfg,"axisTolerance"));std::string model=NuclearFit::Text(cfg,"responseModel");if(model=="gaussian")NuclearLocalCutoff::Run<NuclearLocalCutoff::GaussianEngine>(cachePath,output,cfg,slices);else if(model=="lognormal")NuclearLocalCutoff::Run<NuclearLocalCutoff::LognormalEngine>(cachePath,output,cfg,slices);else NuclearFit::Require(false,"Unknown response model");}catch(const std::exception& e){std::cerr<<"FitLocalNuclearCutoff: "<<e.what()<<std::endl;gSystem->Exit(2);}
+#endif
+}

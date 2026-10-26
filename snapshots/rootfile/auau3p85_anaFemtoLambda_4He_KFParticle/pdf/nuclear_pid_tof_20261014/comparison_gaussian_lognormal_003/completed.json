@@ -1,0 +1,28 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "inputFingerprintPreserved": true,
+  "protectedSourcesPreserved": true,
+  "rows": 1760,
+  "nativeFitPairs": 1320,
+  "pdfReadbackGeometryValid": true,
+  "products": {
+    "comparison_settings.json": "802f5e9918c1802701d63a51794280af914c510f0ed5f0b8795a4175d2516487",
+    "comparison.tsv": "3d13a6296e49e321a0dfe4758b2ca96e6c9f03d4589ac45ca7234727a8b6fc25",
+    "comparison.json": "66d8e338a36ab804cac40b1aca4474748f9ead22dc03033f423d968005311f58",
+    "settings.tsv": "b8e4d8766874e72e9eef3ae7eda5e905b5547ccc32f8fb43b29874f65d41c95c",
+    "command.json": "2a66f33515d5d9f774394a18b5e5411ba627ec45d12d6921bd052e124c9cec48",
+    "root.log": "970849e548a0c92eae4357949b16d9f20ae24a975907cf58f2a4bbfe1a8a0054",
+    "response_parameters.pdf": "3a0f401906e9a1b62177a9e6db6ab531e4aa9377e44ace124d9aab345a777481",
+    "comparison_display_inputs.root": "360ed24fd3d171ca70a48ab000162a5c4c211c158f01c1add819e2707947efc2",
+    "saved_spectra_overlays.pdf": "7e70848f8adaf135d1c98beea293597e5d9d55ee68dfd56abca379a3c6967cc8",
+    "native_comparison_audit.json": "9e963a4edc5d805c6b7ff34bc22d2d39089ae2df9563744b7f71a274b9e57e23",
+    "pdf_geometry.json": "08f00f4a67f556267e2e9f6118460a817c30395662d76d2523780e74208d3f35",
+    "response_parameters_page1.png": "57cd37fe5017b32dabd5dd4e9e9116bdb2d3ff8375cc17070a87055f97199144",
+    "saved_spectra_overlays_page1.png": "70511e06d088c05b6c59d5f03d183c3ccabf623cea67307a318bc8710526378a",
+    "README.md": "03e0c7c2f7f1f4310b43b3f56476a6adcbe38cca60e8fb8bac031b49ef6642b9"
+  },
+  "completedJst": "2026-10-14T17:28:18.706517+09:00"
+}

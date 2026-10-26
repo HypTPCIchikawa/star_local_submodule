@@ -1,0 +1,26 @@
+# Stored-output QA only: not a production mainconf and not an efficiency study.
+# All unlisted selection parameters remain exactly as recorded in the KF ROOT.
+schemaVersion: 1
+helixRoot: rootfile/auau13p5_anaLambda/local_compare_10000_20260907.root
+kfRoot: rootfile/auau13p5_anaLambda_KFParticle/Imp5/local_compare_10000_20260908.root
+inputEvents: 10000
+massMin: 1.05
+massMax: 1.25
+massBinWidth: 0.001
+window: [1.110, 1.122]
+narrowWindow: [1.112, 1.120]
+leftSideband: [1.098, 1.106]
+rightSideband: [1.126, 1.134]
+nearLeftSideband: [1.100, 1.108]
+nearRightSideband: [1.124, 1.132]
+farLeftSideband: [1.094, 1.102]
+farRightSideband: [1.130, 1.138]
+# Windows are half-open [low, high); background is sideband counts times width ratio.
+# Negative PV distance means disabled; this changes only the additional Maker cut.
+maxDistanceToPv: [0.5, 0.6, 0.75, 0.8, 1.0, 1.5, 2.0, 3.0, 5.0, -1.0]
+maxDaughterDistance: [0.5, 0.6, 0.75, 1.0, 1.25, 1.5]
+minCosPointing: [0.998, 0.997, 0.995, 0.99, 0.98, 0.95]
+includeThreeDimensionalGrid: true
+# Candidate count, including background, is the requested matching proxy.
+# S/B is NEVER used to choose a representative point.
+representativeRule: nearest_window_count_then_fewest_changed_parameters

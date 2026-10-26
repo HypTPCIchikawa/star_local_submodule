@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "error": "Expected exactly one immutable original-PID node table",
+  "productionEnabled": false,
+  "coefficientsUpdated": false,
+  "purityAvailable": false
+}

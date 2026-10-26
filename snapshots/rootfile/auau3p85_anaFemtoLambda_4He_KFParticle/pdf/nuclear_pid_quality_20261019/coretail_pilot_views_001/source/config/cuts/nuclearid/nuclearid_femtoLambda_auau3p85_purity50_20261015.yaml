@@ -1,0 +1,58 @@
+# Opt-in profile from the 2026-10-15 TPC-only cutoff study (written 2026-10-17 JST).
+# Source: pdf/nuclear_pid_cutoff_20261015/adopted_ranges_001/adopted_ranges.json
+# Model-envelope purity >= 0.5 was assessed in 0.05 GeV/c bins for inclusive QA.
+# This is not a per-pair purity guarantee or a true signal-efficiency measurement.
+# Keep the studied TPC response, nSigma and best-species gates unchanged.
+nuclearMinNHitsDedx: 15
+nuclearMinPt: 0.1
+nSigmaFill1D: 1.5
+nSigmaExclude: 2.0
+maxNSigmaNuclear: 2.0
+m2SigmaCut: 1.5
+m2_selection: false
+minP_M2cut: 0.2
+minM2_M2cut: 0.01
+maxM2_M2cut: 10.0
+maxPOverQ: 2.5
+requireBestSpecies: true
+nuclearMassDeuteron: 1.87561
+nuclearMassTriton: 2.80892
+nuclearMassHe3: 2.80839
+nuclearMassHe4: 3.72742
+nuclearTofMeanDeuteron: 3.48096
+nuclearTofSigmaDeuteron: 0.141458
+nuclearTofMeanTriton: 7.76906
+nuclearTofSigmaTriton: 0.341755
+nuclearTofMeanHe3: 1.92385
+nuclearTofSigmaHe3: 0.094
+dedxCalibration:
+  enabled: true
+  calibrationFile: calibration/dedx_helium_auau3p85_2021P24iy_from040.yaml
+speciesMinPOverQ:
+  d: 0.65
+  t: 0.80
+  he3: 0.75
+  he4: 0.70
+# Reject after choosing the original best TPC hypothesis; never reassign species.
+# Veto intervals are [min,max). Unassessed fits are not measured low purity.
+speciesPOverQVeto:
+  d:
+    - {min: 1.45, max: 1.50}
+    - {min: 1.70, max: 2.00}
+  t:
+    - {min: 1.35, max: 1.40}
+  he3: []
+  he4:
+    - {min: 0.85, max: 0.95}
+    - {min: 1.75, max: 1.80}
+highRigidityTof:
+  enabled: true
+  thresholdPOverQ: 2.0
+  # Preserve only the existing explicit He4 extension; other species keep R < 2.5.
+  extendHe4BeyondMaxPOverQ: true
+  species:
+    # Raw (m/q)^2 windows, strict bounds. R < 2 remains TPC-only.
+    d: {mass2Min: 3.268773, mass2Max: 3.693147}
+    t: {mass2Min: 7.2564275, mass2Max: 8.2816925}
+    he3: {mass2Min: 1.78285, mass2Max: 2.06485}
+    he4: {mass2Min: 3.0, mass2Max: 4.0}

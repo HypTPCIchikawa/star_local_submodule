@@ -1,0 +1,52 @@
+# Adopted high-purity Lambda selection: 3.85 GeV beam-energy Au+Au FXT.
+# Source: rootfile/auau3p85_anaLambda_KFParticle/purity_upstream_20260928/
+#         configs/frozen/best50_kf.yaml (10k discovery, independent 100k validation).
+# 100k sideband estimate: purity 97.7295%, background-subtracted signal retention 53.9924%.
+# Report: mdfiles/kfparticle/comparisons/lambda_kf_upstream_purity_20260928.md
+# All effective KF parameters are explicit, including disabled optional bounds,
+# to preserve these cuts if code defaults change. Event/centrality remain separate.
+# This new preset does not change existing mainconf files or legacy defaults.
+schemaVersion: 2
+backend: finder_topo
+selectionProfile: lambda_imp5
+pidProfile: pico_nsigma
+
+# Original daughter selection; distances/path lengths in cm.
+imp5MinDCAProton: 1.0
+imp5MinDCAPion: 2.5
+imp5MaxPathLength: 100.0
+minNHitsFit: 25
+minNHitsRatio: 0.52
+useHftTracksOnly: false
+nSigmaProton: 3.0
+nSigmaPion: 3.0
+useTof: false
+strictTofPid: false
+cleanKaonsWithTof: false
+rejectBadCovariance: true
+maxPositionVariance: 100.0
+maxMomentumVariance: 1.0
+
+# Interface / Finder / Topo reconstruction gates.
+interfaceChiPrimaryCut: 3.0
+finderMaxDaughterDistance: 1.5
+finderLCut: 1.0
+finderChiPrimary2D: 3.0
+finderChi2Ndf2D: 10.0
+finderLdL2D: 3.0
+topoChi2NdfCut: 3.0
+applyLambdaGeometryCuts: true
+
+# Final Maker selection. Negative optional bounds mean disabled.
+minMass: 1.05
+maxMass: 1.25
+maxMassError: -1.0
+maxChi2Ndf: -1.0
+maxTopoChi2Ndf: -1.0
+maxDaughterDistance: 0.5
+maxDistanceToPv: 0.5
+minDecayLength: -1.0
+minDecayLengthSignificance: 10.0
+minVertexLineSignificance: -1.0
+minCosPointing: 0.998
+reconstructAntiLambda: false

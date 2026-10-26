@@ -1,0 +1,112 @@
+{
+  "input": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/auau13p5_anaFemtoLambda_4He_KFParticle_2020P24iy_partial_merge.root",
+    "size": 241812808,
+    "mtime_ns": 1790851183247704527,
+    "device": 48,
+    "inode": 964703165
+  },
+  "settings": {
+    "schemaVersion": 1,
+    "histogram": "true/hDedxP",
+    "selectedHistogram": "true/hDedxP_4He",
+    "rigidityMin": 0.4,
+    "rigidityMax": 2.5,
+    "rigidityStep": 0.01,
+    "dedxRebinFactor": 5,
+    "gateNSigma": 2.0,
+    "fitNSigmaMin": -7.0,
+    "fitNSigmaMax": 4.0,
+    "minimumFitCounts": 1000,
+    "minimumGateCounts": 100,
+    "signalMeanShiftMax": 0.8,
+    "signalSigmaMin": 0.35,
+    "signalSigmaMax": 1.8,
+    "neighborMeanShiftMax": 1.6,
+    "neighborSigmaFactorMin": 0.35,
+    "neighborSigmaFactorMax": 2.5,
+    "fitAmplitudeLimitFactor": 20.0,
+    "signalBoundaryErrorRatio": 0.01,
+    "exponentialSlopeMin": -3.0,
+    "exponentialSlopeMax": 3.0,
+    "maximumChi2Ndf": 5.0,
+    "maximumRelativePurityError": 0.2,
+    "models": [
+      "linear",
+      "exponential"
+    ],
+    "fitPanelsPerPage": 4,
+    "plotLogY": true,
+    "peakSearchEnabled": 1,
+    "peakSearchMinRigidity": 0.5,
+    "peakSearchMaxRigidity": 0.85,
+    "signalSearchMeanMin": -3.0,
+    "signalSearchMeanMax": 1.0,
+    "signalSearchMeanStep": 0.4,
+    "signalLowMeanMin": -3.2,
+    "signalLowMeanMax": 1.5,
+    "signalLowSigmaMin": 0.35,
+    "signalLowSigmaMax": 2.2,
+    "neighborTailNSigma": 3.0,
+    "minimumSignalNeighborSeparation": 0.8,
+    "signalNullComparison": 1,
+    "minimumSignalDeltaAic": 10.0,
+    "minimumSignalSignificance": 5.0,
+    "peakSmoothingHalfWidth": 0.1,
+    "peakContrastHalfWidth": 0.5,
+    "minimumPeakRelativeProminence": 0.01,
+    "calibrationCandidateMinRigidity": 0.5,
+    "calibrationCandidateMaxRigidity": 2.5,
+    "calibrationCandidateMeanDegree": 3,
+    "calibrationCandidateSigmaDegree": 2,
+    "calibrationCandidateMinimumKnots": 20,
+    "samples": {
+      "3p85": {
+        "mainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+        "input": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+        "sourceSummary": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json",
+        "label": "Au+Au FXT: 3.85 GeV beam energy | 2021 P24iy | inclusive accepted events",
+        "output": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity"
+      },
+      "13p5": {
+        "mainconf": "config/mainconf/main_auau13p5_anaFemtoLambda_4He_KFParticle.yaml",
+        "input": "rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/auau13p5_anaFemtoLambda_4He_KFParticle_2020P24iy_partial_merge.root",
+        "sourceSummary": "rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/run_state.json",
+        "label": "Au+Au FXT: 13.5 GeV beam energy | 2020 P24iy | inclusive accepted events",
+        "output": "rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity"
+      }
+    }
+  },
+  "sample": "13p5",
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau13p5_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "7d74a9f738d723ceb7aa6f00d3d039c90616a8ea868241d59d9369057a06c5d6",
+  "source_summary": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/run_state.json",
+  "source_summary_sha256": "4288e9a0ed94e76cebf2d74c44fc33829c89fe9ee0b19a11c5eb4828b0a5ab22",
+  "sources": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/source/tools/he4_purity/FitHe4Purity.C": "6b664ce5ea97e62314ea7786ac85d4a444e643ef7f74cb8e95291ece885a8c70",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/source/tools/he4_purity/run_purity.py": "efebcc646a3c7250919cfd7eb18b72b6be86e0c7234b8be1a5c13f42e2def89b",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/source/tools/he4_purity/calibration_candidates.py": "73f4bb4e04950c06ee9ff94b88e688d72b48d46ced859444e944556b2fe82bf7"
+  },
+  "created_jst": "2026-10-13T13:24:55.249294+09:00",
+  "note": "TPC-only charge-inclusive, inclusive centrality; existing ROOT has no joint TOF/best-species axes.",
+  "postprocessing_repair": {
+    "reason": "Host NumPy import failed: unavailable libgfortran.so.3. Candidate polynomial publication now uses standard-library least squares.",
+    "root_refit": false,
+    "fit_products_unchanged": {
+      "purity.json": "dc959a30442388dfdceb033703c77be7aeba490b300672edaae192d0e016fa86",
+      "purity.csv": "21d284c78bb4b26255e6fe62a99f0adde2f41cf0d70314947d8558d13d39a06b",
+      "he4_fits.root": "a01c5b70cac54627b5ad363e539b9e1e3d64be0d548ac2d825aac40a5d52f7d8",
+      "he4_fits.pdf": "2bb838ae88666c24b6834dc4c1ff4ae41c2843509cae1c942b7d05b923bad963",
+      "he4_fits_linear.pdf": "512d2007e737d04639c64db90a900662554f292c5e88a003d24ae5815c314329",
+      "he4_purity.pdf": "a2061b139bc1e7a135da35191d81b370ece11c5a8fb9e7e4ae2245b1a0cdd793",
+      "he4_background_models.pdf": "570d923d26db20d4a5aebc895fd75b07c37b95648cbfc9cfd1a21a428bde0b8d"
+    },
+    "preserved_sources": {
+      "context.json": "831e0459cbbf0d7292163646459a5bfed3dbe157c390d6995185d35fd2c886ee",
+      "source/tools/he4_purity/run_purity.py": "2f6c0471b3cecac3d88de4e1757a4868a78df15bfb59921f3cde637944d91955",
+      "source/tools/he4_purity/calibration_candidates.py": "1a1f1f45788cb6346e0d85bfadd0f490dbb630c25469c5697232730efe8fdf04"
+    },
+    "resumed_jst": "2026-10-13T13:33:49.690472+09:00"
+  }
+}

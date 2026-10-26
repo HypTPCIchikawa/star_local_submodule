@@ -1,0 +1,87 @@
+STAR解析 To do（2026年10月17日、日本時間）
+
+対象：Au+Au FXT 3.85 GeV、2021 P24iyのみ。
+原子核：d、t、3He、4He。KFParticle Lambda–原子核Femto解析の核PID study。
+
+1. 高p/q領域のTOF選択後purity
+   R=|p/q|>2 GeV/cについて、m2を要求した後のpurityを見積もる。
+   現行設定はR>=2でTOF必須。d/t/3HeのR<2.5上限と4Heだけの高R拡張を区別する。
+   d/t/3Heは既存TOF中心±1.5sigma。
+   当初4Heは既存の3<m2<4を想定したが、下記のユーザー追加決定で今回のstudy条件を更新する。
+   【追加決定】4Heもdと同じ3.268773<m2<3.693147で評価する。
+   dと4Heはm2=(m/q)^2では区別できないため、同じTOF窓内のdE/dx分布で分ける。
+   評価中は旧解析YAMLの4He窓3<m2<4を保持。その窓の正確なpurityは未評価。
+   後続の全4核種本番適用指示により、新しい本番profileでは4Heもd同一m2窓を明示して採用する。
+   保存ヒストグラムの実m2窓・TPC選択前後・範囲・来歴を確認する。
+   TOFを要求しただけでpurity=1とせず、TPC nsigma/best-species窓の目的核種比率を評価する。
+   fit未収束・背景モデル差・核種帰属・統計の未検証を区別する。
+   必要な同時分布が未保存なら、異なるm2窓を代用した確定値を示さず相談する。
+
+2. 低R結果との統合
+   既存のR<2のTPC-only結果と、高RのTPC+TOF結果を合わせたpurityのまとめを作る。
+   参照元：
+   rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/purity_cutoff_overview.pdf
+   低Rの80実行と元PDFは保持し、条件差・使用範囲・未評価点を明記した統合PDFを別名で保存する。
+
+3. p/q区間ごとの1次元fit結果集
+   概要PDFとは別に、各p/qのdE/dxヒストグラムとfit結果をまとめたPDFを出力する。
+   核種・R区間・応答/背景モデル・支持/未評価を確認できるように整理する。
+   全dE/dxの広い範囲とfit領域、linear/logの両表示を用意する。
+   保存済みnative fit区間を都合よく抜き出さず、全区間を掲載する。
+   大きい場合は核種・R範囲で分冊し、索引を付ける。
+
+4. 記録と保護
+   本ディレクトリのREADME/実施報告を随時更新する。
+   明示mainconf・STAR SL24y/ROOT5のbatch一致環境で実行し、ソース・設定・ログを保存する。
+   元ROOT、旧PDF、旧本番設定、PID係数は保持する。
+   新規batch投入、実データのhadd、メール、git commit/pushは今回実施しない。
+   新規オブジェクトの加算検証用toy haddのみ、別出力で実施した。
+
+5. 追加指令：新旧PIDパラメータ比較
+   TOFとdEdxの粒子選定について、今回再推定したものと既存値の差を表示する。
+   dEdxの中心・幅・選択帯を重ね、中心差と幅比も示す。
+   TOF m2窓の新旧を比較し、再fitした量か既存値の維持かを区別する。
+   4Heの今回study窓はdと同じ。旧本番3<m2<4との違いを明記する。
+
+6. 追加指令：本番cutoff
+   purityが0.5を下回る運動量領域は本番解析でも原子核を選ばない。
+   核種別下限・vetoの実装を確認し、独立study設定だけでなく3.85 GeV本番入口にも検証済み範囲を反映する。
+   未評価と低purityを区別し、無理に補間しない。旧設定への切り戻しを残す。
+   最終mainconfでbatch一致build・回帰・短い実イベント試験を行う。
+   他エネルギーや本番jobの投入は今回対象にしない。
+
+   【適用範囲の追加確認】ユーザー回答：全4核種の本番入口を共通校正・cutoffへ揃える。
+   d/t/3Heの旧専用入口はlegacy校正なので、共通校正への変更とTPC競合判定の差も比較・回帰試験する。
+
+7. 追加指令：k*領域ごとの原子核purity用TH2
+   anaFemtoLambda_4He（KFParticle）に、4Heおよび3Heのk* vs nSigma、k* vs raw p/qを追加する。
+   既存と同じcentrality、SE/ME、Lambda signal/sidebandの区別を保つ。
+   既存CF・候補選択・mixingを変えずに診断ヒストを追加し、軸・候補段階・名前を記録する。
+   【追加承認済】通常選択後＋PID前の両方を保存する。PID前候補は診断専用で既存CFへ入れない。
+   【追加承認済】TH2二枚に加え(k*,p/q,nSigma)の同時分布を疎形式でも保存する。
+   cent9、SE/ME、元核種、Lambda質量区分、PID段階を識別可能にし、保存容量と実行時間も検証する。
+   PID前候補で物理mixingのイベント保存判定を変えないよう、通常候補storeから分離する。
+   既存統合ROOTへ後付けでは作れないため、今後再解析した出力から利用できるよう実装・検証する。
+
+進捗（随時更新）
+・高R全native1800fit＋4He coarse240fit、全4モデルの最終集約が完了。
+  d/t/3Heは[2,2.5)、4Heは[2,3.2)が検証を通過。4He [3.2,5)は未評価であり低purity確定ではない。
+・低R＋高Rの統合PDF完成。元低RのPDFは変更せず末尾へ収録。
+・低R全native32冊2560頁・高R全区間24冊840頁が完成し、全冊読戻し・頁数・SHAを検査済み。
+・新旧PID比較の最終23頁が完成。4He coarseを分離し、読戻し・頁数・目視を確認済み。
+・共通本番YAML、5入口の参照切替、5戻し用prePurity20261017入口を保存済み。
+  設定の独立照合・349869項目の境界回帰・batch一致build・全5入口各20event読戻しがPASS。
+  各20入力/20再構成/選択Lambda=1、閉ROOTのraw核QA Entries=1648、domain metadataも一致。
+・追加TH2＋prePID＋8D sparseの実装とROOT5 buildが完了。
+  同じ20eventのQA off/onで旧690hist・2tree完全一致、新1080TH2＋joint87Entriesを確認。
+  容量stress0/10万/100万bin、および同一入力×2のtoy-only ROOT5haddもPASS。
+  合成入力の全閉包・pool不変試験もPASS。正式先はtoys_005/completed.json。
+  非ゼロの通常CFを使った補足pool_nonzero_001もPASS（通常SE=1、ME=3）。
+  旧cutoff検証のsnapshotは別に保持。今回の依頼項目1〜7は実装・検証・記録を完了。
+
+次回の本番投入・大規模統合前に必要な確認（今回job投入はしない）
+・既存自動merge監査はTH1限定で新Sparse未対応。SparseのEntriesだけでなく座標別内容/誤差²の検査を追加する。
+・1〜数入力ファイル規模でSparse占有bin・worker RSS・出力サイズを測る。20event/人工gridの結果を全統計へ比例外挿しない。
+・現在のjointにはmT軸なし。mT別核purityが必要な場合は追加保存と再解析を別途検討する。
+・詳細と正確な出力リンクはreport_highrigidity_purity_20261017.mdに記載。
+・本日の日報はanalysisnote/20261017/summary20261017.mdに保存。完了事項・各資料へのリンク・次回手順を整理した。

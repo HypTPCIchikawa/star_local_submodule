@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "executionComplete": true,
+  "productionEnabled": false,
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "results": {
+    "wide": {
+      "passed": true,
+      "checks": 100123,
+      "macroSha256": "0b0ad2ac748d4c9e96aacbe62fd32755776d65f5a4f56009d67cf7b146f7e074",
+      "testSha256": "2d45d1104cee7cf638cc13d60f0c3f68bfad6c1e5789c8ee2ba0fc6f09bcf570"
+    },
+    "local_fixed": {
+      "passed": true,
+      "checks": 100127,
+      "macroSha256": "f24692786e4aebd6a1e4422fb7972e6af82d2141a3f4628a1a34bfb7afa2b811",
+      "testSha256": "2f401c00bd5fadcec893620ed5919a87145bbff73085e80b539a803b36fece2b"
+    },
+    "local_free": {
+      "passed": true,
+      "checks": 100154,
+      "macroSha256": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+      "testSha256": "1b542168214ab3f7e9f3750d2a29c194bcf85fbe19a5e319644de08e7e163efb"
+    }
+  },
+  "products": {
+    "wide/FitNuclearCutoff.C": "0b0ad2ac748d4c9e96aacbe62fd32755776d65f5a4f56009d67cf7b146f7e074",
+    "wide/SelfTestNuclearCutoff.C": "2d45d1104cee7cf638cc13d60f0c3f68bfad6c1e5789c8ee2ba0fc6f09bcf570",
+    "wide/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "wide/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "wide/run.log": "db3786f08a0a4882c45249aaf7fdf600ffac195d820946d3419a199dbef6e751",
+    "local_fixed/FitLocalNuclearCutoff.C": "f24692786e4aebd6a1e4422fb7972e6af82d2141a3f4628a1a34bfb7afa2b811",
+    "local_fixed/SelfTestLocalNuclearCutoff.C": "2f401c00bd5fadcec893620ed5919a87145bbff73085e80b539a803b36fece2b",
+    "local_fixed/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "local_fixed/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "local_fixed/run.log": "6144ad5908452a82a1eab62ee5d5042f1b94775558509407469c96f302512ed0",
+    "local_free/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "local_free/SelfTestLocalNuclearCutoff.C": "1b542168214ab3f7e9f3750d2a29c194bcf85fbe19a5e319644de08e7e163efb",
+    "local_free/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "local_free/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "local_free/run.log": "4af510b9c8362ab98cd9c655ec3a2dc2e6d50a762198d9d1b7d441d51eaac5a6"
+  },
+  "scope": "Numerical fixture tests only, not isotope identity or physics validation"
+}

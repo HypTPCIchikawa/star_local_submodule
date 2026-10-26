@@ -1,0 +1,27 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "seconds": 3.750412940979004,
+  "historicalSource": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001",
+  "historicalSourceSha256": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/summarize_cutoff.py": "501215863c5719178f81ad0415b643b3c93bc730b894ad6d54d16932e19270ad",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/highrigidity/run_coarse.py": "48ad601f9c7b7ef745134a0caee160bd7707f9a54cb1ba46a689151ea27376c7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/highrigidity/FitHighRigidity.C": "f6f312df34f4061018462e4750bf13db16e6739b2a14553a6ec5ec6407cc3d65",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_cutoff/highrigidity/run_highrigidity.py": "3a027eaea670ebef1b463ca114393f94474fd37177722d9d030ca3fd27dfd03e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_tof/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_tof/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_native_he4_lognormal_linear_001/source/tools/nuclear_pid_tof/runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e"
+  },
+  "reproductionChecks": [],
+  "products": {
+    "cutoff_fits.json": "197cb9836ec25c15caad56f8eb8e5105a8e4c244da3cdfbd640789c791f2cb4e",
+    "cutoff_fits.root": "ab18362b907312559da7e79b53351759687fda0769a2f7dbd9b04d41ce847b94",
+    "gates.tsv": "cf6836312d2e2e14d5af500ad932a25dc9a92c56c353f1d0476a2f772ac65377",
+    "shapes.tsv": "db80bc838e0f5bbcbcc4ae474810c1f9b258bb628e0a302ab3d37919c77fe1b7",
+    "settings.tsv": "40389f19f507852e405ba38a463bfbe767216d972a1ec5903a8612ebceb3ffcf"
+  }
+}

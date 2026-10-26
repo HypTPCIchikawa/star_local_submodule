@@ -1,0 +1,27 @@
+STAR解析今後のTo do
+
+To do 20161013の解析で、4Heのp/q vs dEdxの改善について、
+調べたが、既存のなんの選択もしていないp/q vs dEdxだけでは、
+Fitが難しいことがわかった。
+
+true/hDedxP_d_m2	d用のTOF窓（⁴Heも通る）
+true/hDedxP_t_m2	t用のTOF窓
+true/hDedxP_3He_m2	³He用のTOF窓
+
+のヒストがあるようなので、
+このヒストとm2を選んでないhDedxP
+のヒストを組み合わせて、Fit関数をブラッシュアップしていきたい。
+
+これまで、m2を選んでないhDedxPで無理やりFitしていたので、
+高統計の3.85 GeVのroot fileで、
+true/hDedxP_d_m2	d用のTOF窓（⁴Heも通る）と
+true/hDedxP_3He_m2	³He用のTOF窓
+を選んだ時の分布で、SNが良い状況で、p/qが小さい領域において、
+どこまでeventがあり、Fitして、各原子核においてp/q vs dEdxの関数形が作れるのかを
+調べ、その関数形をもとに、m2を選択していないhDedxPのヒストを使って、
+これまでと同様にp/qでスライスして、dEdxに対してFitを行い、purityがどの程度かを
+調べてください。
+また、この方法で、求められるp/q vs dEdxの関数形におけるp/qの加減も求めてください。
+4Heだけでなく、d, t, 3He, 4Heを包括的に調べて欲しいです。
+既存の解析コードに使用しているp/q vs dEdxのパラメータは大体あってそうですが、
+厳密には正しくなさそうなので、updateしたいです。

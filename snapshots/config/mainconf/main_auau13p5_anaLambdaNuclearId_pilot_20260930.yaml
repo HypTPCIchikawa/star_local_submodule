@@ -1,0 +1,12 @@
+# 2026-09-30 farm pilot: physics settings unchanged from the legacy mainconf.
+event: cuts/event/event_auau13p5_anaLambdaNuclearId.yaml
+track: cuts/track/track_auau13p5_anaLambdaNuclearId.yaml
+pid: cuts/pid/pid_auau13p5_anaLambdaNuclearId.yaml
+v0: cuts/v0reco/v0_auau13p5_anaLambdaNuclearId.yaml
+mixing: cuts/mixing/mixing_auau13p5_anaLambdaNuclearId.yaml
+centrality: cuts/centrality/centrality_auau13p5_anaLambdaNuclearId.yaml
+nuclearid: cuts/nuclearid/nuclearid_auau13p5_anaLambdaNuclearId.yaml
+lambda: maker/maker_auau13p5_anaLambda.yaml
+lambdaHist: hist/hist_auau13p5_anaLambda.yaml
+hist: hist/hist_auau13p5_anaLambdaNuclearId.yaml
+analysis: analysis/analysis_info_auau13p5_anaLambdaNuclearId_pilot_20260930.yaml

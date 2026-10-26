@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "productionEnabled": false,
+  "noNewFit": true,
+  "oldConfiguredBasis": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001",
+  "oldBasis": "Immutable snapshot only; live mainconf never used as old reference.",
+  "fitInputs": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/pid_parameter_comparison.pdf": "4760fa87af3a9912e640e6e7b8ac3803e52bed9af1e117f40adc2f84fe64ce28",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/response_curves.tsv": "7e0a771098b8025073254be9c10bbdd5f5027ade9c94090de2e02bf42d15eb0c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/completed.json": "4e7baec8d15696ef1ca34feceda0c848bb87aa058e6ca8e768010afa37a36689",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/tools/nuclear_pid_cutoff/ComparePIDSelections.C": "f3ac0c6135a6f60e3a131b68b9d215b9d0aeb256cb6168a1cee100282d9d0262",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/tools/nuclear_pid_cutoff/compare_pid_selections.py": "2a8b1b4d39735cd29fb7c555bf77994291bbd18e2132b308687f4a8782f06cc9",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/tools/nuclear_pid_cutoff/pid_comparison_settings.yaml": "86f9b38d9cb30260c319a5467c83a8335f6ba78f812f833d2948dc188605fb1b",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/tools/nuclear_pid_tof/runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml": "090183642df74f0a0fc0d01c268b554c27921989fe717d7a5a0468b7218f9f87",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/config/cuts/nuclearid/nuclearid_femtoLambda_auau3p85_calibrated_tofExtended.yaml": "c282f58899784dd63b4d045f2b91cfdae99dd8589671673da83f50d9ba961653",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/config/cuts/nuclearid/nuclearid_femtoLambda_auau3p85_purity50_20261015.yaml": "648ad5db04dec508e3f1a0d6da3d37ae4fd4b7f7ada108d752ee8d770123b479",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/config/cuts/nuclearid/nuclearid_femtoLambda_legacy.yaml": "e34959034a5c0b7f05724f35a9a5bb7649ba52b57126b218ea3f26543f6910a3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/config/cuts/nuclearid/nuclearid_femtoLambda_auau3p85_calibrated.yaml": "ee2f4c9a86affdce5d4ceffcf3926b3f542143bad2fe4a000494c5c60c2ad4bf",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/config/calibration/dedx_helium_auau3p85_2021P24iy_from040.yaml": "0b6b1bd97b6e3caf752c1b5213407deacd7d0897307442c1202ba10df115bfc1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/pid_parameter_comparison_20261017_001/source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/inputs/native_parameters.tsv": "96c98eb7309e1aaba5e82d0474d01dfe5fee58e550906425e80a858a7cf8eedc",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/completed.json": "07d04de34c81fbcb503bb3aaee97c7ad9cb12f1dc7efe41f693f798ceefcfc8a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_001/native_parameters.tsv": "f7acc859fc2b276d5528f7deb95d7ee9ad066581c960df2e52f92c06fc13425a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_001/completed.json": "ee8baa21c146d55099707e63fe4c85b3dedb36c1b5cdfee3d2797ebce5b05b75",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_summary_001/native_parameters.tsv": "c43784de87eb4b9c63acf13b2cabc5514d44e4dd887bfce7a38c2984f2c03ea6",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/coarse_summary_001/completed.json": "c65e8c4b53389870d957a190c09817a01da36f4589239224be25fb293f48e152"
+  },
+  "regions": [
+    "low_ALL",
+    "high_native_TOF",
+    "high_coarse_TOF"
+  ],
+  "lowSample": "ALL before TOF selection",
+  "highSample": "preTPC TOF-tagged histogram, He4 study uses D window",
+  "widthMeaning": "Gaussian mean/std vs lognormal mode/local-curvature width; projected response, not adopted intrinsic calibration.",
+  "plotQuality": "Numerical and fit-response precision screen; gray points fail target identity/reference screen. Neither status implies full purity support.",
+  "ratioError": "Diagonal fit-parameter approximation; center-width covariance and configured-response uncertainty not included.",
+  "noOriginalRootRead": true,
+  "noM2CacheRead": true,
+  "coverage": [
+    {
+      "region": "low_ALL",
+      "species": "d",
+      "label": "gaussian_linear_nominal",
+      "total": 160,
+      "plotted": 150,
+      "identitySupported": 143,
+      "medianCenterPull": -0.013363119298015144,
+      "medianWidthRatio": 0.9623368975695812
+    },
+    {
+      "region": "low_ALL",
+      "species": "d",
+      "label": "gaussian_exponential_nominal",
+      "total": 160,
+      "plotted": 154,
+      "identitySupported": 148,
+      "medianCenterPull": -0.03103954893714208,
+      "medianWidthRatio": 0.9190561166858551
+    },
+    {
+      "region": "low_ALL",
+      "species": "d",
+      "label": "lognormal_linear_nominal",
+      "total": 160,
+      "plotted": 154,
+      "identitySupported": 145,
+      "medianCenterPull": 0.05807451357065446,
+      "medianWidthRatio": 0.9573275040933598
+    },
+    {
+      "region": "low_ALL",
+      "species": "d",
+      "label": "lognormal_exponential_nominal",
+      "total": 160,
+      "plotted": 159,
+      "identitySupported": 150,
+      "medianCenterPull": 0.05560677398618411,
+      "medianWidthRatio": 0.9181004071140041
+    },
+    {
+      "region": "low_ALL",
+      "species": "t",
+      "label": "gaussian_linear_nominal",
+      "total": 160,
+      "plotted": 157,
+      "identitySupported": 134,
+      "medianCenterPull": -0.019173153476736975,
+      "medianWidthRatio": 0.8694662588037161
+    },
+    {
+      "region": "low_ALL",
+      "species": "t",
+      "label": "gaussian_exponential_nominal",
+      "total": 160,
+      "plotted": 156,
+      "identitySupported": 132,
+      "medianCenterPull": -0.0030828082117810287,
+      "medianWidthRatio": 0.8594191807519276
+    },
+    {
+      "region": "low_ALL",
+      "species": "t",
+      "label": "lognormal_linear_nominal",
+      "total": 160,
+      "plotted": 160,
+      "identitySupported": 133,
+      "medianCenterPull": 0.0684600510623288,
+      "medianWidthRatio": 0.8613269977094845
+    },
+    {
+      "region": "low_ALL",
+      "species": "t",
+      "label": "lognormal_exponential_nominal",
+      "total": 160,
+      "plotted": 160,
+      "identitySupported": 133,
+      "medianCenterPull": 0.08823858574860804,
+      "medianWidthRatio": 0.8439387013951916
+    },
+    {
+      "region": "low_ALL",
+      "species": "he3",
+      "label": "gaussian_linear_nominal",
+      "total": 160,
+      "plotted": 153,
+      "identitySupported": 149,
+      "medianCenterPull": 0.07167133167381257,
+      "medianWidthRatio": 0.9299119296798956
+    },
+    {
+      "region": "low_ALL",
+      "species": "he3",
+      "label": "gaussian_exponential_nominal",
+      "total": 160,
+      "plotted": 150,
+      "identitySupported": 144,
+      "medianCenterPull": 0.07768366725922375,
+      "medianWidthRatio": 0.9211808271923472
+    },
+    {
+      "region": "low_ALL",
+      "species": "he3",
+      "label": "lognormal_linear_nominal",
+      "total": 160,
+      "plotted": 153,
+      "identitySupported": 150,
+      "medianCenterPull": 0.11972627456166189,
+      "medianWidthRatio": 0.9235920547349709
+    },
+    {
+      "region": "low_ALL",
+      "species": "he3",
+      "label": "lognormal_exponential_nominal",
+      "total": 160,
+      "plotted": 152,
+      "identitySupported": 146,
+      "medianCenterPull": 0.1284691166127365,
+      "medianWidthRatio": 0.9174108101168647
+    },
+    {
+      "region": "low_ALL",
+      "species": "he4",
+      "label": "gaussian_linear_nominal",
+      "total": 160,
+      "plotted": 151,
+      "identitySupported": 145,
+      "medianCenterPull": 0.0005179285332607588,
+      "medianWidthRatio": 1.0487815774697016
+    },
+    {
+      "region": "low_ALL",
+      "species": "he4",
+      "label": "gaussian_exponential_nominal",
+      "total": 160,
+      "plotted": 151,
+      "identitySupported": 144,
+      "medianCenterPull": -0.019404843887825814,
+      "medianWidthRatio": 0.9922280378358275
+    },
+    {
+      "region": "low_ALL",
+      "species": "he4",
+      "label": "lognormal_linear_nominal",
+      "total": 160,
+      "plotted": 152,
+      "identitySupported": 144,
+      "medianCenterPull": 0.058406247368644144,
+      "medianWidthRatio": 1.0521349405611469
+    },
+    {
+      "region": "low_ALL",
+      "species": "he4",
+      "label": "lognormal_exponential_nominal",
+      "total": 160,
+      "plotted": 151,
+      "identitySupported": 144,
+      "medianCenterPull": 0.037685648462817634,
+      "medianWidthRatio": 0.9960134651256596
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "d",
+      "label": "gaussian_linear_nominal",
+      "total": 100,
+      "plotted": 100,
+      "identitySupported": 100,
+      "medianCenterPull": 0.23808308300696351,
+      "medianWidthRatio": 0.9538151701558546
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "d",
+      "label": "gaussian_exponential_nominal",
+      "total": 100,
+      "plotted": 100,
+      "identitySupported": 100,
+      "medianCenterPull": 0.23804138948326198,
+      "medianWidthRatio": 0.9309404577802878
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "d",
+      "label": "lognormal_linear_nominal",
+      "total": 100,
+      "plotted": 100,
+      "identitySupported": 100,
+      "medianCenterPull": 0.3395775942828221,
+      "medianWidthRatio": 0.9529940745656047
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "d",
+      "label": "lognormal_exponential_nominal",
+      "total": 100,
+      "plotted": 100,
+      "identitySupported": 100,
+      "medianCenterPull": 0.3408182423577585,
+      "medianWidthRatio": 0.9296748161867663
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "t",
+      "label": "gaussian_linear_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": 0.023075981858877666,
+      "medianWidthRatio": 0.8675920447474464
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "t",
+      "label": "gaussian_exponential_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": 0.053237725586489745,
+      "medianWidthRatio": 0.8575235199031571
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "t",
+      "label": "lognormal_linear_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": 0.12539830365264606,
+      "medianWidthRatio": 0.861554180621119
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "t",
+      "label": "lognormal_exponential_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": 0.1416284914696699,
+      "medianWidthRatio": 0.8428738497051532
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he3",
+      "label": "gaussian_linear_nominal",
+      "total": 125,
+      "plotted": 125,
+      "identitySupported": 125,
+      "medianCenterPull": 0.07448918695633679,
+      "medianWidthRatio": 0.926910399345739
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he3",
+      "label": "gaussian_exponential_nominal",
+      "total": 125,
+      "plotted": 125,
+      "identitySupported": 125,
+      "medianCenterPull": 0.07607542929628805,
+      "medianWidthRatio": 0.9206072041713173
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he3",
+      "label": "lognormal_linear_nominal",
+      "total": 125,
+      "plotted": 125,
+      "identitySupported": 125,
+      "medianCenterPull": 0.12280007445631312,
+      "medianWidthRatio": 0.9191721430061268
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he3",
+      "label": "lognormal_exponential_nominal",
+      "total": 125,
+      "plotted": 125,
+      "identitySupported": 125,
+      "medianCenterPull": 0.12817274097758175,
+      "medianWidthRatio": 0.9150790641301076
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he4",
+      "label": "gaussian_linear_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": 0.00023145456207240947,
+      "medianWidthRatio": 1.0511679393717799
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he4",
+      "label": "gaussian_exponential_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": -0.0166142929163892,
+      "medianWidthRatio": 0.9929701497756532
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he4",
+      "label": "lognormal_linear_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": 0.05816492447318657,
+      "medianWidthRatio": 1.0532275210941942
+    },
+    {
+      "region": "low_adopted_ALL",
+      "species": "he4",
+      "label": "lognormal_exponential_nominal",
+      "total": 115,
+      "plotted": 115,
+      "identitySupported": 115,
+      "medianCenterPull": 0.042479933418696596,
+      "medianWidthRatio": 0.9957595998853824
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "d",
+      "label": "gaussian_linear_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.07966469897385309,
+      "medianWidthRatio": 0.8743322548797094
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "d",
+      "label": "gaussian_exponential_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.08027409328478108,
+      "medianWidthRatio": 0.8732329795607539
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "d",
+      "label": "lognormal_linear_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.00048015044497968585,
+      "medianWidthRatio": 0.874434672280753
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "d",
+      "label": "lognormal_exponential_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.0005985496422881006,
+      "medianWidthRatio": 0.8743200158839477
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "t",
+      "label": "gaussian_linear_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.27565552178123254,
+      "medianWidthRatio": 0.7726399591663553
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "t",
+      "label": "gaussian_exponential_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.275789379745224,
+      "medianWidthRatio": 0.772547690550943
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "t",
+      "label": "lognormal_linear_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.19393721249577545,
+      "medianWidthRatio": 0.7743855816739496
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "t",
+      "label": "lognormal_exponential_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.1926490728228696,
+      "medianWidthRatio": 0.7739947537548781
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he3",
+      "label": "gaussian_linear_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.34481273802530255,
+      "medianWidthRatio": 1.164929788752031
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he3",
+      "label": "gaussian_exponential_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.346719730189038,
+      "medianWidthRatio": 1.164340764854272
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he3",
+      "label": "lognormal_linear_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.294253796677823,
+      "medianWidthRatio": 1.1701805582224962
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he3",
+      "label": "lognormal_exponential_nominal",
+      "total": 50,
+      "plotted": 50,
+      "identitySupported": 50,
+      "medianCenterPull": -0.29538194137035734,
+      "medianWidthRatio": 1.1701408599937153
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he4",
+      "label": "gaussian_linear_nominal",
+      "total": 300,
+      "plotted": 266,
+      "identitySupported": 248,
+      "medianCenterPull": -0.16498770297961618,
+      "medianWidthRatio": 1.2600472141357382
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he4",
+      "label": "gaussian_exponential_nominal",
+      "total": 300,
+      "plotted": 264,
+      "identitySupported": 248,
+      "medianCenterPull": -0.16250170741788006,
+      "medianWidthRatio": 1.2538161196283144
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he4",
+      "label": "lognormal_linear_nominal",
+      "total": 300,
+      "plotted": 267,
+      "identitySupported": 245,
+      "medianCenterPull": -0.15233932390150687,
+      "medianWidthRatio": 1.2854834186868744
+    },
+    {
+      "region": "high_native_TOF",
+      "species": "he4",
+      "label": "lognormal_exponential_nominal",
+      "total": 300,
+      "plotted": 264,
+      "identitySupported": 244,
+      "medianCenterPull": -0.15084523740999045,
+      "medianWidthRatio": 1.279534167394035
+    },
+    {
+      "region": "high_coarse_TOF",
+      "species": "he4",
+      "label": "gaussian_linear_nominal",
+      "total": 60,
+      "plotted": 60,
+      "identitySupported": 51,
+      "medianCenterPull": -0.20831639273217717,
+      "medianWidthRatio": 1.360958175764548
+    },
+    {
+      "region": "high_coarse_TOF",
+      "species": "he4",
+      "label": "gaussian_exponential_nominal",
+      "total": 60,
+      "plotted": 60,
+      "identitySupported": 51,
+      "medianCenterPull": -0.2061474309147765,
+      "medianWidthRatio": 1.351823293047287
+    },
+    {
+      "region": "high_coarse_TOF",
+      "species": "he4",
+      "label": "lognormal_linear_nominal",
+      "total": 60,
+      "plotted": 60,
+      "identitySupported": 50,
+      "medianCenterPull": -0.18887602803145387,
+      "medianWidthRatio": 1.3876874855442858
+    },
+    {
+      "region": "high_coarse_TOF",
+      "species": "he4",
+      "label": "lognormal_exponential_nominal",
+      "total": 60,
+      "plotted": 60,
+      "identitySupported": 50,
+      "medianCenterPull": -0.18806487836832034,
+      "medianWidthRatio": 1.3808874316332518
+    }
+  ]
+}

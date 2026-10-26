@@ -1,0 +1,949 @@
+# StNuclearIdMaker histogram definitions
+
+axes:
+  P: &P
+    nBins: 600
+    min: 0.0
+    max: 6.0
+  dEdx: &dEdx
+    nBins: 1200
+    min: 0.0
+    max: 120.0
+  Eta: &Eta
+    nBins: 100
+    min: -3.0
+    max: 3.0
+  Rapidity: &Rapidity
+    nBins: 100
+    min: -3.0
+    max: 3.0
+  Pt: &Pt
+    nBins: 600
+    min: 0.0
+    max: 6.0
+  M2: &M2
+    nBins: 1000
+    min: -0.5
+    max: 25.0
+  Vz: &Vz
+    nBins: 400
+    min: -100.0
+    max: 100.0
+
+  RefMult: &RefMult
+    nBins: 1000
+    min: 0.0
+    max: 1000.0
+  RefMultWeight: &RefMultWeight
+    nBins: 125
+    min: 0.5
+    max: 3.0
+  TofMatchMult: &TofMatchMult
+    nBins: 500
+    min: 0.0
+    max: 500.0
+  Cent9: &Cent9
+    nBins: 9
+    min: -0.5
+    max: 8.5
+  Cent16: &Cent16
+    nBins: 16
+    min: -0.5
+    max: 15.5
+
+histograms:
+
+  hCentrality:
+    axis: *Cent9
+    title: "Centrality bin (cent9);cent9 (0=70-80%%, 8=0-5%%);Counts"
+  hCentralityRaw:
+    axis: *Cent9
+    title: "Centrality bin before bin cut;cent9 (0=70-80%%, 8=0-5%%);Counts"
+  hCentrality16:
+    axis: *Cent16
+    title: "Centrality bin (cent16);cent16;Counts"
+  hRefMult:
+    axis: *RefMult
+    title: "RefMult;RefMult;Counts"
+  hRefMultCorr:
+    axis: *RefMult
+    title: "Corrected multiplicity;refMult_{corr};Counts"
+  hRefMultWeight:
+    axis: *RefMultWeight
+    title: "StRefMultCorr event weight;weight;Counts"
+  hRefMultVsNTOFMatch:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (before pileup cut);nBTOFMatch;refMult"
+  hRefMultVsNTOFMatchAfter:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (after pileup cut);nBTOFMatch;refMult"
+  hCentralityVsVz:
+    xAxis: *Vz
+    yAxis: *Cent9
+    title: "cent9 vs V_{z};V_{z} [cm];cent9 (0=70-80%%, 8=0-5%%)"
+  hRawMult:
+    axis: *RefMult
+    title: "Raw multiplicity (refmult/fxtmult);mult;Counts"
+  hDedxP_CentBin0:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=0 (70-80%%)"
+  hDedxP_CentBin1:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=1 (60-70%%)"
+  hDedxP_CentBin2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=2 (50-60%%)"
+  hDedxP_CentBin3:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=3 (40-50%%)"
+  hDedxP_CentBin4:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=4 (30-40%%)"
+  hDedxP_CentBin5:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=5 (20-30%%)"
+  hDedxP_CentBin6:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=6 (10-20%%)"
+  hDedxP_CentBin7:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=7 (5-10%%)"
+  hDedxP_CentBin8:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=8 (0-5%%)"
+  hDedxP_d_CentBin0:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=0 (70-80%%)"
+  hDedxP_d_CentBin1:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=1 (60-70%%)"
+  hDedxP_d_CentBin2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=2 (50-60%%)"
+  hDedxP_d_CentBin3:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=3 (40-50%%)"
+  hDedxP_d_CentBin4:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=4 (30-40%%)"
+  hDedxP_d_CentBin5:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=5 (20-30%%)"
+  hDedxP_d_CentBin6:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=6 (10-20%%)"
+  hDedxP_d_CentBin7:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=7 (5-10%%)"
+  hDedxP_d_CentBin8:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=8 (0-5%%)"
+  hDedxP_t_CentBin0:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=0 (70-80%%)"
+  hDedxP_t_CentBin1:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=1 (60-70%%)"
+  hDedxP_t_CentBin2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=2 (50-60%%)"
+  hDedxP_t_CentBin3:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=3 (40-50%%)"
+  hDedxP_t_CentBin4:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=4 (30-40%%)"
+  hDedxP_t_CentBin5:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=5 (20-30%%)"
+  hDedxP_t_CentBin6:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=6 (10-20%%)"
+  hDedxP_t_CentBin7:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=7 (5-10%%)"
+  hDedxP_t_CentBin8:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=8 (0-5%%)"
+  hDedxP_3He_CentBin0:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=0 (70-80%%)"
+  hDedxP_3He_CentBin1:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=1 (60-70%%)"
+  hDedxP_3He_CentBin2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=2 (50-60%%)"
+  hDedxP_3He_CentBin3:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=3 (40-50%%)"
+  hDedxP_3He_CentBin4:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=4 (30-40%%)"
+  hDedxP_3He_CentBin5:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=5 (20-30%%)"
+  hDedxP_3He_CentBin6:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=6 (10-20%%)"
+  hDedxP_3He_CentBin7:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=7 (5-10%%)"
+  hDedxP_3He_CentBin8:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=8 (0-5%%)"
+  hDedxP_4He_CentBin0:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=0 (70-80%%)"
+  hDedxP_4He_CentBin1:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=1 (60-70%%)"
+  hDedxP_4He_CentBin2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=2 (50-60%%)"
+  hDedxP_4He_CentBin3:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=3 (40-50%%)"
+  hDedxP_4He_CentBin4:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=4 (30-40%%)"
+  hDedxP_4He_CentBin5:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=5 (20-30%%)"
+  hDedxP_4He_CentBin6:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=6 (10-20%%)"
+  hDedxP_4He_CentBin7:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=7 (5-10%%)"
+  hDedxP_4He_CentBin8:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p cent9=8 (0-5%%)"
+  hPvsEta_d_CentBin0:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=0 (70-80%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin1:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=1 (60-70%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin2:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=2 (50-60%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin3:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=3 (40-50%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin4:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=4 (30-40%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin5:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=5 (20-30%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin6:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=6 (10-20%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin7:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=7 (5-10%%); p (GeV/c); #eta"
+  hPvsEta_d_CentBin8:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=8 (0-5%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin0:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=0 (70-80%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin1:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=1 (60-70%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin2:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=2 (50-60%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin3:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=3 (40-50%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin4:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=4 (30-40%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin5:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=5 (20-30%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin6:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=6 (10-20%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin7:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=7 (5-10%%); p (GeV/c); #eta"
+  hPvsEta_t_CentBin8:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=8 (0-5%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin0:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=0 (70-80%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin1:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=1 (60-70%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin2:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=2 (50-60%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin3:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=3 (40-50%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin4:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=4 (30-40%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin5:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=5 (20-30%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin6:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=6 (10-20%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin7:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=7 (5-10%%); p (GeV/c); #eta"
+  hPvsEta_3He_CentBin8:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=8 (0-5%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin0:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=0 (70-80%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin1:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=1 (60-70%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin2:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=2 (50-60%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin3:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=3 (40-50%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin4:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=4 (30-40%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin5:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=5 (20-30%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin6:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=6 (10-20%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin7:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=7 (5-10%%); p (GeV/c); #eta"
+  hPvsEta_4He_CentBin8:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma) cent9=8 (0-5%%); p (GeV/c); #eta"
+  hPvsPt_d_CentBin0:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=0 (70-80%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin1:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=1 (60-70%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin2:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=2 (50-60%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin3:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=3 (40-50%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin4:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=4 (30-40%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin5:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=5 (20-30%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin6:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=6 (10-20%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin7:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=7 (5-10%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_d_CentBin8:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=8 (0-5%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin0:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=0 (70-80%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin1:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=1 (60-70%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin2:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=2 (50-60%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin3:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=3 (40-50%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin4:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=4 (30-40%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin5:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=5 (20-30%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin6:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=6 (10-20%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin7:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=7 (5-10%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t_CentBin8:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=8 (0-5%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin0:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=0 (70-80%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin1:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=1 (60-70%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin2:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=2 (50-60%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin3:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=3 (40-50%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin4:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=4 (30-40%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin5:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=5 (20-30%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin6:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=6 (10-20%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin7:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=7 (5-10%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He_CentBin8:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=8 (0-5%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin0:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=0 (70-80%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin1:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=1 (60-70%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin2:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=2 (50-60%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin3:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=3 (40-50%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin4:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=4 (30-40%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin5:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=5 (20-30%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin6:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=6 (10-20%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin7:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=7 (5-10%%); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He_CentBin8:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma) cent9=8 (0-5%%); p (GeV/c); p_{T} (GeV/c)"
+
+  hDedxP:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_cut:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_e:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_pi:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_K:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_p:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_else:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_d:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_t:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_3He:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_4He:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+
+  hPvsEta_d:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_t:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_3He:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_4He:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+
+  hPvsY_d:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_t:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_3He:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_4He:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+
+  hPvsPt_d:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+
+  hDedxP_d_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_t_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_3He_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+
+  hM2P:
+    xAxis: *P
+    yAxis: *M2
+    title: "TOF m^{2} vs p;p (GeV/c);m^{2} (GeV^{2}/c^{4})"
+
+  hVz_d:
+    axis: *Vz
+    title: "V_{z} of selected d;V_{z} [cm];Counts"
+  hVz_t:
+    axis: *Vz
+    title: "V_{z} of selected t;V_{z} [cm];Counts"
+  hVz_3He:
+    axis: *Vz
+    title: "V_{z} of selected 3He;V_{z} [cm];Counts"
+  hVz_4He:
+    axis: *Vz
+    title: "V_{z} of selected 4He;V_{z} [cm];Counts"
+
+  hPvsY_d_CentBin0:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=0 (70-80%); p (GeV/c); y"
+  hPvsY_d_CentBin1:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=1 (60-70%); p (GeV/c); y"
+  hPvsY_d_CentBin2:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=2 (50-60%); p (GeV/c); y"
+  hPvsY_d_CentBin3:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=3 (40-50%); p (GeV/c); y"
+  hPvsY_d_CentBin4:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=4 (30-40%); p (GeV/c); y"
+  hPvsY_d_CentBin5:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=5 (20-30%); p (GeV/c); y"
+  hPvsY_d_CentBin6:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=6 (10-20%); p (GeV/c); y"
+  hPvsY_d_CentBin7:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=7 (5-10%); p (GeV/c); y"
+  hPvsY_d_CentBin8:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=8 (0-5%); p (GeV/c); y"
+  hPvsY_t_CentBin0:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=0 (70-80%); p (GeV/c); y"
+  hPvsY_t_CentBin1:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=1 (60-70%); p (GeV/c); y"
+  hPvsY_t_CentBin2:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=2 (50-60%); p (GeV/c); y"
+  hPvsY_t_CentBin3:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=3 (40-50%); p (GeV/c); y"
+  hPvsY_t_CentBin4:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=4 (30-40%); p (GeV/c); y"
+  hPvsY_t_CentBin5:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=5 (20-30%); p (GeV/c); y"
+  hPvsY_t_CentBin6:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=6 (10-20%); p (GeV/c); y"
+  hPvsY_t_CentBin7:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=7 (5-10%); p (GeV/c); y"
+  hPvsY_t_CentBin8:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=8 (0-5%); p (GeV/c); y"
+  hPvsY_3He_CentBin0:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=0 (70-80%); p (GeV/c); y"
+  hPvsY_3He_CentBin1:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=1 (60-70%); p (GeV/c); y"
+  hPvsY_3He_CentBin2:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=2 (50-60%); p (GeV/c); y"
+  hPvsY_3He_CentBin3:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=3 (40-50%); p (GeV/c); y"
+  hPvsY_3He_CentBin4:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=4 (30-40%); p (GeV/c); y"
+  hPvsY_3He_CentBin5:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=5 (20-30%); p (GeV/c); y"
+  hPvsY_3He_CentBin6:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=6 (10-20%); p (GeV/c); y"
+  hPvsY_3He_CentBin7:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=7 (5-10%); p (GeV/c); y"
+  hPvsY_3He_CentBin8:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=8 (0-5%); p (GeV/c); y"
+  hPvsY_4He_CentBin0:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=0 (70-80%); p (GeV/c); y"
+  hPvsY_4He_CentBin1:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=1 (60-70%); p (GeV/c); y"
+  hPvsY_4He_CentBin2:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=2 (50-60%); p (GeV/c); y"
+  hPvsY_4He_CentBin3:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=3 (40-50%); p (GeV/c); y"
+  hPvsY_4He_CentBin4:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=4 (30-40%); p (GeV/c); y"
+  hPvsY_4He_CentBin5:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=5 (20-30%); p (GeV/c); y"
+  hPvsY_4He_CentBin6:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=6 (10-20%); p (GeV/c); y"
+  hPvsY_4He_CentBin7:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=7 (5-10%); p (GeV/c); y"
+  hPvsY_4He_CentBin8:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma) cent9=8 (0-5%); p (GeV/c); y"
+
+  hMult_d:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event; multiplicity; counts"
+  hMult_d_CentBin0:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=0 (70-80%); multiplicity; counts"
+  hMult_d_CentBin1:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=1 (60-70%); multiplicity; counts"
+  hMult_d_CentBin2:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=2 (50-60%); multiplicity; counts"
+  hMult_d_CentBin3:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=3 (40-50%); multiplicity; counts"
+  hMult_d_CentBin4:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=4 (30-40%); multiplicity; counts"
+  hMult_d_CentBin5:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=5 (20-30%); multiplicity; counts"
+  hMult_d_CentBin6:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=6 (10-20%); multiplicity; counts"
+  hMult_d_CentBin7:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=7 (5-10%); multiplicity; counts"
+  hMult_d_CentBin8:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "d multiplicity per event cent9=8 (0-5%); multiplicity; counts"
+  hMult_t:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event; multiplicity; counts"
+  hMult_t_CentBin0:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=0 (70-80%); multiplicity; counts"
+  hMult_t_CentBin1:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=1 (60-70%); multiplicity; counts"
+  hMult_t_CentBin2:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=2 (50-60%); multiplicity; counts"
+  hMult_t_CentBin3:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=3 (40-50%); multiplicity; counts"
+  hMult_t_CentBin4:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=4 (30-40%); multiplicity; counts"
+  hMult_t_CentBin5:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=5 (20-30%); multiplicity; counts"
+  hMult_t_CentBin6:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=6 (10-20%); multiplicity; counts"
+  hMult_t_CentBin7:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=7 (5-10%); multiplicity; counts"
+  hMult_t_CentBin8:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "t multiplicity per event cent9=8 (0-5%); multiplicity; counts"
+  hMult_3He:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event; multiplicity; counts"
+  hMult_3He_CentBin0:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=0 (70-80%); multiplicity; counts"
+  hMult_3He_CentBin1:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=1 (60-70%); multiplicity; counts"
+  hMult_3He_CentBin2:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=2 (50-60%); multiplicity; counts"
+  hMult_3He_CentBin3:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=3 (40-50%); multiplicity; counts"
+  hMult_3He_CentBin4:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=4 (30-40%); multiplicity; counts"
+  hMult_3He_CentBin5:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=5 (20-30%); multiplicity; counts"
+  hMult_3He_CentBin6:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=6 (10-20%); multiplicity; counts"
+  hMult_3He_CentBin7:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=7 (5-10%); multiplicity; counts"
+  hMult_3He_CentBin8:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "3He multiplicity per event cent9=8 (0-5%); multiplicity; counts"
+  hMult_4He:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event; multiplicity; counts"
+  hMult_4He_CentBin0:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=0 (70-80%); multiplicity; counts"
+  hMult_4He_CentBin1:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=1 (60-70%); multiplicity; counts"
+  hMult_4He_CentBin2:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=2 (50-60%); multiplicity; counts"
+  hMult_4He_CentBin3:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=3 (40-50%); multiplicity; counts"
+  hMult_4He_CentBin4:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=4 (30-40%); multiplicity; counts"
+  hMult_4He_CentBin5:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=5 (20-30%); multiplicity; counts"
+  hMult_4He_CentBin6:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=6 (10-20%); multiplicity; counts"
+  hMult_4He_CentBin7:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=7 (5-10%); multiplicity; counts"
+  hMult_4He_CentBin8:
+    axis: { nBins: 20, min: -0.5, max: 19.5 }
+    title: "4He multiplicity per event cent9=8 (0-5%); multiplicity; counts"

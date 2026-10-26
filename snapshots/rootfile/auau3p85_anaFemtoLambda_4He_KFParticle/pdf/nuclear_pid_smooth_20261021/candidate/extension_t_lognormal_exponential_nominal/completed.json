@@ -1,0 +1,12 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "seconds": 26.075107097625732,
+  "products": {
+    "cutoff_fits.json": "7b91fbd4ba777148e9f6a2263b2322fffd0d11c292e1eb5f8fbe12a234f2a8a8",
+    "cutoff_fits.root": "11c406717d8bc14998e9fdcf83195150ca5aa67e2c5e9c7c62f440a343d9912f",
+    "gates.tsv": "55b7e9e681fecbb6bf7bc8ebf216282c9db4d9f81518f1f2882eb1411fc5b9bd",
+    "shapes.tsv": "fa37ba4e1c7012830819dc136338da866ffc3091a6063768fd7a41ce6f00806a",
+    "settings.tsv": "3d3bfad1e8fae81a173684e6aa6701dea29afc7686c028e2dad7e3a6ef32296f"
+  }
+}

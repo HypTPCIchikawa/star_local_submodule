@@ -1,0 +1,21 @@
+# PID Cuts (TPC nSigma)
+
+# Default TPC nSigma cuts (can be overridden per particle)
+defaultNSigmaCut: 2.0    # |nSigma| < cut
+
+# Particle-specific TPC nSigma cuts
+nSigmaPion: 2.0
+nSigmaKaon: 2.0
+nSigmaProton: 2.0
+
+# TOF mass2 cuts (if TOF is available)
+minMass2Pion: -0.1       # (GeV/c^2)^2
+maxMass2Pion: 0.1
+minMass2Kaon: 0.15
+maxMass2Kaon: 0.35
+minMass2Proton: 0.7
+maxMass2Proton: 1.1
+
+# TOF matching requirement
+requireTOF: true       # Set to true if TOF match is required
+

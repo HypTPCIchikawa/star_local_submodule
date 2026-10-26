@@ -1,0 +1,14 @@
+# Opt-in TPC cutoff + all-nuclei high-R TOF profile, 2026-10-15 study.
+# Created on 2026-10-17 JST; canonical production mainconf remains unchanged.
+# Rollback of the low-R domain cuts only:
+#   main_auau3p85_anaFemtoLambda_4He_KFParticle_allNucleiTof20261015.yaml
+# Keep canonical 2021 P24iy identity and output directory. Use explicit test subdirs.
+analysis: analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_auau3p85_purity50_20261015.yaml
+maker: maker/maker_auau3p85_anaFemtoLambda_4He_KFParticle_he3Control.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_auau3p85_femtoLambda_he4_he3_control_kf.yaml
+nuclearHist: hist/hist_auau3p85_femtoLambda_he4_he3_control_nuclear.yaml

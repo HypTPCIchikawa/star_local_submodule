@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "exitCode": 0,
+  "runtime": "STAR SL24y / sl73_x8664_gcc485 / ROOT 5.34.38 / forced ACLiC .C++",
+  "sources": {
+    "tools/he4_purity/FitHe4Purity.C": "ab25f839121320a72b7864f1eb2a64e2d25fb3c3185875d49745c8119185abe3",
+    "tools/he4_purity/CheckFrom040Purity.C": "8cfb2ca0294c4bb9f0bd9cebfbcdb5b7a4ea948eabcfca68ec550f7c2bf94002",
+    "Todo/20261013/validation/from040_prototype_002/settings.tsv": "8c27e71bc1a61dae7e2a29828ba9c7b77d6fbd08cc908b7066030922f8fcbc16"
+  },
+  "cases": 7,
+  "previousSixCaseCoverage": "Todo/20261013/validation/from040_toy_final_v3/provenance.json",
+  "additionalLowerBoundCoverage": {
+    "rigidity": 0.405,
+    "injectedMeanNSigma": -3.5,
+    "injectedSigmaNSigma": 0.4,
+    "injectedSignalAmplitude": 20000,
+    "backgroundSpecies": ["triton", "He3"],
+    "background": "exponential",
+    "recoveredMeanNSigma": -3.5,
+    "detectedRawPeakNSigma": -3.5604,
+    "fitAndRawPeaksBeyondPreviousMinus3p2Limit": true,
+    "fixedGatePurityApprox": 0.00429718,
+    "movingGatePurityApprox": 0.80782,
+    "signalEvidenceAndFitQualityVerified": true,
+    "speciesOrderingAndIndependentIntegralsVerified": true
+  },
+  "result": "Todo/20261013/validation/from040_toy_final_v4/from040_closure.json",
+  "log": "Todo/20261013/validation_from040_toy_final_v4.log",
+  "note": "This is an artificial model-recovery and branch-coverage test, not the measured purity of the real 3.85 GeV sample. The previous six cases and their results are retained."
+}

@@ -1,0 +1,15 @@
+{
+  "settingsPath": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/tag_study_settings.yaml",
+  "settingsSha256": "fdd1813835bf4ffeac1fb26989027fe5d0ae2673b7db58e55c0bb08e9f25cf73",
+  "tagSources": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_native_linear_001/tag_fits.json": "c5469fa44fa6850f9870ba9207d83a8d10b7b0ff89e8d5254f24e28689115bf8",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_native_exponential_001/tag_fits.json": "e3693ac623ecc6dd969d5abe1d292ba27e6a3bceb25eafcd4db14a7b61d3aaf5"
+  },
+  "productionEnabled": false,
+  "snapshots": {
+    "build_curves.py": "b2dbcb74c550e93a1c74fbc2cd2103476a71f88753da4b6c6a5c81bc8059e5aa",
+    "nuclear_curves.py": "94d6932b07ef4536adc0ad93a0e8962bec2982f7eca50d051de2cf7dd6722366",
+    "runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e",
+    "tag_study_settings.yaml": "fdd1813835bf4ffeac1fb26989027fe5d0ae2673b7db58e55c0bb08e9f25cf73"
+  }
+}

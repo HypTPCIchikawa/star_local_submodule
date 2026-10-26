@@ -1,0 +1,42 @@
+schemaVersion: 1
+productionEnabled: false
+polynomialDegrees: {mean: 3, sigma: 2, logRatio: 2}
+minimumSupportPoints: 6
+rankTolerance: 1.0e-12
+denseGridPoints: 501
+gapWarningWidth: 0.11
+jointGls: {birgeScale: true, modelFloorsEnabled: false, symmetryTolerance: 1.0e-8}
+jointGlsBounds:
+  meanMin: 0.000001
+  sigmaMin: 0.05
+  logRatioInteriorMargin: 0.000001
+  denseGridPoints: 501
+  maximumIterations: 5000
+  maximumCutPasses: 25
+  normalizedFeasibilityTolerance: 1.0e-8
+  physicalFeasibilityTolerance: 1.0e-8
+  dualTolerance: 1.0e-12
+  gramRankTolerance: 1.0e-12
+  symmetryTolerance: 1.0e-8
+regressionWeights:
+  birgeScale: true
+  # Weight regularization only; not a confidence interval.
+  floors: {mean: 0.02, sigma: 0.05, logRatio: 0.10}
+quality:
+  chi2PerNdfMax: 25.0
+  minCovarianceStatus: 3
+  minTargetYield: 0.0
+  minEffectiveCount: 0.0
+  nativeDedxMin: 0.0
+  nativeDedxMax: 120.0
+  ratioMin: 0.25
+  ratioMax: 4.0
+  rejectForeignCurveInsideRoi: false
+  rejectUnreviewedSearchBoundaryMode: true
+  reviewedSearchBoundarySupport: {}
+sensitivityScenarios:
+  - {name: sensitivity_chi2_05, chi2PerNdfMax: 5.0, rejectForeignCurveInsideRoi: false}
+  - {name: sensitivity_chi2_10, chi2PerNdfMax: 10.0, rejectForeignCurveInsideRoi: false}
+  - {name: sensitivity_foreign_strict, chi2PerNdfMax: 25.0, rejectForeignCurveInsideRoi: true}
+  - {name: joint_gls, chi2PerNdfMax: 25.0, rejectForeignCurveInsideRoi: false, regressionMethod: joint_gls}
+  - {name: joint_gls_bounded, chi2PerNdfMax: 25.0, rejectForeignCurveInsideRoi: false, regressionMethod: joint_gls, boundedJointGls: true, computeJointLeaveOneOut: false}

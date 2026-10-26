@@ -1,0 +1,3822 @@
+{
+  "status": "completed",
+  "cases": [
+    {
+      "id": "d_b0088",
+      "target": "d",
+      "mode": "TAG_D",
+      "r": 0.875,
+      "rLo": 0.87,
+      "rHi": 0.88,
+      "fitLo": 10.3,
+      "fitHi": 15.0,
+      "caseIndex": 0,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 139545.75651201856,
+          "AICReferenceOnly": 139553.75651201856,
+          "AICParameterCount": 4,
+          "nFitBins": 47,
+          "ndf": 43,
+          "pearsonPerNdf": 3190.3427815164696,
+          "mean": 12.169808108356111,
+          "meanError": 0.00045456595976796935,
+          "coreSigma": 0.8953432943880884,
+          "coreSigmaError": 0.00042980169199914765,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 12.650241180267017,
+          "originalSigma": 0.9335051301141255,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 139545.75651201856,
+              "AICReferenceOnly": 139553.75651201856,
+              "AICParameterCount": 4,
+              "nFitBins": 47,
+              "ndf": 43,
+              "pearsonPerNdf": 3190.3427815164696,
+              "mean": 12.169808108356111,
+              "meanError": 0.00045456595976796935,
+              "coreSigma": 0.8953432943880884,
+              "coreSigmaError": 0.00042980169199914765,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 12.650241180267017,
+              "originalSigma": 0.9335051301141255,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 12.169808108356111,
+                "max": 12.169808108356111,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.8953432943880884,
+                "max": 0.8953432943880884,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 139545.75651201856,
+                "max": 139545.75651201856,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 12.169808108356111,
+                "max": 12.169808108356111,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.8953432943880884,
+                "max": 0.8953432943880884,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 139545.75651201856,
+                "max": 139545.75651201856,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+          "variant": "left_a1",
+          "family": "gaussian_left_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 139545.75651201833,
+          "AICReferenceOnly": 139555.75651201833,
+          "AICParameterCount": 5,
+          "nFitBins": 47,
+          "ndf": 42,
+          "pearsonPerNdf": 3266.3033241371672,
+          "mean": 12.169808100782003,
+          "meanError": 0.0004545899539716608,
+          "coreSigma": 0.8953433011214054,
+          "coreSigmaError": 0.0004298241082496919,
+          "alpha": 4.069095177157156,
+          "alphaError": 8.470571790070586,
+          "originalMean": 12.650241180267017,
+          "originalSigma": 0.9335051301141255,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 6.9448518696082285e-12,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 139545.75651201833,
+              "AICReferenceOnly": 139555.75651201833,
+              "AICParameterCount": 5,
+              "nFitBins": 47,
+              "ndf": 42,
+              "pearsonPerNdf": 3266.3033241371672,
+              "mean": 12.169808100782003,
+              "meanError": 0.0004545899539716608,
+              "coreSigma": 0.8953433011214054,
+              "coreSigmaError": 0.0004298241082496919,
+              "alpha": 4.069095177157156,
+              "alphaError": 8.470571790070586,
+              "originalMean": 12.650241180267017,
+              "originalSigma": 0.9335051301141255,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 6.9448518696082285e-12,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 139545.75651201842,
+              "AICReferenceOnly": 139555.75651201842,
+              "AICParameterCount": 5,
+              "nFitBins": 47,
+              "ndf": 42,
+              "pearsonPerNdf": 3266.303322751985,
+              "mean": 12.169808100452087,
+              "meanError": 0.0004545659696149002,
+              "coreSigma": 0.8953433021080226,
+              "coreSigmaError": 0.00042980170018553016,
+              "alpha": 3.42232223781276,
+              "alphaError": 198468.41131752392,
+              "originalMean": 12.650241180267017,
+              "originalSigma": 0.9335051301141255,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 3.4339558588262446e-10,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 12.169808100452087,
+                "max": 12.169808100782003,
+                "span": 3.299156503544509e-10
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8953433011214054,
+                "max": 0.8953433021080226,
+                "span": 9.866172323569344e-10
+              },
+              "alpha": {
+                "count": 2,
+                "min": 3.42232223781276,
+                "max": 4.069095177157156,
+                "span": 0.6467729393443964
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 139545.75651201833,
+                "max": 139545.75651201842,
+                "span": 8.731149137020111e-11
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 12.169808100452087,
+                "max": 12.169808100782003,
+                "span": 3.299156503544509e-10
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8953433011214054,
+                "max": 0.8953433021080226,
+                "span": 9.866172323569344e-10
+              },
+              "alpha": {
+                "count": 2,
+                "min": 3.42232223781276,
+                "max": 4.069095177157156,
+                "span": 0.6467729393443964
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 139545.75651201833,
+                "max": 139545.75651201842,
+                "span": 8.731149137020111e-11
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+          "variant": "right_a25",
+          "family": "gaussian_right_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 139545.75651201906,
+          "AICReferenceOnly": 139555.75651201906,
+          "AICParameterCount": 5,
+          "nFitBins": 47,
+          "ndf": 42,
+          "pearsonPerNdf": 3266.3033117412656,
+          "mean": 12.169808099422283,
+          "meanError": 0.00045459111935031794,
+          "coreSigma": 0.8953433085133822,
+          "coreSigmaError": 0.0004298254895344394,
+          "alpha": 3.2948696324738598,
+          "alphaError": 0.52073384099342,
+          "originalMean": 12.650241180267017,
+          "originalSigma": 0.9335051301141255,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 5.48770458234226e-10,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 139545.75651436832,
+              "AICReferenceOnly": 139555.75651436832,
+              "AICParameterCount": 5,
+              "nFitBins": 47,
+              "ndf": 42,
+              "pearsonPerNdf": 3266.304076189706,
+              "mean": 12.169807771234733,
+              "meanError": 0.0004545932116609973,
+              "coreSigma": 0.8953432244918809,
+              "coreSigmaError": 0.00042982776062194556,
+              "alpha": 3.2850057986046517,
+              "alphaError": 0.06191453821153244,
+              "originalMean": 12.650241180267017,
+              "originalSigma": 0.9335051301141255,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 2.3503651661878537e-06,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 139545.75651201906,
+              "AICReferenceOnly": 139555.75651201906,
+              "AICParameterCount": 5,
+              "nFitBins": 47,
+              "ndf": 42,
+              "pearsonPerNdf": 3266.3033117412656,
+              "mean": 12.169808099422283,
+              "meanError": 0.00045459111935031794,
+              "coreSigma": 0.8953433085133822,
+              "coreSigmaError": 0.0004298254895344394,
+              "alpha": 3.2948696324738598,
+              "alphaError": 0.52073384099342,
+              "originalMean": 12.650241180267017,
+              "originalSigma": 0.9335051301141255,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 5.48770458234226e-10,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 12.169807771234733,
+                "max": 12.169808099422283,
+                "span": 3.281875500249498e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8953432244918809,
+                "max": 0.8953433085133822,
+                "span": 8.402150131203712e-08
+              },
+              "alpha": {
+                "count": 2,
+                "min": 3.2850057986046517,
+                "max": 3.2948696324738598,
+                "span": 0.009863833869208083
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 139545.75651201906,
+                "max": 139545.75651436832,
+                "span": 2.3492611944675446e-06
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 12.169807771234733,
+                "max": 12.169808099422283,
+                "span": 3.281875500249498e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8953432244918809,
+                "max": 0.8953433085133822,
+                "span": 8.402150131203712e-08
+              },
+              "alpha": {
+                "count": 2,
+                "min": 3.2850057986046517,
+                "max": 3.2948696324738598,
+                "span": 0.009863833869208083
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 139545.75651201906,
+                "max": 139545.75651436832,
+                "span": 2.3492611944675446e-06
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "t_b0088",
+      "target": "t",
+      "mode": "TAG_T",
+      "r": 0.875,
+      "rLo": 0.87,
+      "rHi": 0.88,
+      "fitLo": 19.400000000000002,
+      "fitHi": 28.0,
+      "caseIndex": 1,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 8974.950298603255,
+          "AICReferenceOnly": 8982.950298603255,
+          "AICParameterCount": 4,
+          "nFitBins": 86,
+          "ndf": 82,
+          "pearsonPerNdf": 106.76234390820761,
+          "mean": 22.80613511033206,
+          "meanError": 0.0012434430922511248,
+          "coreSigma": 1.67350157242602,
+          "coreSigmaError": 0.001166341357264398,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 23.692189947115416,
+          "originalSigma": 1.7150234396569721,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 8974.950298603255,
+              "AICReferenceOnly": 8982.950298603255,
+              "AICParameterCount": 4,
+              "nFitBins": 86,
+              "ndf": 82,
+              "pearsonPerNdf": 106.76234390820761,
+              "mean": 22.80613511033206,
+              "meanError": 0.0012434430922511248,
+              "coreSigma": 1.67350157242602,
+              "coreSigmaError": 0.001166341357264398,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 23.692189947115416,
+              "originalSigma": 1.7150234396569721,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 22.80613511033206,
+                "max": 22.80613511033206,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 1.67350157242602,
+                "max": 1.67350157242602,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 8974.950298603255,
+                "max": 8974.950298603255,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 22.80613511033206,
+                "max": 22.80613511033206,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 1.67350157242602,
+                "max": 1.67350157242602,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 8974.950298603255,
+                "max": 8974.950298603255,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+          "variant": "left_a25",
+          "family": "gaussian_left_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 8974.950298601107,
+          "AICReferenceOnly": 8984.950298601107,
+          "AICParameterCount": 5,
+          "nFitBins": 86,
+          "ndf": 81,
+          "pearsonPerNdf": 108.08039517011963,
+          "mean": 22.806135058846458,
+          "meanError": 0.0012434430967798917,
+          "coreSigma": 1.6735015682979653,
+          "coreSigmaError": 0.0011663413650820065,
+          "alpha": 2.5006168012941377,
+          "alphaError": 458.1849219194994,
+          "originalMean": 23.692189947115416,
+          "originalSigma": 1.7150234396569721,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 1.6196108401270754e-10,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 8974.950298601316,
+              "AICReferenceOnly": 8984.950298601316,
+              "AICParameterCount": 5,
+              "nFitBins": 86,
+              "ndf": 81,
+              "pearsonPerNdf": 108.08039466925027,
+              "mean": 22.806135040956555,
+              "meanError": 0.0012434430283989994,
+              "coreSigma": 1.6735015618255342,
+              "coreSigmaError": 0.0011663415118740295,
+              "alpha": 2.12313551985763,
+              "alphaError": 0.08264610923965052,
+              "originalMean": 23.692189947115416,
+              "originalSigma": 1.7150234396569721,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 3.4200929043330247e-10,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 8974.950298601107,
+              "AICReferenceOnly": 8984.950298601107,
+              "AICParameterCount": 5,
+              "nFitBins": 86,
+              "ndf": 81,
+              "pearsonPerNdf": 108.08039517011963,
+              "mean": 22.806135058846458,
+              "meanError": 0.0012434430967798917,
+              "coreSigma": 1.6735015682979653,
+              "coreSigmaError": 0.0011663413650820065,
+              "alpha": 2.5006168012941377,
+              "alphaError": 458.1849219194994,
+              "originalMean": 23.692189947115416,
+              "originalSigma": 1.7150234396569721,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.6196108401270754e-10,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 22.806135040956555,
+                "max": 22.806135058846458,
+                "span": 1.788990289242065e-08
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 1.6735015618255342,
+                "max": 1.6735015682979653,
+                "span": 6.47243103557571e-09
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.12313551985763,
+                "max": 2.5006168012941377,
+                "span": 0.37748128143650783
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 8974.950298601107,
+                "max": 8974.950298601316,
+                "span": 2.091837814077735e-10
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 22.806135040956555,
+                "max": 22.806135058846458,
+                "span": 1.788990289242065e-08
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 1.6735015618255342,
+                "max": 1.6735015682979653,
+                "span": 6.47243103557571e-09
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.12313551985763,
+                "max": 2.5006168012941377,
+                "span": 0.37748128143650783
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 8974.950298601107,
+                "max": 8974.950298601316,
+                "span": 2.091837814077735e-10
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+          "variant": "right_a1",
+          "family": "gaussian_right_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 8974.950298604192,
+          "AICReferenceOnly": 8984.950298604192,
+          "AICParameterCount": 5,
+          "nFitBins": 86,
+          "ndf": 81,
+          "pearsonPerNdf": 108.0803971986379,
+          "mean": 22.806135033590643,
+          "meanError": 0.001243443110414538,
+          "coreSigma": 1.6735015162856228,
+          "coreSigmaError": 0.001166341263382698,
+          "alpha": 3.229952843565974,
+          "alphaError": 0.32391499796243434,
+          "originalMean": 23.692189947115416,
+          "originalSigma": 1.7150234396569721,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 3.228115041119551e-09,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 8974.950298604192,
+              "AICReferenceOnly": 8984.950298604192,
+              "AICParameterCount": 5,
+              "nFitBins": 86,
+              "ndf": 81,
+              "pearsonPerNdf": 108.0803971986379,
+              "mean": 22.806135033590643,
+              "meanError": 0.001243443110414538,
+              "coreSigma": 1.6735015162856228,
+              "coreSigmaError": 0.001166341263382698,
+              "alpha": 3.229952843565974,
+              "alphaError": 0.32391499796243434,
+              "originalMean": 23.692189947115416,
+              "originalSigma": 1.7150234396569721,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 3.228115041119551e-09,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 8974.950299312712,
+              "AICReferenceOnly": 8984.950299312712,
+              "AICParameterCount": 5,
+              "nFitBins": 86,
+              "ndf": 81,
+              "pearsonPerNdf": 108.08041378979172,
+              "mean": 22.80613442154668,
+              "meanError": 0.001243442855705352,
+              "coreSigma": 1.6735007663874513,
+              "coreSigmaError": 0.0011663404719228743,
+              "alpha": 3.7537601280096604,
+              "alphaError": 156861.8130083399,
+              "originalMean": 23.692189947115416,
+              "originalSigma": 1.7150234396569721,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 7.117531376913186e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 22.80613442154668,
+                "max": 22.806135033590643,
+                "span": 6.12043962178177e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 1.6735007663874513,
+                "max": 1.6735015162856228,
+                "span": 7.498981715592379e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 3.229952843565974,
+                "max": 3.7537601280096604,
+                "span": 0.5238072844436865
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 8974.950298604192,
+                "max": 8974.950299312712,
+                "span": 7.085200195433572e-07
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 22.80613442154668,
+                "max": 22.806135033590643,
+                "span": 6.12043962178177e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 1.6735007663874513,
+                "max": 1.6735015162856228,
+                "span": 7.498981715592379e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 3.229952843565974,
+                "max": 3.7537601280096604,
+                "span": 0.5238072844436865
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 8974.950298604192,
+                "max": 8974.950299312712,
+                "span": 7.085200195433572e-07
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "he3_b0088",
+      "target": "he3",
+      "mode": "TAG_HE3",
+      "r": 0.875,
+      "rLo": 0.87,
+      "rHi": 0.88,
+      "fitLo": 28.400000000000002,
+      "fitHi": 38.0,
+      "caseIndex": 2,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 36819.95646690453,
+          "AICReferenceOnly": 36827.95646690453,
+          "AICParameterCount": 4,
+          "nFitBins": 96,
+          "ndf": 92,
+          "pearsonPerNdf": 391.9139685835118,
+          "mean": 34.27261590771284,
+          "meanError": 0.0014921711623791187,
+          "coreSigma": 1.8307556529071363,
+          "coreSigmaError": 0.0014633959594759433,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 33.23106053944166,
+          "originalSigma": 1.9034439768867428,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 36819.95646690453,
+              "AICReferenceOnly": 36827.95646690453,
+              "AICParameterCount": 4,
+              "nFitBins": 96,
+              "ndf": 92,
+              "pearsonPerNdf": 391.9139685835118,
+              "mean": 34.27261590771284,
+              "meanError": 0.0014921711623791187,
+              "coreSigma": 1.8307556529071363,
+              "coreSigmaError": 0.0014633959594759433,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 33.23106053944166,
+              "originalSigma": 1.9034439768867428,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 34.27261590771284,
+                "max": 34.27261590771284,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 1.8307556529071363,
+                "max": 1.8307556529071363,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 36819.95646690453,
+                "max": 36819.95646690453,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 34.27261590771284,
+                "max": 34.27261590771284,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 1.8307556529071363,
+                "max": 1.8307556529071363,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 36819.95646690453,
+                "max": 36819.95646690453,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+          "variant": "left_a1",
+          "family": "gaussian_left_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 21080.289365080014,
+          "AICReferenceOnly": 21088.289365080014,
+          "AICParameterCount": 4,
+          "nFitBins": 96,
+          "ndf": 92,
+          "pearsonPerNdf": 218.0677990649573,
+          "mean": 34.39656687272788,
+          "meanError": 0.0020087930360670205,
+          "coreSigma": 1.6504477268818856,
+          "coreSigmaError": 0.001997823837024507,
+          "alpha": 0.9453060393375287,
+          "alphaError": 0.002711449662541931,
+          "originalMean": 33.23106053944166,
+          "originalSigma": 1.9034439768867428,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 3.5318120183112135e-09,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 21080.289365080014,
+              "AICReferenceOnly": 21088.289365080014,
+              "AICParameterCount": 4,
+              "nFitBins": 96,
+              "ndf": 92,
+              "pearsonPerNdf": 218.0677990649573,
+              "mean": 34.39656687272788,
+              "meanError": 0.0020087930360670205,
+              "coreSigma": 1.6504477268818856,
+              "coreSigmaError": 0.001997823837024507,
+              "alpha": 0.9453060393375287,
+              "alphaError": 0.002711449662541931,
+              "originalMean": 33.23106053944166,
+              "originalSigma": 1.9034439768867428,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 3.5318120183112135e-09,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": false,
+              "dataDeviance": 36819.95690375466,
+              "AICReferenceOnly": 36829.95690375466,
+              "AICParameterCount": 5,
+              "nFitBins": 96,
+              "ndf": 91,
+              "pearsonPerNdf": 396.22282304466546,
+              "mean": 34.27258504514346,
+              "meanError": -1,
+              "coreSigma": 1.8307671661900542,
+              "coreSigmaError": -1,
+              "alpha": 3.7464979386576425,
+              "alphaError": -1,
+              "originalMean": 33.23106053944166,
+              "originalSigma": 1.9034439768867428,
+              "status": 3,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": 3,
+                "responseMigradEdm": 0.0004373083129337885,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 34.27258504514346,
+                "max": 34.39656687272788,
+                "span": 0.12398182758442289
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 1.6504477268818856,
+                "max": 1.8307671661900542,
+                "span": 0.18031943930816863
+              },
+              "alpha": {
+                "count": 2,
+                "min": 0.9453060393375287,
+                "max": 3.7464979386576425,
+                "span": 2.8011918993201137
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 21080.289365080014,
+                "max": 36819.95690375466,
+                "span": 15739.667538674646
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 34.39656687272788,
+                "max": 34.39656687272788,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 1.6504477268818856,
+                "max": 1.6504477268818856,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0.9453060393375287,
+                "max": 0.9453060393375287,
+                "span": 0.0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 21080.289365080014,
+                "max": 21080.289365080014,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+          "variant": "right_a1",
+          "family": "gaussian_right_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 36819.95646694557,
+          "AICReferenceOnly": 36829.95646694557,
+          "AICParameterCount": 5,
+          "nFitBins": 96,
+          "ndf": 91,
+          "pearsonPerNdf": 396.22068433500834,
+          "mean": 34.272616650441144,
+          "meanError": 0.001492217861841605,
+          "coreSigma": 1.8307546415189067,
+          "coreSigmaError": 0.0014634345428127518,
+          "alpha": 2.1314672291104646,
+          "alphaError": 0.0710301030949832,
+          "originalMean": 33.23106053944166,
+          "originalSigma": 1.9034439768867428,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 3.8736195478134913e-07,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 36819.95646694557,
+              "AICReferenceOnly": 36829.95646694557,
+              "AICParameterCount": 5,
+              "nFitBins": 96,
+              "ndf": 91,
+              "pearsonPerNdf": 396.22068433500834,
+              "mean": 34.272616650441144,
+              "meanError": 0.001492217861841605,
+              "coreSigma": 1.8307546415189067,
+              "coreSigmaError": 0.0014634345428127518,
+              "alpha": 2.1314672291104646,
+              "alphaError": 0.0710301030949832,
+              "originalMean": 33.23106053944166,
+              "originalSigma": 1.9034439768867428,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 3.8736195478134913e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 36819.956467129334,
+              "AICReferenceOnly": 36829.956467129334,
+              "AICParameterCount": 5,
+              "nFitBins": 96,
+              "ndf": 91,
+              "pearsonPerNdf": 396.2207421901894,
+              "mean": 34.272616327462444,
+              "meanError": 0.0014921699512494616,
+              "coreSigma": 1.8307534088935549,
+              "coreSigmaError": 0.001463392578507036,
+              "alpha": 3.4718692465977385,
+              "alphaError": 77208.95449070842,
+              "originalMean": 33.23106053944166,
+              "originalSigma": 1.9034439768867428,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 7.404672763357572e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 34.272616327462444,
+                "max": 34.272616650441144,
+                "span": 3.22978699784926e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 1.8307534088935549,
+                "max": 1.8307546415189067,
+                "span": 1.2326253517880303e-06
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.1314672291104646,
+                "max": 3.4718692465977385,
+                "span": 1.340402017487274
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 36819.95646694557,
+                "max": 36819.956467129334,
+                "span": 1.837615855038166e-07
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 34.272616327462444,
+                "max": 34.272616650441144,
+                "span": 3.22978699784926e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 1.8307534088935549,
+                "max": 1.8307546415189067,
+                "span": 1.2326253517880303e-06
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.1314672291104646,
+                "max": 3.4718692465977385,
+                "span": 1.340402017487274
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 36819.95646694557,
+                "max": 36819.956467129334,
+                "span": 1.837615855038166e-07
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "he4_b0088",
+      "target": "he4",
+      "mode": "TAG_D",
+      "r": 0.875,
+      "rLo": 0.87,
+      "rHi": 0.88,
+      "fitLo": 39.7,
+      "fitHi": 53.2,
+      "caseIndex": 3,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 3164.8567784814777,
+          "AICReferenceOnly": 3172.8567784814777,
+          "AICParameterCount": 4,
+          "nFitBins": 135,
+          "ndf": 131,
+          "pearsonPerNdf": 23.986885475591908,
+          "mean": 47.12974361967728,
+          "meanError": 0.004900253795974188,
+          "coreSigma": 2.5459190553048043,
+          "coreSigmaError": 0.004409128352111441,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 46.450104879662334,
+          "originalSigma": 2.6792228343262456,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3164.8567784814777,
+              "AICReferenceOnly": 3172.8567784814777,
+              "AICParameterCount": 4,
+              "nFitBins": 135,
+              "ndf": 131,
+              "pearsonPerNdf": 23.986885475591908,
+              "mean": 47.12974361967728,
+              "meanError": 0.004900253795974188,
+              "coreSigma": 2.5459190553048043,
+              "coreSigmaError": 0.004409128352111441,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 46.450104879662334,
+              "originalSigma": 2.6792228343262456,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 47.12974361967728,
+                "max": 47.12974361967728,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 2.5459190553048043,
+                "max": 2.5459190553048043,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 3164.8567784814777,
+                "max": 3164.8567784814777,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 47.12974361967728,
+                "max": 47.12974361967728,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 2.5459190553048043,
+                "max": 2.5459190553048043,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 3164.8567784814777,
+                "max": 3164.8567784814777,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+          "variant": "left_a25",
+          "family": "gaussian_left_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 3164.8567784726624,
+          "AICReferenceOnly": 3174.8567784726624,
+          "AICParameterCount": 5,
+          "nFitBins": 135,
+          "ndf": 130,
+          "pearsonPerNdf": 24.171400302516943,
+          "mean": 47.1297435475603,
+          "meanError": 0.004900414268927328,
+          "coreSigma": 2.5459186671410188,
+          "coreSigmaError": 0.004409280797009314,
+          "alpha": 3.106569825907071,
+          "alphaError": 0.12271233194559215,
+          "originalMean": 46.450104879662334,
+          "originalSigma": 2.6792228343262456,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 4.305647539571598e-11,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3380.401006553193,
+              "AICReferenceOnly": 3388.401006553193,
+              "AICParameterCount": 4,
+              "nFitBins": 135,
+              "ndf": 131,
+              "pearsonPerNdf": 25.50344218253733,
+              "mean": 47.13065661517407,
+              "meanError": 0.005929711785856299,
+              "coreSigma": 2.5303937083366796,
+              "coreSigmaError": 0.006222426553873277,
+              "alpha": 1.538966821887836,
+              "alphaError": 0.023789890626119845,
+              "originalMean": 46.450104879662334,
+              "originalSigma": 2.6792228343262456,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 4.28948771295106e-08,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3164.8567784726624,
+              "AICReferenceOnly": 3174.8567784726624,
+              "AICParameterCount": 5,
+              "nFitBins": 135,
+              "ndf": 130,
+              "pearsonPerNdf": 24.171400302516943,
+              "mean": 47.1297435475603,
+              "meanError": 0.004900414268927328,
+              "coreSigma": 2.5459186671410188,
+              "coreSigmaError": 0.004409280797009314,
+              "alpha": 3.106569825907071,
+              "alphaError": 0.12271233194559215,
+              "originalMean": 46.450104879662334,
+              "originalSigma": 2.6792228343262456,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 4.305647539571598e-11,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 47.1297435475603,
+                "max": 47.13065661517407,
+                "span": 0.0009130676137658611
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 2.5303937083366796,
+                "max": 2.5459186671410188,
+                "span": 0.015524958804339128
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.538966821887836,
+                "max": 3.106569825907071,
+                "span": 1.567603004019235
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 3164.8567784726624,
+                "max": 3380.401006553193,
+                "span": 215.5442280805305
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 47.1297435475603,
+                "max": 47.13065661517407,
+                "span": 0.0009130676137658611
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 2.5303937083366796,
+                "max": 2.5459186671410188,
+                "span": 0.015524958804339128
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.538966821887836,
+                "max": 3.106569825907071,
+                "span": 1.567603004019235
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 3164.8567784726624,
+                "max": 3380.401006553193,
+                "span": 215.5442280805305
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+          "variant": "right_a1",
+          "family": "gaussian_right_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 3164.856778472736,
+          "AICReferenceOnly": 3174.856778472736,
+          "AICParameterCount": 5,
+          "nFitBins": 135,
+          "ndf": 130,
+          "pearsonPerNdf": 24.17140019871758,
+          "mean": 47.129743588910024,
+          "meanError": 0.004900391709785409,
+          "coreSigma": 2.545918710989712,
+          "coreSigmaError": 0.004409239002705605,
+          "alpha": 2.4941100384316637,
+          "alphaError": 0.3976304368858523,
+          "originalMean": 46.450104879662334,
+          "originalSigma": 2.6792228343262456,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 1.2875527286374322e-10,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3164.856778472736,
+              "AICReferenceOnly": 3174.856778472736,
+              "AICParameterCount": 5,
+              "nFitBins": 135,
+              "ndf": 130,
+              "pearsonPerNdf": 24.17140019871758,
+              "mean": 47.129743588910024,
+              "meanError": 0.004900391709785409,
+              "coreSigma": 2.545918710989712,
+              "coreSigmaError": 0.004409239002705605,
+              "alpha": 2.4941100384316637,
+              "alphaError": 0.3976304368858523,
+              "originalMean": 46.450104879662334,
+              "originalSigma": 2.6792228343262456,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.2875527286374322e-10,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3164.8567784762204,
+              "AICReferenceOnly": 3174.8567784762204,
+              "AICParameterCount": 5,
+              "nFitBins": 135,
+              "ndf": 130,
+              "pearsonPerNdf": 24.171400564007964,
+              "mean": 47.12974335622748,
+              "meanError": 0.004900381634314903,
+              "coreSigma": 2.545918943593531,
+              "coreSigmaError": 0.004409243767925347,
+              "alpha": 2.542084785080404,
+              "alphaError": 0.10818427053131499,
+              "originalMean": 46.450104879662334,
+              "originalSigma": 2.6792228343262456,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 3.6046162520546744e-09,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 47.12974335622748,
+                "max": 47.129743588910024,
+                "span": 2.3268254523145515e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 2.545918710989712,
+                "max": 2.545918943593531,
+                "span": 2.3260381931677898e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.4941100384316637,
+                "max": 2.542084785080404,
+                "span": 0.04797474664874013
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 3164.856778472736,
+                "max": 3164.8567784762204,
+                "span": 3.484274202492088e-09
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 47.12974335622748,
+                "max": 47.129743588910024,
+                "span": 2.3268254523145515e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 2.545918710989712,
+                "max": 2.545918943593531,
+                "span": 2.3260381931677898e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.4941100384316637,
+                "max": 2.542084785080404,
+                "span": 0.04797474664874013
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 3164.856778472736,
+                "max": 3164.8567784762204,
+                "span": 3.484274202492088e-09
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "d_b0178",
+      "target": "d",
+      "mode": "TAG_D",
+      "r": 1.775,
+      "rLo": 1.77,
+      "rHi": 1.78,
+      "fitLo": 3.9000000000000004,
+      "fitHi": 5.4,
+      "caseIndex": 4,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 2849.3554066215866,
+          "AICReferenceOnly": 2859.3554066215866,
+          "AICParameterCount": 5,
+          "nFitBins": 15,
+          "ndf": 10,
+          "pearsonPerNdf": 284.9323187487901,
+          "mean": 4.731118652693242,
+          "meanError": 0.00012026431199207458,
+          "coreSigma": 0.273776376614111,
+          "coreSigmaError": 0.00014504410348750157,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 4.650525372627367,
+          "originalSigma": 0.2884345513087725,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 2849.3554066215866,
+              "AICReferenceOnly": 2859.3554066215866,
+              "AICParameterCount": 5,
+              "nFitBins": 15,
+              "ndf": 10,
+              "pearsonPerNdf": 284.9323187487901,
+              "mean": 4.731118652693242,
+              "meanError": 0.00012026431199207458,
+              "coreSigma": 0.273776376614111,
+              "coreSigmaError": 0.00014504410348750157,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 4.650525372627367,
+              "originalSigma": 0.2884345513087725,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 4.731118652693242,
+                "max": 4.731118652693242,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.273776376614111,
+                "max": 0.273776376614111,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 2849.3554066215866,
+                "max": 2849.3554066215866,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 4.731118652693242,
+                "max": 4.731118652693242,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.273776376614111,
+                "max": 0.273776376614111,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 2849.3554066215866,
+                "max": 2849.3554066215866,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+          "variant": "left_a25",
+          "family": "gaussian_left_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 2849.355406422952,
+          "AICReferenceOnly": 2861.355406422952,
+          "AICParameterCount": 6,
+          "nFitBins": 15,
+          "ndf": 9,
+          "pearsonPerNdf": 316.59146064130675,
+          "mean": 4.731118612147576,
+          "meanError": 0.00012026416308969347,
+          "coreSigma": 0.2737763058132369,
+          "coreSigmaError": 0.00014504367665697286,
+          "alpha": 3.0648097207617098,
+          "alphaError": 0.21456951079438957,
+          "originalMean": 4.650525372627367,
+          "originalSigma": 0.2884345513087725,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 4.28600221542404e-09,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3042.264339805219,
+              "AICReferenceOnly": 3052.264339805219,
+              "AICParameterCount": 5,
+              "nFitBins": 15,
+              "ndf": 10,
+              "pearsonPerNdf": 303.76572063486043,
+              "mean": 4.7293507775896,
+              "meanError": 0.00011854470407616821,
+              "coreSigma": 0.2752127325382227,
+              "coreSigmaError": 0.00014977865618033464,
+              "alpha": 1.7115192031391298,
+              "alphaError": 0.0036356698559152677,
+              "originalMean": 4.650525372627367,
+              "originalSigma": 0.2884345513087725,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.0325712069375322e-09,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 2849.355406422952,
+              "AICReferenceOnly": 2861.355406422952,
+              "AICParameterCount": 6,
+              "nFitBins": 15,
+              "ndf": 9,
+              "pearsonPerNdf": 316.59146064130675,
+              "mean": 4.731118612147576,
+              "meanError": 0.00012026416308969347,
+              "coreSigma": 0.2737763058132369,
+              "coreSigmaError": 0.00014504367665697286,
+              "alpha": 3.0648097207617098,
+              "alphaError": 0.21456951079438957,
+              "originalMean": 4.650525372627367,
+              "originalSigma": 0.2884345513087725,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 4.28600221542404e-09,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 4.7293507775896,
+                "max": 4.731118612147576,
+                "span": 0.0017678345579756893
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.2737763058132369,
+                "max": 0.2752127325382227,
+                "span": 0.0014364267249857843
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.7115192031391298,
+                "max": 3.0648097207617098,
+                "span": 1.35329051762258
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 2849.355406422952,
+                "max": 3042.264339805219,
+                "span": 192.90893338226715
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 4.7293507775896,
+                "max": 4.731118612147576,
+                "span": 0.0017678345579756893
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.2737763058132369,
+                "max": 0.2752127325382227,
+                "span": 0.0014364267249857843
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.7115192031391298,
+                "max": 3.0648097207617098,
+                "span": 1.35329051762258
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 2849.355406422952,
+                "max": 3042.264339805219,
+                "span": 192.90893338226715
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+          "variant": "right_a25",
+          "family": "gaussian_right_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 2849.3554064600185,
+          "AICReferenceOnly": 2861.3554064600185,
+          "AICParameterCount": 6,
+          "nFitBins": 15,
+          "ndf": 9,
+          "pearsonPerNdf": 316.5914626462048,
+          "mean": 4.731118608974841,
+          "meanError": 0.00012026421565764936,
+          "coreSigma": 0.27377633432446874,
+          "coreSigmaError": 0.00014504403634074887,
+          "alpha": 2.5383617414778312,
+          "alphaError": 0.06402862733326663,
+          "originalMean": 4.650525372627367,
+          "originalSigma": 0.2884345513087725,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 4.1266305763705494e-08,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 2849.355406622956,
+              "AICReferenceOnly": 2861.355406622956,
+              "AICParameterCount": 6,
+              "nFitBins": 15,
+              "ndf": 9,
+              "pearsonPerNdf": 316.5914652884058,
+              "mean": 4.731118652860083,
+              "meanError": 0.00012026431222220005,
+              "coreSigma": 0.27377637680218553,
+              "coreSigmaError": 0.00014504410400185264,
+              "alpha": 4.597191173899716,
+              "alphaError": 1020539.1182054239,
+              "originalMean": 4.650525372627367,
+              "originalSigma": 0.2884345513087725,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.9431739624306398e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 2849.3554064600185,
+              "AICReferenceOnly": 2861.3554064600185,
+              "AICParameterCount": 6,
+              "nFitBins": 15,
+              "ndf": 9,
+              "pearsonPerNdf": 316.5914626462048,
+              "mean": 4.731118608974841,
+              "meanError": 0.00012026421565764936,
+              "coreSigma": 0.27377633432446874,
+              "coreSigmaError": 0.00014504403634074887,
+              "alpha": 2.5383617414778312,
+              "alphaError": 0.06402862733326663,
+              "originalMean": 4.650525372627367,
+              "originalSigma": 0.2884345513087725,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 4.1266305763705494e-08,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 4.731118608974841,
+                "max": 4.731118652860083,
+                "span": 4.388524210696687e-08
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.27377633432446874,
+                "max": 0.27377637680218553,
+                "span": 4.247771678844714e-08
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.5383617414778312,
+                "max": 4.597191173899716,
+                "span": 2.058829432421885
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 2849.3554064600185,
+                "max": 2849.355406622956,
+                "span": 1.6293734006467275e-07
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 4.731118608974841,
+                "max": 4.731118652860083,
+                "span": 4.388524210696687e-08
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.27377633432446874,
+                "max": 0.27377637680218553,
+                "span": 4.247771678844714e-08
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.5383617414778312,
+                "max": 4.597191173899716,
+                "span": 2.058829432421885
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 2849.3554064600185,
+                "max": 2849.355406622956,
+                "span": 1.6293734006467275e-07
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "t_b0178",
+      "target": "t",
+      "mode": "TAG_T",
+      "r": 1.775,
+      "rLo": 1.77,
+      "rHi": 1.78,
+      "fitLo": 6.5,
+      "fitHi": 9.0,
+      "caseIndex": 5,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 4155.896996034666,
+          "AICReferenceOnly": 4163.896996034666,
+          "AICParameterCount": 4,
+          "nFitBins": 25,
+          "ndf": 21,
+          "pearsonPerNdf": 196.30901158600201,
+          "mean": 7.84534153314989,
+          "meanError": 0.0005992421641443932,
+          "coreSigma": 0.5179333028205254,
+          "coreSigmaError": 0.0005386804391580615,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 7.728096162182495,
+          "originalSigma": 0.4800954344761392,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 4155.896996034666,
+              "AICReferenceOnly": 4163.896996034666,
+              "AICParameterCount": 4,
+              "nFitBins": 25,
+              "ndf": 21,
+              "pearsonPerNdf": 196.30901158600201,
+              "mean": 7.84534153314989,
+              "meanError": 0.0005992421641443932,
+              "coreSigma": 0.5179333028205254,
+              "coreSigmaError": 0.0005386804391580615,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 7.728096162182495,
+              "originalSigma": 0.4800954344761392,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 7.84534153314989,
+                "max": 7.84534153314989,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.5179333028205254,
+                "max": 0.5179333028205254,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 4155.896996034666,
+                "max": 4155.896996034666,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 7.84534153314989,
+                "max": 7.84534153314989,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.5179333028205254,
+                "max": 0.5179333028205254,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 4155.896996034666,
+                "max": 4155.896996034666,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+          "variant": "left_a1",
+          "family": "gaussian_left_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 3858.313970292692,
+          "AICReferenceOnly": 3866.313970292692,
+          "AICParameterCount": 4,
+          "nFitBins": 25,
+          "ndf": 21,
+          "pearsonPerNdf": 181.10977092753515,
+          "mean": 7.8405146019410354,
+          "meanError": 0.0006486223308856059,
+          "coreSigma": 0.5150515295116171,
+          "coreSigmaError": 0.0006209616889000192,
+          "alpha": 1.0555324588910127,
+          "alphaError": 0.004589368346890789,
+          "originalMean": 7.728096162182495,
+          "originalSigma": 0.4800954344761392,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 3.707869964252916e-08,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3858.313970292692,
+              "AICReferenceOnly": 3866.313970292692,
+              "AICParameterCount": 4,
+              "nFitBins": 25,
+              "ndf": 21,
+              "pearsonPerNdf": 181.10977092753515,
+              "mean": 7.8405146019410354,
+              "meanError": 0.0006486223308856059,
+              "coreSigma": 0.5150515295116171,
+              "coreSigmaError": 0.0006209616889000192,
+              "alpha": 1.0555324588910127,
+              "alphaError": 0.004589368346890789,
+              "originalMean": 7.728096162182495,
+              "originalSigma": 0.4800954344761392,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 3.707869964252916e-08,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 3858.313970741119,
+              "AICReferenceOnly": 3866.313970741119,
+              "AICParameterCount": 4,
+              "nFitBins": 25,
+              "ndf": 21,
+              "pearsonPerNdf": 181.1098234986924,
+              "mean": 7.840514234449412,
+              "meanError": 0.0006486219626227959,
+              "coreSigma": 0.5150517073450027,
+              "coreSigmaError": 0.0006209616595372622,
+              "alpha": 1.0555345583752702,
+              "alphaError": 0.004589387699180399,
+              "originalMean": 7.728096162182495,
+              "originalSigma": 0.4800954344761392,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 4.854320482697201e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 7.840514234449412,
+                "max": 7.8405146019410354,
+                "span": 3.674916237983439e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.5150515295116171,
+                "max": 0.5150517073450027,
+                "span": 1.7783338557286754e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.0555324588910127,
+                "max": 1.0555345583752702,
+                "span": 2.099484257556128e-06
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 3858.313970292692,
+                "max": 3858.313970741119,
+                "span": 4.4842727220384404e-07
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 7.840514234449412,
+                "max": 7.8405146019410354,
+                "span": 3.674916237983439e-07
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.5150515295116171,
+                "max": 0.5150517073450027,
+                "span": 1.7783338557286754e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.0555324588910127,
+                "max": 1.0555345583752702,
+                "span": 2.099484257556128e-06
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 3858.313970292692,
+                "max": 3858.313970741119,
+                "span": 4.4842727220384404e-07
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+          "variant": "right_a1",
+          "family": "gaussian_right_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 4155.89699615233,
+          "AICReferenceOnly": 4165.89699615233,
+          "AICParameterCount": 5,
+          "nFitBins": 25,
+          "ndf": 20,
+          "pearsonPerNdf": 206.12443691414228,
+          "mean": 7.845341789363427,
+          "meanError": 0.000599252016519577,
+          "coreSigma": 0.5179332325520464,
+          "coreSigmaError": 0.0005386893440654641,
+          "alpha": 2.415313923179204,
+          "alphaError": 20.340910354566628,
+          "originalMean": 7.728096162182495,
+          "originalSigma": 0.4800954344761392,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 1.2532183340117298e-07,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 4155.89699615233,
+              "AICReferenceOnly": 4165.89699615233,
+              "AICParameterCount": 5,
+              "nFitBins": 25,
+              "ndf": 20,
+              "pearsonPerNdf": 206.12443691414228,
+              "mean": 7.845341789363427,
+              "meanError": 0.000599252016519577,
+              "coreSigma": 0.5179332325520464,
+              "coreSigmaError": 0.0005386893440654641,
+              "alpha": 2.415313923179204,
+              "alphaError": 20.340910354566628,
+              "originalMean": 7.728096162182495,
+              "originalSigma": 0.4800954344761392,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.2532183340117298e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": false,
+              "dataDeviance": 4155.897069161659,
+              "AICReferenceOnly": 4165.897069161659,
+              "AICParameterCount": 5,
+              "nFitBins": 25,
+              "ndf": 20,
+              "pearsonPerNdf": 206.12474027102945,
+              "mean": 7.845339554878004,
+              "meanError": -1,
+              "coreSigma": 0.5179378536371376,
+              "coreSigmaError": -1,
+              "alpha": 2.592671973276696,
+              "alphaError": -1,
+              "originalMean": 7.728096162182495,
+              "originalSigma": 0.4800954344761392,
+              "status": 3,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": 3,
+                "responseMigradEdm": 7.312988497580535e-05,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 7.845339554878004,
+                "max": 7.845341789363427,
+                "span": 2.2344854233580236e-06
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.5179332325520464,
+                "max": 0.5179378536371376,
+                "span": 4.62108509124981e-06
+              },
+              "alpha": {
+                "count": 2,
+                "min": 2.415313923179204,
+                "max": 2.592671973276696,
+                "span": 0.17735805009749184
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 4155.89699615233,
+                "max": 4155.897069161659,
+                "span": 7.300932884390932e-05
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 7.845341789363427,
+                "max": 7.845341789363427,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.5179332325520464,
+                "max": 0.5179332325520464,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 2.415313923179204,
+                "max": 2.415313923179204,
+                "span": 0.0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 4155.89699615233,
+                "max": 4155.89699615233,
+                "span": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "he3_b0178",
+      "target": "he3",
+      "mode": "TAG_HE3",
+      "r": 1.775,
+      "rLo": 1.77,
+      "rHi": 1.78,
+      "fitLo": 15.200000000000001,
+      "fitHi": 19.400000000000002,
+      "caseIndex": 6,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 692.422341760232,
+          "AICReferenceOnly": 702.422341760232,
+          "AICParameterCount": 5,
+          "nFitBins": 42,
+          "ndf": 37,
+          "pearsonPerNdf": 18.695593553117057,
+          "mean": 17.272644531961692,
+          "meanError": 0.0011423579872854592,
+          "coreSigma": 0.6979803114264627,
+          "coreSigmaError": 0.001257237894093566,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 17.319595910861647,
+          "originalSigma": 0.8241333843828488,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 692.422341760232,
+              "AICReferenceOnly": 702.422341760232,
+              "AICParameterCount": 5,
+              "nFitBins": 42,
+              "ndf": 37,
+              "pearsonPerNdf": 18.695593553117057,
+              "mean": 17.272644531961692,
+              "meanError": 0.0011423579872854592,
+              "coreSigma": 0.6979803114264627,
+              "coreSigmaError": 0.001257237894093566,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 17.319595910861647,
+              "originalSigma": 0.8241333843828488,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 17.272644531961692,
+                "max": 17.272644531961692,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.6979803114264627,
+                "max": 0.6979803114264627,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 692.422341760232,
+                "max": 692.422341760232,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 17.272644531961692,
+                "max": 17.272644531961692,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.6979803114264627,
+                "max": 0.6979803114264627,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 692.422341760232,
+                "max": 692.422341760232,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+          "variant": "left_a25",
+          "family": "gaussian_left_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 636.2083727588299,
+          "AICReferenceOnly": 648.2083727588299,
+          "AICParameterCount": 6,
+          "nFitBins": 42,
+          "ndf": 36,
+          "pearsonPerNdf": 17.658423968228426,
+          "mean": 17.266335776972603,
+          "meanError": 0.0012003122752433126,
+          "coreSigma": 0.7060345198513664,
+          "coreSigmaError": 0.0013733765483445435,
+          "alpha": 1.6047089826306904,
+          "alphaError": 0.03572180485143609,
+          "originalMean": 17.319595910861647,
+          "originalSigma": 0.8241333843828488,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 2.9491710907539023e-08,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 636.2083728581985,
+              "AICReferenceOnly": 648.2083728581985,
+              "AICParameterCount": 6,
+              "nFitBins": 42,
+              "ndf": 36,
+              "pearsonPerNdf": 17.658425045843575,
+              "mean": 17.266335726276914,
+              "meanError": 0.001200309018123772,
+              "coreSigma": 0.7060347230471797,
+              "coreSigmaError": 0.0013733739061044922,
+              "alpha": 1.6046981249234589,
+              "alphaError": 0.035720779352049106,
+              "originalMean": 17.319595910861647,
+              "originalSigma": 0.8241333843828488,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.2896557678635348e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 636.2083727588299,
+              "AICReferenceOnly": 648.2083727588299,
+              "AICParameterCount": 6,
+              "nFitBins": 42,
+              "ndf": 36,
+              "pearsonPerNdf": 17.658423968228426,
+              "mean": 17.266335776972603,
+              "meanError": 0.0012003122752433126,
+              "coreSigma": 0.7060345198513664,
+              "coreSigmaError": 0.0013733765483445435,
+              "alpha": 1.6047089826306904,
+              "alphaError": 0.03572180485143609,
+              "originalMean": 17.319595910861647,
+              "originalSigma": 0.8241333843828488,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 2.9491710907539023e-08,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 17.266335726276914,
+                "max": 17.266335776972603,
+                "span": 5.0695689424173906e-08
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.7060345198513664,
+                "max": 0.7060347230471797,
+                "span": 2.0319581328642755e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.6046981249234589,
+                "max": 1.6047089826306904,
+                "span": 1.0857707231526348e-05
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 636.2083727588299,
+                "max": 636.2083728581985,
+                "span": 9.93685489447671e-08
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 17.266335726276914,
+                "max": 17.266335776972603,
+                "span": 5.0695689424173906e-08
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.7060345198513664,
+                "max": 0.7060347230471797,
+                "span": 2.0319581328642755e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.6046981249234589,
+                "max": 1.6047089826306904,
+                "span": 1.0857707231526348e-05
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 636.2083727588299,
+                "max": 636.2083728581985,
+                "span": 9.93685489447671e-08
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+          "variant": "right_a1",
+          "family": "gaussian_right_exp",
+          "alphaStart": 1.0,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 581.3925338513105,
+          "AICReferenceOnly": 591.3925338513105,
+          "AICParameterCount": 5,
+          "nFitBins": 42,
+          "ndf": 37,
+          "pearsonPerNdf": 15.69034804453341,
+          "mean": 17.276989514678245,
+          "meanError": 0.0011525231068179145,
+          "coreSigma": 0.6998432303454037,
+          "coreSigmaError": 0.001374351806251817,
+          "alpha": 1.4213828941176354,
+          "alphaError": 0.009747656653884962,
+          "originalMean": 17.319595910861647,
+          "originalSigma": 0.8241333843828488,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 1.7672935061130147e-09,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 581.3925338513105,
+              "AICReferenceOnly": 591.3925338513105,
+              "AICParameterCount": 5,
+              "nFitBins": 42,
+              "ndf": 37,
+              "pearsonPerNdf": 15.69034804453341,
+              "mean": 17.276989514678245,
+              "meanError": 0.0011525231068179145,
+              "coreSigma": 0.6998432303454037,
+              "coreSigmaError": 0.001374351806251817,
+              "alpha": 1.4213828941176354,
+              "alphaError": 0.009747656653884962,
+              "originalMean": 17.319595910861647,
+              "originalSigma": 0.8241333843828488,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.7672935061130147e-09,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 692.4223420025,
+              "AICReferenceOnly": 704.4223420025,
+              "AICParameterCount": 6,
+              "nFitBins": 42,
+              "ndf": 36,
+              "pearsonPerNdf": 19.214918008609473,
+              "mean": 17.27264452713043,
+              "meanError": 0.0011423585525566443,
+              "coreSigma": 0.6979809274604531,
+              "coreSigmaError": 0.0012572397686898276,
+              "alpha": 5.8136572804400934,
+              "alphaError": 3.663449304925411,
+              "originalMean": 17.319595910861647,
+              "originalSigma": 0.8241333843828488,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 2.4226748801644986e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 17.27264452713043,
+                "max": 17.276989514678245,
+                "span": 0.004344987547813872
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.6979809274604531,
+                "max": 0.6998432303454037,
+                "span": 0.0018623028849505951
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.4213828941176354,
+                "max": 5.8136572804400934,
+                "span": 4.392274386322458
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 581.3925338513105,
+                "max": 692.4223420025,
+                "span": 111.02980815118951
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 17.27264452713043,
+                "max": 17.276989514678245,
+                "span": 0.004344987547813872
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.6979809274604531,
+                "max": 0.6998432303454037,
+                "span": 0.0018623028849505951
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.4213828941176354,
+                "max": 5.8136572804400934,
+                "span": 4.392274386322458
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 581.3925338513105,
+                "max": 692.4223420025,
+                "span": 111.02980815118951
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "he4_b0178",
+      "target": "he4",
+      "mode": "TAG_D",
+      "r": 1.775,
+      "rLo": 1.77,
+      "rHi": 1.78,
+      "fitLo": 19.3,
+      "fitHi": 24.3,
+      "caseIndex": 7,
+      "families": {
+        "gaussian": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+          "variant": "gaussian",
+          "family": "gaussian",
+          "alphaStart": 1.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 86.93479994758017,
+          "AICReferenceOnly": 96.93479994758017,
+          "AICParameterCount": 5,
+          "nFitBins": 50,
+          "ndf": 45,
+          "pearsonPerNdf": 1.9258636845732082,
+          "mean": 21.84227176328742,
+          "meanError": 0.004044704863155676,
+          "coreSigma": 0.8884858525952818,
+          "coreSigmaError": 0.00476556667375641,
+          "alpha": 0,
+          "alphaError": 0,
+          "originalMean": 21.81978589107574,
+          "originalSigma": 0.9773566053478134,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": false,
+            "responseMinimizeReturned": false,
+            "responseMinimizeConverged": false,
+            "responseMigradStatus": -1,
+            "responseMigradEdm": 1e+100,
+            "responseHesseAttempted": false,
+            "responseHesseSucceeded": false,
+            "responseHesseStatus": -1
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+              "variant": "gaussian",
+              "family": "gaussian",
+              "alphaStart": 1.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 86.93479994758017,
+              "AICReferenceOnly": 96.93479994758017,
+              "AICParameterCount": 5,
+              "nFitBins": 50,
+              "ndf": 45,
+              "pearsonPerNdf": 1.9258636845732082,
+              "mean": 21.84227176328742,
+              "meanError": 0.004044704863155676,
+              "coreSigma": 0.8884858525952818,
+              "coreSigmaError": 0.00476556667375641,
+              "alpha": 0,
+              "alphaError": 0,
+              "originalMean": 21.81978589107574,
+              "originalSigma": 0.9773566053478134,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": false,
+                "responseMinimizeReturned": false,
+                "responseMinimizeConverged": false,
+                "responseMigradStatus": -1,
+                "responseMigradEdm": 1e+100,
+                "responseHesseAttempted": false,
+                "responseHesseSucceeded": false,
+                "responseHesseStatus": -1
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 21.84227176328742,
+                "max": 21.84227176328742,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.8884858525952818,
+                "max": 0.8884858525952818,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 86.93479994758017,
+                "max": 86.93479994758017,
+                "span": 0.0
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 1,
+                "min": 21.84227176328742,
+                "max": 21.84227176328742,
+                "span": 0.0
+              },
+              "coreSigma": {
+                "count": 1,
+                "min": 0.8884858525952818,
+                "max": 0.8884858525952818,
+                "span": 0.0
+              },
+              "alpha": {
+                "count": 1,
+                "min": 0,
+                "max": 0,
+                "span": 0
+              },
+              "dataDeviance": {
+                "count": 1,
+                "min": 86.93479994758017,
+                "max": 86.93479994758017,
+                "span": 0.0
+              }
+            }
+          }
+        },
+        "gaussian_left_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+          "variant": "left_a25",
+          "family": "gaussian_left_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 86.16914928013163,
+          "AICReferenceOnly": 98.16914928013163,
+          "AICParameterCount": 6,
+          "nFitBins": 50,
+          "ndf": 44,
+          "pearsonPerNdf": 1.9534153300686454,
+          "mean": 21.836067796156943,
+          "meanError": 0.005406646703683442,
+          "coreSigma": 0.8970263346967413,
+          "coreSigmaError": 0.006520859710286498,
+          "alpha": 1.777030139840485,
+          "alphaError": 0.23161651177948706,
+          "originalMean": 21.81978589107574,
+          "originalSigma": 0.9773566053478134,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 1.1251387525513043e-07,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+              "variant": "left_a1",
+              "family": "gaussian_left_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 86.16914934550599,
+              "AICReferenceOnly": 98.16914934550599,
+              "AICParameterCount": 6,
+              "nFitBins": 50,
+              "ndf": 44,
+              "pearsonPerNdf": 1.9534154954703344,
+              "mean": 21.83607036028294,
+              "meanError": 0.005404803650686079,
+              "coreSigma": 0.8970263397988668,
+              "coreSigmaError": 0.006518917545552727,
+              "alpha": 1.777118979365568,
+              "alphaError": 0.23144604288905762,
+              "originalMean": 21.81978589107574,
+              "originalSigma": 0.9773566053478134,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.780078890138912e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+              "variant": "left_a25",
+              "family": "gaussian_left_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 86.16914928013163,
+              "AICReferenceOnly": 98.16914928013163,
+              "AICParameterCount": 6,
+              "nFitBins": 50,
+              "ndf": 44,
+              "pearsonPerNdf": 1.9534153300686454,
+              "mean": 21.836067796156943,
+              "meanError": 0.005406646703683442,
+              "coreSigma": 0.8970263346967413,
+              "coreSigmaError": 0.006520859710286498,
+              "alpha": 1.777030139840485,
+              "alphaError": 0.23161651177948706,
+              "originalMean": 21.81978589107574,
+              "originalSigma": 0.9773566053478134,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.1251387525513043e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 21.836067796156943,
+                "max": 21.83607036028294,
+                "span": 2.564125995974109e-06
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8970263346967413,
+                "max": 0.8970263397988668,
+                "span": 5.102125499867327e-09
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.777030139840485,
+                "max": 1.777118979365568,
+                "span": 8.88395250828733e-05
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 86.16914928013163,
+                "max": 86.16914934550599,
+                "span": 6.537435126574564e-08
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 21.836067796156943,
+                "max": 21.83607036028294,
+                "span": 2.564125995974109e-06
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8970263346967413,
+                "max": 0.8970263397988668,
+                "span": 5.102125499867327e-09
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.777030139840485,
+                "max": 1.777118979365568,
+                "span": 8.88395250828733e-05
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 86.16914928013163,
+                "max": 86.16914934550599,
+                "span": 6.537435126574564e-08
+              }
+            }
+          }
+        },
+        "gaussian_right_exp": {
+          "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+          "variant": "right_a25",
+          "family": "gaussian_right_exp",
+          "alphaStart": 2.5,
+          "fitCompleted": true,
+          "numericalOK": true,
+          "dataDeviance": 86.70047959628742,
+          "AICReferenceOnly": 96.70047959628742,
+          "AICParameterCount": 5,
+          "nFitBins": 50,
+          "ndf": 45,
+          "pearsonPerNdf": 1.9235391217908864,
+          "mean": 21.852933343172825,
+          "meanError": 0.003886279780049012,
+          "coreSigma": 0.899397817281778,
+          "coreSigmaError": 0.004704664297736672,
+          "alpha": 1.4506828485543413,
+          "alphaError": 0.030258328319033134,
+          "originalMean": 21.81978589107574,
+          "originalSigma": 0.9773566053478134,
+          "status": 0,
+          "atBoundary": false,
+          "foreignPeakInsideFit": false,
+          "optimizerFlags": {
+            "responseOptimizerDiagnosticsAvailable": true,
+            "responseMinimizeReturned": true,
+            "responseMinimizeConverged": true,
+            "responseMigradStatus": 0,
+            "responseMigradEdm": 1.5614190933252237e-10,
+            "responseHesseAttempted": true,
+            "responseHesseSucceeded": true,
+            "responseHesseStatus": 0
+          },
+          "displaySelection": "minimum_deviance_numerical_solution_for_display",
+          "scientificAdoptionAllowed": false,
+          "candidates": [
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+              "variant": "right_a1",
+              "family": "gaussian_right_exp",
+              "alphaStart": 1.0,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 86.70047973074789,
+              "AICReferenceOnly": 96.70047973074789,
+              "AICParameterCount": 5,
+              "nFitBins": 50,
+              "ndf": 45,
+              "pearsonPerNdf": 1.9235395846791588,
+              "mean": 21.85293470183351,
+              "meanError": 0.003886270313171351,
+              "coreSigma": 0.8993976628471148,
+              "coreSigmaError": 0.004704639547676446,
+              "alpha": 1.4506884595846363,
+              "alphaError": 0.03025841134406522,
+              "originalMean": 21.81978589107574,
+              "originalSigma": 0.9773566053478134,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.3460584163217832e-07,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            },
+            {
+              "fitDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002",
+              "variant": "right_a25",
+              "family": "gaussian_right_exp",
+              "alphaStart": 2.5,
+              "fitCompleted": true,
+              "numericalOK": true,
+              "dataDeviance": 86.70047959628742,
+              "AICReferenceOnly": 96.70047959628742,
+              "AICParameterCount": 5,
+              "nFitBins": 50,
+              "ndf": 45,
+              "pearsonPerNdf": 1.9235391217908864,
+              "mean": 21.852933343172825,
+              "meanError": 0.003886279780049012,
+              "coreSigma": 0.899397817281778,
+              "coreSigmaError": 0.004704664297736672,
+              "alpha": 1.4506828485543413,
+              "alphaError": 0.030258328319033134,
+              "originalMean": 21.81978589107574,
+              "originalSigma": 0.9773566053478134,
+              "status": 0,
+              "atBoundary": false,
+              "foreignPeakInsideFit": false,
+              "optimizerFlags": {
+                "responseOptimizerDiagnosticsAvailable": true,
+                "responseMinimizeReturned": true,
+                "responseMinimizeConverged": true,
+                "responseMigradStatus": 0,
+                "responseMigradEdm": 1.5614190933252237e-10,
+                "responseHesseAttempted": true,
+                "responseHesseSucceeded": true,
+                "responseHesseStatus": 0
+              }
+            }
+          ],
+          "seedSpans": {
+            "allSavedCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 21.852933343172825,
+                "max": 21.85293470183351,
+                "span": 1.3586606861792916e-06
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8993976628471148,
+                "max": 0.899397817281778,
+                "span": 1.5443466327980104e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.4506828485543413,
+                "max": 1.4506884595846363,
+                "span": 5.611030295060715e-06
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 86.70047959628742,
+                "max": 86.70047973074789,
+                "span": 1.3446046409626433e-07
+              }
+            },
+            "numericalCandidates": {
+              "mean": {
+                "count": 2,
+                "min": 21.852933343172825,
+                "max": 21.85293470183351,
+                "span": 1.3586606861792916e-06
+              },
+              "coreSigma": {
+                "count": 2,
+                "min": 0.8993976628471148,
+                "max": 0.899397817281778,
+                "span": 1.5443466327980104e-07
+              },
+              "alpha": {
+                "count": 2,
+                "min": 1.4506828485543413,
+                "max": 1.4506884595846363,
+                "span": 5.611030295060715e-06
+              },
+              "dataDeviance": {
+                "count": 2,
+                "min": 86.70047959628742,
+                "max": 86.70047973074789,
+                "span": 1.3446046409626433e-07
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "caseCount": 8,
+  "pages": 8,
+  "panels": 48,
+  "runDirectories": [
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_gaussian_smoke_002",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a1_smoke_002",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_left_a25_smoke_002",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a1_smoke_002",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_right_a25_smoke_002"
+  ],
+  "outputDirectory": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/response_comparison_001",
+  "productionEnabled": false,
+  "coefficientsUpdated": false,
+  "purityAvailable": false,
+  "scientificAdoptionAllowed": false,
+  "selectionMeaning": "Lowest-deviance numerically valid seed is selected for display only; finite failed fits/raw are explicit fallbacks.",
+  "sigmaMeaning": "Gaussian core width, NOT total RMS; native-R mixture broadening is not a new PID width.",
+  "AICMeaning": "Reference dataDeviance + 2*(nFitBins-engineConditionalNdf), including active yields; not a scientific acceptance threshold.",
+  "identicalNativeDataVerified": true,
+  "nativeCounts": [
+    {
+      "caseIndex": 0,
+      "savedFullNativeCounts": 25408073,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    },
+    {
+      "caseIndex": 1,
+      "savedFullNativeCounts": 2644946,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    },
+    {
+      "caseIndex": 2,
+      "savedFullNativeCounts": 2848089,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    },
+    {
+      "caseIndex": 3,
+      "savedFullNativeCounts": 25408073,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    },
+    {
+      "caseIndex": 4,
+      "savedFullNativeCounts": 14026329,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    },
+    {
+      "caseIndex": 5,
+      "savedFullNativeCounts": 2153935,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    },
+    {
+      "caseIndex": 6,
+      "savedFullNativeCounts": 758226,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    },
+    {
+      "caseIndex": 7,
+      "savedFullNativeCounts": 14026329,
+      "countRowsAvailable": 5,
+      "countRowsMissing": 0,
+      "exactRawIdentityAlsoEstablishedBy": "same cache SHA/tag/R bin and verified raw native readback"
+    }
+  ],
+  "inputsUnchanged": true,
+  "pdfReadback": true,
+  "refit": false,
+  "normalization": false
+}

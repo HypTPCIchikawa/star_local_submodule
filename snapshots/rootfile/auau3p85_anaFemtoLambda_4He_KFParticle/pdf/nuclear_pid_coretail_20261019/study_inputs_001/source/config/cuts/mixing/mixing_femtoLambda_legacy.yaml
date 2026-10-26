@@ -1,0 +1,12 @@
+# Original anaLambdaNuclearId effective pool policy, not an event-vertex cut.
+# Old maxMixEvents=100 with bufferSize=20 had effective depth20; make that explicit.
+mixingMode: bufferAll
+mixBothDirections: true
+nVzBins: 10
+nCentralityBins: 9
+nEventPlaneBins: 1
+bufferSize: 20
+maxMixEvents: 20
+minVz: 198.0
+maxVz: 202.0
+vzOutOfRangePolicy: clamp

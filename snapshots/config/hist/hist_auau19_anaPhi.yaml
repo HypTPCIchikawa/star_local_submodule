@@ -1,0 +1,647 @@
+# StPhiMaker histogram definitions (axes presets + histograms)
+# 1D: axis: *Preset or nBins/min/max; title required
+# 2D: xAxis: *Preset, yAxis: *Preset; title required
+
+# --- Axis presets (reusable physical quantities) ---
+axes:
+  MKK: &MKK
+    nBins: 200
+    min: 0.98
+    max: 1.18
+  OpeningAngle: &OpeningAngle
+    nBins: 100
+    min: 0.0
+    max: 3.14159
+  PairRapidity: &PairRapidity
+    nBins: 100
+    min: -1.5
+    max: 1.5
+  PairPt: &PairPt
+    nBins: 50
+    min: 0.0
+    max: 5.0
+  Vz: &Vz
+    nBins: 400
+    min: -100.0
+    max: 100.0
+  VxVy: &VxVy
+    nBins: 200
+    min: -5.0
+    max: 5.0
+  RefMult: &RefMult
+    nBins: 1000
+    min: 0.0
+    max: 1000.0
+  RunId: &RunId
+    nBins: 10000
+    min: 19000000.0
+    max: 21000000.0
+  VzDiff: &VzDiff
+    nBins: 200
+    min: -10.0
+    max: 10.0
+  Vr: &Vr
+    nBins: 200
+    min: 0.0
+    max: 5.0
+  DCAKK: &DCAKK
+    nBins: 200
+    min: 0.0
+    max: 5.0
+  TriggerIds: &TriggerIds
+    nBins: 100
+    min: 0.0
+    max: 1000000.0
+  Pt: &Pt
+    nBins: 200
+    min: 0.0
+    max: 10.0
+  Eta: &Eta
+    nBins: 100
+    min: -2.5
+    max: 2.5
+  Phi: &Phi
+    nBins: 100
+    min: -3.15
+    max: 3.15
+  NHitsFit: &NHitsFit
+    nBins: 60
+    min: 0.0
+    max: 60.0
+  NHitsRatio: &NHitsRatio
+    nBins: 100
+    min: 0.0
+    max: 1.05
+  DCA: &DCA
+    nBins: 200
+    min: 0.0
+    max: 5.0
+  Charge: &Charge
+    nBins: 5
+    min: -2.5
+    max: 2.5
+  Chi2: &Chi2
+    nBins: 100
+    min: 0.0
+    max: 10.0
+  Momentum: &Momentum
+    nBins: 200
+    min: 0.0
+    max: 10.0
+  DedxY: &DedxY
+    nBins: 100
+    min: 0.0
+    max: 1e-6
+  NSigmaY: &NSigmaY
+    nBins: 400
+    min: -20.0
+    max: 20.0
+  BetaY: &BetaY
+    nBins: 400
+    min: 0.0
+    max: 4.0
+  Mass2Y: &Mass2Y
+    nBins: 400
+    min: -0.5
+    max: 1.5
+  PQ: &PQ
+    nBins: 200
+    min: -4.0
+    max: 4.0
+  PQ_positive: &PQ_positive
+    nBins: 300
+    min: 0.0
+    max: 6.0
+  M2Q2: &M2Q2
+    nBins: 200
+    min: -0.4
+    max: 1.4
+  DedxKeVcm: &DedxKeVcm
+    nBins: 400
+    min: 0.0
+    max: 80.0
+  DeltaOneOverBeta: &DeltaOneOverBeta
+    nBins: 200
+    min: -0.1
+    max: 0.1
+  Psi2: &Psi2
+    nBins: 100
+    min: 0.0
+    max: 3.15
+  QxQy: &QxQy
+    nBins: 200
+    min: -100.0
+    max: 100.0
+  KPt: &KPt
+    nBins: 100
+    min: 0.0
+    max: 5.0
+  KEta: &KEta
+    nBins: 100
+    min: -1.5
+    max: 1.5
+  KNSigma: &KNSigma
+    nBins: 100
+    min: -5.0
+    max: 5.0
+  TofMatchMult: &TofMatchMult
+    nBins: 500
+    min: 0.0
+    max: 500.0
+  Cent9: &Cent9
+    nBins: 9
+    min: -0.5
+    max: 8.5
+  Cent16: &Cent16
+    nBins: 16
+    min: -0.5
+    max: 15.5
+  RefMultWeight: &RefMultWeight
+    nBins: 125
+    min: 0.5
+    max: 3.0
+  NKaon: &NKaon
+    nBins: 50
+    min: 0.0
+    max: 50.0
+  NTracks: &NTracks
+    nBins: 500
+    min: 0.0
+    max: 2000.0
+  NPhiPairs: &NPhiPairs
+    nBins: 200
+    min: 0.0
+    max: 200.0
+  NHitsDedx: &NHitsDedx
+    nBins: 60
+    min: 0.0
+    max: 60.0
+
+# --- Histogram definitions ---
+histograms:
+  # Event
+  hVz:
+    axis: *Vz
+    title: "Primary Vertex Z;V_{z} [cm];Counts"
+
+  hVxVy:
+    xAxis: *VxVy
+    yAxis: *VxVy
+    title: "Primary Vertex X vs Y;V_{x} [cm];V_{y} [cm]"
+
+  hRefMult:
+    axis: *RefMult
+    title: "RefMult Distribution;RefMult;Counts"
+
+  hVzVsRun:
+    xAxis: *RunId
+    yAxis: *Vz
+    title: "V_{z} vs RunID;RunID;V_{z} [cm]"
+
+  hRefMultVsVz:
+    xAxis: *Vz
+    yAxis: *RefMult
+    title: "RefMult vs V_{z};V_{z} [cm];RefMult"
+
+  hVzDiff:
+    axis: *VzDiff
+    title: "V_{z}^{TPC} - V_{z}^{VPD};#Delta V_{z} [cm];Counts"
+
+  hVr:
+    axis: *Vr
+    title: "Primary vertex transverse radius;V_{r} [cm];Counts"
+
+  hTriggerIds:
+    axis: *TriggerIds
+    title: "Trigger IDs;Trigger ID;Counts"
+
+  hCentrality:
+    axis: *Cent9
+    title: "Centrality bin (cent9);cent9 (0=70-80%%, 8=0-5%%);Counts"
+
+  hCentralityRaw:
+    axis: *Cent9
+    title: "Centrality bin before bin cut;cent9 (0=70-80%%, 8=0-5%%);Counts"
+
+  hCentrality16:
+    axis: *Cent16
+    title: "Centrality bin (cent16);cent16;Counts"
+
+  hRefMultCorr:
+    axis: *RefMult
+    title: "Corrected multiplicity;refMult_{corr};Counts"
+
+  hRefMultWeight:
+    axis: *RefMultWeight
+    title: "StRefMultCorr event weight;weight;Counts"
+
+  hRefMultVsNTOFMatch:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (before pileup cut);nBTOFMatch;refMult"
+
+  hRefMultVsNTOFMatchAfter:
+    xAxis: *TofMatchMult
+    yAxis: *RefMult
+    title: "nBTOFMatch vs refMult (after pileup cut);nBTOFMatch;refMult"
+
+  hCentralityVsVz:
+    xAxis: *Vz
+    yAxis: *Cent9
+    title: "cent9 vs V_{z};V_{z} [cm];cent9 (0=70-80%%, 8=0-5%%)"
+
+  hRawMult:
+    axis: *RefMult
+    title: "Raw multiplicity (refmult/fxtmult);mult;Counts"
+
+  hRawMult_vs_RefMultCorr:
+    xAxis: *RefMult
+    yAxis: *RefMult
+    title: "rawMult vs refMult_{corr};refMult_{corr};rawMult"
+
+  hRawMult_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *RefMult
+    title: "rawMult vs cent9;cent9 (0=70-80%%, 8=0-5%%);rawMult"
+
+  hRefMultCorr_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *RefMult
+    title: "refMult_{corr} vs cent9;cent9 (0=70-80%%, 8=0-5%%);refMult_{corr}"
+
+  hNTracks_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NTracks
+    title: "N_{tracks} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{tracks}"
+
+  hTofMatchMult_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *TofMatchMult
+    title: "nBTOFMatch vs cent9;cent9 (0=70-80%%, 8=0-5%%);nBTOFMatch"
+
+  hNKaonPlus_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NKaon
+    title: "N_{K^{+}} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{K^{+}}"
+
+  hNKaonMinus_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NKaon
+    title: "N_{K^{-}} vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{K^{-}}"
+
+  hNPhiPairs_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *NPhiPairs
+    title: "DCA-pass KK pairs vs cent9;cent9 (0=70-80%%, 8=0-5%%);N_{pairs}"
+
+  hMKK_vs_Cent9:
+    xAxis: *Cent9
+    yAxis: *MKK
+    title: "M_{KK} vs cent9;cent9 (0=70-80%%, 8=0-5%%);M_{KK} [GeV/c^{2}]"
+
+  hMKK_vs_RefMultCorr:
+    xAxis: *RefMult
+    yAxis: *MKK
+    title: "M_{KK} vs refMult_{corr};refMult_{corr};M_{KK} [GeV/c^{2}]"
+
+  hMKK_CentBin0:
+    axis: *MKK
+    title: "M_{KK} cent9=0 (70-80%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin1:
+    axis: *MKK
+    title: "M_{KK} cent9=1 (60-70%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin2:
+    axis: *MKK
+    title: "M_{KK} cent9=2 (50-60%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin3:
+    axis: *MKK
+    title: "M_{KK} cent9=3 (40-50%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin4:
+    axis: *MKK
+    title: "M_{KK} cent9=4 (30-40%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin5:
+    axis: *MKK
+    title: "M_{KK} cent9=5 (20-30%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin6:
+    axis: *MKK
+    title: "M_{KK} cent9=6 (10-20%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin7:
+    axis: *MKK
+    title: "M_{KK} cent9=7 (5-10%%);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_CentBin8:
+    axis: *MKK
+    title: "M_{KK} cent9=8 (0-5%%);M_{KK} [GeV/c^{2}];Counts"
+
+  hNTracks:
+    axis: *NTracks
+    title: "Number of Tracks (before maxNTr cut);N_{tracks};Counts"
+
+  # Track
+  hPt:
+    axis: *Pt
+    title: "Transverse Momentum p_{T};p_{T} [GeV/c];Counts"
+
+  hEta:
+    axis: *Eta
+    title: "Pseudorapidity #eta;#eta;Counts"
+
+  hPhi:
+    axis: *Phi
+    title: "Azimuthal Angle #phi;#phi [rad];Counts"
+
+  hNHitsFit:
+    axis: *NHitsFit
+    title: "nHitsFit;nHitsFit;Counts"
+
+  hNHitsRatio:
+    axis: *NHitsRatio
+    title: "nHitsFit / nHitsMax;Ratio;Counts"
+
+  hDCA:
+    axis: *DCA
+    title: "Global DCA to PV;DCA [cm];Counts"
+
+  hCharge:
+    axis: *Charge
+    title: "Track Charge;Charge;Counts"
+
+  hChi2:
+    axis: *Chi2
+    title: "Track #chi^{2};#chi^{2};Counts"
+
+  # Track (pre-cut, before PassTrackCuts)
+  hPt_Raw:
+    axis: *Pt
+    title: "p_{T} (before track cuts);p_{T} [GeV/c];Counts"
+  hEta_Raw:
+    axis: *Eta
+    title: "#eta (before track cuts);#eta;Counts"
+  hNHitsFit_Raw:
+    axis: *NHitsFit
+    title: "nHitsFit (before track cuts);nHitsFit;Counts"
+  hNHitsRatio_Raw:
+    axis: *NHitsRatio
+    title: "nHitsFit/nHitsMax (before track cuts);Ratio;Counts"
+  hNHitsDedx:
+    axis: *NHitsDedx
+    title: "nHitsDedx (before track cuts);nHitsDedx;Counts"
+  hChi2_Raw:
+    axis: *Chi2
+    title: "#chi^{2} (before track cuts);#chi^{2};Counts"
+  hDCA_Raw:
+    axis: *DCA
+    title: "DCA to PV (before track cuts);DCA [cm];Counts"
+
+  # PID
+  hDedxVsP:
+    xAxis: *Momentum
+    yAxis: *DedxY
+    title: "dE/dx vs Momentum;p [GeV/c];dE/dx [GeV/cm]"
+
+  hM2q2VsPq:
+    xAxis: *PQ
+    yAxis: *M2Q2
+    title: "m^{2}/q^{2} vs p/q;p/q [GeV/c];m^{2}/q^{2} [(GeV/c^{2})^{2}]"
+
+  hDedxVsPq:
+    xAxis: *PQ_positive
+    yAxis: *DedxKeVcm
+    title: "dE/dx vs p/q;p/q (GeV/c);dE/dx (KeV/cm)"
+
+  hDeltaOneOverBetaKaon:
+    axis: *DeltaOneOverBeta
+    title: "#Delta(1/#beta) for K hypothesis (TOF matched);#Delta(1/#beta);Counts"
+
+  hDeltaOneOverBetaVsP:
+    xAxis: *Momentum
+    yAxis: *DeltaOneOverBeta
+    title: "#Delta(1/#beta) vs p (K hypothesis);p [GeV/c];#Delta(1/#beta)"
+
+  hNSigmaPionVsP:
+    xAxis: *Momentum
+    yAxis: *NSigmaY
+    title: "n#sigma_{#pi} vs p;p [GeV/c];n#sigma_{#pi}"
+
+  hNSigmaKaonVsP:
+    xAxis: *Momentum
+    yAxis: *NSigmaY
+    title: "n#sigma_{K} vs p;p [GeV/c];n#sigma_{K}"
+
+  hNSigmaProtonVsP:
+    xAxis: *Momentum
+    yAxis: *NSigmaY
+    title: "n#sigma_{p} vs p;p [GeV/c];n#sigma_{p}"
+
+  hBetaVsP:
+    xAxis: *Momentum
+    yAxis: *BetaY
+    title: "1/#beta vs p;p [GeV/c];1/#beta"
+
+  hMass2VsP:
+    xAxis: *Momentum
+    yAxis: *Mass2Y
+    title: "m^{2} vs p (TOF-matched tracks);p [GeV/c];m^{2} [(GeV/c^{2})^{2}]"
+
+  hMass2VsP_TpcKaon:
+    xAxis: *Momentum
+    yAxis: *Mass2Y
+    title: "m^{2} vs p (TPC K candidates, TOF hit);p [GeV/c];m^{2} [(GeV/c^{2})^{2}]"
+
+  hMass2VsP_IsKaon:
+    xAxis: *Momentum
+    yAxis: *Mass2Y
+    title: "m^{2} vs p (final IsKaon, TOF hit);p [GeV/c];m^{2} [(GeV/c^{2})^{2}]"
+
+  # Event plane
+  hPsi2:
+    axis: *Psi2
+    title: "Raw Event Plane #Psi_{2};#Psi_{2} [rad];Counts"
+
+  hQxQy:
+    xAxis: *QxQy
+    yAxis: *QxQy
+    title: "Q-Vector (Raw);Q_{x};Q_{y}"
+
+  # Detector
+  hTofMatchMult:
+    axis: *TofMatchMult
+    title: "Number of TOF Matched Tracks;N_{TOF};Counts"
+
+  # Phi reconstruction
+  hMKK_SameEvent:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (ReconstructPhi pass);M_{KK} [GeV/c^{2}];Counts"
+
+  hDCAKK_All:
+    axis: *DCAKK
+    title: "K^{+}K^{-} DCA at pair vertex (all pairs);DCA_{KK} [cm];Counts"
+
+  hDCAKK_Pass:
+    axis: *DCAKK
+    title: "K^{+}K^{-} DCA at pair vertex (ReconstructPhi pass);DCA_{KK} [cm];Counts"
+
+  hOpeningAngle_Raw:
+    axis: *OpeningAngle
+    title: "KK opening angle (before cut);Opening angle [rad];Counts"
+
+  hPairRapidity_Raw:
+    axis: *PairRapidity
+    title: "KK pair rapidity (before cut);y;Counts"
+
+  hPairPt_Raw:
+    axis: *PairPt
+    title: "KK pair p_{T} (before cut);p_{T} [GeV/c];Counts"
+
+  hOpeningAngle_vs_MKK:
+    xAxis: *OpeningAngle
+    yAxis: *MKK
+    title: "Opening angle vs M_{KK};Opening angle [rad];M_{KK} [GeV/c^{2}]"
+
+  hPairRapidity_vs_MKK:
+    xAxis: *PairRapidity
+    yAxis: *MKK
+    title: "Pair rapidity vs M_{KK};y;M_{KK} [GeV/c^{2}]"
+
+  hOpeningAngle_vs_Pt:
+    xAxis: *OpeningAngle
+    yAxis: *PairPt
+    title: "KK opening angle vs p_{T};Opening angle [rad];p_{T} [GeV/c]"
+
+  hOpeningAngle_vs_Rapidity:
+    xAxis: *OpeningAngle
+    yAxis: *PairRapidity
+    title: "KK opening angle vs pair rapidity;Opening angle [rad];y"
+
+  hPairRapidity_vs_Pt:
+    xAxis: *PairRapidity
+    yAxis: *PairPt
+    title: "KK pair rapidity vs p_{T};y;p_{T} [GeV/c]"
+
+  hOpeningAngle_AfterCuts:
+    axis: *OpeningAngle
+    title: "KK opening angle (angle+rapidity cut passed);Opening angle [rad];Counts"
+
+  hPairRapidity_AfterCuts:
+    axis: *PairRapidity
+    title: "KK pair rapidity (angle+rapidity cut passed);y;Counts"
+
+  hPairPt_AfterCuts:
+    axis: *PairPt
+    title: "KK pair p_{T} (angle+rapidity cut passed);p_{T} [GeV/c];Counts"
+
+  hMKK_OpeningAngleCut:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (opening angle cut);M_{KK} [GeV/c^{2}];Counts"
+
+  hMKK_RapidityCut:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (pair rapidity cut);M_{KK} [GeV/c^{2}];Counts"
+
+  hMKK_BothCuts:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (opening angle + rapidity cut);M_{KK} [GeV/c^{2}];Counts"
+
+  hMKK_MixedEvent:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (Mixed Event);M_{KK} [GeV/c^{2}];Counts"
+
+  hMKK_BackgroundSubtracted:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (Background Subtracted);M_{KK} [GeV/c^{2}];Counts"
+
+  hMKK_AllCombinations:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (All Combinations);M_{KK} [GeV/c^{2}];Counts"
+
+  hK_Pt:
+    axis: *KPt
+    title: "Kaon p_{T};p_{T} [GeV/c];Counts"
+
+  hK_Eta:
+    axis: *KEta
+    title: "Kaon #eta;#eta;Counts"
+
+  hK_NSigma:
+    axis: *KNSigma
+    title: "Kaon n#sigma_{K};n#sigma_{K};Counts"
+
+  hMKK_vs_Pt:
+    xAxis: *PairPt
+    yAxis: *MKK
+    title: "M_{KK} vs p_{T};p_{T} [GeV/c];M_{KK} [GeV/c^{2}]"
+
+  # Rapidity window variations (opening angle cut applied)
+  hMKK_RapidityCut_0p4:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (opening angle cut, |y|<0.4);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_RapidityCut_0p3:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (opening angle cut, |y|<0.3);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_RapidityCut_0p2:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (opening angle cut, |y|<0.2);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_RapidityCut_0p1:
+    axis: *MKK
+    title: "K^{+}K^{-} Invariant Mass (opening angle cut, |y|<0.1);M_{KK} [GeV/c^{2}];Counts"
+
+  # M_KK in K+ multiplicity bins (angle+rapidity cut)
+  hMKK_Mult0to5_KPlus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, 0#leq N_{K^{+}}<5);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_Mult5to10_KPlus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, 5#leq N_{K^{+}}<10);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_Mult10to20_KPlus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, 10#leq N_{K^{+}}<20);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_Mult20up_KPlus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, N_{K^{+}}#geq 20);M_{KK} [GeV/c^{2}];Counts"
+
+  # M_KK in K- multiplicity bins (angle+rapidity cut)
+  hMKK_Mult0to5_KMinus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, 0#leq N_{K^{-}}<5);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_Mult5to10_KMinus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, 5#leq N_{K^{-}}<10);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_Mult10to20_KMinus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, 10#leq N_{K^{-}}<20);M_{KK} [GeV/c^{2}];Counts"
+  hMKK_Mult20up_KMinus:
+    axis: *MKK
+    title: "M_{KK} (angle+rapidity cut, N_{K^{-}}#geq 20);M_{KK} [GeV/c^{2}];Counts"
+
+  # K+ vs K- multiplicity correlation (per event)
+  hNKaonPlusVsNKaonMinus:
+    xAxis: *NKaon
+    yAxis: *NKaon
+    title: "N_{K^{+}} vs N_{K^{-}} (per event);N_{K^{+}};N_{K^{-}}"
+
+  # Kaon multiplicity 1D (per event)
+  hNKaonPlus:
+    axis: *NKaon
+    title: "K^{+} multiplicity per event;N_{K^{+}};Counts"
+  hNKaonMinus:
+    axis: *NKaon
+    title: "K^{-} multiplicity per event;N_{K^{-}};Counts"
+
+  hN:
+    nBins: 1
+    min: 0.0
+    max: 1.0
+    title: "N processed events;dummy;count"
+    type: TH1I
+
+  hVz_d:
+    axis: *Vz
+    title: "V_{z} of selected d;V_{z} [cm];Counts"
+  hVz_t:
+    axis: *Vz
+    title: "V_{z} of selected t;V_{z} [cm];Counts"
+  hVz_3He:
+    axis: *Vz
+    title: "V_{z} of selected 3He;V_{z} [cm];Counts"
+  hVz_4He:
+    axis: *Vz
+    title: "V_{z} of selected 4He;V_{z} [cm];Counts"

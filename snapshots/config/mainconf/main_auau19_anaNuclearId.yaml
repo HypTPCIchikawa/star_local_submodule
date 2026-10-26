@@ -1,0 +1,17 @@
+# Main configuration template
+# Paths are relative to config/
+# Replace token "auau19_anaNuclearId" via script/setup_config_from_analysisinfo.py
+
+event:         cuts/event/event_auau19_anaNuclearId.yaml
+track:         cuts/track/track_auau19_anaNuclearId.yaml
+pid:           cuts/pid/pid_auau19_anaNuclearId.yaml
+centrality:    cuts/centrality/centrality_auau19_anaNuclearId.yaml
+nuclearid:     cuts/nuclearid/nuclearid_auau19_anaNuclearId.yaml
+
+# Maker config (key name should match your analysis macro expectation)
+
+# Histogram config
+hist:          hist/hist_auau19_anaNuclearId.yaml
+
+# Analysis info
+analysis:      analysis/analysis_info_auau19_anaNuclearId.yaml

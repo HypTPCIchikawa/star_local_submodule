@@ -1,0 +1,72 @@
+# Exploratory post-KF selection on the same first 10,000 input events.
+# The production Imp5 YAML and original outputs are never changed.
+schemaVersion: 1
+inputEvents: 10000
+reconstructedEvents: 9744
+eventIdsFile: rootfile/auau13p5_anaLambda_KFParticle/Imp5_kf_specific_scan_20260914/provenance/input/input_event_ids_10000.tsv
+massMin: 1.05
+massMax: 1.25
+massBinWidth: 0.001
+window: [1.110, 1.122]
+sidebands:
+  default: {left: [1.098, 1.106], right: [1.126, 1.134]}
+  near: {left: [1.100, 1.108], right: [1.124, 1.132]}
+  far: {left: [1.094, 1.102], right: [1.130, 1.138]}
+displayMin: 1.10
+displayMax: 1.14
+title: 'Au+Au FXT; 13.5 GeV beam; first 10,000 input events'
+
+# A candidate is never split from other candidates in the same event.
+splitSeed: 20260927
+trainFraction: 0.5
+# Only TRAIN/default is used to choose cuts. Validation is not used to retune.
+selectionScore: purity_minus_one_statistical_error
+signalRetentionFloors: [0.95, 0.90, 0.80, 0.70]
+minWindowCountForSelection: 50
+minSidebandCountForSelection: 8
+maxPointsPerDataset: 4000
+bootstrapReplicates: 400
+bootstrapSeed: 202609271
+bootstrapMinValidFraction: 0.95
+bootstrapQuantiles: [0.16, 0.84]
+
+# Upstream variants must preserve all other effective cuts and event policy.
+allowedUpstreamDifferences:
+  - interfaceChiPrimaryCut
+  - finderChiPrimary2D
+  - finderLCut
+  - finderLdL2D
+  - finderChi2Ndf2D
+  - topoChi2NdfCut
+
+# All listed cuts are added to selected==1 for the respective source dataset.
+# Daughter nSigma/gDCA here are post-KF cuts; exact upstream equivalence is not
+# assumed and shortlisted production reruns should be checked separately.
+cuts:
+  nSigmaProton: {field: protonPidPull, operator: abs_le, values: [2.5, 2.0, 1.5]}
+  nSigmaPion: {field: pionPidPull, operator: abs_le, values: [2.5, 2.0, 1.5]}
+  imp5MinDCAProton: {field: protonDcaToPv, operator: ge, values: [1.0, 1.5, 2.0, 3.0]}
+  imp5MinDCAPion: {field: pionDcaToPv, operator: ge, values: [1.5, 2.0, 3.0]}
+  maxDaughterDistance: {field: daughterDistance, operator: le, values: [0.4, 0.3, 0.2]}
+  maxDistanceToPv: {field: distanceToPv, operator: le, values: [0.4, 0.3, 0.2]}
+  minCosPointing: {field: cosPointing, operator: ge, values: [0.999, 0.9995, 0.9998]}
+  maxChi2Ndf: {field: chi2Ndf, operator: le, values: [5.0, 3.0, 2.0, 1.0]}
+  maxTopoChi2Ndf: {field: topoChi2Ndf, operator: le, values: [2.0, 1.0, 0.5]}
+  minDecayLength: {field: decayLength, operator: ge, values: [2.0, 3.0, 5.0, 8.0, 10.0]}
+  minDecayLengthSignificance: {field: decayLengthSignificance, operator: ge, values: [5.0, 10.0, 15.0, 20.0]}
+  minVertexLineSignificance: {field: vertexLineLengthSignificance, operator: ge, values: [5.0, 10.0, 15.0, 20.0]}
+includeAllPairs: true
+tripleFamilies:
+  - [maxDistanceToPv, maxDaughterDistance, minCosPointing]
+  - [imp5MinDCAProton, imp5MinDCAPion, minDecayLength]
+  - [maxChi2Ndf, maxTopoChi2Ndf, minVertexLineSignificance]
+  - [nSigmaProton, nSigmaPion, minVertexLineSignificance]
+
+# Independent ROOT fit cross-check, not used to select the cuts.
+fitRanges: [[1.09, 1.145], [1.08, 1.15]]
+fitSigmaMin: 0.0005
+fitSigmaMax: 0.006
+fitMeanMin: 1.110
+fitMeanMax: 1.122
+fitMinEntries: 100
+

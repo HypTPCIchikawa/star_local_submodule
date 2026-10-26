@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "productionEnabled": false,
+  "outputDirectory": "he4_r061_001",
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "minimumRExclusive": 0.61,
+  "tofThreshold": 2.0,
+  "nativeRigidityBinWidth": 0.01,
+  "aggregateWidth": 0.05,
+  "lowPeakAdjustmentMaxR": 0.7,
+  "userPeakAnchors": [
+    {
+      "r": 0.61,
+      "he3": 51.0,
+      "he4": 67.0
+    },
+    {
+      "r": 0.64,
+      "he3": 49.0,
+      "he4": 65.0
+    }
+  ],
+  "anchorsPolicy": "User-measured He3 peaks set the low-R nuisance reference mean; He3 width and He4 mean/width fitted to ALL. Approximate calibration, not an independent validation.",
+  "nuisanceHe3FreeMean": false,
+  "nuisanceHe3FreeSigma": true,
+  "initialHe3Width": "existing ALL he3 free-target fit width",
+  "initialHe4Width": "historical He4 reference width",
+  "fitWindowAlignmentKeVcm": 0.5,
+  "responses": [
+    "gaussian",
+    "lognormal"
+  ],
+  "backgrounds": [
+    "none",
+    "linear",
+    "exponential"
+  ],
+  "workers": 2,
+  "pilotIndices": [
+    21,
+    24,
+    29,
+    40
+  ],
+  "representativeIndices": [
+    21,
+    24,
+    29,
+    40,
+    80,
+    120
+  ],
+  "peakResponsePolicy": "Gaussian/lognormal function forms unchanged; only He3 nuisance mean,width additionally fitted in the explicitly declared low-R interval",
+  "pidGatePolicy": "Historical cubic mean/quadratic width and gate coefficients retained; apply He4 strict R>0.61; peak correction enters fit response and its identity reference.",
+  "fitWindowPolicy": "Low-R lower edge from corrected He3 left half-height in both responses and all GL3 nodes; no narrower than original pre-expansion window. R>=0.70 keeps previous half-height window.",
+  "halfHeightExtraMarginKeVcm": 0.5,
+  "halfHeightWidthPolicy": "maximum of historical nuisance width and ALL He3 free-fit width; all GL3 nodes, both responses",
+  "requireFittedHe3HalfMaximumInside": true,
+  "aggregationOrigin": 0.4,
+  "purityThreshold": 0.5,
+  "nestedDevianceTolerance": 0.01,
+  "displayRebinFactor": 5,
+  "axisPaddingGeVcm": 0.05
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "inputFingerprint": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+    "size": 10522646853,
+    "mtime_ns": 1790979373044137604,
+    "device": 48,
+    "inode": 82490341
+  },
+  "inputStudy": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001",
+  "inputCompletionSha256": "1f7a6833d9b72713aaac05195c2c23b5d95f17b5da4fcbac81a4024c22ae35be",
+  "cacheRoot": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root",
+  "runtimeMainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "settings": {
+    "schemaVersion": 1,
+    "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "inputStudy": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001",
+    "outputBase": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014",
+    "legacyHeader": "StMaker/common/NuclearIdDeDxVsMom.h",
+    "executionTimeoutSeconds": 7200,
+    "backgroundModels": [
+      "linear",
+      "exponential"
+    ],
+    "partitions": {
+      "smoke": {
+        "min": 0.8,
+        "max": 0.9,
+        "step": 0.05,
+        "useForIntrinsicCalibration": false
+      },
+      "pilot": {
+        "min": 0.35,
+        "max": 1.0,
+        "step": 0.05,
+        "useForIntrinsicCalibration": false
+      },
+      "native": {
+        "min": 0.3,
+        "max": 2.5,
+        "step": 0.01,
+        "useForIntrinsicCalibration": true
+      }
+    },
+    "tagComponents": {
+      "TAG_T": [
+        "t"
+      ],
+      "TAG_HE3": [
+        "he3"
+      ],
+      "TAG_D": [
+        "d",
+        "t",
+        "he3",
+        "he4"
+      ]
+    },
+    "primaryComponents": {
+      "TAG_T": [
+        "t"
+      ],
+      "TAG_HE3": [
+        "he3"
+      ],
+      "TAG_D": [
+        "d",
+        "he4"
+      ]
+    },
+    "seed": {
+      "componentWindowWeight": 1.0,
+      "backgroundWindowWeight": 2.0,
+      "nuisanceMode": "legacy_fixed_reference",
+      "fitWindowSigmaHalfWidth": 4.0,
+      "fitWindowAlignmentKeV": 0.5
+    },
+    "numeric": {
+      "amplitudeMaxIterations": 1000,
+      "amplitudeGradientTolerance": 1e-06,
+      "amplitudeHessianRidge": 1e-10,
+      "amplitudeLineSearchIterations": 80,
+      "shapeMaxCalls": 6000,
+      "shapeTolerance": 0.001,
+      "minimumSigma": 0.05,
+      "maximumSigma": 120.0,
+      "meanAxisPadding": 120.0,
+      "minimumGaussianAcceptance": 1e-12,
+      "meanStep": 0.05,
+      "sigmaLogStep": 0.02,
+      "backgroundSlopeStep": 0.05,
+      "exponentialSlopeLimit": 8.0,
+      "boundaryTolerance": 1e-06,
+      "normalizeWarmStartToObserved": 1,
+      "freeBackgroundSlope": 1,
+      "displayDedxRebinFactor": 5,
+      "axisTolerance": 1e-09,
+      "countVarianceRelativeTolerance": 1e-09,
+      "nativeRigidityBinWidth": 0.01,
+      "nativeDedxBinWidth": 0.1
+    },
+    "support": {
+      "minimumEffectiveSignalCount": 25.0,
+      "minimumWindowSignalCount": 50.0,
+      "minimumConditionalDropDeltaD": 25.0,
+      "maximumMeanErrorOverSigma": 0.25,
+      "maximumSigmaRelativeError": 0.25,
+      "maximumPearsonChi2Ndf": 10.0,
+      "minimumPhysicalGaussianCoverage": 0.95,
+      "minimumAcceptedPoints": 6,
+      "maximumGapRigidity": 0.05,
+      "maximumBackgroundMeanShiftOverSigma": 0.5,
+      "maximumBackgroundSigmaRelativeShift": 0.3,
+      "requireIndependentTagNuisanceValidationForHe4": true
+    },
+    "curves": {
+      "compare": [
+        "logpoly",
+        "smooth_piecewise_cubic_logR"
+      ],
+      "meanDegree": 3,
+      "sigmaDegree": 2,
+      "relativeMeanWeightFloorOverSigma": 0.05,
+      "relativeSigmaWeightFloor": 0.05,
+      "smoothingNeighbours": 9,
+      "minimumSmoothingNeighbours": 5,
+      "varianceUnfoldIterations": 2
+    },
+    "allFit": {
+      "maxNSigma": 2.0,
+      "minimumPurityDenominator": 1e-09,
+      "maximumConditionalChi2Ndf": 10.0,
+      "sampleHistogram": "ALL",
+      "backgroundStartSlope": 0.0,
+      "requireBestSpecies": true,
+      "shapeVariationSigma": 1.0
+    }
+  },
+  "selectedPartition": "smoke",
+  "background": "linear",
+  "fitOrder": "Sample T/He3/D; descending R per sample; all initial shapes remain explicit legacy seeds.",
+  "seedPolicy": "Raw log10 tables, PMomentumRange ignored ONLY for initial guesses; old working knots not used.",
+  "nuisancePolicy": "TAGD T/He3 are fixed unvalidated conditional references; optional TAG curve replacement/fallback is audited per row; He4 scientific support is not established.",
+  "nuisanceCalibration": null,
+  "nuisanceCalibrationSha256": null,
+  "foldedWidthMustNotBeAdopted": true,
+  "eligibleForSubsequentIntrinsicCalibration": false,
+  "sourceNativeWidth": 0.01,
+  "rawDedxFitWidth": 0.1,
+  "fitUsesOnlySavedTagSpectraOnce": true,
+  "protected": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/context.json": "7f467146dbb214b08ca6bb5f75ac33f6df95d57b2ae6db5b1504353d442fb149",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/completed.json": "1f7a6833d9b72713aaac05195c2c23b5d95f17b5da4fcbac81a4024c22ae35be",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/settings.tsv": "524675a42483e3319883f92a88f9f1a2677ee03300504ce78fc19625b46dd797",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/effective_settings.json": "8f236b3740e5cc5f84864eaf05f5f1c3cb01995149be649f5aeb499846d89098",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/command.json": "59abcf75dde2216cf034adbed0cbe6a927d0fa21559d09c7269d4e3add564f8f",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/root.log": "8d2821d88ce62b4e320640ea4302181ce0181d075764c7ea239fc2185274e456",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root": "cefd9281fe4dc31ddcf7f0d403a1cdd2d6440e5873da40518804025b3e9b4828",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/native_audit.json": "197ed122b6024a949574f941a15db09bcec0c622bde57fbc167b515175a073b3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source_colz_atlas.pdf": "487c1a293b99082afe8d7b22dd33257e90e7f6e21b30a1e1d4be567290d0c3f6",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_ALL_0.png": "045b68c244477dcdf26d8503c4c5ed5d926dc71de09b4f5153fc8f8dbc0825b6",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_ALL_1.png": "f9302eec6cab199bbef6de23af7e42ee87db8996623d9256cc5e4efe4488a6d9",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_ALL_2.png": "bb19ee4ea74ac26165d9a8aaa510ad09b35c84feefef1a2519d4b2faa39e9056",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_D_0.png": "c46199536e6b6dc08c6b213140c3a6cbfd38b666e0511ad269207c19999ec417",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_D_1.png": "fd27ddf1c6639b122b98ba46c3cbdb00fd489b3d166da769c0a0be97126cef53",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_D_2.png": "26c9ebc952e75f2388fd06f4b6aa0f6bb8f8be21e5cb6b86883bdbc8372a5baf",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_T_0.png": "badd41775d1ce2268c3d24e518cc8f7e8241279c380d3e5c36632800d4b31a44",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_T_1.png": "609fd4f23ec00a1d39972751a69f513841fb54dc13e2258488c351b81b57c3ef",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_T_2.png": "98915dd65de3f27dd3ca5323e5c6109390f636c78a9109864633a51bf6878e2d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_HE3_0.png": "f6a42ae7483cedcdad85a82a75d2e7470926b5dc58c285b73cb9a8c332c1abc9",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_HE3_1.png": "11b0858efcbf6b98900d22f7f2633268705742ad62fffd47a596de870f2d9a99",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/colz_TAG_HE3_2.png": "e4cd4269c07458c0d169fc9dbd63291bbda7e7aea23d740fbd7eee5ed0d5de46",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/coarse_projections.root": "378e6724a03642e20d3b95aac0c3bcc898394afcf3074eeb576fe26e16659b43",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/coarse_statistics.tsv": "72ef555b1bfb21a8df816697002935a9c65d42b66b730d8525713bcf7d6ce9b2",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/coarse_full_dedx_atlas.pdf": "c570cb1c71b68e1190c11b408d8af1e2ce24f5146b63fc42923ea4063beee5b0",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/coarse_atlas_R_100.png": "61733ce01ad3e9ecf42e836822ed43f29990d2a3ce46da7a2b12e8106e52f2da",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/coarse_atlas_R_400.png": "5b6de38d1770100d78091d8f2039c4f5afe9eacfddf157aa860355b4cd8cfe69",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/coarse_atlas_R_800.png": "ec088db48f4c9a44a94fd6f48302d72377a1cc9ff35629685aca9f2bbd72ec7d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/prepare_inputs.py": "e415b9d6bbd94e913aacb63dbddac057ba590257a66de64557ae08b04d2bd110",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/ExtractTofInputs.C": "9a7494c3ef8fc71db7e996e6a41deeeaae3513de7ef3b444015cc07caec41511",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/input_settings.yaml": "e57ea6365927cb31fcaf8693af6d03b2fc869a8fcfa89896976e20ebbc44bb14",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/nuclearid_femtoLambda_legacy.yaml": "e34959034a5c0b7f05724f35a9a5bb7649ba52b57126b218ea3f26543f6910a3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/ExtractTofInputs_C.d": "fe8a51d72991f12ce37cdbeb314d4622fcdfb98b5ef6e5b9b43cc1b7e2db566c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/source/ExtractTofInputs_C.so": "c9082199085b0f199547b4ed6ca7db7ec0ace2be626ca3296bb0d4c69a2a6ef1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/completed.json": "d69fdf36331b0356265efe2a1cbd1ec66a7867ae78ad693cec54de24dfa3169a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/purity.json": "13804be76826f5ebad1897a2e327b70f11f5935b5d6e3d38bfe2324688f6a579",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/context.json": "3e4c620c50ed5c310305af3c34255e101f1e190290e7cdbbca10a93b4bc08019",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.root": "b8dc92f4b2a5d7c93390a98dcb4b5984295cb71a5cbba16038788f59fa47acce",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.pdf": "3439e04e2f483af510fc4aad293fcf6bcdf06330f72a29b3cb73f54903d68727",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits_linear.pdf": "b199077126592dcb82da7a82a47d54112726032ba9711313baea7c7c6424758c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/calibration/dedx_helium_auau3p85_2021P24iy_from040.yaml": "0b6b1bd97b6e3caf752c1b5213407deacd7d0897307442c1202ba10df115bfc1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/StMaker/common/FemtoLambdaLegacy.cxx": "bb7918af1bfeaed3799700f4c904a8902ff6ce06d3cb6430bf9e03430fdfadc8",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/input_settings.yaml": "e57ea6365927cb31fcaf8693af6d03b2fc869a8fcfa89896976e20ebbc44bb14",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json": "bd7b80047b0eca894b136ec1ee4cb8b5caa94b039a8e95cab6be7e3504b6776c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/cuts/nuclearid/nuclearid_femtoLambda_legacy.yaml": "e34959034a5c0b7f05724f35a9a5bb7649ba52b57126b218ea3f26543f6910a3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/prepare_inputs.py": "e415b9d6bbd94e913aacb63dbddac057ba590257a66de64557ae08b04d2bd110",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/ExtractTofInputs.C": "9a7494c3ef8fc71db7e996e6a41deeeaae3513de7ef3b444015cc07caec41511",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/run_tag_study.py": "c17ef4042db6bad139898c7da5aaee26589e02107fe163beaab4de6fdc61747d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/FitTofTagShapes.C": "dc0564a0ac2f745de09e27f6d9de50df0db08be87ed97b538386140d161678bd",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/tag_study_settings.yaml": "fdd1813835bf4ffeac1fb26989027fe5d0ae2673b7db58e55c0bb08e9f25cf73"
+  },
+  "snapshots": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/tools/nuclear_pid_tof/run_tag_study.py": "c17ef4042db6bad139898c7da5aaee26589e02107fe163beaab4de6fdc61747d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/tools/nuclear_pid_tof/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/tools/nuclear_pid_tof/FitTofTagShapes.C": "dc0564a0ac2f745de09e27f6d9de50df0db08be87ed97b538386140d161678bd",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/tools/nuclear_pid_tof/runtime_selection.py": "197577a169d505000e4bd737bb446bdc7fe67bd5009cc0b4585834f799a94a7e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/tools/nuclear_pid_tof/tag_study_settings.yaml": "fdd1813835bf4ffeac1fb26989027fe5d0ae2673b7db58e55c0bb08e9f25cf73",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_smoke_prepare_001/source/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "stageConsumedBlocks": [
+    "partitions",
+    "tagComponents",
+    "primaryComponents",
+    "seed",
+    "numeric",
+    "allFit.backgroundStartSlope"
+  ],
+  "deferredToLaterStages": [
+    "support",
+    "curves",
+    "allFit selector/purity controls"
+  ],
+  "createdJst": "2026-10-14T16:19:45.816345+09:00"
+}

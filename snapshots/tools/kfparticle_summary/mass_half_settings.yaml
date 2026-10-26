@@ -1,0 +1,14 @@
+# Mass-half comparison of the already-produced histograms; no production cut changes.
+summary_settings: summary_settings.yaml
+plot_x_max: 0.3
+comparison_range: [0.0, 0.2]
+# Sanity check for TH2F rounding only, not a physics/systematic uncertainty.
+closure_absolute_tolerance: 1.0
+closure_relative_tolerance: 0.000001
+groups:
+  - {id: all_0_80, label: '0-80%', min: 0, max: 8}
+  - {id: cent20_80, label: '20-80%', min: 0, max: 5}
+  - {id: cent0_20, label: '0-20%', min: 6, max: 8}
+  - {id: cent0_10, label: '0-10%', min: 7, max: 8}
+  - {id: cent10_20, label: '10-20%', min: 6, max: 6}
+  - {id: cent20_60, label: '20-60%', min: 2, max: 5}

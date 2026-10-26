@@ -1,0 +1,35 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "compileOnly": false,
+  "protectedPostRunVerified": true,
+  "inputFingerprintPreserved": true,
+  "products": {
+    "plot_manifest.tsv": "df3fc37bc79db56ce1c042f06433bc7151f29fb131ad402c44d83e30456678ed",
+    "settings.tsv": "79d965bb1f407ae64ea334d67503cba2c91adcfc60e44d33715dda50e20144cf",
+    "context.json": "9ef946051e4cbbef65ea82b4f28253b9f4fba5b5f69781a338a4fb7c55e0810e",
+    "command.json": "617be6856557f3d1bab8d338827a18cd9842bb3fa7d70fb854eb562dbfc2d0ec",
+    "root.log": "b63dc9919e904aa229a3df09db06bfb0ffdd2289a53ac8ef3e56ca20d268b269",
+    "tag_fits_full_dedx.pdf": "640cce2c65827ff1fc4126f95b57fece3fd05bbd230d173c075f3d1d0f715e0d",
+    "tag_fits_full_dedx_first.png": "e0857046f48c6955f96043129ca796c72a3e81ec44ef8c9cf72d0509557e45a4",
+    "tag_fits_native_full_dedx.pdf": "f144c4377304b0b948b88aee88262feadd4423350759f11d4aff255621cd2c8a",
+    "tag_fits_native_full_dedx_first.png": "fc847a1845ab52c263af08703e25baa90054fd2e254b7d720a7802438f6ee683",
+    "tag_fits_zoom_additional.pdf": "de0a2b0ef6e20474f60c906ac388e777a9ccf1f2dcef63da1ded9eae6fbecf93",
+    "tag_fits_zoom_additional_first.png": "bfc09778335311b543de9f1d4d815f1505d64b2e3d91218259db2e9ba8fe3938",
+    "residual_audit.tsv": "80546aa6cd0d994892fb288bd5675176634e9b6d0219cc85ca192a5d370aeaba",
+    "tag_fit_residuals.pdf": "c8e25621756496299ea13524212bbd9d2f3fed2c92f2dda1c116129894f6cf88",
+    "tag_fit_residuals_first.png": "b8a996cb516550f010afdd310fdf841a28841646854705407b6938aa4b08ae6a",
+    "plot_audit.json": "1fbe428b71b877854b949e76346fadc966b2f183f3d03aaded55633b7d1d1f01"
+  },
+  "sourceSha256": {
+    "render_study.py": "0d72850d5bc44b75a2e107541e3eb76b10423d0e49cb056e00c3ef1e04b3431a",
+    "PlotNuclearStudy.C": "ff11e63dda7d07d7ae04bfbc6ba9aa2a791e9a695f1c438af59b69066c024ba4",
+    "display_settings_readable.yaml": "b96883d1a5a7ceb26aeb95d76af93a18878a4d46f80cd391556a1448b6053e87",
+    "main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "PlotNuclearStudy_C.d": "28e62063ca75ebf3d20a41dcd56ce36fd3cfea7e802e76ec89e4fd225925230f",
+    "PlotNuclearStudy_C.so": "a6037d54b749d99737c98e311475e657ba63363dbaec71ef2237821b08c13a42"
+  }
+}

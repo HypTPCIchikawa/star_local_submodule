@@ -1,0 +1,22 @@
+# Main configuration template
+# Paths are relative to config/
+# Replace token "auau19_anaLambdaNuclearId" via script/setup_config_from_analysisinfo.py
+
+event:         cuts/event/event_auau19_anaLambdaNuclearId.yaml
+track:         cuts/track/track_auau19_anaLambdaNuclearId.yaml
+pid:           cuts/pid/pid_auau19_anaLambdaNuclearId.yaml
+v0:            cuts/v0reco/v0_auau19_anaLambdaNuclearId.yaml
+mixing:        cuts/mixing/mixing_auau19_anaLambdaNuclearId.yaml
+centrality:    cuts/centrality/centrality_auau19_anaLambdaNuclearId.yaml
+nuclearid:     cuts/nuclearid/nuclearid_auau19_anaLambdaNuclearId.yaml
+
+# Maker config (key name should match your analysis macro expectation)
+lambda:        maker/maker_auau19_anaLambda.yaml
+
+# Histogram config
+lambdaHist:    hist/hist_auau19_anaLambda.yaml
+nuclearidHist: hist/hist_auau19_anaLambdaNuclearId.yaml
+hist:          hist/hist_auau19_anaLambdaNuclearId.yaml
+
+# Analysis info
+analysis:      analysis/analysis_info_auau19_anaLambdaNuclearId.yaml

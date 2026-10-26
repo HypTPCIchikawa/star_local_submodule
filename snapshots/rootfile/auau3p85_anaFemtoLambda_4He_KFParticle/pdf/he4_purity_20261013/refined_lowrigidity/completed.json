@@ -1,0 +1,47 @@
+{
+  "phase": "complete",
+  "input_unchanged": true,
+  "pages": {
+    "purity": 1,
+    "fits": 53,
+    "fits_linear": 53,
+    "background_models": 2
+  },
+  "fits": {
+    "quality": 0,
+    "exploratory": 200,
+    "unavailable": 10,
+    "linear": 76,
+    "exponential": 124
+  },
+  "calibration_candidate": {
+    "csv": "he4_locus_fit_candidates.csv",
+    "yaml": "he4_pid_curve_candidate_3p85.yaml",
+    "componentKnots": 196,
+    "polynomialKnots": 196,
+    "productionEnabled": false
+  },
+  "products": {
+    "settings.yaml": "54b94b30118c65dd3a2f21c973b269e4549772715da85e98b12f4ac010f75e85",
+    "settings.tsv": "760aec029cb18e438b4e00a9950eecb82bde98147d6d1fa840401d06b74eee4e",
+    "context.json": "023eca642da1c8ab003cc1369cbf245576598ad667ce3bcb725ea00dfc5583f5",
+    "purity.csv": "ff0930ac7afe9f66e6e93844665cacf8a04401a0b1fc45e303960f0345559443",
+    "he4_fits.root": "3f7371fd7be5fe94850ff942eaef9f1ef19aec855243f73dcb4efc3adf7d3749",
+    "purity.json": "d650d93e445cd3c02225f82869cc34580df3e4747c28b6a443c6def7ca8dd15e",
+    "he4_fits.pdf": "5f8b77305e6e2acbb851a16fdc59b7c5adcb4fb31db20c3b6ddd8e30dc99a463",
+    "he4_fits_linear.pdf": "65ecab60247b865ffc974e68dcc2c52f88b90ce2583750d13e3455406d932f11",
+    "he4_purity.pdf": "4c0a5b3dbfff914bfdd166a56bfec147a376cac5d8f35ca76b37547d012121e8",
+    "he4_purity.png": "1d7da5040000a5d49d947645abc42ca7beecedb2cc5abc31aed3bd64e3cf2937",
+    "he4_background_models.pdf": "64d3d9d1f028ad0a2f0bc6c2df9f3f1a4f4df7661a2408ad637a9d0c5ca0ea41",
+    "he4_background_models.png": "856862b6d1707f9e7827d14633b6f1d83f443031d6fbd15f12eccd5e4f63b248",
+    "he4_locus_fit_candidates.csv": "070b87321fc094690f97d236a42ef0058977681dc178c9f29eec2b14676582fc",
+    "he4_pid_curve_candidate_3p85.yaml": "704f6c279b8d795fe27fe73fb33745c8d01794f607a933d9e88013faa241ac50",
+    "README.md": "b04e260fb3d1c1ee468c9a1a952a734a77edf601014c103e726af3c3786fcab3",
+    "logs/fit.log": "81208ecbd9d5fae7ee60725975f429cef4383f59696b7afbb13a4fe7f34238a9",
+    "source/tools/he4_purity/FitHe4Purity.C": "6b664ce5ea97e62314ea7786ac85d4a444e643ef7f74cb8e95291ece885a8c70",
+    "source/tools/he4_purity/run_purity.py": "efebcc646a3c7250919cfd7eb18b72b6be86e0c7234b8be1a5c13f42e2def89b",
+    "source/tools/he4_purity/calibration_candidates.py": "73f4bb4e04950c06ee9ff94b88e688d72b48d46ced859444e944556b2fe82bf7",
+    "source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  },
+  "archives": []
+}

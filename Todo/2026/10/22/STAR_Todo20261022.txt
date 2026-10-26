@@ -1,0 +1,128 @@
+STAR Todo — 2026/10/22
+作成日：2026/10/22（日本時間）
+対象：2021 P24iy auau3p85、4HeのPID係数調整・Purity推定・図入りPDF report
+状態：完了。4Heのみの398 fit（基準199＋候補199）、Purity図、図入り10頁report、全199区間fit集、検証・当日ログを保存。詳細はreport_he4_20261022.md。
+
+■ 最優先の方針（Gaussianのみの全区間fitを目視確認した後のユーザー指示）
+・d、t、3He、4He全てのPurityを同時に求める方針は終了する。
+・d、t、3HeのPID関数は、関数形・係数ともGitの元の値から変更しない。
+  以前のstudyで微調整した3He係数も今回の固定値に使わず、Git版と照合する。
+・変更対象は4HeのPID関数の係数のみ。従来の滑らかな関数形を維持する。
+・Purity推定と新しい図入りPDF reportの対象は4Heのみ。
+・4Heの適用下限はこれまでのR>0.61 GeV/cを引き継ぐ。
+・10/21の全核種Gaussianのみの結果・全区間PDFは、新方針の判断材料・比較履歴として保存する。
+
+■ R領域ごとの4He Purity評価モデル
+R = |p/q| [GeV/c]
+
+1. R = 0.610～0.80：TOFを要求しないALL、Gaussian＋linearで評価。
+2. R = 0.80～2.0：TOFを要求しないALL、Gaussianのみ（smooth背景なし）で評価。
+3. R > 2.0：既存TOF m²選択を要求し、4He Gaussian＋linearだけで評価。
+   この領域のfitにはd、t、3Heの成分を入れない。
+   4Heとdのm²が重なるため、TOF窓は既存のd選択と同じものを使用する。
+
+・R=0.80はGaussianのみ側へ含める。R=2.0付近のnative bin区分・TOF適用と、
+  R=0.61下限の扱いを設定・図・reportへ明記し、区間の重複・欠落を避ける。
+・低RでのGaussianは信号応答の指定。低Rの他核種の混入成分と、smooth背景の有無を区別する。
+  高Rの「他核種成分なし」という指定を、低Rへ無条件に拡張しない。
+・高RモデルではS=4He Gaussian、B=linear背景を選択窓へ積分する。
+
+■ 1. Git基準と固定するPIDを確定【完了】
+[x] 参照Git 8f7d539の元PIDヘッダと係数を直接取り出し、参照revision・SHAを保存する。
+    対象：StMaker/common/NuclearIdDeDxVsMom.h。
+[x] d、t、3Heの中心・幅・適用範囲をGit版と照合し、変更しない固定設定を保存する。
+[x] 4Heはx=log10(R)の中心3次・幅2次を維持し、調整対象の係数を明示する。
+    mu4(R)=a0+a1*x+a2*x²+a3*x³、sigma4(R)=b0+b1*x+b2*x²。
+[x] TPCのPID中心・幅と、各R区間のGaussian応答中心・幅を区別する。
+    best-species選択で4He係数の変更が競合境界へ与える影響も記録する。
+
+■ 2. 4Heのfitと係数調整【完了】
+[x] 上記3領域のモデル・TOF選択・境界・初期値・固定/自由パラメータをYAMLへ記録する。
+[x] 低Rはこれまでのピーク参照とlinear版fitを確認する。
+    R=0.61：3He約51、4He約67 keV/cm。
+    R=0.64：3He約49、4He約65 keV/cm。
+    既存Gaussianのみで試した中心固定を、新しいGaussian＋linear領域へ機械的に移植しない。
+[x] 低Rのfit範囲は、3He成分を含める際にそのピークと低側半値が入るよう確認する。
+[x] 高Rは他核種を含む旧fitをそのまま再利用せず、4He Gaussian＋linearのみで再fitする。
+[x] 4HeのPID係数のみを微調整し、中心・幅の滑らかさ、正の幅、実ピークとの対応を確認する。
+[x] 0.80と2.0の前後を代表点で点検し、モデル・試料選択変更による差を区別する。
+
+■ 3. 4He Purityを接続【完了】
+[x] 各領域で同一の4He PID選択窓を用い、S/(S+B)を計算する。
+[x] まとめるR区間ではPurityを平均せず、ΣS/Σ(S+B)で集約する。
+[x] 条件付き誤差、収束・残差・採否理由を保存する。未評価点を隠した補間は行わない。
+[x] 4HeのR vs Purity図を3領域のモデルとTOF境界が分かる形で作成する。
+[x] GaussianのみでPurityが1近くなる点と、fitの残差・χ²/NDFの良否を分けて報告する。
+    前回のGaussianのみの失敗・未支持条件を、新しい高純度の証拠として使わない。
+
+■ 4. 図入りPDF reportと検証【完了】
+[x] 新方針、Git参照、固定したd/t/3Heと変更した4Heの係数表を掲載する。
+[x] 4He PID中心・幅の変更前後、dE/dx vs R、最終Purity図を掲載する。
+[x] 各R領域の代表fitを複数点掲載する。低R TOFなしは異なるRの3点を含め、
+    linear/log表示、全成分、fit範囲、中心・幅、χ²/NDF、Purity、採否を示す。
+[x] 新モデルの4He全区間fit PDFも出力し、未支持区間を含めて確認可能にする。
+[x] 高R図にd/t/3He成分が含まれないこと、Gaussianのみ領域にsmooth背景がないことを検証する。
+[x] d/t/3HeのPID関数・係数がGit版と一致し、旧ROOT・PDF・設定が保持されることを検証する。
+[x] reportと全区間PDFを全頁読み戻し、図の配置・文字・境界を確認する。
+[x] 実施結果、限界、再現設定・ソース・実行コマンド・manifestをTodoと当日ログへまとめる。
+
+■ 最初に読む資料
+・Todo/2026/10/21/he4_r061_20261021.md
+・Todo/2026/10/21/gaussian_linear_report_20261021.md（旧linear版の図入りreportと係数）
+・analysisnote/20261021/summary20261021.md
+・rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/
+  gaussian_only_001/gaussian_all_intervals.pdf（全1,579区間、比較用）
+・同 gaussian_only_001/fit_gaussian_he4_all.pdf（4He全199区間、比較用）
+・同 gaussian_only_001/settings.yaml、native.tsv、completed.json
+
+■ 実行・保存の前提
+・データは2021 P24iyを維持。別年の試料へ置換しない。
+・mainconf：config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml。
+・実行時はSTAR環境に合わせた既存Singularity wrapperを使用し、旧出力とは別のstudy先へ保存する。
+・本番への反映とは分けて、候補係数・選択・Purity評価モデルをレビュー可能にする。
+・Todo作成時は計画のみ。続くユーザーの開始指示でローカルstudyを開始。本番反映・job投入は実施しない。
+
+■ 実施結果
+・d/t/3HeのPIDはGit 8f7d539の関数形・係数・適用域に固定。4Heのみの候補ヘッダと選択YAMLを保存し、本番は不変更。
+・指定3領域を評価し、88集約中76支持：低R4/4、中R24/24、高R48/60。最初の0.61–0.65は63.65813 ± 0.06628%（条件付き誤差）。
+・高R4.30–4.35と4.45–5.00は未支持。全区間PDFに残し、補間や追加vetoは作成しない。
+・全199区間PDF、代表図、Purity図、report10頁を含む計415頁を読戻し・目視確認。独立生計数556件、3He半値417点、ゲート2,388行、旧入力102ファイル不変を検証。
+・新出力：rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_he4_20261022_001/。実装：tools/nuclear_pid_he4_20261022/。詳細と成果物リンク：report_he4_20261022.md。
+・2021 P24iyの既存部分統合試料を使用。新規jobid/configlog、job投入、hadd、commit/pushなし。日報：analysisnote/20261022/summary20261022.md。
+
+■ 追加改訂：R<0.8のGaussianのみ・中心固定【完了】
+[x] ユーザー訂正に従い、0.61–0.80の19区間は元Gaussian＋linearの4He中心を固定し、linearを除去、幅と核種収量を再fit。
+[x] 中心19件が元の値に一致。R>=0.8の180区間・84集約点と全PID係数は完全保持。
+[x] 全199区間fit集・Purity図・変更前後比較を含む11頁reportを002版に保存。全416頁読戻し、旧入力236ファイル不変、低R背景=0、独立生計数・半値・自由度を検証。
+・0.61–0.65の計算値は99.6185%だが、最初の2 native区間の幅比が上限2を超えるため未支持。採否条件は緩めず、全fit図には掲載。支持は75/88。
+・最新資料：report_he4_fixedmean_20261022.md。旧001版は保持。本番設定変更なし。
+
+■ ユーザー確定後の本番PID採用【完了】
+[x] 002版の4He係数を解析専用YAML経由で反映。R>0.61、旧4He veto解除、R<5を適用。
+[x] d/t/3HeのPID関数・係数はGit 8f7d539に維持。全核種でR<2はTOF不要、R>=2は核種別TOF窓を要求。
+[x] 3He physical/He4質量仮定のk* controlが同じ候補cutを使うことをfixtureで検証。STAR再build、14,147+1,359回帰チェック通過。
+・詳細：pid_adoption_20261022.md。従来の「本番未変更」はstudy作成時点の履歴。現在は対象mainconfへ反映済み。farm投入なし。
+
+■ Λ・4Heのβ vs η、β vs Yアクセプタンス【完了】
+[x] 4個のTH2Dを専用YAMLと対象mainconfへ追加。β=P/E、lab η/Y、1候補1回、Lambdaはsignalのみ。
+[x] STAR再build、専用53チェック、既存PID回帰14,147チェック通過。ROOT保存確認。
+・詳細：beta_acceptance_20261022.md。ヒストグラム一覧へ追記。farm投入なし。
+
+■ 4HeアクセプタンスのR・TOF別比較【完了】
+[x] β–η、β–Y、pT–Yに低R TOF不要／有効TOF／TOF+m²、高R TOF+m²の4区分、12 TH2を追加。
+[x] R<2とR>=2、既存m²窓を使用。最終4He候補のみ1回充填し、全体分布とCF選別は維持。
+[x] STAR再build、bin単位の全体一致・包含関係・境界・ROOT保存734,505チェック、既存β53チェック通過。
+・詳細：he4_acceptance_samples_20261022.md。実データROOT変更・farm投入なし。
+
+■ 全ヒストグラム説明MDの更新【完了】
+[x] 既存mdfiles/femto/implementation/femto_lambda_histograms_20260930.mdを更新。Git差分に限らず全分類の説明・現在のPID/TOF・アクセプタンスを記載。
+[x] 現行YAMLの通常1,786個＋Sparse1個の全実名・型・軸・説明を列挙し、作成済みfixture ROOTの全1,787キーと型/軸を照合。
+[x] Todo/2026/10/22/README.mdへ総合一覧のリンクを追加。Todo/README.mdは作成しない（ユーザー訂正）。全リンク検証済み。
+・詳細：histogram_documentation_20261022.md。コード・YAML・既存ROOT変更なし。
+
+■ 更新済み4He解析の実データ検証・本番再投入【投入進行中】
+[x] 2021 P24iyの実入力4027イベントで正常終了。再構成3858、選択Lambda62、4He250。
+[x] 全1787ヒスト型/軸、ledger、beta、SE/ME上下分割、TOF別包含関係と全体一致を確認。追加12 TH2すべて非ゼロ。
+[x] 最大5ファイル/job、全イベント、2021/P24iy catalogでjoblist生成・preflight通過。
+[進行中] SUMS A76FAF721CDAB36920D53B9E8EEA9230。80,982入力ファイル→26,994 processのスクリプト生成中。tmuxで継続し、終了時snapshot・runmetaと日報追記を保存。
+・詳細：production_relaunch_20261022.md。farm解析全完了・haddはまだ行っていない。

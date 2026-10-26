@@ -1,0 +1,11 @@
+{
+  "phase": "common",
+  "name": "13_common_raw_refit",
+  "inputCache": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.root",
+  "inputCacheSha256": "b8dc92f4b2a5d7c93390a98dcb4b5984295cb71a5cbba16038788f59fa47acce",
+  "settingsSha256": "a5eb4b0368705b4eb79dd3cc7f237ecdd5ce5b7146d0fe712805a9d66d4bfa44",
+  "seedsSha256": "4d0accaea3fa18e025e811e99f8e77cd262f1ea57e52dc8470bce9cdaa3ecb6d",
+  "targetsSha256": "e87fce5d6fe1c1ced69c603318f6e1a900c7a6b3c917d6c765eba2c10d66f507",
+  "parentContext": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/iterative_from040/full_iterative_20261014_001/context.json",
+  "productionEnabled": false
+}

@@ -1,0 +1,55 @@
+{
+  "study_folder": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040",
+  "inputs": {
+    "fit_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.root",
+      "size": 2622426,
+      "mtime_ns": 1791869851021061465,
+      "device": 48,
+      "inode": 1070124479
+    },
+    "original_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+      "size": 10522646853,
+      "mtime_ns": 1790979373044137604,
+      "device": 48,
+      "inode": 82490341
+    },
+    "study": {
+      "context.json": "3e4c620c50ed5c310305af3c34255e101f1e190290e7cdbbca10a93b4bc08019",
+      "purity.json": "13804be76826f5ebad1897a2e327b70f11f5935b5d6e3d38bfe2324688f6a579",
+      "he4_fits.root": "b8dc92f4b2a5d7c93390a98dcb4b5984295cb71a5cbba16038788f59fa47acce"
+    },
+    "completed_sha256": "d69fdf36331b0356265efe2a1cbd1ec66a7867ae78ad693cec54de24dfa3169a"
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "2b6568222b29125dbcee80b824fa3f2e57fa16b2fc0a1e9233fdf7ef477ff173",
+  "settings": {
+    "schemaVersion": 1,
+    "panelsPerPage": 4,
+    "diagnosticPanelsPerPage": 4,
+    "diagnosticPdf": "he4_low040_components.pdf",
+    "showNeighborComponents": true,
+    "fullDisplayNSigmaMin": -8.0,
+    "fullDisplayNSigmaMax": 4.0,
+    "physicalDisplayNSigmaMin": -4.2,
+    "physicalDisplayNSigmaMax": 2.5,
+    "linearMaximumFactor": 1.35,
+    "logMaximumFactor": 8.0,
+    "logMinimum": 0.5,
+    "diagnosticRigidityCenters": [
+      0.405,
+      0.415,
+      0.425,
+      0.435,
+      0.445,
+      0.455,
+      0.475,
+      0.495,
+      0.505,
+      0.555
+    ]
+  },
+  "created_jst": "2026-10-13T14:47:46.955668+09:00",
+  "note": "Stored fits are re-rendered, never fitted again; physical curves preserve stored fit-bin heights."
+}

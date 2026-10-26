@@ -1,0 +1,48 @@
+# Analysis Information
+
+# from picoDst Summary from FileCatalog
+starTag:
+  triggerSets: "production_3p85GeV_fixedTarget_2021"
+  stream: "st_physics"
+  collision: "auau3p85"
+  year: "year2021"
+  productionTag: "P24iy"
+  libraryTag: "SL24y"
+  filetype: "daq_reco_picoDst"
+  filenameFilter: "st_physics"
+  filenameNotFilter: "adc"
+  storage: "local"
+
+# Dataset Information
+dataset:
+  collisionSystem: "Au+Au"
+  allPicoDstList: "picoDstList/auau3p85GeV.list"
+  runRange:
+    min: 19000000
+    max: 20000000
+  goodRunList: ""
+  dataQuality: "production"
+  dataFormat: "picoDst"
+  
+# Analysis Information
+# anaName = {system}_{anaId}[_condition]; use YAML alias *anaName for name, jobName, scratchSubdir, outputFileStem.
+# baseRunMacro / baseAnaMacro = macro base names (no .C); runMacro is deprecated.
+analysis:
+  anaName: &anaName "auau3p85_anaLambda"
+  name: *anaName
+  mode: "fxtmult"
+  type: ""
+  targetParticle: "Lambda"
+  decayChannel: ""
+  workDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer"
+  baseRunMacro: "run_anaLambda"
+  baseAnaMacro: "anaLambda"
+  jobName: *anaName
+  scratchSubdir: *anaName
+  outputFileStem: *anaName
+  nFiles: 1000
+
+analyst:
+  name: "Yudai Ichikawa"
+  institute: "Tohoku University"
+  email: "yudai.ichikawa.d3@tohoku.ac.jp"

@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "nativeReadbackExact": true,
+  "inputHashesUnchanged": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "tableSha256": "98f3fcab03747966725fd6de998884bb4572ce2ea606993ed72e957b025b4f0e",
+  "summary": {
+    "rowCount": 9616,
+    "sliceCount": 8,
+    "representativeMaximumCount": 1961877.0,
+    "nonintegerCountBins": 0,
+    "countErrorConsistent": true
+  }
+}

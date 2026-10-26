@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "productionEnabled": false,
+  "outputDirectory": "gaussian_only_001",
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "species": [
+    "d",
+    "t",
+    "he3",
+    "he4"
+  ],
+  "response": "gaussian",
+  "background": "none",
+  "workers": 2,
+  "minimumHe4RExclusive": 0.61,
+  "tofThreshold": 2.0,
+  "maximumR": 5.0,
+  "aggregateOrigin": 0.4,
+  "aggregateWidth": 0.05,
+  "purityThreshold": 0.5,
+  "fixedTargetMeanSpecies": "he4",
+  "fixedTargetMeanMinR": 0.61,
+  "fixedTargetMeanMaxR": 0.7,
+  "warmStartPolicy": "All Gaussian centers, widths and window yields from the corresponding Gaussian+linear fit; preserve original identity reference and fixed nuisance shapes",
+  "fixedMeanPolicy": "He4 target center fixed to Gaussian+linear result only for ALL 0.61<R<0.70; width and all nuclear yields remain free; fixed-center error 0 is conditional, excludes calibration uncertainty",
+  "displayRebinFactor": 5,
+  "axisPadding": 0.05,
+  "fixedDAxis": [
+    0.4,
+    5.0
+  ],
+  "representativeR": [
+    0.615,
+    0.645,
+    0.805,
+    1.205,
+    1.605,
+    2.225
+  ],
+  "errorPolicy": "Conditional yield errors, excluding response, fixed-center calibration and model uncertainty",
+  "unavailableLinearSeedPolicy": "If linear fit has no fitted yields, retain its stored historical Gaussian center/width and initialize equal count/4 nuclear yields; preserve failure flags in provenance, never claim fitted seed exists"
+}

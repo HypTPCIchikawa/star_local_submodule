@@ -1,0 +1,38 @@
+schemaVersion: 1
+functionalForm: log10_polynomial
+rigidityUnit: GeV/c
+dedxUnit: keV/cm
+outsideRangePolicy: legacy
+productionEnabled: false
+candidateOnly: true
+phase: common
+widthMeaning: Intrinsic Gaussian width after raw R-bin-averaged joint refit
+species:
+  he3:
+    domain:
+    - 0.4
+    - 2.5
+    meanCoefficients:
+    - 29.317388890925322
+    - -76.13335771535122
+    - 129.98913598585517
+    - -85.50124922728236
+    sigmaCoefficients:
+    - 1.5147755632040183
+    - -4.564766079632467
+    - 6.9635371537145945
+  he4:
+    domain:
+    - 0.4
+    - 2.5
+    meanCoefficients:
+    - 40.9131919434984
+    - -104.39381570552794
+    - 94.82894259437495
+    - 41.07633745199234
+    sigmaCoefficients:
+    - 2.301724589412208
+    - -7.380132168637219
+    - 9.00607926235676
+tConstraintPolicy: T and BG start from last_regularized; T shape freedom follows the
+  same numerical information guard.

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "bash",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "root4star",
+    "-l",
+    "-b",
+    "-q",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/storage_math_001/source/tools/nuclear_pid_restart_20261020/run_test_float16_mapping.C(\"/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/storage_math_001/source/tools/nuclear_pid_restart_20261020/TestFloat16BinMapping.C\",\"/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/storage_math_001/build\")"
+  ],
+  "protected": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "58485980653196dcf43d43e8190b2772b3a9fec8b4aaefe689ecbae691563332",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/storage_math_001/source/tools/nuclear_pid_restart_20261020/Float16BinMapping.h": "d0c2c81f84b8725c905b7e01db90925be79f798d3b16d8e987f3b5345afc4b53",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/storage_math_001/source/tools/nuclear_pid_restart_20261020/TestFloat16BinMapping.C": "5bc7eb59c75bd1d6d4e171b54087b72380ea968f513e9379f9e3188694857385",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/storage_math_001/source/tools/nuclear_pid_restart_20261020/run_test_float16_mapping.C": "ab092ea9579eb0212ca4a723bb550f4b3ee8696dd6cf199e46c5591f8e0be302"
+  },
+  "productionEnabled": false,
+  "actualOnFileEncodingAsserted": false
+}

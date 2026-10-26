@@ -1,0 +1,84 @@
+{
+  "displayOnly": true,
+  "widthScale": 2.0,
+  "clippedPanels": 112,
+  "invalidPriorDisplayFallbacks": [
+    {
+      "species": "he3",
+      "model": "lognormal_exponential_nominal",
+      "index": "13",
+      "panel": "linearLo",
+      "priorLo": 39.5,
+      "priorHi": 28.216444744112067
+    },
+    {
+      "species": "he4",
+      "model": "gaussian_exponential_nominal",
+      "index": "8",
+      "panel": "linearLo",
+      "priorLo": 0.0,
+      "priorHi": -0.09678682114186188
+    },
+    {
+      "species": "he4",
+      "model": "gaussian_exponential_nominal",
+      "index": "16",
+      "panel": "linearLo",
+      "priorLo": 0.0,
+      "priorHi": -6.35009913826751
+    },
+    {
+      "species": "he4",
+      "model": "gaussian_linear_nominal",
+      "index": "8",
+      "panel": "linearLo",
+      "priorLo": 0.0,
+      "priorHi": -0.09678682114186188
+    },
+    {
+      "species": "he4",
+      "model": "gaussian_linear_nominal",
+      "index": "16",
+      "panel": "linearLo",
+      "priorLo": 0.0,
+      "priorHi": -6.35009913826751
+    }
+  ],
+  "sourceManifest": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/atlas_low_001/candidate_atlas.tsv",
+  "protected": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/coefficients.json": "035b682c52a4445a7b23924eae478419340259e1b63cefa8957069255e6b0ba8",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/coefficients.yaml": "f5906cb24673b3c04dade2581857e404004317309b468b3169fc7f6af04f7ad0",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate_summary.json": "5af3c25c219e9f4e6b5ad39a3d5c1792dfb4de9ec7310b355b96aea98e157c6d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate_summary.tsv": "df7341d43c5f517ae47ea1142e92c7935c9b1dcf29223cd368af1bd3e807e081",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/original_summary.json": "630530c166ea9d72fe39ab644ae20d446d7ed34c529e103b74cce05e3b3c3492",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/original_summary.tsv": "8c30ee27a2b0bf6dbcb6740b4c90e769d32787fe8ae695ed706c35db9fdfdccd",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/assessed_ranges.json": "5244c558ed2ca2d26ec3118c0e8d162f56922659f7a70ff621eccf7d0438d058",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/study_results.yaml": "2f99df541522e78582647cd09c5b6e842d96af621891d2b118057d6a3bdea7ac",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/curves.tsv": "19e61492425f8f9a202f9adeb4cfe7622b1577856d9aef35a84df7229647de8d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/protected_input_audit.json": "78d37989512d983622fc0241b5fecc9e2890e05cdcf62d680559e78e6587aead",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/git_original_audit.json": "138cfb7be9c33c2a69d93f909bf8fcc6d300e1205e3b054de8177d70a5eeab87",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/purity_vs_p_over_q.pdf": "b9876c0c04f126a1d545c21502048cb4e9b0466ce65507228403081f0fd6ea6a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/dedx_vs_p_over_q_curves.pdf": "2820ebf152bc2ce64fcb9d0ef5ec705ecf483fd89ac8a08141093d51d098c2af",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/atlas_low_001/candidate_atlas.tsv": "566d3f2025abe80b578fb10d122e9d926b2dc357f3117ec6b51d7eee73a76df3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/atlas_low_001/fit_atlas_low_d.pdf": "d5715b451d43cd015b7fdb02867787f3bda13d31c0f56ea172472eba19767f4b",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/atlas_low_001/fit_atlas_low_he3.pdf": "023c2b6ff271b3943316ac4f8221d3c68c3ea93b123f092cb5b94e11fc2836fe",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/atlas_low_001/fit_atlas_low_he4.pdf": "9cf5a95f5bb029c4efdfca9cead04a596ae478be33c2cfcfae0d045eb02f1a90",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/atlas_low_001/fit_atlas_low_t.pdf": "bef93c06b2a78e99116200b2eebb5afbf8f78fad1b4010f1673b6789f0e26f4e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_exponential_nominal/cutoff_fits.root": "7310796be88f7a61ea58e70f9129d657dc655a3607185efcb9811d43014f2fdc",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_linear_nominal/cutoff_fits.root": "312e6c2fc1d6f588a72da9ca6c795fc9b3858106739d2ecb60c81d5546cf5479",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_exponential_nominal/cutoff_fits.root": "05cd1c8d6016660f254e0f1db665b9f1e581625e89a3219de6296ae3d0e926bc",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_linear_nominal/cutoff_fits.root": "1341bbd9aba8e67c528bb727deaa555ce0a6011f2d3f20f2fcffe0755d7098e0",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_exponential_nominal/cutoff_fits.root": "6a9c933349ddea192d284818c9abfcdd77b0c7196d6e75ac5f0f16c8979e9c96",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_linear_nominal/cutoff_fits.root": "29a173faa163e5a8d40630e92d2402bd036b9b8074612b72db7e349735eeec0c",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_exponential_nominal/cutoff_fits.root": "4402c970631e6d28cdd94fd9078aaef2581166ba410ea44a61046b4c0b18de89",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_linear_nominal/cutoff_fits.root": "3a42ff4b0876728fccfc9fb3b7dcd587d8480619502bfc9bbfa98e6020684fa5",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_exponential_nominal/cutoff_fits.root": "33ab09c404dce3e03f600af00b0f9ba81bf7c34556e5d600869f97e438e9f8cb",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_linear_nominal/cutoff_fits.root": "58f64804a75249221f5391c179a10e95544ef26c1ffdd00e0c4f2f382d094803",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_exponential_nominal/cutoff_fits.root": "e5776831b4812070d8de37cb4df2d93658a86ed4704acdd1f9c5b279a92c068a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_linear_nominal/cutoff_fits.root": "dd19712ae80ce628aec6457ce3ffcc754c6ec0dd1d64ec6c2fd2213fbdcaec1d",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_exponential_nominal/cutoff_fits.root": "ac928977d85dd2340247d90575520b0a3255e9743255baa3fd06314d8213d423",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_linear_nominal/cutoff_fits.root": "df2bcd6e48434e2d7d42698f0bf277be5b809f4f9abc0ba7956aa622b2385e6e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_exponential_nominal/cutoff_fits.root": "de6d55600bb45cc725f2f0e6fb7f4c67261493d2f3268c9bf928ba828a9dd044",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_linear_nominal/cutoff_fits.root": "184361a01e7631ef567013143a5088946cdb1f184a02037484c932708b343d84"
+  }
+}

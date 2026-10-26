@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "productionEnabled": false,
+  "targetSpecies": "he4",
+  "rigidityRange": [0.4, 2.0],
+  "responses": ["gaussian", "lognormal"],
+  "backgroundsForControls": ["linear", "exponential"],
+  "controlIndices": [40, 80, 120],
+  "workers": 2,
+  "outputDirectory": "no_smooth_he4_low_001",
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "nestedDevianceTolerance": 0.01,
+  "displayRebin": 5
+}

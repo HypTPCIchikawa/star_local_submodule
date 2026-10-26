@@ -1,0 +1,12 @@
+# V0 Topology Cuts (for Lambda reconstruction)
+
+minDaughterDCA: 0.0        # cm, Minimum DCA between daughters
+maxDaughterDCA: 0.5        # cm, Maximum DCA between daughters
+minDecayLength: 2.0        # cm, Minimum decay length
+maxDecayLength: 100.0      # cm, Maximum decay length
+minPointingAngle: 0.0      # rad, Minimum pointing angle (cos > min)
+maxPointingAngle: 0.05     # rad, Maximum pointing angle
+maxDCAtoPV: 0.5            # cm, Maximum DCA of V0 to primary vertex
+lambdaMassWindow: 0.010    # GeV/c^2, ±window around Lambda mass (1.115683)
+lambdaMass: 1.115683       # GeV/c^2, PDG Lambda mass
+

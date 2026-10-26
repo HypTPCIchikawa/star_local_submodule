@@ -1,0 +1,25 @@
+{
+  "executionComplete": true,
+  "rows": 60,
+  "region": {
+    "name": "high_linear",
+    "background": "linear",
+    "sample": "TAG_D",
+    "rMin": 2.0,
+    "rMax": 5.0,
+    "components": [
+      "he4"
+    ]
+  },
+  "stage": "baseline",
+  "seconds": 14.763163328170776,
+  "products": {
+    "cutoff_fits.json": "1e255c5dfd2fe4b1f4eadcf91ac07363c4d637cad92e9b58b028f2ad300ac583",
+    "cutoff_fits.root": "189b909fe9ad96d8d970abaa162020f49b09a1ca93f1583547820c099c25c6bd",
+    "shapes.tsv": "0f99437b3e5cdaba6140c342f715d80efd1473205c2df781892d1f117d1d7b7e",
+    "gates.tsv": "cf6836312d2e2e14d5af500ad932a25dc9a92c56c353f1d0476a2f772ac65377",
+    "settings.tsv": "526bff1c6a50e1599a607217b9de4ba0fd1c6f65c86b9d42337f286ac1d32f74",
+    "target_seeds.tsv": "753994116c9156cff5ae4a5858c54c2078615220930398a72060e8975ffef29d",
+    "seed_provenance.json": "f7bfb16faafabfcee21b1417ec70558670384b4d62511aeeb6410892e496d78a"
+  }
+}

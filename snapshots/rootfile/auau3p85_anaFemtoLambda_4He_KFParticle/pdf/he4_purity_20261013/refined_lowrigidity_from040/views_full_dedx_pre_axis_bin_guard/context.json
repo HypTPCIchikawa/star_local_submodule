@@ -1,0 +1,107 @@
+{
+  "study_folder": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040",
+  "inputs": {
+    "fit_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/he4_fits.root",
+      "size": 2622426,
+      "mtime_ns": 1791869851021061465,
+      "device": 48,
+      "inode": 1070124479
+    },
+    "original_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+      "size": 10522646853,
+      "mtime_ns": 1790979373044137604,
+      "device": 48,
+      "inode": 82490341
+    },
+    "study": {
+      "context.json": "3e4c620c50ed5c310305af3c34255e101f1e190290e7cdbbca10a93b4bc08019",
+      "purity.json": "13804be76826f5ebad1897a2e327b70f11f5935b5d6e3d38bfe2324688f6a579",
+      "he4_fits.root": "b8dc92f4b2a5d7c93390a98dcb4b5984295cb71a5cbba16038788f59fa47acce"
+    },
+    "completed_sha256": "d69fdf36331b0356265efe2a1cbd1ec66a7867ae78ad693cec54de24dfa3169a"
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+  "settings": {
+    "schemaVersion": 1,
+    "panelsPerPage": 4,
+    "diagnosticPanelsPerPage": 4,
+    "diagnosticPdf": "he4_low040_components_full_dedx.pdf",
+    "showNeighborComponents": true,
+    "requireNeighborCentersVisible": true,
+    "fullDisplayNSigmaMin": -8.0,
+    "fullDisplayNSigmaMax": 4.0,
+    "physicalDisplayNSigmaMin": -8.0,
+    "physicalDisplayNSigmaMax": 4.0,
+    "linearMaximumFactor": 1.35,
+    "logMaximumFactor": 8.0,
+    "logMinimum": 0.5,
+    "diagnosticRigidityCenters": [
+      0.405,
+      0.415,
+      0.425,
+      0.435,
+      0.445,
+      0.455,
+      0.475,
+      0.495,
+      0.505,
+      0.555
+    ]
+  },
+  "runtime_provenance": {
+    "mode": "explicit_runtime_only_drift",
+    "allow_runtime_mainconf_drift": true,
+    "drift_detected": true,
+    "saved_mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "saved_mainconf_sha256": "2b6568222b29125dbcee80b824fa3f2e57fa16b2fc0a1e9233fdf7ef477ff173",
+    "runtime_mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "runtime_mainconf_sha256": "e45159d02f06b46d7b782df79dd0a95e880598ff7e5c5e7a4ed9b307ae5cb232",
+    "runtime_analysis_info": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+    "runtime_analysis_info_sha256": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7",
+    "runtime_identity": {
+      "libraryTag": "SL24y",
+      "year": "year2021",
+      "productionTag": "P24iy",
+      "collision": "auau3p85",
+      "triggerSets": "production_3p85GeV_fixedTarget_2021",
+      "mode": "fxtmult"
+    },
+    "note": "Mainconf selects ROOT/STAR runtime only; current analysis cuts/PID are not loaded or reapplied."
+  },
+  "saved_source_snapshots": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/source/tools/he4_purity/FitHe4Purity.C": "ab25f839121320a72b7864f1eb2a64e2d25fb3c3185875d49745c8119185abe3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/source/StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/source/tools/he4_purity/run_purity.py": "efebcc646a3c7250919cfd7eb18b72b6be86e0c7234b8be1a5c13f42e2def89b",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/source/tools/he4_purity/calibration_candidates.py": "73f4bb4e04950c06ee9ff94b88e688d72b48d46ced859444e944556b2fe82bf7"
+  },
+  "previous_view_products": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/completed.json": "01c1586facd08010e4a952d5e602d837959bd0447ff1227ad1a08c585e41b07b",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/settings.yaml": "2edffdbe7eb0be9a1f7261467bc3c5b3aeca1a7bdb5ef4b81e9bdf618e84a5b7",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/settings.tsv": "3b54f79da8bc9bf573a6c9b1b960f23ef37a9c1269caf9d7d9ffd2aa215aac05",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/slices.tsv": "313f87728c9dfb17186237508b268370ac5c01db1e808ee4d29491dd1e674add",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/context.json": "c20286abf6cb55f8e37c0a11784b3a4c415e4dbbd488748637ee13ceda01d5c1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_fits_linear.pdf": "1c8de9eaa047225541786b013de39d07eb1edcca1d63df4ff58fa195a85cfad3",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_fits_linear_first.png": "623263db8cd9611fce63b10144da2f2ace69117beb84b9adf7598e870e7dba99",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_low040_components.pdf": "56a280c5abb2fc066762ee53b254158557b5c9b79e5b8ce7f41a9e4661c2e48e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_405.png": "dc42035392d257c74ed598cf84ae3d567769335dd999df1f08999ca068843513",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_415.png": "9c846c8212372a79eaaf625f560232e8186c3ab826f0fff7e97a918b6e4b463a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_425.png": "14dafa875ae4bf35c9a5a267a659e590d13a079f35024ee7f1356958b98afa62",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_435.png": "c00f4631a795147006b1f98cc6d0b461ea68102ae37aa2270e32acccb1cb0272",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_445.png": "d41a4dbff6907cec964e64198474b9132f33e6ebeb9f05ab61946199c359a101",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_455.png": "6f50c43ae13ec67e25a5bb08b88793b1be9eeaa2f4dfc22fb538dc3e2fb7f550",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_475.png": "6615b13e9183c658da392f33abff81e97c85ba068418d290a86c0d6c670dd315",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_495.png": "62726db5d285f356186bd567f114941f51c7776b66d007c8d0a10fefc05cb01b",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_505.png": "352ef221210963c2b2c484bc943b54617a9e5f31f204bf89493887edcd225e74",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/he4_dedx_R_555.png": "59f847b514e73f7fca303c10ba44933642a2a3bbcb64175690e479107b024c70",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/render_audit.json": "e4d3b9501d1ae152f79f61caa908eabb2d28c03503c9f2df03e96592ef8cd95f",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/README.md": "5aad3f8933b901ad719ea10c0b4ba103be0ac1b2f442d9448f89b0b685b55359",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/logs/render.log": "67608d75c2968364c92690e8e7cb6cc9ff3bc0c68f70e7ab99f397f0735e18a0",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/source/RenderHe4FitViews.C": "d57f421e5218e870ec600f262126a9b3ef4c988f67641b7e38e66b36f2690724",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/views/source/render_fit_views.py": "8dd0c7368c002ec7a96ecc369e28f91515536e94f5d4c9d73aaa4a48c63e5769"
+  },
+  "created_jst": "2026-10-13T19:07:59.390005+09:00",
+  "note": "Stored fits are re-rendered, never fitted again; physical curves preserve stored fit-bin heights."
+}

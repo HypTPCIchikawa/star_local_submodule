@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Version personal notes directly and snapshot private workspace files safely."""
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
 import os
@@ -104,14 +105,25 @@ def collect(workspace, cfg):
             for folder in ['pdf', 'mdfiles']:
                 for p in files_under(ana / folder):
                     candidates[str(p.relative_to(workspace))] = ('small_output', True)
-    accepted, skipped = {}, []
-    for relative, (kind, output) in sorted(candidates.items()):
+    def inspect(item):
+        relative, (kind, output) = item
         p = workspace / safe_relative(relative)
         ok, reason = permitted(p, relative, cfg, output)
         if ok:
-            accepted[relative] = {'sha256': sha(p), 'bytes': p.stat().st_size, 'kind': kind}
+            return relative, {'sha256': sha(p), 'bytes': p.stat().st_size, 'kind': kind}, None
         elif reason in {'size', 'binary'}:
-            skipped.append({'path': relative, 'reason': reason, 'bytes': p.stat().st_size})
+            return relative, None, {'path': relative, 'reason': reason, 'bytes': p.stat().st_size}
+        return relative, None, None
+    accepted, skipped = {}, []
+    # Files are independent; overlap metadata/read latency on the shared filesystem.
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for i, (relative, record, rejected) in enumerate(pool.map(inspect, sorted(candidates.items())), 1):
+            if record:
+                accepted[relative] = record
+            if rejected:
+                skipped.append(rejected)
+            if i % 1000 == 0:
+                print('Inspected {}/{} candidate files'.format(i, len(candidates)), file=sys.stderr, flush=True)
     return accepted, skipped
 
 
@@ -137,6 +149,8 @@ def capture(workspace, cfg, write=False):
             if not dest.exists() or sha(dest) != record['sha256']:
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, dest)
+                if sha(dest) != record['sha256']:
+                    raise ValueError('Source changed during capture; retry before committing: ' + relative)
         for relative in previous.keys() - records.keys():
             dest = REPO / 'snapshots' / safe_relative(relative)
             if dest.exists():
@@ -191,18 +205,50 @@ def restore(workspace, cfg):
 
 def check_index(cfg):
     staged = [x.decode() for x in git(REPO, 'diff', '--cached', '--name-only', '--diff-filter=ACMR', '-z').split(b'\0') if x]
+    entries = {}
+    for row in git(REPO, 'ls-files', '--stage', '-z').split(b'\0'):
+        if row:
+            info, name = row.split(b'\t', 1)
+            mode, oid, stage = info.decode().split()
+            if stage != '0':
+                raise ValueError('Unmerged index: ' + name.decode())
+            entries[name.decode()] = (mode, oid)
+    oids = sorted({entries[name][1] for name in staged})
+    query = ('\n'.join(oids) + '\n').encode() if oids else b''
+    sizes = {}
+    if query:
+        result = subprocess.run(['git', '-C', str(REPO), 'cat-file', '--batch-check'],
+                                input=query, stdout=subprocess.PIPE, check=True)
+        for row in result.stdout.decode().splitlines():
+            oid, kind, size = row.split()
+            if kind != 'blob':
+                raise ValueError('Only regular blobs may be staged')
+            sizes[oid] = int(size)
+    text_oids = set()
     for name in staged:
         safe_relative(name)
-        mode = git(REPO, 'ls-files', '--stage', '--', name).decode().split()[0]
+        mode, oid = entries[name]
         if mode not in {'100644', '100755'}:
             raise ValueError('Only regular files may be committed: ' + name)
-        data = git(REPO, 'show', ':' + name)
         ext = Path(name).suffix.lower()
         maximum = cfg['maxManifestBytes'] if name.startswith('metadata/') else cfg['maxFileBytes']
         original = name[len('snapshots/'):] if name.startswith('snapshots/') else name
         maximum = cfg['extraLargeReports'].get(original, maximum)
-        if ext in DENIED or len(data) > maximum or (ext not in IMAGES and b'\0' in data):
-            raise ValueError('Generated, oversized or binary file in index: ' + name)
+        if ext in DENIED or sizes[oid] > maximum:
+            raise ValueError('Generated or oversized file in index: ' + name)
+        if ext not in IMAGES:
+            text_oids.add(oid)
+    if text_oids:
+        result = subprocess.run(['git', '-C', str(REPO), 'cat-file', '--batch'],
+            input=('\n'.join(sorted(text_oids)) + '\n').encode(), stdout=subprocess.PIPE, check=True)
+        offset = 0
+        for _ in text_oids:
+            end = result.stdout.index(b'\n', offset)
+            oid, kind, size = result.stdout[offset:end].decode().split()
+            start, size = end + 1, int(size)
+            if b'\0' in result.stdout[start:start + size]:
+                raise ValueError('Binary content in a text file: ' + oid)
+            offset = start + size + 1
     print('PASS staged-file policy: {} files'.format(len(staged)))
 
 

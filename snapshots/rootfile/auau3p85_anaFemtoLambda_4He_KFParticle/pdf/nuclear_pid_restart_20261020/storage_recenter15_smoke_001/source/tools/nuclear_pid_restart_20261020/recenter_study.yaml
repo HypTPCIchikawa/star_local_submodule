@@ -1,0 +1,15 @@
+# Diagnostic ROI comparison only. No new PID curve, cut, purity or veto is adopted.
+schemaVersion: 1
+baseSettings: tools/nuclear_pid_restart_20261020/storage_study.yaml
+rawExportDirectory: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/native_storage_export_001
+smokeNativeRBins: [88, 178]
+modeFinder:
+  searchCenter: original_git_mean
+  searchHalfWidthSigma: 2.5
+  smoothingWindowBins: 3
+  modeTiePolicy: nearest_original_mean_then_lower_bin
+  roiWidth: original_git_sigma
+  centerDefinition: native_bin_center
+variants:
+  local25: {roiHalfWidthSigma: 2.5}
+  local15: {roiHalfWidthSigma: 1.5}

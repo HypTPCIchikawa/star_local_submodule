@@ -1,0 +1,98 @@
+// Presentation only: saved native data/model counts are never refitted or normalized.
+void PlotCutoffSpectra(const char*,const char*,const char*,const char*);
+#ifndef __CINT__
+#include "TCanvas.h"
+#include "TFile.h"
+#include "TH1.h"
+#include "TGraph.h"
+#include "TLegend.h"
+#include "TLatex.h"
+#include "TStyle.h"
+#include "TSystem.h"
+#include <algorithm>
+#include <cmath>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <limits>
+#include <map>
+#include <sstream>
+#include <stdexcept>
+#include <string>
+#include <vector>
+namespace CutoffSpectra {
+void Require(bool ok,const std::string& message){if(!ok)throw std::runtime_error(message);}
+typedef std::map<std::string,std::string> Settings;
+double Number(const Settings& c,const char* key){Settings::const_iterator it=c.find(key);Require(it!=c.end(),std::string("Missing explicit plot setting: ")+key);std::istringstream in(it->second);double v;Require(bool(in>>v),std::string("Invalid plot number: ")+key);in>>std::ws;Require(in.eof()&&std::isfinite(v),"Invalid finite plot setting");return v;}
+Settings ReadSettings(const char* path){std::ifstream in(path);Require(bool(in),"Missing plot settings TSV");Settings out;std::string line;while(std::getline(in,line)){size_t tab=line.find('\t');Require(tab!=std::string::npos&&line.find('\t',tab+1)==std::string::npos,"Malformed settings row");Require(out.insert(std::make_pair(line.substr(0,tab),line.substr(tab+1))).second,"Duplicate plot setting");}Require(in.eof(),"Unreadable plot settings");return out;}
+struct Model {std::string label,path;TFile* file;};
+struct Selection {int index;double rigidity;};
+std::vector<Model> ReadModels(const char* path){std::ifstream in(path);Require(bool(in),"Missing model paths TSV");std::string line;Require(bool(std::getline(in,line))&&line=="label\tpath","Wrong model TSV header");std::vector<Model> out;
+  while(std::getline(in,line)){size_t p=line.find('\t');Require(p!=std::string::npos&&line.find('\t',p+1)==std::string::npos,"Malformed model row");Model m;m.label=line.substr(0,p);m.path=line.substr(p+1);Require(!m.label.empty()&&!m.path.empty(),"Empty model label/path");m.file=TFile::Open(m.path.c_str(),"READ");Require(m.file&&!m.file->IsZombie()&&!m.file->TestBit(TFile::kRecovered),"Unusable saved model ROOT");out.push_back(m);}
+  Require(in.eof()&&!out.empty(),"At least one explicit comparison model file required");return out;
+}
+std::vector<Selection> ReadSelections(const char* path){std::ifstream in(path);Require(bool(in),"Missing explicit spectrum selections");std::string line;Require(bool(std::getline(in,line))&&line=="index\trigidity","Wrong spectrum-selection header");std::vector<Selection> out;while(std::getline(in,line)){std::istringstream row(line);Selection s;std::string extra;Require(bool(row>>s.index>>s.rigidity)&&!(row>>extra)&&s.index>=0&&std::isfinite(s.rigidity)&&s.rigidity>0,"Malformed spectrum selection");out.push_back(s);}Require(in.eof()&&!out.empty(),"Empty spectrum selection");return out;}
+TH1* Load(TFile& file,const char* prefix,int index){TH1* h=dynamic_cast<TH1*>(file.Get(Form("%s_%03d",prefix,index)));Require(h!=0,std::string("Missing saved histogram: ")+prefix);return h;}
+void VerifyRaw(TH1& a,TH1& b){Require(a.GetNbinsX()==b.GetNbinsX(),"Compared model native axes differ");for(int bin=0;bin<=a.GetNbinsX()+1;++bin){Require(a.GetBinContent(bin)==b.GetBinContent(bin)&&a.GetBinError(bin)==b.GetBinError(bin),"Compared models have different raw count/error/flow");if(bin>=1&&bin<=a.GetNbinsX())Require(a.GetBinLowEdge(bin)==b.GetBinLowEdge(bin)&&a.GetBinWidth(bin)==b.GetBinWidth(bin),"Compared native bin edges differ");}}
+TH1* Display(TH1& native,int rebin,const std::string& name){Require(native.GetNbinsX()%rebin==0,"Display grouping does not divide native bins");TH1* h=static_cast<TH1*>(native.Clone(name.c_str()));h->SetDirectory(0);double before=h->Integral(0,h->GetNbinsX()+1);h->Rebin(rebin);Require(std::fabs(h->Integral(0,h->GetNbinsX()+1)-before)<1e-10*std::max(1.,std::fabs(before)),"Display rebin changed saved count sum");return h;}
+// Presentation limits only: never use a distant, hidden peak to scale a local panel.
+// Raw error-bar tops and all saved component predictions must fit inside the frame.
+struct DisplayLimits {int first,last;double maximum,positiveMinimum,linearMaximum,logMinimum,logMaximum;};
+DisplayLimits VisibleLimits(const std::vector<TH1*>& hist,double low,double high,double logFloor){
+  Require(!hist.empty()&&hist[0]&&high>low&&logFloor>0,"Invalid visible-axis request");
+  TH1& raw=*hist[0];const int n=raw.GetNbinsX();
+  Require(n>0&&high>raw.GetBinLowEdge(1)&&low<raw.GetXaxis()->GetBinUpEdge(n),"View does not overlap native axis");
+  const double epsilon=raw.GetBinWidth(1)*1.e-7;
+  DisplayLimits out;out.first=std::max(1,std::min(n,raw.FindBin(low+epsilon)));out.last=std::max(1,std::min(n,raw.FindBin(high-epsilon)));
+  Require(out.first<=out.last,"Empty display bin range");out.maximum=0;out.positiveMinimum=std::numeric_limits<double>::max();
+  for(unsigned i=0;i<hist.size();++i){Require(hist[i]&&hist[i]->GetNbinsX()==n,"Display axes differ");
+    for(int b=out.first;b<=out.last;++b){const double value=hist[i]->GetBinContent(b);Require(std::isfinite(value),"Nonfinite saved model/count in view");
+      if(value>0)out.positiveMinimum=std::min(out.positiveMinimum,value);
+      double upper=value;if(i==0){const double error=raw.GetBinError(b);Require(std::isfinite(error)&&error>=0,"Invalid raw display uncertainty");upper+=error;const double lower=value-error;if(lower>0)out.positiveMinimum=std::min(out.positiveMinimum,lower);}
+      out.maximum=std::max(out.maximum,upper);
+    }
+  }
+  out.maximum=std::max(1.,out.maximum);if(out.positiveMinimum==std::numeric_limits<double>::max())out.positiveMinimum=logFloor;
+  out.linearMaximum=1.3*out.maximum;out.logMinimum=std::max(logFloor,.5*out.positiveMinimum);out.logMaximum=std::max(10.*out.maximum,10.*out.logMinimum);
+  return out;
+}
+void DrawPanel(TFile& file,const std::string& label,const Selection& selection,int rebin,double low,double high,bool log,double logMin,int serial){
+  const char* keys[]={"raw_native","prediction_total","prediction_smooth","prediction_d","prediction_t","prediction_he3","prediction_he4"};const char* labels[]={"ALL native counts","Total fit","Smooth BG","d","t","^{3}He","^{4}He"};int colors[]={kBlack,kRed+1,kGray+2,kBlue+1,kOrange+7,kGreen+2,kMagenta+1};
+  std::vector<TH1*> hist;for(int i=0;i<7;++i){std::ostringstream name;name<<"cutoff_view_"<<serial<<'_'<<i;hist.push_back(Display(*Load(file,keys[i],selection.index),rebin,name.str()));}
+  gPad->SetTopMargin(.15);gPad->SetBottomMargin(.13);gPad->SetLeftMargin(.13);gPad->SetRightMargin(.04);gPad->SetLogy(log);
+  const DisplayLimits limits=VisibleLimits(hist,low,high,logMin);
+  TH1* raw=hist[0];raw->GetXaxis()->SetRange(limits.first,limits.last);raw->SetTitle("");raw->GetXaxis()->SetTitle("dE/dx [keV/cm]");raw->GetYaxis()->SetTitle(Form("Counts / %.3g keV/cm",raw->GetBinWidth(1)));raw->GetXaxis()->SetTitleSize(.047);raw->GetYaxis()->SetTitleSize(.045);raw->GetYaxis()->SetTitleOffset(1.35);raw->SetMarkerStyle(20);raw->SetMarkerSize(.3);raw->SetLineColor(kBlack);raw->SetMinimum(log?limits.logMinimum:0);raw->SetMaximum(log?limits.logMaximum:limits.linearMaximum);raw->Draw("E1");
+  // Saved model bins outside the fit mask are not predictions of zero.
+  // Draw curves only over the fitted bins, preserving native counts verbatim.
+  std::ostringstream maskName;maskName<<"cutoff_mask_"<<serial;
+  TH1* mask=Display(*Load(file,"prediction_fit_mask",selection.index),rebin,maskName.str());
+  std::vector<TGraph*> curves;
+  for(int i=1;i<7;++i){
+    TGraph* curve=new TGraph();
+    for(int bin=1;bin<=mask->GetNbinsX();++bin)if(mask->GetBinContent(bin)>0)
+      curve->SetPoint(curve->GetN(),hist[i]->GetBinCenter(bin),hist[i]->GetBinContent(bin));
+    curve->SetLineColor(colors[i]);curve->SetLineWidth(i==1?2:1);curve->SetLineStyle(i==2?2:1);
+    curve->Draw("L SAME");curves.push_back(curve);
+  }
+  raw->Draw("E1 SAME");
+  TLegend* legend=new TLegend(.56,.49,.95,.84);legend->SetFillStyle(0);legend->SetBorderSize(0);legend->SetTextSize(.029);
+  legend->AddEntry(raw,labels[0],"pe");for(int i=1;i<7;++i)legend->AddEntry(curves[i-1],labels[i],"l");legend->Draw();
+  TLatex text;text.SetNDC();text.SetTextFont(42);text.SetTextSize(.039);text.DrawLatex(.13,.94,Form("R = %.3f GeV/c; %s",selection.rigidity,label.c_str()));text.SetTextSize(.026);text.DrawLatex(.13,.89,log?"Log scale; saved fitted counts (no refit)":"Linear scale; no display normalization");
+  gPad->Modified();gPad->Update();
+  std::cout<<"SPECTRUM_VISIBLE_AXES serial="<<serial<<" first="<<limits.first<<" last="<<limits.last<<" xlow="<<raw->GetBinLowEdge(limits.first)<<" xhigh="<<raw->GetXaxis()->GetBinUpEdge(limits.last)<<" ymin="<<(log?limits.logMinimum:0)<<" ymax="<<(log?limits.logMaximum:limits.linearMaximum)<<" rawErrorAndModelMaximum="<<limits.maximum<<" log="<<log<<std::endl;
+  // Canvas owns drawing references until it is cleared by the caller.
+}
+}
+#endif
+void PlotCutoffSpectra(const char* modelsPath,const char* selectionsPath,const char* settingsPath,const char* outputPdf){
+#ifndef __CINT__
+  using namespace CutoffSpectra;
+  try{Require(modelsPath&&selectionsPath&&settingsPath&&outputPdf,"Explicit spectrum plot inputs required");Require(gSystem->AccessPathName(outputPdf),"Existing spectrum PDF will not be overwritten");Settings cfg=ReadSettings(settingsPath);double low=Number(cfg,"dedxMin"),high=Number(cfg,"dedxMax"),logMin=Number(cfg,"logMinimum"),group=Number(cfg,"displayDedxRebinFactor");Require(high>low&&logMin>0&&group>=1&&group==std::floor(group),"Invalid explicit spectrum view settings");int rebin=int(group);std::vector<Model> models=ReadModels(modelsPath);std::vector<Selection> selections=ReadSelections(selectionsPath);
+    gStyle->SetOptStat(0);gStyle->SetPaperSize(26,20);TCanvas canvas("nuclear_cutoff_spectra","Nuclear cutoff spectra",1300,1000);canvas.Print((std::string(outputPdf)+"[").c_str());int serial=0;
+    for(unsigned i=0;i<selections.size();++i){const Selection& s=selections[i];double fitLo=high,fitHi=low;for(unsigned m=0;m<models.size();++m){VerifyRaw(*Load(*models[0].file,"raw_native",s.index),*Load(*models[m].file,"raw_native",s.index));TH1* mask=Load(*models[m].file,"prediction_fit_mask",s.index);for(int b=1;b<=mask->GetNbinsX();++b)if(mask->GetBinContent(b)>0){fitLo=std::min(fitLo,mask->GetBinLowEdge(b));fitHi=std::max(fitHi,mask->GetXaxis()->GetBinUpEdge(b));}}
+      for(int view=0;view<2;++view)for(unsigned pair=0;pair<models.size();pair+=2){double a=view==0?low:std::max(low,fitLo),b=view==0?high:std::min(high,fitHi);if(!(b>a)){a=low;b=high;}canvas.Clear();canvas.Divide(2,2);for(unsigned m=0;m<2&&pair+m<models.size();++m)for(int log=0;log<2;++log){canvas.cd(2*m+log+1);DrawPanel(*models[pair+m].file,models[pair+m].label,s,rebin,a,b,log!=0,logMin,serial++);}canvas.Print(outputPdf);}
+    }
+    canvas.Print((std::string(outputPdf)+"]").c_str());for(unsigned m=0;m<models.size();++m){models[m].file->Close();delete models[m].file;}std::cout<<"NUCLEAR_CUTOFF_SPECTRA_COMPLETE pages="<<2*((models.size()+1)/2)*selections.size()<<std::endl;
+  }catch(const std::exception& e){std::cerr<<"PlotCutoffSpectra: "<<e.what()<<std::endl;gSystem->Exit(2);}
+#endif
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "complete",
+  "calibration": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/calibration/dedx_helium_auau3p85_2021P24iy_from040.yaml",
+  "calibration_sha256": "0b6b1bd97b6e3caf752c1b5213407deacd7d0897307442c1202ba10df115bfc1",
+  "fit_json_sha256": "13804be76826f5ebad1897a2e327b70f11f5935b5d6e3d38bfe2324688f6a579",
+  "source_sha256": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/he4_purity/export_runtime_calibration.py": "e2ced59185e2c1d43c6765224e353abc2b36330df1f2c857095594ba6762b905",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/calibrated_selection/source/PlotCalibrationWindows.C": "d7de2547ebdcd59debd4db15fead0aeb084571a7d988851b97ec063e62e44ab6"
+  },
+  "products": {
+    "purity_windows.json": "1cf42022f83678497dded83588ce41c4fa65a595b4f1c35969be0d64511c5a02",
+    "purity_windows.csv": "acb10a279621f8971f7c379d82e742b45667b922c617056ad0f1db341ba072ea",
+    "plot_points.tsv": "9411ffa72ea6d590edad3ab694aebb3a868cf251915e22d1599d8305b77b8c48",
+    "calibration_curves.tsv": "eec3990e425a0d9bc307fcfc9a1ac56c73f5bf17abf14a5cb715f559e17503b7",
+    "plot.log": "7cf2d2200c7410e0b96c8260b1cdbbe6d9b0d10089f843cc1c430591c342e5b8",
+    "purity_calibrated_windows.pdf": "7b8d166ec62181b32734a6f795347d607834ac47a0c3a9151234bd4f267b9d9c",
+    "purity_calibrated_windows.png": "beb5c9f2c5fabb9db55151586d2df4126b83725dbea17f94fd15ba48415b1251",
+    "README.md": "786047231582426d645cb1731690422624fa7373d0154e6a5a17dab451066ddb",
+    "source/export_runtime_calibration.py": "e2ced59185e2c1d43c6765224e353abc2b36330df1f2c857095594ba6762b905",
+    "source/PlotCalibrationWindows.C": "d7de2547ebdcd59debd4db15fead0aeb084571a7d988851b97ec063e62e44ab6",
+    "source/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208"
+  }
+}

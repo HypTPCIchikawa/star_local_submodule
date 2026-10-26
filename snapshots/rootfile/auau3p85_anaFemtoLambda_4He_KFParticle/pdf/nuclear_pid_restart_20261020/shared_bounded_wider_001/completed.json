@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "productionEnabled": false,
+  "inputsUnchanged": true,
+  "totalFits": 352,
+  "fitFailures": 0,
+  "qualityAcceptedSlices": 73,
+  "outputs": {
+    "fits.json": "357a04cd3e41902dd71bc33d6e6383e71d4a14ed5ec455d1e89097c1af30208d",
+    "native_spectra.root": "7c0918e58355999a3798af02298d72336ae11ae1bc0b037ec63aaf66972c660e",
+    "native_effective_bins.tsv": "5f8033711dd46e43a8e81e6db9aa515823874dc474a09ed6811d837cd0c935d1"
+  }
+}

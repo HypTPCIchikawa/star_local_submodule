@@ -1,0 +1,142 @@
+# StNuclearIdMaker histogram definitions
+
+axes:
+  P: &P
+    nBins: 600
+    min: 0.0
+    max: 6.0
+  dEdx: &dEdx
+    nBins: 1200
+    min: 0.0
+    max: 120.0
+  Eta: &Eta
+    nBins: 100
+    min: -3.0
+    max: 3.0
+  Rapidity: &Rapidity
+    nBins: 100
+    min: -3.0
+    max: 3.0
+  Pt: &Pt
+    nBins: 600
+    min: 0.0
+    max: 6.0
+  M2: &M2
+    nBins: 1000
+    min: -0.5
+    max: 25.0
+
+histograms:
+  hDedxP:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_cut:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_e:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_pi:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_K:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_p:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_else:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_d:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_t:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_3He:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_4He:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p; p (GeV/c); dE/dx (keV/cm)"
+
+  hPvsEta_d:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_t:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_3He:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+  hPvsEta_4He:
+    xAxis: *P
+    yAxis: *Eta
+    title: "p vs #eta (2#sigma); p (GeV/c); #eta"
+
+  hPvsY_d:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_t:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_3He:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+  hPvsY_4He:
+    xAxis: *P
+    yAxis: *Rapidity
+    title: "p vs y (2#sigma); p (GeV/c); y"
+
+  hPvsPt_d:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_t:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_3He:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+  hPvsPt_4He:
+    xAxis: *P
+    yAxis: *Pt
+    title: "p vs p_{T} (2#sigma); p (GeV/c); p_{T} (GeV/c)"
+
+  hDedxP_d_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_t_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+  hDedxP_3He_m2:
+    xAxis: *P
+    yAxis: *dEdx
+    title: "TPC dE/dx vs p (M2 cut); p (GeV/c); dE/dx (keV/cm)"
+
+  hM2P:
+    xAxis: *P
+    yAxis: *M2
+    title: "TOF m^{2} vs p;p (GeV/c);m^{2} (GeV^{2}/c^{4})"

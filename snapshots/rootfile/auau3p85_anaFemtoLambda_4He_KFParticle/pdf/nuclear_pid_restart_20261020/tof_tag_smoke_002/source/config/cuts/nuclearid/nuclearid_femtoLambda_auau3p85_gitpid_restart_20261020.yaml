@@ -1,0 +1,52 @@
+# 2026-10-20 restart: restore Git's original mean/sigma functions.
+# Only the explicit dE/dx calibration switch differs from the saved production profile.
+# Existing cutoff/TOF/veto values are retained separately, NOT revalidated by this restore.
+nuclearMinNHitsDedx: 15
+nuclearMinPt: 0.1
+nSigmaFill1D: 1.5
+nSigmaExclude: 2.0
+maxNSigmaNuclear: 2.0
+m2SigmaCut: 1.5
+m2_selection: false
+minP_M2cut: 0.2
+minM2_M2cut: 0.01
+maxM2_M2cut: 10.0
+maxPOverQ: 5.0
+requireBestSpecies: true
+nuclearMassDeuteron: 1.87561
+nuclearMassTriton: 2.80892
+nuclearMassHe3: 2.80839
+nuclearMassHe4: 3.72742
+nuclearTofMeanDeuteron: 3.48096
+nuclearTofSigmaDeuteron: 0.141458
+nuclearTofMeanTriton: 7.76906
+nuclearTofSigmaTriton: 0.341755
+nuclearTofMeanHe3: 1.92385
+nuclearTofSigmaHe3: 0.094
+dedxCalibration:
+  enabled: false
+  calibrationFile: calibration/dedx_helium_auau3p85_2021P24iy_from040.yaml
+speciesMinPOverQ: {d: 0.65, t: 0.80, he3: 0.75, he4: 0.70}
+speciesPOverQVeto:
+  d:
+    - {min: 1.45, max: 1.50}
+    - {min: 1.70, max: 2.00}
+    - {min: 2.50, max: 5.00}
+  t:
+    - {min: 1.35, max: 1.40}
+    - {min: 2.50, max: 5.00}
+  he3:
+    - {min: 2.50, max: 5.00}
+  he4:
+    - {min: 0.85, max: 0.95}
+    - {min: 1.75, max: 1.80}
+    - {min: 3.20, max: 5.00}
+highRigidityTof:
+  enabled: true
+  thresholdPOverQ: 2.0
+  extendHe4BeyondMaxPOverQ: false
+  species:
+    d: {mass2Min: 3.268773, mass2Max: 3.693147}
+    t: {mass2Min: 7.2564275, mass2Max: 8.2816925}
+    he3: {mass2Min: 1.78285, mass2Max: 2.06485}
+    he4: {mass2Min: 3.268773, mass2Max: 3.693147}

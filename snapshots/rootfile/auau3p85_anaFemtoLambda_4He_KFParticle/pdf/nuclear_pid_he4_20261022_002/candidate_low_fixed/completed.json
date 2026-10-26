@@ -1,0 +1,21 @@
+{
+  "executionComplete": true,
+  "rows": 19,
+  "meanFixed": true,
+  "background": "none",
+  "products": {
+    "shapes.tsv": "39c2381c261fc67d5e0becee9c5e3549ce36d7ebff0d91b9c0744fcbe1826c3d",
+    "gates.tsv": "38908e31e981d714339e72d9a5922f2436b9d14e44998880a2709ddeed0c5b3d",
+    "tag_shape_audit.json": "6d8632e462fc1f8078441652a55171e142a70ad1f4c7d74b0abb05105984a4b4",
+    "effective_settings.json": "ffc3f5c9aaa2077f74ee97667cca621dbdbb3d0a1c10249208efab91d3bf51f1",
+    "independent_gate_counts.tsv": "cc0f39f174ad54376fbfde848b05c4c2a836aa52936458559669c9a8a2df6342",
+    "fixed_mean_seeds.tsv": "b78c1f703bd1f193e956fba22e5eecfccc8c79576ba073b9ae8c68b130022ddb",
+    "seed_provenance.json": "8b2cd2de27ed2d787cecaba9716525405c654b98ce16acc09a11483b7ee37dc6",
+    "settings.tsv": "502a39ff04c8b46d243f5c7ebdfe8bb18077daa2cde1cc553d5f2bb97a53f1a0",
+    "command.json": "c3121d2d0d4505c98d16838133687b09e5b2070d39d63516196578ad377b966e",
+    "fit.log": "bf4f3923f61c6a1913f106467db4cf9490c8b35117a80c1380a49506adb62fbf",
+    "cutoff_fits.root": "e121b9eaf3f6558b4940ee8ea1640c97d29d9975f84ec199a966f235de266d2f",
+    "cutoff_fits.json": "433676d704931ea19837f1c15c57937a3056113e509fa921c5822f1ee87ab4b5",
+    "purity.tsv": "d656d6a61757123273579a6f27d0b2d74b52807e20f0cdf7691354facfcbdab6"
+  }
+}

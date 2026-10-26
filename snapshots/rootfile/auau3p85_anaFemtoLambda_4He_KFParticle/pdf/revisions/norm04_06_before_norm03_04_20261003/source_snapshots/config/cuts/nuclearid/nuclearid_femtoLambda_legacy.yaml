@@ -1,0 +1,23 @@
+# Original StNuclearIdMaker effective selection and QA (no new nuclear optimization).
+nuclearMinNHitsDedx: 15
+nuclearMinPt: 0.1
+nSigmaFill1D: 1.5
+nSigmaExclude: 2.0
+maxNSigmaNuclear: 2.0
+m2SigmaCut: 1.5
+m2_selection: false
+minP_M2cut: 0.2
+minM2_M2cut: 0.01
+maxM2_M2cut: 10.0
+maxPOverQ: 2.5
+requireBestSpecies: true
+nuclearMassDeuteron: 1.87561
+nuclearMassTriton: 2.80892
+nuclearMassHe3: 2.80839
+nuclearMassHe4: 3.72742
+nuclearTofMeanDeuteron: 3.48096
+nuclearTofSigmaDeuteron: 0.141458
+nuclearTofMeanTriton: 7.76906
+nuclearTofSigmaTriton: 0.341755
+nuclearTofMeanHe3: 1.92385
+nuclearTofSigmaHe3: 0.094

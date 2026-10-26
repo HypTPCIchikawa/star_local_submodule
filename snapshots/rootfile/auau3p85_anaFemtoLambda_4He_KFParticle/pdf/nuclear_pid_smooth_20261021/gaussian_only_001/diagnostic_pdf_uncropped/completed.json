@@ -1,0 +1,79 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "response": "gaussian",
+  "background": "none",
+  "nativeFits": 1579,
+  "aggregateBins": 364,
+  "supportedBins": 175,
+  "meanFixedIntervals": 9,
+  "fixedMeansExactlyEqualLinear": true,
+  "meanFixedErrorMeaning": "zero conditional error; calibration uncertainty excluded",
+  "linearSeedsChecked": 1579,
+  "linearSeedsUnavailable": 9,
+  "he3HalfHeightChecks": 417,
+  "rootReadbackZeroSmoothAndRawInvariant": true,
+  "allPdfPagesReadback": true,
+  "uniqueFitPages": 1579,
+  "protectedInputsUnchanged": true,
+  "protectedFiles": 130,
+  "sourceSha256": {
+    "NuclearFitCommon.h": "8947cf5607e0269839b6bc04daaaf53b71a682fc4b172dcdff35f3aca5158569",
+    "NuclearLognormalFitCommon.h": "af84a3e40dac4bedcabc4320dd278fa20990d14775b0dd429d6166bfe880ee5f",
+    "FitLocalNuclearCutoff.C": "6ebf922f7968eb312c0898dfe12f7690346fd406d2651c0ec94021b7fcf86d54",
+    "FitHighRigidity.C": "7c0d222b1c9d59985e283b7c13bb53064b2d63f6399f958bf8a6b310d4faf39d",
+    "settings.yaml": "8ce8c8ca4a715206456137fd7b3a1fe5fb704146249c7b558ec7e7a8a5d6e235",
+    "run.py": "9e0df3793817ea2613123e913254fee10febda965769da3e0594b1e0b25ef9e9",
+    "PlotGaussianOnly.C": "b92da2061a2eb4dfff302e47f9394f4b15fe2a7958b1f2db88c95c0ee6231b7e",
+    "analyze.py": "f7434984fd4a29b2c77155872b2796df8a1b547df739aaacd93cc0eba66f97f9",
+    "render.py": "89e842728183c8c238489d354da980dc1c8a91e3514966e9a17dffaebe0a98a3",
+    "ValidateGaussianOnly.C": "17a20f8d71f92082a6ae44300a67ebccc7129a79fa44102ff0eb30d1727184b1",
+    "finish.py": "82b27ed35486b6b09e54f47bce79472da42db9c652ada1699ecdfe0791b08978"
+  },
+  "products": {
+    "fit_high_d.pdf": {
+      "pages": 300,
+      "sha256": "6cdde2851f5bb34db9c66f3cf3b4ed1be79b841a8658e9417491c65098f01d17"
+    },
+    "fit_high_he3.pdf": {
+      "pages": 300,
+      "sha256": "e528e1e55cd8810127d930a8ad41a31178972e0ae86c56dfa105de2f85ff45d4"
+    },
+    "fit_high_he4.pdf": {
+      "pages": 60,
+      "sha256": "97e8204271e4489830e9bd3ef94f8a87aba9200d852da3465bd914d5daa73544"
+    },
+    "fit_high_t.pdf": {
+      "pages": 300,
+      "sha256": "bfb15ea65516dd5478ad9f3177695e1dcb85ac29b1710bdadf2bd0e04e95b956"
+    },
+    "fit_low_d.pdf": {
+      "pages": 160,
+      "sha256": "97298fcdef9c69bd5be1f6068807c07580d6bd9ae7c23259f5aaa662305ba36b"
+    },
+    "fit_low_he3.pdf": {
+      "pages": 160,
+      "sha256": "5a991881aebb2ef14a791325322474c25ef7747c3359c679ad6fc29c7ce56f66"
+    },
+    "fit_low_he4.pdf": {
+      "pages": 139,
+      "sha256": "99eb8f2c4afc9d9b91a3783494328e0afbd2db79b778b62c89089396481ae277"
+    },
+    "fit_low_t.pdf": {
+      "pages": 160,
+      "sha256": "7ea2019aaeafd7893805fe3c5afc1662faba2310dad48974c4dc23ff7c5bd801"
+    },
+    "purity_vs_p_over_q.pdf": {
+      "pages": 2,
+      "sha256": "cff39976c458a31b5b7e5bb30ceff516bd335d7ead717cb38e245bb653817366"
+    },
+    "gaussian_all_intervals.pdf": {
+      "pages": 1579,
+      "sha256": "c8d20a43df631819afaf542b77473ff7153faa47d601dbce1f3163d627add4ef"
+    },
+    "fit_gaussian_he4_all.pdf": {
+      "pages": 199,
+      "sha256": "bb65856a2eb454d34a7ae043f738cb2dc92c10a4ed2edae079fe73538eb5fd07"
+    }
+  }
+}

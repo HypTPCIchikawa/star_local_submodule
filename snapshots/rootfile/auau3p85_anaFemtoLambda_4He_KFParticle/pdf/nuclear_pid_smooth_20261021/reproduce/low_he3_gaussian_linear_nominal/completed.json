@@ -1,0 +1,105 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "seconds": 16.50033926963806,
+  "historicalSource": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_linear_nominal_free001",
+  "historicalSourceSha256": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_linear_nominal_free001/source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_linear_nominal_free001/source/FitLocalNuclearCutoff.C": "7369cd9ebe350a42344bac553dfc493125dc9a52132f779189b64d34b5454d83",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_linear_nominal_free001/source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/all_he3_gaussian_linear_nominal_free001/source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c"
+  },
+  "reproductionChecks": [
+    {
+      "index": 0,
+      "key": "signalSelected",
+      "old": 3501047.6501028817,
+      "new": 3501047.6501028817,
+      "passCheck": true
+    },
+    {
+      "index": 0,
+      "key": "totalSelected",
+      "old": 5166617.182507428,
+      "new": 5166617.182507428,
+      "passCheck": true
+    },
+    {
+      "index": 0,
+      "key": "rawGateCount",
+      "old": 5174160.759753094,
+      "new": 5174160.759753094,
+      "passCheck": true
+    },
+    {
+      "index": 0,
+      "key": "purity",
+      "old": 0.6776286158681059,
+      "new": 0.6776286158681059,
+      "passCheck": true
+    },
+    {
+      "index": 80,
+      "key": "signalSelected",
+      "old": 4070046.4614991546,
+      "new": 4070046.4614991546,
+      "passCheck": true
+    },
+    {
+      "index": 80,
+      "key": "totalSelected",
+      "old": 4240770.333170413,
+      "new": 4240770.333170413,
+      "passCheck": true
+    },
+    {
+      "index": 80,
+      "key": "rawGateCount",
+      "old": 4214389.568898644,
+      "new": 4214389.568898644,
+      "passCheck": true
+    },
+    {
+      "index": 80,
+      "key": "purity",
+      "old": 0.9597422500492676,
+      "new": 0.9597422500492676,
+      "passCheck": true
+    },
+    {
+      "index": 159,
+      "key": "signalSelected",
+      "old": 1928128.0964097532,
+      "new": 1928128.0964097532,
+      "passCheck": true
+    },
+    {
+      "index": 159,
+      "key": "totalSelected",
+      "old": 2026506.4253560174,
+      "new": 2026506.4253560174,
+      "passCheck": true
+    },
+    {
+      "index": 159,
+      "key": "rawGateCount",
+      "old": 2012949.0634871353,
+      "new": 2012949.0634871353,
+      "passCheck": true
+    },
+    {
+      "index": 159,
+      "key": "purity",
+      "old": 0.9514542230336225,
+      "new": 0.9514542230336225,
+      "passCheck": true
+    }
+  ],
+  "products": {
+    "cutoff_fits.json": "01cb47c92259cb47e88a4ab7afb5df0805093c022461eeae013519db07fcf501",
+    "cutoff_fits.root": "f4671d43a3db5102bd2ad6297e463464ea707d1e2f6585eeb3b8b800f8949eaa",
+    "gates.tsv": "dd37c73584e26bfb9ca00919b7acfd276562f6292abc44caf2a17d0ea15117bc",
+    "shapes.tsv": "fe04f514812808d0ee6f4d9ee68223f80a4e8db3ddec7c7e21c1ddc765e88d52",
+    "settings.tsv": "61e5d4d4c974530f4cd8ffc2f28fa5f4485881f4f9ae3f4889b27726699859b7"
+  }
+}

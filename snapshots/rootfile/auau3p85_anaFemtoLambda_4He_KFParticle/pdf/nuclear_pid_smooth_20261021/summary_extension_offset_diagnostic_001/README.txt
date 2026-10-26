@@ -1,0 +1,1 @@
+DO NOT USE: initial extension aggregation used the extension start instead of common R=2 as the group origin. Detected before final plotting. Native fits and atlas use actual R and were unaffected. Correct final summary is in the parent directory, with explicit full-domain coverage and duplicate-model guards.

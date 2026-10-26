@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "displayOnly": true,
+  "widthScale": 2.0,
+  "axisRange": [
+    0.0,
+    120.0
+  ],
+  "sourceSuffix": "001",
+  "outputSuffix": "002",
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "invalidPreviousDisplayPolicy": "full_native_axis"
+}

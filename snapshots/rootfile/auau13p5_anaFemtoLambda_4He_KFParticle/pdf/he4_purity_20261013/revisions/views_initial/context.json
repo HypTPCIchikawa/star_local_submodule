@@ -1,0 +1,50 @@
+{
+  "study_folder": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013",
+  "inputs": {
+    "fit_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/he4_fits.root",
+      "size": 2019112,
+      "mtime_ns": 1791857892885839160,
+      "device": 48,
+      "inode": 627287175
+    },
+    "original_root": {
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau13p5_anaFemtoLambda_4He_KFParticle/auau13p5_anaFemtoLambda_4He_KFParticle_2020P24iy_partial_merge.root",
+      "size": 241812808,
+      "mtime_ns": 1790851183247704527,
+      "device": 48,
+      "inode": 964703165
+    },
+    "study": {
+      "context.json": "76faea76d18b2c074e37ca93ce41caf32971338820ba1737668fffd8179727c0",
+      "purity.json": "44da52ab012aa78f59e841cef7a7a9640382696302e6e0dae58b78ee8e0845ae",
+      "he4_fits.root": "58daee2a80d781bfc826b4229b1a3c016c7345c9e66a42fb21cd1ad4aea15926"
+    },
+    "completed_sha256": "6ac18fb1828d888e61868a32c1e8dabd0506aa0d14a02b4d17cf815a605e08ad"
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau13p5_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "7d74a9f738d723ceb7aa6f00d3d039c90616a8ea868241d59d9369057a06c5d6",
+  "settings": {
+    "schemaVersion": 1,
+    "panelsPerPage": 4,
+    "fullDisplayNSigmaMin": -7.0,
+    "fullDisplayNSigmaMax": 4.0,
+    "physicalDisplayNSigmaMin": -3.0,
+    "physicalDisplayNSigmaMax": 3.0,
+    "linearMaximumFactor": 1.35,
+    "logMaximumFactor": 8.0,
+    "logMinimum": 0.5,
+    "diagnosticRigidityCenters": [
+      0.505,
+      0.555,
+      0.605,
+      0.655,
+      0.705,
+      0.755,
+      0.805,
+      1.005
+    ]
+  },
+  "created_jst": "2026-10-13T12:37:30.153229+09:00",
+  "note": "Stored fits are re-rendered, never fitted again; physical curves preserve original bin heights."
+}

@@ -1,0 +1,28 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "inputFingerprintPreserved": true,
+  "protectedSourcesPreserved": true,
+  "rows": 1760,
+  "nativeFitPairs": 1320,
+  "pdfReadbackGeometryValid": true,
+  "products": {
+    "comparison_settings.json": "802f5e9918c1802701d63a51794280af914c510f0ed5f0b8795a4175d2516487",
+    "comparison.tsv": "3d13a6296e49e321a0dfe4758b2ca96e6c9f03d4589ac45ca7234727a8b6fc25",
+    "comparison.json": "66d8e338a36ab804cac40b1aca4474748f9ead22dc03033f423d968005311f58",
+    "settings.tsv": "b8e4d8766874e72e9eef3ae7eda5e905b5547ccc32f8fb43b29874f65d41c95c",
+    "command.json": "a87a154a5abc04c347191b7d1c6b315d4cdac4ea4dfc2aedb68874334fcd4873",
+    "root.log": "4e3c9a44f2a91fff15d9c889199e89c70d5177f075bf5523453f26c186b41123",
+    "response_parameters.pdf": "9203a1107b733b934a704f9cfc3f2f5b661bef0a5afb82b524ec14721efb5ecf",
+    "comparison_display_inputs.root": "9cbe6e69f5f5c43ce65b3697145cf6c9acaf5f2aaa9b9c2caa6672e02907bf02",
+    "saved_spectra_overlays.pdf": "a933ad4a105e34d87e8940a678ae4f6c2a352ce06a0055214ebf9345deece356",
+    "native_comparison_audit.json": "9e963a4edc5d805c6b7ff34bc22d2d39089ae2df9563744b7f71a274b9e57e23",
+    "pdf_geometry.json": "08f00f4a67f556267e2e9f6118460a817c30395662d76d2523780e74208d3f35",
+    "response_parameters_page1.png": "57cd37fe5017b32dabd5dd4e9e9116bdb2d3ff8375cc17070a87055f97199144",
+    "saved_spectra_overlays_page1.png": "76249902b73729dddab8e51f9cd7efd3b1ad7303a871b183ddc21868f7677a26",
+    "README.md": "03e0c7c2f7f1f4310b43b3f56476a6adcbe38cca60e8fb8bac031b49ef6642b9"
+  },
+  "completedJst": "2026-10-14T17:39:08.499819+09:00"
+}

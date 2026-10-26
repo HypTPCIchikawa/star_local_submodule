@@ -1,0 +1,18 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "fitIndependent": true,
+  "rows": 640,
+  "products": {
+    "ExtractNuclearGateCounts.C": "8609945324cab47028d205e28d4522749c85740e7467fed5bdca4e7ca61e74c5",
+    "FitNuclearCutoff.C": "0b0ad2ac748d4c9e96aacbe62fd32755776d65f5a4f56009d67cf7b146f7e074",
+    "NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "shapes.tsv": "2cb25e51a969a95442b5729223f66a5dcff6eb78c98777407544f831e1c485bc",
+    "gates.tsv": "e8548e4246b3dc0930031e03f5a45b9ad262a8446798a3ab205b954bcc286777",
+    "settings.tsv": "4b008eda0d5d290b6485d9cf5f0cbee5bf4078345b63bbe0fa2f493f7217b017",
+    "command.json": "0017f386926632d3e3af8cd1c425eb474aa4e3498dbfbad707bfda7afbd35106",
+    "run.log": "fb59cb50d090157d3540c361e209588bbf799b28cd193caa9d38a55881b47358",
+    "gate_counts.tsv": "055d8e0aafac93184108bd75c903dff4671fc163a1cb97cdb376c08498d3f655"
+  }
+}

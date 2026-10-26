@@ -1,0 +1,11 @@
+# Unchanged selection from purity_upstream_20260928. No recalibration here.
+# Run/calibration coverage: StRoot/StRefMultCorr/PROVENANCE.md.
+enabled: true
+mode: fxtmult
+rejectBadRun: true
+rejectPileup: true
+useWeight: true
+requireValidCentrality: true
+verbose: false
+fillCentralityQA: true
+acceptedCentBins: 0,1,2,3,4,5,6,7,8

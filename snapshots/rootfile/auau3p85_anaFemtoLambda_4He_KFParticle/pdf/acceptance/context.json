@@ -1,0 +1,48 @@
+{
+  "input": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+    "size": 10522646853,
+    "mtime_ns": 1790979373044137604,
+    "inode": 82490341
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "mainconf_sha256": "2b6568222b29125dbcee80b824fa3f2e57fa16b2fc0a1e9233fdf7ef477ff173",
+  "settings": {
+    "energy": "3p85",
+    "energy_label": "Au+Au FXT: 3.85 GeV beam energy",
+    "sample_label": "2021 P24iy | 26,956/26,994 subjobs | inclusive accepted events",
+    "padding_bins": 1,
+    "histograms": [
+      {
+        "id": "lambda",
+        "histogram": "hLambda_PtVsYLab_signal",
+        "title": "#Lambda",
+        "selection": "High-purity KF #Lambda, signal #pm3#sigma; before pairing"
+      },
+      {
+        "id": "proton",
+        "histogram": "hLambdaProton_PtVsYLab_signal",
+        "title": "p from selected #Lambda",
+        "selection": "Daughter of signal #Lambda; global track momentum"
+      },
+      {
+        "id": "pion",
+        "histogram": "hLambdaPion_PtVsYLab_signal",
+        "title": "#pi^{-} from selected #Lambda",
+        "selection": "Daughter of signal #Lambda; global track momentum"
+      },
+      {
+        "id": "helium4",
+        "histogram": "hNucleus_PtVsYLab_he4",
+        "title": "^{4}He",
+        "selection": "Final selected ^{4}He tracks; Z=2 momentum correction"
+      }
+    ]
+  },
+  "settings_sha256": "d6deda84d089941a9cbdf77520a51e001cc7d07fed43d68e2c100886df253fca",
+  "source_summary": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json",
+  "source_summary_sha256": "bd7b80047b0eca894b136ec1ee4cb8b5caa94b039a8e95cab6be7e3504b6776c",
+  "macro_sha256": "51df796c8e55fe840d09f68f18f9dc90d19334051bce92cb67e5337c13c4e84f",
+  "centrality": "inclusive stored accepted events",
+  "created_jst": "2026-10-05T09:55:29.030031+09:00"
+}

@@ -1,0 +1,117 @@
+{
+  "input": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root",
+    "size": 10522646853,
+    "mtime_ns": 1790979373044137604,
+    "inode": 82490341
+  },
+  "mainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "base": {
+    "mass_fit": {
+      "range": [
+        1.08,
+        1.15
+      ],
+      "mean_limits": [
+        1.11,
+        1.12
+      ],
+      "sigma_limits": [
+        0.001,
+        0.008
+      ],
+      "sigma_initial": 0.003,
+      "minimum_entries": 10,
+      "minimum_covariance_status": 2
+    },
+    "rebin_group": 4,
+    "rebin_fine": 4,
+    "plot_x_range": [
+      0.0,
+      0.3
+    ],
+    "purity_rebin": 10,
+    "normalization": [
+      0.3,
+      0.4
+    ],
+    "sliding_half_width": 2,
+    "ll_fit": {
+      "range": [
+        0.0,
+        0.4
+      ],
+      "radius_limits": [
+        0.1,
+        6.0
+      ],
+      "radius_initial": 3.0,
+      "normalization_initial": 1.0,
+      "fixed_a0": 4.01,
+      "fixed_reff": 1.84
+    },
+    "group_sets": [
+      [
+        {
+          "label": "20-80%",
+          "min": 0,
+          "max": 5
+        },
+        {
+          "label": "0-20%",
+          "min": 6,
+          "max": 8
+        }
+      ],
+      [
+        {
+          "label": "0-10%",
+          "min": 7,
+          "max": 8
+        },
+        {
+          "label": "10-20%",
+          "min": 6,
+          "max": 6
+        },
+        {
+          "label": "20-60%",
+          "min": 2,
+          "max": 5
+        }
+      ]
+    ]
+  },
+  "settings": {
+    "summary_settings": "summary_settings.yaml",
+    "cent9_min": 6,
+    "cent9_max": 8,
+    "centrality_label": "0-20%",
+    "report_stem": "cf_mt_cent0_20_constant_vs_method5",
+    "mass_region": "signal",
+    "n_slices": 4,
+    "split_kstar": [
+      0.0,
+      0.3
+    ],
+    "split_strategy": "fixed_saved_mt_edges",
+    "mt_extent": "configured_range",
+    "fixed_mt_edges": [
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2
+    ]
+  },
+  "settings_sha256": "fd8579a455bddec727ad8bcf1acdae819de0448869da3477116831679fc2911e",
+  "base_sha256": "b6ccfed287aa28871c85affba9e9a498e131766063e7e46625a48ca191a25f02",
+  "purity_source": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/mass_halves/mass_half_extract.json",
+  "purity_source_sha256": "b0554c9389380764bed86ff4b216ea5932ab7bbb41bf397935a4455f4c071b02",
+  "shared_method5_approved": true,
+  "energy": "3p85",
+  "extraction_cache": {
+    "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/mt_cent0_20/mt_extract.json",
+    "sha256": "25690e034f136dab4b8e790042e5c86366cc4047b1f007b0a0c6828331dad449"
+  }
+}

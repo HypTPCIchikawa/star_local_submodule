@@ -1,0 +1,10 @@
+# Pilot: physics references identical to the 2021 P24iy production mainconf.
+analysis: analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_pilot_20261001.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_legacy.yaml
+maker: maker/maker_anaFemtoLambda_4He_KFParticle.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_femtoLambda_he4_kf.yaml
+nuclearHist: hist/hist_femtoLambda_he4_nuclear.yaml

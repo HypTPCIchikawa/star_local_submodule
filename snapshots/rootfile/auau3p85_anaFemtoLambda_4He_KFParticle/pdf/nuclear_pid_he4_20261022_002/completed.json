@@ -1,0 +1,136 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "revision": "low-R fixed mean and Gaussian-only",
+  "previousOutput": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_he4_20261022_001",
+  "newFits": 19,
+  "reusedNativeFits": 180,
+  "meanFixedIntervals": 19,
+  "allFixedMeansExactlyPreviousLinear": true,
+  "pidCoefficientsUnchanged": true,
+  "unchangedAggregateBins": 84,
+  "totalNativeIntervals": 199,
+  "aggregateBins": 88,
+  "supportedBins": 75,
+  "reportPages": 12,
+  "totalPdfPages": 418,
+  "allPdfPagesReadback": true,
+  "noMissingGlyphs": true,
+  "noOverfullBoxes": true,
+  "physicsValidation": {
+    "executionComplete": true,
+    "fixedMeanIntervals": 19,
+    "allMeansExactlyPreviousLinear": true,
+    "he4SigmaFree": true,
+    "zeroConditionalFixedMeanError": true,
+    "noBackgroundBelow2": true,
+    "ndfMatchesFreeParameters": true,
+    "independentRawChecks": 556,
+    "he3HalfHeightChecks": 417,
+    "unchangedOtherRegionsNativeFits": 180,
+    "unchangedAggregateBins": 84,
+    "pidCoefficientsUnchanged": true,
+    "oldInputsUnchanged": true,
+    "protectedInputs": 236,
+    "highOtherNucleiZero": true,
+    "rootAll199Readback": true
+  },
+  "oldOutputsUnchanged": true,
+  "products": {
+    "purity_vs_p_over_q.pdf": {
+      "pages": 2,
+      "sha256": "1d02da54863a0f80c967c226eb19b84b8b287b445632316cd8fd8f4bb167f3ca"
+    },
+    "pid_functions.pdf": {
+      "pages": 1,
+      "sha256": "1bb0b0f295637de28702745fe3f563d423dc8770a0e93b4672244036d30fee24"
+    },
+    "dedx_pid_map.pdf": {
+      "pages": 1,
+      "sha256": "ea955ab586c80848a065707b73a21083640728a85b5bf911f04aadb553938a1e"
+    },
+    "fit_all_regions.pdf": {
+      "pages": 199,
+      "sha256": "68bbb6df4d672d241793d76f235aede98bdda30567f271b64483f45f4625edbd"
+    },
+    "fit_low_fixed.pdf": {
+      "pages": 19,
+      "sha256": "b61c2b599d93d58cfed81d5e4b81a20b32616f6767e33d89053c988037430564"
+    },
+    "fit_representative_low_fixed.pdf": {
+      "pages": 1,
+      "sha256": "7491dfac1162a34857a2d7ab82682ce3c12607b5d8b395becad38df0cec2e14b"
+    },
+    "fit_low_none.pdf": {
+      "pages": 120,
+      "sha256": "db25f554b4d62df5714fa26c2b6f5f4cca7fbfb489e5421582bebf338e13d3c3"
+    },
+    "fit_representative_low_none.pdf": {
+      "pages": 1,
+      "sha256": "e4263a581c063b64f2faf3e8d10f93777a778f837e2ca6f6cb1e03ed28608b82"
+    },
+    "fit_high_linear.pdf": {
+      "pages": 60,
+      "sha256": "31c56312b6b277edd849fc1ad00fdf27366ac62b5ecb7c110d2ca3109d3ee800"
+    },
+    "fit_representative_high_linear.pdf": {
+      "pages": 1,
+      "sha256": "dc1b5a9752a704b73ae46e7783b73163e6c0a0b3b171c563c029c5f80f6b6222"
+    },
+    "he4_pid_purity_report_20261022.pdf": {
+      "pages": 12,
+      "sha256": "e740ac3dcbd963acf61aa6854923f06c87c491524d5b92925174bbdbc415e0db"
+    },
+    "dedx_tof_pid_map.pdf": {
+      "pages": 1,
+      "sha256": "a018cfe57829090c57f067ba8f0158a6434d02e9dfdaf247c79f458c28477074"
+    }
+  },
+  "sourceSha256": {
+    "NuclearFitCommon.h": "8947cf5607e0269839b6bc04daaaf53b71a682fc4b172dcdff35f3aca5158569",
+    "NuclearLognormalFitCommon.h": "af84a3e40dac4bedcabc4320dd278fa20990d14775b0dd429d6166bfe880ee5f",
+    "FitLocalNuclearCutoff.C": "678a68c99b5a51c3ca4fa0709e79d8183193fb3f3c8f9b7eeb6dd87a45a3b8e8",
+    "analyze.py": "6a1f1637f3c5fff55c6b61ed33420279e1c0776575ff10a9b7f82a04b5a63e81",
+    "render.py": "f4954188387731004b4312c6365922924b873499f58f9420ce82865a533d57dc",
+    "PlotHe4.C": "e8a31e94abdb04453b8f9bb054d99b7c5d2dd0880e71325a699aa8691009eafe",
+    "build_report.py": "e2e1c2fc13c04a7282eaa542bc1333c3d3545cacc1c12726320dccf51607013a",
+    "ExtractNuclearGateCounts.C": "c51fef713753d223a52848ad4a508e38b2314d51a37ae3d47722b58bec74b121",
+    "ValidateHe4.C": "d5b97c982d94dcc3911c18dcf1b8b0e154dae3ac291e2b762bedc6375206fde3",
+    "settings.yaml": "2f8e0404b515e44b83f8d5fa6193e81ce93b1442cb356f6acfbb365698803d5f",
+    "run.py": "8b6c6265d0ff102e1f8b3b3cef492e89a36a4d63e08c0a09a823f4bf6d083686",
+    "validate.py": "5013b02bf5451904d0b8ea97f8520021a813436e594124bf067ba72bf13423fc",
+    "finish.py": "93fc559d8600d7b71f79af9cf7682196df5bc86dd66c10a001619235e122f2f6"
+  },
+  "numericProductsSha256": {
+    "protected.json": "9be745710aca31bf916c76f27f485bf7cfafb19417e9c8430feabca9a2da1c5e",
+    "git_baseline.json": "00936c5ccb945aef3840a41aba793e9729704b32505b6f701eb6ebd5dd700cff",
+    "coefficients.json": "d7b9f000208dfc1d0e0fbde312a456b53fc91f8574a49cf004285aa52c800f98",
+    "coefficients.yaml": "d7b9f000208dfc1d0e0fbde312a456b53fc91f8574a49cf004285aa52c800f98",
+    "curves.tsv": "1b147f203da891a7f925b755c3d4d26afb88be46dfd9a664279c2da4158e4059",
+    "input_provenance.json": "b2464d06be7e1a2f5f8a61ca2263b64bab4f5ec0be687a45ef21b71396ec7233",
+    "settings.yaml": "2f8e0404b515e44b83f8d5fa6193e81ce93b1442cb356f6acfbb365698803d5f",
+    "summary.json": "a0508c617a9bad880660881eabc0b52b3e3d27cb02abf9f315bcefe79175e488",
+    "native.json": "6817b0deaa9927acf331fe2c3dfa5c18cc88d2c7528484786c8c61b3655607ff",
+    "examples.json": "be7c6e538807697a8b97d184b1f40c13e5acc5b1d38f56a53f8daba23c981fff",
+    "purity.tsv": "6166eb03501478ad68b3c2ca47cda541db434330e8a19c8bb4ef576c8c2ac00b",
+    "native.tsv": "d583c4590ca703dbb44fcb0f25d433785a7a5500f353c208936f95b2b9128f46",
+    "examples.tsv": "47e11f6809d5749473b3a977b2a786a019e8a2837431f799e10c16f57077a2a7",
+    "pid_selection.yaml": "6f31fe0c1cca151a09702f039e791a83525349efa785996f027f24a7d69e40a1",
+    "validation_roots.tsv": "a15a5e7e6f490ed3a4fc59c11012702398e296ce74af2c8b9fbdf54e4acb6a91",
+    "root_validation_command.json": "38293ca0a198f192cd4ac631b57a49a58af1daf960ecdf3b66dad1fb226b8683",
+    "fixed_center_validation.json": "e2358e99c02cea827c52f8fb82d5dfb8f2cec6f3d58551c704f28a7b29a83719",
+    "low_comparison.json": "8af1720ba7335894017d72b12fd64f0b694b98062dcafe031d05625066a77493",
+    "halfheight_validation.json": "75d116990472f9cecda8016718bdbd840188bb80f1bbf36afa0d3287c13a3801",
+    "independent_counts_validation.json": "3037f86fb52eb99a20c2e25ff2df84657ae9604d0cd9863a82816465fbe47175",
+    "gate_validation.json": "68f99337586ae481248cf67c29312175c962bdb391178056aaf89ae4ece2d907",
+    "physics_validation.json": "bb95ad6483545c38bd08696437652c8ba18bdca15d9b6c3468395f27bed7964b",
+    "examples_all.tsv": "cdf6a516136ac533af83c9c47a0656a71c9b46def69afce17acbb98517cf74f0",
+    "examples_report.tsv": "a7f56504431159ff03979145069fbe614f079a20530d22d422566dd0175c435d",
+    "representatives.json": "41e6c5a9b192b7e33c37112823d0873a203d289af4f60641a4addd18eb60aaa1",
+    "plot_command.json": "a1cad4fa02e27481299ca2213dfd56faede071f405e56ce7d0b07ef1a8ed5280",
+    "pdf_validation.json": "9bf22ea042a6a5fc6aaacc460270455ddb4f092c8890a1e5a164bb0d13e1899e",
+    "report_build.json": "ae7e674209d57efa096e28be33b7f39c09af9985989c9f4c1c56f8f5539c6b61"
+  },
+  "reportRevision": "TOF mass2-selected R-dEdx overlay page added; fit and purity unchanged",
+  "reportAddedPage": 6
+}

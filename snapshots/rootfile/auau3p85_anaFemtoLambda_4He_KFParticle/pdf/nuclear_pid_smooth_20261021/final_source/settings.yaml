@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "productionEnabled": false,
+  "referenceGit": "8f7d539",
+  "meanMaximumShiftOverOriginalSigma": 0.5,
+  "sigmaMaximumRelativeChange": 0.2,
+  "calibrationRMin": 0.8,
+  "calibrationRMax": 2.5,
+  "auditRMin": 0.4,
+  "auditRMax": 5.0,
+  "auditGridCount": 1001,
+  "calibrationMinimumPurity": 0.5,
+  "calibrationMaxLocalResidual": 0.15,
+  "purityThreshold": 0.5,
+  "aggregateWidth": 0.05,
+  "tofThreshold": 2.0,
+  "d_tCoefficients": "unchanged",
+  "lowVariations": [
+    "nominal",
+    "mean_minus",
+    "mean_plus",
+    "width_minus",
+    "width_plus"
+  ],
+  "tofMass2": {
+    "d": [
+      3.268773,
+      3.693147
+    ],
+    "t": [
+      7.2564275,
+      8.2816925
+    ],
+    "he3": [
+      1.78285,
+      2.06485
+    ],
+    "he4": [
+      3.268773,
+      3.693147
+    ]
+  },
+  "extensionRMin": 2.5,
+  "plots": {
+    "linearFocusHalfSigma": 2.5,
+    "dedxDisplayRebinFactor": 5
+  },
+  "outputBase": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021",
+  "referenceBase": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015",
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml"
+}

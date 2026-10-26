@@ -1,0 +1,50 @@
+# Analysis Information for Lambda x deuteron femtoscopy at Au+Au 3.85 GeV FXT
+
+# from picoDst Summary from FileCatalog
+starTag:
+  triggerSets: "production_3p85GeV_fixedTarget_2021"
+  stream: "st_physics"
+  collision: "auau3p85"
+  year: "year2021"
+  productionTag: "P24iy"
+  libraryTag: "SL24y"
+  filetype: "daq_reco_picoDst"
+  filenameFilter: "st_physics"
+  filenameNotFilter: "adc"
+  storage: "local"
+
+# Dataset Information
+dataset:
+  collisionSystem: "Au+Au"
+  allPicoDstList: "picoDstList/auau3p85GeV.list"
+  runRange:
+    min: 19000000
+    max: 20000000
+  goodRunList: ""
+  dataQuality: "production"
+  dataFormat: "picoDst"
+
+# Analysis Information
+# anaName = {system}_{anaId}; use YAML alias *anaName for name, jobName, scratchSubdir, outputFileStem.
+# baseRunMacro / baseAnaMacro = macro base names (no .C).
+# NOTE: "lambdanucle" in baseAnaMacro triggers "integrated analysis" skip in the script
+#       (avoids overwriting the hand-crafted C++ macros).
+analysis:
+  anaName: &anaName "auau3p85_anaFemtoLambda_d"
+  name: *anaName
+  mode: "fxtmult"
+  type: ""
+  targetParticle: "Lambda_Deuteron"
+  decayChannel: ""
+  workDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer"
+  baseRunMacro: "run_anaFemtoLambda_d"
+  baseAnaMacro: "anaFemtoLambdaNuclear_d"
+  jobName: *anaName
+  scratchSubdir: *anaName
+  outputFileStem: *anaName
+  nFiles: all
+
+analyst:
+  name: "Yudai Ichikawa"
+  institute: "Tohoku University"
+  email: "yudai.ichikawa.d3@tohoku.ac.jp"

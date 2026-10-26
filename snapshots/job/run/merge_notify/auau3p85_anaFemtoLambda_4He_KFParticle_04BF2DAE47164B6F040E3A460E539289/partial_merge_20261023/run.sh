@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+cd /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer
+exec nice -n 10 python3 -u /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/job/run/merge_notify/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289/partial_merge_20261023/watch_partial.py --runmeta /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/job/run/runmeta/runmeta_auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289.json --event-log /tmp/yichikawa/sched04BF2DAE47164B6F040E3A460E539289.condor.log --root-runner /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh --email yudai.ichikawa.d3@tohoku.ac.jp --allow-partial --poll-sec 300 --settle-sec 0 --batch-size 100 --watch > /gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/job/run/merge_notify/auau3p85_anaFemtoLambda_4He_KFParticle_04BF2DAE47164B6F040E3A460E539289/partial_merge_20261023/monitor.log 2>&1

@@ -1,0 +1,32 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "sourceInputPreserved": true,
+  "protectedSnapshotsVerified": true,
+  "response": "lognormal",
+  "background": "linear",
+  "variation": "nominal",
+  "products": {
+    "shapes.tsv": "8bd010c22f8881fe62c3532bb8ebdd23a166c154f3f7c31a084be48d705583d9",
+    "gates.tsv": "bc20b69da25d933ee94df38c1c0f6a2d8ac670d4a1d294852c992164f4673eea",
+    "settings.tsv": "3f7b0aeadbfd9890e30513904b3093187063727bb36ee123d669ea06b31b6ed1",
+    "tag_shape_audit.json": "ef2b075884e9dcc6dcea53b43d77e6bcfb3c55bb6d06d93062149e06381db90d",
+    "fixed_windows.json": "ebcee9519fb7075f88f603f75efbf72f52fa22bdd2742400fff3fdaf4b9ad3fb",
+    "effective_settings.json": "6a58f51c5f783e68910c0da8e5b4ce99b95070face5ed81db4e506f7b45ab53f",
+    "context.json": "2cbc31030a06162732e25994c129b2694a0538a0fe3c3d192a6d979508aeaba6",
+    "command.json": "127c4191d6ef01e235682df199b15e9a7a3537f45cd72f6d7d97b3fbb2d24ac4",
+    "fit.log": "eaa30940199248c3e84b41cfa0cc5d9014fde4a1c3744ba8bb5d96290022f632",
+    "cutoff_fits.root": "3811e94fed85c8b70fa072f4235cb85a0f11b091bc03838a7feab4ff7de90936",
+    "cutoff_fits.json": "3b16698e8fd9cf75e38d012139c228382d4fa2dfcf3a2c39f8f5a5c33d4cf658",
+    "purity.tsv": "82bba3adb5e5c3decc65268a4c515ce0cfaa79e49893ab88f6ece33e0072b591",
+    "source/run_cutoff.py": "fd050d0731db4fe2cab189333853b9432b724097409d51b5a75020e0ef2756a9",
+    "source/study_settings.yaml": "965838506214c59e16d2b797793180fc34e08666f6deb53054ac23d2108568e5",
+    "source/FitNuclearCutoff.C": "0b0ad2ac748d4c9e96aacbe62fd32755776d65f5a4f56009d67cf7b146f7e074",
+    "source/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "source/NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "source/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1"
+  },
+  "nativeRows": 160,
+  "note": "Execution completion is not isotope validation or final cutoff adoption."
+}

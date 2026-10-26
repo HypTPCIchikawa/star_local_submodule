@@ -1,0 +1,74 @@
+# Study-only: a real t peak anchors its shared amplitude; original PID shapes stay fixed.
+schemaVersion: 1
+responseStudyMode: peak_anchored_fixed_pid
+shapePolicy: fixed_original_pid_functions
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_logpolyLowRReference20261019.yaml
+runtimeWrapper: script/singularity_root_batch.sh
+baseline: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_coretail_20261019/logpoly_baseline_001/baseline.json
+inputStudy: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_quality_20261019
+legacyHeader: StMaker/common/NuclearIdDeDxVsMom.h
+runtimeReader: tools/nuclear_pid_tof/runtime_selection.py
+adapter: tools/nuclear_pid_cutoff/peak_anchored_20261019/FitPeakAnchored.C
+adapterFunction: FitPeakAnchored
+adapterDependencies:
+  - tools/nuclear_pid_cutoff/FitLocalNuclearCutoff.C
+  - tools/nuclear_pid_tof/NuclearFitCommon.h
+  - tools/nuclear_pid_tof/NuclearLognormalFitCommon.h
+responseModels: [gaussian, lognormal]
+backgroundModels: [linear, exponential]
+representativeRigidity: [0.825, 0.875, 0.925, 0.975, 1.725, 1.775, 1.825]
+fitSpecies: [t, he3, he4]
+freeSpecies: []
+targetSpecies: he4
+sampleHistogram: ALL
+roiLeftSigma: 2.0
+roiRightSigma: 4.0
+heRegionLeftSigma: 2.0
+heRegionRightSigma: 4.0
+tControlSigma: 2.0
+fitWindowAlignmentKeV: 0.5
+materialOmissionFraction: 0.01
+axisCountBoundMethod: observed_plus_nsigma_sqrt
+axisCountBoundNSigma: 5.0
+executionTimeoutSeconds: 1200
+numeric:
+  amplitudeMaxIterations: 1000
+  amplitudeGradientTolerance: 0.000001
+  amplitudeHessianRidge: 0.0000000001
+  amplitudeLineSearchIterations: 80
+  shapeMaxCalls: 6000
+  shapeTolerance: 0.001
+  minimumSigma: 0.05
+  maximumSigma: 120.0
+  meanAxisPadding: 0.0
+  minimumGaussianAcceptance: 0.000000000001
+  minimumMode: 0.001
+  minimumResponseAcceptance: 0.000000000001
+  meanStep: 0.05
+  sigmaLogStep: 0.02
+  backgroundSlopeStep: 0.05
+  exponentialSlopeLimit: 80.0
+  boundaryTolerance: 0.000001
+  normalizeWarmStartToObserved: 1
+  freeBackgroundSlope: 1
+  backgroundStartSlope: 0.0
+  displayDedxRebinFactor: 1
+  axisTolerance: 0.000000001
+  countVarianceRelativeTolerance: 0.000000001
+  nativeRigidityBinWidth: 0.01
+  nativeDedxBinWidth: 0.1
+  minimumPurityDenominator: 0.000000001
+plots:
+  displayDedxRebinFactor: 1
+  logMinimum: 0.1
+  dedxMin: 0.0
+  dedxMax: 120.0
+studyLimitations:
+  - Original PID centers and widths are fixed functions, not independently validated response calibration.
+  - Gaussian sigma and log-normal local curvature width have different interpretations.
+  - The common ROI includes the actual t peak and the left shoulder of the He3 peak.
+  - Approximate observed-plus-five-sqrt-count margin is descriptive, not an exact confidence interval.
+  - Omitted-d bounds are model-dependent diagnostics, not complete systematic uncertainty or purity certification.
+  - Original-polynomial best-species gates are recomputed for raw-count diagnostics only.
+  - No free nuclear shape, per-R interpolation, PID update, purity adoption, batch job or original ROOT change.

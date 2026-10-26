@@ -1,0 +1,7 @@
+{
+  "sourceStudy": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/tag_native_linear_001",
+  "sourceCompletionSha256": "d3c3aeddf94a95553e084269d94fd85e35e64c5659c9baa63f974a799b381659",
+  "sourceFitRootSha256": "ff77241a755531f8f89499efd6afd2c6629b4bf46152a855d2f36c89882e35b4",
+  "noFit": true,
+  "productionEnabled": false
+}

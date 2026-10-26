@@ -1,0 +1,40 @@
+# A NEW full-sample exploratory refinement, not an independent validation.
+# All inherited window, event, split, bootstrap and export audit definitions
+# remain from the preserved initial study. No production YAML is changed.
+schemaVersion: 1
+baseConfig: config/qa/lambda_kf_purity_study_20260927.yaml
+rankingSplit: full
+oldSplitsRole: previously_inspected_stability_diagnostics_only
+rankingMetric: worst_sideband_poisson_upper_background_purity
+retentionMetric: minimum_background_subtracted_signal_retention_across_sidebands
+poissonUpperConfidenceLevel: 0.90
+signalRetentionFloors: [0.70, 0.75, 0.80]
+nominalPurityRetentionFloor: 0.70
+# No sideband-count censor: even zero counts have a positive Poisson upper bound.
+minimumSidebandCount: 0
+minimumWindowCount: 50
+maxPointsPerDataset: 6000
+includeAllPairs: true
+tripleAnchor: minDecayLengthSignificance
+grid:
+  minDecayLengthSignificance: [7, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 13]
+  imp5MinDCAPion: [1.5, 1.75, 2, 2.25, 2.5, 2.75, 3]
+  nSigmaProton: [2.75, 2.5, 2.25, 2]
+  minCosPointing: [0.999, 0.9995, 0.9998]
+  imp5MinDCAProton: [0.8, 0.85, 0.9]
+  maxDistanceToPv: [0.45, 0.4]
+  maxTopoChi2Ndf: [2.5, 2]
+  maxDaughterDistance: [0.45, 0.4, 0.35]
+  maxChi2Ndf: [5, 3]
+fixedReference:
+  id: old_aggressive
+  label: Previous aggressive cut
+  cuts: {minDecayLengthSignificance: 10, imp5MinDCAPion: 2}
+# Positive sideband-only fit checks, never used by the above ranking.
+# Low counts are a FIT quality flag, not an eligibility or purity-zero rule.
+backgroundCheck:
+  backgroundDegrees: '0;1;2'
+  backgroundProfileDeltaNll: 0.821187207574908
+  backgroundProfileMaxFactor: 100
+  backgroundMinCounts: 8
+

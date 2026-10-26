@@ -1,0 +1,15 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "response": "gaussian",
+  "background": "exponential",
+  "stage": "warm",
+  "rows": 160,
+  "products": {
+    "cutoff_fits.json": "61aba9dcf346538a2d5c8cf40a86de4bdf67cfa506b0dce500bb599639cf00a9",
+    "cutoff_fits.root": "edc7bed4a2899128d9fb9db2825dd00ecfc4ba8ceccbb85f3762282e092e7659",
+    "shapes.tsv": "58cfa64d83367e141b714a79b6c1773c1d02765da438cff7aa60699bd56486ef",
+    "gates.tsv": "76c21fb15f3da503612eb8ab2bf4f656c8bd7b578a5f7c1aa260378349ad76e4",
+    "settings.tsv": "fc7cebc1bc1ae2bef5e493de0ea8b183b087d7011c02feddea0648e596d6b9f6"
+  }
+}

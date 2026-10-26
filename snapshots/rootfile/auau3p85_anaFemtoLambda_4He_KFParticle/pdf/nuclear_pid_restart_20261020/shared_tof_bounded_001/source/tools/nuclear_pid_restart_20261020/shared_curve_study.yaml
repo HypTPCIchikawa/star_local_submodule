@@ -1,0 +1,51 @@
+schemaVersion: 1
+mainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+wrapper: script/singularity_root_batch.sh
+inputDirectory: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020
+baseNumericSettings: tools/nuclear_pid_restart_20261020/split_normal_study.yaml
+coefficientFilename: coefficients.tsv
+fitSource: tools/nuclear_pid_restart_20261020/FitAllRestartSlices.C
+extraSources:
+  - tools/nuclear_pid_restart_20261020/AllFixedResponseFit.h
+  - tools/nuclear_pid_restart_20261020/FitRestartSlices.C
+  - tools/nuclear_pid_restart_20261020/FitStorageSlices.C
+  - tools/nuclear_pid_restart_20261020/Float16BinMapping.h
+  - tools/nuclear_pid_restart_20261020/SplitNormalFit.h
+  - tools/nuclear_pid_restart_20261020/PeakResponseFit.h
+  - tools/nuclear_pid_tof/NuclearFitCommon.h
+nativeRBinFirst: 41
+nativeRBinLast: 500
+nativeRBinStride: 5
+extraNativeRBins: [88, 178, 500]
+smokeNativeRBins: [88, 178]
+tofSwitchR: 2.0
+samplesAboveSwitch: {d: TAG_D, t: TAG_T, he3: TAG_HE3, he4: TAG_D}
+tofWindows:
+  d: [3.268773, 3.693147]
+  t: [7.2564275, 8.2816925]
+  he3: [1.78285, 2.06485]
+  he4: [3.268773, 3.693147]
+gateNSigma: 2.0
+gatePolicy: winner
+quadrature: gl3
+neighborHalfWidthSigma: 1.5
+requiredNeighbors: {d: [], t: [], he3: [], he4: [he3]}
+executionTimeoutSeconds: 3600
+variants:
+  linear: {backgroundModel: linear, targetFitHalfWidthSigma: 3.0}
+  constant: {backgroundModel: exponential, targetFitHalfWidthSigma: 3.0}
+  wider: {backgroundModel: linear, targetFitHalfWidthSigma: 3.5}
+numeric:
+  maximumPurityPearsonPerNdf: 25.0
+  maximumYieldInformationCondition: 100000000.0
+  minimumPurityTargetEffectiveCount: 100.0
+  minimumPurityGateModelCount: 20.0
+  minimumPurityTargetDropDeltaD: 9.0
+  maximumPurityTargetRelativeError: 0.2
+cutoffEstimation:
+  minimumPurity: 0.5
+  maximumRelativeSignalError: 0.2
+  minimumConsecutiveSampledPoints: 3
+  precisionCountSensitivity: [20, 50, 100]
+  isolatedDipPolicy: report_without_veto

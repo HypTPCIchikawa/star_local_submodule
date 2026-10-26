@@ -1,0 +1,11 @@
+# Track Level Cuts
+
+minNHitsFit: 15       # Minimum number of fitted hits
+minNHitsRatio: 0.52   # Minimum nHitsFit/nHitsMax
+minNHitsDedx: 10      # Minimum hits for dE/dx
+maxDCA: 3.0           # cm, Maximum DCA to primary vertex
+maxEta: 1.0           # |eta| < maxEta
+minPt: 0.2            # GeV/c, Minimum pT
+maxPt: 10.0           # GeV/c, Maximum pT
+maxChi2: 3.0          # Maximum chi2/ndf (if available)
+

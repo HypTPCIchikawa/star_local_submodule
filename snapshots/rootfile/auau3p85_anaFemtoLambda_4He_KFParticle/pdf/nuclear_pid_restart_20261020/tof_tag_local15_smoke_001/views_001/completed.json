@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "technicalRenderingOnly": true,
+  "inputsUnchanged": true,
+  "productionEnabled": false,
+  "coefficientsUpdated": false,
+  "purityAvailable": false,
+  "scientificFitsAccepted": false,
+  "pdf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_restart_20261020/tof_tag_local15_smoke_001/views_001/tag_peak_fit_diagnostics.pdf"
+}

@@ -1,0 +1,8 @@
+# Preserve exact snapshot bytes and checksums across platforms.
+snapshots/** -text
+Todo/** -text
+analysisnote/** -text
+*.pdf -text
+*.png -text
+*.jpg -text
+*.jpeg -text

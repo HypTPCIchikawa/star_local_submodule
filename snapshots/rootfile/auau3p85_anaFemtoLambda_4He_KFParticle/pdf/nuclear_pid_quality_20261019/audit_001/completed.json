@@ -1,0 +1,22 @@
+{
+  "executionComplete": true,
+  "noFit": true,
+  "productionEnabled": false,
+  "originalSourcesPreserved": true,
+  "oldLowAggregationReproduced": true,
+  "fitRows": 14840,
+  "runs": 100,
+  "products": {
+    "native_quality.tsv": "1478aec7277c1a46d72fed23bdf2870fbd752c36e022032e56dcd0c43650a0f9",
+    "focus_native_quality.tsv": "1093350f6a6003e2edbcc8cbfc86ad66ff8905a15f9474937355418633b91800",
+    "grouped_quality.tsv": "b8ad0d593b5f11151f38ebebc95ebdbdaa16ff3fda85c3aef1cadb9e161aec8c",
+    "threshold_scan.tsv": "25aec201e5a6887af34b94a71cf80441994a1af61db5679d93be740595bd5086",
+    "distributions.json": "d683592b621dc6969d353be90860378837e1f393b995be740c95c46d188f278a",
+    "context.json": "6410e1df3cef55c704e88073277a81e05af515216551dcbc80a577ee8dcf4dc2",
+    "README.md": "3fd716d632bc0aca52afb1a27b35902690d408263546fab5c4ed0f2083e3e426",
+    "source/audit_settings.yaml": "c032825155f06a79e06d8404d8cc8d0e256cbf497900fa6ce024cf58eea8e81c",
+    "source/audit_fit_quality.py": "cc38a9579e8c2005f2c5c533a593e51a229a17841cd6a9afac64d4bac7384dfe",
+    "source/summarize_cutoff.py": "501215863c5719178f81ad0415b643b3c93bc730b894ad6d54d16932e19270ad",
+    "source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e"
+  }
+}

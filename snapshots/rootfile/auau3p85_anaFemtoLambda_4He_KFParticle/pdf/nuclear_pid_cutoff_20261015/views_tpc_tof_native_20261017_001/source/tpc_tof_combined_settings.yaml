@@ -1,0 +1,24 @@
+schemaVersion: 1
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+lowTable: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/inputs/summary.tsv
+lowRanges: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/adopted_ranges_001/adopted_ranges.tsv
+lowPdf: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/views_final_001/purity_cutoff_overview.pdf
+highTable: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_001/summary.tsv
+highCompleted: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/summary_001/completed.json
+inputAudit: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015/highrigidity_tof_20261017_001/input_audit/audit.json
+plotSource: tools/nuclear_pid_cutoff/PlotTPCTofPurity.C
+lowPlotSource: tools/nuclear_pid_cutoff/PlotNuclearCutoff.C
+runtimeWrapper: script/singularity_root_batch.sh
+executionTimeoutSeconds: 1800
+rigidityMin: 0.4
+rigiditySplit: 2.0
+rigidityMax: 5.0
+purityThreshold: 0.5
+lowConditionCount: 20
+highConditionCount: 4
+aggregateWidth: 0.05
+targets:
+  d: {sample: TAG_D, displayMax: 2.5, detail: 'Winner first; strict TOF window; R < 2.5'}
+  t: {sample: TAG_T, displayMax: 2.5, detail: 'Winner first; strict TOF window; R < 2.5'}
+  he3: {sample: TAG_HE3, displayMax: 2.5, detail: 'Winner first; strict TOF window; R < 2.5'}
+  he4: {sample: TAG_D, displayMax: 5.0, detail: 'Study: same TOF window as d; old He4 3 < m^{2} < 4 not evaluated'}

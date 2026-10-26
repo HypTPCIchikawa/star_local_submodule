@@ -1,0 +1,19 @@
+# Main configuration template
+# Paths are relative to config/
+# Replace token "auau3p85_anaLambda" via script/setup_config_from_analysisinfo.py
+
+event:         cuts/event/event_auau3p85_anaLambda.yaml
+track:         cuts/track/track_auau3p85_anaLambda.yaml
+pid:           cuts/pid/pid_auau3p85_anaLambda.yaml
+v0:            cuts/v0reco/v0_auau3p85_anaLambda.yaml
+mixing:        cuts/mixing/mixing_auau3p85_anaLambda.yaml
+centrality:    cuts/centrality/centrality_auau3p85_anaLambda.yaml
+
+# Maker config (key name should match your analysis macro expectation)
+lambda:        maker/maker_auau3p85_anaLambda.yaml
+
+# Histogram config
+hist:          hist/hist_auau3p85_anaLambda.yaml
+
+# Analysis info
+analysis:      analysis/analysis_info_auau3p85_anaLambda.yaml

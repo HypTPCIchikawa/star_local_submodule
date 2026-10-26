@@ -1,0 +1,54 @@
+# Study-only: independent core/tail Gaussian shape and yields, no live PID change.
+schemaVersion: 1
+responseStudyMode: free_coretail
+responseModel: gaussian_coretail_free_components
+runtimeMainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_purity50_20261015.yaml
+runtimeWrapper: script/singularity_root_batch.sh
+outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_quality_20261019
+cache: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root
+oldRunsBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_cutoff_20261015
+oldRunPattern: all_{species}_gaussian_{background}_nominal_free001
+backgrounds: [linear, exponential]
+representativeRigidity:
+  d: [1.475]
+  t: [1.375]
+  he4: [0.895, 1.775]
+freePolicies:
+  target_only:
+    d: [d]
+    t: [t]
+    he4: [he4]
+  local_neighbors:
+    d: [d, t]
+    t: [d, t]
+    he4: [he3, he4]
+# Tail-bearing hypotheses explicitly match each policy's free core hypotheses.
+tailPolicies:
+  target_only:
+    d: [d]
+    t: [t]
+    he4: [he4]
+  local_neighbors:
+    d: [d, t]
+    t: [d, t]
+    he4: [he3, he4]
+profiles:
+  gaussian_control: {fraction: 0.0, offsetSeedSigma: 0.0, widthRatio: 1.0}
+  free_symmetric_seed: {fraction: 0.1, offsetSeedSigma: 0.0, widthRatio: 1.7}
+adapter: tools/nuclear_pid_cutoff/coretail_20261019/FitFreeCoreTailPilot.C
+adapterFunction: FitFreeCoreTailPilot
+adapterDependency: tools/nuclear_pid_cutoff/FitLocalNuclearCutoff.C
+engine: tools/nuclear_pid_cutoff/coretail_20261019/FreeGaussianCoreTail.h
+engineDependencies:
+  - tools/nuclear_pid_cutoff/coretail_20261019/NuclearCoreTailFitCommon.h
+  - tools/nuclear_pid_tof/NuclearFitCommon.h
+  - tools/nuclear_pid_tof/NuclearLognormalFitCommon.h
+executionTimeoutSeconds: 1200
+axisTolerance: 0.000000001
+parityRelativeTolerance: 0.00000001
+studyLimitations:
+  - Fully free core/tail components are pilot response models, not isotope identity validation.
+  - Core-majority, tail-width and neighboring-peak checks are post-fit screens, not constraints.
+  - Group purity is unavailable in this first response-quality pilot, not zero.
+  - Seed/model selection is not included in an uncorrected goodness-of-fit p-value.
+  - Old TPC gates and old fit windows are frozen; no smooth polynomial calibration is adopted.

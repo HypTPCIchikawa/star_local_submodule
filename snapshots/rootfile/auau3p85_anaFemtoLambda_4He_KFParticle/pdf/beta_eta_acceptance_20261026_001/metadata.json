@@ -1,0 +1,93 @@
+{
+  "anaName": "auau3p85_anaFemtoLambda_4He_KFParticle",
+  "jobid": "04BF2DAE47164B6F040E3A460E539289",
+  "dataset": "2021 P24iy",
+  "inputEvents": 2100726543,
+  "reconstructedEvents": 2067647474,
+  "selectedSubjobs": 26955,
+  "expectedSubjobs": 26994,
+  "inputs": [
+    {
+      "index": 0,
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/.merge_staging_partial_merge_checkpoint_20261023/round_00_0000_attempt_000.root",
+      "fingerprint": {
+        "size": 4995230104,
+        "mtimeNs": 1792885869385451609,
+        "inode": 182640486,
+        "device": 48
+      }
+    },
+    {
+      "index": 1,
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/.merge_staging_partial_merge_accepted_20261025/intermediate_1.root",
+      "fingerprint": {
+        "size": 5190600090,
+        "mtimeNs": 1792891774897513517,
+        "inode": 937912387,
+        "device": 48
+      }
+    },
+    {
+      "index": 2,
+      "path": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/.merge_staging_partial_merge_native_verified_20261025/intermediate_2.root",
+      "fingerprint": {
+        "size": 3719338928,
+        "mtimeNs": 1792938776184391893,
+        "inode": 134315379,
+        "device": 48
+      }
+    }
+  ],
+  "betaDefinition": "kinematic |p|/E, lab frame; He physical momentum includes Z=2",
+  "samples": [
+    {
+      "key": "hLambda_BetaVsEta_signal",
+      "title": "#Lambda signal candidates",
+      "selection": "#Lambda mass signal window; no nuclear pairing requirement"
+    },
+    {
+      "key": "hNucleus_BetaVsEta_he4",
+      "title": "^{4}He: inclusive",
+      "selection": "0.61 < R < 5; TOF + m^{2} required for R #geq 2"
+    },
+    {
+      "key": "hNucleus_BetaVsEta_he4_lowR_noTof",
+      "title": "^{4}He: low R, no TOF requirement",
+      "selection": "0.61 < R < 2 GeV/c; matched tracks are included"
+    },
+    {
+      "key": "hNucleus_BetaVsEta_he4_lowR_tofMatch",
+      "title": "^{4}He: low R, valid TOF",
+      "selection": "0.61 < R < 2 GeV/c; no m^{2} selection"
+    },
+    {
+      "key": "hNucleus_BetaVsEta_he4_lowR_tofM2",
+      "title": "^{4}He: low R, TOF + m^{2}",
+      "selection": "0.61 < R < 2 GeV/c; deuteron m^{2} window"
+    },
+    {
+      "key": "hNucleus_BetaVsEta_he4_highR_tofM2",
+      "title": "^{4}He: high R, TOF + m^{2}",
+      "selection": "2 #leq R < 5 GeV/c; deuteron m^{2} window"
+    }
+  ],
+  "lambdaMassWindow": [
+    1.10708,
+    1.12484
+  ],
+  "he4StrictRigidityDomain": [
+    0.61,
+    5.0
+  ],
+  "highRBoundaryInclusive": 2.0,
+  "strictTofMass2Window": [
+    3.268773,
+    3.693147
+  ],
+  "lowRTofSubsetsOverlap": true,
+  "etaFocus": "union of nonzero regular bins, padded; same display across samples",
+  "etaMarginBins": 4,
+  "sharedCountColorScale": true,
+  "mapNormalization": "raw candidate counts per original bin; no rebinning",
+  "sourceLabelsCorrectedForRendering": "subset title semicolons shifted persisted ROOT axis titles; explicit eta and beta labels are set in clones only"
+}

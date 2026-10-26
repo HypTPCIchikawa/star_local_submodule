@@ -1,0 +1,80 @@
+schemaVersion: 1
+sample:
+  collision: auau3p85
+  year: 2021
+  production: P24iy
+  mainconf: config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml
+  input: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/auau3p85_anaFemtoLambda_4He_KFParticle_2021P24iy_partial_merge.root
+  sourceSummary: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/run_state.json
+  legacyKnots: config/calibration/dedx_helium_auau3p85_2021P24iy_from040.yaml
+  outputBase: rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/global_logpoly_recalibration
+executionTimeoutSeconds: 3600
+engine:
+  histogram: true/hDedxP
+  tagHistogram: true/hDedxP_3He_m2
+  sampleMode: all
+  backgroundModel: linear
+  rigidityMin: 0.4
+  rigidityMax: 2.5
+  rigidityStep: 0.02
+  sliceIndices:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 7
+  - 9
+  - 12
+  - 17
+  - 22
+  - 30
+  - 40
+  - 50
+  - 60
+  - 70
+  - 80
+  - 90
+  - 100
+  - 104
+  dedxRebinFactor: 5
+  rQuadratureOrder: 3
+  fitNSigmaMin: -7.0
+  fitNSigmaMax: 4.0
+  minimumSliceCount: 1000
+  minimumSigma: 0.05
+  minimumMeanGap: 0.2
+  requireMonotonicMean: true
+  meanShiftMinSigma: -4.5
+  meanShiftMaxSigma: 2.0
+  maximumSigmaScale: 3.0
+  coefficientBoundSteps: 20.0
+  floatDeuteronShape: false
+  floatTritonShape: true
+  neighborMeanShiftMax: 2.0
+  neighborWidthMin: 0.4
+  neighborWidthMax: 3.0
+  exponentialSlopeMax: 5.0
+  maximumAmplitudeFraction: 20.0
+  amplitudeMaxIterations: 200
+  amplitudeGradientTolerance: 1.0e-08
+  countIntegerTolerance: 1.0e-06
+  countVarianceRelativeTolerance: 1.0e-06
+  axisTolerance: 1.0e-09
+  localMaxCalls: 160
+  localTolerance: 0.05
+  globalMaxCalls: 1200
+  globalTolerance: 0.05
+  maximumOuterIterations: 4
+  outerRelativeTolerance: 1.0e-05
+  outerCoefficientTolerance: 0.001
+  stationarityRelativeTolerance: 1.0e-06
+  stationarityStep: 0.0001
+seedGeneration:
+  lowShiftMeanSigma: -3.0
+  lowShiftWidthScale: 1.4
+  blendSafetyFactor: 0.98
+  blendBisectionIterations: 60
+  modes:
+  - legacy

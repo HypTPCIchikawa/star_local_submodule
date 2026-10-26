@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "sample": "3p85 / 2021 P24iy only",
+  "runtime": "STAR SL24y / ROOT 5.34.38",
+  "sources": {
+    "tools/he4_purity/FitHe4Purity.C": "ab25f839121320a72b7864f1eb2a64e2d25fb3c3185875d49745c8119185abe3",
+    "tools/he4_purity/CheckRebinAudit.C": "eb6d961b10bc3129c4e60a13eef87b31210cf67e509e28539ad2e5655c099ace",
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/settings.tsv": "8c27e71bc1a61dae7e2a29828ba9c7b77d6fbd08cc908b7066030922f8fcbc16"
+  },
+  "savedDataAudit": {
+    "exitCode": 0,
+    "slices": 210,
+    "errors": [],
+    "nativeBins": 1200,
+    "fitBins": 240,
+    "rebinFactor": 5,
+    "everyCoarseBinEqualsNativeCountSum": true,
+    "everyCoarseVarianceEqualsNativeVarianceSum": true,
+    "relativeVarianceTolerance": 1e-10,
+    "underflowOverflowAndEntriesPreserved": true,
+    "nativeCoarseObjectsDistinctAndNamesMatchKeys": true,
+    "oldNewAndAuditGateCountsExactlyEqual": true,
+    "oldNewAndAuditFitCountsExactlyEqual": true,
+    "sumOriginalGateCounts": 198592594,
+    "sumFrom040GateCounts": 198592594,
+    "report": "Todo/20261013/validation/rebin_audit_from040_3p85_final.tsv",
+    "log": "Todo/20261013/validation_rebin_audit_from040_3p85_final.log"
+  },
+  "unchangedHigherRigidity": {
+    "condition": "R >= 0.50 GeV/c",
+    "rigiditySlices": 200,
+    "modelFits": 400,
+    "comparedSharedFitFields": 15200,
+    "everySharedFitFieldExactlyEqual": true,
+    "includesParametersErrorsPuritiesAndDiagnostics": true,
+    "reference": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity/purity.json",
+    "new": "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/refined_lowrigidity_from040/purity.json"
+  },
+  "toyClosure": "Todo/20261013/validation/from040_toy_final_v4/provenance.json",
+  "note": "No 13.5 GeV data was reprocessed for this from040 task. This audit verifies bookkeeping and unchanged upper-rigidity behavior; it is separate from physical peak interpretation and fit adequacy."
+}

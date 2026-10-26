@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "executionComplete": true,
+  "rows": 640,
+  "fitIndependent": true,
+  "productionEnabled": false,
+  "products": {
+    "ExtractNuclearGateCounts.C": "8609945324cab47028d205e28d4522749c85740e7467fed5bdca4e7ca61e74c5",
+    "FitNuclearCutoff.C": "0b0ad2ac748d4c9e96aacbe62fd32755776d65f5a4f56009d67cf7b146f7e074",
+    "NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "NuclearLognormalFitCommon.h": "1216db2c98c82651edf4c127d5d0eb09e5d5d23fc843c71a81c28c9c34eb443c",
+    "shapes.tsv": "2cb25e51a969a95442b5729223f66a5dcff6eb78c98777407544f831e1c485bc",
+    "gates.tsv": "bc20b69da25d933ee94df38c1c0f6a2d8ac670d4a1d294852c992164f4673eea",
+    "settings.tsv": "4b008eda0d5d290b6485d9cf5f0cbee5bf4078345b63bbe0fa2f493f7217b017",
+    "gate_counts.tsv": "ded826d14eea85c7f99ea26408ee2616694f6aae3c3e36489ca2dac1023520c9",
+    "run.log": "c4ad1c6cbcbdb84c37d919a303911f8913365510b7faf63ec90302d78ce0f058"
+  },
+  "cachePath": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_tof_20261014/inputs_001/cache.root",
+  "cacheSha256": "cefd9281fe4dc31ddcf7f0d403a1cdd2d6440e5873da40518804025b3e9b4828",
+  "gatesSha256": "bc20b69da25d933ee94df38c1c0f6a2d8ac670d4a1d294852c992164f4673eea",
+  "shapesSha256": "2cb25e51a969a95442b5729223f66a5dcff6eb78c98777407544f831e1c485bc",
+  "gateCountPolicy": "Fractional native dEdx bin overlap, uniform native-R GL3, strict TPC nsigma plus best species; source stored counts, not Entries; fit failures do not alter counts"
+}

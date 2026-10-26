@@ -1,0 +1,46 @@
+# Dataset policy (2026-10-01): use only 2021 P24iy; never reuse the 2019 study input.
+# 3p85 is the fixed-target beam-energy label, not collider sqrt(sNN).
+starTag:
+  triggerSets: "production_3p85GeV_fixedTarget_2021"
+  stream: "st_physics"
+  collision: "auau3p85"
+  year: "year2021"
+  productionTag: "P24iy"
+  libraryTag: "SL24y"
+  filetype: "daq_reco_picoDst"
+  filenameFilter: "st_physics"
+  filenameNotFilter: "adc"
+  storage: "local"
+dataset:
+  collisionSystem: "Au+Au"
+  # Recovery XML uses one audited three-file JSON manifest per worker.
+  # This is not a catalog rescan; inputs are the 38 missing production groups only.
+  allPicoDstList: ""
+  runRange:
+    min: 22000000
+    max: 22999999
+  goodRunList: ""
+  dataQuality: "production"
+  dataFormat: "picoDst"
+analysis:
+  anaName: &anaName "auau3p85_anaFemtoLambda_4He_KFParticle_recovery_20261003"
+  name: *anaName
+  mode: "fxtmult"
+  type: "femto"
+  targetParticle: "Lambda-he4"
+  decayChannel: "p+pi-"
+  workDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer"
+  logDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/log/auau3p85_anaFemtoLambda_4He_KFParticle_recovery_20261003"
+  errDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/err/auau3p85_anaFemtoLambda_4He_KFParticle_recovery_20261003"
+  baseRunMacro: "run_anaFemtoLambda_4He"
+  baseAnaMacro: "anaFemtoLambda_4He"
+  jobName: *anaName
+  scratchSubdir: *anaName
+  outputFileStem: *anaName
+  nFiles: "all"
+  filesPerJob: 1
+  maxEvents: -1
+analyst:
+  name: "Yudai Ichikawa"
+  institute: "Tohoku University"
+  email: "yudai.ichikawa.d3@tohoku.ac.jp"

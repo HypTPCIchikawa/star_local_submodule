@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "createdUtc": "2026-10-19T06:11:45.777912+00:00",
+  "runtimeMainconf": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_logpolyLowRReference20261019.yaml",
+  "protectedSources": {
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/coretail_20261019/run_selftest.py": "3dc4bb251818d0e2e83318a63241cf8aba2ccf6a64c5d68df07d0f987fdf2ade",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/coretail_20261019/SelfTestCoreTail.C": "9c48c3823df640e1751830340b622ec22b58b3f0b6565816e5e436e5939d0f0a",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/coretail_20261019/NuclearCoreTailFitCommon.h": "c3c6c3815131d98ed56434a8aa7530aa7da6f250c761a294cd21b691c58bccdb",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_cutoff/coretail_20261019/coretail_math_settings.tsv": "e3ac88ba5538d6b10cac0e898f9b62e1a0818ecc64c86f68b8f949e09f9bfe57",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/tools/nuclear_pid_tof/NuclearFitCommon.h": "6bab9a46af1987d2ae9a2043bbdd84fa23c4f5f80fd36005ba290e6c51939154",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/singularity_root_batch.sh": "1e2024d49887698e7ab30b86ae435525d3fb0215e153c7eeef4d027d8652e9f1",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/script/analysis_info_helper.py": "3683fe8872871515d754da502d68e0722cb0bd42e9e485cacec7c219330851c0",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle_logpolyLowRReference20261019.yaml": "4e40f0662fbdef719c16f963b4a24017c21d82aa020ca4b27bdf705e590ca6ab",
+    "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/config/analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle.yaml": "a545b9be5c25473cdde31955515f08dbdaf2dfe689e540c1ab7eb68b97aa19b7"
+  },
+  "sourceHierarchyPreserved": true,
+  "noRealDataInput": true,
+  "noFit": true,
+  "productionChanged": false,
+  "scope": "Mixture mathematics and objective transforms only."
+}

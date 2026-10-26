@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "exitCode": 0,
+  "runtime": "STAR SL24y / sl73_x8664_gcc485 / ROOT 5.34.38 / forced ACLiC .C++",
+  "sources": {
+    "tools/he4_purity/FitHe4Purity.C": "ab25f839121320a72b7864f1eb2a64e2d25fb3c3185875d49745c8119185abe3",
+    "tools/he4_purity/CheckFrom040Purity.C": "a8bd0e89ee15760f038e440d2b81ccf469f94a405d67a18abb6556136c7345e3",
+    "Todo/20261013/validation/from040_prototype_002/settings.tsv": "8c27e71bc1a61dae7e2a29828ba9c7b77d6fbd08cc908b7066030922f8fcbc16"
+  },
+  "cases": 6,
+  "signalFixtures": {
+    "rigidities": [0.405, 0.425],
+    "injectedMeans": [-3.0, -2.8],
+    "injectedSigma": 0.7,
+    "injectedAmplitude": 10000,
+    "backgroundSpecies": ["triton", "He3"],
+    "backgrounds": ["linear", "exponential"],
+    "physicalDedxAxis": [0, 120],
+    "physicalDedxBinWidth": 0.5,
+    "supportedUpperNSigma": [2.225267699934743, 3.164349911342697],
+    "peakMeanAndSigmaTolerance": 0.02,
+    "truthPurityTolerance": 0.001,
+    "independentNumericalIntegralTolerance": 1e-8,
+    "lowerRegionAndRawPeakFlagsVerified": true,
+    "speciesOrderingVerified": true
+  },
+  "controls": {
+    "movingGateOutsideSavedAxis": "Original fixed gate remains valid; fitted moving-gate purity is unavailable (-1), with unsupported flag and zero error.",
+    "exact0400NotFirstBinCenter": "Exact R=0.400 has saved upper nSigma 1.9913 < 2 and is rejected; the first actual study center R=0.405 supports the old fixed gate."
+  },
+  "result": "Todo/20261013/validation/from040_toy_final_v3/from040_closure.json",
+  "log": "Todo/20261013/validation_from040_toy_final_v3.log",
+  "priorAttempts": {
+    "from040_toy_final": "An amplitude-5000 fixture was incorrectly assumed to make an independent raw peak; it instead made a shoulder below the diagnostic prominence threshold. Retained as a failed test-design attempt.",
+    "from040_toy_final_v2": "All six cases passed after using a strong raw-peak fixture; v3 adds independent numerical checks for both original and moving gates."
+  },
+  "note": "Closure uses exact synthetic-bin expectations and tests model recovery, not adequacy of this model for real data. No production PID or original ROOT file was edited."
+}

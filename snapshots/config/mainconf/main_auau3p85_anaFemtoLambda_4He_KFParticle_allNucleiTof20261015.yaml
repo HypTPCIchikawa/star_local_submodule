@@ -1,0 +1,11 @@
+# Opt-in high-R all-nuclei TOF validation; low-R cutoff certification is separate.
+# Rollback: main_auau3p85_anaFemtoLambda_4He_KFParticle_tofExtended.yaml
+analysis: analysis/analysis_info_auau3p85_anaFemtoLambda_4He_KFParticle_allNucleiTof20261015.yaml
+event: cuts/event/event_femtoLambda_imp5.yaml
+centrality: cuts/centrality/centrality_auau3p85_femtoLambda.yaml
+kf: cuts/kf/kf_auau3p85_anaLambda_KFParticle_highpurity.yaml
+nuclearid: cuts/nuclearid/nuclearid_femtoLambda_auau3p85_allNucleiTof20261015.yaml
+maker: maker/maker_auau3p85_anaFemtoLambda_4He_KFParticle_he3Control.yaml
+mixing: cuts/mixing/mixing_femtoLambda_legacy.yaml
+femtoHist: hist/hist_auau3p85_femtoLambda_he4_he3_control_kf.yaml
+nuclearHist: hist/hist_auau3p85_femtoLambda_he4_he3_control_nuclear.yaml

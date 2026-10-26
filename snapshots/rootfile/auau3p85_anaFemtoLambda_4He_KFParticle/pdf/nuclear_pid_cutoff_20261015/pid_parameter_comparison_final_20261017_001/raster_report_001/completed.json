@@ -1,0 +1,16 @@
+{
+  "executionComplete": true,
+  "pageCount": 23,
+  "allPagesReadWithoutDiagnostics": true,
+  "protectedInputsVerified": true,
+  "products": {
+    "command.json": "77249af301d66f94bc25742041e6f4567b3f3b3d6aaa9cf0909ecacca6b40d7d",
+    "convert.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "new_old_pid_final.pdf": "3f96e285aee25e93fef0085c95dce218d16cdf1ff5e417b3d4bd0ee7923956a3",
+    "pdf_page_01.png": "4e1d88dbd7784513283ca1b6a866c48ad4e27fcf85e45eca8ad37ed2950eed9b",
+    "pdf_page_23.png": "98cbfe02a521af50a64698f48dc49bd0e97141e41ef737d88e314f9556268b0c",
+    "context.json": "8538eef97bdc4455b7249021ef10bc277cea52388e7461754968f555a1bfca09",
+    "source/make_pid_raster_report.py": "f08e2a3a1cc3e135e22d8809c06fa03c7ff401656b40c8da5ce3b549671fe8e2",
+    "source/compare_pid_selections.py": "2a8b1b4d39735cd29fb7c555bf77994291bbd18e2132b308687f4a8782f06cc9"
+  }
+}

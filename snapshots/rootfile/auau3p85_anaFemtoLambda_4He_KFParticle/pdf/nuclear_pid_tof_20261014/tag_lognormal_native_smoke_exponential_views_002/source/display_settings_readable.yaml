@@ -1,0 +1,53 @@
+# Display-only A4-safe paper geometry; original display_settings.yaml unchanged.
+schemaVersion: 1
+executionTimeoutSeconds: 900
+display:
+  schemaVersion: 1
+  expectedNativeBins: 1200
+  expectedNativeWidth: 0.1
+  displayRebinFactor: 5
+  fullPhysicalMin: 0.0
+  fullPhysicalMax: 120.0
+  axisRelativeTolerance: 0.000000001
+  varianceRelativeTolerance: 0.000000001
+  componentRelativeTolerance: 0.000000001
+  maximumReferenceChi2Ndf: 10.0
+  zoomFitWindowFractionPadding: 0.2
+  zoomMinimumPaddingKeV: 5.0
+  guideNSigma: 1.0
+  residualMinimumRange: 5.0
+  residualRangePadding: 0.15
+  rowsPerPage: 2
+  canvasWidth: 1800
+  canvasHeight: 1400
+  paperWidthCm: 26.0
+  paperHeightCm: 20.0
+  marginLeft: 0.18
+  marginRight: 0.04
+  marginBottom: 0.26
+  marginTop: 0.33
+  axisMaxDigits: 3
+  axisFont: 42
+  axisTitleSize: 0.030
+  axisLabelSize: 0.026
+  xTitleOffset: 1.35
+  yTitleOffset: 1.8
+  markerSize: 0.25
+  linearMaximumFactor: 1.4
+  logMaximumFactor: 8.0
+  logMinimum: 0.5
+  headerY: 0.966
+  headerTextSize: 0.030
+  warningY: 0.916
+  statisticY: 0.888
+  statusTextSize: 0.018
+  legendXMin: 0.18
+  legendXMax: 0.96
+  legendYMin: 0.73
+  legendYMax: 0.87
+  legendColumns: 3
+  legendTextSize: 0.020
+  captionTextSize: 0.015
+  captionFirstY: 0.090
+  captionSecondY: 0.055
+  captionThirdY: 0.022

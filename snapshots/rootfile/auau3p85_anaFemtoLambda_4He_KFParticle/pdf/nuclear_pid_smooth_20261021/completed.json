@@ -1,0 +1,560 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsScope": "10/17 conditional response/background model estimates; not complete systematic validation",
+  "candidateFitSlices": 16640,
+  "originalNominalFitSlices": 3400,
+  "reproductionFitSlices": 24,
+  "reproductionScalarChecks": 96,
+  "allHistoricalInputAndProductionConfigsPreserved": true,
+  "originalRootFingerprintPreserved": true,
+  "fitResponseInvariantChecks": [
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_exponential_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_linear_nominal",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_gaussian_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he4_lognormal_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_gaussian_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_he3_lognormal_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_gaussian_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_d_lognormal_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_gaussian_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_exponential_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_exponential_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_exponential_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_exponential_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_linear_mean_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_linear_mean_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_linear_width_minus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/low_t_lognormal_linear_width_plus",
+      "nativeRows": 160,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_d_gaussian_linear_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_d_gaussian_exponential_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_d_lognormal_linear_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_d_lognormal_exponential_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_t_gaussian_linear_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_t_gaussian_exponential_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_t_lognormal_linear_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_t_lognormal_exponential_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he3_gaussian_linear_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he3_gaussian_exponential_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he3_lognormal_linear_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he3_lognormal_exponential_nominal",
+      "nativeRows": 50,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he4_gaussian_linear_nominal",
+      "nativeRows": 60,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he4_gaussian_exponential_nominal",
+      "nativeRows": 60,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he4_lognormal_linear_nominal",
+      "nativeRows": 60,
+      "parametersAndYieldsExactlyUnchanged": true
+    },
+    {
+      "run": "/gpfs/mnt/gpfs01/star/pwg/yichikawa/git_STAR_3/star-analyzer/rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/nuclear_pid_smooth_20261021/candidate/high_he4_lognormal_exponential_nominal",
+      "nativeRows": 60,
+      "parametersAndYieldsExactlyUnchanged": true
+    }
+  ],
+  "lowHistoricalComparison": {
+    "d": {
+      "commonAssessedBins": 21,
+      "maximumAbsoluteNominalPurityDifference": 3.3306690738754696e-16
+    },
+    "t": {
+      "commonAssessedBins": 23,
+      "maximumAbsoluteNominalPurityDifference": 3.3306690738754696e-16
+    },
+    "he3": {
+      "commonAssessedBins": 25,
+      "maximumAbsoluteNominalPurityDifference": 0.035665784583350235
+    },
+    "he4": {
+      "commonAssessedBins": 24,
+      "maximumAbsoluteNominalPurityDifference": 0.113080673044887
+    }
+  },
+  "supportedBins": {
+    "d": {
+      "low": 21,
+      "high": 44
+    },
+    "t": {
+      "low": 23,
+      "high": 42
+    },
+    "he3": {
+      "low": 25,
+      "high": 31
+    },
+    "he4": {
+      "low": 24,
+      "high": 24
+    }
+  },
+  "allRequiredPDFPagesReadback": 1610,
+  "sourceSha256": {
+    "study.py": "9cb19e3e417790171e105a0996757a2a4b02734b9a92d4a00075c1b36159c49a",
+    "calibrate.py": "0aa8c9d730879713f94d43b87fab6b0e5637be77c916544bcc64054d94e489bd",
+    "settings.yaml": "77396fc1621cd657131b6d1a8a95f2f36a2cee2ad5d62d928b1083e38d2495b5",
+    "count_gates.py": "503363ec19df6edcfb8c426cdded36f678145fc7fb99ff2859b97a1cffd0a145",
+    "summarize.py": "a2fdc6a86684dad2b0ccf72ac8444e73ad74a1021df925d8f8fddb652b3616fb",
+    "PlotStudy.C": "c8eb4508b8ded1ad4736a8aa1c5ebda4366f4c4fe46712ef61f0d7c06cfd42b5",
+    "prepare_views.py": "3d9c42fee272533d9e2bb11e47463fa6f1d6297605edf3c91687b4dcc1da6bc3",
+    "audit.py": "b3d5ffd039a3dc300a258c06890c1697f1cdc96607e692f73bfd5c39b641fb4b",
+    "extend_high.py": "5dd5d9972baddbcc43093f44bef82cf20b6f0d90bd9911b9a5cc57101bc198d1",
+    "prepare_atlas.py": "acbfaa6444a43fbf707fc0c50407f3f7e5e38466f40ee57e84ad943499404478",
+    "validate_pdfs.py": "63f2919983a3c3e2c97c6458951f42ec03e4ca679e65ada8b89777914c2ee070",
+    "finalize.py": "760e9b9b64c1e3a4ed33f00e9a604d4f090e941e1927bb9af6967357b991a96a",
+    "README.md": "50bbf7418a45b4ce834a311a4fdd61c45ce1e6492143272f077b2f3e6a2e3443"
+  },
+  "productsSha256": {
+    "coefficients.json": "035b682c52a4445a7b23924eae478419340259e1b63cefa8957069255e6b0ba8",
+    "coefficients.yaml": "f5906cb24673b3c04dade2581857e404004317309b468b3169fc7f6af04f7ad0",
+    "candidate_summary.json": "5af3c25c219e9f4e6b5ad39a3d5c1792dfb4de9ec7310b355b96aea98e157c6d",
+    "candidate_summary.tsv": "df7341d43c5f517ae47ea1142e92c7935c9b1dcf29223cd368af1bd3e807e081",
+    "original_summary.json": "630530c166ea9d72fe39ab644ae20d446d7ed34c529e103b74cce05e3b3c3492",
+    "original_summary.tsv": "8c30ee27a2b0bf6dbcb6740b4c90e769d32787fe8ae695ed706c35db9fdfdccd",
+    "assessed_ranges.json": "5244c558ed2ca2d26ec3118c0e8d162f56922659f7a70ff621eccf7d0438d058",
+    "study_results.yaml": "2f99df541522e78582647cd09c5b6e842d96af621891d2b118057d6a3bdea7ac",
+    "curves.tsv": "19e61492425f8f9a202f9adeb4cfe7622b1577856d9aef35a84df7229647de8d",
+    "protected_input_audit.json": "78d37989512d983622fc0241b5fecc9e2890e05cdcf62d680559e78e6587aead",
+    "git_original_audit.json": "138cfb7be9c33c2a69d93f909bf8fcc6d300e1205e3b054de8177d70a5eeab87",
+    "purity_vs_p_over_q.pdf": "b9876c0c04f126a1d545c21502048cb4e9b0466ce65507228403081f0fd6ea6a",
+    "dedx_vs_p_over_q_curves.pdf": "2820ebf152bc2ce64fcb9d0ef5ec705ecf483fd89ac8a08141093d51d098c2af"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUTC": "2026-10-13T02:26:07Z",
+  "checkedAtJST": "2026-10-13T11:26:07+09:00",
+  "status": "passed",
+  "exitCode": 0,
+  "mainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "runtime": {
+    "STAR": "SL24y",
+    "STAR_HOST_SYS": "sl73_x8664_gcc485",
+    "ROOT": "5.34.38",
+    "compilation": "ROOT ACLiC forced rebuild (.C++)"
+  },
+  "sources": {
+    "tools/he4_purity/FitHe4Purity.C": "dff20ac803cc11e176b744a029afd4bf659ec98a0a763b8f98db878e5fff9999",
+    "tools/he4_purity/CheckToyPurity.C": "cabe7c9b7d0e89969ecda3c3c9500e37a58230fb78b22746c5ad3dc53c80f563",
+    "StMaker/common/NuclearIdDeDxVsMom.h": "eccb66ea6d6df4ab2069e8c17f39fb4dc280500127c64c02b4418ebc0c1bb208",
+    "rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/settings.tsv": "7f949cbf06f4a1624a588b36c30a20b55ce68d513baa66ba176a597e788aef0c"
+  },
+  "command": "bash script/singularity_root_batch.sh config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml root4star -l -b -q 'tools/he4_purity/CheckToyPurity.C++(\"rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/pdf/he4_purity_20261013/settings.tsv\",\"Todo/20261013/validation/task3_toy_final\")'",
+  "log": "Todo/20261013/validation_he4_purity_toy_final.log",
+  "results": {
+    "json": "Todo/20261013/validation/task3_toy_final/toy_closure.json",
+    "root": "Todo/20261013/validation/task3_toy_final/toy_closure.root",
+    "linearAbsolutePurityBias": 7.029653192880403e-9,
+    "exponentialAbsolutePurityBias": 2.713611224613999e-9,
+    "linearCovarianceStatus": 3,
+    "exponentialCovarianceStatus": 3,
+    "bothQuality": true,
+    "analyticalVsNumericalPurityTolerance": 1e-8
+  },
+  "note": "Deterministic synthetic-bin closure verifies the estimator under its own signal/background models; it does not establish that these models describe real tracks. The original toy results are retained separately."
+}

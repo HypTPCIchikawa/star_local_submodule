@@ -1,0 +1,19 @@
+{
+  "executionComplete": true,
+  "productionEnabled": false,
+  "physicsValidationComplete": false,
+  "summaryOnly": true,
+  "products": {
+    "summary.tsv": "72ac481c4f5bb95db9171ff7318a33df244c875291e9e2e61034af457e5f79d8",
+    "baseline_curves.tsv": "f3e6cbbfb96f7bc5c2a9b7aac8de5ae95c6ea9d735b8f75dd568ed9e77e6f83b",
+    "native_parameters.tsv": "36445fc4762a6c037754d0c60d224b91c1709a588f68752e36e9c86eee9ca145",
+    "summary.json": "5fa0e8749e0466d4b04428ba6eea66147236051cff42a1f7a355f943b4e8f3b5",
+    "model_results.tsv": "f9ffb20918fbc1ba7062377e1927b864abeed5fb366548cf1a3ae04b0ee6c934",
+    "settings.yaml": "2de5b16ed349272ae03167f11e3a185684fa9c55a4a854a1368a6bf2cf5a30b0",
+    "context.json": "743d7a7ace8c6ae4085bdb8b4c24c988048bbacdef07717b94fe7e89fc1354f3",
+    "source/summarize_cutoff.py": "0efb4b58a2c9a1798d5281404c29e5b8eafd4e9140b11d81c13359a33c4ef8c4",
+    "source/run_cutoff.py": "3d8fc2da04ee2b0eed0b444fc8d3d23e837d8cb285b6c8bed9df0869eac0d87e",
+    "source/free_local_settings.yaml": "2de5b16ed349272ae03167f11e3a185684fa9c55a4a854a1368a6bf2cf5a30b0",
+    "source/baseline.json": "fda52deddc7c08af3c5ad3bc4e5f4b8e248f9f20f23662b194c6673748fcb423"
+  }
+}

@@ -1,0 +1,52 @@
+# Opt-in KF-specific study; ordinary Imp5 cuts and fixed-target event policy are retained.
+# Dedicated full-KF test/analysis metadata; source: existing AuAu13p5 Helix analysis_info.
+# runRange is corrected here to Run20 IDs; the existing Helix file is untouched.
+# The runtime test explicitly reads picoDstList/auau13p5GeV.list, not a new catalog query.
+# Analysis Information
+
+# from picoDst Summary from FileCatalog
+starTag:
+  triggerSets: "production_13p5GeV_fixedTarget_2020"
+  stream: "st_physics"
+  collision: "auau13p5"
+  year: "year2020"
+  productionTag: "P24iy"
+  libraryTag: "SL24y"
+  filetype: "daq_reco_picoDst"
+  filenameFilter: "st_physics"
+  filenameNotFilter: "" # Supplied list includes st_physics_adc; do not exclude them here.
+  storage: "local"
+
+# Dataset Information
+dataset:
+  collisionSystem: "Au+Au"
+  allPicoDstList: "picoDstList/auau13p5GeV.list"
+  runRange:
+    min: 21000000
+    max: 21999999
+  goodRunList: ""
+  dataQuality: "production"
+  dataFormat: "picoDst"
+  
+# Analysis Information
+# anaName = {system}_{anaId}[_condition]; use YAML alias *anaName for name, jobName, scratchSubdir, outputFileStem.
+# baseRunMacro / baseAnaMacro = macro base names (no .C); runMacro is deprecated.
+analysis:
+  anaName: &anaName "auau13p5_anaLambda_KFParticle_KFSpecificStudy"
+  name: *anaName
+  mode: "fxtmult"
+  type: ""
+  targetParticle: "Lambda"
+  decayChannel: "p+pi-"
+  workDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer"
+  baseRunMacro: "run_anaLambda_KFParticle"
+  baseAnaMacro: "anaLambda_KFParticle"
+  jobName: *anaName
+  scratchSubdir: *anaName
+  outputFileStem: *anaName
+  nFiles: 20
+
+analyst:
+  name: "Yudai Ichikawa"
+  institute: "Tohoku University"
+  email: "yudai.ichikawa.d3@tohoku.ac.jp"

@@ -1,0 +1,31 @@
+{
+  "phase": "complete",
+  "no_refit": true,
+  "inputs_unchanged": true,
+  "pages": {
+    "linear": 53,
+    "physical": 8
+  },
+  "products": {
+    "settings.yaml": "0616f34dc2eb7d698422b303ac9418ff6d3b8c07eeb3c440f03bb4edaaa1ba4a",
+    "settings.tsv": "b7311e2e6a846d39dbf69d1aa86dd758d204bd49552aa48a31f5bb2ac3ffaf91",
+    "slices.tsv": "9d63abb76a830815abd0423b0b6fb7defdb53e07a21c4d90a4b15afd2eb05ad7",
+    "context.json": "5697b17cd080f875185c31f2dd87caf21150a0fb91e14ce7204ec92dbd43ad82",
+    "he4_fits_linear.pdf": "db5cd4de51cf5e9133142b8c52358c7a7b6c6ac7190271a77f79413bf83bfd4e",
+    "he4_fits_linear_first.png": "086953d0b30957d4cb9e0c5ba41e343fc500d38a179e04d777d90f1396485f19",
+    "he4_low_rigidity_dedx.pdf": "916477f6bbb84197ff806925debdf898cb4124ae33ff0a6e0ba37d3612cbed43",
+    "he4_dedx_R_505.png": "ebeb642af71c12df8cafb0ec62732f99acdb2b69264a7fd735ff77c888995cc5",
+    "he4_dedx_R_555.png": "f40702390efae60a9f7c3f805d2f6b2256ba7febd49c5f218cc458f17ff38474",
+    "he4_dedx_R_605.png": "6a44988286ae991246fc9063ff64f0d6570aa40f3e0cb0d54a13e134761de547",
+    "he4_dedx_R_655.png": "ffd20c024ce40e8b04445d2c738931d2a5543c4f8b569493f814c89d54f2809f",
+    "he4_dedx_R_705.png": "4897b63f21819c8e326b98e789fa0c4445856b3d3218eb221d85e17498dfdc03",
+    "he4_dedx_R_755.png": "acb593f2b46036f6954425f195bc4275d7b07ef2183766c041ac4bd2170db64c",
+    "he4_dedx_R_805.png": "1a671802584fcf41c998e9fa3610b9650e861312d6cd28a86d2865be70c5f025",
+    "he4_dedx_R_1005.png": "18a8aec9acab12af9ece0ee6987e6916d07370325b28d6d2211b7d05d48cb950",
+    "render_audit.json": "27149de8fba55df64411abfe09e62ad92fd87d09c2254988a5ae037fff4dcf37",
+    "README.md": "b8a75f01ed7bd7d5fbc6f727ba2ddb732f25fc1081f0790556e0cd7765444435",
+    "logs/render.log": "f2c6ec2604b01ea63a064e79dd89c88ecc654ea3991788ae120c06378f96a75c",
+    "source/RenderHe4FitViews.C": "4abc95898c0cdbd28c4307e333377e22a58673fd62558d17ac61154074699bce",
+    "source/render_fit_views.py": "a19b91ff3ae206bf1c56b27effe035aa7cd551828655062f534889d0dc536e68"
+  }
+}

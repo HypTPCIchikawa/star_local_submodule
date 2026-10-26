@@ -1,0 +1,44 @@
+# Pin the same verified non-ADC input in both pilots; never submit the full catalog.
+starTag:
+  triggerSets: "production_13p5GeV_fixedTarget_2020"
+  stream: "st_physics"
+  collision: "auau13p5"
+  year: "year2020"
+  productionTag: "P24iy"
+  libraryTag: "SL24y"
+  filetype: "daq_reco_picoDst"
+  filenameFilter: "st_physics_21033026_raw_7500026.picoDst.root"
+  filenameNotFilter: "adc"
+  extraConditions: "filename=st_physics_21033026_raw_7500026.picoDst.root"
+  storage: "local"
+dataset:
+  collisionSystem: "Au+Au"
+  allPicoDstList: "picoDstList/auau13p5_farm_pilot_20260930.list"
+  runRange:
+    min: 21033026
+    max: 21033026
+  goodRunList: ""
+  dataQuality: "production"
+  dataFormat: "picoDst"
+analysis:
+  anaName: &anaName "auau13p5_anaFemtoLambda_4He_KFParticle_highpurity_pilot_20260930"
+  name: *anaName
+  mode: "fxtmult"
+  type: "femto"
+  targetParticle: "Lambda-he4"
+  decayChannel: "p+pi-"
+  workDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer"
+  logDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/log/auau13p5_anaFemtoLambda_4He_KFParticle_highpurity_pilot_20260930"
+  errDir: "/star/u/yichikawa/pwg/git_STAR_3/star-analyzer/err/auau13p5_anaFemtoLambda_4He_KFParticle_highpurity_pilot_20260930"
+  baseRunMacro: "run_anaFemtoLambda_4He"
+  baseAnaMacro: "anaFemtoLambda_4He"
+  jobName: *anaName
+  scratchSubdir: "auau13p5_anaFemtoLambda_4He_KFParticle/tests/pilot_20260930"
+  outputFileStem: *anaName
+  nFiles: 1
+  filesPerJob: 1
+  maxEvents: -1  # All 3202 events of the single pinned file.
+analyst:
+  name: "Yudai Ichikawa"
+  institute: "Tohoku University"
+  email: "yudai.ichikawa.d3@tohoku.ac.jp"

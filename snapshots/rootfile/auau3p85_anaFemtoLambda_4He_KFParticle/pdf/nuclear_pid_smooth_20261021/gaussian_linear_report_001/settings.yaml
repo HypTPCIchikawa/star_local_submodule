@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "productionEnabled": false,
+  "outputDirectory": "gaussian_linear_report_001",
+  "response": "gaussian",
+  "background": "linear",
+  "variation": "nominal",
+  "errorPolicy": "Conditional yield uncertainty only; no other response/background/sensitivity envelope",
+  "qualityPolicy": "Use Gaussian+linear model support only; do not inherit all-model support mask",
+  "minimumHe4RExclusive": 0.61,
+  "tofThreshold": 2.0,
+  "purityThreshold": 0.5,
+  "axisPadding": 0.05,
+  "fixedDAxis": [
+    0.4,
+    5.0
+  ],
+  "runtimeMainconf": "config/mainconf/main_auau3p85_anaFemtoLambda_4He_KFParticle.yaml",
+  "fitExamplesLow": [
+    {
+      "species": "d",
+      "r": 1.005
+    },
+    {
+      "species": "t",
+      "r": 1.005
+    },
+    {
+      "species": "he3",
+      "r": 0.805
+    },
+    {
+      "species": "he4",
+      "r": 0.805
+    }
+  ],
+  "fitExamplesAnchors": [
+    {
+      "species": "he4",
+      "r": 0.615
+    },
+    {
+      "species": "he4",
+      "r": 0.645
+    }
+  ],
+  "fitExamplesHigh": [
+    {
+      "species": "d",
+      "r": 2.225
+    },
+    {
+      "species": "t",
+      "r": 2.225
+    },
+    {
+      "species": "he3",
+      "r": 2.225
+    },
+    {
+      "species": "he4",
+      "r": 2.225
+    }
+  ],
+  "reportLanguage": "Japanese",
+  "figureRasterDpi": 200,
+  "reportDate": "2026-10-21"
+}
