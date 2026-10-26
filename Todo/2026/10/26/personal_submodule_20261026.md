@@ -31,3 +31,15 @@ Todo/日報は直接編集をGitが認識する。その他は元ファイルを
 - snapshot収集と照合が完了。9,179ファイル・284,013,346 bytes（270.86 MiB）、PDF 541件・PNG 1,024件。全SHA一致を確認し、今回の4He reportとβ–η PDFも登録した。サイズ等による除外1,191件の一覧を保存。続いて資料のpushと親のcommit参照を確定する。
 
 開始・進捗記録：2026-10-26T12:57:44.931351+09:00。
+
+## 資料の公開・最終設定
+
+個人repoの`main`へ資料コミット `096eb5feb8cc07bf9178eaf01c3dbdcdca400ded` をpush済み。原本・snapshot・管理情報は計9363件、PDF 549件、PNG 1024件。ROOT・ログ・ビルド生成物は追跡0件。共有repoには`.gitmodules`、任意submoduleのcommit参照、既存パスaliasのignoreと利用説明だけを追加する。
+
+初回のGit登録はGPFSへの多数オブジェクト書込みが遅かったため、専用の一時checkoutでcommit/pushし、元のsubmoduleへpackで取り込む。原本・snapshotは保持。Git上のsnapshotは改行変換を無効にしてSHAの再現性を維持する。
+
+9 tests成功、snapshot全SHA一致、元の11件のtracked変更は完全一致。以降、Todo・日報は直接編集、その他は `python3 star_local/scripts/sync_workspace.py capture` で同期してから個人Gitへcommit/pushする。1 MiB超の図は`policy.json`で個別登録できる。
+
+最終公開のSHA/時刻・親mainとの照合は `rootfile/auau3p85_anaFemtoLambda_4He_KFParticle/tests/personal_submodule_20261026_001/completed.json` に保存する。
+
+資料push・設定確認時刻：2026-10-26T13:17:09.766558+09:00。
